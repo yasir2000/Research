@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+<extension
+         id="andromdaNature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run class="com.omondo.uml.wtp.project.nature.AndroMDAProjectNature"/>
+      </runtime>
+   </extension>
+<extension
+      id="hibernateNature"
+      point="org.eclipse.core.resources.natures">
+   <runtime>
+      <run
+            class="com.omondo.uml.wtp.project.nature.HibernateProjectNature">
+      </run>
+   </runtime>
+</extension>
+</plugin>

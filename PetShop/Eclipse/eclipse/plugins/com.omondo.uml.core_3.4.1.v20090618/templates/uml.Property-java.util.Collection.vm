@@ -1,0 +1,308 @@
+#set( $imports = $JavaTool.getImportManager($uml) )
+#set( $this = $JavaTool.getHelper($uml) )
+#set( $parameters = $JavaTool.parameter($this.name))
+#set( $parameter = $JavaTool.parameter($this.name))
+#set( $collection = $imports.newImport("java.util.Collection", [$this.elementType]))
+#set( $iterator = $imports.newImport("java.util.Iterator", [$this.elementType]))
+#set( $sharp = "#" )
+#if ($JavaTool.jdk15)
+#set( $elementType = "T")
+#else
+#set( $elementType = $JavaTool.name($this.elementType))
+#end
+## =================================================================
+## attribute
+## =================================================================
+#if(!$this.isAbstract()) 
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+ *
+ */
+$JavaTool.modifiers(${this.attribute}) $JavaTool.name($this.attribute.type) ${this.attribute.name}#if (${this.attribute.initializer} != "")
+ = ${this.attribute.initializer}#end
+;
+#end
+#if($this.isGenerateAccessors()) 
+## =================================================================
+##  getter
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.isAbstract()) 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+ *
+#else
+ *
+ * @return Returns the $this.attribute.name.
+ *
+#end
+ */
+$JavaTool.getterAnnotations($this)
+$JavaTool.modifiers($this) $JavaTool.name($this.attribute.type) get${this.cappedName}();
+#else
+ * Getter of the property <tt>${this.name}</tt>
+ *
+ * @return Returns the $this.attribute.name.
+ * 
+ */
+$JavaTool.getterAnnotations($this)
+$JavaTool.modifiers($this) $JavaTool.name($this.attribute.type) get${this.cappedName}()
+{
+	return #if ($JavaTool.useThis)this.#end$this.attribute.name;
+}
+#end
+
+#if(!$this.isJPA())
+## =================================================================
+##  Iterator iterator()
+## =================================================================
+ 
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns an iterator over the elements in this collection. 
+ *
+ * @return an <tt>Iterator</tt> over the elements in this collection
+ * @see	java.util.Collection${sharp}iterator()
+ * 
+ */
+$JavaTool.modifiers($this) $JavaTool.name($iterator) ${this.name}Iterator()#if($this.isAbstract())
+;
+#else
+{
+	return #if ($JavaTool.useThis)this.#end${this.attribute.name}.iterator();
+}
+#end
+## =================================================================
+##  boolean isEmpty()
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns <tt>true</tt> if this collection contains no elements.
+ *
+ * @return <tt>true</tt> if this collection contains no elements
+ * @see	java.util.Collection${sharp}isEmpty()
+ *
+ */
+$JavaTool.modifiers($this) boolean is${this.cappedName}Empty()#if($this.isAbstract()) 
+;
+#else
+{
+	return #if ($JavaTool.useThis)this.#end${this.attribute.name}.isEmpty();
+}
+#end
+## =================================================================
+##  boolean contains(Object)
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns <tt>true</tt> if this collection contains the specified element. 
+ *
+ * @param element whose presence in this collection is to be tested.
+ * @see	java.util.Collection${sharp}contains(Object)
+ *
+ */
+$JavaTool.modifiers($this) boolean contains${this.cappedName}($JavaTool.name($this.elementType) $parameter)#if($this.isAbstract())
+;
+#else
+{
+	return #if ($JavaTool.useThis || $parameter == ${this.name})this.#end${this.attribute.name}.contains($parameter);
+}
+#end
+## =================================================================
+##  boolean containsAll(Collection)
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns <tt>true</tt> if this collection contains all of the elements
+ * in the specified collection.
+ *
+ * @param elements collection to be checked for containment in this collection.
+ * @see	java.util.Collection${sharp}containsAll(Collection)
+ *
+ */
+$JavaTool.modifiers($this) boolean containsAll${this.cappedName}($JavaTool.rawName($collection)#if ($JavaTool.jdk15)
+<$JavaTool.name($this.elementType)>#end $parameters)#if($this.isAbstract())
+;
+#else
+{
+	return #if ($JavaTool.useThis || $parameters == ${this.attribute.name})this.#end${this.attribute.name}.containsAll($parameters);
+}
+#end
+## =================================================================
+##  int size()
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns the number of elements in this collection.
+ *
+ * @return the number of elements in this collection
+ * @see	java.util.Collection${sharp}size()
+ *
+ */
+$JavaTool.modifiers($this) int ${this.name}Size()#if($this.isAbstract())
+;
+#else
+{
+	return #if ($JavaTool.useThis)this.#end${this.attribute.name}.size();
+}
+#end
+## =================================================================
+##  Object[] toArray()
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns all elements of this collection in an array.
+ *
+ * @return an array containing all of the elements in this collection
+ * @see	java.util.Collection${sharp}toArray()
+ *
+ */
+$JavaTool.modifiers($this) $JavaTool.name($this.elementType)[] ${this.name}ToArray()#if($this.isAbstract())
+;
+#else
+{
+	return #if (!$JavaTool.jdk15)($elementType[]) #end#if ($JavaTool.useThis)this.#end${this.attribute.name}.toArray(new $JavaTool.name($this.elementType)[#if ($JavaTool.useThis)this.#end${this.attribute.name}.size()]);
+}
+#end
+#end ## end if jpa
+
+#if (!$this.isReadOnly())
+## =================================================================
+## setter
+## =================================================================
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Setter of the property <tt>${this.name}</tt>
+ *
+ * @param ${this.name} the ${this.attribute.name} to set.
+ *
+ */
+$JavaTool.modifiers($this) void set${this.cappedName}($JavaTool.name($this.attribute.type) $parameters)#if($this.isAbstract())
+;
+#else
+{
+	#if ($JavaTool.useThis || $parameters == ${this.name})this.#end$this.attribute.name = $parameters;
+}
+#end
+
+#if(!$this.isJPA())
+## =================================================================
+##  Object add(Object)
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Ensures that this collection contains the specified element (optional
+ * operation). 
+ *
+ * @param element whose presence in this collection is to be ensured.
+ * @see	java.util.Collection${sharp}add(Object)
+ *
+ */
+$JavaTool.modifiers($this) boolean add${this.cappedName}($JavaTool.name($this.elementType) $parameter)#if($this.isAbstract())
+;
+#else
+{
+	return #if ($JavaTool.useThis || $parameter == ${this.name})this.#end${this.attribute.name}.add($parameter);
+}
+#end
+## =================================================================
+##  Object remove(Object)
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Removes a single instance of the specified element from this
+ * collection, if it is present (optional operation).
+ *
+ * @param element to be removed from this collection, if present.
+ * @see	java.util.Collection${sharp}add(Object)
+ *
+ */
+$JavaTool.modifiers($this) boolean remove${this.cappedName}($JavaTool.name($this.elementType) $parameter)#if($this.isAbstract())
+;
+#else
+{
+	return #if ($JavaTool.useThis || $parameter == ${this.name})this.#end${this.attribute.name}.remove($parameter);
+}
+#end
+## =================================================================
+##  void clear()
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Removes all of the elements from this collection (optional operation).
+ *
+ * @see	java.util.Collection${sharp}clear()
+ *
+ */
+$JavaTool.modifiers($this) void clear${this.cappedName}()#if($this.isAbstract())
+;
+#else
+{
+	#if ($JavaTool.useThis || $parameter == ${this.name})this.#end${this.attribute.name}.clear();
+}#end
+#end ## end if jpa
+#end## end if readonly
+#end## if isGenerateAccessors 
+

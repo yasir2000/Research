@@ -1,0 +1,7 @@
+<voicemail_routing xmlns="http://voicemail_routing.org">
+  <description>
+     Network element's instance name for each voicemail service route.
+  </description>
+  <route reg_exp_key="58[0-9]{5}" ne_name="asterisk"/>
+  <route reg_exp_key="11[0-9]{8}" ne_name="asterisk"/>
+</voicemail_routing>

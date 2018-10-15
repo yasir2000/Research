@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Generated-from: 1245288045703;type=2
+Bundle-ManifestVersion: 2
+Bundle-Name: EclipseUML Standard Plugin Documentation
+Bundle-SymbolicName: com.omondo.uml.std.doc.user; singleton:=true
+Bundle-Version: 3.4.1.v20090618
+Bundle-Vendor: Omondo ©
+Bundle-Localization: plugin
+Eclipse-LazyStart: true

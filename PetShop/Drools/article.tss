@@ -1,0 +1,1686 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta name="pageStart" content="1327921733391" />
+
+<div><div><link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/reset.css" id="stylesheetReset" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/layout.css" id="stylesheetLayout" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/tt_thickbox.css" id="stylesheetThickbox" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/dc5.css" id="stylesheetDCSpecific" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/theserversidecom.css" id="stylesheetSiteSpecific" media="screen" />
+<link rel="canonical" href="http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project" />
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-Head, www.theserverside.com, generated at 12:58:10 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+	<title>An Introduction to the Drools Project</title>
+
+
+<meta name="description" content="Part one of this article revisits an old concept and introduces a new technology for the Java Enterprise developer's utility belt. I'll discuss how Rules Engines can improve the agility of your business by helping you isolate the "logic of the bottom line" from the technical logic of your software applications. I'll introduce the JSR-94 Rules Engine API and an Open Source product called Drools, the forerunner implementation of this up-and-coming technology." />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+<meta name="robots" content="noodp"/>
+
+
+
+
+
+
+<meta name="publicationDate" content="05/01/2004"/>
+
+
+
+
+
+<!-- declertion of global variables for Google text ads -->
+<script type="text/javascript">
+
+/* Start : Initalizing Ad Ids to taxes variable */
+var taxes=[];
+var adIdString = "314903";
+if(adIdString != null && adIdString != "null"){
+	var adIds = adIdString.split(",");
+	for (var i = 0; i < adIds.length; i++) {
+		taxes[i]=adIds[i];
+	}
+}
+/* END : Initalizing Ad Ids to taxes variable */
+
+google_ad_client = 'ca-pub-6050985421795229';
+google_ad_channel ='www_news';
+google_ad_output = 'js';
+google_max_num_ads = 5;
+
+//Environment Vars
+var ENV_name ='PROD';
+var ENV_isStage = false;
+var ENV_mediaHost = 'http://cdn.ttgtmedia.com/rms/ux';
+var ENV_clicktrackHost = 'http://clicktrack.techtarget.com';
+
+//Site Vars (all)
+var SITE_name = 'TheServerSideCOM';
+var SITE_v5sid = '81';
+var SITE_domain = '.theserverside.com';
+var SITE_bitpipeHost = 'library.theserverside.com';
+var SITE_logoutURL = 'http://users.theserverside.com/registration/theserversidecom/Logout.page?fromURL=http%3A%2F%2Fwww.theserverside.com%2Fnews%2F1365158%2FAn-Introduction-to-the-Drools-Project';
+var SITE_hostName = 'theserverside';
+
+//Site Vars (magazines)
+
+
+//Site Vars (member update)
+var SITE_memberUpdateFlag = '';
+var SITE_memberUpdateURL = '';
+
+//Site Vars (ads)
+var watermarkSwitch = false;
+
+var interstitialSwitch = true;
+var isHome = false; 
+var is404 = false;
+var prestitialSwitch = false;
+
+//Site Vars (bizo)
+var SITE_bizoFlag = '';
+var SITE_bizoIframeURL = '';
+
+//Site Vars (web reporting)
+var SITE_hbxAcct = 'DM54121089AE83EN3';
+var SITE_hbxVsEmailSubscriber = '';
+var SITE_hbxVsIKEMember = '';
+var SITE_hbxVsLoggedIn = '';
+var SITE_hbxVsSiteMember = '';
+var hbxMLC = '/CL-NONE/SOA appli-314903;/TheServerSideCOM/CL-NONE/SOA appli-314903';
+
+//Declared and defined Dart global variables
+var leaderboardSwitch = true;
+var vendorofferSwitch = true;
+var skyscraperSwitch = true;
+var cltadSwitch = true;
+var bigadSwitch = true;
+var prestitialTTL = 12;
+var accountAbbr = 'atssc'; 
+var zone = 'NEWS';
+var gci = '1365158';
+var tax = '314903';
+var clu = 'NONE';
+var adg = '';
+//AD ID value will be passed to iid if channel is info centre
+var iid = '';
+// AD ID value will be passed to rci if channel is resource centre  
+var rci = '';
+var defaultTax = '';
+// MSFT atc3 value, i.e. Taxonomy name
+var taxNameWithOutSpecialChars='SOAapplicationsandserviceintegration';
+
+
+</script>
+
+<!-- End of declertion of global variables -->
+<!--Ads - Dart call to  come here-->
+
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/writeCapture.js"></script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/jquery.writeCapture.js"></script>
+
+		<script language="JavaScript" type="text/javascript" src="http://users.theserverside.com/registration/js/userreg-lib.js"></script>
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/tt_thickbox-compressed.js"></script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/tt_scripts.js"></script>
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/dc5.js"></script>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<links>
+<link href="http://www.theserverside.com/?asrc=TAB_TheServerSideCOM" label="JAVA" group="headerTab" cssClass="activeTab" />
+<link href="http://searchsoa.techtarget.com/?asrc=TAB_TheServerSideCOM" label="SOA" group="headerTab" />
+<link href="http://searchsoftwarequality.techtarget.com/?asrc=TAB_TheServerSideCOM" label="TEST/QA" group="headerTab"  />
+<link href="http://searchwindevelopment.techtarget.com/?asrc=TAB_TheServerSideCOM" label=".NET" group="headerTab" />
+<link href="http://ajaxian.com/?asrc=TAB_TheServerSideCOM" label="AJAX" group="headerTab" />
+<link href="http://javasymposium.techtarget.com/?asrc=TAB_TheServerSideCOM" label="TSSJS" group="headerTab" cssClass="promoTab"/>
+<link href="/" label="TODAY ON TSS" group="inlinelinks"  cssClass="li1"  />
+<link href="/news" label="JAVA NEWS" group="inlinelinks" feature="NEWS" cssClass="li2"  />
+<link href="http://library.theserverside.com" label="WHITE PAPERS" group="inlinelinks" cssClass="li3"  />
+<link href="/discussions" label="DISCUSSIONS" group="inlinelinks" feature ="NEWS" cssClass="li5" />
+<link href="/resources" label="TOPICS" group="inlinelinks"  feature="TOPICS" cssClass="li6"  />
+<link href="http://library.theserverside.com" label="MULTIMEDIA" group="inlinelinks" feature="{feature.BITPIPE}" cssClass="li7"/>
+<link href="/rss" label="RSS" group="inlinelinks" feature="{feature.RSS}" cssClass="li8"  />
+<link href="/resources" label="TOPICS" feature="TOPICS" group="TopicalNav" />
+</links>
+
+
+<!-- BEGIN: Google Analytics -->
+
+
+<script type="text/javascript">
+	var SITE_gaAccountID = "UA-18994821-7";
+	var gaPageTrackUrl = "/page/etpk_Software design and development architecture-314880/ptpk_SOA applications and service integration-314903/true/NEWS/content/cid_1365158/mem_${appCode}/clst_0/rtpk_SOA % Web services-1278494/idx_0";
+</script>
+
+
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/googleAnalytics.min.js?date=20120129"></script>
+
+
+
+
+
+<!-- END: Google Analytics -->
+
+
+<!-- BEGIN: Baynote -->
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/baynote-lib.js"></script>
+<script type="text/javascript">
+	var bncustomerId = "techtarget";
+	var bncode = "www";
+	if(window.location.href.indexOf("https://")==0){bnserver="https://"+bncustomerId+"-"+bncode+".baynote.net";}else{bnserver="http://"+bncustomerId+"-"+bncode+".baynote.net";}
+	baynote_globals.cookieDomain = (typeof SITE_domain != "undefined") ? SITE_domain.substring(1) : "techtarget.com";
+	$(document).ready(function () {
+		if (wrData == "on") {
+			BaynoteAPI.init({server: bnserver,customerId: bncustomerId,code: bncode});
+			BaynoteAPI.execute("observer");
+		}
+	});
+</script>
+<!-- END: Baynote -->
+ 
+
+
+</div>
+</div>
+
+
+</head>
+<body class="ciCLT">
+<!--begin BODY "ciCLT" -->
+<div id="containerOuter">
+<!--div "containerOuter" starts-->
+<div id="containerInner">
+<!--div "containerInner" starts-->
+<div id="header">
+<!--div "header" starts-->
+<div><div>
+
+
+
+
+<!-- we have to rename this tag and its handler to SEO context-->
+<div id="loginBand"> 
+<!-- SEO Keyword  -->
+<!-- TTBC-TMP-LoginBand, www.theserverside.com, generated at 12:58:10 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+<span class="seoKeyword"></span>
+
+
+<span class="membershipLinks"><a href="http://users.theserverside.com/registration/theserversidecom/Register.page?fromURL=http%3A%2F%2Fwww.theserverside.com%2Fnews%2F1365158%2FAn-Introduction-to-the-Drools-Project">Activate your FREE membership today</a>&nbsp;&#124;&nbsp;<a href="http://users.theserverside.com/registration/theserversidecom/LoginRegister.page?fromURL=http%3A%2F%2Fwww.theserverside.com%2Fnews%2F1365158%2FAn-Introduction-to-the-Drools-Project">Log-in</a></span>
+</div></div>
+</div>
+
+
+<div><div>
+
+
+
+
+
+
+
+<!-- TTBC-TMP-Header, www.theserverside.com, generated at 02:48:38 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+
+
+
+
+<!-- start of header tabs. If feature.HeaderTabs is on in the site ,then Headertab should be displayed.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="headerTabs">
+<!--div "headerTabs" starts-->
+<ul>
+
+
+		   <li class="activeTab"><a href="http://www.theserverside.com/?asrc=TAB_TheServerSideCOM">Java</a></li>
+		
+
+		   <li><a href="http://searchsoa.techtarget.com/?asrc=TAB_TheServerSideCOM">SOA</a></li>
+		
+
+		   <li><a href="http://ebizq.net/?asrc=TAB_TheServerSideCOM">EBIZQ</a></li>
+		
+
+		   <li><a href="http://searchsoftwarequality.techtarget.com/?asrc=TAB_TheServerSideCOM">Test/QA</a></li>
+		
+
+		   <li><a href="http://searchwindevelopment.techtarget.com/?asrc=TAB_TheServerSideCOM">.NET</a></li>
+		
+
+		   <li><a href="http://ajaxian.com/?asrc=TAB_TheServerSideCOM">AJAX</a></li>
+		
+
+		   <li class="promoTab"><a href="http://javasymposium.techtarget.com/?asrc=TAB_TheServerSideCOM">TSSJS</a></li>
+		
+</ul>
+<!--div "headerTabs" ends-->
+</div>
+
+
+<!-- end of header tabs.If feature.HeaderTabs -->
+<!-- start of header logoband.If feature.LogoBand is on in the site variable,then only LogoBand will be loaded.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="headerLogoBand">
+<!--div "headerLogoBand" starts-->
+			<div class="headerLogo">
+			<!--div "headerLogo" starts-->
+			<a href="/"></a>
+			<!--div "headerLogo" ends-->
+			</div>
+			<div class="headerTagline">
+			<!--div "headerTagline" starts-->
+			<a href="http://www.techtarget.com/"></a>
+			<!--div "headerTagline" ends-->
+			</div>
+			<div class="headerMedia">
+			<!--div "headerMedia" starts-->
+	
+<!-- For all DC0 sites include this HTML:
+					 Both links plus comments - CSS will take care of styling
+					 Href needs to point to the Media Popup
+-->		
+	
+<ul id="inlineNavLinks">
+					
+						   <li class="li1"><a href="/">Today On TSS</a></li>
+						
+						   <li class="li2"><a href="/discussions">Discussions</a></li>
+						
+						   <li class="li3"><a href="/resources">Topics</a></li>
+						
+						   <li class="li4"><a href="http://library.theserverside.com">White Papers</a></li>
+						
+						   <li class="li5"><a href="http://library.theserverside.com">Multimedia</a></li>
+						
+						   <li class="li6"><a href="/rss">RSS</a></li>
+						
+</ul>
+
+<!--div "headerMedia" ends-->
+</div>
+<!--div "headerLogoBand" ends-->
+</div>
+
+
+
+<div id="leaderboardPlacement">
+			<script type="text/javascript">
+				//call leaderboard inline to force a chronological sequence placing it first, this is an AdOPS requirement.
+				if (typeof dcopt == "undefined") var dcopt = "ist";
+				var dcopt_holder = dcopt; dcopt = "";
+				if (typeof leaderboardSwitch == "undefined") var leaderboardSwitch = true; //default on
+				if (typeof dgADJads == "undefined") var dgADJads = "on"; //default on
+				if (leaderboardSwitch) {
+					var loginBand = document.getElementById("loginBand");
+					if (loginBand != null) loginBand.className = "on";
+					if (typeof dartUtil == "undefined") var dartUtil = new DartUtil();
+	      			document.write('<div class="on" id="leaderboard"><div>');
+              		if (dgADJads == "off") document.write(dartUtil.getLeaderboard());
+                } else {
+              		document.write('<div id="leaderboard"><div>');
+              	}
+               	document.write('</div><!-- Leader Board place holder --></div>');
+              </script>	     
+</div>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<div id="topicalNavbar">
+	<!--div "topicalNavbar" starts-->
+			<div id="ddMenu">
+				<ul id="ddNav">
+					
+
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Software-design-and-development-architecture">Design/Architecture</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/SOA-applications-and-service-integration">SOA and service integration</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/REST-Web-services">REST Web services</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/ESB-products-and-techniques">ESB products</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Software-development-techniques">Software development</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Application-Integration-middleware">Application Integration middleware</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Design-for-application-security">Application security</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Design-for-test">Design for test</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Data-oriented-design-issues">Data-oriented design</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-architecture-for-cloud">Java architecture for cloud</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/EJB-design-and-application-development">EJB</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/EJB-specification">EJB specification</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-containers">EJB containers</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-troubleshooting">EJB troubleshooting</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-programming">EJB programming</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-application-servers">Java application servers</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-products-and-techniques">EJB products</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/XML-and-Web-services-applications">Web Services</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Web-services-architecture-and-design">Web services architecture</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/WS-specifications">WS* specifications</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Web-tier-architecture">Web Applications</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Web-application-frameworks">Web app frameworks</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Spring-framework">Spring framework</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Hibernate-framework">Hibernate framework</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-servlets">Java servlets</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-server-pages">Java server pages</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Ajax-Web-development">Ajax Web development</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Rich-Internet-applications">Rich Internet applications</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-server-faces">Java server faces</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-Web-portals">Java Web portals</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Other-UI">Other UI</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Java-EE-applications-and-application-development">Development</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Java-programming-language">Java programming language</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Software-programming-languages">Software programming languages</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/JVM-languages-ndash-Scala-Groovy-Grails">JVM languages</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/DSLs">DSLs</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-application-deployment">Java application deployment</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Application-development-performance-and-scalability">Performance/Scalability</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Software-performance-tools">Software performance tools</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Application-performance-measurement">Application performance measurement</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-cloud-architecture-grid-computing-software-memory-systems">Cloud/grid/memory systems</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/JVM-performance-issues">JVM</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Application-scalability">Application scalability</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Application-and-Web-services-development-tools">Tools</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Eclipse-development-and-tools">Eclipse development and tools</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Open-source-software-testing-tools">Open source tools</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/IDEs-Integrated-development-environments">IDEs</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-EE-development-utilities">Java EE</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-software-testing-in-practice">Java software testing</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Development-hardware">Development hardware</a></li>
+                
+        		</ul>
+        		</li>
+        	
+           </ul>
+			<!--div "ddMenu" ends-->
+        </div>
+	<!--div "topicalNavbar" starts-->
+   </div>
+
+
+<!-- start of header HeaderSearchTab.If feature.HeaderSearchBar is on in the site variable,then only HeaderSearchTab will be loaded.-->
+
+
+
+
+
+
+
+
+
+
+
+<div id="searchBar">
+	<form action="/search/query" method="get" id="searchBarForm">
+		<fieldset>
+			<input type="hidden" name="start" value="0"/>
+			<input type="hidden" name="filter" value="1"/>
+			<strong>SEARCH this site and the web</strong>
+			<input type="text" id="searchBarFormTextbox" name="q"/>
+			<input type="submit" value="Search" id="searchBarFormSubmit"/>
+		</fieldset>
+	</form>
+	<a href="/about/index" id="searchBarSiteIndexLink">Site Index</a>
+</div>
+
+
+<!-- end of Headersearchtab. -->
+<!-- ending of header -->
+</div>
+</div>
+
+<!--div "header" ends-->
+</div>
+<div id="content">
+<!--div "content" starts-->
+<div class="contentInner">
+<!--div "contentInner" starts-->
+<div class="contentHeader">
+<!--div "contentHeader" starts-->
+
+<div><div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-ContentHeader, www.theserverside.com, generated at 12:58:10 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+  <div id="vendorOffer">
+	<!-- vendor offer place holder	-->
+</div>
+
+
+
+	 
+<!-- Breadcrumb comes here-->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="breadcrumbs">
+<ul>
+
+		<li class="home"><a href="/">Home</a></li><li>&gt;<a href="http://www.theserverside.com/resources">Topics</a></li><li>&gt;<a href="http://www.theserverside.com/resources/Software-design-and-development-architecture">Software design and development architecture</a></li><li>&gt;<a href="http://www.theserverside.com/resources/SOA-applications-and-service-integration">SOA applications and service integration</a></li>
+		<li>&gt;<em>An Introduction to the Drools Project</em></li>
+		
+</ul>				
+</div>
+	
+
+
+
+
+
+
+<script type="text/javascript">
+function printerWindow(page) {
+	 
+		  var printWindow = window.open(page, "portfolio", "innerWidth=860,innerHeight=535,toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes");
+	
+}
+</script>
+
+
+<div id="printLink">
+   <a href="javascript:printerWindow('http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project?vgnextfmt=print')">Print</a>
+</div>	
+
+	
+
+    <!-- email this to come here -->
+
+    
+
+
+
+
+
+
+
+
+
+
+
+						
+				<form id="emaillink" method="post" action='/email-a-friend' onsubmit='return false;'>
+					<div id="emailThisLink">
+						<input name="subject" type="hidden"/>
+						<input name="fullurl" type="hidden"/>
+            	       	<a href="javascript:JSsendform();">Email This</a>
+					</div>
+		        </form>
+
+<script type="text/javascript">
+	function JSsendform(){
+		var formObj = document.getElementById("emaillink");
+		formObj.fullurl.value = location.href;
+		formObj.subject.value = encodeURI(document.title);
+		formObj.submit();
+	}
+</script>
+
+	</div>
+</div>
+
+
+<div><div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-SectionTitleFeature, www.theserverside.com, generated at 23:22:38 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+ 
+
+
+
+<div id="sectionTitleFeatureBar">
+
+	<h2>Java Development News:</h2>
+	
+
+
+
+	<ul class="empty"><li/></ul>
+ 
+</div></div>
+</div>
+
+<!--div "contentHeader" ends-->
+</div>
+
+<div class="contentCols">
+<!--div "contentCols" starts-->
+	<div class="colmask">
+	<!--div "colmask" starts-->
+		<div class="colmid">
+		<!--div "colmid" starts-->
+			<div class="colleft" >
+			<!--div "colleft" starts-->          
+          <div class="col1">
+         <!-- Column 1 start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ItemRegion, www.theserverside.com, generated at 12:58:10 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="titleByline">
+<!--div ""titleByline" begins-->
+  
+		<h1>An Introduction to the Drools Project</h1>
+			
+			<p>By&nbsp;N. Alex Rupp</p><p>01 May 2004 | TheServerSide.com</p>
+		
+<!--end of div ""titleByline"-->
+</div>
+
+	
+
+<!-- content byLine ends -->
+<!-- rssdiscovery starts -->
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rssDiscovery">
+<ul>
+
+</ul>
+</div>
+
+
+<!--div "rssDiscovery" ends-->
+<!-- rssdiscovery ends -->
+<!-- userdiscivery starts -->
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The input parameters are listed below::
+	     the url is the current page site url 
+	     the title is the content instance title  
+	     the body text is the CI body text  
+      -->
+
+<div class="userDiscovery">
+<!--div "userDiscovery" begins-->
+	<ul>
+	    
+              <li> 
+                    <a href="http://digg.com/submit?phase=2&amp;url=http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project&amp;title=An Introduction to the Drools Project&amp;topic=tech_news&amp;bodytext=Part one of this article revisits an old concept and introduces a new technology for the Java Enterprise developer's utility belt. I'll discuss how Rules Engines can improve the agility of your business by helping you isolate the "logic of the bottom line" from the technical logic of your software applications. I'll introduce the JSR-94 Rules Engine API and an Open Source product called Drools, the forerunner implementation of this up-and-coming technology." class="digg openInNewWindow">Digg This</a>
+                    </a>
+              </li>
+         
+       
+           <li>
+	           <a class="stumbleUpon openInNewWindow" href="http://www.stumbleupon.com/submit?url=http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project&amp;title=An Introduction to the Drools Project">Stumble
+	           </a>
+         </li>
+        
+       
+             <li>
+                    <a  class="delicious openInNewWindow" href="http://del.icio.us/post?v=4&noui&jump=close&amp;url=http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project&amp;title=An Introduction to the Drools Project">Delicious
+                    </a>
+             </li>
+      
+   </ul>
+<!--div "userDiscovery" ends-->
+</div>
+
+
+
+<!-- userdiscivery ends -->
+<!-- ContentItemBody begins	-->
+
+
+			<div class="ciText"><b>May 2004</b>
+<br>
+
+<h3><b><a href="/news/thread.tss?thread_id=26281">Discuss this Article</a></b></h3>
+<br>
+
+<h2>Introduction</h2>
+<p>Part one of this article revisits an old concept and introduces a new technology for the Java Enterprise developer's utility belt.  I'll discuss how Rules Engines can improve the agility of your business by helping you isolate the "logic of the bottom line" from the technical logic of your software applications. I'll also introduce the JSR-94 Rules Engine API and an Open Source product called Drools, the forerunner implementation of this up-and-coming technology.  In part two, we'll revisit our examples in greater depth and take a closer look at some of the intricacies of both the Drools engine and its JSR-94 extensions.</p>
+
+<p>Why use a rules engine?</p>
+
+<p>The business world is full of cliches about change, how everything changes, how change is the only thing you can depend on.  In the technical world, this isn't exactly the case.  We've been collectively trying to solve the same set of problems in software for thirty years--sometimes more.  In the last decade, IT folks have been inundated with literature about rapid/extreme/agile development ideologies that stress the importance of flexibility and change.</p>
+
+<p>But business needs often change faster than development teams, their processes and the technologies they rely on can keep up.  We're getting better at it, but business tacticians still find themselves crippled as they try to realign their IT departments to support the shifting needs of their business.  There's a lot of friction and frustration involved in this process.</p>
+
+
+<strong>Lost in Translation</strong>
+
+<p>As smart as IT personnel are, they are susceptible to the "telephone" effect. IT efforts often add as much friction to the execution of a business plan as they do value.  Unfortunately, by the time the development teams fully understand the rules which govern decision-making in the business and are able to capture that decision making power in software code, the rules have changed.  The software is obsolete before it has even reached the market and it needs to be refactored to support the new requirements.  If you're a developer, you know what I'm talking about--we call this aspect of the development cycle "feature creep".  Very few things are as frustrating to developers as having to build a system on shifting soil. As a software developer, you often have to know as much about the business as the executives do--sometimes more.</p>
+
+<p>Imagine for a moment that you're a business leader.  Your company's success often hinges on your ability to notice changing conditions in the market and figure out a way to take advantage of the new environment before your competitors catch on.  Every day you have access to more and better information about your market, but it might not matter.  Bold and clever insights and the "information advantage" can easily be squandered in the 6-9 months it might take to complete a development cycle for a new product.  And when the product ships, chances are it's either feature-light, over budget, past due or some combination of the three.</p>
+
+<p>To make matters worse, at the end of the development lifecycle, the market conditions could be fundamentally different than they were when the project was concieved.  Now you're forced to comply with new legislation, you've lost your marginal advantage, and three of the five people who designed your software system have left the company--or worse--HQ is moving the entire department overseas.  You're going to need to explain the complexities of the business to people who might not share your native language.  If things don't work out, you could easily find yourself straddled with a poorly documented legacy application that you don't understand, that doesn't address your immediate business needs, and all the while orders are coming down from on high to "leverage existing assets".</p>
+
+<p>Where did your strategy break down?  Where are the places you might have done better?  Recent literature on <em>extreme programming</em>, <em>agile development</em> and other lightweight processes stress the importance of automated unit testing and feature prioritization. There are other principles your developers are familiar with, which can help them respond to your changing needs and shorten turnaround time for their porjects.  Most of these principles, like system decomposition, have been around for decades and are aided by up-and-coming additions to the Java platform (like the Java Management Extensions library).  Many of these principles, like Object-Orientation and Role modeling, are built right into the Java language.</p>
+
+<p>But Java's still a pretty young language, and the Java platform is by no means complete. One technique that's gaining traction in the Java community is to separate the <em>business</em> decisions of your executives from the <em>technical</em> decisions of your developers, and to keep those business decisions in a central data store, where they can be managed and altered in real-time (that is, business-time). It's one strategy you might consider.</p>
+
+<p>Why should your development team have to <em>capture in code</em> the subtle and complex rules that guide your decision making as a business executive?  How can you convey the subtleties of your reasoning to them?  If so, is it <em>prudent</em>?  Probably not. Something might be lost in translation, like the bottom line.  Why take the risk that the logic governing your decisions (the <strong>executive logic</strong>) will be misrepresented in the application code or even in the testing code?  If it is, how would you verify that--would you learn to program and write all the unit tests yourself, or would your customers test the software for you?  It's hard to keep one eye on the markets and the other in the software code.</p>
+
+<p>It makes more sense that these rules should be centrally located in a place where you can manage them directly, in an intuitive format that you can easily understand, instead of scattered throughout the application in software code where you can't get at them.  If you can keep the executive logic out of your software and trust your developers to make the right technical decisions, you will notice the difference.  Your project lifecycles will be shorter, and your software will be more adaptable to the needs of your business.  Instead of trying to steer the titanic, you'll feel like you're in a tri-hull racing cat.</p>
+
+
+<strong>A Standard API for Rule Engines in Java</strong>
+
+<p>In November, the Java Community approved the final draft of the Java Rule Engine API specification (JSR-94). This new API gives developers a standard way to access and execute rules at runtime. As implementations of this new spec ripen and are brought to the market, programming teams will be able to pull executive logic out of their applications.</p>
+
+<p>A new generation of management tools will be needed to help executives define and refine the behavior of their software systems.  Instead of rushing changes in application behavior through the development cycle and hoping it comes out correct on the other end, executives will be able to change the rules, run tests in the staging environment and roll out to production as often as becomes necessary.</p>
+
+<p>But this is going to require some changes in the way developers approach the design of the system, and they're going to need the right tools for the job.</p>
+
+
+<strong>Separating the Executive and the Technical Concerns</strong>
+
+<p>Here's a <em>very</em> simple example of how this might look, from an executive's perspective.</p>
+
+<p>You manage a contrarian investment fund.  One part of your company's computer system performs fundamental analysis of stock prices, earnings, and assets per share, and alerts you when a stock warrants further inspection.  The job of the computer system is to identify stocks with a low PE ratio relative to the market, and flag the stock for further inspection.</p>
+
+<p>Your IT staff has a Bloomberg data feed and has developed a collection of simple data objects which you can reference in your rules.  Now, for the sake of the example, we're going to assume you are a fairly educated and tech-savvy manager, and you understand the basics of XML enough that you can write and maintain a simple XML rules file. (like I said, a whole generation of open source tools is on the way for writing and maintaining rule bases, but for now we're going to look at the raw XML).</p>
+
+<p>Your first rule might be to evaluate all stocks in the Dow Jones Industrial and pull out anything with a P/E ratio over 10 (this is a bit simplistic, but play along for now). The stocks that remain can then be used to generate a series of reports.  For the sake of the example, this is what your rule file would look like (we'll revisit the structure of this file later on): </p>
+
+<pre>
+&lt;stock:overvalued&gt;
+    &lt;stock:index&gt; DJIA &lt;/stock:index&gt;
+    &lt;stock:pe&gt; over 10.0 &lt;/stock:pe&gt;
+&lt;/stock:overvalued&gt;
+</pre>
+
+<p>One month, you get a call from a Brazilian analyst firm that wants to hire your company to generate a series of reports on Brazilian stocks, but they have much more stringent criteria.  Right now in Brazil, the average P/E ratio is in the single digits, so your threshold for picking out undervalued stocks needs to change. Also, your new client wants to cross-reference low P/E with each stock's price-to-book ratio.</p>
+
+<p>You fire up your rule editor, and change it to reflect the new conditions.  Now, it polls all stocks in the Brazilian market with a P/E beneath 6.5 and a Price to Book of 1.0 or lower. After you're done editing the rule file, it looks like this:</p>
+
+<pre>
+&lt;stock:overvalued&gt;
+    &lt;stock:index&gt; Brazil &lt;/stock:index&gt;
+    &lt;stock:pe&gt; over 6.5 &lt;/stock:pe&gt;
+    &lt;stock:pb&gt; over 1.0 &lt;/stock:pb&gt;
+&lt;/stock:overvalued&gt;
+</pre>
+
+<p>You don't need to explain any of this to your development teams.  You don't need to wait for them to write the software or test it, or anything.  If your engine's semantic language is robust enough to describe the data you want to work with, you can change the rules whenever you need to.</p>
+
+<p>And if the limiting factors are semantic languages and data models, you can be certain that standards will appear for both, followed closely by advanced editors and tools to simplify the task of writing, storing and maintaining the rules.</p>
+
+<p>By now, I hope that the following principle has become clear: Whether or not a stock gets flagged in this example is a business decision, not a technical decision.  The logic that determines which stocks get forwarded to your analysts is <em>executive logic</em>, the "logic of the bottom line".  Executives make those decisions, and executives should be able to drive that entire portion of the app as they see fit. The rules become a sort of control panel, a powerful new type of user interface for business systems.</p>
+
+
+<strong>Developing With Rules</strong>
+
+<p>If you're the developer in this scenario, your job is made somewhat easier. Once you've got a standard semantics language for stock analysis to simplify writing rules, you can take your data objects and run them through a rules engine.  We'll come back to semantics languages later on.  For now, we're going to return to the example.</p>
+
+<p>Your system feeds a list of stock beans into the rule engine.  As the rules are executed, a handful of the stock beans get flagged and your system can do whatever it needs to do with them.  Perhaps it forwards them on to a report generation system.  The analysts use the reports to help them in their fundamental analysis.  Meanwhile, the boss has got you working on a new technical analytics package for plotting Gann angles, and using Dow Theory for predicting market tops and bottoms.</p>
+
+<p>The rules makes your system less complex because you don't need to capture in code why a stock gets flagged, what strange combination of conditions makes a stock important to management.  That logic never makes it into your code. You're free to focus on fleshing out the data model, or (better yet), working on the next feature platform, adding value to the application.</p>
+
+<p>By now, the point should be well established that sometimes you can be more efficient by removing volatile business logic from the application code.  Not always--simple applications might not benefit from having a rule system in their application.  But if you're running a giant application and you've got a lot of volatile business logic, you might want to develop a strategy for incorporating a rules engine into your app. If executed properly, a good rules strategy can make these sort of highly mutable systems much easier to implement and maintain.</p>
+
+<p>Rules engines have other valuable uses apart from removing executive logic from an application. Sometimes you need to apply hundreds of thousands of rules to make a decision, and you've got to run these rules against hundreds of thousands of objects.  It isn't difficult to imagine advanced artificial intelligence engines growing to that size.  In this case, you're going to need an extremely fast decision-making algorithm or you're going to need some Big Iron.  Big Iron doesn't come cheap, but you can have the most performant and scalable decision-making algorithm in the world for a song.</p>
+
+
+<strong>Bob McWhirter's Drools Project</strong>
+
+<p>At this time I'd like to introduce <a href="http://drools.codehaus.org">Drools</a>, an "augmented implementation of <a href="http://encyclopedia.thefreedictionary.com/Charles%20Forgy">Charles Forgy's Rete algorithm</a> tailored for the Java language." Drools is an Open Source project, written by <a href="http://blogs.codehaus.org/people/bob/">Bob McWhirter</a> and hosted at <a href="http://www.codehaus.org">The Codehaus</a>.  As I write this, Drools is approaching its 2.0-beta-14 release.  A complete implementation of the JSR94 Rule Engine API and supporting unit test cases is already available in CVS.</p>
+
+<p>The Rete algorithm was invented by Charles Forgy in 1979, and is by far the most efficient algorithm for production systems ever written (with the exception of <a href="http://www.pst.com/rete2.htm">Rete II</a>, which is proprietary).  Rete is the only decision-making algorithm whose efficiency is asymptotically independent of the number of rules being executed.  For the uninitiated, that means it can scale to incorporate and execute hundreds of thousands of rules in a manner which is an order of magnitude more efficient then the next best algorithm.  Rete has been used for years in production systems, but hasn't been widely available for the Java platform in an Open Source package.</p>
+
+<p>Aside from its Rete core, Open Source License (Apache-ish), 100% Java implementation and <em>charming</em> development community, Drools offers a number of extremely useful features.  Among these are its  implementation of the JSR94 API and its innovative semantics framework, which can be used to write languages for describing rules.  Right now Drools comes with three semantic modules--one for Python, one for Java and one for Groovy.  The rest of this article is going to focus on using the JSR94 API, and we'll cover the semantics framework in the second article.</p>
+
+<p>As a developer using the <code>javax.rules</code> API, your ultimate goal is to construct a <code>RuleExecutionSet</code>, and then to get a <code>RuleSession</code> with it at runtime.  In order to simplify this process, I've written a facade for the rule engine API, which can be used to parse an <code>InputStream</code> representing a drools DRL file and build a <code>RuleExecutionSet</code>.</p>
+
+<p>The XML examples I used above would require a custom semantics module to be written.  If I wanted to build the same functionality right now I'd be limited to one of the three existing language modules that comes built into Drools.  And I'd choose (surprise!) the Java language module.  The first rule example from above would look like this if it were written using the Java language module:</p>
+
+<pre>
+&lt;rule-set name="StockFlagger"
+      xmlns="http://drools.org/rules"
+      xmlns:java="http://drools.org/semantics/java"&gt;
+
+  &lt;rule name="FlagAsUndervalued"&gt;
+    &lt;parameter identifier="stock"&gt;
+      &lt;java:class&gt;org.codehaus.drools.example.Stock&lt;/java:class&gt;
+    &lt;/parameter&gt;
+    &lt;java:condition&gt;stock.getIndexName().equals("DJIA");&lt;/java:condition&gt;
+    &lt;java:condition&gt;stock.getPE() &gt; 10 &lt;/java:condition&gt;
+    &lt;java:consequence&gt;
+      removeObject(stock);
+    &lt;/java:consequence&gt;
+  &lt;/rule&gt;
+&lt;/rule-set&gt;
+</pre>
+
+<p>Not quite as pretty as the example above, right?  Don't worry--we'll cover semantics modules in the next article.  For now, notice the basic structure of the xml file.  There's a <code>rule-set</code> containing one or more <code>rule</code> elements, which in turn contain <code>parameter</code>, <code>condition</code> and <code>consequence</code> elements.  The contents of the <code>condition</code> and <code>consequence</code> blocks bear a strong resemblance to Java.  Be careful--there are certain things you can and cannot do inside these blocks.  Right now, Drools uses <a href="http://www.beanshell.org/home.html">BeanShell v2.0b1</a> as its Java interpreter.  We're not going to go too far into the details of the DRL file or the Java semantics syntax right now, but we'll return to it in another article.  Our goal is to show you how to use Drools through its JSR-94 API.</p>
+
+<p>In the CVS tree for the Drools project, among the unit tests in the drools-jsr94 module, there's an <code>ExampleRuleEngineFacade</code> object, based on code from <a href="http://www.dentaku.org">Brian Topping's Dentaku project</a>.  This facade object runs through the <code>javax.rules</code> API, building up the most common object structure necessary for working with <code>RuleExecutionSet</code> and <code>RuleSession</code> objects. It doesn't take advantage of all the robust features of the API, or all the subtle nuances of the underlying Drools engine, but it serves as a good example for beginners looking to work with the API.</p>
+
+<p>The following code snippet shows how you would use the rule engine facade to construct a <code>RuleExecutionSet</code> and get an execution session for use at runtime:</p>
+
+<pre>
+import java.io.InputStream;
+import javax.rules.*;
+import org.drools.jsr94.rules.ExampleRuleEngineFacade;
+
+public class Example
+{
+    private ExampleRuleEngineFacade engine;
+    private StatelessRuleSession statelessSession;
+
+    /* place the rule file in the same package as this class */
+    private String bindUri = "myRuleFile.drl"
+
+    public Example()
+    {
+        /* get your engine facade */
+        engine = new ExampleRuleEngineFacade();
+
+        /* get your input stream */
+        InputStream inputStream =
+                Example.class.getResourceAsStream(bindUri);
+
+        /* build a RuleExecutionSet to the engine */
+        engine.addRuleExecutionSet(
+                bindUri,
+                inputStream);
+
+        /* don't forget to close your InputStream! */
+        inputStream.close();
+
+        /* get your runtime session */
+        this.statelessSession =
+                engine.getStatelessRuleSession(bindUri);
+    }
+
+    ...
+}
+</pre>
+
+<p>You'll have to write IOException handlers for the InputStream in the sample above, but it conveys the general point.  All you have to do is build up your InputStream and feed it into the engine facade to build a <code>RuleExecutionSet</code>.  After that, you can get a session and use it to fire off your rules.  Using that <code>StatelessRuleSession</code> is a fairly simple matter.  In the class above, we could add a method for executing the rules against a list of objects:</p>
+
+<pre>
+public List getUndervalued(List stocks)
+{
+    return statelessSession.executeRules(stocks);
+}
+</pre>
+
+<p>This method would push the list of stock objects into the rule engine, and the rules would evaluate the stocks and remove any stock not considered to be undervalued.  It's a simple example, but it gets the point across.</p>
+
+<p>Under the hood, things are a bit more complex.  The engine facade builds a <code>RuleServiceProvider</code> object, and uses it to build <code>RuleAdministrator</code>, <code>RuleExecutionSetProvider</code> and <code>RuleRuntime</code> objects.  The <code>RuleExecutionSetProvider</code> is responsible for parsing your <code>InputStream</code> and building a <code>RuleExecutionSet</code>.  The <code>RuleRuntime</code> object is used to get a session for use at runtime, and the <code>RuleAdministrator</code> manages it all.  Beneath this layer is the core Drools API, and at the heart of that is the Rete implementation.  I'll spare you the details for the time being, but you're welcome to <a href="http://cvs.codehaus.org/viewcvs.cgi/*checkout*/drools-jsr94/src/test/org/drools/jsr94/rules/ExampleRuleEngineFacade.java?content-type=text%2Fplain&rev=1.2&root=drools">peek into the facade object</a> to see how it all fits together.</p>
+
+<p>By now you should see some of the business and scientific uses for rules engines, have a very basic introduction to the Drools project, and have some sense of what remains to be learned about this fascinating and powerful new technology. We have barely even scratched the surface of Drools or JSR-94, but hopefully I've been able to show some practical concepts and give you a general idea of things to come.  In the next article, I'll revisit and deconstruct the DRL file structure and go over the Java semantic library so you can write your own DRL files.  I'll also show you how to get started writing your <em>own</em> semantics modules.  We'll also talk about the concepts of <em>salience</em> and <em>working memory</em>, and show how to take full advantage of the DRL syntax in your consequence blocks.</p>
+
+<strong>Resources</strong>
+
+<ul>
+<li><a href="http://www.drools.org">Drools Project</a></li>
+<li><a href="http://www.jcp.org/en/jsr/detail?id=94">JSR-94 Specification</a></li>
+</ul>
+
+<address>N. Alex Rupp is a freelance software architect and developer from Minneapolis, and the current JSR94 Lead for the Drools project.  He'd like to thank Thomas Diesler for getting the JSR94 implementation off its feet last summer, and Bob and Brian for bringing him up to speed on Drools. Finally, if you're a financial analyst, he asks that you please forgive him for reducing your profession to a caricature and urges you to keep using Bloomberg.</address>
+
+						 
+
+
+
+
+
+
+ 
+
+
+	
+
+			</div>
+
+<!-- ContentItemBody ends	-->
+<!-- tag begins here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tags">
+ <strong>Related Topics:</strong>
+		
+
+	       <a href="http://www.theserverside.com/resources/SOA-applications-and-service-integration">SOA applications and service integration</a>,
+
+		
+<a href="http://www.theserverside.com/tags">VIEW ALL TAGS</a>
+</div>
+	
+
+<!-- tag ends here -->
+<!-- userdiscivery starts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The input parameters are listed below::
+	     the url is the current page site url 
+	     the title is the content instance title  
+	     the body text is the CI body text  
+      -->
+
+<div class="userDiscovery">
+<!--div "userDiscovery" begins-->
+	<ul>
+	    
+              <li> 
+                    <a href="http://digg.com/submit?phase=2&amp;url=http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project&amp;title=An Introduction to the Drools Project&amp;topic=tech_news&amp;bodytext=Part one of this article revisits an old concept and introduces a new technology for the Java Enterprise developer's utility belt. I'll discuss how Rules Engines can improve the agility of your business by helping you isolate the "logic of the bottom line" from the technical logic of your software applications. I'll introduce the JSR-94 Rules Engine API and an Open Source product called Drools, the forerunner implementation of this up-and-coming technology." class="digg openInNewWindow">Digg This</a>
+                    </a>
+              </li>
+         
+       
+           <li>
+	           <a class="stumbleUpon openInNewWindow" href="http://www.stumbleupon.com/submit?url=http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project&amp;title=An Introduction to the Drools Project">Stumble
+	           </a>
+         </li>
+        
+       
+             <li>
+                    <a  class="delicious openInNewWindow" href="http://del.icio.us/post?v=4&noui&jump=close&amp;url=http://www.theserverside.com/news/1365158/An-Introduction-to-the-Drools-Project&amp;title=An Introduction to the Drools Project">Delicious
+                    </a>
+             </li>
+      
+   </ul>
+<!--div "userDiscovery" ends-->
+</div>
+
+
+
+<!-- userdiscivery ends -->
+
+				<!-- comments starts -->
+					<div id="comments"></div>
+				<!-- comments ends -->
+
+<!--google text ad starts-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var cl_exclusive='N';
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+function ss(w){window.status=w;return true;}
+function cs(){window.status='';}
+function ga(o,e){
+	if (document.getElementById){
+		a=o.id.substring(1);
+		p="";
+		g=e.target;
+			if(g){
+				t=g.id;f=g.parentNode;
+					if(f)p=f.id;
+				}
+			else{t=e.srcElement.id;}
+				if(t==a||p==a)
+					return;location.href=document.getElementById(a).href
+	}
+}
+//-->
+//]]>
+
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+           
+document.write('<style type="text/css">');
+document.write('<!--');
+document.write('.ch {cursor: pointer;cursor: hand;}');
+document.write('-->');
+document.write('</style>');
+           
+function google_ad_request_done(google_ads) {
+var i;
+var header;
+accip = "off";
+
+
+
+
+if(google_ads.length > 0) {
+		document.write('<!-- We need to write a header -->');
+		document.write('<a name="marketplace_top"></a>');
+		document.write('<div id="googleTextAds">');
+		document.write('<div>');
+		document.write('<h3>Java RELATED LINKS</\h3>');
+		document.write('<h4><a href="https://www.google.com/adsense/support/bin/request.py?contact=abg_afc">Ads by Google</a></h4>');
+		document.write('<ul>');	
+		
+	
+	
+		for(i = 0; i < google_ads.length; ++i) {
+			document.write('<!-- begin ad -->');
+			//document.write('<tr><td width="100%" onClick="window.open(\'' + google_ads[i].url + '\',\'_blank\')" style="cursor:pointer; cursor:hand" onMouseOver="return ss(\'' + google_ads[i].visible_url + '\')" onMouseOut="cs()">');
+			document.write('<li>');			
+			document.write('<a href="'+google_ads[i].url +'" class="a1 openInNewWindow">');
+			document.write(google_ads[i].line1);
+			document.write('</a><br/>');
+			document.write('' + google_ads[i].line2 + '');
+			document.write('' + google_ads[i].line3 + '');
+			document.write('<br/><a href="'+google_ads[i].url +'" class="a2 openInNewWindow">' + google_ads[i].visible_url + '</a>');
+			document.write('</li>');
+		}
+
+		document.write('</ul>');
+		document.write('</div>');
+		document.write('</div>');
+	
+		
+		document.write('<!-- end Google AdSense writes -->');
+		
+	}
+}
+//]]>
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+         if (cl_exclusive!='Y')  
+         document.write('<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></\script>');
+        
+         
+       //]]>			 
+</script>
+<!-- End Footer Ad Component -->
+
+
+<div id="seoSplashes">
+					
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										<div id="relatedContent" class="seoSplash">
+															<!--div "relatedContent" begins	-->
+										                 <div>
+															<!--div begins-->
+										                 <h4>Related Content</h4>
+										                 <ul>
+										        
+					            <li>
+										<h5><a href="http://www.theserverside.com/resources/SOA-applications-and-service-integration">SOA applications and service integration</a></h5>
+					                  <ul>
+										
+													     <li><a href="http://www.theserverside.com/video/Apache-Camel-news-from-JavaOne-2011">Apache Camel news from JavaOne 2011</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1365333/Enterprise-Service-Bus-Yet-Another-Paradigm-Shift-or-Better-Orchestration-of-Old-Technologies">Enterprise Service Bus: Yet Another Paradigm Shift or Better Orchestration of Old Technologies</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/feature/Cloud-Technologies-are-Changing-the-IT-Landscape">Cloud Technologies are Changing the IT Landscape</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1321153/Enterprise-Service-Bus-Service-Implementation-and-the-Return-of-the-EJB">Enterprise Service Bus, Service Implementation and the Return of the EJB</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/tip/SOA-with-TOGAF">SOA with TOGAF</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1364363/Bonita-v2-Series-Part-One">Bonita v2 Series: Part One</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1377156/TheServerSide-at-JavaOne-2005-Day-2">TheServerSide at JavaOne 2005 - Day 2</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1375715/Services-and-the-real-meaning-of-coupling">Services and the real meaning of coupling</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1363665/SOA-and-the-Mainframe-Two-Worlds-Collide-and-Integrate">SOA and the Mainframe: Two Worlds Collide and Integrate</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1365348/JAX-RPC-Service-Oriented-Architecture-Transaction-Management">JAX-RPC, Service-Oriented Architecture, Transaction Management</a></li>
+												   
+					                      </ul>	
+								     </li>
+									  
+									 </ul>
+								<!--end of div-->
+					        </div>
+					<!--div "relatedContent" ends	-->
+						   </div>	
+								 		     									
+							 
+
+				
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+					
+              
+
+
+
+
+
+
+
+
+
+
+
+<div id="relatedResources" class="seoSplash">
+					<div>
+									<h4>Related Resources</h4>
+									<ul>
+										<li>2020software.com, trial software downloads for <a href="http://www.2020software.com">accounting software</a>, <a href="http://www.2020software.com/compare-software/category/32/Manufacturing-ERP-Software/">ERP software</a>, <a href="http://www.2020software.com/compare-software/category/5/CRM-Software/">CRM software</a> and <a href="http://www.2020software.com/">Business Software Systems</a></li>
+										<li>Search Bitpipe.com for the latest <a href="http://library.theserverside.com">white papers</a> and <a href="http://library.theserverside.com/webcasts">business webcasts</a></li>
+										<li>Whatis.com, the online <a href="http://whatis.techtarget.com">computer dictionary</a></li>
+									</ul>
+					</div>
+</div>
+	
+	
+			</div>
+                <!-- end of seosplashes -->
+
+
+       
+<!--google text ad ends-->
+
+
+<!-- Column FIFA start -->
+	   <div><div>
+
+
+</div>
+</div> 
+	   
+<!-- end of Column FIFA -->
+<!-- end of col1 -->
+</div>
+<div class="col2">
+		<!-- Column 2 start -->
+		<!-- Column 2 end -->
+</div>
+ <div class="col3">							
+<!--Starting of seo links  --> 
+ <div><div>
+<!-- TMTBC-TMP-RightCol, www.theserverside.com, generated at 03:03:04 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+<script type="text/javascript">
+if (typeof dgADJads == "undefined") var dgADJads = "on";
+if (dgADJads != "off") {document.write('<div id="bigAd1"></div><br><br>');}
+document.write('<div id="cltAd"></div>');
+if (dgADJads != "off") {document.write('<br><br><div id="bigAd2"></div>');}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<!--end of seo links -->
+		<!-- Column 3 end -->
+</div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="contentFooter">
+<div><div></div>
+</div>
+
+</div>
+
+<!--div "contentInner" ends-->
+</div> 
+<!--div "content" ends-->
+</div>
+<div id="footer"> 
+<div><div>
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-Footer, www.theserverside.com, generated at 02:49:53 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+<!--FOOTER JSP BEGINS-->
+<!--   Include this HTML for DC0 sites:
+			 This is the Horizontal Navbar component (reused from header)-->
+
+<div id="footerLinksAndSearch">
+<!--div "footerLinksAndSearch" starts-->
+
+
+
+
+
+
+
+
+
+
+<div id="footerSearch">
+    <form action="/search/query" method="get" id="footerSearchForm">
+	   <fieldset>
+          <input type="hidden" name="start" value="0"/>
+		 <input type="hidden" name="filter" value="1"/>
+			<strong>SEARCH</strong>
+			<input type="text" id="footerSearchFormTextbox" name="q"/>
+			<input type="submit" value="Search" id="footerSearchFormSubmit" />
+		</fieldset>
+	</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="footerLinks">
+<!--div "footerLinks" starts-->
+<a href="/about">About Us</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/contact">Contact Us</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/advertising">For Advertisers</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/partners">For Business Partners</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/index">Site Index</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/rss">RSS</a>
+<!--div "footerLinks" ends-->
+</div>
+
+<!--div "footerLinksAndSearch" ends-->
+</div>
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function portfolioWindow(page) {
+	 
+		  var portWindow = window.open(page, "portfolio", "innerWidth=860,innerHeight=535,toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes");
+	
+}
+//]]>
+</script>
+
+ 
+<div id="footerBox">
+			<p class="p1a">
+				TechTarget provides technology professionals with the information they need to perform their jobs - from developing strategy, to making cost-effective purchase decisions and managing their organizations' technology projects - with its network of <a href="javascript:portfolioWindow('/?vgnextfmt=portfolio')">technology-specific websites, events and online magazines</a>.
+			</p>
+            
+
+
+
+
+
+
+
+
+
+
+
+<p class="p5"><a href="http://www.techtarget.com/">TechTarget Corporate Web Site</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="http://www.techtarget.com/mediakit/">Media Kits</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="http://reprints.theygsgroup.com/techtarget.asp">Reprints</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="/sitemap">Site Map</a></p>
+<p class="p6">All Rights Reserved,  Copyright 2000 -  2012, TechTarget&nbsp;&#124;&nbsp;<a href="/about/copyright">Terms of Use</a>&nbsp;&#124;&nbsp;<a href="http://www.techtarget.com/html/privacy_policy.html">Read our Privacy Statement</a></p>
+<p class="p7"><a href="http://www.techtarget.com/"><em>TechTarget - The IT Media ROI Experts</em></a></p>
+</div>
+
+<script type="text/javascript">
+
+
+
+</script>
+<!-- placeholder for Motif interstitial -->
+<div id="adjInterstitial"></div>
+
+
+			<script>
+					var legacyCookieName = "theserverside";
+					var tt_utCookieName = "tt_ut";
+					
+					var allcookies = document.cookie;
+
+					var indexlegacyCookie = allcookies.indexOf(legacyCookieName+"=");
+					var indextt_utCookie = allcookies.indexOf(tt_utCookieName+"=");
+					
+					if ( indexlegacyCookie != -1 && indextt_utCookie == -1 ){
+						var iframe = document.createElement("iframe");
+						iframe.setAttribute("id", "tsslegacyframe");
+						iframe.setAttribute("style", "width: 1px; height: 1px; display: none;");
+						iframe.setAttribute("src", "http://users.theserverside.com/registration/theserversidecom/LoginRegister.page");
+						document.getElementsByTagName("body")[0].appendChild(iframe);
+					}
+			</script>
+</div>
+</div>
+</div>
+<!--div "containerInner" ends-->
+</div>
+<!--div "containerOuter" ends-->
+</div>
+<!--end BODY "ciCLT" -->
+
+
+
+<script>
+
+var date = new Date();
+date.setTime(date.getTime()+(5*365*24*60*60*1000));
+var expires = "expires="+date.toGMTString();
+
+
+	var name = 'cc';
+	var count = 'TheServerSideCOM-1';
+	
+	document.cookie = name+"="+count+ ";" + expires +"; path=/";
+
+
+</script>
+
+</body>
+
+<!-- 
+Region/Component Load time
+===============
+TTBC-TMP-Head=2
+TTBC-TMP-LoginBand=1
+TTBC-TMP-Header=1
+TTBC-TMP-ContentHeader=2
+TTBC-TMP-SectionTitleFeature=1
+DSM:ITEMRegion:EOC_CI=12
+TTJC-TMP-Comments=11
+TMTBC-TMP-RightCol=2
+TTBC-TMP-ContentFooter=1
+End-Of-Page=1
+
+TOTAL PAGE LOAD TIME=34
+ --> 
+<!-- Request Serving Server : vappma10.techtarget.com-->
+
+
+</html>

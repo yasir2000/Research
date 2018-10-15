@@ -1,0 +1,516 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: EmULu+8G1N8wZ/tJu4Yh2UtqgYs=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: c5/648AiCJYuQCOJc6KctieGeq4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ConfigurationInformationComposite.class
+SHA1-Digest: hjVvaDxC6d5PkUKp+GPUu6RzUaU=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteEntryProxyInformationComposite$DescriptionFocusListener.class
+SHA1-Digest: /pRqhx/4kMWI+kfc4f7GStD50D0=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ NewLocalPaletteWizard.class
+SHA1-Digest: +z5Tl4xw4SaV00qRgPKPGTioQOo=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$11.class
+SHA1-Digest: AEHjvd/7F6e2uWQIlfOc/9Jh99w=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$15.class
+SHA1-Digest: rIWbqH/Des9U4wf3wqZWq3uyHfE=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$1.class
+SHA1-Digest: WgJtGmUKBKXq09amOJP/cdj0xnY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$PaletteLabelProvider.class
+SHA1-Digest: Y0GpB85giyKjyklkwul6MSVDzc4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$5.class
+SHA1-Digest: 4L2qM2CqauN49XqeN9IQzUa2SKQ=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$4.class
+SHA1-Digest: QQgORm3U86BygD4KvR3v/vJ+iwg=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$9.class
+SHA1-Digest: EE4nnaXHFE4HTaaX8SiaV2D5k/w=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog.class
+SHA1-Digest: 8YJ71N13ctfnXLz4iUrnd8X8/Lc=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage.class
+SHA1-Digest: LIArpV7DJKzKmJ+gpRLUsrELtUE=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ConfigurationInformationComposite$DescriptionFocusListener.class
+SHA1-Digest: 9jTE6ErVMuTe8WiNPXDYePaQT1w=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$11.class
+SHA1-Digest: XzY81MYxRHlimo40ZQU5dw+qhlY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$PaletteContentProvider$1.class
+SHA1-Digest: cTulJWz7Jz5ALN494RDv6U/pFm4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$1.class
+SHA1-Digest: 1dZgyAGFeFzlV9qdp7lx4H8hTCk=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ConfigurationInformationComposite$IconFocusListener.class
+SHA1-Digest: ImQh+6WtOE8T8AQEeOO43M12eFU=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteEntryProxyInformationComposite$IconFocusListener.class
+SHA1-Digest: bu50jLNKgrTTMWaHNsmgQUlttC8=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$15.class
+SHA1-Digest: GxdecdHh2nuzQjU4G0DwrhuCTf0=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$5.class
+SHA1-Digest: dcEUgKgAm80riseI+GNPHpdMT5E=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleIconExplorerDialog$2.class
+SHA1-Digest: 3DDqQjpeZIhk5MGlAGJibcLtSjw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$ToolBarItemValidator.class
+SHA1-Digest: gLza3Z8DCpB27kzWHL6BuGqBgog=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$3.class
+SHA1-Digest: 5KUcaE40G7IBq2snkMx1pyGoWlk=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$PaletteLabelProvider.class
+SHA1-Digest: 6FqvbC/9OrHNfHy029/UxEwTL78=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteContainerProxy.class
+SHA1-Digest: zOqG9coMGloJHB0ePPvQDzsVlPo=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$AvailablePalettesCheckStateProvider.cl
+ ass
+SHA1-Digest: Fh+OW1ufsV2JF29Y5PcS0gdSjMk=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$7.class
+SHA1-Digest: +Jcet3Qs/t5OaUViOh/aTD3ejfc=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleExplorerDialog$PluginSearchComparator.class
+SHA1-Digest: y0Pwj2o2t2bWC2X1eZCylYxBZOY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$LabelViewerComparator.class
+SHA1-Digest: pxo9q4acAWR12mu53tpPrbG1YdA=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$ToolFilter.class
+SHA1-Digest: R9qWK4/gCfn3E4IXMbf1lZOiL6E=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteEntryProxyInformationComposite.class
+SHA1-Digest: 5ukenBPk4XDac4W5k75rD47YNnA=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ProfileComboSelectionListener.class
+SHA1-Digest: 8l/nczWZk78RrB8arz+Z4FGJh5s=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/Message
+ s.class
+SHA1-Digest: PQlVVnJe5pYFqHxVQPvyNqhzPTY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$UMLToolsTreeContentProvider.class
+SHA1-Digest: BM1YYCNuDrWmzTh8s0iucDVBnCQ=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ UpdateLocalPaletteWizard.class
+SHA1-Digest: B+V3mBwoNgE91igLlDHmwJmksdQ=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$ProfileToolsMetaclassStereotypeTreeContentPro
+ vider.class
+SHA1-Digest: sZ4c4E0Hxi0XhWlT8MkrnD2lPLw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ConfigurationInformationComposite$1.class
+SHA1-Digest: GJwiFIPSe8VGvJUsupkEyqWFSI8=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteEntryProxyInformationComposite$1.class
+SHA1-Digest: HUnV4a2AWp2wQv37M6+ZN6AeCt0=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ExtendedPaletteLabelProvider.class
+SHA1-Digest: shujWV6UPAvwHpyvhH/GLtCTIIY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ToolBarItemValidator.class
+SHA1-Digest: ua02SR+iIkqwyKLVU3qPTnqa6ls=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$12.class
+SHA1-Digest: wRd+v525+yuU5UF5WqUR7EdCH5g=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$16.class
+SHA1-Digest: e4PpITb43Gq/N/lTN3RFRfHYn5Y=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$2.class
+SHA1-Digest: /vxGu/JeSVK/8mVZm+yGs0vF7sw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$DrawerFilter.class
+SHA1-Digest: qAjCqsK/deYmQVXOUR53429clb4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteLocalStackProxy.class
+SHA1-Digest: bq5DcU45IGdxABG6l/FAXWM7Fx4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$1.class
+SHA1-Digest: Y0zPfaPQnMWdfracLX7V8UnZc74=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ToolFilter.class
+SHA1-Digest: D6Arpdo2Dbojl9y9ebZYXUjZdNg=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$6.class
+SHA1-Digest: jyhoKyxUMB+w45hu+oYhTwHZrSw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteLocalSeparatorProxy.class
+SHA1-Digest: F5P4wUJYTkBcZb68yQ2fLS+dOTk=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$5.class
+SHA1-Digest: igsrK3FzrKI4x/84s2J9EDUBbT8=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$PaletteLabelProvider.class
+SHA1-Digest: MPBO/NA3q3TFYrAjAeiiO3TEfRE=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleIconExplorerDialog$ImageProxy.class
+SHA1-Digest: BV2jnkT9CEhwHil3ib45jhM6wEo=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ProfileToolsMetaclassStereotypeTreeContent
+ Provider.class
+SHA1-Digest: ngx5CbAkmIRcSmxb3E0wZpndG7A=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteInformationPage$1.class
+SHA1-Digest: cRNtbA7FmPL8GqswrXTsqG6zGMg=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleIconExplorerDialog.class
+SHA1-Digest: 2yuOyzsQ61CozSCFkyIeX/5DA9w=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$4$1.class
+SHA1-Digest: KRV+SmAq+i+dwV6FpbXsa/vhnog=
+
+Name: about.html
+SHA1-Digest: /vga0Nzd1yu4aqFpG4OBmPWooUw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$12.class
+SHA1-Digest: 1wBxbXf2lsMrYLQMtXhz+hqPYBw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$ProfileToolsStereotypeMetaclassTreeContentPro
+ vider.class
+SHA1-Digest: IxGzLL7zHNmCXFDW7PulsJVCi2w=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$2.class
+SHA1-Digest: EXQdFp9oWBwGFOVrvZNYhTwSpGw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$16.class
+SHA1-Digest: xgWTkfowzL5ifrT0PLYbuhpZIK0=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ UpdateExtendedPaletteWizard.class
+SHA1-Digest: xEUF316oBBKm2+8BZy6ai6lEf4k=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$6.class
+SHA1-Digest: xEbaTYKx4kZrMkdubtL9d/ixWrc=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleIconExplorerDialog$3.class
+SHA1-Digest: PH74eWUBJkBPzDkYIA1aeovP4l4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$DrawerFilter.class
+SHA1-Digest: 8rV/HB/0BQwwIVosg9Ul7s0bCIs=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$4.class
+SHA1-Digest: 5qozrfv/UhgmDvK5QjOoapNPS/8=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$EditElementToolBarItemValidator.class
+SHA1-Digest: X5MJhiEQSvBa5fG4ePnqr1NARnQ=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$8.class
+SHA1-Digest: 7qTBSAGFjiE4Q/Xy7+bluuGbiYA=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$AspectActionLabelProvider.class
+SHA1-Digest: wt+9QTDeKBXjb7KrLIh4F6gEP34=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$AspectActionContentProvider.class
+SHA1-Digest: 9nRzaJvB3Oob3CL7Mv9ntFAG/yw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ProfileToolsStereotypeMetaclassTreeContent
+ Provider.class
+SHA1-Digest: lxsG/apeGonehhlLeOpc2pFzDFI=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage.class
+SHA1-Digest: 66vDZF1IVcVhdF4pFq67GHU/Otk=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ConfigurationSelectedValidator.class
+SHA1-Digest: PqgDZk7P9VvQ/MxGp+wQtr+RjbM=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$13.class
+SHA1-Digest: 6H2XK2tuzCkq0y0uMvlyIRjTNcM=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$17.class
+SHA1-Digest: trSPixlysoYIscrV10UHjrZd6hQ=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ DrawerInformationPage.class
+SHA1-Digest: zpGtNgX86WCFq3+GrfltK9NTK64=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteInformationPage.class
+SHA1-Digest: muvhcQiexetcQaekX5mBPHRVB5Y=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$3.class
+SHA1-Digest: rrHQN+9sHm8dz77AuHxyp4Eeqf8=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteLocalDrawerProxy.class
+SHA1-Digest: wsd4tm92xdiIlFdXSLgIBLwIHrY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$2.class
+SHA1-Digest: 2+n8/LhV7unxf8P0+SeVb6UDQrQ=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$7.class
+SHA1-Digest: v8aPd7qbgn0pFRjgWfpMOpxpkOs=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$6.class
+SHA1-Digest: a4wOLxqxhPRZoaKUDuT9P8nLkMU=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$LabelViewerComparator.class
+SHA1-Digest: xYOv3aZ8sEeExtvIliKA6Bzy2bw=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SAqY+5ITAL0mkdYeijlSRhyIaZk=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteEntryProxy.class
+SHA1-Digest: nqqw0m5rLISVXsPVf8h2+uUGZQ8=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ DrawerInformationPage$1.class
+SHA1-Digest: +T7qJ3npT4UODxHDLjFGAuBS0nw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ NewDrawerWizard.class
+SHA1-Digest: dxxIAEX+ubLzZUc0yjYBMdG9s5E=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$UMLToolsTreeContentProvider.class
+SHA1-Digest: dIBWoRFfHO+NC8EP1Z+t7NOfGCc=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ UpdateLocalDrawerWizard.class
+SHA1-Digest: JBoxhDGNE5hXOhuZQ0gxjLPLbfY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$13.class
+SHA1-Digest: abCswI0lV5uAB824Qf6mozGMs44=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$3.class
+SHA1-Digest: y2ewdXIwGdPI+6uUOxhdcHxGYcM=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$17.class
+SHA1-Digest: vXW6I92I1qHjR7/o4SrYnlD842w=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$1.class
+SHA1-Digest: m0WUOumdUzBtn1cn6+BZbQevoTY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$PaletteProxyLabelProvider.class
+SHA1-Digest: Aki3AYhjyknWQWzEHhgGulAXM24=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$5.class
+SHA1-Digest: tZpBi3q0ByOFfUWBrUF2YpZ6tdY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$9.class
+SHA1-Digest: wR/8PbW5NpfvI8lILpAXKKvNdnk=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/proxies
+ /XMLDefinitionPaletteProxyFactory.class
+SHA1-Digest: 9rr+ffXSx0aXiF27OnLK/daRUUw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/message
+ s.properties
+SHA1-Digest: RHqUQYjsSM1Zcce9oI23TDdjC2Q=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteInformationPage$1.class
+SHA1-Digest: K3ulglbd+4/Sa47Kwa4xFRn62EI=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleIconExplorerDialog$BundleIconLabelProvider.class
+SHA1-Digest: +fmZAI0uwvxKHLNbFsufldedD+Y=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleExplorerDialog.class
+SHA1-Digest: IhKYCFlFLI2INaGeQ25a0hOWReU=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite.class
+SHA1-Digest: 9w1iyschj8ywn/CReSHJt+aupR4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$10.class
+SHA1-Digest: JjSQQfYSfqnjdJAwhcBu5rtyTQ0=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$PaletteEntryProxySelectedValidator.class
+SHA1-Digest: jorzDymCsvshUD37Ik9c8uiM1nM=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$14.class
+SHA1-Digest: JwEF910g0ZRMG2O4C9sA3P/2IFA=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$ExtendedPaletteContentProvider.class
+SHA1-Digest: 14PA942f6cW6BEaoq3vZSiK+XL4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteAspectToolEntryProxy.class
+SHA1-Digest: Dgo67uKZJuJ1Jt1QizgmqB8NigM=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$4.class
+SHA1-Digest: x1pOPFPaIcPyEXtrOuXg1K4Rp58=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ConfigurationInformationComposite$NameFocusListener.class
+SHA1-Digest: Q46y0QXSOgFp/BBXpa91K+ZvBxI=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$ProfileComboSelectionListener.class
+SHA1-Digest: xaDkqtlM0iSMJgIsVD8QdnZ0mhI=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ AspectActionsInformationComposite$3.class
+SHA1-Digest: 7jsrl/ui8ueZ9lHzd4dbF5Izpig=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PaletteEntryProxyInformationComposite$NameFocusListener.class
+SHA1-Digest: 0KlJGP0BnO2I6mLMM8gBafbW3dU=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$DrawerConfigurationSelectedValidator.class
+SHA1-Digest: 8KAhW+0yZPjvIT+n5jTpw4TifZY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$8.class
+SHA1-Digest: hVYWrFbgt64baNpoe1DJK4U5fA4=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$PaletteContentProvider.class
+SHA1-Digest: tfr9pAC6MZvxtEE7UHIrEY28eMM=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleExplorerDialog$PluginSearchItemsFilter.class
+SHA1-Digest: jNTQdWGrOo8cVIdE2XHjDimnnHo=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ DrawerInformationPage$2.class
+SHA1-Digest: PciYymeK3Ko4iOfbMsT5b53AiWg=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$PalettesTableContentProvider.class
+SHA1-Digest: evQNXpOwRFqDxxdpY1ct3Da8POg=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$10.class
+SHA1-Digest: jiPT5cNHZLWg7PJOUlbvS1v9QMU=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$EntryType.class
+SHA1-Digest: Iau0qUUlU1RiukvJUgOBrJker2s=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$14.class
+SHA1-Digest: oYP9hrPnZu/bjLPey/yrfk52cKw=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ PapyrusPaletteCustomizerDialog$4.class
+SHA1-Digest: /vk2mckVUNi80AZOsIqgU4pMo9o=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ BundleIconExplorerDialog$1.class
+SHA1-Digest: U59EcK7YfTHgVEaG92H8Jlllufc=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteContentPage$18.class
+SHA1-Digest: 7SgLR2og4y5gAZtSzjEMvXRosCY=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$2.class
+SHA1-Digest: gNiPrSYtkgnNkUcBfcuJJfgVt2I=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ LocalPaletteContentPage$6.class
+SHA1-Digest: RcwvqV04/S7ymWg6R+0bTSARyRc=
+
+Name: org/eclipse/papyrus/diagram/common/palette/customization/dialog/
+ ExtendedPaletteInformationPage.class
+SHA1-Digest: 5M2QlVnjrFXPnXfJgJpxcgFXWz4=
+

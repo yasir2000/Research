@@ -1,0 +1,911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" dir="ltr" class="client-nojs" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Formal grammar - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.18wmf1" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Formal_grammar&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Formal_grammar&amp;action=edit" />
+<link rel="apple-touch-icon" href="//en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" type="text/css" media="all" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" type="text/css" media="all" />
+<style type="text/css" media="all">a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: enwiki:resourceloader:filter:minify-css:4:c88e2bcd56513749bec09a7e29cb3ffa */</style>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "Formal_grammar", "wgTitle": "Formal grammar", "wgCurRevisionId": 473266380, "wgArticleId": 18020716, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": ["Formal languages"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgSearchNamespaces": [0], "wgFlaggedRevsParams": {"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}}, "wgStableRevisionId": null, "wgVectorEnabledModules": {"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "sectioneditlinks": false, "simplesearch": true, "experiments": true}, "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "hidesig": true, "templateEditor": false, "templates": false, "preview": false, "previewDialog": false, "publish": false, "toc": false}, "wgTrackingToken": "f3b8a1982045ab2e0d3e93b968337f5c", "wikilove-recipient": "", "wikilove-edittoken": "+\\", "wikilove-anon": 0, "mbEmailEnabled": true, "mbUserEmail": false, "mbIsEmailConfirmationPending": false, "Geo": {"city": "", "country": ""}, "wgNoticeProject": "wikipedia"});
+}
+</script><script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.18/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Formal_grammar action-view skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Formal grammar</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div lang="en" dir="ltr" class="mw-content-ltr"><p>A <b>formal grammar</b> (sometimes simply called a <b>grammar</b>) is a set of <a href="/wiki/Formation_rule" title="Formation rule">formation rules</a> for <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a> in a <a href="/wiki/Formal_language" title="Formal language">formal language</a>. The rules describe how to form strings from the language's <a href="/wiki/Alphabet_(computer_science)" title="Alphabet (computer science)">alphabet</a> that are valid according to the language's <a href="/wiki/Syntax_(programming_languages)" title="Syntax (programming languages)">syntax</a>. A grammar does not describe the <a href="/wiki/Semantics" title="Semantics">meaning of the strings</a> or what can be done with them in whatever context—only their form.</p>
+<p><a href="/wiki/Formal_language_theory" title="Formal language theory" class="mw-redirect">Formal language theory</a>, the discipline which studies formal grammars and languages, is a branch of applied <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>. Its applications are found in <a href="/wiki/Theoretical_computer_science" title="Theoretical computer science">theoretical computer science</a>, <a href="/wiki/Theoretical_linguistics" title="Theoretical linguistics">theoretical linguistics</a>, <a href="/wiki/Formal_semantics_(logic)" title="Formal semantics (logic)">formal semantics</a>, <a href="/wiki/Mathematical_logic" title="Mathematical logic">mathematical logic</a>, and other areas.</p>
+<p>A formal grammar is a set of rules for rewriting strings, along with a "start symbol" from which rewriting must start. Therefore, a grammar is usually thought of as a language generator. However, it can also sometimes be used as the basis for a "<a href="/wiki/Recognizer" title="Recognizer" class="mw-redirect">recognizer</a>"—a function in computing that determines whether a given string belongs to the language or is grammatically incorrect. To describe such recognizers, formal language theory uses separate formalisms, known as <a href="/wiki/Automata_theory" title="Automata theory">automata theory</a>. One of the interesting results of automata theory is that it is not possible to design a recognizer for certain formal languages.</p>
+<p><a href="/wiki/Parsing" title="Parsing">Parsing</a> is the process of recognizing an utterance (a string in natural languages) by breaking it down to a set of symbols and analyzing each one against the grammar of the language. Most languages have the meanings of their utterances structured according to their syntax—a practice known as <a href="/wiki/Compositional_semantics" title="Compositional semantics" class="mw-redirect">compositional semantics</a>. As a result, the first step to describing the meaning of an utterance in language is to break it down part by part and look at its analyzed form (known as its <a href="/wiki/Parse_tree" title="Parse tree">parse tree</a> in computer science, and as its <a href="/wiki/Deep_structure" title="Deep structure">deep structure</a> in <a href="/wiki/Generative_grammar" title="Generative grammar">generative grammar</a>).</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introductory_example"><span class="tocnumber">1</span> <span class="toctext">Introductory example</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Formal_definition"><span class="tocnumber">2</span> <span class="toctext">Formal definition</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#The_syntax_of_grammars"><span class="tocnumber">2.1</span> <span class="toctext">The syntax of grammars</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#The_semantics_of_grammars"><span class="tocnumber">2.2</span> <span class="toctext">The semantics of grammars</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Example"><span class="tocnumber">2.3</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#The_Chomsky_hierarchy"><span class="tocnumber">3</span> <span class="toctext">The Chomsky hierarchy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Context-free_grammars"><span class="tocnumber">3.1</span> <span class="toctext">Context-free grammars</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Regular_grammars"><span class="tocnumber">3.2</span> <span class="toctext">Regular grammars</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Other_forms_of_generative_grammars"><span class="tocnumber">3.3</span> <span class="toctext">Other forms of generative grammars</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Analytic_grammars"><span class="tocnumber">4</span> <span class="toctext">Analytic grammars</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=1" title="Edit section: Introductory example">edit</a>]</span> <span class="mw-headline" id="Introductory_example">Introductory example</span></h2>
+<p>A grammar mainly consists of a set of rules for transforming strings. (If it <i>only</i> consisted of these rules, it would be a <a href="/wiki/Semi-Thue_system" title="Semi-Thue system">semi-Thue system</a>.) To generate a string in the language, one begins with a string consisting of only a single <i>start symbol</i>. The <i>production rules</i> are then applied in any order, until a string that contains neither the start symbol nor designated <i>nonterminal symbols</i> is produced. A production rule is applied to a string by replacing one occurrence of its left-hand side in the string by its right-hand side. The language formed by the grammar consists of all distinct strings that can be generated in this manner. Any particular sequence of production rules on the start symbol yields a distinct string in the language. If there are multiple ways of generating the same single string, the grammar is said to be <a href="/wiki/Ambiguous_grammar" title="Ambiguous grammar">ambiguous</a>.</p>
+<p>For example, assume the alphabet consists of <i>a</i> and <i>b</i>, the start symbol is <i>S</i>, and we have the following production rules:</p>
+<dl>
+<dd>1. <img class="tex" alt="S \rightarrow aSb" src="//upload.wikimedia.org/wikipedia/en/math/c/5/f/c5fd10fab66e7fe4c235d5436f9b81e1.png" /></dd>
+<dd>2. <img class="tex" alt="S \rightarrow ba" src="//upload.wikimedia.org/wikipedia/en/math/5/3/1/53143c5e5792f140ab16895f63baa16a.png" /></dd>
+</dl>
+<p>then we start with <i>S</i>, and can choose a rule to apply to it. If we choose rule 1, we obtain the string <i>aSb</i>. If we then choose rule 1 again, we replace <i>S</i> with <i>aSb</i> and obtain the string <i>aaSbb</i>. If we now choose rule 2, we replace <i>S</i> with <i>ba</i> and obtain the string <i>aababb</i>, and are done. We can write this series of choices more briefly, using symbols: <img class="tex" alt="S \Rightarrow aSb \Rightarrow aaSbb \Rightarrow aababb" src="//upload.wikimedia.org/wikipedia/en/math/a/b/6/ab6ac8d7fdaae1ea12f3a7797d38f4c5.png" />. The language of the grammar is then the infinite set <img class="tex" alt="\{a^nbab^n | n \ge 0 \} = \{ba, abab, aababb, aaababbb, \dotsc \}" src="//upload.wikimedia.org/wikipedia/en/math/8/2/4/824e99884963b182f3f51644082e728c.png" />, where <span class="texhtml" dir="ltr"><i>a</i><sup><i>k</i></sup></span> is <i>a</i> repeated <i>k</i> times (and <i>n</i> in particular represents the number of times production rule 1 has been applied).</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=2" title="Edit section: Formal definition">edit</a>]</span> <span class="mw-headline" id="Formal_definition">Formal definition</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=3" title="Edit section: The syntax of grammars">edit</a>]</span> <span class="mw-headline" id="The_syntax_of_grammars">The syntax of grammars</span></h3>
+<p>In the classic formalization of generative grammars first proposed by <a href="/wiki/Noam_Chomsky" title="Noam Chomsky">Noam Chomsky</a> in the 1950s,<sup id="cite_ref-Chomsky1956_0-0" class="reference"><a href="#cite_note-Chomsky1956-0"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-Chomsky1957_1-0" class="reference"><a href="#cite_note-Chomsky1957-1"><span>[</span>2<span>]</span></a></sup> a grammar <i>G</i> consists of the following components:</p>
+<ul>
+<li>A finite set <i>N</i> of <i><a href="/wiki/Nonterminal_symbol" title="Nonterminal symbol" class="mw-redirect">nonterminal symbols</a></i>, none of which appear in strings formed from <i>G</i>.</li>
+<li>A finite set <span class="texhtml" dir="ltr">Σ</span> of <i><a href="/wiki/Terminal_symbol" title="Terminal symbol" class="mw-redirect">terminal symbols</a></i> that is <a href="/wiki/Disjoint_sets" title="Disjoint sets">disjoint</a> from <i>N</i>.</li>
+<li>A finite set <i>P</i> of <i>production rules</i>, each rule of the form</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="(\Sigma \cup N)^{*} N (\Sigma \cup N)^{*} \rightarrow (\Sigma \cup N)^{*} " src="//upload.wikimedia.org/wikipedia/en/math/f/6/f/f6fa6c714598b85b3ac17450b9f1ac7f.png" /></dd>
+</dl>
+</dd>
+<dd>where <span class="texhtml" dir="ltr">*</span> is the <a href="/wiki/Kleene_star" title="Kleene star">Kleene star</a> operator and <img class="tex" alt="\cup" src="//upload.wikimedia.org/wikipedia/en/math/4/3/2/432c1df69e11aba7c5c5070e7578609f.png" /> denotes <a href="/wiki/Union_(set_theory)" title="Union (set theory)">set union</a>. That is, each production rule maps from one string of symbols to another, where the first string (the "head") contains an arbitrary number of symbols provided at least one of them is a nonterminal. In the case that the second string (the "body") consists solely of the <a href="/wiki/Empty_string" title="Empty string">empty string</a> – i.e., that it contains no symbols at all – it may be denoted with a special notation (often <span class="texhtml" dir="ltr">Λ</span>, <i>e</i> or <img class="tex" alt="\epsilon" src="//upload.wikimedia.org/wikipedia/en/math/c/5/0/c50b9e82e318d4c163e4b1b060f7daf5.png" />) in order to avoid confusion.</dd>
+</dl>
+<ul>
+<li>A distinguished symbol <img class="tex" alt="S \in N" src="//upload.wikimedia.org/wikipedia/en/math/7/5/b/75be1f8744d91d32e1e8f88a45fb6e08.png" /> that is the <i>start symbol</i>.</li>
+</ul>
+<p>A grammar is formally defined as the <a href="/wiki/Tuple_(mathematics)" title="Tuple (mathematics)" class="mw-redirect">tuple</a> <span class="texhtml" dir="ltr">(<i>N</i>,Σ,<i>P</i>,<i>S</i>)</span>. Such a formal grammar is often called a <a href="/wiki/Rewriting_system" title="Rewriting system" class="mw-redirect">rewriting system</a> or a <a href="/wiki/Phrase_structure_grammar" title="Phrase structure grammar">phrase structure grammar</a> in the literature.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=4" title="Edit section: The semantics of grammars">edit</a>]</span> <span class="mw-headline" id="The_semantics_of_grammars">The semantics of grammars</span></h3>
+<p>The operation of a grammar can be defined in terms of relations on strings:</p>
+<ul>
+<li>Given a grammar <span class="texhtml" dir="ltr"><i>G</i> = (<i>N</i>,Σ,<i>P</i>,<i>S</i>)</span>, the binary relation <img class="tex" alt="\Rightarrow_G" src="//upload.wikimedia.org/wikipedia/en/math/3/8/6/386a966d03f0fd8ba97a4d449d3105f7.png" /> (pronounced as "G derives in one step") on strings in <img class="tex" alt="(\Sigma \cup N)^{*}" src="//upload.wikimedia.org/wikipedia/en/math/4/f/1/4f13bf02c7fdc255616f45da4d75f452.png" /> is defined by:</li>
+</ul>
+<p><img class="tex" alt="x \Rightarrow_G y \mbox{ iff } \exists u, v, p, q \in (\Sigma \cup N)^*: (x = upv) \wedge (p \rightarrow q \in P) \wedge (y = uqv)" src="//upload.wikimedia.org/wikipedia/en/math/7/b/8/7b8e5df15022d1dd684ec9518cb4b91b.png" /></p>
+<ul>
+<li>the relation <img class="tex" alt="{\Rightarrow_G}^*" src="//upload.wikimedia.org/wikipedia/en/math/3/d/7/3d798534ed22caff3094cf127c91948a.png" /> (pronounced as <i>G derives in zero or more steps</i>) is defined as the <a href="/wiki/Reflexive_transitive_closure" title="Reflexive transitive closure" class="mw-redirect">reflexive transitive closure</a> of <img class="tex" alt="\Rightarrow_G" src="//upload.wikimedia.org/wikipedia/en/math/3/8/6/386a966d03f0fd8ba97a4d449d3105f7.png" /></li>
+<li>a <span id="sentential-form"></span><i>sentential form</i> is a member of <img class="tex" alt="(\Sigma \cup N)^*" src="//upload.wikimedia.org/wikipedia/en/math/a/8/8/a88b85a21028be170594ce46cef02dcd.png" /> that can be derived in a finite number of steps from the start symbol <span class="texhtml" dir="ltr"><i>S</i></span>; that is, a sentential form is a member of <img class="tex" alt="\{ w \in (\Sigma \cup N)^* \mid S {\Rightarrow_G}^* w \}" src="//upload.wikimedia.org/wikipedia/en/math/6/9/0/690f0a2be97a1bfd44831e875a6254eb.png" />. A sentential form that contains no nonterminal symbols (i.e. is a member of <span class="texhtml" dir="ltr">Σ <sup>*</sup></span> ) is called a <i>sentence</i>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup></li>
+<li>the <i>language</i> of <span class="texhtml" dir="ltr"><i>G</i></span>, denoted as <img class="tex" alt="\boldsymbol{L}(G)" src="//upload.wikimedia.org/wikipedia/en/math/a/2/e/a2e56c1bd12b0ea90a5d9472eb23f43f.png" />, is defined as all those sentences that can be derived in a finite number of steps from the start symbol <span class="texhtml" dir="ltr"><i>S</i></span>; that is, the set <img class="tex" alt="\{ w \in \Sigma^* \mid S {\Rightarrow_G}^* w \}" src="//upload.wikimedia.org/wikipedia/en/math/6/3/d/63d71b0d9a9b4cc57eaeaad6f7157970.png" />.</li>
+</ul>
+<p>Note that the grammar <span class="texhtml" dir="ltr"><i>G</i> = (<i>N</i>,Σ,<i>P</i>,<i>S</i>)</span> is effectively the <a href="/wiki/Semi-Thue_system" title="Semi-Thue system">semi-Thue system</a> <img class="tex" alt="(N \cup \Sigma, P)" src="//upload.wikimedia.org/wikipedia/en/math/3/7/9/379a7bc894fe2affd3ef6278bf72f524.png" />, rewriting strings in exactly the same way; the only difference is in that we distinguish specific <i>nonterminal</i> symbols which must be rewritten in rewrite rules, and are only interested in rewritings from the designated start symbol <span class="texhtml" dir="ltr"><i>S</i></span> to strings without nonterminal symbols.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<p><i>For these examples, formal languages are specified using <a href="/wiki/Set-builder_notation" title="Set-builder notation">set-builder notation</a>.</i></p>
+<p>Consider the grammar <span class="texhtml" dir="ltr"><i>G</i></span> where <img class="tex" alt="N = \left \{S, B\right \}" src="//upload.wikimedia.org/wikipedia/en/math/2/b/6/2b631b62f7e6c73e2da99a9dfcad1c5d.png" />, <img class="tex" alt="\Sigma = \left \{a, b, c\right \}" src="//upload.wikimedia.org/wikipedia/en/math/3/2/0/32063895b55e6c8bc795d092ff9bd434.png" />, <span class="texhtml" dir="ltr"><i>S</i></span> is the start symbol, and <span class="texhtml" dir="ltr"><i>P</i></span> consists of the following production rules:</p>
+<dl>
+<dd>1. <img class="tex" alt="S \rightarrow aBSc" src="//upload.wikimedia.org/wikipedia/en/math/4/7/9/479977fa1099d74247f85f1b51ff421a.png" /></dd>
+<dd>2. <img class="tex" alt="S \rightarrow abc" src="//upload.wikimedia.org/wikipedia/en/math/f/1/3/f132a03f66fcbf46fd2301e95df494d1.png" /></dd>
+<dd>3. <img class="tex" alt="Ba \rightarrow aB" src="//upload.wikimedia.org/wikipedia/en/math/1/7/0/170a10c424505886ba0fede9f675fc11.png" /></dd>
+<dd>4. <img class="tex" alt="Bb \rightarrow bb " src="//upload.wikimedia.org/wikipedia/en/math/6/8/1/6812fb9ceb83a1201fa03af71a59ba0e.png" /></dd>
+</dl>
+<p>This grammar defines the language <img class="tex" alt="L(G) = \left \{ a^{n}b^{n}c^{n} | n \ge 1 \right \}" src="//upload.wikimedia.org/wikipedia/en/math/1/1/6/116c21806289959f49253c0031c9fa48.png" /> where <span class="texhtml" dir="ltr"><i>a</i><sup><i>n</i></sup></span> denotes a string of <i>n</i> consecutive <span class="texhtml" dir="ltr"><i>a</i></span>'s. Thus, the language is the set of strings that consist of 1 or more <span class="texhtml" dir="ltr"><i>a</i></span>'s, followed by the same number of <span class="texhtml" dir="ltr"><i>b</i></span>'s, followed by the same number of <span class="texhtml" dir="ltr"><i>c</i></span>'s.</p>
+<p>Some examples of the derivation of strings in <span class="texhtml" dir="ltr"><i>L</i>(<i>G</i>)</span> are:</p>
+<ul>
+<li><img class="tex" alt="\boldsymbol{S} \Rightarrow_2 \boldsymbol{abc}" src="//upload.wikimedia.org/wikipedia/en/math/a/1/9/a1918a6df3063f522ff691448b92bc1d.png" /></li>
+<li><img class="tex" alt="\boldsymbol{S} \Rightarrow_1 \boldsymbol{aBSc} \Rightarrow_2 aB\boldsymbol{abc}c \Rightarrow_3 a\boldsymbol{aB}bcc \Rightarrow_4 aa\boldsymbol{bb}cc" src="//upload.wikimedia.org/wikipedia/en/math/c/1/a/c1ad00406f09e946fce264017fe6f042.png" /></li>
+<li><img class="tex" alt="\boldsymbol{S} \Rightarrow_1 \boldsymbol{aBSc} \Rightarrow_1 aB\boldsymbol{aBSc}c \Rightarrow_2 aBaB\boldsymbol{abc}cc \Rightarrow_3 a\boldsymbol{aB}Babccc \Rightarrow_3 aaB\boldsymbol{aB}bccc " src="//upload.wikimedia.org/wikipedia/en/math/7/6/9/769d45701ec9b093bdbea269780bcfbb.png" /><img class="tex" alt=" \Rightarrow_3 aa\boldsymbol{aB}Bbccc \Rightarrow_4 aaaB\boldsymbol{bb}ccc \Rightarrow_4 aaa\boldsymbol{bb}bccc" src="//upload.wikimedia.org/wikipedia/en/math/1/4/2/142ab8d9d70c2138ce92669a4b56b1d7.png" /></li>
+</ul>
+<dl>
+<dd>(Note on notation: <img class="tex" alt="P \Rightarrow_i Q" src="//upload.wikimedia.org/wikipedia/en/math/9/0/1/90123caa54fb6e0c21948f677517b49e.png" /> reads "String <i>P</i> generates string <i>Q</i> by means of production <i>i</i>", and the generated part is each time indicated in bold type.)</dd>
+</dl>
+<h2><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=6" title="Edit section: The Chomsky hierarchy">edit</a>]</span> <span class="mw-headline" id="The_Chomsky_hierarchy">The Chomsky hierarchy</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/Chomsky_hierarchy" title="Chomsky hierarchy">Chomsky hierarchy</a></div>
+<p>When <a href="/wiki/Noam_Chomsky" title="Noam Chomsky">Noam Chomsky</a> first formalized generative grammars in 1956,<sup id="cite_ref-Chomsky1956_0-1" class="reference"><a href="#cite_note-Chomsky1956-0"><span>[</span>1<span>]</span></a></sup> he classified them into types now known as the <a href="/wiki/Chomsky_hierarchy" title="Chomsky hierarchy">Chomsky hierarchy</a>. The difference between these types is that they have increasingly strict production rules and can express fewer formal languages. Two important types are <i><a href="/wiki/Context-free_grammar" title="Context-free grammar">context-free grammars</a></i> (Type 2) and <i><a href="/wiki/Regular_grammar" title="Regular grammar">regular grammars</a></i> (Type 3). The languages that can be described with such a grammar are called <i><a href="/wiki/Context-free_language" title="Context-free language">context-free languages</a></i> and <i><a href="/wiki/Regular_language" title="Regular language">regular languages</a></i>, respectively. Although much less powerful than <a href="/wiki/Unrestricted_grammar" title="Unrestricted grammar">unrestricted grammars</a> (Type 0), which can in fact express any language that can be accepted by a <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a>, these two restricted types of grammars are most often used because <a href="/wiki/Parsing" title="Parsing">parsers</a> for them can be efficiently implemented.<sup id="cite_ref-Grune.26Jacobs1990_5-0" class="reference"><a href="#cite_note-Grune.26Jacobs1990-5"><span>[</span>6<span>]</span></a></sup> For example, all regular languages can be recognized by a <a href="/wiki/Finite_state_machine" title="Finite state machine" class="mw-redirect">finite state machine</a>, and for useful subsets of context-free grammars there are well-known algorithms to generate efficient <a href="/wiki/LL_parser" title="LL parser">LL parsers</a> and <a href="/wiki/LR_parser" title="LR parser">LR parsers</a> to recognize the corresponding languages those grammars generate.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=7" title="Edit section: Context-free grammars">edit</a>]</span> <span class="mw-headline" id="Context-free_grammars">Context-free grammars</span></h3>
+<p>A <i><a href="/wiki/Context-free_grammar" title="Context-free grammar">context-free grammar</a></i> is a grammar in which the left-hand side of each production rule consists of only a single nonterminal symbol. This restriction is non-trivial; not all languages can be generated by context-free grammars. Those that can are called <i>context-free languages</i>.</p>
+<p>The language defined above is not a context-free language, and this can be strictly proven using the <a href="/wiki/Pumping_lemma_for_context-free_languages" title="Pumping lemma for context-free languages">pumping lemma for context-free languages</a>, but for example the language <img class="tex" alt="\left \{ a^{n}b^{n} | n \ge 1 \right \}" src="//upload.wikimedia.org/wikipedia/en/math/1/7/3/173cc15b4b438cdba9fa589427dab81e.png" /> (at least 1 <span class="texhtml" dir="ltr"><i>a</i></span> followed by the same number of <span class="texhtml" dir="ltr"><i>b</i></span>'s) is context-free, as it can be defined by the grammar <span class="texhtml" dir="ltr"><i>G</i><sub>2</sub></span> with <img class="tex" alt="N=\left \{S\right \}" src="//upload.wikimedia.org/wikipedia/en/math/f/5/f/f5f7d755a902e5c60a27eac02c91ae86.png" />, <img class="tex" alt="\Sigma=\left \{a,b\right \}" src="//upload.wikimedia.org/wikipedia/en/math/f/5/4/f542641f010013ad0f863c8dabbba46e.png" />, <span class="texhtml" dir="ltr"><i>S</i></span> the start symbol, and the following production rules:</p>
+<dl>
+<dd>1. <img class="tex" alt="S \rightarrow aSb" src="//upload.wikimedia.org/wikipedia/en/math/c/5/f/c5fd10fab66e7fe4c235d5436f9b81e1.png" /></dd>
+<dd>2. <img class="tex" alt="S \rightarrow ab" src="//upload.wikimedia.org/wikipedia/en/math/c/8/2/c823900ed00fa3c4d9a49442b54baea6.png" /></dd>
+</dl>
+<p>A context-free language can be recognized in <span class="texhtml" dir="ltr"><i>O</i>(<i>n</i><sup>3</sup>)</span> time (<i>see</i> <a href="/wiki/Big_O_notation" title="Big O notation">Big O notation</a>) by an algorithm such as <a href="/wiki/Earley%27s_algorithm" title="Earley's algorithm" class="mw-redirect">Earley's algorithm</a>. That is, for every context-free language, a machine can be built that takes a string as input and determines in <span class="texhtml" dir="ltr"><i>O</i>(<i>n</i><sup>3</sup>)</span> time whether the string is a member of the language, where <span class="texhtml" dir="ltr"><i>n</i></span> is the length of the string.<sup id="cite_ref-Earley1970_6-0" class="reference"><a href="#cite_note-Earley1970-6"><span>[</span>7<span>]</span></a></sup> Further, some important subsets of the context-free languages can be recognized in linear time using other algorithms.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=8" title="Edit section: Regular grammars">edit</a>]</span> <span class="mw-headline" id="Regular_grammars">Regular grammars</span></h3>
+<p>In <a href="/wiki/Regular_grammar" title="Regular grammar">regular grammars</a>, the left hand side is again only a single nonterminal symbol, but now the right-hand side is also restricted. The right side may be the empty string, or a single terminal symbol, or a single terminal symbol followed by a nonterminal symbol, but nothing else. (Sometimes a broader definition is used: one can allow longer strings of terminals or single nonterminals without anything else, making languages <a href="/wiki/Syntactic_sugar" title="Syntactic sugar">easier to denote</a> while still defining the same class of languages.)</p>
+<p>The language defined above is not regular, but the language <img class="tex" alt="\left \{ a^{n}b^{m} \,| \, m,n \ge 1 \right \}" src="//upload.wikimedia.org/wikipedia/en/math/b/4/c/b4ca2868f6b858f7f28394678fcf5ec2.png" /> (at least 1 <span class="texhtml" dir="ltr"><i>a</i></span> followed by at least 1 <span class="texhtml" dir="ltr"><i>b</i></span>, where the numbers may be different) is, as it can be defined by the grammar <span class="texhtml" dir="ltr"><i>G</i><sub>3</sub></span> with <img class="tex" alt="N=\left \{S, A,B\right \}" src="//upload.wikimedia.org/wikipedia/en/math/6/2/e/62ef91f92db3b07605683a8a7018c103.png" />, <img class="tex" alt="\Sigma=\left \{a,b\right \}" src="//upload.wikimedia.org/wikipedia/en/math/f/5/4/f542641f010013ad0f863c8dabbba46e.png" />, <span class="texhtml" dir="ltr"><i>S</i></span> the start symbol, and the following production rules:</p>
+<dl>
+<dd>
+<ol>
+<li><img class="tex" alt="S \rightarrow aA" src="//upload.wikimedia.org/wikipedia/en/math/2/6/7/267e3e10bc9e1f3dc19fd2a8e502fdf5.png" /></li>
+<li><img class="tex" alt="A \rightarrow aA" src="//upload.wikimedia.org/wikipedia/en/math/5/6/e/56e5e8888abe83d0f4f731bde2611d72.png" /></li>
+<li><img class="tex" alt="A \rightarrow bB" src="//upload.wikimedia.org/wikipedia/en/math/0/a/d/0ad7d9e719089fa0b1ae8e629f670d4b.png" /></li>
+<li><img class="tex" alt="B \rightarrow bB" src="//upload.wikimedia.org/wikipedia/en/math/6/9/3/693698756012b482bbc850c9045486b0.png" /></li>
+<li><img class="tex" alt="B \rightarrow \epsilon" src="//upload.wikimedia.org/wikipedia/en/math/6/f/1/6f144830d809c7a805d97b8a30874192.png" /></li>
+</ol>
+</dd>
+</dl>
+<p>All languages generated by a regular grammar can be recognized in linear time by a <a href="/wiki/Finite_state_machine" title="Finite state machine" class="mw-redirect">finite state machine</a>. Although, in practice, regular grammars are commonly expressed using <a href="/wiki/Regular_expression" title="Regular expression">regular expressions</a>, some forms of regular expression used in practice do not strictly generate the regular languages and do not show linear recognitional performance due to those deviations.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=9" title="Edit section: Other forms of generative grammars">edit</a>]</span> <span class="mw-headline" id="Other_forms_of_generative_grammars">Other forms of generative grammars</span></h3>
+<p>Many extensions and variations on Chomsky's original hierarchy of formal grammars have been developed, both by linguists and by computer scientists, usually either in order to increase their expressive power or in order to make them easier to analyze or <a href="/wiki/Parsing" title="Parsing">parse</a>. Some forms of grammars developed include:</p>
+<ul>
+<li><a href="/wiki/Tree-adjoining_grammar" title="Tree-adjoining grammar">Tree-adjoining grammars</a> increase the expressiveness of conventional generative grammars by allowing rewrite rules to operate on <a href="/wiki/Parse_tree" title="Parse tree">parse trees</a> instead of just strings.<sup id="cite_ref-JoshiEtAl1975_7-0" class="reference"><a href="#cite_note-JoshiEtAl1975-7"><span>[</span>8<span>]</span></a></sup></li>
+<li><a href="/wiki/Affix_grammar" title="Affix grammar">Affix grammars</a><sup id="cite_ref-Koster1971_8-0" class="reference"><a href="#cite_note-Koster1971-8"><span>[</span>9<span>]</span></a></sup> and <a href="/wiki/Attribute_grammar" title="Attribute grammar">attribute grammars</a><sup id="cite_ref-Knuth1968_9-0" class="reference"><a href="#cite_note-Knuth1968-9"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-Knuth1971_10-0" class="reference"><a href="#cite_note-Knuth1971-10"><span>[</span>11<span>]</span></a></sup> allow rewrite rules to be augmented with semantic attributes and operations, useful both for increasing grammar expressiveness and for constructing practical language translation tools.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=10" title="Edit section: Analytic grammars">edit</a>]</span> <span class="mw-headline" id="Analytic_grammars">Analytic grammars</span></h2>
+<p>Though there is a tremendous body of literature on <a href="/wiki/Parsing" title="Parsing">parsing</a> <a href="/wiki/Algorithms" title="Algorithms" class="mw-redirect">algorithms</a>, most of these algorithms assume that the language to be parsed is initially <i>described</i> by means of a <i>generative</i> formal grammar, and that the goal is to transform this generative grammar into a working parser. Strictly speaking, a generative grammar does not in any way correspond to the algorithm used to parse a language, and various algorithms have different restrictions on the form of production rules that are considered well-formed.</p>
+<p>An alternative approach is to formalize the language in terms of an analytic grammar in the first place, which more directly corresponds to the structure and semantics of a parser for the language. Examples of analytic grammar formalisms include the following:</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://languagemachine.sourceforge.net/">The Language Machine</a> directly implements unrestricted analytic grammars. Substitution rules are used to transform an input to produce outputs and behaviour. The system can also produce <a rel="nofollow" class="external text" href="http://languagemachine.sourceforge.net/picturebook.html">the lm-diagram</a> which shows what happens when the rules of an unrestricted analytic grammar are being applied.</li>
+<li><a href="/wiki/Top-down_parsing_language" title="Top-down parsing language">Top-down parsing language</a> (TDPL): a highly minimalist analytic grammar formalism developed in the early 1970s to study the behavior of <a href="/wiki/Top-down_parsing" title="Top-down parsing">top-down parsers</a>.<sup id="cite_ref-Birman1970_11-0" class="reference"><a href="#cite_note-Birman1970-11"><span>[</span>12<span>]</span></a></sup></li>
+<li><a href="/wiki/Link_grammar" title="Link grammar">Link grammars</a>: a form of analytic grammar designed for <a href="/wiki/Linguistics" title="Linguistics">linguistics</a>, which derives syntactic structure by examining the positional relationships between pairs of words.<sup id="cite_ref-Sleater.26Temperly1991_12-0" class="reference"><a href="#cite_note-Sleater.26Temperly1991-12"><span>[</span>13<span>]</span></a></sup><sup id="cite_ref-Sleater.26Temperly1993_13-0" class="reference"><a href="#cite_note-Sleater.26Temperly1993-13"><span>[</span>14<span>]</span></a></sup></li>
+<li><a href="/wiki/Parsing_expression_grammar" title="Parsing expression grammar">Parsing expression grammars</a> (PEGs): a more recent generalization of TDPL designed around the practical <a href="/wiki/Expressivity_(computer_science)" title="Expressivity (computer science)" class="mw-redirect">expressiveness</a> needs of <a href="/wiki/Programming_language" title="Programming language">programming language</a> and <a href="/wiki/Compiler" title="Compiler">compiler</a> writers.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>15<span>]</span></a></sup></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<div style="-moz-column-count:3; column-count:3;">
+<ul>
+<li><a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">Abstract syntax tree</a></li>
+<li><a href="/wiki/Adaptive_grammar" title="Adaptive grammar">Adaptive grammar</a></li>
+<li><a href="/wiki/Ambiguous_grammar" title="Ambiguous grammar">Ambiguous grammar</a></li>
+<li><a href="/wiki/Backus%E2%80%93Naur_form" title="Backus–Naur form" class="mw-redirect">Backus–Naur form (BNF)</a></li>
+<li><a href="/wiki/Categorial_grammar" title="Categorial grammar">Categorial grammar</a></li>
+<li><a href="/wiki/Concrete_syntax_tree" title="Concrete syntax tree" class="mw-redirect">Concrete syntax tree</a></li>
+<li><a href="/wiki/Extended_Backus%E2%80%93Naur_form" title="Extended Backus–Naur form" class="mw-redirect">Extended Backus–Naur form (EBNF)</a></li>
+<li><a href="/wiki/Grammar_framework" title="Grammar framework" class="mw-redirect">Grammar framework</a></li>
+<li><a href="/wiki/L-system" title="L-system">L-system</a></li>
+<li><a href="/wiki/Lojban" title="Lojban">Lojban</a></li>
+<li><a href="/wiki/Post_canonical_system" title="Post canonical system">Post canonical system</a></li>
+<li><a href="/wiki/Well-formed_formula" title="Well-formed formula">Well-formed formula</a></li>
+</ul>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=12" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<ol class="references">
+<li id="cite_note-Chomsky1956-0">^ <a href="#cite_ref-Chomsky1956_0-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Chomsky1956_0-1"><sup><i><b>b</b></i></sup></a> <span class="citation Journal">Chomsky, Noam (1956). "Three Models for the Description of Language". <i><a href="/w/index.php?title=IRE_Transactions_on_Information_Theory&amp;action=edit&amp;redlink=1" class="new" title="IRE Transactions on Information Theory (page does not exist)">IRE Transactions on Information Theory</a></i> <b>2</b> (2): 113–123. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1109%2FTIT.1956.1056813">10.1109/TIT.1956.1056813</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Three+Models+for+the+Description+of+Language&amp;rft.jtitle=%5B%5BIRE+Transactions+on+Information+Theory%5D%5D&amp;rft.aulast=Chomsky%2C+Noam&amp;rft.au=Chomsky%2C+Noam&amp;rft.date=1956&amp;rft.volume=2&amp;rft.issue=2&amp;rft.pages=113%26ndash%3B123&amp;rft_id=info:doi/10.1109%2FTIT.1956.1056813&amp;rfr_id=info:sid/en.wikipedia.org:Formal_grammar"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-Chomsky1957-1"><b><a href="#cite_ref-Chomsky1957_1-0">^</a></b> <span class="citation book">Chomsky, Noam (1957). <i>Syntactic Structures</i>. The Hague: <a href="/wiki/Mouton" title="Mouton">Mouton</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Syntactic+Structures&amp;rft.aulast=Chomsky%2C+Noam&amp;rft.au=Chomsky%2C+Noam&amp;rft.date=1957&amp;rft.place=The+Hague&amp;rft.pub=%5B%5BMouton%5D%5D&amp;rfr_id=info:sid/en.wikipedia.org:Formal_grammar"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span class="citation book"><a href="/wiki/Seymour_Ginsburg" title="Seymour Ginsburg">Ginsburg, Seymour</a> (1975). <i>Algebraic and automata theoretic properties of formal languages</i>. North-Holland. pp.&#160;8–9. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0720425069" title="Special:BookSources/0720425069">0720425069</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algebraic+and+automata+theoretic+properties+of+formal+languages&amp;rft.aulast=Ginsburg&amp;rft.aufirst=Seymour&amp;rft.au=Ginsburg%2C%26%2332%3BSeymour&amp;rft.date=1975&amp;rft.pages=pp.%26nbsp%3B8%E2%80%939&amp;rft.pub=North-Holland&amp;rft.isbn=0720425069&amp;rfr_id=info:sid/en.wikipedia.org:Formal_grammar"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> <span class="citation book"><a href="/w/index.php?title=Michael_A._Harrison&amp;action=edit&amp;redlink=1" class="new" title="Michael A. Harrison (page does not exist)">Harrison, Michael A.</a> (1978). <i>Introduction to Formal Language Theory</i>. Reading, Mass.: Addison-Wesley Publishing Company. pp.&#160;13. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0201029553" title="Special:BookSources/0201029553">0201029553</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Formal+Language+Theory&amp;rft.aulast=Harrison&amp;rft.aufirst=Michael+A.&amp;rft.au=Harrison%2C%26%2332%3BMichael+A.&amp;rft.date=1978&amp;rft.pages=pp.%26nbsp%3B13&amp;rft.place=Reading%2C+Mass.&amp;rft.pub=Addison-Wesley+Publishing+Company&amp;rft.isbn=0201029553&amp;rfr_id=info:sid/en.wikipedia.org:Formal_grammar"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <a rel="nofollow" class="external text" href="http://www.seas.upenn.edu/~cit596/notes/dave/cfg7.html">Sentential Forms</a>, Context-Free Grammars, David Matuszek</li>
+<li id="cite_note-Grune.26Jacobs1990-5"><b><a href="#cite_ref-Grune.26Jacobs1990_5-0">^</a></b> Grune, Dick &amp; Jacobs, Ceriel H., <i>Parsing Techniques – A Practical Guide</i>, Ellis Horwood, England, 1990.</li>
+<li id="cite_note-Earley1970-6"><b><a href="#cite_ref-Earley1970_6-0">^</a></b> Earley, Jay, "An Efficient Context-Free Parsing Algorithm," <i>Communications of the ACM</i>, Vol. 13 No. 2, pp. 94-102, February 1970.</li>
+<li id="cite_note-JoshiEtAl1975-7"><b><a href="#cite_ref-JoshiEtAl1975_7-0">^</a></b> Joshi, Aravind K., <i>et al.</i>, "Tree Adjunct Grammars," <i>Journal of Computer Systems Science</i>, Vol. 10 No. 1, pp. 136-163, 1975.</li>
+<li id="cite_note-Koster1971-8"><b><a href="#cite_ref-Koster1971_8-0">^</a></b> Koster , Cornelis H. A., "Affix Grammars," in <i>ALGOL 68 Implementation</i>, North Holland Publishing Company, Amsterdam, p. 95-109, 1971.</li>
+<li id="cite_note-Knuth1968-9"><b><a href="#cite_ref-Knuth1968_9-0">^</a></b> Knuth, Donald E., "Semantics of Context-Free Languages," <i>Mathematical Systems Theory</i>, Vol. 2 No. 2, pp. 127-145, 1968.</li>
+<li id="cite_note-Knuth1971-10"><b><a href="#cite_ref-Knuth1971_10-0">^</a></b> Knuth, Donald E., "Semantics of Context-Free Languages (correction)," <i>Mathematical Systems Theory</i>, Vol. 5 No. 1, pp 95-96, 1971.</li>
+<li id="cite_note-Birman1970-11"><b><a href="#cite_ref-Birman1970_11-0">^</a></b> Birman, Alexander, <i>The TMG Recognition Schema</i>, Doctoral thesis, Princeton University, Dept. of Electrical Engineering, February 1970.</li>
+<li id="cite_note-Sleater.26Temperly1991-12"><b><a href="#cite_ref-Sleater.26Temperly1991_12-0">^</a></b> Sleator, Daniel D. &amp; Temperly, Davy, "Parsing English with a Link Grammar," Technical Report CMU-CS-91-196, Carnegie Mellon University Computer Science, 1991.</li>
+<li id="cite_note-Sleater.26Temperly1993-13"><b><a href="#cite_ref-Sleater.26Temperly1993_13-0">^</a></b> Sleator, Daniel D. &amp; Temperly, Davy, "Parsing English with a Link Grammar," <i>Third International Workshop on Parsing Technologies</i>, 1993. (Revised version of above report.)</li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> Ford, Bryan, <i>Packrat Parsing: a Practical Linear-Time Algorithm with Backtracking</i>, Master’s thesis, Massachusetts Institute of Technology, Sept. 2002.</li>
+</ol>
+<h2><span class="editsection">[<a href="/w/index.php?title=Formal_grammar&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cs.haifa.ac.il/~shuly/fg/">Yearly Formal Grammar conference</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar" style="">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Formal_languages_and_grammars" title="Template:Formal languages and grammars"><span style=";;background:none transparent;border:none;" title="View this template">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Formal_languages_and_grammars" title="Template talk:Formal languages and grammars"><span style=";;background:none transparent;border:none;" title="Discuss this template">d</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Formal_languages_and_grammars&amp;action=edit"><span style=";;background:none transparent;border:none;" title="Edit this template">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="/wiki/Automata_theory" title="Automata theory">Automata theory</a>: <a href="/wiki/Formal_language" title="Formal language">formal languages</a> and <strong class="selflink">formal grammars</strong></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;background:transparent;color:inherit;" class="navbox-list navbox-odd">
+<div style="padding:0px;">
+<table cellspacing="0" class="navbox-columns-table" style="text-align:left;width:100%;">
+<tr style="vertical-align:top;">
+<td style="padding:0px;;;;width:10em;">
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="" style="font-size:110%;"><a href="/wiki/Chomsky_hierarchy" title="Chomsky hierarchy">Chomsky hierarchy</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">Type-0</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">Type-1</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">Type-2</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">Type-3</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+</table>
+</td>
+<td style="border-left:2px solid #fdfdfd;padding:0px;;;;width:10em;">
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="" style="font-size:110%;"><strong class="selflink">Grammars</strong></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Unrestricted_grammar" title="Unrestricted grammar">Unrestricted</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">(no common name)</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Context-sensitive_grammar" title="Context-sensitive grammar">Context-sensitive</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Indexed_grammar" title="Indexed grammar">Indexed</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/w/index.php?title=Linear_context-free_rewriting_systems&amp;action=edit&amp;redlink=1" class="new" title="Linear context-free rewriting systems (page does not exist)">Linear context-free rewriting systems</a> etc.</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Tree-adjoining_grammar" title="Tree-adjoining grammar">Tree-adjoining</a> etc.</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Context-free_grammar" title="Context-free grammar">Context-free</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Deterministic_context-free_grammar" title="Deterministic context-free grammar">Deterministic context-free</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Nested_word" title="Nested word">Visibly pushdown</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Regular_grammar" title="Regular grammar">Regular</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">—</div>
+</td>
+</tr>
+</table>
+</td>
+<td style="border-left:2px solid #fdfdfd;padding:0px;;;;width:10em;">
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="" style="font-size:110%;"><a href="/wiki/Formal_language" title="Formal language">Languages</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Recursively_enumerable_language" title="Recursively enumerable language">Recursively enumerable</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Recursive_language" title="Recursive language">Recursive</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Context-sensitive_language" title="Context-sensitive language">Context-sensitive</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Indexed_language" title="Indexed language">Indexed</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Mildly_context-sensitive_language" title="Mildly context-sensitive language">Mildly context-sensitive</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Tree-adjoining_grammar" title="Tree-adjoining grammar">Tree-adjoining</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Context-free_language" title="Context-free language">Context-free</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Deterministic_context-free_language" title="Deterministic context-free language">Deterministic context-free</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Nested_word" title="Nested word">Visibly pushdown</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Regular_language" title="Regular language">Regular</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Star-free_language" title="Star-free language">Star-free</a></div>
+</td>
+</tr>
+</table>
+</td>
+<td style="border-left:2px solid #fdfdfd;padding:0px;;;;width:10em;">
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="" style="font-size:110%;">Minimal <a href="/wiki/Finite-state_machine" title="Finite-state machine">automaton</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Machine_that_always_halts" title="Machine that always halts">Decider</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Linear_bounded_automaton" title="Linear bounded automaton">Linear-bounded</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Nested_stack_automaton" title="Nested stack automaton">Nested stack</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/w/index.php?title=Thread_automata&amp;action=edit&amp;redlink=1" class="new" title="Thread automata (page does not exist)">Thread automata</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Embedded_pushdown_automaton" title="Embedded pushdown automaton">Embedded pushdown</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Pushdown_automaton" title="Pushdown automaton">Nondeterministic pushdown</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Deterministic_pushdown_automaton" title="Deterministic pushdown automaton">Deterministic pushdown</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Nested_word" title="Nested word">Visibly pushdown</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Finite-state_machine" title="Finite-state machine">Finite</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;text-align:center;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Aperiodic_finite_state_automaton" title="Aperiodic finite state automaton">Counter-free (with aperiodic finite monoid)</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div><small><span style="white-space:nowrap;">Each category of languages is a <a href="/wiki/Subset" title="Subset">proper subset</a> of the category directly above it.</span> - <span style="white-space:nowrap;">Any automaton and any grammar in each category has an equivalent automaton or grammar in the category directly above it.</span></small></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5828/1000000
+Post-expand include size: 102316/2048000 bytes
+Template argument size: 65252/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:18020716-0!1!0!!en!*!* and timestamp 20120128190023 generated by srv282 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Formal_grammar&amp;oldid=473266380">http://en.wikipedia.org/w/index.php?title=Formal_grammar&amp;oldid=473266380</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Formal_languages" title="Category:Formal languages">Formal languages</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Formal+grammar" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Formal_grammar"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/Talk:Formal_grammar"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/Formal_grammar" >Read</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=Formal_grammar&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Formal_grammar&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+						<input type="text" name="search" value="" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/skins-1.18/vector/images/search-ltr.png?303-4" alt="Search" /></button>					</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="//wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA085&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB002" title="Support us">Donate to Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+		<ul>
+			<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id='p-tb'>
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Formal_grammar" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Formal_grammar" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="/w/index.php?title=Formal_grammar&amp;oldid=473266380" title="Permanent link to this revision of the page">Permanent link</a></li>
+<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Formal_grammar&amp;id=473266380" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+		<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Formal+grammar" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Formal+grammar&amp;oldid=473266380&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Formal_grammar&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>	</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id='p-lang'>
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+			<li class="interwiki-bs"><a href="//bs.wikipedia.org/wiki/Formalna_gramatika">Bosanski</a></li>
+			<li class="interwiki-ca"><a href="//ca.wikipedia.org/wiki/Gram%C3%A0tica_formal">Català</a></li>
+			<li class="interwiki-cs"><a href="//cs.wikipedia.org/wiki/Form%C3%A1ln%C3%AD_gramatika">Česky</a></li>
+			<li class="interwiki-de"><a href="//de.wikipedia.org/wiki/Formale_Grammatik">Deutsch</a></li>
+			<li class="interwiki-et"><a href="//et.wikipedia.org/wiki/Formaalne_grammatika">Eesti</a></li>
+			<li class="interwiki-el"><a href="//el.wikipedia.org/wiki/%CE%A4%CF%85%CF%80%CE%B9%CE%BA%CE%AE_%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE">Ελληνικά</a></li>
+			<li class="interwiki-es"><a href="//es.wikipedia.org/wiki/Gram%C3%A1tica_formal">Español</a></li>
+			<li class="interwiki-fr"><a href="//fr.wikipedia.org/wiki/Grammaire_formelle">Français</a></li>
+			<li class="interwiki-gl"><a href="//gl.wikipedia.org/wiki/Gram%C3%A1tica_formal">Galego</a></li>
+			<li class="interwiki-ko"><a href="//ko.wikipedia.org/wiki/%ED%98%95%EC%8B%9D_%EB%AC%B8%EB%B2%95">한국어</a></li>
+			<li class="interwiki-hr"><a href="//hr.wikipedia.org/wiki/Formalna_gramatika">Hrvatski</a></li>
+			<li class="interwiki-it"><a href="//it.wikipedia.org/wiki/Grammatica_formale">Italiano</a></li>
+			<li class="interwiki-hu"><a href="//hu.wikipedia.org/wiki/Form%C3%A1lis_nyelvtan">Magyar</a></li>
+			<li class="interwiki-nl"><a href="//nl.wikipedia.org/wiki/Formele_grammatica">Nederlands</a></li>
+			<li class="interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E5%BD%A2%E5%BC%8F%E6%96%87%E6%B3%95">日本語</a></li>
+			<li class="interwiki-no"><a href="//no.wikipedia.org/wiki/Formell_grammatikk">‪Norsk (bokmål)‬</a></li>
+			<li class="interwiki-pl"><a href="//pl.wikipedia.org/wiki/Gramatyka_formalna">Polski</a></li>
+			<li class="interwiki-pt"><a href="//pt.wikipedia.org/wiki/Gram%C3%A1tica_formal">Português</a></li>
+			<li class="interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Русский</a></li>
+			<li class="interwiki-sk"><a href="//sk.wikipedia.org/wiki/Gramatika_(informatika)">Slovenčina</a></li>
+			<li class="interwiki-sr"><a href="//sr.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%BD%D0%B0_%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Српски / Srpski</a></li>
+			<li class="interwiki-sh"><a href="//sh.wikipedia.org/wiki/Formalna_gramatika">Srpskohrvatski / Српскохрватски</a></li>
+			<li class="interwiki-fi"><a href="//fi.wikipedia.org/wiki/Formaali_kielioppi">Suomi</a></li>
+			<li class="interwiki-sv"><a href="//sv.wikipedia.org/wiki/Formell_grammatik">Svenska</a></li>
+			<li class="interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%96_%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B8">Українська</a></li>
+			<li class="interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%BD%A2%E5%BC%8F%E6%96%87%E6%B3%95">中文</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 26 January 2012 at 02:44.<br /></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="//wikimediafoundation.org/wiki/Terms_of_use">Terms of use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-mobileview"><a href='/w/index.php?title=Formal_grammar&amp;useformat=mobile' class='noprint'>Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/skins-1.18/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax", "mediawiki.legacy.mwsuggest", "ext.gadget.wmfFR2011Style", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.editWarning", "ext.vector.simpleSearch", "ext.UserBuckets", "ext.articleFeedback.startup", "ext.articleFeedbackv5.startup", "ext.markAsHelpful"]);
+}
+</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;303-4" type="text/javascript"></script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikilove-enabled":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"gadget-wmfFR2011Style":1});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: enwiki:resourceloader:filter:minify-js:4:b41a86ec4e0fe8329bc3ce917e792339 */
+}
+</script><script src="//geoiplookup.wikimedia.org/" type="text/javascript"></script><!-- Served by mw7 in 0.075 secs. -->
+	</body>
+</html>

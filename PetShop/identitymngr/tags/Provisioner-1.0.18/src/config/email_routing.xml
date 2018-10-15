@@ -1,0 +1,6 @@
+<email_routing xmlns="http://email_routing.org">
+  <description>
+     Network element's instance name for each email service route.
+  </description>
+  <route reg_exp_key="Zaragosa" ne_name="merak"/>
+</email_routing>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Persistence_Development" topic="Eclipse_Database/index.html">
+    <topic label="Activate EclipseUML" href="Eclipse_Database/Activate_JPA_Perspective/index.html"/>
+    <topic label="Create New JPA UML Classes" href="Eclipse_Database/Create_New_JPA_Classes/index.html"/>
+    <topic label="Add JPA properties " href="Eclipse_Database/Add_JPA_Properties/index.html"/>
+    <topic label="Create Associations between Classes" href="Eclipse_Database/Create_associations/index.html"/>
+    <topic label="Reverse an existing Database" href="Eclipse_Database/Reverse_Existing_Database/index.html"/>
+</toc>

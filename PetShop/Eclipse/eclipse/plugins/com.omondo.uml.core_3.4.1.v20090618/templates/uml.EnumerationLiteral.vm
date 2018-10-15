@@ -1,0 +1,21 @@
+#set( $this = $JavaTool.getHelper($uml) )
+#if ($this.doc != "" || $this.annotation != "")
+#if ($JavaTool.useJavaDoc($this))
+
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+ */
+#end 
+#set ( $last = $uml.slots.size() - 1)
+$uml.name#if( $last >= 0 )
+(#foreach( $index in [0..$last])
+$uml.slots.get($index).values.get(0).getSymbol()#if ($index != $last)
+, #end
+#end
+)#end

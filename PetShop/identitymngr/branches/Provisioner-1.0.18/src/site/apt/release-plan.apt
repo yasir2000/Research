@@ -1,0 +1,97 @@
+	------
+	Provisioner's release management plan
+	------
+	Gonzalo Espert
+	------
+	Jan 29, 2008
+
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+Provisioner's product release management plan
+
+  The Provisioner has multiple {{{http://identitymngr.svn.sourceforge.net/viewvc/identitymngr/branches/}
+  active branches}} open at
+  any one time. Due to its versioning system, each
+  branch can conduct a release independently. These branches
+  are usually at different stages of the software life cycle.
+  Once a release is made, it is then distributed through 
+  {{{http://sourceforge.net/project/showfiles.php?group_id=204942&package_id=244739}
+  SourceForge's file release system}} for the public to download.
+
+* Release authority
+
+  Project's configuration manager will embody the release authority for 
+  all project's open branches. 
+
+* Versioning
+
+  Provisioner uses a versioning scheme consisting of four integers arranged 
+  in the following pattern: <<<major.minor.revision.build>>>; where the major 
+  number is increased when there are significant changes in functionality, the 
+  minor number is incremented when only minor features or fixes have been added, 
+  and the revision number is incremented when minor bugs are fixed. The build 
+  number is incremented each time a build is performed and released by the 
+  configuration manager, whether it is a release candidate or a final official 
+  release.
+
+* Pre-release testing
+
+  Rather than performing extensive testing on a release, the Provisioner release 
+  model relies upon its user community to test a release before it is made 
+  official. Release candidates are denoted with a -pre tag appended to its 
+  version number. After the release candidate is distributed, through SourceForge's
+  file release system, feedback is solicited from the user community as to the 
+  stability of this release.
+  
+* Release approval
+
+  Since the release manager has total authority over the release, the Provisioner
+  release process does not require approval by the community. However, Provisioner's 
+  project team rely upon an 
+  {{{http://sourceforge.net/tracker/?group_id=204942}issue tracking system}}, 
+  so, all issues that are slated to be fixed in a release milestone must be closed
+  before the corresponding release can be done.
+  
+* Distribution
+
+  Releases, both official and candidates, will be made available via SourceForge's 
+  file release system which has a mirroring system that is spread across the 
+  globe. Also, incremental patches versus the last release are made available.  
+  In order to ensure the integrity of the downloads, the releases are digitally
+  signed by the release manager. An MD5 hash of each file is also provided. 
+  This allows the end users to verify that the download was received correctly 
+  without tampering. Release manager public key is provided in the KEYS.txt
+  file. After a release has been approved and made available, an email is sent 
+  to the {{{https://lists.sourceforge.net/lists/listinfo/identitymngr-users}
+  users mailing list}} as well as the 
+  {{{https://lists.sourceforge.net/lists/listinfo/identitymngr-developers}
+  developers mailing list}}.
+  Also a notice is published at {{{http://sourceforge.net/news/?group_id=204942}
+  SourceForge's project news section}}.
+  A list of changes from the previous release are included in these notifications. The 
+  list of changes can also be found {{{changes-report.html}here}}. 
+  
+* Formats
+
+  A Provisioner release is accompanied by a compressed gzip tar file and a zip
+  file corresponding to the source and binaries for a particular release. 
+  Additionally an OpenPGP compatible ASCII armored detached signature and
+  another file containing an MD5 checksum is provided for each release's file.
+  The names of these files are formed by adding the suffix .asc to the name of
+  the signed artifact and the suffix .md5 for its checksum.
+       

@@ -1,0 +1,93 @@
+	------
+	Service Subscription business Cases
+	------
+	Gonzalo Espert
+	------
+	Oct 31, 2007
+
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+Generic service subscription use case scenario 
+  
+  Organizations can now have cheap, open pipelines to their customers and 
+  partners. This allows the creation and integration of automated processes 
+  between business entities, as well as the creation of hosted services 
+  that can be used as parts of distributed business processes. 
+
+  For example, a business may implement a purchasing system. In addition 
+  to tracking orders and managing the workflow needed for internal 
+  approvals, this system could automatically discover, solicit bids, and 
+  place orders through external suppliers. It could discover and arrange 
+  financing and shipping for orders, and track order status. By leveraging 
+  distributed services, the purchasing system remains within the realm of 
+  control of the organization managing the process, yet can delegate to 
+  external organizations for the services needed to complete the process.
+  
+  Service providers or businesses that publish distributed services for 
+  internal or external use will need management functions to provision 
+  and control these services.
+  
+  Provisioning is the act of preparing the system for the use of a service 
+  by a consumer. It involves preparing both technical and business aspects 
+  for supporting the consumers activities. 
+
+  A provisioned service requires association of a user account and/or 
+  other information with the service. For example, the retrieval of an 
+  account balance from a user portfolio would be a provisioned service, 
+  as the account balance to retrieve must be determined. Additional access 
+  control is required for fine-grained protection of the assets associated 
+  with that service. 
+
+  Each provisioned service needs some extensions to automate the 
+  enrollment and subscription process. Typically these are APIs built into 
+  the service, and need only to be mapped to the provisioning system 
+  functions through a service agent. The provisioning system will then 
+  drive these functions through the agent at subscription time. 
+
+  In the following scenario, a service consumer contracts a service with a
+  service provider. In our case there exist a service provider representative
+  but this could also be implemented in a self-service way. Note that the 
+  service the consumer is subscribing to is a composite one.  
+  
+[./images/Service Subscription Scenario.png] Generic business case
+  
+  Workflow:
+  
+  [[1]] A service consumer contacts a service provider's representative
+  to subscribe to a service that that provider serves.
+  
+  [[2]] Accessing service provider's business support system (e.g. CRM, Billing)
+  the service provider's representative fills up a service activation work 
+  order.
+  
+  [[3]] Once completed, business support system contacts the identity and service 
+  provisioning system requesting the activation of the service. The 
+  provisioning system applies a set of pre-configured business rules to determine
+  which service building blocks it has to provision.
+  
+  [[4]] The provisioning system sends a create request to service building 
+  block A (e.g., Membership).
+  
+  [[5]] The provisioning system sends a create request to service building 
+  block B (e.g., Authentication).
+  
+  [[6]] The provisioning system sends a create request to service building 
+  block C (e.g., Authorization).
+  
+  Once all steps were executed successfully, the provisioning system sends
+  a confirmation to the business support system.  

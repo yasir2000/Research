@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin
+	name="EclipseUML Standard Plugin Documentation"
+   	id="com.omondo.uml.std.doc.user"
+   	version="3.4.1.v20090618"
+   	provider-name="Omondo &#169;"
+>
+
+   	<extension point="org.eclipse.help.toc"> 
+       	<toc file="toc.xml" primary="true"/>
+       	<toc file="topics_GettingStarted.xml"/>
+       	<toc file="topics_WorkingWithDiagrams.xml"/>
+       	<toc file="topics_Diagrams.xml"/>
+       	<toc file="topics_Preferences.xml"/>
+       	<toc file="topics_jdk15.xml"/>
+       	<toc file="topics_annotations.xml"/>
+       	<toc file="topics_docgen.xml"/>
+       	<toc file="topics_reverseengineering.xml"/> 
+       	<toc file="topics_jeecode.xml"/>      
+   	</extension>
+   
+</plugin>

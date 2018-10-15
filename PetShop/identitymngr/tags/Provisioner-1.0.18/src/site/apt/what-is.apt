@@ -1,0 +1,107 @@
+	------
+	Provisioner's concept
+	------
+	Gonzalo Espert
+	------
+	Oct 29, 2007
+
+Introduction
+
+  Conceived as an infrastructure software component, Provisioner, can be 
+  embedded as a building block to compose a complete identity management 
+  solution.
+  
+  Provisioner is an identity provisioning software component through
+  which service providers can activate services (e.g., Email, PBX, 
+  Corporate applications, etc.) to its consumers in service provider's 
+  subjacent hetherogeneous network. It is a back-end software that runs on 
+  the background receiving provisioning requests and forwards them to the 
+  corresponding identity stores after applying XML pre-configured business 
+  rules. 
+  
+  Provisioner automates the provisioning and activation of 
+  services, in such a way that there is no need of manual 
+  intervention from business support systems. Business 
+  support systems does not need to have a thorough knowledge 
+  of the service network per se; Provisioner is the interface 
+  in charge of the communication with service's identity
+  stores.
+
+  Through Provisioner, service providers can create 
+  subscriptors in the service network, modify subscriptor’s 
+  data, activate services to existent subscriptors, and 
+  eliminate subscriptors and its services.
+
+  Provisioner is able to manage abstract work orders, that is, 
+  business support system can ask Provisioner to perform 
+  service activations, and the system is capable of deducing 
+  and executing the necessary procedures.
+  
+  {{{roadmap.html}Provisioner's Roadmap}} includes features that will enable 
+  Provisioner to receive provisioning requests via SPMLv2 and to interact 
+  with SPMLv2 and LDAPv3 compliant identity stores (i.e. PSTs). Increasing 
+  end-to-end security enforcement through WS-Security compliance, is planned 
+  as well. 
+								
+Provisioner's benefits
+
+  Service providers’ networks tipically consist of 
+  several types of identity stores manufactured by 
+  different vendors. Provisioner is a flexible system 
+  capable of supporting a wide range of different identity 
+  stores types, vendors and software versions. Provisioner 
+  standardizes the interface with business support systems 
+  in such a way that changes in service providers’ network 
+  do not afect business support systems.
+ 
+  The following list enums some of Provisioner's benefits
+  and business drivers:
+  
+  •	No need for multiple and expensive management systems 
+	in a service provider network with identity stores from 
+	several different vendors. That is, one-stop shopping for
+	user and service provisioning across all enterprise and 
+	service provider applications.
+	
+  •	Manual and routine provisioning work is reduced to its 
+	minimum, thus less error prone. 
+	
+  •	Since Provisioner automates operations between 
+	business support systems and operational support systems, 
+	business support systems can provide services to the 
+	subscriber without having a thorough technical knowledge 
+	of the subjacent service infrastructure.
+	
+  •	The Provisioner can provision and activate services with
+	a near-real-time throughoutput.
+	
+  •	Provisioner is appropriate for both small and top-notch 
+	service providers.
+	
+  •	Provisioner provides regulatory compliance (i.e. Sarbanes-Oxley, HIPAA)
+  
+  •	Provisioner helps strengthen security
+  
+  •	Provisioner reduces ID and password complexity for users
+					
+How does Provisioner work?
+
+  Provisioner receives work orders from business 
+  support systems to provision services and access info 
+  to service's subscriptors. Once the system has received 
+  a request, it determines in which identity stores 
+  it has to execute the request. Then it transforms  
+  the request into one or more specific provisioning commands 
+  for those identity stores, and finally it executes those 
+  commands.
+  
+  When business support systems wants that certain services 
+  be activated to a subscriber in several identity stores, 
+  Provisioner guaranties that those operations are executed 
+  in the same order that the business support system sent them.
+   
+  The system prepares one response for each completed 
+  request and delivers this response to the corresponding
+  business support system, inserting it in the request queue. 
+  This response informs the business support system of the 
+  request’s outcome. 				

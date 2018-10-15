@@ -1,0 +1,6 @@
+<script_routing xmlns="http://script_routing.org">
+  <description>
+     Network element's instance name for each generic network element route.
+  </description>
+  <route reg_exp_key="[0-9]" ne_name="generic"/>
+</script_routing>

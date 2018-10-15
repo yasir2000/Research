@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 U (http://www.altova.com) by zizou (omondo) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="UMLMapping">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Element" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="Name" type="xs:string" use="optional"/>
+						<xs:attribute name="UML2_1_Value" type="xs:string" use="optional"/>
+						<xs:attribute name="UML2_0_Value" type="xs:string" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

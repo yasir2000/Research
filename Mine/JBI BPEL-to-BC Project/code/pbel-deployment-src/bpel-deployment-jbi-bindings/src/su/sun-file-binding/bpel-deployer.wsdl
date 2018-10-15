@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding="UTF-8" standalone="yes" ?>
+<wsdl:definitions targetNamespace="http://clove/neptune/bpeldeployment/service"
+	name="BPELDeployerFile" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:tns="http://clove/neptune/bpeldeployment/service"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:file="http://schemas.sun.com/jbi/wsdl-extensions/file/">
+
+	<wsdl:message name="DP">
+		<wsdl:part name="part" type="xsd:base64Binary"/>
+	</wsdl:message>
+	<wsdl:message name="DPForSunBPELEngine">
+		<wsdl:part name="part" type="xsd:base64Binary"/>
+	</wsdl:message>
+	<wsdl:message name="DPForODE">
+		<wsdl:part name="part" type="xsd:base64Binary"/>
+	</wsdl:message>
+
+	<wsdl:portType name="BPELDeployerFile">
+		<wsdl:operation name="deploymentPackageForSunBPELEngine">
+			<wsdl:input name="deploymentPackageForSunBPELEngineIN" message="tns:DPForSunBPELEngine" />
+			<wsdl:output name="deploymentPackageForSunBPELEngineOUT" message="tns:DP"/>
+		</wsdl:operation>
+		<wsdl:operation name="deploymentPackageForODE">
+			<wsdl:input name="deploymentPackageForODEIN" message="tns:DPForODE" />
+			<wsdl:output name="deploymentPackageForODEOUT" message="tns:DP"/>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="BPELDeployerFileBinding" type="tns:BPELDeployerFile">
+		<file:binding />
+		<wsdl:operation name="deploymentPackageForSunBPELEngine">
+			<file:operation/>
+			<wsdl:input name="deploymentPackageForSunBPELEngineIN" message="tns:DPForSunBPELEngine">
+				<file:message use="literal" fileName="input-sun-%d.zip" pollingInterval="1000" fileNameIsPattern="true" type="binary" part="part"/>
+			</wsdl:input>
+			<wsdl:output name="deploymentPackageForSunBPELEngineOUT" message="tns:DP">
+				<file:message use="literal" fileName="output-sun-%d.zip" fileNameIsPattern="true" type="binary" part="part"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="deploymentPackageForODE">
+			<file:operation/>
+			<wsdl:input name="deploymentPackageForODEIN" message="tns:DPForODE">
+				<file:message use="literal" fileName="input-ode-%d.zip" pollingInterval="1000" fileNameIsPattern="true" type="binary" part="part"/>
+			</wsdl:input>
+			<wsdl:output name="deploymentPackageForODEOUT" message="tns:DP">
+				<file:message use="literal" fileName="output-ode-%d.zip" fileNameIsPattern="true" type="binary" part="part"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="BPELDeployerFileService">
+		<wsdl:port name="BPELDeployerFile_Port" binding="tns:BPELDeployerFileBinding">
+			<file:address fileDirectory="/temp/bpel-deployment" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

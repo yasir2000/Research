@@ -1,0 +1,14 @@
+<merak xmlns="http://merak.org">
+  <description>
+     Merak network element configuration.
+  </description>
+  <parameter name="type" value="Merak"/>
+  <parameter name="host" value="200.99.99.99"/> 
+  <parameter name="usuario" value="username"/>
+  <parameter name="password" value="password"/>
+  <parameter name="responses" value="merak_responses"/>
+  <parameter name="bin" value="h:\\merak\\tool"/>
+  <parameter name="add" value="create"/>
+  <parameter name="remove" value="delete"/>
+  <parameter name="errorlogin" value="Logon failure:"/>
+</merak>

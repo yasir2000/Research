@@ -1,0 +1,255 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Writing Planning Domains and Problems in PDDL</title>
+</head>
+<body>
+<h1>Writing Planning Domains and Problems in PDDL</h1>
+<p>
+</p><h3>What is PDDL?</h3>
+PDDL ("Planning Domain Definition Language") is a recent atempt to
+standardize planning domain and problem description languages. It
+was developed mainly to make the 1998/2000 International Planning
+Competitions possible.
+<p>
+PDDL contains STRIPS, ADL and more. Most planners, however, do not support
+full PDDL: in fact, the majority support only the STRIPS subset.
+</p><p>
+Here is the <a href="http://planning.cis.strath.ac.uk/competition/">IPC 1998 specification of PDDL</a>:
+it should be taken with a grain of salt, however. The
+<a href="http://www.cs.toronto.edu/aips2000/pddl-subset.ps">IPC 2000
+specification</a> is significantly reduced, and closer to what most
+planning systems actually support.
+</p><p>
+The specification for
+<a href="http://www.dur.ac.uk/d.p.long/competition.html">IPC 2002</a>
+(often called <it>PDDL 2.1</it>) adds many new features, including
+numerical state variables, actions with duration and the possibility to
+specify a metric to optimize in addition to the logical problem goal.
+However, there are still not many planners supporting these extensions.
+
+</p><p>
+</p><h3>Examples</h3>
+Several examples of PDDL domain and problem definitions may be found in
+<a href="http://www.ida.liu.se/%7ETDDC17/info/labs/planning/strips/">/home/TDDC17/www-pub/info/labs/planning/strips/</a> (using
+only the STRIPS
+subset of PDDL) and
+<a href="http://www.ida.liu.se/%7ETDDC17/info/labs/planning/pddl/">/home/TDDC17/www-pub/info/labs/planning/pddl/</a> (using
+types and some
+ADL features).
+<p>
+In <a href="http://www.ida.liu.se/%7ETDDC17/info/labs/planning/2004/sat/satellite/">/home/TDDC17/info/labs/planning/2004/sat/satellite/</a> are
+several variants of the Satellite domain (used in IPC 2002), which illustrate
+the
+extended features of PDDL 2.1.
+
+</p><p>
+</p><h2>Parts of a PDDL Problem Definition</h2>
+A PDDL definition consists of two parts: The <i>domain</i> and the
+<i>problem</i> definition.
+<p>
+<b>Note:</b> Although not required by the PDDL standard, many planners
+require that the two parts are in separate files.
+
+</p><p>
+</p><h3>Comments</h3>
+Comments in a PDDL file start with a semicolon ("<tt>;</tt>") and last
+to the end of the line.
+
+<p>
+</p><h3>Requirements</h3>
+Because PDDL is a very general language and most planners support only
+a subset, domains may declare requirements. The most commonly used
+requirements are:
+<dl>
+<dt><tt>:strips</tt>
+</dt><dd>The most basic subset of PDDL, consisting of STRIPS only.
+</dd><dt><tt>:equality</tt>
+</dt><dd>This requirement means that the domain uses the predicate <tt>=</tt>,
+interpreted as equality.
+</dd><dt><tt>:typing</tt>
+</dt><dd>This requirement means that the domain uses types (see <b>Typing</b>
+below).
+</dd><dt><tt>:adl</tt>
+</dt><dd>Means that the domain uses some or all of ADL (<i>i.e.</i> disjunctions
+and quantifiers in preconditions and goals, quantified and conditional
+effects).
+</dd></dl>
+
+Compare with the table in figure 11.1 (page 379) in 
+<a href="http://aima.cs.berkeley.edu/2nd-ed/newchap11.pdf"><tt>the 2nd edition of the course book.</tt></a>
+
+<p>
+</p><h2>The Domain Definition</h2>
+The domain definition contains the domain predicates and operators
+(called <i>actions</i> in PDDL).
+It may also contain types (see <b>Typing</b>, below), constants, static
+facts and many other things, but these are not supported by the majority
+of planners.
+<p>
+The format of a (simple) domain definition is:
+</p><p>
+<tt></tt></p><pre><tt>(define (domain DOMAIN_NAME)
+  (:requirements [:strips] [:equality] [:typing] [:adl])
+  (:predicates (PREDICATE_1_NAME [?A1 ?A2 ... ?AN])
+               (PREDICATE_2_NAME [?A1 ?A2 ... ?AN])
+	       ...)
+
+  (:action ACTION_1_NAME
+    [:parameters (?P1 ?P2 ... ?PN)]
+    [:precondition PRECOND_FORMULA]
+    [:effect EFFECT_FORMULA]
+   )
+
+  (:action ACTION_2_NAME
+    ...)
+
+  ...)
+</tt></pre>
+<p>
+Elements in []'s are optional, for those not familiar with formal grammars.
+</p><p>
+Names (domain, predicate, action, <i>et c.</i>) usually may contain
+alphanumeric characters, hyphens ("<tt>-</tt>") and underscores
+("<tt>_</tt>") (there may be some planners that allow less).
+</p><p>
+Parameters of predicates and actions are distinguished by their
+beginning with a question mark ("?").
+</p><p>
+The parameters used in predicate declarations (the <tt>:predicates</tt>
+part) have no other function than to specify the number of arguments
+that the predicate should have, <i>i.e.</i> the parameter names do not
+matter (as long as they are distinct).
+Predicates can have zero parameters (but in this case, the predicate
+name still has to be written within parenthesises).
+
+</p><p>
+</p><h3>Action Definitions</h3>
+All parts of an action definition except the name are, according to the
+spec, optional (although, of couse, an action without effects is pretty
+useless). However, for an action that has no preconditions some planners
+may require an "empty" precondition, on the form <tt>:precondition ()</tt>
+(some planners may also require an empty <tt>:parameter</tt> list for
+actions without parameters).
+<p>
+<b>Note:</b> Some planners require that the arguments to an action are all
+different, <i>i.e.</i> the same object may not instantiate two parameters.
+This may cause some difficulties (<i>e.g.</i> problems becomming unsolvable)
+if one is not aware of it.
+See the domain definition
+<a href="http://www.ida.liu.se/%7ETDDC17/info/labs/planning/strips/slidetile.pddl"><tt>slidetile.pddl</tt></a> and the two
+problem definitions <a href="http://www.ida.liu.se/%7ETDDC17/info/labs/planning/strips/eight01.pddl"><tt>eight01.pddl</tt></a>
+and <a href="http://www.ida.liu.se/%7ETDDC17/info/labs/planning/strips/eight01x.pddl"><tt>eight01x.pddl</tt></a>for an example
+of this problem and how to fix it.
+
+</p><p>
+</p><h3>Precondition Formulas</h3>
+In a STRIPS domain, a precondition formula may be:
+<ul>
+<li>An atomic formula:
+<br><tt>(PREDICATE_NAME ARG1 ... ARG_N)</tt>
+<br>The predicate arguments must be parameters of the action (or
+constants declared in the domain, if the domain has constants).
+</li><li>A conjunction of atomic formulas:
+<br><tt>(and ATOM1 ... ATOM_N)</tt>
+</li></ul>
+If the domain uses <tt>:equality</tt>, an atomic formula may also be
+of the form <tt>(= ARG1 ARG2)</tt>.
+Many planners that support equality also allow negated equality, which
+is written <tt>(not (= ARG1 ARG2))</tt>, even if they do not allow
+negation in any other part of the definition.
+<p>
+In an ADL domain, a precondition may in addition be:
+</p><ul>
+<li>A general negation, conjunction or disjunction:
+<br><tt>(not CONDITION_FORMULA)</tt>
+<br><tt>(and CONDITION_FORMULA1 ... CONDITION_FORMULA_N)</tt>
+<br><tt>(or CONDITION_FORMULA1 ... CONDITION_FORMULA_N)</tt>
+</li><li>A quantified formula:
+<br><tt>(forall (?V1 ?V2 ...) CONDITION_FORMULA)</tt>
+<br><tt>(exists (?V1 ?V2 ...) CONDITION_FORMULA)</tt>
+</li></ul>
+
+<p>
+</p><h3>Effect Formulas</h3>
+In PDDL, the effects of an action are not explicitly divided into "adds"
+and "deletes". Instead, negative effects (deletes) are denoted by negation.
+<p>
+In a STRIPS domain, an effect formula may consist of:
+</p><ul>
+<li>An added atom:
+<br><tt>(PREDICATE_NAME ARG1 ... ARG_N)</tt>
+<br>The predicate arguments must be parameters of the action (or
+constants declared in the domain, if the domain has constants).
+</li><li>A deleted atom:
+<br><tt>(not (PREDICATE_NAME ARG1 ... ARG_N))</tt>
+</li><li>A conjunction of atomic effects:
+<br><tt>(and ATOM1 ... ATOM_N)</tt>
+</li></ul>
+The equality predicate (<tt>=</tt>) can of course not occur in an effect
+formula; no action can make two identical things be not identical!
+<p>
+In an ADL domain, an effect formula may in addition contain:
+</p><ul>
+<li>A conditional effect:
+<br><tt>(when CONDITION_FORMULA EFFECT_FORMULA)</tt>
+<br>The interpretation is that the specified effect takes place only
+if the specified condition formula is true in the state where the action
+is executed. Conditional effects are usually placed within quantifiers.
+</li><li>A universally quantified formula:
+<br><tt>(forall (?V1 ?V2 ...) EFFECT_FORMULA)</tt>
+</li></ul>
+
+<p>
+</p><h2>The Problem Definition</h2>
+The problem definition contains the objects present in the problem
+instance, the initial state description and the goal.
+<p>
+The format of a (simple) problem definition is:
+</p><p>
+<tt></tt></p><pre><tt>(define (problem PROBLEM_NAME)
+  (:domain DOMAIN_NAME)
+  (:objects OBJ1 OBJ2 ... OBJ_N)
+  (:init ATOM1 ATOM2 ... ATOM_N)
+  (:goal CONDITION_FORMULA)
+  )
+</tt></pre>
+<p>
+The initial state description (the <tt>:init</tt> section) is simply a
+list of all the ground atoms that are true in the initial state. All
+other atoms are by definition false. The goal description is a formula
+of the same form as an action precondition. All predicates used in the
+initial state and goal description should naturally be declared in the
+corresponding domain.
+</p><p>
+In difference to action preconditions, however, the initial state and
+goal descriptions should be <em>ground</em>, meaning that all predicate
+arguments should be object or constant names rather than parameters.
+(An exception is quantified goals in ADL domains, where of course the
+quantified variables may be used within the scope of the quantifier.
+However, even some planners that claim to support ADL do not allow
+quantifiers in goals.)
+
+</p><p>
+</p><h2>Typing</h2>
+PDDL has a (very) special syntax for declaring parameter and object
+types. If types are to be used in a domain, the domain should first
+of all declare the requirement <tt>:typing</tt>.
+<p>
+Second, the type names have to be declared before they are used (which
+usually means before the <tt>:predicates</tt> declaration). This is
+done with the declaration
+</p><p>
+<tt></tt></p><pre><tt>  (:types NAME1 ... NAME_N)
+</tt></pre>
+<p>
+Then, to declare the type of a parameter of a predicate or action
+one writes <tt>?X - TYPE_OF_X</tt>. A list of parameters of the same
+type can be abbreviated to <tt>?X ?Y ?Z - TYPE_OF_XYZ</tt>.
+Note that the hyphen between parameter and type name has to be
+"free-standing", <i>i.e.</i> surrounded by whitespace.
+</p><p>
+The syntax is the same for declaring types of objects in the
+problem definition.
+
+
+</p></body></html>

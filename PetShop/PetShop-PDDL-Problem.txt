@@ -1,0 +1,16 @@
+
+;;;------------------------
+; Bidding-1 Script for PetShop
+; 2011-dec-05
+;;;------------------------
+(define (problem bid-ask-1)
+    (:domain petshop)
+    (:objects sam bob)
+    (:init  (is-buyer sam)
+            (is-seller bob)
+            (want-bid)
+            (want-offer)
+            (= (last-bid) 0)
+            (= (last-offer) 100))
+    (:goal (pet-sold))
+)

@@ -1,0 +1,44 @@
+<intraway_responses xmlns="http://intraway_responses.org">
+  <description>
+	Intraway (www.intraway.com) network element possible responses.
+  </description>
+  <operation type="Create">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+  	<response result="1000-Customer already exists" success="no" respond="Customer already exist" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+  <operation type="Modification">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+  <operation type="Delete">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+  <operation type="Create space">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+  <operation type="Declare modem">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+	<response result="1100-Cable Modem doesn't exists" success="no" respond="DOCyesS modem already exist" retry="no"/>
+  </operation>
+  <operation type="Remove modem">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+  <operation type="PC Modification">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+  	<response result="2000-Message Interface only manages messages" success="no" respond="Message interface only support messages" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+  <operation type="Declare pcs">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+  <operation type="Remove pcs">
+  	<response result="0-Operation Success" success="yes" respond="Successful operation" retry="no"/>
+	<response result="255-Unknown error" success="no" respond="Unknown error" retry="no"/>
+  </operation>
+</intraway_responses>

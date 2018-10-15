@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gmt.modisco.infra.omg.source"
+      label="%featureName"
+      version="0.9.1.v201109150824"
+      provider-name="%providerName">
+
+   <description url="http://www.eclipse.org/MoDisco/">
+      %description
+   </description>
+
+   <copyright>
+      Copyright (c) 2010 Mia-Software.
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License
+v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.modisco.kdm.source.extension.ui.browser.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.kdm.uml2converter.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.omg.gastm.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.kdm.source.discoverer.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmt.modisco.kdm.source.discoverer.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.omg.smm.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmt.modisco.kdm.uml2converter.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmt.modisco.omg.kdm.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmt.modisco.kdm.browser.extension.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.kdm.source.extension.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.util.atl.core.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.kdm.source.discoverer.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.kdm.uml2converter.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmt.modisco.omg.smm.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.modisco.kdm.source.extension.source"
+         download-size="0"
+         install-size="0"
+         version="0.9.1.v201109150824"
+         unpack="false"/>
+
+</feature>

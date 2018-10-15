@@ -1,0 +1,22 @@
+
+C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment>mvn install:install-file -Dfile=bpel-deployment-jbi-se\lib\jbi-api-1.0.jar -DgroupId=javax.jbi -DartifactId=jbi-api -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true 
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   BPEL Deployment
+[INFO]   XSL extension functions
+[INFO]   BPEL Deployer JBI Service Engine
+[INFO]   BPEL Deployer JBI Bindings
+[INFO] Searching repository for plugin with prefix: 'install'.
+[INFO] ------------------------------------------------------------------------
+[INFO] Building BPEL Deployment
+[INFO]    task-segment: [install:install-file] (aggregator-style)
+[INFO] ------------------------------------------------------------------------
+[INFO] [install:install-file {execution: default-cli}]
+[INFO] Installing C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-jbi-se\lib\jbi-api-1.0.jar to C:\Documents and Settings\Admin\.m2\repository\javax\jbi\jbi-api\1.0\jbi-api-1.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 second
+[INFO] Finished at: Sat Jan 16 18:28:12 GST 2010
+[INFO] Final Memory: 4M/8M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Generated-from: 1245288117296;type=2
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.omondo.uml.studio
+Bundle-Version: 3.4.1.v20090618
+Bundle-Vendor: Omondo ©
+Bundle-Localization: plugin

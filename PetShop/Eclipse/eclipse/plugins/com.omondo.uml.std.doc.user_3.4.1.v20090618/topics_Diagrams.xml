@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Diagrams" topic="diagrams/index.html">
+    <topic label="Class Diagram" href="diagrams/classDiagram/index.html">
+        <topic label="Concept" href="diagrams/classDiagram/concept/index.html"/>
+	    <topic label="Drag'n'Drop" href="diagrams/classDiagram/dnd/index.html"/>
+	    <topic label="New" href="diagrams/classDiagram/New/index.html"/>
+	    <topic label="Insert" href="diagrams/classDiagram/Insert/index.html"/>
+	    <topic label="Extend UML 2" href="diagrams/classDiagram/Extend_UML_2/index.html"/>
+	    <topic label="Package Elements" href="diagrams/classDiagram/Package_Elements/index.html"/>
+	    <topic label="Show Hide" href="diagrams/classDiagram/Show_Hide/index.html"/>
+	    <topic label="Show View" href="diagrams/classDiagram/Show_View/index.html"/>
+	    <topic label="Properties View" href="diagrams/classDiagram/Properties_View/index.html"/>
+	    <topic label="JavaDoc" href="diagrams/classDiagram/JavaDoc/index.html"/>
+	    <topic label="Update UML ModeL" href="diagrams/classDiagram/Update_UML_ModeL/index.html"/>
+	    <topic label="Sorting" href="diagrams/classDiagram/Sorting/index.html"/>
+	    <topic label="Package Information" href="diagrams/classDiagram/Package_Information/index.html"/>
+	    <topic label="Show Hide Links" href="diagrams/classDiagram/Show_Hide_Links/index.html"/>
+	    <topic label="Resize All Shapes" href="diagrams/classDiagram/Resize_All_Shapes/index.html"/>
+	    <topic label="Arrange Diagram" href="diagrams/classDiagram/Arrange_Diagram/index.html"/>
+	    <topic label="PSM Preferences" href="diagrams/classDiagram/PSM_Preferences/index.html"/>
+	    <topic label="Presentation Mode" href="diagrams/classDiagram/presentationModes/index.html"/>
+	    <topic label="Navigation" href="diagrams/classDiagram/navigation/index.html"/>
+	    <topic label="Real-Time Synchronization" href="diagrams/classDiagram/codeSynchronization/index.html"/>
+	    <topic label="Refactoring" href="diagrams/classDiagram/refactoring/index.html"/>
+	    <topic label="Working At Package Level" href="diagrams/classDiagram/workingAtPackageLevel/index.html"/>
+	    <topic label="View Selector" href="diagrams/classDiagram/viewSelector/index.html"/>
+	    <topic label="Property Concept" href="diagrams/classDiagram/propertyconcept/index.html"/>
+	    <topic label="Group of Elements" href="diagrams/classDiagram/Group_of_Elements/index.html"/>
+	    <topic label="Format" href="diagrams/classDiagram/Format/index.html"/>		
+	    <topic label="Toolbar" href="diagrams/classDiagram/Toolbar/index.html"/>
+	    <topic label="Class Diagram Example" href="diagrams/classDiagram/ClassDiagramExample/index.html"/>
+    </topic>
+    <topic label="Sequence Diagram" href="diagrams/sequenceDiagram/index.html">
+	    <topic label="Concept" href="diagrams/sequenceDiagram/concept/index.html"/>
+	    <topic label="Drag'n'Drop" href="diagrams/sequenceDiagram/dnd/index.html"/>
+	    <topic label="Message Information" href="diagrams/sequenceDiagram/Message_Information/index.html"/>
+	    <topic label="Toolbar" href="diagrams/sequenceDiagram/Toolbar/index.html"/>
+	    <topic label="Reverse Engineering" href="diagrams/sequenceDiagram/reverse/index.html"/>
+	    <topic label="Extension" href="diagrams/sequenceDiagram/extend/index.html"/>
+	    <topic label="Filtering" href="diagrams/sequenceDiagram/filter/index.html"/>
+	    <topic label="Sequence Diagram Example" href="diagrams/sequenceDiagram/SequenceDiagramExample/index.html"/>
+    </topic>
+    <topic label="Use Case Diagram" href="diagrams/usecaseDiagram/index.html">
+	    <topic label="Concept" href="diagrams/usecaseDiagram/concept/index.html"/>
+	    <topic label="Toolbar" href="diagrams/usecaseDiagram/Toolbar/index.html"/>
+	    <topic label="Extend UML2" href="diagrams/usecaseDiagram/Extend_UML2/index.html"/>
+	    <topic label="Show Hide" href="diagrams/usecaseDiagram/Show_Hide/index.html"/>
+	    <topic label="Drag'n'Drop" href="diagrams/usecaseDiagram/drag_drop/index.html"/>
+	    <topic label="UseCase Diagram Example" href="diagrams/usecaseDiagram/UseCaseExample/index.html"/>
+    </topic>
+    <topic label="State Diagram" href="diagrams/stateDiagram/index.html">
+	    <topic label="Concept" href="diagrams/stateDiagram/concept/index.html"/>
+	    <topic label="Toolbar" href="diagrams/stateDiagram/Toolbar/index.html"/>
+	    <topic label="Drag'n Drop" href="diagrams/stateDiagram/Drag_drop/index.html"/>
+	    <topic label="State Diagram Example" href="diagrams/stateDiagram/StateDiagramExample/index.html"/>
+    </topic>
+    <topic label="Activity Diagram" href="diagrams/activityDiagram/index.html">
+	    <topic label="Concept" href="diagrams/activityDiagram/concept/index.html"/>
+	    <topic label="Drag'n'Drop" href="diagrams/activityDiagram/dnd/index.html"/>
+	    <topic label="Toolbar" href="diagrams/activityDiagram/Toolbar/index.html"/>
+	    <topic label="Activity Diagram Example" href="diagrams/activityDiagram/ActivityDiagramExample/index.html"/>
+    </topic>   
+    <topic label="Collaboration Diagram" href="diagrams/collaborationDiagram/index.html">
+	    <topic label="Concept" href="diagrams/collaborationDiagram/concept/index.html"/>
+	    <topic label="Drag'n'Drop" href="diagrams/collaborationDiagram/dnd/index.html"/>
+	    <topic label="Toolbar" href="diagrams/collaborationDiagram/Toolbar/index.html"/>
+	    <topic label="collaboration Diagram Example" href="diagrams/collaborationDiagram/CollaborationDiagramExample/index.html"/>
+    </topic>
+    <topic label="Object Diagram" href="diagrams/objectDiagram/index.html">
+	    <topic label="Concept" href="diagrams/objectDiagram/concept/index.html"/>
+	    <topic label="Toolbar" href="diagrams/objectDiagram/Toolbar/index.html"/>
+    </topic>
+    <topic label="Component Diagram" href="diagrams/componentDiagram/index.html">
+	    <topic label="Concept" href="diagrams/componentDiagram/concept/index.html"/>
+	    <topic label="Drag'n'Drop" href="diagrams/componentDiagram/dnd/index.html"/>
+	    <topic label="Extend UML 2" href="diagrams/componentDiagram/Extend_UML_2/index.html"/>
+	    <topic label="Show View" href="diagrams/componentDiagram/Show_View/index.html"/>
+	    <topic label="Toolbar" href="diagrams/componentDiagram/Toolbar/index.html"/>
+	    <topic label="Component Diagram Example" href="diagrams/componentDiagram/ComponentDiagramExample/index.html"/>
+    </topic>
+    <topic label="Deployment Diagram" href="diagrams/deploymentDiagram/index.html">
+	    <topic label="Concept" href="diagrams/deploymentDiagram/concept/index.html"/>
+	    <topic label="Toolbar" href="diagrams/deploymentDiagram/Toolbar/index.html"/>
+	    <topic label="Drag'n Drop" href="diagrams/deploymentDiagram/drag_drop/index.html"/>
+	    <topic label="Deployment Diagram Example" href="diagrams/deploymentDiagram/DeploymentDiagramExample/index.html"/>
+    </topic>
+    <topic label="Robustness Diagram" href="diagrams/robustnessDiagram/index.html">
+	    <topic label="Concept" href="diagrams/robustnessDiagram/concept/index.html"/>
+	    <topic label="Robustness Diagram Example" href="diagrams/robustnessDiagram/robustnessDiagramExample/index.html"/>
+    </topic>	
+    <topic label="Profile Diagram" href="diagrams/Profile_diagram/index.html">
+	    <topic label="Example" href="diagrams/Profile_diagram/index.html"/>
+    </topic>	
+</toc>

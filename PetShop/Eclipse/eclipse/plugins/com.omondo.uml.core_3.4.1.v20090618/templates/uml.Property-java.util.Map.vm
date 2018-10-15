@@ -1,0 +1,333 @@
+#set( $imports = $JavaTool.getImportManager($uml) )
+#set( $this = $JavaTool.getHelper($uml) )
+#set( $collection = $imports.newImport("java.util.Collection", [$$this.qualifier.value]))
+#set( $set = $imports.newImport("java.util.Set", [$$this.qualifier.key]))
+#set( $parameters = $JavaTool.parameter($this.name))
+#set( $parameter = $JavaTool.parameter($this.elementType.name))
+#set( $key = $JavaTool.parameter($this.qualifier.key.name))
+#set( $sharp = "#" )
+#if(!$this.isAbstract()) 
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+#end
+ */
+$JavaTool.modifiers($this.attribute) $JavaTool.name($this.attribute.type) ${this.attribute.name}#if (${this.attribute.initializer} != "")
+ = ${this.attribute.initializer}#end
+;
+#if($this.isGenerateAccessors()) 
+## =================================================================
+##   Getter
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end
+#if($this.isAbstract()) 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+ *
+#else
+ *
+ * @return Returns the $this.attribute.name.
+ *
+#end
+ */
+$JavaTool.getterAnnotations($this)
+$JavaTool.modifiers($this) $JavaTool.name($this.attribute.type) get${this.cappedName}();
+#else
+ * Getter of the property <tt>${this.name}</tt>
+ *
+ * @return Returns the ${this.attribute.name}.
+ *
+ */
+$JavaTool.getterAnnotations($this)
+$JavaTool.modifiers($this) $JavaTool.name($this.attribute.type) get${this.cappedName}()
+{
+	return #if ($JavaTool.useThis)this.#end$this.attribute.name;
+}
+#end
+
+#if(!$this.isJPA())
+## =================================================================
+##    keySet();
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns a set view of the keys contained in this map.
+ *
+ * @return a set view of the keys contained in this map.
+ * @see	java.util.Map${sharp}keySet()
+ *
+ */
+$JavaTool.modifiers($this) $JavaTool.name($set) ${this.name}KeySet()#if($this.isAbstract()) 
+;
+#else
+{
+	return #if ($JavaTool.useThis)this.#end${this.attribute.name}.keySet();
+}
+#end
+## =================================================================
+## 	java.util.Collection values();
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns a collection view of the values contained in this map.
+ *
+ * @return a collection view of the values contained in this map.
+ * @see	java.util.Map${sharp}values()
+ *
+ */
+$JavaTool.modifiers($this) $JavaTool.name($collection) ${this.name}Values()#if($this.isAbstract()) 
+;
+#else
+{
+	return #if ($JavaTool.useThis)this.#end${this.attribute.name}.values();
+}
+#end
+## =================================================================
+##   boolean containsKey();
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns <tt>true</tt> if this map contains a mapping for the specified
+ * key.
+ *
+ * @param key key whose presence in this map is to be tested.
+ * @return <tt>true</tt> if this map contains a mapping for the specified
+ *         key.
+ * @see	java.util.Map${sharp}containsKey(Object)
+ *
+ */
+$JavaTool.modifiers($this) boolean ${this.name}ContainsKey($JavaTool.name($this.qualifier.key) $key)#if($this.isAbstract()) 
+;
+#else
+{
+	return #if ($JavaTool.useThis || ${this.attribute.name} == $key)this.#end${this.attribute.name}.containsKey($key);
+}
+#end
+## =================================================================
+##  boolean containsValue();
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns <tt>true</tt> if this map maps one or more keys to the
+ * specified value.
+ *
+ * @param value value whose presence in this map is to be tested.
+ * @return <tt>true</tt> if this map maps one or more keys to the
+ *         specified value.
+ * @see	java.util.Map${sharp}containsValue(Object)
+ *
+ */
+$JavaTool.modifiers($this) boolean ${this.name}ContainsValue($JavaTool.name($this.qualifier.value) $parameters)#if($this.isAbstract()) 
+;
+#else
+{
+	return #if ($JavaTool.useThis || $parameters == ${this.attribute.name})this.#end${this.attribute.name}.containsValue($parameters);
+}
+#end
+## =================================================================
+##  Object get(Object key);
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns the value to which this map maps the specified key.
+ *
+ * @param key key whose associated value is to be returned.
+ * @return the value to which this map maps the specified key, or
+ *	       <tt>null</tt> if the map contains no mapping for this key.
+ * @see	java.util.Map${sharp}get(Object) 
+ *
+ */
+$JavaTool.modifiers($this) $JavaTool.name($this.qualifier.value) get${this.cappedName}($JavaTool.name($this.qualifier.key) $key)#if($this.isAbstract()) 
+;
+#else
+{
+	return ($JavaTool.name($this.qualifier.value)) #if ($JavaTool.useThis || ${this.attribute.name} == $key)this.#end${this.attribute.name}.get($key);
+}
+#end
+## =================================================================
+##  boolean isEmpty(Object key);
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns <tt>true</tt> if this map contains no key-value mappings.
+ *
+ * @return <tt>true</tt> if this map contains no key-value mappings.
+ * @see	java.util.Map${sharp}isEmpty() 
+ *
+ */
+$JavaTool.modifiers($this) boolean is${this.cappedName}Empty()#if($this.isAbstract()) 
+;
+#else
+{
+	return #if ($JavaTool.useThis)this.#end${this.attribute.name}.isEmpty();
+}
+#end
+## =================================================================
+##  int size();
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Returns the number of key-value mappings in this map.
+ *
+ * @return the number of key-value mappings in this map.
+ * @see	java.util.Map${sharp}size() 
+ *
+ */
+$JavaTool.modifiers($this) int ${this.name}Size()#if($this.isAbstract())
+;
+#else
+{
+	return #if ($JavaTool.useThis)this.#end${this.attribute.name}.size();
+}
+#end
+#end ## end if jpa
+
+#if (!$this.isReadOnly())
+## =================================================================
+##  setter
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Setter of the property <tt>${this.name}</tt>
+ *
+ * @param value the ${this.attribute.name} to set.
+ *
+ */
+$JavaTool.modifiers($this) void set${this.cappedName}($JavaTool.name($this.attribute.type) $parameters)#if($this.isAbstract()) 
+;
+#else
+{
+	#if ($JavaTool.useThis || ${this.attribute.name} == $parameters)this.#end$this.attribute.name = $parameters;
+}
+#end
+
+#if(!$this.isJPA())
+## =================================================================
+##  put(Object key, Object value);
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Associates the specified value with the specified key in this map
+ * (optional operation). 
+ *
+ * @param key key with which the specified value is to be associated.
+ * @param value value to be associated with the specified key.
+ * @return previous value associated with specified key, or <tt>null</tt>
+ * @see	java.util.Map${sharp}put(Object, Object) 
+ *
+ */
+$JavaTool.modifiers($this) $JavaTool.name($this.qualifier.value) put${this.cappedName}($JavaTool.name($this.qualifier.key) $key, $JavaTool.name($this.qualifier.value) $parameters)#if($this.isAbstract()) 
+;
+#else
+{
+	return ($JavaTool.name($this.qualifier.value)) #if ($JavaTool.useThis || ${this.attribute.name} == $parameters || ${this.attribute.name} == $key)this.#end${this.attribute.name}.put($key, $parameters);
+}
+#end
+## =================================================================
+##  Object remove(Object key);
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Removes the mapping for this key from this map if it is present
+ * (optional operation).
+ *
+ * @param key key whose mapping is to be removed from the map.
+ * @return previous value associated with specified key, or <tt>null</tt>
+ *	       if there was no mapping for key.
+ * @see	java.util.Map${sharp}remove(Object) 
+ *
+ */
+$JavaTool.modifiers($this) $JavaTool.name($this.qualifier.value) remove${this.cappedName}($JavaTool.name($this.qualifier.key) $key)#if($this.isAbstract()) 
+;
+#else
+{
+	return ($JavaTool.name($this.qualifier.value)) #if ($JavaTool.useThis || ${this.attribute.name} == $key)this.#end${this.attribute.name}.remove($key);
+}
+#end
+## =================================================================
+##  boolean clear();
+## =================================================================
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+ * Removes all mappings from this map (optional operation).
+ *
+ * @see	java.util.Map${sharp}clear() 
+ *
+ */
+$JavaTool.modifiers($this) void clear${this.cappedName}()#if($this.isAbstract())
+;
+#else
+{
+	#if ($JavaTool.useThis)this.#end${this.attribute.name}.clear();
+}#end
+#end ## end if jpa
+#end## if readonly
+#end## if isGenerateAccessors 

@@ -1,0 +1,30 @@
+	------
+	How to configure Provisioner
+	------
+	Gonzalo Espert
+	------
+	Nov 9, 2007
+
+
+How to compile Provisioner
+
+* Introduction
+
+  Provisioner's source code structure does not contain third-party libraries.
+  Third-party libraries are included automatically by Maven at compile time.  
+ 
+  First time you compile Provisioner, Maven will copy all third-party libraries 
+  to your local Maven repository and next time you compile it will take them 
+  from there. 
+ 
+* Generating Provisioner jar with third-party libraries inside
+
+  <<<# mvn package>>>
+  
+* Generating Provisioner's web-site (i.e. this site)
+
+  <<<# mvn site:site>>>
+  
+* Compiling Provisioner without running the tests suites
+
+  <<<# mvn -Dmaven.test.skip=true compile>>>

@@ -1,0 +1,17 @@
+<ldap xmlns="http://ldapv3.org">
+  <description>
+     LDAP network element configuration.
+  </description>
+  <parameter name="type" value="ldap_network_element_name"/>
+  <parameter name="host" value="localhost"/> 
+  <parameter name="port" value="" />
+  
+  <parameter name="password"  value="secret" />  
+  <parameter name="baseDN"    value="dc=provisioner,dc=net" />
+  <parameter name="authType"  value="simple" />  
+  
+  <!-- root userDN is for demonstration purposes.  
+  Do not use root in a production system. -->
+  <parameter name="userDN"    value="uid=root,dc=provisioner,dc=net" />
+  <parameter name="responses" value="config/ldap_responses.xml" />
+</ldap>

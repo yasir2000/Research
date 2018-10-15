@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="XMI 2.1 Editor" topic="Model_Editor/index.html">
+    <topic label="Activate the Model Editor" href="Model_Editor/Activate_Model_Editor/index.html"/>
+    <topic label="Navigate in the Model Editor" href="Model_Editor/Navigate_in_the_model_editor/index.html"/>
+    <topic label="Java metamodel element " href="Model_Editor/Change_elements_properties/index.html"/>
+    <topic label="UML metamodel element" href="Model_Editor/UML_Metamodel_element/index.html"/>
+    <topic label="Multiple projects model" href="Model_Editor/Multiple_project_model/index.html"/>
+</toc>

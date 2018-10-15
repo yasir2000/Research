@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Jee Code Generation" topic="code/index.html">
+    <topic label="Create a new AndroMDA Project" href="code/Create_AndroMDA_Project/index.html"/>
+    <topic label="EJB Code Generation" href="code/EJB_Code/index.html"/>
+    <topic label="Hibernate Code Generation" href="code/Hibernate_Code/index.html"/>
+    <topic label="JSF & Struts Code Generation" href="code/JSF_Struts_Code/index.html"/>
+</topic>
+</toc>

@@ -1,0 +1,69 @@
+<neptune>
+<processinformation>
+<name>PetShop Order Process</name>
+<creator>Thar Baker</creator>
+<organisation>LJMU</organisation>
+……………
+</processinformation>
+<orderprocess>
+<!-- Start Point -->
+<startpoint id="StartPoint1">
+<moveto>Checkout</moveto>
+</startpoint>
+<!-- Check out -->
+<action id="Checkout">
+<input type="text">
+<message><![CDATA[Are you sure you want to checkout now ?]]>
+</message>
+</input>
+<ui page="checkout.aspx"/>
+<moveto result="[Not set]">ValidateAccount</moveto>
+</action>
+<!-- Validate account -->
+<action id="ValidateAccount">
+<input type="text">
+<message><![CDATA[Validate your account in process...]]>
+</message>
+</input>
+<ui page="validateaccount.aspx"/>
+<moveto result="[Not set]">Valid</moveto>
+</action>
+<!-- Decision Making -->
+<question id="Valid" NeptuneFunction="process">
+<input type="text">
+<validation><![CDATA[1]]></validation>
+<message><![CDATA[]]></message>
+</input>
+<moveto result="1">Billing</moveto>
+<moveto result="[Not set]">EndPoint1</moveto>
+</question>
+<!-- Order Billing -->
+<action id="Billing">
+<input type="text">
+<message><![CDATA[Billing your order in process...]]>
+</message>
+</input>
+<ui page="Billing.aspx"/>
+<moveto result="[Not set]">Shipping</moveto>
+</action>
+
+<!-- Order Shipping -->
+<action id="Shipping">
+<input type="text">
+<message><![CDATA[Shipping your order in process...]]>
+</message>
+</input>
+<ui page="Shipping.aspx"/>
+<moveto result="[Not set]">Order Process</moveto>
+</action>
+<!-- Order Process -->
+<action id="Order Process">
+<input type="text">
+<message><![CDATA[process.aspx]]></message>
+</input>
+<ui page="OrderProcess.aspx"/>
+<moveto result="[Not set]">EndPoint1</moveto>
+</action>
+<!-- End -->
+<endpoint id="EndPoint1" />
+</orderprocess >

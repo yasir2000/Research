@@ -1,0 +1,16 @@
+<merak_responses xmlns="http://merak_responses.org">
+  <description>
+     Merak mail server (www.merakmailserver.com) 
+     network element possible responses.
+  </description>
+  <operation type="Delete">
+  	<response result="not found\." success="yes" respond="Mailbox does not exist" retry="no"/>
+  	<response result="problem\." success="no" respond="Execution failure" retry="yes"/>
+  	<response result="deleted\." success="yes" respond="Successful operation" retry="no"/>
+  </operation>
+  <operation type="Create">
+  	<response result="already exists\." success="no" respond="Mailbox already exist" retry="no"/>
+	<response result="problem\." success="no" respond="Execution failure" retry="yes"/>
+  	<response result="created\." success="yes" respond="Successful operation" retry="no"/>
+  </operation>
+</merak_responses>

@@ -1,0 +1,35 @@
+	------
+	Business usage cases
+	------
+	Gonzalo Espert
+	------
+	Nov 9, 2007
+
+
+Business usage scenarios
+
+  The followings are sample provisioning scenarios depicting user identity 
+  and service provisioning topologies and provisioning requirements flows.
+  They are not comprehensive or prioritized and there exist other possible
+  valid scenarios.
+  
+  Generally speaking, Provisioner can help a 
+  {{{service-subscription-case.html}service provider}} automate its user 
+  and service provisioning tasks. 
+  
+  For example, an {{{ip-services-case.html}VoIP service provider}} can use 
+  Provisioner to create, modify and delete subscribers into its 
+  soft-switches, voice mail servers, e-mail servers, internet servers, etc. 
+  
+  Other example might be a {{{telco-business-case.html}mobile phone 
+  service provider}} that would use Provisioner to create, modify and 
+  delete mobile subscribers in its HLRs (i.e. Home Location Registry) 
+  for voice services, VMSC (i.e. Voice Mail Service Centre) for voice 
+  mail services, SMSC (i.e. Short Message Service Centre) for short 
+  message services, etc.
+  
+  A particular case can be an {{{it-business-case.html}internal IT 
+  department}} that would use Provisioner to automate the creation, 
+  modification and deletion of users and users' roles in its corporate 
+  directory, phonebook, e-mail address book, ERP system, PBX, 
+  mainframe, etc. 

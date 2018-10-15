@@ -1,0 +1,6 @@
+<ldap_responses xmlns="http://ldapv3_responses.org">
+  <description>
+     LDAP server network element's possible responses.
+  </description>
+ 
+</ldap_responses>

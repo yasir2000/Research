@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.m2m.atl.source"
+      label="%featureName"
+      version="3.2.1.v20110914-0724"
+      provider-name="%providerName">
+
+   <description>
+      Generated source feature. The original description is:
+
+ATL Runtime
+   </description>
+
+   <copyright url="http://www.eclipse.org/legal/epl-v10.html">
+      /*  
+* Copyright (c) 2004, 2009 INRIA.
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License
+v1.0
+* which accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+* 
+*/
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%ModelingUpdateSiteName" url="http://www.eclipse.org/modeling/updates/"/>
+      <discovery label="%ModelingUpdateSiteName" url="http://www.eclipse.org/modeling/updates/"/>
+   </url>
+
+   <plugin
+         id="org.eclipse.m2m.atl.engine.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.common.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.dsls.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.adt.debug.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.adt.ui.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.core.ui.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.engine.vm.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.drivers.emf4atl.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.debug.core.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.core.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.core.ant.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.core.emf.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.core.ui.vm.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.adt.editor.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.drivers.uml24atl.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.engine.emfvm.launch.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.engine.emfvm.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.atl.adt.source"
+         download-size="0"
+         install-size="0"
+         version="3.2.1.v20110914-0724"
+         unpack="false"/>
+
+</feature>

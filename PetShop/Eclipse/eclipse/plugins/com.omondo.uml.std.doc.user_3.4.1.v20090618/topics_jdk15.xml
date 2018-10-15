@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="JDK 1.5 Support" topic="jdk15/index.html">
+    <topic label="Feature activation" href="jdk15/feature-activation/index.html"/>
+    <topic label="Enumeration" href="jdk15/enumeration/index.html"/>
+    <topic label="Generic type" href="jdk15/generic-type/index.html"/>
+</toc>

@@ -1,0 +1,995 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang='en'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type='text/JavaScript' src='/js/cookie_get.js'></script>
+<title>Getting Started With the Java Rule Engine API (JSR 94)</title>
+<meta http-equiv="content-language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="business logic, J2SE, J2EE, Java SE, Java EE, business rules, rule engine, rules engine, Java rule engine, JSR 94, enterprise, rules administrator API, administrator API, runtime API, client runtime API, JDBC, Jess, Drools, Blaze Advisor, ILOG, JRules, RuleML">
+<meta name="description" content="You can create agile business applications by combining the Java platform and business rule technology, managing the business behavior outside the source code. JSR 94 provides a vendor-neutral Java platform interface to access a rule engine.">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="archive" content="FALSE">
+<meta name="date" content="2005-07-26">
+<link rel="stylesheet" href="/css/default_developer.css" />
+<script language="JavaScript" type="text/javascript" src="/js/popUp.js"></script>
+<script language="javascript1.2" type="text/javascript" src="/js/sniff.js"></script>
+<script language="javascript1.2" type="text/javascript" src="/js/menucontent.js"></script>
+<script language="javascript1.2" type="text/javascript" src="/js/menucode.js"></script>
+<script language="javascript1.2" type="text/javascript" src="/js/developer.js"></script>
+</head>
+<!--stopindex-->
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" rightmargin="0" bgcolor="#ffffff" onload="prepmenus(); done=true">
+<a name="top"></a>
+<!-- BEGIN GENERIC MASTHEAD -->
+<!-- BEGIN A1 COMPONENT V.0 -->
+<div class="a1 a1r2">
+<div class="a1v0">
+<a href="#skip2content" class="skiplink">Skip to Content</a>
+<span class="toolbarlinks">
+<a href="/global/mh/suncom/index.html">Sun</a>
+<a href="/global/mh/java/">Java</a>
+<a href="/global/mh/solaris/">Solaris</a>
+<a href="/global/mh/communities/" class="dividelink">Communities</a>
+<a href="http://developers.sun.com/global/my_profile.html">My SDN Account</a>
+
+</span>
+</div>
+</div>
+<!-- END A1 COMPONENT V.0 -->
+
+<!-- BEGIN A2 COMPONENT V.1 -->
+<div class="a2w0">
+<div class="a2" id="a2v1">
+<div class="a2w1"><div class="a2w2"><div class="a2w3"><div class="a2w4">
+<div class="a2topiclinks">
+<div class="a2search">
+<form action="http://search.sun.com/main/index.jsp" accept-charset="utf-8" method="GET">
+<input type="hidden" name="charset" value="utf-8">
+<input type="hidden" name="col" value="main-developer-all">
+<span class="rightarrowwhite">&raquo;</span>&nbsp;<a href="http://developers.sun.com/global/search_tips.html">search tips</a>&nbsp;
+<input class="searchfield" name="qt" class="medium" size="7" onFocus="if( this.value==this.defaultValue ) this.value='';" value="Search">
+<input id="searchbttn" type="image" border="0" src="/im/a2_bttn_search.gif" alt="Submit Search">
+</form>
+</div>
+<a href="http://www.sun.com" title="Home Page" id="sunlogo"><img src="/im/a.gif" alt="Home Page" width="98" height="58" border="0" /></a>
+<a href="http://developers.sun.com" title="Sun Developer Network"><img src="/im/a.gif" id="venuespacer" alt="Sun Developer Network" width="400" height="33" border="0" /></a>
+<ul id="mtopics">
+<li id="mtopic1"><a id="glink1" class="tpclink a2menu" title="See All APIs" href="/global/mh/api/index.html">APIs</a></li>
+<li id="mtopic2"><a id="glink2" class="tpclink a2menu" title="See All Downloads" href="/global/mh/downloads/index.html">Downloads</a></li>
+<li id="mtopic3"><a id="glink3" class="tpclink a2menu" title="See All Products" href="/global/mh/products/index.html">Products</a></li>
+<li id="mtopic4"><a id="glink4" class="tpclink a2menu" title="See All Support" href="/global/mh/support/index.html">Support</a></li>
+<li id="mtopic5"><a id="glink5" class="tpclink a2menu" title="See All Training" href="/global/mh/training/index.html">Training</a></li>
+<li id="mtopic6"><a id="glink6" class="tpclink a2menu" title="See All Participate" href="/global/mh/participate/index.html">Participate</a></li>
+</ul>
+</div>
+</div></div></div></div>
+</div></div>
+<!-- END A2 COMPONENT V.1 -->
+<!-- END GENERIC MASTHEAD -->
+<!-- BEGIN BREADCRUMB -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="vatop">
+<tr>
+<td>      
+<div class="breadcrumb">
+<a href="http://developers.sun.com/">SDN Home</a>
+ &gt; <a href="http://developers.sun.com/prodtech/index.html">Products & Technologies</a> &gt; <a href="http://java.sun.com/index.jsp">Java Technology</a> &gt; <a href="http://java.sun.com/reference/index.html">Reference</a> &gt; <a href="http://java.sun.com/reference/techart/index.html">Technical Articles and Tips</a> &gt;
+</div>
+</td>
+<td align="right" nowrap="nowrap"><div class="breadcrumb">
+</div></td></tr>
+<tr><td colspan="2"><img src="/im/a.gif" width="770" height="1" border="0" alt=" " /></td></tr>
+</table>
+<span class="sp5">&nbsp;</span><br />
+<!-- END BREADCRUMB -->
+<!-- BEGIN PAGETITLE -->
+<div class="pagetitle2">Article</div>
+<div class="smallpagetitle"><h1>Getting Started With the Java Rule Engine API (JSR 94): Toward Rule-Based Applications</h1></div>
+<!-- END PAGETITLE -->
+<!-- BEGIN WRAPPER TABLE, 2 COLUMN, MAIN/RIGHT -->
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+<tr><td width="100%" valign="top">
+<!-- BEGIN CENTRAL COLUMN COMPONENTS -->
+<!--startindex-->
+<!-- ============ -->
+<!-- MAIN CONTENT -->
+<!-- ============ -->
+<a name="skip2content"></a>
+<!--  BEGIN VCD4 PFV  -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="smaller" valign="top"><em></em></td>
+<td width="10">&nbsp;</td>
+<td align="right" valign="bottom"><div class="sitelinks" style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="bottom" align="right">&nbsp;</td>
+<td valign="bottom" class="smaller" nowrap="nowrap"><a href="/jsp_utils/PrintPage.jsp" target="printFriendlyView" onclick="openPopup('','printFriendlyView',710,650,'no',1,1,0,0,0,0); return true;"><img src="/im/ic_print.gif" width="14" height="12" alt="Print-friendly Version" border="0" hspace="4" />Print-friendly Version</a><br></td>
+</tr></table></div>
+</td></tr>
+</table>
+<!--  END VCD4 PFV -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class="smaller" valign="top"><em>
+By <a href="/features/authors.html#mahmoud">Qusay H. Mahmoud</a>, July 26, 2005
+</em></td>
+<td width="10">&nbsp;</td>
+<td align="right" valign="bottom">
+<div class="sitelinks" style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<!--
+<td valign="bottom" align="right"><img src="/im/ic_email.gif" width="14" height="12" border="0" hspace="4" vspace="1" alt=" " /></td>
+<td valign="bottom" class="smaller" nowrap="nowrap"><a href="#{link placeholder}">E-mail</a></td>
+<td>&nbsp;&nbsp;</td>
+<td valign="bottom" align="right">&nbsp;</td>
+<td valign="bottom" class="smaller" nowrap="nowrap"><a href="/jsp_utils/PrintPage.jsp" target="printFriendlyView" onclick="openPopup('','printFriendlyView',710,650,'no',1,1,0,0,0,0); return true;"><img src="/im/ic_print.gif" width="14" height="12" alt="Print-friendly Version" border="0" hspace="4" />Print-friendly Version</a></td>
+<td>&nbsp;&nbsp;</td>
+<td valign="bottom" align="right"><img src="/im/ic_download_thin.gif" width="9" height="14" hspace="4" border="0" alt=" " /></td>
+<td valign="bottom" class="smaller" nowrap="nowrap"><a href="#{link placeholder}">Download</a></td>
+-->
+</tr>
+</table>
+</div>
+</td></tr>
+</table>
+<div class="contentdivider"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr></table></div>
+<!--  END VCD4 BYLINE AND TOOLS  -->
+<!-- BEGIN VCD01 Overview -->
+<!-- BEGIN VCD1 OVERVIEW COMPONENT  -->
+<div class="padbottom10"><p>
+For many mission-critical applications, the process of automating business policies, procedures, and business logic is simply too dynamic to manage effectively as application source code. Using business rules can help you develop more agile applications. <a href="http://www.businessrulesgroup.org/brghome.htm" target="_blank">The Business Rules Group</a> defines a <i>business rule</i> as a statement that defines or constrains some aspect of the business; a business rule is intended to assert business structure or to control or influence the business's behavior. A rule engine evaluates and executes rules, which are expressed as <i>if-then</i> statements. The power of business rules lies in their ability both to separate knowledge from its implementation logic and to be changed without changing source code.
+</p>
+<p>
+The specification for the 
+<a href="http://www.jcp.org/en/jsr/detail?id=94" target="_blank">Java Rule Engine API (JSR 94)</a>, developed through the <a href="http://www.jcp.org" target="_blank">Java Community Process (JCP)</a> program, defines a Java runtime API for rule engines by providing a simple API to access a rule engine from a Java Platform, Standard Edition (Java SE, formerly known as J2SE) or a Java Platform, Enterprise Edition (Java EE, formerly known as J2EE) Java technology client. This article provides an overview of JSR 94 and discusses how to fit business rule technology into Java technology applications. Sample code gives a flavor of the effort involved in developing rule-based 
+applications.
+</p>
+</div>      
+<!-- END VCD1 OVERVIEW COMPONENT  -->
+<!-- END VNV4 LEFTNAV  COMPONENT -->      
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>Introduction</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+Many business applications have to deal with the dynamic changes of market economics. For example, applications for use in the insurance and banking industries must be able to accommodate the inevitable market changes that no one can predict or plan for during design. A solution is to have a rule engine, which is basically a set of tools that enable business analysts and developers to build decision logic based on an organization's data. The rule engine applies rules and actions as defined by end users without affecting how the application runs. The application is built to deal with the rules, which are designed separately.
+</p>
+<p>
+Examples of rule engines include Drools, Fair Isaac Blaze Advisor, ILOG JRules, and Jess, to name a few. The lack of standards, however, may be a major factor in deterring businesses from using rule-based applications. Most rule engines have proprietary APIs, making them difficult to integrate with applications. If a rule engine is no longer supported and the business decides to adopt another rule engine, most of the application code will need to be rewritten. JSR 94 is an attempt to standardize rule engine implementations for Java technology. The four rule engines mentioned earlier support JSR 94.
+</p>
+<p>
+JSR 94 provides guidelines for the rule administration and rule runtime APIs, but it defines no guidelines for what language to use to define the rules and actions. Efforts are under way to standardize a common rule language, including the <a href="http://www.ruleml.org" target="_blank">Rule Markup Language (RuleML)</a>.
+</p>
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>Rule Engines</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+The underlying idea of a rule engine is to externalize the business or application logic. A rule engine can be viewed as a sophisticated interpreter of <i>if-then</i> statements. The <i>if-then</i> statements are the rules. A rule is composed of two parts, a condition and an action: When the condition is met, the action is executed. The <i>if</i> portion contains conditions (such as <code>amount >=$100</code>), and the <i>then</i> portion contains actions (such as <code>offer discount 5%</code>). The inputs to a rule engine are a collection of rules called a rule execution set and data objects. The outputs are determined by the inputs and may include the original input data objects with modifications, new data objects, and possible side effects (such as sending email to the customer).
+</p>
+<p>
+Rule engines should be used for applications with highly dynamic business logic and for applications that allow end users to author business rules. A rule engine is a great tool for efficient decision making because it can make decisions based on thousands of facts quickly, reliably, and repeatedly.
+</p>
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>The When, Where, and Why of Rule Engines</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+Rule engines are used in applications to replace and manage some of the business logic. They are best used in applications where the business logic is too dynamic to be managed at the source code level -- that is, where a change in a business policy needs to be immediately reflected in the application. Applications in domains such as insurance (for example, insurance rating), financial services (loans, fraud detection, claims routing and management), government (application process and tax calculations), telecom customer care and billing (promotions for long distance calls that needs to be integrated into the billing system), ecommerce (personalizing the user's experience), and so on benefit greatly from using rule engines.
+</p>
+<p>
+Rule-based applications communicate with the rule engine by passing in the set of rules to be executed. Then, the application can inspect the results and either display them to the end user or perform further processing. The rule engine determines when to evaluate each rule based on the input required for the rule as well as the results obtained from the evaluation of previous rules. You do not need to specify the order or the dependencies of the rules.
+</p>
+<p>
+In a Java EE enterprise application, for example, rules can fit into applications such as the following:
+</p>
+<ul>
+<li>At the application tier to manage dynamic business logic and  the task flow</li>
+<li>At the presentation layer to customize the page flow and work flow, as well as to construct custom pages based on session state</li>
+</ul>
+<p>
+Adopting a rule-based approach for your applications has the following advantages:
+</p>
+<ul>
+<li>Rules that represent policies are easily communicated and understood.</li>
+<li>Rules retain a higher level of independence than conventional programming languages.</li>
+<li>Rules separate knowledge from its implementation logic.</li>
+<li>Rules can be changed without changing source code; thus, there is no need to recompile the application's code.</li>
+</ul>
+<p>
+These benefits, however, are not without cost. As with any tool, the decision to integrate a rule engine into your application should be based on cost versus benefits. The cost includes the learning curve and the effort involved in building an interface between the application and the rule engine. In addition, different rule engines use different format and syntax for defining rules. Therefore, if an organization decides to move from one rule engine to another, business analysts and developers must learn and understand the operation of yet another tool.
+</p>
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>JSR 94</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+JSR 94 defines a simple API to access a rule engine from a Java SE or Java EE client. It provides APIs to
+</p>
+<ul>
+<li>Register and unregister rules</li>
+<li>Parse rules</li>
+<li>Inspect rule metadata</li>
+<li>Execute rules</li>
+<li>Retrieve results</li>
+<li>Filter results</li>
+</ul>
+<p>
+Note that JSR 94 does <i>not</i> standardize the following:
+</p>
+<ul>
+<li>The rule engine itself</li>
+<li>The execution flow for rules</li>
+<li>The language used to describe the rules</li>
+<li>The deployment mechanism for Java EE technology</li>
+</ul>
+<p>
+In other words, it doesn't standardize the semantics of rule execution.
+</p>
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>JSR 94 Architecture</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+The APIs are defined in two main packages:
+</p>
+<ul>
+<li><b>The Rules Administrator API</b>: This API, defined in the <code>javax.rules.admin</code> package, provides classes that can be used to load rules and associated actions as execution sets. A <i>rule execution set</i> is a collection of rules. Rules can be loaded from external resources such as URIs, an <code>InpuTStream</code>, an XML <code>Element</code>, a binary abstract syntax tree, or a <code>Reader</code>. It also provides methods to register and unregister rule execution sets. This package can also be used to define the permissions on execution sets to provide access authorization.<br><br></li>
+<li><b>The Runtime Client API</b>: This API, defined in the <code>javax.rules</code> package, provides classes to be used by clients to run the rules and get results. Only the rules that have been registered using the Rules Administrator API are accessible. This API enables clients to acquire rule sessions and execute rules within that session. 
+</ul>
+<p>
+The JSR 94 Expert Group made the decision to have two separate packages to reinforce the distinction between (1) executing a rule execution set that an administrator API has previously loaded and registered into the runtime environment and (2) the dynamic loading and execution of external resources (which can be performed only by using the Rules Administrator API). In addition, the separation allows a more fine-grained control of the user population, permitting some users to execute rules but not to administer them.
+</p>
+<p>
+<b>The Rules Administrator API</b>
+</p>
+<p>
+This API uses the <code>RuleServiceProvider</code> class to get an instance of the <code>RuleAdministrator</code> interface, which provides methods to register and unregister execution sets. The high-level capabilities of the administrator API are the following:
+</p>
+<ul>
+<li>It acquires an instance of the <code>RuleAdministrator</code> interface through the <code>RuleServiceProvider</code> class</li>
+<li>It creates a <code>RuleExecutionSet</code> from external  serializable or nonserializable resources including
+<ul>
+<li><code>org.w3c.dom.Element</code> for reading from an XML subdocument</li>
+<li><code>java.io.InputStream</code> for reading from binary streams</li>
+<li><code>java.lang.Object</code> for reading from vendor-specific abstract syntax trees</li>
+<li><code>java.io.Reader</code> for reading from character streams</li>
+<li><code>java.lang.String</code> for reading from a URI</li>
+</ul></li>
+<li>It registers a <code>RuleExecutionSet</code> object against a  URI for use from the <code>RuleRuntime</code>.</li>
+<li>It unregisters a <code>RuleExecutionSet</code>object from a  URI so it is no longer accessible from the <code>RuleRuntime</code>.</li>
+<li>It queries the structural metadata of a rule execution set by  retrieving a list of <code>Rule</code> objects from the  <code>RuleExecutionSet</code>.</li>
+<li>It sets and gets application or vendor specific properties on rule execution set and rules.</li>
+</ul>
+<p>
+<b>The Runtime Client API</b>
+</p>
+<p>
+This API provides access to vendor implementations of the Rule Engine API, in a way similar to Java DataBase Connectivity (JDBC) software. Vendors expose their rule engine implementations to clients through the <code>RuleServiceProvider</code> class. This class provides access to the runtime and administration APIs. The vendor provides a rule service provider URL that uniquely identifies the implementation. All rule service providers should be registered with a <code>RuleServiceProviderManager</code> object in order to be accessible to clients.
+</p>
+<p>
+At the heart of this API is the <code>RuleRuntime</code> interface, which provides methods to allow clients to create a <code>RuleSession</code> used to run the rules. A rule session is a runtime connection between a client and a rule engine; it is associated with a single rule execution set and may consume rule engine resources, but the rule session must be explicitly released when the client no longer requires the rule session. Thus, the rule session does two things:
+</p>
+<ul>
+<li>It provides a mechanism to access the list of all the rule execution sets registered with the rule service provider.</li>
+<li>It defines the type of the session that client wishes to  establish: stateful or stateless.</li>
+<ul>
+<li>A <code>statelessRuleSession</code> works on a per-client request basis.</li>
+<li>A <code>statefulRuleSession</code> is a dedicated session in which objects are not lost as long as the session is maintained between the client and the rules engine.</li>
+</ul>
+</ul>
+<p>
+The Runtime Client API's high-level capabilities are the following:
+</p>
+<ul>
+<li>It acquires an instance of a rule engine vendor's  rule service provider through the  <code>RuleServiceManager</code> class.</li>
+<li>It acquires an instance of the <code>RuleRuntime</code>  interface through the <code>RuleServiceProvider</code> class.</li>
+<li>It creates a <code>RuleSession</code> through the  <code>RuleRuntime</code>.</li>
+<li>It gets a <code>java.util.List</code> of registered URIs.</li>
+<li>It interacts with an acquired <code>RuleSession</code>.</li>
+<li>It retrieves metadata for a <code>RuleSession</code> through the <code>RuleExecutionSetMetadata</code> interface.</li>
+<li>It provides an <code>ObjectFilter</code> interface to filter the  results of executing a <code>RuleExecutionSet</code>.</li>
+<li>It uses <code>Handle</code> instances to access objects added to a <code>statefulRuleSession</code>.</li>
+</ul>
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>The JSR 94 Reference Implementation</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+Because the JSR 94 reference implementation is built as a wrapper over the <a href="http://herzberg.ca.sandia.gov/jess/" target="_blank">Jess rule engine</a>, you will need Jess 6.1a3 or later in order to work with the reference implementation. Jess, which stands for Java Expert System Shell, is a rule engine and a scripting environment. Note that Jess is not freeware: It can be licensed for commercial use, and it is available for academic use. The JSR 94 reference implementation license is governed under the Jess license agreement. The Jess language and scripting environment evolved from the <a href="http://www.ghg.net/clips/CLIPS.html" target="_blank">CLIPS expert system shell</a>, which was initially developed by NASA. The CLIPS system language syntax and structure are similar to the LISP functional programming language.
+</p>
+<p>
+To test the JSR 94 reference implementation, do the following:
+</p>
+<ol> 
+<li>Download the <a href="http://jcp.org/aboutJava/communityprocess/final/jsr094/index.html" target="_blank">JSR 94 reference implementation</a> and install it by unzipping the archive in a directory of your choice.</li>
+<li>Download Jess. Once you unzip the archive, copy the file  <code>jess.jar</code> from the Jess installation directory to the  <code>lib</code> directory of your JSR 94 reference implementation  installation.</li>
+<li>Change the directory to <code>lib</code> under your JSR 94  reference implementation installation</li>
+<li>Run the sample example using the following command:<br><br>
+<!-- BEGIN VCD7 CODE SAMPLE COMPONENT  -->
+<table border="0" cellpadding="10" cellspacing="0" width="100%" class="grey4">
+<tr><td><pre>java -jar jsr94-example.jar</pre></td></tr>
+</table>
+<span class="sp1">&nbsp;</span><br />
+<!-- END VCD7 CODE SAMPLE COMPONENT  -->
+</li>
+</ol>
+<p>
+If all goes well, you will see output similar to the following. This output was generated by the sample application that we will discuss next.
+</p>
+<!-- BEGIN VCD7 CODE SAMPLE COMPONENT  -->
+<table border="0" cellpadding="10" cellspacing="0" width="100%" class="grey4">
+<tr><td><pre>
+C:\jsr94-1.0\lib>java -jar jsr94-example.jar
+
+Administration API
+
+Acquired RuleAdministrator: org.jcp.jsr94.jess.RuleAdministratorImpl@9304b1
+Acquired InputStream to RI tck_res_1.xml: sun.net.www.protocol.jar.JarURLConnect
+ion$JarURLInputStream@c17164
+Loaded RuleExecutionSet: org.jcp.jsr94.jess.RuleExecutionSetImpl@cd2c3c
+Bound RuleExecutionSet to URI: RuleExecutionSet1
+
+Runtime API
+
+Acquired RuleRuntime: org.jcp.jsr94.jess.RuleRuntimeImpl@1d99a4d
+Got Stateless Rule Session: org.jcp.jsr94.jess.StatelessRuleSessionImpl@7a84e4
+Calling rule session with the following data
+Customer credit limit input: 5000
+Invoice 1 amount: 2000 status: unpaid
+Called executeRules on Stateless Rule Session: org.jcp.jsr94.jess.StatelessRuleS
+essionImpl@7a84e4
+Result of calling executeRules: 2 results.
+Customer credit limit result: 3000
+Invoice 1 amount: 2000 status: paid
+Released Stateless Rule Session.
+
+Got Stateful Rule Session: org.jcp.jsr94.jess.StatefulRuleSessionImpl@1e51060
+Calling rule session with the following data
+Customer credit limit input: 3000
+Invoice 1 amount: 2000 status: paid
+Invoice 2 amount: 1750 status: unpaid
+Called addObject on Stateful Rule Session: org.jcp.jsr94.jess.StatefulRuleSessio
+nImpl@1e51060
+Called executeRules
+Result of calling getObjects: 3 results.
+Customer credit limit result: 1250
+Invoice 1 amount: 2000 status: paid
+Invoice 2 amount: 1750 status: paid
+Released Stateful Rule Session.
+</pre></td></tr>
+</table>
+<span class="sp20">&nbsp;</span><br />
+<!-- END VCD7 CODE SAMPLE COMPONENT  -->
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>Sample Application</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+To get a flavor of the effort involved in using the Java Rule Engine API, Code Sample 1 shows an example that comes with the reference implementation; the output above was generated from this sample application. This example loads a set of rules from an external XML resource file. The source code is fully commented. This example demonstrates the life cycle of developing applications using the Java Rule Engine API, and it shows several usage scenarios.
+</p>
+<p>
+<b>Code Sample 1: RuleExample.java</b>
+</p>
+<!-- BEGIN VCD7 CODE SAMPLE COMPONENT  -->
+<table border="0" cellpadding="10" cellspacing="0" width="100%" class="grey4">
+<tr><td><pre>
+public class RuleExample {
+
+   // The rule service provider URI as defined by the reference implementation.
+
+   private static final String RULE_SERVICE_PROVIDER = "org.jcp.jsr94.jess";
+
+
+
+   /**
+
+    * Main entry point.
+
+    */
+
+   public static void main(String[] args) {
+
+      try {
+
+         // <b>Load the rule service provider of the reference implementation.</b>
+
+         // Loading this class will automatically register this provider with the
+
+         // provider manager.
+
+         Class.forName("org.jcp.jsr94.jess.RuleServiceProviderImpl");
+
+
+
+         // <b>Get the rule service provider from the provider manager.</b>
+
+         RuleServiceProvider serviceProvider = 
+
+             RuleServiceProviderManager.getRuleServiceProvider(RULE_SERVICE_PROVIDER);
+
+
+
+         // <b>Get the rule administrator.</b>
+
+         RuleAdministrator ruleAdministrator = serviceProvider.getRuleAdministrator();
+
+         System.out.println("\nAdministration API\n");
+
+         System.out.println("Acquired RuleAdministrator: " + ruleAdministrator);
+
+
+
+         // <b>Get an input stream to a test XML ruleset.</b>
+
+         // This rule execution set is part of the TCK.
+
+         InputStream inStream =
+
+             org.jcp.jsr94.tck.model.Customer.class.getResourceAsStream(
+
+             <b>"/org/jcp/jsr94/tck/tck_res_1.xml"</b>);
+
+         System.out.println("Acquired InputStream to RI tck_res_1.xml: " + inStream);
+
+
+
+         // <b>Parse the ruleset from the XML document.</b>
+
+         RuleExecutionSet res1 =
+
+            ruleAdministrator.getLocalRuleExecutionSetProvider(
+
+            null).createRuleExecutionSet( inStream, null );
+
+         inStream.close();
+
+         System.out.println("Loaded RuleExecutionSet: " + res1);
+
+
+
+         // <b>Register the rule execution set.</b>
+
+         String uri = res1.getName();
+
+         ruleAdministrator.registerRuleExecutionSet(uri, res1, null);
+
+         System.out.println("Bound RuleExecutionSet to URI: " + uri);
+
+
+
+         // <b>Get a RuleRuntime and invoke the rule engine.</b>
+
+         System.out.println("\nRuntime API\n");
+
+         RuleRuntime ruleRuntime = serviceProvider.getRuleRuntime();
+
+         System.out.println("Acquired RuleRuntime: " + ruleRuntime);
+
+
+
+         // <b>Create a statelessRuleSession.</b>
+
+         StatelessRuleSession statelessRuleSession = 
+
+             (StatelessRuleSession) ruleRuntime.createRuleSession(uri, 
+
+              new HashMap(), RuleRuntime.STATELESS_SESSION_TYPE);
+
+
+
+         System.out.println("Got Stateless Rule Session: " + statelessRuleSession);
+
+
+
+         // <b>Create a customer as specified by the TCK documentation.</b>
+
+         // <b>Then call executeRules on the input objects.</b>
+
+         Customer inputCustomer = new Customer("test");
+
+         inputCustomer.setCreditLimit(5000);
+
+
+
+         // <b>Create an invoice as specified by the TCK documentation.</b>
+
+         Invoice inputInvoice = new Invoice("Invoice 1");
+
+         inputInvoice.setAmount(2000);
+
+
+
+         // <b>Create an input list.</b>
+
+         List input = new ArrayList();
+
+         input.add(inputCustomer);
+
+         input.add(inputInvoice);
+
+
+
+         // <b>Print the input.</b>
+
+         System.out.println("Calling rule session with the following data");
+
+         System.out.println("Customer credit limit input: " +
+
+              inputCustomer.getCreditLimit());
+
+         System.out.println(inputInvoice.getDescription() +
+
+              " amount: " + inputInvoice.getAmount() +
+
+              " status: " + inputInvoice.getStatus());
+
+
+
+         // <b>Execute the rules without a filter.</b>
+
+         List results = statelessRuleSession.executeRules(input);
+
+
+
+         System.out.println("Called executeRules on Stateless Rule Session: " +
+
+              statelessRuleSession);
+
+
+
+         System.out.println("Result of calling executeRules: " + results.size() +
+
+              " results.");
+
+
+
+         // <b>Loop over the results.</b>
+
+         Iterator itr = results.iterator();
+
+         while(itr.hasNext()) {
+
+            Object obj = itr.next();
+
+            if (obj instanceof Customer)
+
+                System.out.println("Customer credit limit result: " +
+
+                 ((Customer) obj).getCreditLimit());
+
+            if (obj instanceof Invoice)
+
+                System.out.println(((Invoice) obj).getDescription() +
+
+                " amount: " + ((Invoice) obj).getAmount() + " status: " +
+
+                ((Invoice) obj).getStatus());
+
+         }
+
+
+
+         // <b>Release the session.</b>
+
+         statelessRuleSession.release();
+
+         System.out.println("Released Stateless Rule Session.");
+
+
+
+         // <b>Create a statefulRuleSession.</b>
+
+         StatefulRuleSession statefulRuleSession = 
+
+             (StatefulRuleSession) ruleRuntime.createRuleSession(uri,
+
+              new HashMap(), RuleRuntime.STATEFUL_SESSION_TYPE);
+
+
+
+         System.out.println("Got Stateful Rule Session: " + statefulRuleSession);
+
+
+
+         // <b>Add another invoice.</b>
+
+         Invoice inputInvoice2 = new Invoice("Invoice 2");
+
+         inputInvoice2.setAmount(1750);
+
+         input.add(inputInvoice2);
+
+         System.out.println("Calling rule session with the following data");
+
+         System.out.println("Customer credit limit input: " +
+
+              inputCustomer.getCreditLimit());
+
+         System.out.println(inputInvoice.getDescription() +
+
+              " amount: " + inputInvoice.getAmount() +
+
+              " status: " + inputInvoice.getStatus());
+
+         System.out.println(inputInvoice2.getDescription() +
+
+              " amount: " + inputInvoice2.getAmount() +
+
+              " status: " + inputInvoice2.getStatus());
+
+
+
+         // <b>Add an object to the statefulRuleSession.</b>
+
+         statefulRuleSession.addObjects(input);
+
+         System.out.println("Called addObject on Stateful Rule Session: "+
+
+              statefulRuleSession);
+
+
+
+         statefulRuleSession.executeRules();
+
+         System.out.println("Called executeRules");
+
+
+
+         // <b>Extract the objects from the statefulRuleSession.</b>
+
+         results = statefulRuleSession.getObjects();
+
+
+
+         System.out.println("Result of calling getObjects: " + results.size() +
+
+              " results.");
+
+
+
+         // <b>Loop over the results.</b>
+
+         itr = results.iterator();
+
+         while(itr.hasNext()) {
+
+            Object obj = itr.next();
+
+            if (obj instanceof Customer)
+
+               System.out.println("Customer credit limit result: " +
+
+                ((Customer) obj).getCreditLimit());
+
+            if (obj instanceof Invoice)
+
+	       System.out.println(((Invoice) obj).getDescription() +
+
+                    " amount: " + ((Invoice) obj).getAmount() +
+
+                    " status: " + ((Invoice) obj).getStatus());
+
+         }
+
+
+
+         // <b>Release the statefulRuleSession.</b>
+
+         statefulRuleSession.release();
+
+         System.out.println( "Released Stateful Rule Session." );
+
+         System.out.println();
+
+      } catch (NoClassDefFoundError e) {
+
+         if (e.getMessage().indexOf("JessException") != -1) {
+
+            System.err.println("Error: The RI Jess could not be found.");
+
+         } else {
+
+            System.err.println("Error: " + e.getMessage());
+
+         }
+
+      } catch (Exception e) {
+
+         e.printStackTrace();
+
+      }
+
+   }
+
+}
+</pre></td></tr>
+</table>
+<span class="sp20">&nbsp;</span><br />
+<!-- END VCD7 CODE SAMPLE COMPONENT  -->
+<p>
+The rules loaded in this example are part of the use cases that come with the JSR 94 Technology Compatibility Kit (TCK). The rules are written in Jess. If you are familiar with a functional programming language such as Lisp or Haskell then the Jess code will be familiar. Note that other rule engines, such as Drools, have adopted XML syntax for describing rules. Code Sample 2 shows the rules file.
+</p>
+<p>
+The definition of a rule execution set is not within the scope of JSR 94. The implementation given in this file is written for the reference implementation. A rule engine vendor verifying its rule engine should modify this file to match the vendor's specific needs.
+</p>
+<p>
+This rule execution set  will be invoked by the TCK in 
+a stateless manner.
+</p>
+<p>
+The rule execution set must have support for the following business object model:
+</p>
+<ul>
+<li><code>Customer</code> class: The <code>Customer</code> business object is a simple business object that contains a name and credit limit property. The definition of this class can be found in 
+<code>org.jcp.jsr94.tck.model.Customer</code>.</li>
+<li><code>Invoice</code> class: The <code>Invoice</code> business object is a simple business object that contains a description, amount, and status property. The definition of this class 
+can be found in <code>org.jcp.jsr94.tck.model.Invoice</code>.</li>
+</ul>
+<p>
+The rule execution set has the following definition:
+</p>
+<ul>
+<li>It supports <code>Customer</code> and <code>Invoice</code> business objects.</li>
+<li>It defines one logical rule.</li>
+</ul>
+<p>
+<b>Rule 1</b>: If the customer's credit limit is greater than the invoice amount and the status of the invoice is &quot;unpaid,&quot; then decrement the credit limit with the invoice amount and set the status of the invoice to &quot;paid.&quot;
+</p>
+<p>
+Note that additional physical rules may be defined to accomplish the requirements mentioned earlier.
+</p>
+<p>
+The rule execution set has the following semantics.
+</p>
+<p>
+<b>Input</b>:
+</p>
+<ul>
+<li>A customer with a credit limit of 5000.</li>
+<li>An invoice with an amount of 2000.</li>
+</ul>
+<p>
+The rule execution should produce the following <b>output</b>: 
+</p>
+<ul>
+<li>The customer's credit limit is 3000.</li>
+<li>The status of the invoice is &quot;paid.&quot;</li>
+</ul>
+<p>
+<b>Code Sample 2: rules.xml</b>
+</p>
+<!-- BEGIN VCD7 CODE SAMPLE COMPONENT  -->
+<table border="0" cellpadding="10" cellspacing="0" width="100%" class="grey4">
+<tr><td><pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!--
+/*
+ * J A V A  C O M M U N I T Y  P R O C E S S
+ *
+ * J S R  9 4
+ *
+ * Technology Compatibility Kit
+ *
+ */
+--&gt;
+&lt;rule-execution-set&gt;
+
+   &lt;name&gt;RuleExecutionSet1&lt;/name&gt;
+   &lt;description&gt;Stateless RuleExecutionSet for the TCK for Jess&lt;/description&gt;
+
+   &lt;code&gt;
+       (defclass org.jcp.jsr94.tck.model.Customer
+           org.jcp.jsr94.tck.model.Customer)
+       (defclass org.jcp.jsr94.tck.model.Invoice
+           org.jcp.jsr94.tck.model.Invoice)
+
+       (defrule rule-1
+         ?customer &lt;- (org.jcp.jsr94.tck.model.Customer
+                            (creditLimit ?limit) (OBJECT ?C))
+         ?invoice &lt;- (org.jcp.jsr94.tck.model.Invoice
+                            (amount ?amt&amp;:(&gt; ?limit ?amt))
+                              (status "unpaid") (OBJECT ?I))
+         =&gt;
+         (modify ?customer (creditLimit (- ?limit ?amt)))
+;         (printout t "The credit limit of the customer is " 
+;                     (get ?C creditLimit) crlf)
+         (modify ?invoice (status paid))
+;         (printout t "The status of the invoice is " 
+;                     (get ?I status) crlf)
+       )
+
+   &lt;/code&gt;
+&lt;/rule-execution-set&gt;
+</pre></td></tr>
+</table>
+<span class="sp20">&nbsp;</span><br />
+<!-- END VCD7 CODE SAMPLE COMPONENT  -->
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>Conclusion</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<p>
+Business rule technology provides a solution to manage dynamic business logic. You can use rule engines in both the application tier to manage dynamic business logic and in the presentation tier to customize the page flow. JSR 94 provides a vendor-neutral Java SE or Java EE interface to access a rule engine. You can create agile enterprise applications by combining Java EE and business rule technology, managing the business behavior outside the source code.
+</p>
+<p>
+JSR 94 is an attempt to standardize rules engine implementations for Java technology. The specification provides guidelines on how to implement the Runtime Client and Rules Administrator APIs as well as guidelines on how developers can integrate a rules engine into an application by means of an API -- without limiting how rules and actions should be created or what language the developer should use.
+</p>
+<p>
+As with any tool, the decision to integrate a rule engine into your application should be based on cost versus benefits. But as JSR 94 gains momentum, application servers may start offering JDBC-like support for multiple vendor implementations of the API, just as they provide support for multiple databases.
+</p>
+<!-- <span class="sp10">&nbsp;</span><br /> -->
+<div><b>For More Information</b></div>
+<div class="contentdivider">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grey4">
+<tr><td><img src="/im/a.gif" width="1" height="4" border="0" alt=" " /></td></tr>
+</table>
+</div>
+<ul>
+<li><a href="http://www.jcp.org/en/jsr/detail?id=94" target="_blank">JSR 94, Java Rule Engine API</a></li>
+<li><a href="http://jcp.org/aboutJava/communityprocess/final/jsr094/index.html" target="_blank">Download the JSR 94 Reference Implementation</a></li>
+<li><a href="http://herzberg.ca.sandia.gov/jess" target="_blank">Jess</a></li>
+<li><a href="http://www.devx.com/Java/Article/17651" target="_blank">An interview with the Jess inventor</a></li>
+<li><a href="http://www.dfki.uni-kl.de/ruleml" target="_blank">RuleML</a></li>
+<li>Some of the rule engines that support JSR 94 include the following:
+<ul>
+<li><a href="http://www.drools.org" target="_blank">Drools</a></li>
+<li><a href="http://www.fairisaac.com/Fairisaac/Solutions/Enterprise+Decision+Management/Business+rules/Blaze+Advisor" target="_blank">FairIsaac Blaze Advisor</a></li>
+<li><a href="http://www.ilog.com/products/jrules" target="_blank">ILOG JRules</a></li>
+</ul></li>
+<li><a href="http://www.manageability.org/blog/stuff/rule_engines/view" target="_blank">Open source rule engines written in Java language</a></li>
+</ul>
+<p>
+<b>Acknowledgments</b>
+</p>
+<p>
+Special thanks to Larry Freeman of Sun Microsystems, whose feedback helped me improve this article.
+</p>
+<!-- BEGIN RATE AND REVIEW G16 var1 -->
+<script type="text/javascript">
+<!-- Hide script from older browsers
+// Popup window function
+function onRateSubmitHandler()
+{
+var w = window.open("","rr","width=800,height=600,status=no,toolbar=no,scrollbars=yes"); 
+w.setTimeout("window.close();", 30000 );
+return true;
+}
+// End of javascript 
+-->
+</script>
+<form name="form" method="post" action="https://www2.sun.de/dc/servlets/incoming" onSubmit="return onRateSubmitHandler()" target="rr">
+<input type="hidden" name="errcount" value="1" />
+<input type="hidden" name="ref" value="http://www2.sun.de/dc/forms/reg_xh_2610_243.jsp">
+<input type="hidden" name=""  value="">
+<table width="100%" cellspacing="0" cellpadding="1" border="0" class="dkgrey" style="margin-top:7px"><tr><td>
+<table width="100%" cellspacing="0" cellpadding="4" border="0" class="white">
+<tr><td class="dkgrey1"><b>Rate and Review</b></td></tr>
+<tr><td>Tell us what you think of the content of this page.</td></tr>
+<tr><td><b>
+<input type="radio" name="custom_3" value="Excellent"> Excellent&nbsp;&nbsp;
+<input type="radio" name="custom_3" value="Good"> Good&nbsp;&nbsp;
+<input type="radio" name="custom_3" value="Fair"> Fair&nbsp;&nbsp;
+<input type="radio" name="custom_3" value="Poor"> Poor&nbsp;&nbsp;
+</b></td></tr>
+<tr><td>
+<b>Comments:</b><br><textarea name="custom_2" cols="60" rows="3" wrap="virtual"></textarea></td></tr>
+<tr><td>
+<b>Your email address (no reply is possible without an address):</b><br>
+<a href="http://sun.com/privacy/" target="_new">Sun Privacy Policy</a><br>
+<input type="text" name="custom_1" value="" size="35" maxlength="60"> <br>
+Note: We are not able to respond to all submitted comments.</td></tr>
+<tr><td>
+<input type="submit" border="0" class="buttonblue" value="&nbsp;Submit &raquo;&nbsp;" onmouseover="this.style.color='#fbe249';" onmouseout="this.style.color='#FFF';">
+<input type="hidden" name="custom_0" value="Qusay H. Mahmoud">
+<input type="hidden" name="custom_4" value="Getting Started With the Java Rule Engine API (JSR 94): Toward Rule-Based Applications">
+<input type="hidden" name="custom_5" value="http://java.sun.com/developer/technicalArticles/J2SE/JavaRule.html">
+<input type="hidden" name="cf_Form_Name" value="Rate and Review - article feedback" />
+<input type="hidden" name="cf_Form_Location" value="Registrations" />
+<input type="hidden" name="cf_iso2" value="XH" />
+<input type="hidden" name="charset" value="ISO-8859-1">
+</td></tr></table></td></tr>
+</table></form>
+<!-- END RATE AND REVIEW G16 var1-->
+<!-- =================== -->
+<!-- END OF MAIN CONTENT -->
+<!-- =================== -->
+<!--stopindex-->
+<!-- END CENTRAL COLUMN COMPONENTS -->
+</td><td valign="top">
+<!-- BEGIN RIGHT COLUMN COMPONENTS -->
+<!-- END RIGHT COLUMN COMPONENTS -->
+</td></tr>
+<!-- BEGIN SPACER ROW -->
+<tr><td><img src="/im/a.gif" width="560" height="1" border="0" alt=" " /></td><td><img src="/im/a.gif" width="170" height="1" border="0" alt=" " /></td></tr>
+<!-- END SPACER ROW -->
+</table>
+<!-- END WRAPPER TABLE, 2 COLUMN, MAIN/RIGHT -->
+<!-- BEGIN PC1 COMPONENT V.2 -->
+<div class="pc1 pc1v2" style="margin:0 10px">
+<div class="pc1w1"><div class="pc1w2"><div class="pc1w3 cornerBL"><div class="pc1w4">
+<p>Oracle is reviewing the Sun product roadmap and will provide guidance to customers in accordance with Oracle's standard product communication policies. Any resulting features and timing of release of such features as determined by Oracle's review of roadmaps, are at the sole discretion of Oracle. All product roadmap information, whether communicated by Sun Microsystems or by Oracle, does not represent a commitment to deliver any material, code, or functionality, and should not be relied upon in making purchasing decisions. It is intended for information purposes only, and may not be incorporated into any contract.</p>
+</div></div></div></div>
+</div>
+<!-- END PC1 COMPONENT V.2 -->
+<!-- BEGIN G9 VARIATION 0 -->
+<script language="javascript" type="text/javascript" charset="UTF-8" src="/js/op/oo_engine.js"></script>
+<script language="javascript" type="text/javascript" charset="UTF-8" src="/js/op/oo_conf_en-US.js"></script>
+<!-- END G9 VARIATION 0 -->
+<!-- BEGIN VNV5 FOOTER  -->
+<table border="0" cellpadding="0" cellspacing="10" width="100%">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="vatop">
+<tr>
+<td colspan="4" valign="top" class="grey3"><img src="/im/a.gif" width="1" height="2" border="0" alt="" /></td></tr>
+<tr>
+<td><img src="http://developers.sun.com/im/a.gif" width="190" height="1" border="0" alt="" /><br />
+<a href="http://www.oracle.com/index.html"><img src="/im/logo_oracle_footer.gif" width="93" height="29" border="0" alt="" vspace="5"/></a></td>
+<td width="100%" valign="top"><img src="/im/a.gif" width="350" height="1" border="0" alt="" /><br />
+<div class="footer">
+<a href="http://developers.sun.com/global/aboutsun.html">About Sun</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/aboutsdn.html">About This Site</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/newsletters.html">Newsletters</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/contact.html">Contact Us</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/employment.html">Employment</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/howtobuy.html">How to Buy</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/licensing.html">Licensing</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/privacy.html">Privacy</a> &nbsp;|&nbsp;
+<a href="http://developers.sun.com/global/trademarks.html">Trademarks</a>
+<br /><span class="sp10">&nbsp;</span><br />
+<br /><span class="sp10">&nbsp;</span><br />
+<!-- <span id="copyDate" class="cssDate"></span>--> &copy; 2010, Oracle Corporation and/or its affiliates
+</div></td>
+<td><img src="/im/a.gif" width="40" height="1" border="0" alt="" /></td>
+<td valign="top"><div class="footer"><b><a href="http://developers.sun.com/global/aboutsdn.html">A Sun Developer Network Site</a></b></div>
+<div class="footer">
+<img src="/im/a.gif" width="170" height="1" border="0" alt="" /><br />
+Unless otherwise licensed, code in all technical manuals herein (including articles, FAQs, samples) is provided under this <a href="http://developers.sun.com/global/berkeley_license.html">License</a>.
+<br /><span class="sp5">&nbsp;</span><br />
+<a href="http://developers.sun.com/global/rss_sdn.html"><img src="/im/ic_feed_16x.gif" width="16" height="16" align="top" border="0" alt="XML" /></a>&nbsp;<a href="http://developers.sun.com/global/content_feeds.html">Sun Developer RSS Feeds</a>
+</div></td></tr>
+<tr><td colspan="4" valign="top" class="grey3"><img src="/im/a.gif" width="1" height="2" border="0" alt="" /></td></tr>
+</table>
+</td></tr>
+</table>
+<!-- END VNV5 FOOTER -->
+<script language="JavaScript" src="/js/omi/jsc/s_code_remote.js"></script></body>
+</html>
+
+
+

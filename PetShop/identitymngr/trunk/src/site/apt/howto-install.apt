@@ -1,0 +1,211 @@
+	------
+	How to install Provisioner
+	------
+	Gonzalo Espert
+	------
+	Nov 18, 2007
+
+
+How to install Provisioner
+
+  This section describes the installation of the Provisioner. 
+  Please follow the installation steps described here. 
+
+* Before installing Provisioner 
+
+  To run the Provisioner, you need to have the following tools installed: 
+
+  * PostgreSQL version 8.2 or higher ({{{http://www.postgresql.org/download/}download}})
+  
+  * Sun's JRE version 1.5 or higher ({{{http://java.sun.com/javase/downloads/}download}})
+  
+
+  Familiarity with the tools mentioned is necessary because the reader should be able to: 
+
+  * Install and configure PostgreSQL.
+   
+  * Create and delete tables. 
+  
+  * Start and stop the database engine. 
+  
+  * Install and configure the Sun's Java runtime environment (JRE). 
+
+
+  Before starting the installation of the Provisioner system, make sure that these tools are installed and configured on your machine. 
+
+  Instructions for installation of these tools are not provided in here as they are out of scope. For information on how to 
+  install these tools see {{{http://www.postgresql.org/docs/8.2/static/installation.html}PostgreSQL's site}} and {{{http://www.sun.com/java/}Sun Java's site}}. 
+
+
+* Downloading the Provisioner
+
+  For instructions on how to download Provisioner can be found {{{download.html}here}}. 
+
+* Installing Provisioner
+
+** Prerequisites 
+
+  * A destination directory with sufficient disk space. 
+  
+  * A user name. 
+
+  Provisioner is available as a compressed tar archive named 
+  provisioner-[version]-unix.tar.gz for Unix / Linux environments and as an archive 
+  named provisioner-[version]-windows.zip for Windows environments. 
+  Decompression of the installation files requires 4 MB of disk space. 
+
+** Steps to install the Provisioner (e.g. in a Linux environment): 
+
+  [[1]] Uncompress the installation archive: 
+
+  <<<user@server:~$ gunzip provisioner-[version]-unix.tar.gz>>>
+
+  [[2]] Extract the archive: 
+
+  <<<user@server:~$ tar xvf provisioner-[version]-unix.tar>>>
+
+  [[3]] Delete the installation archive: 
+
+  <<<user@server:~$ rm provisioner-[version]-unix.tar>>>
+  
+  As a result of the above commands, the directory ~provisioner appears  
+  under the working directory. It contains the file povisioner.jar, under 
+  the bin directory, which is the executable of the system, it should also 
+  contain a conf directory with the configuration files, and a lib 
+  directory with the libraries used by the Provisioner for its operation. 
+
+*--------------------------+-----------------------------------------------------+
+| ~/provisioner            | This directory contains provisioner.sh, provisioner.cfg, README.txt, LICENSE.txt and KEYS.txt files        |    
+*--------------------------+-----------------------------------------------------+
+| ~/provisioner/bin        | This directory contains provisioner.jar file        |  
+*--------------------------+-----------------------------------------------------+
+| ~/provisioner/conf       | This directory contains all XML configuration files |
+*--------------------------+-----------------------------------------------------+
+| ~/provisioner/lib        | This directory contains all third party libraries   |
+*--------------------------+-----------------------------------------------------+
+| ~/provisioner/src        | This directory contains Provisioner's source code   |
+*--------------------------+-----------------------------------------------------+
+Provisioner's directory structure
+
+* Creating the operation's queue in PostgreSQL RDBMS
+
+  The following shows how to create an operation queue in PostgreSQL.
+	
+  [[1]] Install PostgreSQL. For information on how to download and install PostgreSQL go {{{http://www.postgresql.org/docs/8.2/static/installation.html}here}}.
+     	
+  [[2]] Create a database instance (e.g. provisi).
+    
+  [[3]] {{{howto-admin-queue.html}Create operation's queue}}.
+
+  [[4]] {{{howto-admin-queue.html}Configure ~/provisioner/conf/database.xml to access operation's queue}}.
+
+* Installing as a Linux Service 
+
+  Since the Provisioner linux script provisioner.sh understands the same 
+  arguments as linux boot scripts, there is no need to write a particular 
+  startup script to add Provisioner to the linux boot process. All you need 
+  to do, as root, is:
+
+  * Create a <<<'provisioner'>>> file under <<</etc/init.d/>>> with the following content:
+  
++-----------------------------------------------------------------------------+  
+  #!/bin/sh
+
+  PROVISIONER_HOME=/opt/provisioner
+  su - provisioner_user -c "$PROVISIONER_HOME/provisioner.sh $@"
++-----------------------------------------------------------------------------+
+
+  * In a Debian-based system
+  
++-----------------------------------------------------------------------------+
+  ln -s /usr/local/provisioner/provisioner.sh /etc/init.d/provisioner
++-----------------------------------------------------------------------------+
+
+  At this point you have Provisioner ready to be symlinked from different 
+  runlevels. This might sound a bit esoteric, but it is not, you will find 
+  these words very fast as soon as you start reading about the init process. 
+  Fortunately, Debian GNU/Linux comes with a very handy utility to create 
+  this links, just run as root:
+
++-----------------------------------------------------------------------------+
+  update-rc.d -n provisioner defaults 80
++-----------------------------------------------------------------------------+
+
+  If you run this command, you will see something like this:
+
++-----------------------------------------------------------------------------+
+Adding system startup for /etc/init.d/provisioner ...
+   /etc/rc0.d/K80provisioner -> ../init.d/provisioner
+   /etc/rc1.d/K80provisioner -> ../init.d/provisioner
+   /etc/rc6.d/K80provisioner -> ../init.d/provisioner
+   /etc/rc2.d/S80provisioner -> ../init.d/provisioner
+   /etc/rc3.d/S80provisioner -> ../init.d/provisioner
+   /etc/rc4.d/S80provisioner -> ../init.d/provisioner
+   /etc/rc5.d/S80provisioner -> ../init.d/provisioner
++-----------------------------------------------------------------------------+
+
+  What you see is the symlinks that would be created. The above command 
+  didn't do anything because of the -n switch, remove it to get the real 
+  links created.
+
+  * In a RedHat-based system
+  
+  Configuring Provisioner in a RedHat-based system (like Fedora Core) is 
+  slightly different: Instead of running update-rc.d, you need to add a 
+  new service using chkconfig. And in order to add Provisioner to chkconfig, 
+  it is necessary to add some comments to the /etc/rc.d/init.d/provisioner 
+  script and run a couple of commands; these tasks are automatically 
+  executed by running the chkconfig_install.sh script:
+
++-----------------------------------------------------------------------------+
+#! /bin/sh
+#
+# chkconfig_install.sh - install Provisioner on a chkconfig-bases system
+# 
+# Author: Gonzalo Espert <gespert at sourceforge.net>
+#
+
+# figure out what's Provisioner's directory
+PROVISIONER_HOME=`dirname $0`
+cd ${PROVISIONER_HOME}
+PROVISIONER_HOME=`pwd`
+
+INITD_SCRIPT=/etc/rc.d/init.d/provisioner
+
+if [ -f ${INITD_SCRIPT} ]
+then
+  echo "File ${INITD_SCRIPT} already exists. Please remove it and try again."
+  exit 1
+fi
+
+echo "Creating file ${INITD_SCRIPT}"  
+cat >> ${INITD_SCRIPT} <<EOF
+#! /bin/sh
+# chkconfig: 345 90 10
+# description: Provisioner server
+
+# uncoment to set JAVA_HOME as the value present when Provisioner installed
+#export JAVA_HOME=${JAVA_HOME}
+
+if [ -z "\${JAVA_HOME}" ]
+then
+  echo "Cannot manage Provisioner without variable JAVA_HOME set"
+  echo "  (try to set it on file ${INITD_SCRIPT})"
+  exit 1
+fi
+# run Provisioner as root
+cd ${PROVISIONER_HOME}
+./provisioner.sh \$*
+# run Provisioner as user _provisioner_user_
+#su - _provisioner_user_ -c "cd ${PROVISIONER_HOME}; ./provisioner.sh \$*"
+EOF
+chmod +x ${INITD_SCRIPT}
+
+echo "Adding Provisioner to chkconfig"  
+chkconfig --add provisioner
+
+echo "Enabling Provisioner on chkconfig"  
+chkconfig provisioner on
+echo "Provisioner set to start on run levels 3, 4 and 5."
+echo "To start Provisioner now, run 'service provisioner start'"
++-----------------------------------------------------------------------------+        

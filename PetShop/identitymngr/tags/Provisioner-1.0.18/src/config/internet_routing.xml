@@ -1,0 +1,6 @@
+<internet_routing xmlns="http://internet_routing.org">
+  <description>
+	Network element's instance name for each internet service route.
+  </description>
+  <route reg_exp_key="Zaragosa" ne_name="intraway"/>
+</internet_routing>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmi:id="_uMETADgDEduoXo5aFfflnA" name="test" appliedProfile="_vIjwcDgDEduoXo5aFfflnA _vIjwczgDEduoXo5aFfflnA _vIjwdjgDEduoXo5aFfflnA _vIjweTgDEduoXo5aFfflnA _vIjwfDgDEduoXo5aFfflnA _vIjwfzgDEduoXo5aFfflnA">
+  <packageImport xmi:id="_ux6LADgDEduoXo5aFfflnA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML2_LIBRARIES/JavaPrimitiveTypes.library.uml2#_RjmyoK86EdieaYgxtVWN8Q"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_vIjwcDgDEduoXo5aFfflnA">
+    <eAnnotations xmi:id="_vIjwcTgDEduoXo5aFfflnA" source="attributes">
+      <details xmi:id="_vIjwcjgDEduoXo5aFfflnA" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="platform:/plugin/org.eclipse.uml2.resources/profiles/Complete.profile.uml2#_M7pTkK87Edih9-GG5afQ0g"/>
+    <importedProfile href="platform:/plugin/org.eclipse.uml2.resources/profiles/Complete.profile.uml2#_M7pTkK87Edih9-GG5afQ0g"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_vIjwczgDEduoXo5aFfflnA">
+    <eAnnotations xmi:id="_vIjwdDgDEduoXo5aFfflnA" source="attributes">
+      <details xmi:id="_vIjwdTgDEduoXo5aFfflnA" key="version" value="1"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml2#_14txEWVxEdmLjaVkDjVh5g"/>
+    <importedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml2#_14txEWVxEdmLjaVkDjVh5g"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_vIjwdjgDEduoXo5aFfflnA">
+    <eAnnotations xmi:id="_vIjwdzgDEduoXo5aFfflnA" source="attributes">
+      <details xmi:id="_vIjweDgDEduoXo5aFfflnA" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="platform:/plugin/org.eclipse.uml2.resources/profiles/Intermediate.profile.uml2#_Cz7csK87Edih9-GG5afQ0g"/>
+    <importedProfile href="platform:/plugin/org.eclipse.uml2.resources/profiles/Intermediate.profile.uml2#_Cz7csK87Edih9-GG5afQ0g"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_vIjweTgDEduoXo5aFfflnA">
+    <eAnnotations xmi:id="_vIjwejgDEduoXo5aFfflnA" source="attributes">
+      <details xmi:id="_vIjwezgDEduoXo5aFfflnA" key="version" value="1"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml2#_zrN_0iUoEdmNXYQzyImvfA"/>
+    <importedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml2#_zrN_0iUoEdmNXYQzyImvfA"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_vIjwfDgDEduoXo5aFfflnA">
+    <eAnnotations xmi:id="_vIjwfTgDEduoXo5aFfflnA" source="attributes">
+      <details xmi:id="_vIjwfjgDEduoXo5aFfflnA" key="version" value="1"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml2#_aZhLkH6MEdmbwasWWc4yvw"/>
+    <importedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml2#_aZhLkH6MEdmbwasWWc4yvw"/>
+  </packageImport>
+  <packageImport xmi:type="uml:ProfileApplication" xmi:id="_vIjwfzgDEduoXo5aFfflnA">
+    <eAnnotations xmi:id="_vIjwgDgDEduoXo5aFfflnA" source="attributes">
+      <details xmi:id="_vIjwgTgDEduoXo5aFfflnA" key="version" value="0"/>
+    </eAnnotations>
+    <importedPackage xmi:type="uml:Profile" href="platform:/plugin/org.eclipse.uml2.resources/profiles/Basic.profile.uml2#_6mFRgK86Edih9-GG5afQ0g"/>
+    <importedProfile href="platform:/plugin/org.eclipse.uml2.resources/profiles/Basic.profile.uml2#_6mFRgK86Edih9-GG5afQ0g"/>
+  </packageImport>
+</uml:Model>

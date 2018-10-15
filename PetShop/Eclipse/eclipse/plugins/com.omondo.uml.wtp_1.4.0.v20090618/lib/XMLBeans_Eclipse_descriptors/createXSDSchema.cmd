@@ -1,0 +1,1 @@
+inst2xsd classpath.xsd classpath.xml

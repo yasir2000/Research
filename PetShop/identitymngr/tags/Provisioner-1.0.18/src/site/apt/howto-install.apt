@@ -1,0 +1,125 @@
+	------
+	How to install Provisioner
+	------
+	Gonzalo Espert
+	------
+	Nov 18, 2007
+
+
+How to install Provisioner
+
+  This section describes the installation of the Provisioner. 
+  Please follow the installation steps described here. 
+
+* Before installing Provisioner 
+
+  To run the Provisioner, you need to have the following tools installed: 
+
+  * PostgreSQL version 8.2 or higher ({{{http://www.postgresql.org/download/}download}})
+  
+  * JRE version 1.5 or higher ({{{http://www.sun.com/java/download/}download}})
+  
+
+  Familiarity with the tools mentioned is necessary because the reader should be able to: 
+
+  * Install and configure PostgreSQL.
+   
+  * Create and delete tables. 
+  
+  * Start and stop the database engine. 
+  
+  * Install and configure the Java runtime environment (JRE). 
+
+
+  Before starting the installation of the Provisioner system, make sure that these tools are installed and configured on your machine. 
+
+  Instructions for installation of these tools are not provided in here as they are out of scope. For information on how to 
+  install these tools see {{{http://www.postgresql.org/docs/8.2/static/installation.html}PostgreSQL's site}} and {{{http://www.sun.com/java/}Sun Java's site}}. 
+
+
+* Downloading the Provisioner
+
+  For instructions on how to download Provisioner can be found {{{download.html}here}}. 
+
+* Installing Provisioner
+
+** Prerequisites 
+
+  * A destination directory with sufficient disk space. The default directory is ~user. 
+  
+  * A user name. The default user name is <<<provisioner>>>. 
+
+  Provisioner is available as a compressed tar archive named 
+  provisioner.1.0.X.tar.gz for Unix / Linux environments and as an archive 
+  named provisioner.1.0.X.windows.zip for Windows environments. 
+  Decompression of the installation files requires 4 MB of disk space. 
+
+** Steps to install the Provisioner: 
+
+  [[1]] Create a new directory to unpack the archive: 
+
+  <<<user@server:~$ mkdir /tmp/provisioner>>>
+
+  [[2]] Copy the installation archive there (e.g. using FTP). 
+
+  [[3]] Uncompress the installation archive: 
+
+  <<<user@server:~$ gunzip /tmp/provisioner/provisioner.1.0.X.tar.gz>>>
+
+  [[4]] Extract the archive: 
+
+  <<<user@server:~$ tar xvf /tmp/provisioner/provisioner.1.0.X.tar>>>
+
+  [[5]] Delete the installation archive and the temporary directory: 
+
+  <<<user@server:~$ rm /tmp/provisioner/provisioner.1.0.X.t	ar>>>
+  
+  <<<user@server:~$ rmdir /tmp/provisioner>>>
+
+  As a result of the above commands, the directory ~Provisioner appears in 
+  the home directory of the user named <<<provisioner>>>. It contains the file 
+  Provisioner.jar which is the executable of the system, it should also 
+  contain a conf directory with the configuration files, and a lib 
+  directory with the libraries used by the Provisioner for its operation. 
+
+*--------------------------+-----------------------------------------------------+
+| ~home/Provisioner        | This directory contains Provisioner.sh, Provisioner.cfg, README.txt, LICENSE.txt and KEYS files        |    
+*--------------------------+-----------------------------------------------------+
+| ~home/Provisioner/bin    | This directory contains Provisioner.jar file        |  
+*--------------------------+-----------------------------------------------------+
+| ~home/Provisioner/conf | This directory contains all XML configuration files |
+*--------------------------+-----------------------------------------------------+
+| ~home/Provisioner/lib    | This directory contains all third party libraries   |
+*--------------------------+-----------------------------------------------------+
+| ~home/Provisioner/src    | This directory contains Provisioner's source code   |
+*--------------------------+-----------------------------------------------------+
+Provisioner's directory structure
+
+* Creating the operation's queue in PostgreSQL RDBMS
+
+  The following shows how to create an operation queue in PostgreSQL.
+	
+  [[1]] Install PostgreSQL. For information on how to download and install PostgreSQL go {{{http://www.postgresql.org/docs/8.2/static/installation.html}here}}.
+     	
+  [[2]] Create a database instance (e.g. provisi).
+    
+  [[3]] {{{howto-admin-queue.html}Create operation's queue}}.
+
+  [[4]] {{{howto-admin-queue.html}Configure ~conf/database.xml to access operation's queue}}.
+
+* Setting the Provisioner to run continuously 
+
+  If you want the Provisioner system to run continuously and to automatically start when the operating system is booted,
+  add the following line to your inittab file: 
+
+  <<<prov:2345:respawn:/usr/bin/java –jar /home/Provisioner/Provisioner.sh>>>
+
+  Where: 
+
+  * <<prov>> Is the ID for the entry in the inittab file. 
+  
+  * <<2345>> Lists the runlevels for which the entry should be executed. 
+  
+  * <<respawn>> Specifies that the process will be restarted whenever it terminates. 
+  
+  * <</usr/bin/java…>> Is the command to start the Provisioner system. 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="3.9" timestamp="2010-01-08T14:13:22.059" elapsedTime="0s">
+<file name="D:\workzone\bpel-deployment\prj\bpel-deployment-xsl\src\main\java\clove\neptune\bpeldeployment\xsl\WSDLHelper.java">
+<violation line="79" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="clove.neptune.bpeldeployment.xsl" class="WSDLHelper" method="scanDirectory" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+</pmd>

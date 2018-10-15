@@ -1,0 +1,20 @@
+#set( $this = $JavaTool.getHelper($uml, "unit") )
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if ($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+ */
+#if ($this.packageName != "")
+package ${this.packageName};
+#end
+
+#foreach ( $import in $JavaTool.imports($this) )
+import ${import};
+#end
+#foreach( $class in ${this.classifiers} )
+$class.code #end

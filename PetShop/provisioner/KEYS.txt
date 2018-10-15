@@ -1,0 +1,33 @@
+This file contains the PGP keys of the release manager.
+
+Users: pgp < KEYS
+       gpg --import KEYS
+Developers: 
+        pgp -kxa <your name> and append it to this file.
+        (pgpk -ll <your name> && pgpk -xa <your name>) >> this file.
+        (gpg --list-sigs <your name>
+             && gpg --armor --export <your name>) >> this file.
+
+Type Bits/KeyID     Date       User ID
+pub  2048R/D7E5EB16 2008/02/03 Gonzalo Espert (GE) <gonzalo.espert@gmail.com>
+                              
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.8 (MingW32)
+
+mQENBEelCrYBCAC53HazGXRO3AoK0gowutLrqPtcOxri4U7xJkkwGobbga5cLldx
+yP/lJpajLyXCB49v8iwDqvzZ3QEZfqklOM5zNEIlyqTv1rp6TQx97pUX/wHLi0WZ
+z8bdTqRF7Mn93lNJvGLrYYZ5+E9fgGVrcUoa1nf6IZbS9zQ9yvKrdJ7WshKb/GG9
+jdDi5etXl66GtH+Yw90E+/OMQcXtOQyYNWJbFrvu4AWp6as+5li2EOIcxoSm8Lx1
+s+9IpPFpBu7jBwJnryxJ0yg+QHqJfcnTvadQx62o+uW/Dw5hE5Kl4OmdxiJQmtGr
+QasD2RR/W5xtuAqMnvEfg6G1DiUPA52ZJgvRABEBAAG0LkdvbnphbG8gRXNwZXJ0
+IChHRSkgPGdvbnphbG8uZXNwZXJ0QGdtYWlsLmNvbT6JATYEEwECACAFAkelCrYC
+GwMGCwkIBwMCBBUCCAMEFgIDAQIeAQIXgAAKCRDfcPyI1+XrFmiMCACxLhJrQyWA
+ORFLaQw9pxGYQLel+baA3AsTAGR1LeZ6gnOcL+MliPhe7LGZLTVSKYfgcN++Tq69
+Pj+YCrgSgmN3AXC+x0V9vYUIwkOZm9RiUq6rKDfiD/v2VZvoXtgWlQzXCfvAWey0
+JpsER8RAERFf27zJ81zK/gnATM2EwlROis2bgbfCDeyR5l++Z07UcY/4iif43w3w
+J1SVtpOPDsELybgFfUai0r4HquzeXPQHmxu+45Y+Ygn1w2fmAeal7LIH3HS7C2xJ
+U83icpX0kQ4/rE20B3vtiq3UmxKvvCG1+n0pyRvcb4JfQqgAIxTs576AkyZ5u4MK
+gAssXFbS8NeP
+=3KGn
+-----END PGP PUBLIC KEY BLOCK-----

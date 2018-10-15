@@ -1,0 +1,34 @@
+	------
+	How to develop new PSTs adapters
+	------
+	Gonzalo Espert
+	------
+	Nov 9, 2007
+
+
+How to develop new PSTs adapters
+
+* Add new PST elements to rules configuration file
+
+* Add a service entry for the new PST
+
+* Add a new PST routing configuration file
+
+* Add a new PST possible responses configuration file   
+
+* Fill in the implementation of new PST Request class 
+
+* Create new PST Adapter class
+
+* Create new PST Connector class
+
+* Alter Consumer.java
+
+  Include:
++--------------------------------------------------------------------------+
+if (request.service.ne.type.equalsIgnoreCase("NEWPST")) {
+   /* Send to new PST */
+   NEWPSTRequest newpstRequest = new NEWPSTRequest(request, this.operation.getParameters());
+   response = newpstRequest.sendRequest ();
+}        
++--------------------------------------------------------------------------+

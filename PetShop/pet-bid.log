@@ -1,0 +1,298 @@
+PDDL [PetShop-(0)] Report Begin ======================
+          domain: petshop/dom-bid-ask.pddl
+         problem: petshop/pb-bid-ask-1.pddl
+         started: 20:22:10
+           ended: 20:22:12
+      parse time: 0.909115
+      solve time: 0.2361347
+      open count: 1
+  filtered count: 3
+  operator count: 3
+ successor count: 55
+  examined count: 38
+ search strategy: BEST_FIRST
+Plan Begin ----------------------------------
+Operators:
+0:(visit-bank pet-buyer)
+1:(increase-bid pet-buyer)
+2:(visit-bank pet-buyer)
+3:(increase-bid pet-buyer)
+4:(visit-bank pet-buyer)
+5:(increase-bid pet-buyer)
+6:(visit-bank pet-buyer)
+7:(increase-bid pet-buyer)
+8:(visit-bank pet-buyer)
+9:(increase-bid pet-buyer)
+10:(visit-bank pet-buyer)
+11:(increase-bid pet-buyer)
+12:(visit-bank pet-buyer)
+13:(increase-bid pet-buyer)
+14:(visit-bank pet-buyer)
+15:(increase-bid pet-buyer)
+16:(visit-bank pet-buyer)
+17:(increase-bid pet-buyer)
+18:(visit-bank pet-buyer)
+19:(increase-bid pet-buyer)
+20:(visit-bank pet-buyer)
+21:(increase-bid pet-buyer)
+22:(visit-bank pet-buyer)
+23:(increase-bid pet-buyer)
+24:(visit-bank pet-buyer)
+25:(increase-bid pet-buyer)
+26:(visit-bank pet-buyer)
+27:(increase-bid pet-buyer)
+28:(visit-bank pet-buyer)
+29:(increase-bid pet-buyer)
+30:(visit-bank pet-buyer)
+31:(increase-bid pet-buyer)
+32:(visit-bank pet-buyer)
+33:(increase-bid pet-buyer)
+34:(visit-bank pet-buyer)
+35:(increase-bid pet-buyer)
+
+Order:
+0:(visit-bank pet-buyer) -> 1:(increase-bid pet-buyer)
+1:(increase-bid pet-buyer) -> 2:(visit-bank pet-buyer)
+2:(visit-bank pet-buyer) -> 3:(increase-bid pet-buyer)
+3:(increase-bid pet-buyer) -> 4:(visit-bank pet-buyer)
+4:(visit-bank pet-buyer) -> 5:(increase-bid pet-buyer)
+5:(increase-bid pet-buyer) -> 6:(visit-bank pet-buyer)
+6:(visit-bank pet-buyer) -> 7:(increase-bid pet-buyer)
+7:(increase-bid pet-buyer) -> 8:(visit-bank pet-buyer)
+8:(visit-bank pet-buyer) -> 9:(increase-bid pet-buyer)
+9:(increase-bid pet-buyer) -> 10:(visit-bank pet-buyer)
+10:(visit-bank pet-buyer) -> 11:(increase-bid pet-buyer)
+11:(increase-bid pet-buyer) -> 12:(visit-bank pet-buyer)
+12:(visit-bank pet-buyer) -> 13:(increase-bid pet-buyer)
+13:(increase-bid pet-buyer) -> 14:(visit-bank pet-buyer)
+14:(visit-bank pet-buyer) -> 15:(increase-bid pet-buyer)
+15:(increase-bid pet-buyer) -> 16:(visit-bank pet-buyer)
+16:(visit-bank pet-buyer) -> 17:(increase-bid pet-buyer)
+17:(increase-bid pet-buyer) -> 18:(visit-bank pet-buyer)
+18:(visit-bank pet-buyer) -> 19:(increase-bid pet-buyer)
+19:(increase-bid pet-buyer) -> 20:(visit-bank pet-buyer)
+20:(visit-bank pet-buyer) -> 21:(increase-bid pet-buyer)
+21:(increase-bid pet-buyer) -> 22:(visit-bank pet-buyer)
+22:(visit-bank pet-buyer) -> 23:(increase-bid pet-buyer)
+23:(increase-bid pet-buyer) -> 24:(visit-bank pet-buyer)
+24:(visit-bank pet-buyer) -> 25:(increase-bid pet-buyer)
+25:(increase-bid pet-buyer) -> 26:(visit-bank pet-buyer)
+26:(visit-bank pet-buyer) -> 27:(increase-bid pet-buyer)
+27:(increase-bid pet-buyer) -> 28:(visit-bank pet-buyer)
+28:(visit-bank pet-buyer) -> 29:(increase-bid pet-buyer)
+29:(increase-bid pet-buyer) -> 30:(visit-bank pet-buyer)
+30:(visit-bank pet-buyer) -> 31:(increase-bid pet-buyer)
+31:(increase-bid pet-buyer) -> 32:(visit-bank pet-buyer)
+32:(visit-bank pet-buyer) -> 33:(increase-bid pet-buyer)
+33:(increase-bid pet-buyer) -> 34:(visit-bank pet-buyer)
+34:(visit-bank pet-buyer) -> 35:(increase-bid pet-buyer)
+
+Plan:
+0.000000 : (visit-bank pet-buyer) [1.000000]
+1.000000 : (increase-bid pet-buyer) [1.000000]
+2.000000 : (visit-bank pet-buyer) [1.000000]
+3.000000 : (increase-bid pet-buyer) [1.000000]
+4.000000 : (visit-bank pet-buyer) [1.000000]
+5.000000 : (increase-bid pet-buyer) [1.000000]
+6.000000 : (visit-bank pet-buyer) [1.000000]
+7.000000 : (increase-bid pet-buyer) [1.000000]
+8.000000 : (visit-bank pet-buyer) [1.000000]
+9.000000 : (increase-bid pet-buyer) [1.000000]
+10.000000 : (visit-bank pet-buyer) [1.000000]
+11.000000 : (increase-bid pet-buyer) [1.000000]
+12.000000 : (visit-bank pet-buyer) [1.000000]
+13.000000 : (increase-bid pet-buyer) [1.000000]
+14.000000 : (visit-bank pet-buyer) [1.000000]
+15.000000 : (increase-bid pet-buyer) [1.000000]
+16.000000 : (visit-bank pet-buyer) [1.000000]
+17.000000 : (increase-bid pet-buyer) [1.000000]
+18.000000 : (visit-bank pet-buyer) [1.000000]
+19.000000 : (increase-bid pet-buyer) [1.000000]
+20.000000 : (visit-bank pet-buyer) [1.000000]
+21.000000 : (increase-bid pet-buyer) [1.000000]
+22.000000 : (visit-bank pet-buyer) [1.000000]
+23.000000 : (increase-bid pet-buyer) [1.000000]
+24.000000 : (visit-bank pet-buyer) [1.000000]
+25.000000 : (increase-bid pet-buyer) [1.000000]
+26.000000 : (visit-bank pet-buyer) [1.000000]
+27.000000 : (increase-bid pet-buyer) [1.000000]
+28.000000 : (visit-bank pet-buyer) [1.000000]
+29.000000 : (increase-bid pet-buyer) [1.000000]
+30.000000 : (visit-bank pet-buyer) [1.000000]
+31.000000 : (increase-bid pet-buyer) [1.000000]
+32.000000 : (visit-bank pet-buyer) [1.000000]
+33.000000 : (increase-bid pet-buyer) [1.000000]
+34.000000 : (visit-bank pet-buyer) [1.000000]
+35.000000 : (increase-bid pet-buyer) [1.000000]
+Plan cost: 36.000000
+Plan End ------------------------------------
+Trace Begin ---------------------------------
+Expanding world 2 (depth 0, cost 0, heuristic 0) ...
+Progressed constraints: True
+Successor 3 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 3 (depth 1, cost 1, heuristic 0) ...
+Progressed constraints: True
+Successor 4 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 5 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 5 (depth 2, cost 2, heuristic 0) ...
+Progressed constraints: True
+Successor 6 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 6 (depth 3, cost 3, heuristic 0) ...
+Progressed constraints: True
+Successor 7 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 8 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 8 (depth 4, cost 4, heuristic 0) ...
+Progressed constraints: True
+Successor 9 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 9 (depth 5, cost 5, heuristic 0) ...
+Progressed constraints: True
+Successor 10 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 11 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 11 (depth 6, cost 6, heuristic 0) ...
+Progressed constraints: True
+Successor 12 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 12 (depth 7, cost 7, heuristic 0) ...
+Progressed constraints: True
+Successor 13 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 14 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 14 (depth 8, cost 8, heuristic 0) ...
+Progressed constraints: True
+Successor 15 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 15 (depth 9, cost 9, heuristic 0) ...
+Progressed constraints: True
+Successor 16 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 17 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 17 (depth 10, cost 10, heuristic 0) ...
+Progressed constraints: True
+Successor 18 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 18 (depth 11, cost 11, heuristic 0) ...
+Progressed constraints: True
+Successor 19 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 20 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 20 (depth 12, cost 12, heuristic 0) ...
+Progressed constraints: True
+Successor 21 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 21 (depth 13, cost 13, heuristic 0) ...
+Progressed constraints: True
+Successor 22 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 23 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 23 (depth 14, cost 14, heuristic 0) ...
+Progressed constraints: True
+Successor 24 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 24 (depth 15, cost 15, heuristic 0) ...
+Progressed constraints: True
+Successor 25 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 26 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 26 (depth 16, cost 16, heuristic 0) ...
+Progressed constraints: True
+Successor 27 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 27 (depth 17, cost 17, heuristic 0) ...
+Progressed constraints: True
+Successor 28 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 29 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 29 (depth 18, cost 18, heuristic 0) ...
+Progressed constraints: True
+Successor 30 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 30 (depth 19, cost 19, heuristic 0) ...
+Progressed constraints: True
+Successor 31 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 32 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 32 (depth 20, cost 20, heuristic 0) ...
+Progressed constraints: True
+Successor 33 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 33 (depth 21, cost 21, heuristic 0) ...
+Progressed constraints: True
+Successor 34 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 35 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 35 (depth 22, cost 22, heuristic 0) ...
+Progressed constraints: True
+Successor 36 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 36 (depth 23, cost 23, heuristic 0) ...
+Progressed constraints: True
+Successor 37 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 38 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 38 (depth 24, cost 24, heuristic 0) ...
+Progressed constraints: True
+Successor 39 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 39 (depth 25, cost 25, heuristic 0) ...
+Progressed constraints: True
+Successor 40 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 41 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 41 (depth 26, cost 26, heuristic 0) ...
+Progressed constraints: True
+Successor 42 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 42 (depth 27, cost 27, heuristic 0) ...
+Progressed constraints: True
+Successor 43 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 44 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 44 (depth 28, cost 28, heuristic 0) ...
+Progressed constraints: True
+Successor 45 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 45 (depth 29, cost 29, heuristic 0) ...
+Progressed constraints: True
+Successor 46 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 47 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 47 (depth 30, cost 30, heuristic 0) ...
+Progressed constraints: True
+Successor 48 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 48 (depth 31, cost 31, heuristic 0) ...
+Progressed constraints: True
+Successor 49 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 50 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 50 (depth 32, cost 32, heuristic 0) ...
+Progressed constraints: True
+Successor 51 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 51 (depth 33, cost 33, heuristic 0) ...
+Progressed constraints: True
+Successor 52 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 53 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 53 (depth 34, cost 34, heuristic 0) ...
+Progressed constraints: True
+Successor 54 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 54 (depth 35, cost 35, heuristic 0) ...
+Progressed constraints: True
+Successor 55 "(visit-bank pet-buyer)" discarded because it causes a cycle.
+Successor 56 "(increase-bid pet-buyer)" successfully generated.
+
+Expanding world 56 (depth 36, cost 36, heuristic 0) ...
+Progressed constraints: True
+Successor 58 "(visit-bank pet-buyer)" successfully generated.
+
+Expanding world 57 (depth 36, cost 36, heuristic 0) ...
+Trace End -----------------------------------
+PDDL [PetShop-(0)] Report End ========================

@@ -1,0 +1,15 @@
+<asterisk xmlns="http://asterisk.org">
+  <description>
+     Asterisk network element configuration.
+  </description>
+  <parameter name="type" value="Asterisk"/>
+  <parameter name="host" value="192.168.5.45"/> 
+  <parameter name="username" value="username"/>
+  <parameter name="password" value="password"/>
+  <parameter name="password_sudo" value="sudopassword"/>
+  <parameter name="responses" value="asterisk_responses"/>
+  <parameter name="bin" value="/etc/"/>
+  <parameter name="create" value="addvm"/>
+  <parameter name="delete" value="removevm"/>
+  <parameter name="errorlogin" value="failed"/>
+</asterisk>

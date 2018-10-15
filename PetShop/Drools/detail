@@ -1,0 +1,1029 @@
+
+
+
+
+
+
+
+
+
+<!-- ** BEGIN: header.jsp ** //-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    
+
+   
+    <link href="/includes/css/menu.css" rel="stylesheet" type="text/css"></link>
+    <link href="/includes/css/style.css" rel="stylesheet" type="text/css"></link>
+    <!--[if lt IE 6]><link href="/includes/css/style5.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <!--[if gte IE 5]><link href="/includes/css/style6.css" rel="stylesheet" type="text/css" ></link><![endif]-->
+    <link href="/includes/css/tabs.css"  rel="stylesheet" type="text/css"></link>
+
+    <script type="text/javascript" src="/includes/scripts/tabs.js"></script>
+    <script type="text/javascript" src="/includes/scripts/menu.js"></script>
+   
+
+    
+
+    
+        <title>The Java Community Process(SM) Program - JSRs: Java Specification Requests - detail JSR# 94</title>
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body onload="P7_initPM(0,1,0,0,-1)">
+
+    <a name="top"></a>
+
+    <div id="header">
+	<div id="logo">
+		<a href="/en/home/index"><img src="/images/spacer.gif" alt="Java Community Process" height="81" width="151"></a>
+	</div>
+	<div id="tools">
+		<div class="search">
+			<form name="search" action="/en/jsr/summary" method="get" onsubmit="return validate_search()">
+				<input name="id" value="Search JSRs" size="16" class="form" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+				<a href="javascript:document.search.submit()" onclick="return validate_search()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+			</form>
+		</div>
+		<div class="tools">
+			<a href="/en/press/pressroom">Press Room</a> &nbsp;|&nbsp;
+			<a href="http://java.com/java/download/index.jsp?cid=jdp78399">Get Java Here</a> &nbsp;|&nbsp;
+			<!-- <a href="javascript:void(0)">Print Format</a> &nbsp;|&nbsp;&nbsp; -->
+		</div>
+	</div>
+	<div style="clear: right;"></div>
+
+        
+
+	<div class="topbar"><img src="/images/spacer.gif" alt="" height="3" width="154"></div>
+	<div id="update"> </div>
+    </div>
+
+
+    
+
+        <!-- ** BEGIN: Content Table ** //-->
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+
+                <!-- ** BEGIN: Navigation Column ** //-->
+                <td width="190" id="leftcontent" valign="top" nowrap>
+                    <!-- Navigation Placeholder //-->
+
+                    
+
+                    <div class="bar"><img src="/images/hr_dots1.gif" alt="" height="3" width="150"></div>
+
+        <!-- begin find JSRs form -->
+        <!-- IMPORTANT! do not convert this form to Struts < html : form > tag.  javascript change of form.action property fails. -->
+        <img src="/images/hd_find-jsrs.gif" alt="Find JSRs" height="18" width="150">
+        <form name="findjsr" action="/en/jsr/summary" method="get" class="pt5" onsubmit="return validate_findjsr()">
+            <input name="id" size="18" class="form" value="Search JSRs" onfocus="nullify_if_equal(this, 'Search JSRs')" type="text">
+	    <a href="javascript:document.findjsr.submit()" onclick="return validate_findjsr()"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Submit this Search" name="sub_search"></a>
+        </form><br><br>
+
+        <!-- ** Menu Start ** //-->
+
+        <ul id="p7PMnav">
+            <li><a href="/en/jsr/platform">JSRs by Platform</a></li>
+            <li><a href="/en/jsr/tech">JSRs by Technology</a></li>
+            <li><a href="/en/jsr/stage">JSRs by Stage</a></li>
+            <li><a href="/en/jsr/ec">JSRs by Committee</a></li>
+            <li><a href="/en/jsr/all">List of All JSRs</a></li>
+
+            <!--end find JSRs form -->
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--begin my JCP -->
+            <img src="/images/hd_my-jcp.gif" alt="My JCP" height="18" width="150">
+            
+
+          <form name="login" method="post" action="https://www.jcp.org/en/user/login" >
+	    <input name="uri" value="/en/jsr/detail?id=94" type="hidden">
+	    <input name="url" value="http://www.jcp.org/en/jsr/detail" type="hidden">
+
+                <table>
+                    <tr>
+                        <td>User ID:</td>
+                        <td><input type="text" name="username" style="width:52px" class="form" value="username" onfocus="nullify_if_equal(this, 'username')" onkeypress="return handle_keypress(this, event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="password" style="width:52px" class="form" value="" onkeypress="return handle_keypress(this, event)"></td>
+			<td><a href="javascript:document.login.submit()" class="noNav" onclick="return validate_login(1)"><img src="/images/button_go.gif" width="21" height="16" border="0" alt="Attempt to Login" name="sub_login"></a></td>
+                    </tr>
+
+                </table>
+            </form>
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="3" alt=""></div>
+            <div class="noNav">
+                <a href="/en/user/add" class="noNav">Register for Site</a>
+                <a href="/en/user/getpass" class="noNav">Having problems logging in?</a>
+            </div>
+
+
+            
+
+            <div style="clear:both"><img src="/images/global/spacer.gif" width="1" height="25" alt=""></div>
+
+            <!--begin JCP info -->
+            <img src="/images/hd_jcp-info.gif" alt="JCP Info" height="18" width="150">
+
+            <li><a href="/en/procedures/overview" class="p7PMtrg">About JCP</a>
+                <ul>
+                    <li><a href="/en/procedures/overview">Program Overview</a></li>
+                    <li><a href="/en/procedures/jcp2">JCP Process Document</a></li>
+                    <li><a href="/en/whatsnew/calendar">Calendar</a></li>
+                    <li><a href="/en/participation/members">JCP Members</a></li>
+                    <li><a href="/en/participation/committee">Executive Committee</a></li>
+                    <li><a href="/en/whatsnew/elections">Elections</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/participation/overview" class="p7PMtrg">Get Involved</a>
+		<ul>
+                    <li><a href="/en/participation/overview">Overview</a></li>
+                    <li><a href="/en/participation/membership">Becoming a JCP Member</a></li>
+		</ul>
+            </li>
+
+            <li><a href="/en/resources/contents" class="p7PMtrg">Community Resources</a>
+                <ul>
+                    <li><a href="/en/resources/contents">Overview</a></li>
+                    <li><a href="/en/resources/tutorials">Tutorials</a></li>
+                    <li><a href="/en/resources/multimedia">JCP Podcasts</a></li>
+                    <li><a href="/en/resources/guide">Spec Lead Guide</a></li>
+                    <li><a href="/en/resources/tdk">TCK Tool & Info</a></li>
+                    <li><a href="/en/resources/license_reference">License Reference</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/press/pmo" class="p7PMtrg">Community News</a>
+                <ul>
+                    <li><a href="/en/press/pmo">News</a></li>
+                    <li><a href="/en/press/news/awards/awards_main">Programs &amp; Awards</a></li>
+                    <li><a href="/en/press/releases">Press Releases</a></li>
+                    <li><a href="/en/press/success">Success Stories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/introduction/faq">FAQ</a></li>
+
+            <li><a href="/en/resources/contacts">Contact Us</a></li>
+
+            <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="25" width="1"></div>
+
+            <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+            <!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+            <!--[if IE 7]><style>#p7PMnav a{zoom:100%;}#p7PMnav li{float:left;clear:both;width:100%;}</style><![endif]-->
+        </ul>
+
+      
+
+        
+
+        <!--begin ad space -->
+        <div class="ads">
+            <a href="http://java.com/java/download/index.jsp?cid=jdp78399" target="_blank"><img style="display: ;" src="/images/ad_banner2.gif" alt="Ad Banner" border="1" height="70" width="150"></a>
+        </div>
+        <!--end ad space -->
+
+<!-- ** Menu End ** //-->
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+    
+
+                    &nbsp;<br>
+                    <img src="/images/common/trans.gif" alt="" width="1" height="150"><br>
+
+              
+
+
+
+                </td>
+                <!-- ** END: Navigation Column ** //-->
+
+                <!-- ** BEGIN: Gutter Column ** //-->
+		<td width="10" nowrap><img src="/images/common/trans.gif" alt="" width="10" height="1"></td>
+                <!-- ** END: Gutter Column ** //-->
+
+                <!-- ** BEGIN: Content Column ** //-->
+                <td width="100%" valign="top">
+
+    
+<script type="text/javascript">
+
+String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+        return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+        return this.replace(/\s+$/,"");
+}
+
+function validate_search() {
+	if (document.search.id.value == "Search JSRs" || document.search.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_findjsr() {
+	if (document.findjsr.id.value == "Search JSRs" || document.findjsr.id.value.trim().length == 0) {
+		alert("Search terms must be entered first");
+		return false;
+	}
+	return true;
+}
+
+function validate_login(type) {
+	// alert("validate_login:type=" + type);
+	if (document.login.username.value == "username"
+			|| document.login.username.value.trim().length == 0
+			|| document.login.password.value.trim().length == 0) {
+		// alert("User ID and Password must be entered first: debug(" + type + ")");
+		alert("User ID and Password must be entered first");
+		return false;
+	}
+	return true;
+}
+
+// onkeypress="return handle_keypress(this,event)"
+function handle_keypress(myfield, e) {
+	var keycode;
+	if (window.event) keycode = window.event.keyCode;
+	else if (e) keycode = e.which;
+	else return true;
+
+
+	// if (window.event) keycode = e.keyCode;
+	// else if (e) keycode = e.which;
+	// else return true;
+
+	// alert("keycode=" + keycode);
+
+	// if (keycode == 13 && validate_login(3) ) {
+	if (keycode == 13) {
+		if (validate_login(3)) {
+			myfield.form.submit();	// submit() function not same as User Submit
+		}
+		return false;
+	}
+	return true;
+}
+
+function nullify_if_equal(field, str) {
+	// alert("val=" + field.value);
+	if (field.value == str) {
+		field.value = "";
+	}
+}
+
+</script>
+<!-- ** END: header.jsp ** //-->
+
+
+
+
+
+
+
+        <!--  BEGIN NAVIGATION TABS -->
+        <div id="p7TP1">
+                <div class="p7TP_tabs">
+                        <div id="p7tpb1_1" class="down"><a class="down">JSR</a></div>
+                        <div><a href="/en/egc/view?id=94">Community</a></div>
+                        <div><a href="/en/eg/eghome?id=94">Expert Group</a></div>
+			
+
+                <br class="p7TPclear" />
+                </div>
+
+                <div class="p7TPcontent">
+                        <div id="p7tpc1_1">
+
+			
+                                <a href="summary?id=94">Summary</a>
+                                &nbsp;|&nbsp;
+			
+			
+                                <a href="proposalDetails?id=94">Proposal</a>
+                                &nbsp;|&nbsp;
+			
+			
+                                <span>Detail (Summary &amp; Proposal)</span>
+			
+                        </div>
+
+                </div>
+                <!--[if lte IE 6]><style type="text/css">.p7TPpanel div,.p7TPpanel a{height:1%;}.p7TP_tabs a{white-space:nowrap;}</style><![endif]-->
+        </div>
+        <script type="text/javascript">
+                P7_initTP(1,0);
+        </script>
+        <!--  END NAVIGATION TABS -->
+
+
+
+
+
+ <div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<div class="header2">JSRs: Java Specification Requests</div>
+<div class="header1">JSR 94: Java<sup><font size="-2">TM</font></sup> Rule Engine API</div>
+<div class="anybar"><img src="/images/global/bar_green.gif" alt="" width="12" height="4"></div>
+
+<br>
+
+
+
+
+
+
+
+		
+		
+		
+
+		
+<!-- ********************************************** -->
+<!--  JSR Status information                        -->
+<!-- ********************************************** -->
+
+
+		
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="centercontent" valign="top">
+			<tr>
+			<td>
+			<!--<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f1f1f6" class="box_fill">-->
+                            <table class="tbl" cellpadding="4" cellspacing="1" width="100%">
+
+                              
+
+                                <tr valign="top">
+                                    <td class="bdtl">Stage</td>
+                                    <td class="bdtl">Access</td>
+                                    <td class="bdtl">Start</td>
+                                    <td class="bdtl">Finish</td>
+                                </tr>
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>Final Release </td>
+                                        
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/final/jsr094/index.html">Download page</a></td>
+                                        
+                                        
+                                        <td>04 Aug, 2004</td>
+                                        
+                                        <td>&nbsp;</td>
+                                        
+				</tr>
+	
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>Final Approval Ballot </td>
+                                        
+                                        
+                                            <td><a href="results?id=2340">View results</a></td>
+                                        
+                                        
+                                        <td>25 Nov, 2003</td>
+                                        
+                                        <td>08 Dec, 2003</td>
+                                        
+				</tr>
+	
+
+
+
+	
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>Proposed Final Draft </td>
+                                        
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/first/jsr094/index.html">Download page</a></td>
+                                        
+                                        
+                                        <td>29 Oct, 2003</td>
+                                        
+                                        <td>&nbsp;</td>
+                                        
+				</tr>
+	
+
+
+
+	
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>Public Review </td>
+                                        
+                                        
+                                            <td><a href="http://jcp.org/aboutJava/communityprocess/review/jsr094/index.html">Download page</a></td>
+                                        
+                                        
+                                        <td>12 Aug, 2002</td>
+                                        
+                                        <td>11 Sep, 2002</td>
+                                        
+				</tr>
+	
+
+
+
+	
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>Community Draft Ballot </td>
+                                        
+                                        
+                                            <td><a href="results?id=939">View results</a></td>
+                                        
+                                        
+                                        <td>12 Feb, 2002</td>
+                                        
+                                        <td>19 Feb, 2002</td>
+                                        
+				</tr>
+	
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>Community Review </td>
+                                        
+                                        
+                                            <td><a href="http://www2.jcp.org/aboutJava/communityprocess/participant/jsr094/index.html">Login page</a></td>
+                                        
+                                        
+                                        <td>19 Dec, 2001</td>
+                                        
+                                        <td>19 Feb, 2002</td>
+                                        
+				</tr>
+	
+
+
+
+	
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>Expert Group Formation </td>
+                                        
+                                        
+                                            <td>&nbsp;</td>
+                                        
+                                        
+                                        <td>28 Nov, 2000</td>
+                                        
+                                        <td>19 Dec, 2000</td>
+                                        
+				</tr>
+	
+
+
+
+	
+				<tr class="bgw" valign="top">
+                                        
+                                        <td>JSR Review Ballot </td>
+                                        
+                                        
+                                            <td><a href="results?id=14">View results</a></td>
+                                        
+                                        
+                                        <td>14 Nov, 2000</td>
+                                        
+                                        <td>27 Nov, 2000</td>
+                                        
+				</tr>
+	
+
+
+				
+			</table>
+			</td>
+			</tr>
+                        </td>
+</tr>
+</table>
+		
+<!-- ********************************************** -->
+<!--  JCP Version                                   -->
+<!-- ********************************************** -->
+
+<span style="padding: 10px; display: block;">
+
+    <b> Status: </b>Final<br>
+
+
+     <b>JCP version in use: </b><a href="/procedures/jcp2_1"> 2.1</a><br>
+    
+
+
+
+    
+			<b>Java Specification Participation Agreement version in use:</b> 1.0<br>
+    
+
+    <br><br>
+        <b>Description</b>:<br>
+        This specification defines a Java runtime API for rule engines.
+    <br><br>
+
+    <!-- ********************************************** -->
+    <!--  JSR Comments Email excluding JSR 900 and up   -->
+    <!-- ********************************************** -->
+ 
+
+
+
+	    
+	    
+            <b> Please direct comments on this JSR to the Spec Lead(s) </b> <br>
+	    
+
+            </span>
+
+
+   <!-- ****************************************** -->
+
+		
+
+                <div id="p7TP52">
+                        <div class="p7TP_tabs2">
+                            <div><span>Team</span></div>
+                            <br class="p7TPclear" />
+                        </div>
+                </div>
+
+                <table bgcolor="#f2f2f2" border="0" cellpadding="5" cellspacing="1" width="100%">
+	
+                    <tr valign="top">
+                            <td colspan="3"><span class="header4">Specification Leads</span></td>
+                    </tr>
+
+
+		
+        
+			<tr valign="top">
+                            
+                            <td width="20" nowrap>&nbsp;</td>
+                            
+                            <td>Daniel&nbsp;Selman</td>
+                            
+                            <td>ILOG</td>
+			</tr>
+        
+		
+
+                <tr valign="top">
+                        <td colspan="4" class="spacerw"><img src="/images/global/spacer.gif" alt="" height="1" width="1"></td>
+                </tr>
+                <tr valign="top">
+                        <td colspan="3"><span class="header4">Expert Group</span></td>
+                </tr>
+
+		
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Art Technology Group Inc.(ATG)</td>
+     
+
+				    
+                            <td>Fujitsu Limited</td>
+    
+
+				    
+                            <td>ILOG</td>
+			</tr>
+
+
+			<tr valign="top">
+                            <td width="20" nowrap>&nbsp;</td> <!-- Gutter //-->
+                            <td>Oracle</td>
+     
+
+
+
+
+
+
+
+
+
+			</tr>
+
+		</table>
+
+
+
+
+
+                    <!-- ********************************************** -->
+                    <!--  Expert Group Status                           -->
+                    <!-- ********************************************** -->
+
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        
+                        
+                    </table>
+
+
+
+
+
+   <!-- ****************************************** -->
+
+
+
+
+
+
+<!-- ********************************************** -->
+<!--  JSRProposal Info                              -->
+<!-- ********************************************** -->
+<p> <a name="update"><font size="+2">Update to the Java Specification Request (JSR)</font></a><p>
+The Spec Lead submitted the following updated version of <a href="#orig">the Original JSR</a> on December 5, 2000.<P>
+<P>
+<A HREF="#id"> Identification</a>  | 
+          <A HREF="#request"> Request</a>  | 
+          <A HREF="#contrib"> Contributions</a><P>
+<font size="+2"><a name="id">Section 1: Identification</a></font><br>
+<B>Initial Expert Group Membership:</b> <BR>(Please provide 
+            company or organization names. Note that expert group members must 
+            have <A 
+            href="http://java.sun.com/aboutJava/communityprocess/getstarted.html">signed 
+            the JSPA</a>.)</p>
+            <P>Art Technology Group</p>
+            <P>BEA Systems</p>
+            <P>Blaze Software</p> 
+            <P>ILOG</p>
+            <P>SilverStream Software</p>
+            <P>Unisys</p>
+            <P></p><BR><BR><!-- SECTION 2 --><A 
+            name=request></a>
+            <P><FONT size=+2>Section 2: Request</font>
+            <P></p>
+            <H4>2.1 Please describe the proposed Specification:</h4>
+            <P>This specification defines a Java runtime api for rule engines.</p>
+            <P>The api prescribes a set of fundamental rule engine
+                operations. The set of operations is based upon the assumption that
+                most clients will need to be able to execute a basic multi-step rule engine cycle, which
+                consists of parsing rules, adding objects to an engine,
+                firing rules and getting resultant objects from the engine.
+                The set of operations also supports variations
+                of the basic cycle, particularly variations that would occur in J2EE server
+                deployments.</p>
+            <P>A primary input to a rule engine is a collection of rules called
+                a ruleset. The rules in a ruleset are expressed in a rule language.
+                This specification defines generic api support for parsing rulesets,
+                but does not define a rule language standard.</p>
+            <H4>2.2 What is the target Java platform? (i.e., desktop, server, 
+            personal, embedded, card, etc.)</h4>
+            <P>This specification targets the J2EE and J2SE platforms.</p>
+            <H4>2.3 What need of the Java community will be addressed by the 
+            proposed specification?</h4>
+            <P>This specification addresses the community need to reduce the cost associated
+                with incorporating business logic within applications and the community need to reduce the cost associated
+                with implementing platform-level business logic tools and services.</p>
+            <H4>2.4 Why isn't this need met by existing specifications?</h4>
+            <P>No standard specifications exist that address this need.</p>
+            <P>Dissimilar vendor-specific api specifications exist. However, the differences between these specifications
+                are significant enough to cause costly difficulties for application builders and platform vendors.</p>
+            <H4>2.5 Please give a short description of the underlying technology 
+            or technologies:</h4>
+            <P>The key underlying technology is the rule engine. A rule engine may be viewed as a sophisticated if/then statement
+                interpreter. The if/then statements that are interpreted are called rules. The "if" portions of rules contain conditions
+                such as "shoppingCart.totalAmount > $100". The "then" portions of rules contain actions such as "recommendDiscount(5%)".
+                The inputs to a rule engine are a ruleset and some data objects. The outputs from a rule
+                engine are determined by the inputs and may include the originally inputted data objects with possible modifications, new data objects and side effects such
+                as "sendMail('Thank you for shopping')."</p>
+            <H4>2.6 Is there a proposed package name for the API Specification? 
+            (i.e., <TT>javapi.something</tt>, <TT>org.something</tt>, etc.)</h4>
+            <P>javax.rules</p>
+            <H4>2.7 Does the proposed specification have any dependencies on 
+            specific operating systems, CPUs, or I/O devices that you know 
+            of?</h4>
+            <P>No</p>
+            <H4>2.8 Are there any security issues that cannot be addressed by 
+            the current security model?</h4>
+            <P>No</p>
+            <H4>2.9 Are there any internationalization or localization 
+            issues?</h4>
+            <P>No</p>
+            <H4>2.10 Are there any existing specifications that might be 
+            rendered obsolete, deprecated, or in need of revision as a result of 
+            this work?</h4>
+            <P>No</p>
+            <H4>2.11 Please describe the anticipated schedule for the 
+            development of this specification.</h4>
+            <P>Community Draft submitted to PMO: October 1, 2001</p>
+            <P>Public Draft submitted to PMO: January 3, 2002</p>
+            <P>Proposed Final Draft submitted to PMO: March 4, 2002BR><BR><BR><BR><!-- SECTION 2 --><A 
+            name=contrib></a>
+            <P><FONT size=+2>Section 3: Contributions</font>
+            <P></p>
+            <H4>3.1 Please list any existing documents, specifications, or 
+            implementations that describe the technology. Please include links 
+            to the documents if they are publicly available.</h4>
+            <P>&#91;1&#93; "RETE: a fast algorithm for the many pattern/many object pattern match problem", Artificial Intelligence,
+                volume 19, number 1, 1982, C.L. Forgy</p>
+            <P>&#91;2&#93; <A href="http://www.research.ibm.com/rules/home.html">Business Rules for Electronic Commerce: Project at IBM T.J. Watson Research</a></p>
+            <P>&#91;3&#93; <A href="http://herzberg.ca.sandia.gov/jess">Jess, The Java Expert System Shell</a></p>
+            <H4>3.2 Explanation of how these items might be used as a starting 
+            point for the work.</h4>
+            <P>&#91;1&#93; Provides useful background information about the RETE algorithm that is at the
+                heart of several rule engine implementations.</p>
+            <P>&#91;2&#93; Provides useful background information.</p>
+            <P>&#91;3&#93; JESS is a rule engine and scripting environment written entirely in Sun's Java language by Ernest Friedman-Hill at Sandia National Laboratories in Livermore, CA. JESS can be licensed free of charge for academic use.</p>
+<font size=+2>Section 4: Additional Information</font>
+<P>
+<h4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</h4>
+<P>
+This specification assumes the existence of a parallel effort to specify an open, xml-based rule language. There is a need for standardization at both the API and the rule language level. The RuleML initiative (<a href="http://www.dfki.uni-kl.de/ruleml/">http://www.dfki.uni-kl.de/ruleml/</a>) is making important steps towards this common, but distinct, goal.
+<BR><BR>
+<BR><BR>
+<BR><BR>
+<BR><BR>
+<HR>
+<!-- OLD PAGE HERE -->
+<a name="orig"><font size="+2">Original Java Specification Request (JSR)</font></a><p>
+<FONT SIZE="-1"><P>
+(NOTE that this JSR has been <a href="#update">updated</a> since the original posting.</font><P>
+
+<!-- BEGIN-SUB TOPICS -->
+
+          <A HREF="#1"> Identification</a>  | 
+          <A HREF="#2"> Request</a>  | 
+          <A HREF="#3"> Contributions</a>  | 
+          <A HREF="#4"> Additional Information</a>
+<BR>
+<P>
+<!-- BEGIN TEMPLATE -->
+
+<!-- SECTION 1 -->
+
+<A NAME="1"></a>
+
+<P><FONT size=+2>Section 1. Identification</font>
+
+<P><B>Submitting Member:</b>BEA Systems, Inc.</p>
+            <P><B>Name of Contact Person:</b>Doug Dew</p>
+            <P><B>E-Mail Address:</b>ddew@bea.com</p>
+            <P><B>Telephone Number:</b>+1 720 565 6543</p>
+            <P><B>Fax Number:</b>+1 720 565 6501</p><BR>
+            <P><B>Specification Lead:</b>Doug Dew</p>
+            <P><B>E-Mail Address:</b>ddew@bea.com</p>
+            <P><B>Telephone Number:</b>+1 720 565 6543</p>
+            <P><B>Fax Number:</b>+1 720 565 6501</p><BR>
+            <P><B>Initial Expert Group Membership:</b> <BR>(Please provide 
+            company or organization names. Note that expert group members must 
+            have <A 
+            href="http://java.sun.com/aboutJava/communityprocess/getstarted.html">signed 
+            the JSPA</a>.)</p>
+            <P>BEA Systems, Inc.</p>
+            <P>ILOG, Inc.</p><BR><BR>
+
+<!-- SECTION 2 -->
+
+<A NAME="2"></a>
+
+<P>
+<FONT SIZE="+2">Section 2: Request</font><P>
+</p>
+
+<H4>2.1 Please describe the proposed Specification:</h4>
+
+<P>This specification defines a Java runtime api for rule engines.</p>
+            <P>The api prescribes an object model and a set of fundamental rule engine
+                operations. The object model and set of operations are based upon the assumption that
+                most clients will need to be able to execute a basic multi-step rule engine cycle, which
+                consists of parsing rules, adding objects to an engine,
+                firing rules and getting resultant objects from the engine.
+                The object model and the set of operations also support variations
+                of the basic cycle, particularly variations that would occur in J2EE server
+                deployments.</p>
+            <P>A primary input to a rule engine is a collection of rules called
+                a ruleset. The rules in a ruleset are expressed in a rule language.
+                This specification defines api support for parsing rulesets that have
+                been authored in vendor-specific rule languages. Additionally,
+                to help simplify the task of creating rule-authoring tools and because
+                business-to-business exchange of rules is anticipated, 
+                this specification defines api support for parsing rulesets that
+                have been authored in xml-based, vendor-independent rule languages.</p>
+
+<H4>2.2 What is the target Java platform? (i.e., desktop, server, personal, embedded, card, etc.)</h4>
+
+<P>This specification targets the J2EE and J2SE platforms.</p>
+
+<H4>2.3 What need of the Java community will be addressed by the proposed specification?</h4>
+
+<P>This specification addresses the community need to reduce the cost associated
+                with incorporating business logic within applications and the community need to reduce the cost associated
+                with implementing platform-level business logic tools and services. Additionally, this specification is part of a larger
+                effort to enable business-to-business exchange and processing of rules.</p>
+
+<H4>2.4 Why isn't this need met by existing specifications?</h4>
+
+<P>No standard specifications exist that address this need.</p>
+            <P>Dissimilar vendor-specific api specifications exist. However, the differences between these specifications
+                are significant enough to cause costly difficulties for application builders and platform vendors.</p>
+
+<H4>2.5 Please give a short description of the underlying technology or technologies:</h4>
+
+<P>The key underlying technology is the rule engine. A rule engine may be viewed as a sophisticated if/then statement
+                interpreter. The if/then statements that are interpreted are called rules. The "if" portions of rules contain conditions
+                such as "shoppingCart.totalAmount > $100". The "then" portions of rules contain actions such as "recommendDiscount(5%)".
+                The inputs to a rule engine are a ruleset and some data objects. The outputs from a rule
+                engine are determined by the inputs and may include the originally inputted data objects with possible modifications, new data objects and side effects such
+                as "sendMail('Thank you for shopping')."</p>
+            <P>Some rule engines are implementations of the RETE algorithm. The distinguishing
+                feature of this algorithm is its support for efficient data object-driven rule selection.</p>
+
+<H4>2.6 Is there a proposed package name for the API Specification? (i.e., <TT>javapi.something</tt>, <TT>org.something</tt>, etc.)</h4>
+
+<P>javax.rules</p>
+
+<H4>2.7 Does the proposed specification have any dependencies on specific operating systems, CPUs, or I/O devices that you know of?</h4>
+
+<P>No</p>
+
+<H4>2.8 Are there any security issues that cannot be addressed by the current security model?</h4>
+
+<P>No</p>
+
+<H4>2.9 Are there any internationalization or localization issues?</h4>
+
+<P>No</p>
+
+<H4>2.10 Are there any existing specifications that might be rendered obsolete, deprecated, or in need of revision as a result of this work?</h4>
+
+<P>No</p>
+
+<H4>2.11 Please describe the anticipated schedule for the development of this 
+specification.</h4>
+
+<P>Community Draft submitted to PMO: October 1, 2001</p>
+            <P>Public Draft submitted to PMO: January 3, 2002</p>
+            <P>Proposed Final Draft submitted to PMO: March 4, 2002<BR></p>
+<P>
+(NOTE that this JSR has been <a href="#update">updated</a> since the original posting.
+<BR><BR>
+<BR><BR>
+
+<!-- SECTION 3 -->
+
+<A NAME="3"></a>
+
+<P>
+<FONT SIZE="+2">Section 3: Contributions</font><P>
+</p>
+
+<H4>3.1 Please list any existing documents, specifications, or implementations that describe the technology. Please include links to the documents if they are publicly available.</h4>
+
+<P>&#91;1&#93; "RETE: a fast algorithm for the many pattern/many object pattern match problem", Artificial Intelligence,
+                volume 19, number 1, 1982, C.L. Forgy</p>
+            <P>&#91;2&#93; <A href="http://www.research.ibm.com/rules/home.html">Business Rules for Electronic Commerce: Project at IBM T.J. Watson Research</a></p>
+            <P>&#91;3&#93; <A href="http://herzberg.ca.sandia.gov/jess">Jess, The Java Expert System Shell</a></p>
+
+<H4>3.2 Explanation of how these items might be used as a starting point for the work.</h4>
+
+<P>&#91;1&#93; Provides useful background information about the RETE algorithm that is at the
+                heart of several rule engine implementations.</p>
+            <P>&#91;2&#93; Provides useful background information.</p>
+            <P>&#91;3&#93; A Java-based, open source implementation of the RETE algorithm.</p>
+<P>(NOTE that this JSR has been <a href="#update">updated</a> since the original posting.
+<BR><BR>
+
+<!-- SECTION 4 -->
+
+<A NAME="4"></a>
+
+<P>
+<FONT SIZE="+2">Section 4: Additional Information (Optional)</font><P>
+</p>
+
+<H4>4.1 This section contains any additional information that the submitting Member wishes to include in the JSR.</h4>
+
+<P>This specification assumes the existence of a parallel effort to specify an open, xml-based
+                rule language. The result of this effort will be an XML Schema that will be registered at
+                a site such as xml.org.</p>
+<P>(NOTE that this JSR has been <a href="#update">updated</a> since the original posting. </p>
+
+
+
+
+
+
+<!-- ** BEGIN: footer.jsp ** //-->
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<!-- ** END: Content Table ** //-->
+
+<!-- ** BEGIN: Footer Table ** //-->
+
+<div id="footer" style="clear: both;">
+    <div class="footleft">
+        <a href="/en/resources/contacts">Contact Us</a>
+    </div>
+	
+    <div class="botbar"><img src="/images/spacer.gif" alt="" height="23" width="1"></div>
+
+    <div class="footleft2">
+         &copy; 2012, Oracle Corporation and/or its affiliates. 
+        <a href="/en/home/terms">Terms of Use</a>. <a href="http://www.oracle.com/us/legal/privacy/index.html">Privacy Policy</a>. <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a>
+    </div>
+
+    <div class="footright">
+        <img src="/images/common/logo_oracle_footer.gif" alt="Oracle Corporation" height="22" width="91">
+    </div>
+
+    <div style="clear: both;"><img src="/images/spacer.gif" alt="" height="30" width="1"></div>
+</div>
+
+<!-- ** END: Footer Table ** //-->
+
+
+
+<!-- ** Menu Start ** //-->
+
+
+
+</body>
+</html>
+<!-- ** END: footer.jsp ** //-->
+

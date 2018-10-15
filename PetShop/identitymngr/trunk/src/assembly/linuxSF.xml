@@ -1,0 +1,75 @@
+<assembly>
+  
+  <id>unix-pre</id>
+  <baseDirectory>${project.artifactId}</baseDirectory>
+  
+  <formats>
+    <format>tar.gz</format>
+  </formats>
+  
+  <!-- Third-Party libraries i.e., runtime dependencies -->
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>/lib</outputDirectory>
+    </dependencySet>
+  </dependencySets>
+  
+  <fileSets>
+   
+    <!-- Miscellaneous -->
+    <fileSet>
+      <includes>
+        <include>LICENSE.txt</include>
+        <include>README.txt</include>
+        <include>KEYS.txt</include>
+      </includes>
+      <lineEnding>unix</lineEnding>
+    </fileSet>
+    
+    <!-- Configuration files -->
+    <fileSet>
+    	<outputDirectory>/conf</outputDirectory>
+    	<directory>src/config</directory>
+    	<lineEnding>unix</lineEnding>
+    </fileSet>
+    
+    <!-- Source code -->
+    <fileSet>
+    	<outputDirectory>/</outputDirectory>
+    	<includes>
+			<include>src/main/**</include>
+      	</includes>
+      	<lineEnding>unix</lineEnding>
+    </fileSet>
+    
+  </fileSets>
+  
+  <files>
+  
+  		<!-- Executable JAR -->
+    	<file>
+    		<source>target/${project.artifactId}-${project.version}.${project.packaging}</source>
+    		<outputDirectory>/bin</outputDirectory>
+    		<destName>${project.artifactId}.${project.packaging}</destName>
+      	</file>
+      	
+      	<!-- Launch Korn Shell Script -->
+    	<file>
+    		<source>Provisioner.sh</source>
+    		<outputDirectory>/</outputDirectory>
+    		<destName>provisioner.sh</destName>
+    		<lineEnding>unix</lineEnding>
+      		<fileMode>0755</fileMode>
+      	</file>
+      	
+      	<!-- Launch Korn Shell Script configuration file-->
+    	<file>
+    		<source>Provisioner.cfg</source>
+    		<outputDirectory>/</outputDirectory>
+    		<destName>provisioner.cfg</destName>
+    		<lineEnding>unix</lineEnding>
+      	</file>
+      	
+  </files>
+    
+</assembly>

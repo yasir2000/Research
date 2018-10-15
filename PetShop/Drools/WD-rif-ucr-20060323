@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>RIF Use Cases and Requirements</title>
+  
+  <link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/base.css"></link>
+  
+  <link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WD.css"></link>
+  </head>
+
+<body>
+  <div class="head">
+    <p><a href="http://www.w3.org/"><img src="http://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"></img></a></p>
+    
+    <h1 id="main">RIF Use Cases and Requirements</h1>
+    
+    <h2 id="main_what">W3C Working Draft 23 March 2006</h2>
+    <dl><dt>This version:</dt><dd><a href="http://www.w3.org/TR/2006/WD-rif-ucr-20060323/">http://www.w3.org/TR/2006/WD-rif-ucr-20060323/</a></dd><dt>Latest version:</dt><dd><a href="http://www.w3.org/TR/rif-ucr">http://www.w3.org/TR/rif-ucr</a></dd></dl><dl><dt>Editors:</dt><dd>Allen Ginsberg (Mitre) <span class="anchor" id="line-5"></span><br/>David Hirtle (NRC) <span class="anchor" id="line-6"></span><br/></dd></dl>
+    <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2006 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+    
+    <hr title="Separator for header"></hr>
+    </div>
+  
+  <div>
+    <h2 class="notoc"><a id="abstract" name="abstract">Abstract</a></h2>
+    
+<span class="anchor"></span>
+    <p class="line879">This document, developed by the <a class="http" href="http://www.w3.org/2005/rules/wg">Rule Interchange Format (RIF) Working Group</a>, specifies use cases and requirements for a format that allows rules to be translated between rule languages and thus transferred between rule systems. <span class="anchor"></span></p>
+    <span class="anchor"></span>
+    <p class="line879">The <a class="http" href="http://www.w3.org/2005/rules/wg/charter#phase_1">Phase 1</a> version of this document presents use cases and requirements for the RIF in general.  The Phase 1 deliverables will provide an extensible base with which the use cases can be addressed, but it will not be until <a class="http" href="http://www.w3.org/2005/rules/wg/charter#phase_2">Phase 2</a> that most of these use cases are directly addressed by the Working Group. <span class="anchor"></span></p>
+    <span class="anchor"></span>
+</div>
+  
+  <div>
+    <h2 class="notoc"><a id="status" name="status">Status of this Document</a></h2>
+        
+    <p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/">W3C technical reports index</a> at http://www.w3.org/TR/.</em></p>
+    
+    <h4 id="status_please_comment">Please Comment By 21 April 2006</h4>
+    <p>The <a class="http" href="http://www.w3.org/2005/rules/wg/">Rule Interchange Format (RIF) Working Group</a> has produced this First Public Working Draft and is interested in feedback.   If there appear to be significant mistakes or omissions from these use cases, please let us know, bearing in mind that they need to be representative of a much larger set.  Please send to <a class="mailto" href="mailto:public-rif-comments@w3.org">public-rif-comments@w3.org</a> (<a class="http" href="http://lists.w3.org/Archives/Public/public-rif-comments/">public archive</a>).  If possible, please offer specific changes to the text which will address your concern. </p>
+    <h4 id="status_endorsement">No Endorsement</h4>
+    
+    <p><em>Publication as a Working Draft does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than work in progress.</em></p>
+    
+    <h4 id="status_patents">Patents</h4>
+    
+    <p> This document was produced by a group operating under the <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</a>. This document is informative only. W3C maintains a <a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/38457/status">public list of any patent disclosures</a> made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</a> must disclose the information in accordance with <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</a>. </p>
+
+    
+    <hr title="Separator After Status Section"></hr>
+    </div>
+  
+  <div>
+    <h2><a id="contents" name="contents">Table of Contents</a></h2>
+    
+    <ul class="toc"><li class="tocline1"><a href="#Use_Cases" class="tocxref">1. Use Cases</a>
+        <ul class="toc"><li class="tocline1"><a href="#Negotiating_eBusiness_Contracts_Across_Rule_Platforms" class="tocxref">1.1. Negotiating eBusiness Contracts Across Rule Platforms</a></li><li class="tocline1"><a href="#Negotiating_eCommerce_Transactions_Through_Disclosure_of_Buyer_and_Seller_Policies_and_Preferences" class="tocxref">1.2. Negotiating eCommerce Transactions Through Disclosure of Buyer and Seller Policies and Preferences</a></li><li class="tocline1"><a href="#Collaborative_Policy_Development_for_Dynamic_Spectrum_Access" class="tocxref">1.3. Collaborative Policy Development for Dynamic Spectrum Access</a></li><li class="tocline1"><a href="#Access_to_Business_Rules_of_Supply_Chain_Partners" class="tocxref">1.4. Access to Business Rules of Supply Chain Partners</a></li><li class="tocline1"><a href="#Managing_Inter-Organizational_Business_Policies_and_Practices" class="tocxref">1.5. Managing Inter-Organizational Business Policies and Practices</a></li><li class="tocline1"><a href="#Ruleset_Integration__for_Medical_Decision_Support" class="tocxref">1.6. Ruleset Integration  for Medical Decision Support</a></li><li class="tocline1"><a href="#Interchanging_Rule_Extensions_to_OWL" class="tocxref">1.7. Interchanging Rule Extensions to OWL</a></li><li class="tocline1"><a href="#Vocabularly_Mapping_for_Data_Integration" class="tocxref">1.8. Vocabularly Mapping for Data Integration</a></li></ul>
+        </li><li class="tocline1"><a href="#Requirements_percent28Not_in_This_Versionpercent29" class="tocxref">2. Requirements (Not in This Version)</a></li></ul>
+    </div>
+  
+  <div>
+    <h2 id="Use_Cases">1. Use Cases</h2>
+    
+    <div>
+      <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span>
+        <p class="line886">Rule-languages and rule-based systems have played seminal roles in the history of computer science and the evolution of information technology. From expert systems to deductive databases, the theory and practice of automating inference based on symbolic representations has had a rich history and continues to be a key technology driver. <span class="anchor"></span></p>
+        <span class="anchor"></span>
+        <p class="line886">Due to the innovations made possible by the Internet, the World Wide Web, and, most recently, the Semantic Web, there is now even greater opportunity for growth in this sector.  While some of these opportunities may require advances in research, others can be addressed by enabling exisiting rule-based technologies to interoperate according to standards-based methodologies and processes.  The basic goal of the Rule Interchange Format (RIF) Working Group is to devise such standards and make sure that they are not only useful in the current environment, but are easily extensible in order to deal with the evolution of rule technology and other enabling technologies. <span class="anchor"></span></p>
+        <span class="anchor"></span>
+        <p class="line886">Nearly fifty use cases documenting the need for a RIF were originally submitted.  These were grouped into eight general categories and then synthesized as much as possible. The following use case descriptions,  <span class="anchor"></span>guided by this synthesis, provide scenarios that motivate the need and explain the benefits of a RIF.  They are also intended to provide an ongoing reference point for the working group in its goal of providing a precise set of requirements for a RIF. <span class="anchor"></span></p>
+        <span class="anchor"></span>
+        <p class="line886">Note that in order to enhance readability and to avoid the appearance of syntactic prejudice we have deliberately avoided the use of formal notation in representing rules in these use cases.  <span class="anchor"></span></p>
+        <span class="anchor"></span></div>
+      </div>
+    
+    <div>
+      <h3 id="Negotiating_eBusiness_Contracts_Across_Rule_Platforms">1.1. Negotiating eBusiness Contracts Across Rule Platforms</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">This use case illustrates a fundamental use of the RIF: to supply a vendor-neutral representation of rules, so that rule-system developers and stakeholders can do their work and make product investments without concern about vendor lock-in, and in particular without concern that a business partner does not have the same vendor technology.  <span class="anchor"></span>It also illustrates the fact that the RIF can be used to foster collaborative work.  Each developer and stakeholder can make a contribution to the joint effort without being forced to adopt the tools or platforms of the other contributors.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">John is negotiating an electronic business contract regarding the supply of various types of items that Jane's company is manufacturing. Jane and John interchange the contract-related data and rules involved in the negotiation in electronic form so that they can run simulations. Both agree on a standard Business Object Model / data model (i.e., vocabulary / ontology) for the goods and services involved - in this case an XML schema and appropriate test XML documents are interchanged with their rules. Since John and Jane run applications based on different vendors' rule engines and rule languages, they interchange the rules using the RIF; both vendors used can interpret the XML schema and data, and produce the results as an amended XML document. John's company defines its purchase orders in terms of an XML description of goods, packaging, delivery location and date with delivery and payment rules.  A rule proposed by John might be the following: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>If an item is perishable and it is delivered more than 10 days after the scheduled delivery date
+<span class="anchor"></span>then the item will be rejected.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">Jane replies with some suggested rule changes: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>If an item is perishable and it is delivered more than 7 days after the scheduled delivery date but less than 14 days after the scheduled delivery date then a discount of 18.7% will be applied to this delivery.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">John considers this and agrees with Jane. Both organizations utilize these rules in their operational systems using disparate rule representations internally to compute prices for this order and determine contract compliance. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Future requests for the supply of items by John's company are defined on their Purchasing web site, as the appropriate XML schema and a RIF ruleset (or rulesets). This allows Jane's company and its competitors to respond electronically with XML cost sheets. Suppliers respond with multiple cost sheets with different variations on the RIF rules proposed by John's company, allowing John's company to review the alternative rules with their associated costs to determine whether they, as a business, would benefit by relaxing or adding new rules as proposed by suppliers. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    
+    <div>
+      <h3 id="Negotiating_eCommerce_Transactions_Through_Disclosure_of_Buyer_and_Seller_Policies_and_Preferences">1.2. Negotiating eCommerce Transactions Through Disclosure of Buyer and Seller Policies and Preferences</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">This use case concerns the ability of parties involved in formal transactions or procedures, e.g., credit card authorization of a purchase, access of private medical records, etc., to express and protect their interests within a policy-governed framework.  The goal is to formally encode the preferences, priorities, responses, etc., of the parties in such a way that the overall policy can work as intended while providing opportunity for automatic negotiation of terms when allowed by the policy.  Utilization of the RIF in this use case would extend the scope of this technology, affording a higher degree of interoperability, as well as enabling re-use and sharing of preferences, etc., through interchange.  The detailed scenario below shows how this would work. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Alice wants to buy a device at an online site called "eShop." Alice employs software called "Emptor" that functions as automated negotiating agent for buyers. eShop employs software called "Venditor" as automated negotiating agent for sellers. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Alice's and eShop's policies describe who they trust and for what purposes. The negotiation is based on the policies, which are specified as rules, and the credentials Emptor and Venditor have, they are disclosed (interchanged) so as to automatically establish trust with the goal of successfully completing the transaction.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Policies are themselves subject to access control. Thus, rule interchange is necessarily done during negotiation and (in general) depends on the current level of trust that the systems have on each other. Since Emptor and Venditor might use different rule languages and/or engines for evaluating (own and imported) rules, a (standard) rule interchange format (RIF) needs to be employed for enabling the rule interchange between the two systems. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">When Alice clicks on a "buy it" button at the eShop's Web site, Emptor takes over and sends a request to eShop's site. Venditor receives the request and sends parts of its policy (i.e. a set of rules) back to Emptor. Among other things, the policy states that: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>A buyer must provide credit card information together with delivery information (address, postal code, city, and country).
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">For determining whether Venditor's request for information is consistent with Alice's policy, the Emptor takes its rules into account, which state for example: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>Disclose Alice's credit card information only to online shops belonging to the Better Business Bureau.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">By disclosing (interchanging) the above given rule, Emptor asks Venditor to provide credentials saying that it belongs to the Better Business Bureau, Alice's most trusted source of information on online shops. eShop has such a credential and its policy contains a rule stating to release it to any potential purchaser. Hence, Venditor passes the credential to Emptor.  Emptor is now ready to disclose Alice's credit card information to Venditor but it still must check whether disclosing all the information does not break Alice's denial constraints. Alice has stated two constraints stating: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>Never disclose two different credit cards to the same online shop.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span><pre>For anonymity reasons, never provide both her birth date and postal code.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">Different choices exist for implementing the above given constraints as rules the Emptor has; choosing the type of rules for implementing policies depends also on the capabilities the Emptor system has. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">For this purchase, anonymity is no issue and only information on one credit card is requested. Thus, Alice's constraints are respected. Emptor therefore provides Alice's credit card information to Venditor. Venditor checks that Alice is not on eShop's blacklist, then confirms the purchase transaction. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Companies that provide software such as Venditor and Emptor would make use of the RIF in a number of ways.  The rules expressing Alice's and/or eShop's policies could be expressed in different rule languages but still work with the software, using RIF-based interchanges.  Secondly, assuming Venditor and Emptor are products of different companies using different internal rule languages, it would still be possible for them to work together in real-time.  When these two systems need to exchange policy or preference information of their respective clients they would use the RIF to enable the interchange in real-time. When Venditor sends its initial policy information to Emptor it uses the RIF. Emptor takes that policy and translates it from the RIF to its internal representation in order to determine what it needs to do. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    
+    <div>
+      <h3 id="Collaborative_Policy_Development_for_Dynamic_Spectrum_Access">1.3. Collaborative Policy Development for Dynamic Spectrum Access</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">This use case demonstrates how the RIF leads to increased flexibility in matching the goals of end-users of a service/device, with the goals of providers and regulators of such services/devices. The RIF can do that because it enables deployment of third party systems that can generate various suitable interpretations and/or translations of the sanctioned rules governing a service/device. There are at least two broad areas in which such third-party services could be deployed.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line879">One area is <em>Dynamic Spectrum Access for wireless communication devices</em>. Recent technological and regulatory trends are converging toward a more flexible architecture in which reconfigurable devices may operate legally in various regulatory and service environments. The ability of a device to absorb the rules defining the policies of a region, or the operational protocols required to dynamically access available spectrum, is contingent upon those rules being in a form that the device can use, as well as their being tailored to work with devices in the same class having different capabilities.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line879">In this use-case we suppose a region adopts a policy that allows certain wireless devices to opportunistically use frequency bands that are normally reserved for certain high-priority users. (The decision by the European Union to allow "Dynamic Frequency Selection" (DFS) use of the 5 GHz frequency band by wireless systems, a band intermittently used by military and weather radar, is a recent example - See  <a class="http" href="http://europa.eu.int/eur-lex/lex/LexUriServ/site/en/oj/2005/l_187/l_18720050719en00220024.pdf">http://europa.eu.int/eur-lex/lex/LexUriServ/site/en/oj/2005/l_187/l_18720050719en00220024.pdf</a>.)  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Suppose the policy states: <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>A wireless device can transmit on a 5 GHz band if no priority user is currently using that band.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">How does a device know that no priority user is currently using a band it wants to use? The answer will depend on the specific capabilities of the device. One type of device may answer this question by sensing the amount of energy it is receiving on that band.  That is, it might employ the rule: <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>If no energy is detected on a desired band then assume no other device is using the band.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">A second type of device, may get information from a control channel that lets it know whether the desired band is being used by a priority user.  That is, it might employ the rule: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>If no control signal indicating use of a desired band by a priority user is detected then assume the band is available.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">So each type of device will need to employ different "interpretations" or "operational definitions" of the policy in question.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Now assume that there are 10 manufacturers of these 2 different types  of wireless devices. Suppose that each of these manufacturers uses a distinct rule-based platform in designing its devices. Each manufacturer needs to write 2 interpretations of the policy (for each of the two types of device). That means that 20 different versions of the policy must be written, tested and maintained.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line879">Enter the RIF.  The 10 manufacturers form a consortium.  This is a third-party group that is responsible for translating regional policies into the RIF.  When it does so, however, it provides different versions corresponding to the possible interpretations (operational definitions) of the policy.  So in this case, 2 RIF versions of the DFS policy are provided for the 2 types of device mentioned above.  Each of these RIF specifications can be automatically translated into the appropriate rule-platform provided a RIF-Compiler for the target device architecture exists.  Clearly it will be in the interest of each device manufacturer to develop such compilers.  That is because the manufacturer only needs to develop such a compiler <em>once</em> for every architecture it owns. Contrast that investment with having to produce, test, and maintain different versions of various policies over the lifetime of a product.   <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">This arrangement also allows the overall process to be organized in a fashion that maintains the natural division of labor in the corresponding division of artifacts produced by that labor: the policy and its various interpretations are written and maintained in platform-independent artifacts (the RIF); knowledge about how to translate from the RIF to a particular device architecture is maintained in the compilers. A change in policy is inserted at the top level in the policy artifact hierarchy where it should be; possible operational interpretations of that change are inserted at the next level down; the implementation implications for the various device architectures is generated automatically at the lowest level.   <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line903"><em>Web Services</em> and <em>Service Oriented Architectures</em> is another broad area in which third party rule interchange services would be enabled by the RIF.  Web-based service architectures offer a dynamic and flexible approach in which differentiated Service Level Agreements (SLAs) can be matched to particular circumstances automatically as required.  For example, what constitutes a certain level of service, or an acceptable premium for such a level, might vary depending upon the laws in the region in which the service is provided or contracted. SLAs written in the RIF could be automatically translated into appropriately customized agreements by a third party service provider. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    
+    <div>
+      <h3 id="Access_to_Business_Rules_of_Supply_Chain_Partners">1.4. Access to Business Rules of Supply Chain Partners</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">A business process (BP) designer designs processes that can span multiple departments in the same business as well as other business partners. A classic example of this is the integration of supply chain business processes which typically involve multiple partners.  Supply chain integration involves exposing a certain amount of business logic between partners as well as integrating processes across partners. In such activities it is therefore often necessary to access or invoke rules that originate in other ownership domains. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">A key part of a business process is the logic used to make decisions within the process. Such logic is often coded in rules because rule languages are easier for BP designers to understand and manipulate than procedural code (as in Java) -- although both forms of business logic are prevalent. Where business logic is represented in different rule languages this presents a significant burden to the BP designer in designing an integrated process.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Two primary integration modalities are possible: importing the different rulesets into a single engine and processing them in a uniform manner, or accessing the rulesets by querying remote engines and processing the results. Each modality has its uses and contra-indications. Where there are strong ownership boundaries involved it may not be permitted to merge rule sets of partners. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">For example, in an insurance adjustment process, the inspection of a damaged vehicle is often performed by independent inspectors. The critical decision in how an insurance claim will proceed is whether the damage results in a total loss or whether a repair is feasible: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>If inspector believes vehicle is repairable then process as repair otherwise process as total loss.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">The question of whether a vehicle is repairable is one that is dependent on the processes executed by the inspector and cannot be directly integrated into the insurance companies own adjustment process. The insurance company effectively queries the inspector's logic. Within the adjustment process, the overall flow will be quite different for repairable claims and total loss claims. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Even in the case of a single company, which is nominally under a common ownership domain, information and business logic is often controlled by multiple stakeholders. For example, a large company will often be organized into semi-independent profit centers (business units). Each unit will be motivated differently, will have different ontologies and business logic and may use different rule languages to represent their logic (this is particularly the case where one company acquires another company). <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">The RIF should be used to permit the BP designer a unified view of the different partners' business rules in designing the process, while at the same time permitting the partners to continue to leverage their own business rules without changing their own technologies. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">When a business process is deployed, the engine running the BP may dynamically import the business rule logic of multiple departments when they are in the same organization; or, if that is not permitted, then a query-style access to partners' business rules may be used. In this way, the RIF permits a unified dynamic view of the business rule logic no matter what the original form of the rules.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">For this to be viable from a business perspective it is critical that the semantics of the rules and query exchange be completely predictable and preferably loss-less. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    
+    <div>
+      <h3 id="Managing_Inter-Organizational_Business_Policies_and_Practices">1.5. Managing Inter-Organizational Business Policies and Practices</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span>
+          <p class="line886">This use case is about the management of rules representing business policies and practices in cases involving multiple organizations and/or multiple units within a single organization. One of the key challenges in dealing with  such domains is that some rules that support business policies and practices might not be directly executable by a machine, whereas others, even those dealing with the same situation, are machine executable. Rules that are not directly executable might need something from a person, e.g. a decision or confirmation of an action, at which point the rule execution system might be able to use the rule in a reasoning process. The RIF can help to make such domains more tractable and amenable to machine processing by allowing rules to be labelled with tags that express the necessary meta-level information required to make a reasoned determination as to the intended status of a given rule. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line903"><em>This scenario uses the (fictitious) car rental company, EU-Rent, used as the SBVR case study. The EU legislation discussed is also fictitious.</em> <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line879">EU-Rent’s corporate HQ deals with <tt class="backtick">CarWise</tt>, a consultancy company with expertise in managing fleets of vehicles. One service <tt class="backtick">CarWise</tt> offers to its clients is negotiating with EU regulators to clarify regulation. It provides both interpreted regulation for EU-Rent as an organization, and rules that can be directly used by IT rules systems. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">An EU regulator issues a directive dealing with insurance for vehicles owned by companies. One of the interpretations relevant to EU-Rent is: <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>Every car rental must be insured for damages to third parties.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line879">EU-Rent receives this and accepts that it must comply. It also decides that it will maintain its compliance documentation electronically. <tt class="backtick">CarWise</tt> provides EU-Rent with rules for electronic signatures for insurance schedules, which can be directly used in EU-Rent’s IT systems, e.g. <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>Each schedule must have electronic signatures from two EU-Rent employees of at least manager grade.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">EU-Rent corporate HQ decides that <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>Cost of third-party insurance will be built into the basic cost of each rental.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">so that there is no possibility that it can be omitted from rentals. It provides this rule to its companies in each of the EU countries in which it operates.  <span class="anchor"></span>EU-Rent operating companies also use consulting companies like <tt class="backtick">CarWise</tt> for national level expertise. In the UK <tt class="backtick">AutoLaw</tt> advises EU-Rent of rules for placing aggregate insurance for fleets with more than one insurer in order to spread the risk: <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>For fleets of more than 200 vehicles, fleet insurance policies must be placed with at least 3 insurers where at least 25% of the risk is with each insurer.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line903"><tt class="backtick">AutoLaw</tt> also provides the rules for calculating tax liability for aggregated insurance for direct use by EU-Rent’s IT systems. These include, e.g. <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>For an individual rental, the tax on aggregated insurance is 1.5% of the simple cost of the rental
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span><pre>Simple cost of rental is the cost for use of the car, excluding extra equipment, additional drivers and VAT.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">EU-Rent UK has some existing insurance policies in place. They provide third-party insurance as an explicit item, and EU-Rent UK cannot get refunds on early termination. It asks corporate HQ for rule: <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>Insurance policies that provide separate third-party cover must not be renewed.
+<span class="anchor"></span></pre><span class="anchor"></span>
+          <p class="line886">EU-Rent HQ permits this, not just for UK, but for all its operating companies, and disseminates it. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">EU-Rent HQ is concerned about meeting deadlines for electronic filing. It introduces a new rule that it distributes to operating companies: <span class="anchor"></span><span class="anchor"></span></p>
+          <pre>Each electronic compliance document must have its required electronic signatures 48 hours before its filing deadline.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">This means that if '48 hours before filing deadline' occurs and the electronic signatures are not present, an operating company's rules system must report the out-of-compliance situation, and then wait for the responsible managers to provide the signatures. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    
+    <div>
+      <h3 id="Ruleset_Integration__for_Medical_Decision_Support">1.6. Ruleset Integration  for Medical Decision Support</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">Decision support systems aid in the process of human decision making, especially decision making that relies on expertise. Reasoning with rules is an important part of this expert decision making. For complex decision support systems, it is expected that rules will be furnished by a variety of different sources, including ontologies, knowledge bases, and other expert systems. This use case illustrates how the RIF makes it possible to merge rulesets from diverse sources in diverse formats into one rule-based system, thereby enabling inferences that might otherwise have remained implicit.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line879">Medical decision support systems, such as the ones discussed below, might use rules from pharmaceutical knowledge bases, laboratory knowledge bases, patient data bases, and medical ontologies. For example, a large amount of information on therapeutic medications (drug taxonomies, indications, contraindications,  and clearance times) and diseases (disease taxonomies, etiologies, and symptoms) is contained in existing ontologies such as <a class="http" href="http://www.snomed.org">SNOMED</a> Clinical Terms®. Rules can be used to express therapeutic recommendations, to formulate queries about relevant prescriptions for a patient, and to assess the effectiveness of a treatment.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">The following scenario illustrates how rule-interchange would be used in various medical decision support systems to support the following functionalities: <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <ul><li>
+              <p class="line886">Improving situation assessment, e.g., determining when a patient needs to be put on medication, or have his medication switched. <span class="anchor"></span></p>
+              </li><li>
+              <p class="line886">Prescribing a course of action, e.g., determining which drug is best for a patient in a particular circumstance. <span class="anchor"></span></p>
+              </li><li>
+              <p class="line886">Improving event planning, e.g., determining whether a patient can be scheduled for a procedure given the medication that he is currently taking.  <span class="anchor"></span></p>
+              <span class="anchor"></span></li></ul>
+          
+          <p class="line879">Bob, 62 years old and reasonably healthy, has been going to his internist, Dr. Rosen, for several years for control of his Type II diabetes. Dr. Rosen has been using the <tt class="backtick">AutoDoc</tt> system to help him decide when to switch to medications and which drugs to prescribe. The <tt class="backtick">AutoDoc</tt> system uses two sources when making its recommendations: a laboratory knowledge base giving particular results for patients and specifying  when these results are out of normal range, and a pharmaceutical knowledge base giving guidelines for the use of medications. Automated reasoning with rules from these combined sources is possible if the rules are first mapped to the RIF. Here are two specific examples of such synergistic effects. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line903"><em>This scenario discusses the fictitious expert systems <tt class="backtick">AutoDoc</tt> and MEDIC. In the interest of readability and brevity, the information and rules presented in the following scenario may not precisely capture the current state of medical knowledge and best practices in this field, but may be somewhat simplified.</em> <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line879">Originally Bob's diabetes was controlled through diet and moderate exercise. In time, however, Bob’s blood glucose level began to rise, even under this regimen. Due to Bob's elevated <tt class="backtick">HbA1c</tt> level (which indicates one's average blood sugar level over the last several months), Dr. Rosen prescribed oral medication for Bob. He was forced to change Bob's medication a number of times over the course of a year. He first prescribed Precose, a oral alpha-glucosidase inhibitor, but had to discontinue this medication due to undesired side effects. He then prescribed several sulfonylurea drugs, Micronase and Glucotrol, to no avail. Bob's lab results still indicated an elevated <tt class="backtick">HbA1c</tt> level. The following rule from the <em>laboratory knowledge base</em> suggests that Bob's treatment at that time was not effective: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>If a Type II diabetes patient's current level of HbA1c is high, then the patient's current treatment is considered to be ineffective.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line879">To deal with this problem, Dr. Rosen was about to prescribe Glucophage (metformin, one of the biguanides) 850 mg., 3 times a day, when as usual, he double checked his prescription with the <tt class="backtick">AutoDoc</tt> system. The system, based on the following guidelines from the <em>pharmaceutical knowledge base</em>, informed Dr. Rosen that he should have prescribed an oral bitherapy (two medications, each of which controls blood sugar levels) instead of a monotherapy. <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>If an oral monotherapy at recommended doses of a sulfonylurea or biguanide, combined with lifestyle changes, is ineffective, then the monotherapy should be replaced by an oral bitherapy.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line879">Based on the recommendation from <tt class="backtick">AutoDoc</tt>, Dr. Rosen switched Bob's prescription to Glucophage and Avandia (rosiglitazone, one of the thiazolidinediones).   <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Bob recently suffered a concussion and has become increasingly forgetful. He went to see a neurologist, Dr. Cervello, who prescribed a contrast MRI (Magnetic Resonance Imaging). When asked about current medication, Bob told Dr. Cervello that he was taking Glucotrol to control his diabetes, forgetting that he had been switched to Glucophage. This was potentially problematic, since Glucophage should not be taken close to the administration of a contrast injection. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Fortunately, when Bob went to the lab to schedule his MRI, the medical receptionist pulled up MEDIC (Medical Event and Drug Interaction Consultant), the hospital’s new automated system, which checks for incompatible medical events and/or drugs (e.g., liposuction scheduled during pregnancy, blood thinners prescribed before surgery, etc.). <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">MEDIC uses a variety of sources in its reasoning, including: <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <ul><li>
+              <p class="line886">the pharmaceutical knowledge base, described above <span class="anchor"></span></p>
+              </li><li>
+              <p class="line886">the patient data bases, which gives the patient record, including the medications a patient is currently taking <span class="anchor"></span></p>
+              </li><li>
+              <p class="line886">the hospital medical event protocol knowledge base, which details the protocol used for different medical procedures <span class="anchor"></span></p>
+              <span class="anchor"></span></li></ul>
+          
+          <p class="line886">In this case, MEDIC uses all three sources, and pulls up the following information: <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <ul><li>
+              <p class="line886">Metformin is contraindicated with contrast dye. <span class="anchor"></span></p>
+              </li><li>
+              <p class="line886">Metformin is the generic form of Glucophage. <span class="anchor"></span></p>
+              </li><li>
+              <p class="line886">Bob is taking Glucophage. <span class="anchor"></span></p>
+              </li><li>
+              <p class="line886">The contrast MRI requires as one of its steps injecting the patient with contrast dye. <span class="anchor"></span></p>
+              <span class="anchor"></span></li></ul>
+          
+          <p class="line886">MEDIC therefore determines that Bob should not be taking the contrast MRI at this time. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">For MEDIC to work, the rules from these different sources must be mapped to a unified interchange format. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    
+    <div>
+      <h3 id="Interchanging_Rule_Extensions_to_OWL">1.7. Interchanging Rule Extensions to OWL</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">Rules are often used in conjunction with other declarative knowledge representation formalisms, such as ontology languages (e.g. RDF and OWL), in order to provide greater expressive power than is provided by either formalism alone. Ontology languages, for example, typically provide a richer language for describing classes (unary predicates). Rules, on the other hand, typically provide a richer language for describing dependencies between properties (binary predicates), and may also support higher-arity predicates. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Rich domain models combining both rules and ontologies are often needed in domains such as medicine, biology, e-Science and web services. In such domains, several actors and/or agents are involved that have to interchange the data, ontologies, and rules that they work with. An example is the use of such a domain model in an application that aims at assisting the labelling of brain cortex structures in MRI images. In this case, an OWL ontology is used to capture knowledge about the most important brain cortex anatomical structures, and a rule base is used to capture knowledge about mereological and spatial dependencies between properties.  <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">For example, a rule is used to express the dependency between the ontology properties isMAEConnectedTo and isMAEBoundedBy, in particular (a simplified form of) the knowledge that two Material Anatomical Entities having a shared boundary are connected: <span class="anchor"></span></p>
+          <span class="anchor"></span><span class="anchor"></span><pre>If MAE X is bounded by Z and MAE Y is also bounded by Z then X is connected to Y.
+<span class="anchor"></span></pre><span class="anchor"></span><span class="anchor"></span>
+          <p class="line886">Benefits of interchange include the ability to collaboratively develop and share valuable knowledge, the ability to integrate anatomical images, possibly from distributed image sources, and the ability to use large-scale federated systems for statistical analysis of brain images of major brain pathologies. Requirements on the rule interchange format include semantic compatibility with OWL-DL and RDF, and the ability to provide reasoning support over combined ontology and rule bases. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    
+    <div>
+      <h3 id="Vocabularly_Mapping_for_Data_Integration">1.8. Vocabularly Mapping for Data Integration</h3>
+      
+      <div>
+        <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span><span class="anchor"></span>
+          <p class="line903"><em>Note: This is a synthetic use case, used as an example in the <span class="anchor"></span>charter.  The Working Group expects to replace this use case with a <span class="anchor"></span>real-world data integration use case in a future version of this <span class="anchor"></span>document.</em> <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Jackson is trying to find someone: he needs at least one <span class="anchor"></span>more client before the end of the quarter. He has access over <span class="anchor"></span>the web to dozens of databases, some public, some licensed, <span class="anchor"></span>and some maintained within his company. Together, they <span class="anchor"></span>contain millions of potential candidates, but how is he going <span class="anchor"></span>to narrow the field to the five or ten leads he should <span class="anchor"></span>seriously pursue? <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">He thinks for a minute, then constructs a new query. He <span class="anchor"></span>clicks on interesting properties, sees their values, and <span class="anchor"></span>locks in the ones he thinks will act as useful filters. After <span class="anchor"></span>a few minutes he gets frustrated, because the same concepts <span class="anchor"></span>seem to have different names in different databases. Worse, <span class="anchor"></span>the same idea is sometimes expressed in different structures; <span class="anchor"></span>one database follows the the model of having "name of <span class="anchor"></span>assistant" and "phone number of assistant" properties, while <span class="anchor"></span>another simply has an "assistant" property, which links to <span class="anchor"></span>another person. Trying to handle structural variations like <span class="anchor"></span>this in his query is becoming impossible. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">Fortunately, Jackson's system supports a rule language. <span class="anchor"></span>The query construction interface helps him construct mapping <span class="anchor"></span>rules between different constructs which seem equivalent to <span class="anchor"></span>him, letting him infer new information that is customized to <span class="anchor"></span>his needs, so he can query over a virtual unified database <span class="anchor"></span>with a structure that seems to him to be simple and <span class="anchor"></span>straightforward. <span class="anchor"></span></p>
+          <span class="anchor"></span>
+          <p class="line886">In fact, these rules were already being used; the data <span class="anchor"></span>views Jackson saw were in many cases constructed by rules <span class="anchor"></span>other people had written. His own rules will be available to <span class="anchor"></span>his department (because he stored them in department <span class="anchor"></span>workspace), allowing his co-workers to use the unified view <span class="anchor"></span>he finds so useful. <span class="anchor"></span></p>
+          <span class="anchor"></span></div>
+        </div>
+      </div>
+    </div>
+  
+  <div>
+    <h2 id="Requirements_percent28Not_in_This_Versionpercent29">2. Requirements (Not in This Version)</h2>
+    
+    <div>
+      <div dir="ltr" lang="en"><span class="anchor"></span>
+<span class="anchor"></span>
+        <p class="line903"><em>The Working Group has not yet prepared text for this section.   Requirements will be presented in an upcoming Working Draft.</em> <span class="anchor"></span></p>
+        <span class="anchor"></span></div>
+      </div>
+    </div>
+  </body>
+</html>

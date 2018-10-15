@@ -1,0 +1,40 @@
+	------
+	Service Subscription business Cases
+	------
+	Gonzalo Espert
+	------
+	Oct 31, 2007
+
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+Generic service subscription use case scenario
+
+  In this scenario, a service consumer.....(under construction)
+  
+[./images/Service Subscription Scenario.png] Generic business case
+  
+  Workflow:
+  
+  [[1]] A service consumer contacts a service provider's representative
+  to subscribe to a service that that provider serves.
+  
+  [[2]] Accesing service provider's business support system (e.g. CRM, ...)
+  the service provider's representative fills up a service activation work 
+  order.
+  
+  [[3]] Once completed, business support system contacts 

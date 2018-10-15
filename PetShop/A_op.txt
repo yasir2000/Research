@@ -1,0 +1,13 @@
+$- script A starts
+------------------------
+Auction Registration
+------------------------
+        start: 10:00:00
+     pet name: Carrot
+     pet type: Bird
+  seller name: Yasir Karam
+   buyer name: Taleb Bendiab
+evolve cycles: 5
+------------------------
+$- script A ends
+

@@ -1,0 +1,64 @@
+	------
+	Feature Roadmap
+	------
+	Gonzalo Espert
+	------
+	Dic 7, 2007
+
+Product's Feature Roadmap
+
+  Our roadmap and goals are always subject to discussion on the 
+  {{{http://sourceforge.net/mailarchive/forum.php?forum_name=identitymngr-users}user's list}}. 
+  As new people join with new focuses and interests, the things we do as a 
+  project adapt. 
+  
+  If you have an idea, come and join the community and talk about it. You 
+  need to {{{https://lists.sourceforge.net/lists/listinfo/identitymngr-users}subscribe to the mailing list}} first.
+  
+  Our project goal is an open source, standards based identity provisioning
+  solution. It's a major task being done by a community of volunteers. Thus, 
+  the following is an approximate roadmap for what the project hopes to 
+  achieve in the next two years. To see a tentative timeline go {{{timeline.html}here}}. 
+
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------:
+| Feature                  | Description                                                                                                                                                                                            | Quarter  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------:
+| SPML Version 2.0 support | Implement SPML connector so that Provisioner will be able to send provisioning requests to SPML based PSTs and to receive SPML provisioning requests from RAs. Support for the following identity stores will be tested: {{{http://www.citrix.com/English/ps2/products/product.asp?contentID=7181}Citrix Password Manager}}, {{{http://www.sun.com/software/products/identity_mgr/index.jsp}Sun's Identity Manager}}. | 2008Q2   |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------:
+| LDAP Version 3 support | Implement LDAP connector so that Provisioner will be able to send provisioning requests to LDAP based PSTs. Support for the following identity stores will be tested: {{{http://www.microsoft.com/windowsserver2003/technologies/directory/activedirectory/default.mspx}Microsoft's Active Directory}}, {{{http://www.sun.com/software/products/directory_srvr_ee/dir_srvr/index.xml/}Sun's ONE Directory Server}}, {{{http://directory.apache.org/}Apache's Directory Server}}. | 2008Q1  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| JMS support | Implement JMS connector so that Provisioner will be able to send provisioning requests to JMS based PSTs and to receive provisioning requests from RAs via JMS messages. | 2008Q2  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| JDBC support | Provisioner already supports the reception of provisioning requests through JDBC. This feature refers to the implementation of the necessary code to enable Provisioner to send provisioning requests to JDBC based PSTs (i.e. any RDBMS based identity store). | 2008Q1  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| OASIS's WS-Security compliance | Implement XML encryption and siganture to secure SOAP interfaces. | 2008Q3  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Administrative GUI | Administrative GUI will allow Provisioner's administrators to configure rules, routes, responses and also monitor requests in-transit. | 2008Q3  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| User´s portal | Easy-to-use portal for Customer Service Representatives and Resellers. | 2008Q4  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| TMF OSS/J compliance | Ensure compliance with TMF OSS/J specifications. | 2009Q1  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| A-la-carte feature packaging | Allow system administrators to configure features packages to be provisioned to a telecommunication network. | 2009Q2  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Multi-tenancy capabilities | Support for multiple concurrent configurations. | 2008Q1  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Password synchronization | Implement password synchronization security pattern. | 2008Q2  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Self-service password reset | Allow end-users to reset their passwords from within Provisioner's GUI. | 2009Q2  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Workflow automation | Implement a configurable workflow for provisioning requests approval process. | 2009Q1  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Audit log | Generate an audit log for every user identity store action that takes place. This will help reach compliance with federal and state goverment regulatory requirements (e.g. Sarbanes-Oxley). | 2008Q2  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Integration with Google Apps | Implement a connector that will allow Provisioner to send provisioning requests to Google Apps platform. | 2008Q3  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Integration with SalesForce | Implement a connector that will allow Provisioner to send provisioning requests to SalesForce service delivery platform. | 2008Q3  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Integration with open source SSO solutions | Integrate with single sign on open source solutions. | 2008Q4  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Self-service user and/or service provisioning | Allow end-users to administer their accounts or services. | 2009Q2  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+| Secure in-transit sensitive information | Use 128-bit AES to store sensitive data and information transmitted among components. | 2008Q2  |
+*--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----:
+Feature roadmap

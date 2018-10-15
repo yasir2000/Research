@@ -1,0 +1,33 @@
+#set( $this = $JavaTool.getHelper($uml) )
+
+#if ($JavaTool.useJavaDoc($this)&& $this.doc != "")
+/**
+#if($this.doc != "")
+ * $JavaTool.format($this.doc) 
+#end
+*/
+#end
+$JavaTool.modifiers($this) #if (!$this.constructor)
+$JavaTool.name($this.returnType) #end
+${this.name}($JavaTool.parameters($this.parameters))#if( ! $this.isExceptionsEmpty() )
+	throws $JavaTool.types($this.exceptions, ", ") #end
+#if( ${this.isAbstract()} || ${this.isInInterface()} )
+;
+#else
+{
+$this.body
+#if( ${this.defaultValue})
+	return ${this.defaultValue};
+#elseif ($this.returnType.dimension == 0 && !$this.body.contains("return")  && $this.returnType.name == "boolean")
+	return false;
+#elseif ($this.returnType.dimension == 0 && !$this.body.contains("return") &&( $this.returnType.name == "int" || $this.returnType.name == "short" || $this.returnType.name == "long" || $this.returnType.name == "char" || $this.returnType.name == "float" || $this.returnType.name == "double"|| $this.returnType.name == "byte"))
+	return 0;
+#elseif ($this.returnType.dimension >0  && !$this.body.contains("return") && ( $this.returnType.name == "boolean" || $this.returnType.name == "String" || $this.returnType.name == "int" || $this.returnType.name == "short" || $this.returnType.name == "long" || $this.returnType.name == "char" || $this.returnType.name == "float" || $this.returnType.name == "double"|| $this.returnType.name == "byte"))
+	return null;	
+#elseif ($this.returnType.dimension == 0 && $this.returnType.name == "String" && !$this.body.contains("return"))
+	return "";
+#elseif ($this.returnType.name != "void" && !$this.body.contains("return"))
+	return null;
+#end
+
+}#end

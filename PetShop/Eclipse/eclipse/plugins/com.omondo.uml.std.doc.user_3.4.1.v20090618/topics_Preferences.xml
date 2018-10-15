@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Preferences" topic="preferences/index.html">
+	<topic label="Workbench Preferences" href="preferences/Workbench/index.html"/>	
+	<topic label="JDT Preferences" href="preferences/JDT/index.html"/>  	
+    <topic label="Setting Preferences" href="preferences/settingPreferences/index.html"/>   
+    <topic label="Global EclipseUML Preferences" href="preferences/global/index.html"/> 
+    <topic label="Class Diagrams" href="preferences/classDiagram/index.html">
+        <topic label="Association" href="preferences/classDiagram/association/index.html"/>
+        <topic label="Class" href="preferences/classDiagram/class/index.html"/>
+        <topic label="Colors" href="preferences/colors/index.html"/>
+        <topic label="Dependency" href="reverse/dependency/index.html"/>
+        <topic label="Inheritance" href="preferences/classDiagram/inheritance/index.html"/>
+        <topic label="Package" href="preferences/classDiagram/package/index.html"/>
+    </topic>  
+    <topic label="PSM Code Generation"  href="preferences/PSM_Code_Generation/index.html"/> 
+    <topic label="Show/Hide"  href="preferences/Show_Hide/index.html"/> 
+    <topic label="Documentation Generation"  href="preferences/docugeneration/index.html"/>
+    <topic label="Sequence Diagrams"  href="preferences/sequenceDiagram/index.html"/>	
+</toc>

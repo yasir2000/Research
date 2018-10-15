@@ -1,0 +1,17 @@
+<ser xmlns="http://ser.org">
+  <description>
+     SER (http://www.iptel.org/ser/) network element configuration.
+  </description>
+  <parameter name="type" value="SER"/>
+  <parameter name="host" value="200.33.44.55"/> 
+  <parameter name="username" value="username"/>
+  <parameter name="password" value="password"/>
+  <parameter name="password_sudo" value="sudopassword"/>
+  <parameter name="responses" value="ser_responses"/>
+  <parameter name="bin" value="/usr/local/commandoser/"/>
+  <parameter name="create" value="create.sh"/>
+  <parameter name="delete" value="remove.sh"/>
+  <parameter name="enable" value="release.sh"/>
+  <parameter name="disable" value="block.sh"/>
+  <parameter name="errorlogin" value="failed"/>
+</ser>

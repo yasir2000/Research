@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?eclipse version="3.0"?>
+<feature
+    id="com.omondo.uml.studio"
+    label="EclipseUML 2008 GANYMEDE Studio Edition for Eclipse"
+    version="3.4.1.v20090618"
+    provider-name="Omondo &#169;"
+>
+
+    <description>EclipseUML 2008 GANYMEDE Studio Edition for Eclipse 3.4.1.v20090618</description>
+
+   	<license url="about.html"/>
+
+  	<plugin id="com.omondo.uml.studio" version="3.4.1.v20090618"/>
+  	<plugin id="com.omondo.uml.model" version="3.4.1.v20090618"/>
+  	<plugin id="com.omondo.uml.core" version="3.4.1.v20090618"/>
+  	<plugin id="com.omondo.uml.std" version="3.4.1.v20090618"/>
+  	<plugin id="com.omondo.uml.std.doc.user" version="3.4.1.v20090618"/>
+  	<plugin id="com.omondo.uml.docgen" version="3.4.1.v20090618"/>
+  	
+  	
+</feature>

@@ -1,0 +1,45 @@
+	------
+	Downloading
+	------
+	Gonzalo Espert
+	------
+	Dic 4, 2007
+
+
+Downloading Provisioner
+
+  The way you download Provisioner depends on how close you want to be to the 
+  “live stream”. Following are the release types that can be downloaded 
+  from the {{{http://sourceforge.net/project/showfiles.php?group_id=204942&package_id=244739}Provisioner download site}}, 
+  in increasing level of closeness to the
+  {{{http://identitymngr.svn.sourceforge.net/viewvc/identitymngr/trunk/}
+  SVN TRUNK stream}} (i.e.,{{{scm-plan.html}Mainline}}): 
+
+  * <<Latest release>>, used by most users in the market. These releases 
+  have little risk of surprises, yet those builds can be up to 6 months behind 
+  what is being worked on now. Example version numbers for these releases are 
+  1.0.17 and 1.0.16. 
+  
+  * <<Stable builds>> (so-called milestone builds), which are typically 
+  6 weeks apart and deliver a major collection of stable features. These 
+  builds are moderately tested, making them reliable enough for the needs 
+  of most users. An example is Provisioner 1.0.17.3, which refers to the 
+  milestone 3 build of Provisioner 1.0.17.
+   
+  * <<Integration builds>>, done every week and sometimes more in case of 
+  failure or when closer to a release date. These builds integrate 
+  contributions from various Provisioner developers to test the 
+  collaborations. Build names start with the letter “I.” 
+  
+  * <<Nightly builds>>, which provide a view of the contents of the SVN 
+  server’s TRUNK stream at midnight (UTC-0) each night. The build captures 
+  what was released at that instant. Build names start with the letter “N.” 
+  
+  Each release or build has a corresponding set of {{{changes-report.html}build notes}}
+  and {{{surefire-report.html}test results}}. Be sure to consult these notes before 
+  selecting a given build. 
+  Automated test suites are run against the nightly and integration builds. 
+  Having a build pass the tests can increase the confidence level people 
+  have in them. In all cases, the builds are shipped as a compressed 
+  archive, and installation is a simple matter of unzipping them anywhere 
+  on your local machine. 

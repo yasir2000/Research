@@ -1,0 +1,41 @@
+	------
+	Delivery Models
+	------
+	Gonzalo Espert
+	------
+	Dic 13, 2007
+
+Provisioner's possible delivery models
+
+  Provisioner can be thought as a building block component in the sense that
+  it can be included by developers in a more complete identity management
+  solution. The way developers engage Provisioner may vary dependending on the 
+  selected delivery model.
+  
+* Traditional
+
+  On a traditional model, the solution developer downloads the 
+  software component and installs one or more instances of it in an on-premise
+  or third-party server. Once installed and configured, the developer 
+  can integrate the software component into his SOA solution.
+
+* Service-in-the-cloud
+
+  In this model, the developer integrates the software component into his SOA 
+  solution by consuming its services from within the internet. The 
+  software component is available for consumption at the following URL: 
+  (coming soon.....).
+  
+  
+* Virtual appliance
+
+  The software component is available as a virtual appliance. This virtual
+  appliance is a fully pre-installed and pre-configured Provisioner and 
+  operating system environment that can be downloaded from: 
+  (coming soon.......). In this model the solution 
+  developer installs one or more instances of the virtual appliance in
+  an on-premise or third-party server. Once installed, the developer can 
+  integrate the software component into his SOA solution.
+  
+
+

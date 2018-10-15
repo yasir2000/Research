@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" version="1.0" xmlns:bd="http://clove/neptune/bpeldeployment/service">
+    <service-assembly>
+        <identification>
+            <name>BPELDeployerCA</name>
+            <description>Represents the Service Assembly of BPELDeployerCA</description>
+        </identification>
+        <service-unit>
+            <identification>
+                <name>BPELDeployerCA-sun-file-binding</name>
+                <description>Represents this Service Unit</description>
+            </identification>
+            <target>
+                <artifacts-zip>sun-file-binding.jar</artifacts-zip>
+                <component-name>sun-file-binding</component-name>
+            </target>
+        </service-unit>
+        <connections>
+            <connection>
+                <consumer endpoint-name="BPELDeployerFile_Port" service-name="bd:BPELDeployerFileService"/>
+                <provider endpoint-name="BPELDeployerEP_JBIPort" service-name="bd:BPELDeployerService"/>
+            </connection>
+        </connections>
+    </service-assembly>
+</jbi>

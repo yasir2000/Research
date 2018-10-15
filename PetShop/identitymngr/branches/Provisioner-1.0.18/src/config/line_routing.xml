@@ -1,0 +1,9 @@
+<line_routing xmlns="http://line_routing.org">
+  <description>
+	Network element's instance name for each IP phone service route.
+  </description>
+  <route reg_exp_key="589[0-9]{4}" ne_name="ser"/>
+  <route reg_exp_key="558[0-9]{4}" ne_name="ser"/>
+  <route reg_exp_key="116009[0-9]{4}" ne_name="ser"/>
+  <route reg_exp_key="34[0-9]{7}" ne_name="ser"/>
+</line_routing>

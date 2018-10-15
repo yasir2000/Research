@@ -1,0 +1,13 @@
+#set( $this = $JavaTool.getHelper($uml) )
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+ */
+package ${this.name};

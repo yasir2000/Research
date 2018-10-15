@@ -1,0 +1,13 @@
+<generic_responses xmlns="http://generic_responses.org">
+  <description>
+     Generic network element possible responses.
+  </description>
+  <operation type="Create">
+  	<response result="already exist" success="no" respond="Customer already has this service" retry="no"/>
+  	<response result="Success" success="yes" respond="Successfull operation" retry="no"/>
+  </operation>
+  <operation type="Delete">
+  	<response result="service does not exist" success="no" respond="Customer already has the service" retry="no"/>
+  	<response result="Success" success="yes" respond="Successfull operation" retry="no"/>
+  </operation>
+</generic_responses>

@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" dir="ltr" class="client-nojs" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Conway's Game of Life - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.18wmf1" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit" />
+<link rel="apple-touch-icon" href="//en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" type="text/css" media="all" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" type="text/css" media="all" />
+<style type="text/css" media="all">a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: enwiki:resourceloader:filter:minify-css:4:c88e2bcd56513749bec09a7e29cb3ffa */</style>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "Conway\'s_Game_of_Life", "wgTitle": "Conway\'s Game of Life", "wgCurRevisionId": 473304754, "wgArticleId": 37035, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": ["Articles with inconsistent citation formats", "All articles with unsourced statements", "Articles with unsourced statements from May 2009", "Articles with unsourced statements from May 2010", "Articles with unsourced statements from August 2011", "Cellular automaton rules", "Self-organization"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgSearchNamespaces": [0], "wgFlaggedRevsParams": {"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}}, "wgStableRevisionId": null, "wgVectorEnabledModules": {"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "sectioneditlinks": false, "simplesearch": true, "experiments": true}, "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "hidesig": true, "templateEditor": false, "templates": false, "preview": false, "previewDialog": false, "publish": false, "toc": false}, "wgTrackingToken": "31d810cb4b2d3d026a8a1e5fd70c6815", "wikilove-recipient": "", "wikilove-edittoken": "+\\", "wikilove-anon": 0, "mbEmailEnabled": true, "mbUserEmail": false, "mbIsEmailConfirmationPending": false, "Geo": {"city": "", "country": ""}, "wgNoticeProject": "wikipedia"});
+}
+</script><script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.18/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Conway_s_Game_of_Life action-view skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Conway's Game of Life</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div lang="en" dir="ltr" class="mw-content-ltr"><div class="dablink">"Conway game", which redirects to here, can also refer to games as defined by <a href="/wiki/Surreal_number" title="Surreal number">surreal numbers</a>, which John Conway also developed.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Color_coded_racetrack_large_channel.gif" class="image"><img alt="Color coded racetrack large channel.gif" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Color_coded_racetrack_large_channel.gif/220px-Color_coded_racetrack_large_channel.gif" width="220" height="137" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Color_coded_racetrack_large_channel.gif" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/skins-1.18/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:381px;"><a href="/wiki/File:Conways_game_of_life_breeder_animation.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif" width="379" height="192" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Conways_game_of_life_breeder_animation.gif" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/skins-1.18/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Evolution of a <a href="/wiki/Breeder_(cellular_automaton)" title="Breeder (cellular automaton)">breeder</a> that leaves <a href="/wiki/Gun_(cellular_automaton)" title="Gun (cellular automaton)">glider guns</a> in its wake.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:Gospers_glider_gun.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" width="250" height="180" class="thumbimage" /></a>
+<div class="thumbcaption">A single <a href="/wiki/Bill_Gosper" title="Bill Gosper">Gosper</a>'s <a href="/wiki/Gun_(cellular_automaton)" title="Gun (cellular automaton)">Glider Gun</a> creating "<a href="/wiki/Glider_(Conway%27s_Life)" title="Glider (Conway's Life)">gliders</a>"</div>
+</div>
+</div>
+<p>The <b>Game of Life</b>, also known simply as <b>Life</b>, is a <a href="/wiki/Cellular_automaton" title="Cellular automaton">cellular automaton</a> devised by the <a href="/wiki/United_Kingdom" title="United Kingdom">British</a> <a href="/wiki/Mathematician" title="Mathematician">mathematician</a> <a href="/wiki/John_Horton_Conway" title="John Horton Conway">John Horton Conway</a> in 1970.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<p>The "game" is a <a href="/wiki/Zero-player_game" title="Zero-player game">zero-player game</a>, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Rules"><span class="tocnumber">1</span> <span class="toctext">Rules</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Origins"><span class="tocnumber">2</span> <span class="toctext">Origins</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples_of_patterns"><span class="tocnumber">3</span> <span class="toctext">Examples of patterns</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Self-replication"><span class="tocnumber">4</span> <span class="toctext">Self-replication</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Iteration"><span class="tocnumber">5</span> <span class="toctext">Iteration</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Algorithms"><span class="tocnumber">6</span> <span class="toctext">Algorithms</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Variations_on_Life"><span class="tocnumber">7</span> <span class="toctext">Variations on Life</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Entertainment"><span class="tocnumber">8</span> <span class="toctext">Entertainment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Video_Games"><span class="tocnumber">8.1</span> <span class="toctext">Video Games</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Music"><span class="tocnumber">8.2</span> <span class="toctext">Music</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Notable_Life_programs"><span class="tocnumber">9</span> <span class="toctext">Notable Life programs</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=1" title="Edit section: Rules">edit</a>]</span> <span class="mw-headline" id="Rules">Rules</span></h2>
+<p>The universe of the Game of Life is an infinite two-dimensional <a href="/wiki/Orthogonal" title="Orthogonal" class="mw-redirect">orthogonal</a> grid of square <i>cells</i>, each of which is in one of two possible states, <i>alive</i> or <i>dead</i>. Every cell interacts with its eight <i><a href="/wiki/Moore_neighborhood" title="Moore neighborhood">neighbours</a></i>, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:</p>
+<ol>
+<li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+<li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+<li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+</ol>
+<p>The initial pattern constitutes the <i>seed</i> of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed—births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a <i>tick</i> (in other words, each generation is a pure function of the preceding one). The rules continue to be applied repeatedly to create further generations.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=2" title="Edit section: Origins">edit</a>]</span> <span class="mw-headline" id="Origins">Origins</span></h2>
+<p>Conway was interested in a problem presented in the 1940s by mathematician <a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a>, who attempted to find a hypothetical machine that could build copies of itself and succeeded when he found a mathematical model for such a machine with very complicated rules on a rectangular grid. The Game of Life emerged as Conway's successful attempt to drastically simplify von Neumann's ideas. The game made its first public appearance in the October 1970 issue of <i><a href="/wiki/Scientific_American" title="Scientific American">Scientific American</a></i>, in <a href="/wiki/Martin_Gardner" title="Martin Gardner">Martin Gardner</a>'s "<a href="/wiki/Mathematical_Games" title="Mathematical Games" class="mw-redirect">Mathematical Games</a>" column. From a theoretical point of view, it is interesting because it has the power of a <a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">universal Turing machine</a>: that is, anything that can be computed <a href="/wiki/Algorithm" title="Algorithm">algorithmically</a> can be computed within Conway's Game of Life.<sup id="cite_ref-chapman_1-0" class="reference"><a href="#cite_note-chapman-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-bcg_2-0" class="reference"><a href="#cite_note-bcg-2"><span>[</span>3<span>]</span></a></sup> Gardner wrote:</p>
+<blockquote>
+<p>The game made Conway instantly famous, but it also opened up a whole new field of mathematical research, the field of <a href="/wiki/Cellular_automata" title="Cellular automata" class="mw-redirect">cellular automata</a>&#160;... Because of Life's analogies with the rise, fall and alterations of a society of living organisms, it belongs to a growing class of what are called "simulation games" (games that resemble real life processes).</p>
+</blockquote>
+<p>Ever since its publication, Conway's Game of Life has attracted much interest, because of the surprising ways in which the patterns can evolve. Life provides an example of <a href="/wiki/Emergence" title="Emergence">emergence</a> and <a href="/wiki/Self-organization" title="Self-organization">self-organization</a>. It is interesting for <a href="/wiki/Computer_science" title="Computer science">computer scientists</a>, <a href="/wiki/Physics" title="Physics">physicists</a>, <a href="/wiki/Biology" title="Biology">biologists</a>, <a href="/wiki/Biochemistry" title="Biochemistry">biochemists</a>, <a href="/wiki/Economics" title="Economics">economists</a>, <a href="/wiki/Mathematics" title="Mathematics">mathematicians</a>, <a href="/wiki/Philosophy" title="Philosophy">philosophers</a>, <a href="/wiki/Generative_sciences" title="Generative sciences" class="mw-redirect">generative scientists</a> and others to observe the way that complex patterns can emerge from the implementation of very simple rules. The game can also serve as a didactic <a href="/wiki/Analogy" title="Analogy">analogy</a>, used to convey the somewhat counter-intuitive notion that "design" and "organization" can spontaneously emerge in the absence of a designer. For example, philosopher and cognitive scientist <a href="/wiki/Daniel_Dennett" title="Daniel Dennett">Daniel Dennett</a> has used the analogue of Conway's Life "universe" extensively to illustrate the possible evolution of complex philosophical constructs, such as <a href="/wiki/Consciousness" title="Consciousness">consciousness</a> and <a href="/wiki/Free_will" title="Free will">free will</a>, from the relatively simple set of deterministic physical laws governing our own universe.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup></p>
+<p>The popularity of Conway's Game of Life was helped by its coming into being just in time for a new generation of inexpensive <a href="/wiki/Minicomputer" title="Minicomputer">minicomputers</a> which were being released into the market. The game could be run for hours on these machines, which would otherwise have remained unused at night. In this respect, it foreshadowed the later popularity of computer-generated <a href="/wiki/Fractals" title="Fractals" class="mw-redirect">fractals</a>. For many, Life was simply a programming challenge; a fun way to use otherwise wasted <a href="/wiki/Central_processing_unit" title="Central processing unit">CPU</a> cycles. For some, however, Life had more philosophical connotations. It developed a cult following through the 1970s and beyond; current developments have gone so far as to create theoretic emulations of computer systems within the confines of a Life board.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup></p>
+<p>Conway chose his rules carefully, after considerable experimentation, to meet these criteria:</p>
+<ol>
+<li>There should be no explosive growth, which is why <a href="/w/index.php?title=34_Life&amp;action=edit&amp;redlink=1" class="new" title="34 Life (page does not exist)">34 Life</a> was rejected.</li>
+<li>There should exist small initial patterns with chaotic, unpredictable outcomes.</li>
+<li>There should be potential for <a href="/wiki/Von_Neumann_universal_constructor" title="Von Neumann universal constructor">von Neumann universal constructors</a>.</li>
+<li>The rules should be as simple as possible, whilst adhering to the above constraints.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup></li>
+</ol>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=3" title="Edit section: Examples of patterns">edit</a>]</span> <span class="mw-headline" id="Examples_of_patterns">Examples of patterns</span></h2>
+<p>The earliest interesting patterns in the Game of Life were discovered without the use of computers. The simplest static patterns ("<a href="/wiki/Still_life_(CA)" title="Still life (CA)" class="mw-redirect">still lifes</a>") and repeating patterns ("<a href="/wiki/Oscillator_(CA)" title="Oscillator (CA)" class="mw-redirect">oscillators</a>"—a superset of still lifes) were discovered while tracking the fates of various small starting configurations using graph paper, blackboards, physical game boards (such as <a href="/wiki/Go_(board_game)" title="Go (board game)" class="mw-redirect">Go</a>) and the like. During this early research, Conway discovered that the F-<a href="/wiki/Pentomino" title="Pentomino">pentomino</a> (which he called the "R-pentomino") failed to stabilize in a small number of generations. In fact, it takes 1103 generations to stabilize, by which time it has a population of 116 and has fired six escaping gliders<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>10<span>]</span></a></sup> (in fact, these were the first gliders ever discovered).<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>11<span>]</span></a></sup></p>
+<p>Many different types of patterns occur in the Game of Life, including still lifes, oscillators, and patterns that translate themselves across the board ("<a href="/wiki/Spaceship_(CA)" title="Spaceship (CA)" class="mw-redirect">spaceships</a>"). Some frequently occurring<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>12<span>]</span></a></sup> examples of these three classes are shown below, with live cells shown in black, and dead cells shown in white.</p>
+<table border="0" cellpadding="6" style="margin-left:auto;margin-right:auto">
+<tr valign="top">
+<td>
+<table class="wikitable">
+<tr>
+<th colspan="2">Still lifes</th>
+</tr>
+<tr>
+<td>Block</td>
+<td><a href="/wiki/File:Game_of_life_block_with_border.svg" class="image"><img alt="Game of life block with border.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Game_of_life_block_with_border.svg/66px-Game_of_life_block_with_border.svg.png" width="66" height="66" /></a></td>
+</tr>
+<tr>
+<td>Beehive</td>
+<td><a href="/wiki/File:Game_of_life_beehive.svg" class="image"><img alt="Game of life beehive.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Game_of_life_beehive.svg/98px-Game_of_life_beehive.svg.png" width="98" height="82" /></a></td>
+</tr>
+<tr>
+<td>Loaf</td>
+<td><a href="/wiki/File:Game_of_life_loaf.svg" class="image"><img alt="Game of life loaf.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game_of_life_loaf.svg/98px-Game_of_life_loaf.svg.png" width="98" height="98" /></a></td>
+</tr>
+<tr>
+<td>Boat</td>
+<td><a href="/wiki/File:Game_of_life_boat.svg" class="image"><img alt="Game of life boat.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Game_of_life_boat.svg/82px-Game_of_life_boat.svg.png" width="82" height="82" /></a></td>
+</tr>
+</table>
+</td>
+<td>
+<table class="wikitable">
+<tr>
+<th colspan="2">Oscillators</th>
+</tr>
+<tr>
+<td>Blinker (period 2)</td>
+<td><a href="/wiki/File:Game_of_life_blinker.gif" class="image"><img alt="Game of life blinker.gif" src="//upload.wikimedia.org/wikipedia/commons/9/95/Game_of_life_blinker.gif" width="82" height="82" /></a></td>
+</tr>
+<tr>
+<td>Toad (period 2)</td>
+<td><a href="/wiki/File:Game_of_life_toad.gif" class="image"><img alt="Game of life toad.gif" src="//upload.wikimedia.org/wikipedia/commons/1/12/Game_of_life_toad.gif" width="98" height="98" /></a></td>
+</tr>
+<tr>
+<td>Beacon (period 2)</td>
+<td><a href="/wiki/File:Game_of_life_beacon.gif" class="image"><img alt="Game of life beacon.gif" src="//upload.wikimedia.org/wikipedia/commons/1/1c/Game_of_life_beacon.gif" width="98" height="98" /></a></td>
+</tr>
+<tr>
+<td>Pulsar (period 3)</td>
+<td><a href="/wiki/File:Game_of_life_pulsar.gif" class="image"><img alt="Game of life pulsar.gif" src="//upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif" width="137" height="137" /></a></td>
+</tr>
+</table>
+</td>
+<td>
+<table class="wikitable">
+<tr>
+<th colspan="2">Spaceships</th>
+</tr>
+<tr>
+<td>Glider</td>
+<td><a href="/wiki/File:Game_of_life_animated_glider.gif" class="image"><img alt="Game of life animated glider.gif" src="//upload.wikimedia.org/wikipedia/commons/f/f2/Game_of_life_animated_glider.gif" width="84" height="84" /></a></td>
+</tr>
+<tr>
+<td>Lightweight spaceship (LWSS)</td>
+<td><a href="/wiki/File:Game_of_life_animated_LWSS.gif" class="image"><img alt="Game of life animated LWSS.gif" src="//upload.wikimedia.org/wikipedia/commons/3/37/Game_of_life_animated_LWSS.gif" width="126" height="98" /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The "pulsar"<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>13<span>]</span></a></sup> is the most common period 3 oscillator. The great majority of naturally occurring oscillators are period 2, like the blinker and the toad, but periods 4, 8, 14, 15, 30 and a few others have been seen on rare occasions.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>14<span>]</span></a></sup> Patterns called "<a href="/wiki/Methuselah_(cellular_automata)" title="Methuselah (cellular automata)" class="mw-redirect">Methuselahs</a>" can evolve for long periods before stabilizing, the first-discovered of which was the F-pentomino. "Diehard" is a pattern that eventually disappears (rather than merely stabilize) after 130 generations, which is conjectured to be maximal for patterns with seven or fewer cells.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>15<span>]</span></a></sup> "Acorn" takes 5206 generations to generate 633 cells including 13 escaped gliders.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>16<span>]</span></a></sup></p>
+<table align="center" style="text-align: center">
+<tr>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:84px;"><a href="/wiki/File:Game_of_life_fpento.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Game_of_life_fpento.svg/82px-Game_of_life_fpento.svg.png" width="82" height="82" class="thumbimage" /></a>
+<div class="thumbcaption">The F-pentomino</div>
+</div>
+</div>
+</td>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:164px;"><a href="/wiki/File:Game_of_life_diehard.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Game_of_life_diehard.svg/162px-Game_of_life_diehard.svg.png" width="162" height="82" class="thumbimage" /></a>
+<div class="thumbcaption">Diehard</div>
+</div>
+</div>
+</td>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:148px;"><a href="/wiki/File:Game_of_life_acorn.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Game_of_life_acorn.svg/146px-Game_of_life_acorn.svg.png" width="146" height="82" class="thumbimage" /></a>
+<div class="thumbcaption">Acorn</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p>Conway originally conjectured that no pattern can grow indefinitely—i.e., that for any initial configuration with a finite number of living cells, the population cannot grow beyond some finite upper limit. In the game's original appearance in "<a href="/wiki/Mathematical_Games" title="Mathematical Games" class="mw-redirect">Mathematical Games</a>", Conway offered a $50 prize to the first person who could prove or disprove the conjecture before the end of 1970. One way to disprove it would be to discover patterns that keep adding counters to the field: a "<a href="/wiki/Gun_(cellular_automaton)" title="Gun (cellular automaton)">gun</a>", which would be a configuration that repeatedly shoots out moving objects such as the "glider". Another way of disproving the conjecture would be to construct a "<a href="/wiki/Puffer_train_(cellular_automaton)" title="Puffer train (cellular automaton)">puffer train</a>", which would be a configuration that moves but leaves behind a trail of persistent "smoke".<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>17<span>]</span></a></sup></p>
+<p>The prize was won in November of the same year by a team from the <a href="/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>, led by <a href="/wiki/Bill_Gosper" title="Bill Gosper">Bill Gosper</a>; the "Gosper glider gun" shown below produces its first glider on the 15th generation, and another glider every 30th generation from then on. This first glider gun is still the smallest one known:<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>18<span>]</span></a></sup></p>
+<div class="center">
+<div class="thumb tnone">
+<div class="thumbinner" style="width:612px;"><a href="/wiki/File:Game_of_life_glider_gun.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Game_of_life_glider_gun.svg/610px-Game_of_life_glider_gun.svg.png" width="610" height="178" class="thumbimage" /></a>
+<div class="thumbcaption">Gosper glider gun</div>
+</div>
+</div>
+</div>
+<p>Smaller patterns were later found that also exhibit infinite growth. All three of the following patterns grow indefinitely: the first two create one "block-laying switch engine"<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>19<span>]</span></a></sup> each, while the third creates two. The first has only 10 live cells (which has been proven to be minimal).<sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span>[</span>20<span>]</span></a></sup> The second fits in a 5 × 5 square. The third is only one cell high:</p>
+<table align="center" style="text-align: center">
+<tr>
+<td><a href="/wiki/File:Game_of_life_infinite1.svg" class="image"><img alt="Game of life infinite1.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Game_of_life_infinite1.svg/162px-Game_of_life_infinite1.svg.png" width="162" height="130" /></a> &#160;&#160;&#160;&#160;<a href="/wiki/File:Game_of_life_infinite2.svg" class="image"><img alt="Game of life infinite2.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Game_of_life_infinite2.svg/114px-Game_of_life_infinite2.svg.png" width="114" height="114" /></a></td>
+</tr>
+<tr>
+<td><br />
+<a href="/wiki/File:Game_of_life_infinite3.svg" class="image"><img alt="Game of life infinite3.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/Game_of_life_infinite3.svg/658px-Game_of_life_infinite3.svg.png" width="658" height="50" /></a></td>
+</tr>
+</table>
+<p>Later discoveries included other "<a href="/wiki/Gun_(CA)" title="Gun (CA)" class="mw-redirect">guns</a>", which are stationary, and which shoot out gliders or other spaceships; "<a href="/wiki/Puffer_train_(CA)" title="Puffer train (CA)" class="mw-redirect">puffers</a>", which move along leaving behind a trail of debris; and "<a href="/wiki/Rake_(cellular_automaton)" title="Rake (cellular automaton)">rakes</a>", which move and emit spaceships.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>21<span>]</span></a></sup> Gosper also constructed the first pattern with an <a href="/wiki/Asymptotically_optimal" title="Asymptotically optimal" class="mw-redirect">asymptotically optimal</a> <a href="/wiki/Quadratic_growth" title="Quadratic growth">quadratic growth rate</a>, called a "<a href="/wiki/Breeder_(CA)" title="Breeder (CA)" class="mw-redirect">breeder</a>", or "lobster", which worked by leaving behind a trail of guns.</p>
+<p>It is possible for gliders to interact with other objects in interesting ways. For example, if two gliders are shot at a block in just the right way, the block will move closer to the source of the gliders. If three gliders are shot in just the right way, the block will move farther away. This "sliding block memory" can be used to simulate a <a href="/wiki/Counter" title="Counter">counter</a>. It is possible to construct <a href="/wiki/Logic_gate" title="Logic gate">logic gates</a> such as <i><a href="/wiki/Logical_conjunction" title="Logical conjunction">AND</a></i>, <i><a href="/wiki/Logical_disjunction" title="Logical disjunction">OR</a></i> and <i><a href="/wiki/Negation" title="Negation">NOT</a></i> using gliders. It is possible to build a pattern that acts like a <a href="/wiki/Finite_state_machine" title="Finite state machine" class="mw-redirect">finite state machine</a> connected to two counters. This has the same computational power as a <a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">universal Turing machine</a>, so the Game of Life is theoretically as powerful as any computer with unlimited memory and no time constraints: it is <a href="/wiki/Turing_complete" title="Turing complete" class="mw-redirect">Turing complete</a>.<sup id="cite_ref-chapman_1-1" class="reference"><a href="#cite_note-chapman-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-bcg_2-1" class="reference"><a href="#cite_note-bcg-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>Furthermore, a pattern can contain a collection of guns that fire gliders in such a way as to construct new objects, including copies of the original pattern. A "universal constructor" can be built which contains a Turing complete computer, and which can build many types of complex objects, including more copies of itself.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>22<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=4" title="Edit section: Self-replication">edit</a>]</span> <span class="mw-headline" id="Self-replication">Self-replication</span></h2>
+<p>On May 18, 2010, Andrew J. Wade announced a self-constructing pattern dubbed Gemini which creates a copy of itself while destroying its parent.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span>[</span>23<span>]</span></a></sup><sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>24<span>]</span></a></sup> This pattern replicates in 34 million generations, and uses an instruction tape made of gliders which oscillate between two stable configurations made of Chapman-Greene construction arms. These, in turn, create new copies of the pattern, and destroy the previous copy. Gemini is a spaceship.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span>[</span>25<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=5" title="Edit section: Iteration">edit</a>]</span> <span class="mw-headline" id="Iteration">Iteration</span></h2>
+<p>From a random initial pattern of living cells on the grid, observers will find the population constantly changing as the generations tick by. The patterns that emerge from the simple rules may be considered a form of <a href="/wiki/Mathematical_beauty" title="Mathematical beauty">beauty</a>. Small isolated subpatterns with no initial symmetry tend to become symmetrical. Once this happens, the symmetry may increase in richness, but it cannot be lost unless a nearby subpattern comes close enough to disturb it. In a very few cases the society eventually dies out, with all living cells vanishing, though this may not happen for a great many generations. Most initial patterns eventually "burn out", producing either stable figures or patterns that oscillate forever between two or more states;<sup id="cite_ref-25" class="reference"><a href="#cite_note-25"><span>[</span>26<span>]</span></a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26"><span>[</span>27<span>]</span></a></sup> many also produce one or more gliders or spaceships that travel indefinitely away from the initial location. Spaceships can travel at most one cell per unit time: so this velocity is set to be the <a href="/wiki/Speed_of_light_(cellular_automaton)" title="Speed of light (cellular automaton)">cellular automaton speed of light</a> and denoted <span class="texhtml" dir="ltr"><i>c</i></span>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=6" title="Edit section: Algorithms">edit</a>]</span> <span class="mw-headline" id="Algorithms">Algorithms</span></h2>
+<p>Early patterns with unknown futures, such as the R-pentomino, led computer programmers across the world to write programs to track the evolution of Life patterns. Most of the early algorithms were similar; they represented Life patterns as two-dimensional arrays in computer memory. Typically two arrays are used, one to hold the current generation, and one in which to calculate its successor. Often 0 and 1 represent dead and live cells respectively. A nested for-loop considers each element of the current array in turn, counting the live neighbours of each cell to decide whether the corresponding element of the successor array should be 0 or 1. The successor array is displayed. For the next iteration the arrays swap roles so that the successor array in the last iteration becomes the current array in the next iteration.</p>
+<p>A variety of minor enhancements to this basic scheme are possible, and there are many ways to save unnecessary computation. A cell that did not change at the last time step, and none of whose neighbours changed, is guaranteed not to change at the current time step as well. So, a program that keeps track of which areas are active can save time by not updating the inactive zones.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27"><span>[</span>28<span>]</span></a></sup></p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Long_gun.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/d/d1/Long_gun.gif/220px-Long_gun.gif" width="220" height="32" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Long_gun.gif" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/skins-1.18/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Glider gun with toroidal array</div>
+</div>
+</div>
+<p>In principle, the Life field is infinite, but computers have finite memory. This leads to problems when the active area encroaches on the border of the array. Programmers have used several strategies to address these problems. The simplest strategy is simply to assume that every cell outside the array is dead. This is easy to program, but leads to inaccurate results when the active area crosses the boundary. A more sophisticated trick is to consider the left and right edges of the field to be stitched together, and the top and bottom edges also, yielding a <a href="/wiki/Torus" title="Torus">toroidal</a> array. The result is that active areas that move across a field edge reappear at the opposite edge. Inaccuracy can still result if the pattern grows too large, but at least there are no pathological edge effects. Techniques of dynamic storage allocation may also be used, creating ever-larger arrays to hold growing patterns.</p>
+<p>Alternatively, the programmer may abandon the notion of representing the Life field with a 2-dimensional array, and use a different data structure, like a vector of coordinate pairs representing live cells. This approach allows the pattern to move about the field unhindered, as long as the population does not exceed the size of the live-coordinate array. The drawback is that counting live neighbours becomes a search operation, slowing down simulation speed. With more sophisticated data structures this problem can also be largely solved.</p>
+<p>For exploring large patterns at great time-depths, sophisticated algorithms such as <a href="/wiki/Hashlife" title="Hashlife">Hashlife</a> may be useful. There is also a method, applicable to other cellular automata too, for implementation of the Game of Life using arbitrary asynchronous updates whilst still exactly emulating the behaviour of the synchronous game.<sup id="cite_ref-28" class="reference"><a href="#cite_note-28"><span>[</span>29<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=7" title="Edit section: Variations on Life">edit</a>]</span> <span class="mw-headline" id="Variations_on_Life">Variations on Life</span></h2>
+<p>Since Life's inception, new similar cellular automata have been developed. The standard Game of Life, in which a cell is "born" if it has exactly 3 neighbours, stays alive if it has 2 or 3 living neighbours, and dies otherwise, is symbolised as "B3/S23". The first number, or list of numbers, is what is required for a dead cell to be born. The second set is the requirement for a live cell to survive to the next generation. Hence "B6/S16" means "a cell is born if there are 6 neighbours, and lives on if there are either 1 or 6 neighbours". Cellular automata on a two-dimensional grid that can be described in this way are known as <a href="/wiki/Life-like_cellular_automata" title="Life-like cellular automata" class="mw-redirect">Life-like cellular automata</a>. Another common Life-like automaton, <i><a href="/wiki/HighLife" title="HighLife">HighLife</a></i>, is described by the rule B36/S23, because having 6 neighbours, in addition to the original game's B3/S23 rule, causes a birth. HighLife is best known for its frequently occurring replicators.<sup id="cite_ref-29" class="reference"><a href="#cite_note-29"><span>[</span>30<span>]</span></a></sup><sup id="cite_ref-30" class="reference"><a href="#cite_note-30"><span>[</span>31<span>]</span></a></sup> Additional Life-like cellular automata exist, although the vast majority of them produce universes that are either too chaotic or too desolate to be of interest.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:201px;"><a href="/wiki/File:Oscillator.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/8/86/Oscillator.gif" width="199" height="175" class="thumbimage" /></a>
+<div class="thumbcaption">A sample of a 48-step oscillator along with a 2-step oscillator and a 4-step oscillator from a 2-D hexagonal Game of Life (rule H:B2/S34)</div>
+</div>
+</div>
+<p>Some variations on Life modify the geometry of the universe as well as the rule. The above variations can be thought of as 2-D square, because the world is two-dimensional and laid out in a square grid. 1-D square variations (known as <a href="/wiki/Elementary_cellular_automaton" title="Elementary cellular automaton">elementary cellular automata</a>)<sup id="cite_ref-31" class="reference"><a href="#cite_note-31"><span>[</span>32<span>]</span></a></sup> and 3-D square variations have been developed, as have 2-D hexagonal and 2-D triangular variations.</p>
+<p>Conway's rules may also be generalized such that instead of two states (<i>live</i> and <i>dead</i>) there are three or more. State transitions are then determined either by a weighting system or by a table specifying separate transition rules for each state; for example, <a href="/wiki/Mirek%27s_Cellebration" title="Mirek's Cellebration">Mirek's Cellebration</a>'s multi-coloured "Rules Table" and "Weighted Life" rule families each include sample rules equivalent to Conway's Life.</p>
+<p>Patterns relating to fractals and fractal systems may also be observed in certain Life-like variations. For example, the automaton B1/S12 generates four very close approximations to the <a href="/wiki/Sierpi%C5%84ski_triangle" title="Sierpiński triangle" class="mw-redirect">Sierpiński triangle</a> when applied to a single live cell. The Sierpiński triangle can also be observed in Conway's Game of Life by examining the long-term growth of a long single-cell-thick line of live cells,<sup id="cite_ref-32" class="reference"><a href="#cite_note-32"><span>[</span>33<span>]</span></a></sup> as well as in <a href="/wiki/HighLife" title="HighLife">HighLife</a>, <a href="/wiki/Seeds_(cellular_automaton)" title="Seeds (cellular automaton)">Seeds (B2/S)</a>, and Wolfram's <a href="/wiki/Rule_90" title="Rule 90">Rule 90</a>.<sup id="cite_ref-33" class="reference"><a href="#cite_note-33"><span>[</span>34<span>]</span></a></sup></p>
+<p><i>Immigration</i> is a variation that is very similar to Conway's Game of Life, except that there are two ON states (often expressed as two different colours). Whenever a new cell is born, it takes on the ON state that is the majority in the three cells that gave it birth. This feature can be used to examine interactions between <a href="/wiki/Spaceship_(CA)" title="Spaceship (CA)" class="mw-redirect">spaceships</a> and other "objects" within the game.<sup id="cite_ref-34" class="reference"><a href="#cite_note-34"><span>[</span>35<span>]</span></a></sup> Another similar variation, called <i>QuadLife</i>, involves four different ON states. When a new cell is born from three different ON neighbours, it takes on the fourth value, and otherwise, like Immigration, it takes the majority value.<sup id="cite_ref-35" class="reference"><a href="#cite_note-35"><span>[</span>36<span>]</span></a></sup> Except for the variation among ON cells, both of these variations act identically to Life.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=8" title="Edit section: Entertainment">edit</a>]</span> <span class="mw-headline" id="Entertainment">Entertainment</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=9" title="Edit section: Video Games">edit</a>]</span> <span class="mw-headline" id="Video_Games">Video Games</span></h3>
+<p>Some games for entertainment purposes have been developed from the Game of Life. One such game, for two players who each interact with the "game" once per tick, is based directly upon Conway's Game of Life. Live cells have one of two colours, and a player wins when all cells of the opponent's colour are eliminated. When a dead cell has three live neighbours, it becomes live in the same colour as the majority of its neighbours, as in the aforementioned <i>Immigration</i>. The game starts with a random or pre-chosen starting pattern with half the live cells of each colour. After one iteration, the first player may add one cell of his or her own colour and remove one cell of his or her opponent's colour. After the next iteration, the other player can do the same, and so forth.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2009">citation needed</span></a></i>]</sup> Other two-player variants of the Game of Life have also been developed.<sup id="cite_ref-36" class="reference"><a href="#cite_note-36"><span>[</span>37<span>]</span></a></sup></p>
+<p>In <a href="/wiki/Populous_II" title="Populous II" class="mw-redirect">Populous II</a>, one of the 'divine intervention' effects is a fungus that grows according to the rules of the Game of Life.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=10" title="Edit section: Music">edit</a>]</span> <span class="mw-headline" id="Music">Music</span></h3>
+<p>Various musical composition techniques use Conway's Game of Life, especially in <a href="/wiki/MIDI" title="MIDI">MIDI</a> sequencing.<sup id="cite_ref-37" class="reference"><a href="#cite_note-37"><span>[</span>38<span>]</span></a></sup> A variety of programs exist for creating sound from patterns generated in the Game of Life. (see footnotes for links to examples.)<sup id="cite_ref-38" class="reference"><a href="#cite_note-38"><span>[</span>39<span>]</span></a></sup><sup id="cite_ref-39" class="reference"><a href="#cite_note-39"><span>[</span>40<span>]</span></a></sup><sup id="cite_ref-40" class="reference"><a href="#cite_note-40"><span>[</span>41<span>]</span></a></sup></p>
+<p>The <a href="/wiki/Native_Instruments" title="Native Instruments">Native Instruments</a> modular sound generation/processing software package <a href="/wiki/Reaktor" title="Reaktor">Reaktor</a> features a <a href="/wiki/Drum_machine" title="Drum machine">drum machine</a> with an integrated sequencer which implements the Game of Life.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=11" title="Edit section: Notable Life programs">edit</a>]</span> <span class="mw-headline" id="Notable_Life_programs">Notable Life programs</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:381px;"><a href="/wiki/File:Golly.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Golly.png/379px-Golly.png" width="379" height="224" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Golly.png" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/skins-1.18/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+The 6,366,548,773,467,669,985,195,496,000th (6 <a href="/wiki/Octillion" title="Octillion" class="mw-redirect">octillionth</a>) generation of a <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a>, made in the game of Life, computed in less than 30 seconds on an Intel Duo 2GHz CPU using Golly in <a href="/wiki/Hashlife" title="Hashlife">Hashlife</a> mode</div>
+</div>
+</div>
+<p>Computers have been used to follow Life configurations from the earliest days. When John Conway was first investigating how various starting configurations developed, he tracked them by hand using a <a href="/wiki/Go_(game)" title="Go (game)">Go</a> board with its black and white stones. This was tedious, and prone to errors. The first-ever Life program was written by John Francis (an undergraduate student at Cambridge) on an <a href="/wiki/IBM_360" title="IBM 360" class="mw-redirect">IBM 360</a>, and was used to automate this process and track the fate of the "R" pentomino for 1000 generations.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2010">citation needed</span></a></i>]</sup> The first interactive Life program was written in <a href="/wiki/ALGOL_68" title="ALGOL 68">ALGOL 68</a> for the <a href="/wiki/PDP-7" title="PDP-7">PDP-7</a> by <a href="/wiki/Michael_Guy_(computer_scientist)" title="Michael Guy (computer scientist)" class="mw-redirect">M. J. T. Guy</a> and <a href="/wiki/Stephen_R._Bourne" title="Stephen R. Bourne">S. R. Bourne</a>. Without its help, some discoveries about the game would have been difficult to make<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from August 2011">citation needed</span></a></i>]</sup>. The results were published in the October 1970 issue of <a href="/wiki/Scientific_American" title="Scientific American">Scientific American</a>.<sup id="cite_ref-41" class="reference"><a href="#cite_note-41"><span>[</span>42<span>]</span></a></sup></p>
+<p>There are now thousands of Life programs on line, so a full list will not be provided here. The following is a selection of a small number of programs with some special claim to notability, such as popularity or unusual features. Most of these programs incorporate a graphical user interface for pattern editing and simulation, the capability for simulating multiple rules including Life, and a large library of interesting patterns in Life and other CA rules.</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ibiblio.org/lifepatterns/">Conway's Game of Life</a>, by Alan Hensel. A pop-up Java web applet with fast simulation algorithms and a large library of interesting Life patterns.</li>
+<li><a rel="nofollow" class="external text" href="http://golly.sourceforge.net/">Golly</a>. A cross-platform (Windows, Macintosh and Linux) open-source simulation system for Life and other cellular automata, by Andrew Trevorrow and Tomas Rokicki. It includes the <a href="/wiki/Hashlife" title="Hashlife">hashlife</a> algorithm for extremely fast generation, and <a href="/wiki/Perl" title="Perl">Perl</a> or <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> scriptability for both editing and simulation.</li>
+<li><a rel="nofollow" class="external text" href="http://www.brothersoft.com/life32-download-298213.html">Life32</a>. Freeware for Windows machines, it includes powerful and scriptable pattern editing features.</li>
+<li><a rel="nofollow" class="external text" href="http://www.mirekw.com/ca/index.html">Mirek's Cellebration</a>. Free 1-D and 2-D cellular automata viewer, explorer and editor for Windows. Includes powerful facilities for simulating and viewing a wide variety of CA rules including Life, and a scriptable editor.</li>
+<li><a rel="nofollow" class="external text" href="http://packages.debian.org/lenny/xlife">Xlife</a>. A cellular-automaton laboratory by Jon Bennett. The standard Linux Life simulation application for a long time, it has also been ported to Windows. Can handle cellular automaton rules with the same neighbourhood as Life, and up to eight possible states per cell.</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=12" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><a href="/wiki/Hacker_Emblem" title="Hacker Emblem">Hacker Emblem</a>, depicting a glider</li>
+<li><a href="/wiki/Life-like_cellular_automaton" title="Life-like cellular automaton">Life-like cellular automaton</a></li>
+<li><a href="/wiki/Artificial_life" title="Artificial life">Artificial life</a></li>
+<li><a href="/wiki/Langton%27s_ant" title="Langton's ant">Langton's ant</a>, another rule-set that uses a rectangular grid and shows emergent patterns</li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=13" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> <span class="citation book"><a href="/wiki/Martin_Gardner" title="Martin Gardner">Gardner, Martin</a> (1970-10). <a rel="nofollow" class="external text" href="http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm"><i>Mathematical Games - The fantastic combinations of John Conway's new solitaire game "life"</i></a>. <b>223</b>. pp.&#160;120–123. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0894540017" title="Special:BookSources/0894540017">0894540017</a>. Archived from <a rel="nofollow" class="external text" href="http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm">the original</a> on 2009-06-03<span class="printonly">. <a rel="nofollow" class="external free" href="http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm">http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm</a></span><span class="reference-accessdate">. Retrieved 2011-06-26</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematical+Games+-+The+fantastic+combinations+of+John+Conway%27s+new+solitaire+game+%22life%22&amp;rft.aulast=Gardner&amp;rft.aufirst=Martin&amp;rft.au=Gardner%2C%26%2332%3BMartin&amp;rft.date=1970-10&amp;rft.volume=223&amp;rft.pages=pp.%26nbsp%3B120%E2%80%93123&amp;rft.isbn=0894540017&amp;rft_id=http%3A%2F%2Fweb.archive.org%2Fweb%2F20090603015231%2Fhttp%3A%2F%2Fddi.cs.uni-potsdam.de%2FHyFISCH%2FProduzieren%2Flis_projekt%2Fproj_gamelife%2FConwayScientificAmerican.htm&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-chapman-1">^ <a href="#cite_ref-chapman_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-chapman_1-1"><sup><i><b>b</b></i></sup></a> <span class="citation web">Paul Chapman (November 11, 2002). <a rel="nofollow" class="external text" href="http://www.igblan.free-online.co.uk/igblan/ca/">"Life Universal Computer"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.igblan.free-online.co.uk/igblan/ca/">http://www.igblan.free-online.co.uk/igblan/ca/</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Life+Universal+Computer&amp;rft.atitle=&amp;rft.aulast=Paul+Chapman&amp;rft.au=Paul+Chapman&amp;rft.date=November+11%2C+2002&amp;rft_id=http%3A%2F%2Fwww.igblan.free-online.co.uk%2Figblan%2Fca%2F&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-bcg-2">^ <a href="#cite_ref-bcg_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-bcg_2-1"><sup><i><b>b</b></i></sup></a> <span class="citation Journal"><a href="/wiki/Elwyn_Berlekamp" title="Elwyn Berlekamp">Berlekamp, E. R.</a>; <a href="/wiki/John_Horton_Conway" title="John Horton Conway">Conway, John Horton</a>; <a href="/wiki/Richard_K._Guy" title="Richard K. Guy">Guy, R.K.</a> (2001 2004). <i><a href="/wiki/Winning_Ways_for_your_Mathematical_Plays" title="Winning Ways for your Mathematical Plays">Winning Ways for your Mathematical Plays</a></i> (2nd ed.). A K Peters Ltd. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-56881-130-7;_ISBN_156881142X;_ISBN_1568811438;_ISBN_1568811446" title="Special:BookSources/978-1-56881-130-7; ISBN 156881142X; ISBN 1568811438; ISBN 1568811446">978-1-56881-130-7; ISBN 156881142X; ISBN 1568811438; ISBN 1568811446</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5B%5BWinning+Ways+for+your+Mathematical+Plays%5D%5D&amp;rft.aulast=Berlekamp&amp;rft.aufirst=E.+R.&amp;rft.au=Berlekamp%2C%26%2332%3BE.+R.&amp;rft.au=Conway%2C%26%2332%3BJohn+Horton&amp;rft.au=Guy%2C%26%2332%3BR.K.&amp;rft.date=2001+2004&amp;rft.edition=2nd&amp;rft.pub=A+K+Peters+Ltd&amp;rft.isbn=978-1-56881-130-7%3B+ISBN+156881142X%3B+ISBN+1568811438%3B+ISBN+1568811446&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> Dennett, D.C. (1991). <i>Consciousness Explained</i>. Boston: Back Bay Books. <a href="/wiki/Special:BookSources/0316180661" class="internal mw-magiclink-isbn">ISBN 0316180661</a></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> Dennett, D.C. (1995). <i>Darwin's Dangerous Idea: Evolution and the Meanings of Life</i>. New York: Simon &amp; Schuster. <a href="/wiki/Special:BookSources/068482471X" class="internal mw-magiclink-isbn">ISBN 068482471X</a></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> Dennett, D.C. (2003). <i>Freedom Evolves</i>. New York: Penguin Books. <a href="/wiki/Special:BookSources/0142003840" class="internal mw-magiclink-isbn">ISBN 0142003840</a></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> <span class="citation web">Paul Rendell (January 12, 2005). <a rel="nofollow" class="external text" href="http://rendell-attic.org/gol/tm.htm">"A Turing Machine in Conway's Game of Life"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://rendell-attic.org/gol/tm.htm">http://rendell-attic.org/gol/tm.htm</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=A+Turing+Machine+in+Conway%27s+Game+of+Life&amp;rft.atitle=&amp;rft.aulast=Paul+Rendell&amp;rft.au=Paul+Rendell&amp;rft.date=January+12%2C+2005&amp;rft_id=http%3A%2F%2Frendell-attic.org%2Fgol%2Ftm.htm&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> <span class="citation web">Adam P. Goucher. <a rel="nofollow" class="external text" href="http://www.conwaylife.com/wiki/index.php?title=Spartan_universal_computer-constructor">"Spartan universal computer-constructor"</a>. LifeWiki<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.conwaylife.com/wiki/index.php?title=Spartan_universal_computer-constructor">http://www.conwaylife.com/wiki/index.php?title=Spartan_universal_computer-constructor</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Spartan+universal+computer-constructor&amp;rft.atitle=&amp;rft.aulast=Adam+P.+Goucher&amp;rft.au=Adam+P.+Goucher&amp;rft.pub=LifeWiki&amp;rft_id=http%3A%2F%2Fwww.conwaylife.com%2Fwiki%2Findex.php%3Ftitle%3DSpartan_universal_computer-constructor&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-8"><b><a href="#cite_ref-8">^</a></b> Conway, private communication to the 'Life list', 14 April 1999.</li>
+<li id="cite_note-9"><b><a href="#cite_ref-9">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.conwaylife.com/wiki/index.php?title=R-pentomino">"R-pentomino"</a>. LifeWiki<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.conwaylife.com/wiki/index.php?title=R-pentomino">http://www.conwaylife.com/wiki/index.php?title=R-pentomino</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=R-pentomino&amp;rft.atitle=&amp;rft.pub=LifeWiki&amp;rft_id=http%3A%2F%2Fwww.conwaylife.com%2Fwiki%2Findex.php%3Ftitle%3DR-pentomino&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-10"><b><a href="#cite_ref-10">^</a></b> <span class="citation web">Stephen A. Silver. <a rel="nofollow" class="external text" href="http://www.argentum.freeserve.co.uk/lex_g.htm#glider">"Glider"</a>. The Life Lexicon<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.argentum.freeserve.co.uk/lex_g.htm#glider">http://www.argentum.freeserve.co.uk/lex_g.htm#glider</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Glider&amp;rft.atitle=&amp;rft.aulast=Stephen+A.+Silver&amp;rft.au=Stephen+A.+Silver&amp;rft.pub=The+Life+Lexicon&amp;rft_id=http%3A%2F%2Fwww.argentum.freeserve.co.uk%2Flex_g.htm%23glider&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-11"><b><a href="#cite_ref-11">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.conwaylife.com/soup/census.asp?rule=B3/S23&amp;sl=1&amp;os=1&amp;ss=1">"Census Results in Conway's Game of Life"</a>. The Online Life-Like CA Soup Search<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.conwaylife.com/soup/census.asp?rule=B3/S23&amp;sl=1&amp;os=1&amp;ss=1">http://www.conwaylife.com/soup/census.asp?rule=B3/S23&amp;sl=1&amp;os=1&amp;ss=1</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Census+Results+in+Conway%27s+Game+of+Life&amp;rft.atitle=&amp;rft.pub=The+Online+Life-Like+CA+Soup+Search&amp;rft_id=http%3A%2F%2Fwww.conwaylife.com%2Fsoup%2Fcensus.asp%3Frule%3DB3%2FS23%26sl%3D1%26os%3D1%26ss%3D1&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-12"><b><a href="#cite_ref-12">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.ericweisstein.com/encyclopedias/life/Pulsar.html">"Pulsar"</a>. Eric Weisstein's Treasure Trove of Life<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ericweisstein.com/encyclopedias/life/Pulsar.html">http://www.ericweisstein.com/encyclopedias/life/Pulsar.html</a></span><span class="reference-accessdate">. Retrieved 2008-09-16</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Pulsar&amp;rft.atitle=&amp;rft.pub=Eric+Weisstein%27s+Treasure+Trove+of+Life&amp;rft_id=http%3A%2F%2Fwww.ericweisstein.com%2Fencyclopedias%2Flife%2FPulsar.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-13"><b><a href="#cite_ref-13">^</a></b> <span class="citation web">Achim Flammenkamp (2004-09-07). <a rel="nofollow" class="external text" href="http://wwwhomes.uni-bielefeld.de/achim/freq_top_life.html">"Most seen natural occurring ash objects in Game of Life"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://wwwhomes.uni-bielefeld.de/achim/freq_top_life.html">http://wwwhomes.uni-bielefeld.de/achim/freq_top_life.html</a></span><span class="reference-accessdate">. Retrieved 2008-09-16</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Most+seen+natural+occurring+ash+objects+in+Game+of+Life&amp;rft.atitle=&amp;rft.aulast=Achim+Flammenkamp&amp;rft.au=Achim+Flammenkamp&amp;rft.date=2004-09-07&amp;rft_id=http%3A%2F%2Fwwwhomes.uni-bielefeld.de%2Fachim%2Ffreq_top_life.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-14"><b><a href="#cite_ref-14">^</a></b> <span class="citation web">Stephen A. Silver. <a rel="nofollow" class="external text" href="http://www.argentum.freeserve.co.uk/lex_d.htm#diehard">"Diehard"</a>. The Life Lexicon<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.argentum.freeserve.co.uk/lex_d.htm#diehard">http://www.argentum.freeserve.co.uk/lex_d.htm#diehard</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Diehard&amp;rft.atitle=&amp;rft.aulast=Stephen+A.+Silver&amp;rft.au=Stephen+A.+Silver&amp;rft.pub=The+Life+Lexicon&amp;rft_id=http%3A%2F%2Fwww.argentum.freeserve.co.uk%2Flex_d.htm%23diehard&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-15"><b><a href="#cite_ref-15">^</a></b> <span class="citation web">Koenig, H. (February 21, 2005). <a rel="nofollow" class="external text" href="http://pentadecathlon.com/lifeNews/2005/02/new_methuselah_records.html">"New Methuselah Records"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://pentadecathlon.com/lifeNews/2005/02/new_methuselah_records.html">http://pentadecathlon.com/lifeNews/2005/02/new_methuselah_records.html</a></span><span class="reference-accessdate">. Retrieved January 24, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=New+Methuselah+Records&amp;rft.atitle=&amp;rft.aulast=Koenig%2C+H.&amp;rft.au=Koenig%2C+H.&amp;rft.date=February+21%2C+2005&amp;rft_id=http%3A%2F%2Fpentadecathlon.com%2FlifeNews%2F2005%2F02%2Fnew_methuselah_records.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-16"><b><a href="#cite_ref-16">^</a></b> <span class="citation web">Stephen A. Silver. <a rel="nofollow" class="external text" href="http://www.argentum.freeserve.co.uk/lex_p.htm#puffertrain">"Puffer train"</a>. The Life Lexicon<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.argentum.freeserve.co.uk/lex_p.htm#puffertrain">http://www.argentum.freeserve.co.uk/lex_p.htm#puffertrain</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Puffer+train&amp;rft.atitle=&amp;rft.aulast=Stephen+A.+Silver&amp;rft.au=Stephen+A.+Silver&amp;rft.pub=The+Life+Lexicon&amp;rft_id=http%3A%2F%2Fwww.argentum.freeserve.co.uk%2Flex_p.htm%23puffertrain&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-17"><b><a href="#cite_ref-17">^</a></b> <span class="citation web">Stephen A. Silver. <a rel="nofollow" class="external text" href="http://www.argentum.freeserve.co.uk/lex_g.htm#gosperglidergun">"Gosper glider gun"</a>. The Life Lexicon<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.argentum.freeserve.co.uk/lex_g.htm#gosperglidergun">http://www.argentum.freeserve.co.uk/lex_g.htm#gosperglidergun</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Gosper+glider+gun&amp;rft.atitle=&amp;rft.aulast=Stephen+A.+Silver&amp;rft.au=Stephen+A.+Silver&amp;rft.pub=The+Life+Lexicon&amp;rft_id=http%3A%2F%2Fwww.argentum.freeserve.co.uk%2Flex_g.htm%23gosperglidergun&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-18"><b><a href="#cite_ref-18">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.conwaylife.com/wiki/index.php?title=Block-laying_switch_engine">"Block-laying switch engine"</a>. LifeWiki<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.conwaylife.com/wiki/index.php?title=Block-laying_switch_engine">http://www.conwaylife.com/wiki/index.php?title=Block-laying_switch_engine</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Block-laying+switch+engine&amp;rft.atitle=&amp;rft.pub=LifeWiki&amp;rft_id=http%3A%2F%2Fwww.conwaylife.com%2Fwiki%2Findex.php%3Ftitle%3DBlock-laying_switch_engine&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-19"><b><a href="#cite_ref-19">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.ericweisstein.com/encyclopedias/life/InfiniteGrowth.html">"Infinite Growth"</a>. Eric Weisstein's Treasure Trove of Life<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ericweisstein.com/encyclopedias/life/InfiniteGrowth.html">http://www.ericweisstein.com/encyclopedias/life/InfiniteGrowth.html</a></span><span class="reference-accessdate">. Retrieved 2008-09-16</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Infinite+Growth&amp;rft.atitle=&amp;rft.pub=Eric+Weisstein%27s+Treasure+Trove+of+Life&amp;rft_id=http%3A%2F%2Fwww.ericweisstein.com%2Fencyclopedias%2Flife%2FInfiniteGrowth.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-20"><b><a href="#cite_ref-20">^</a></b> <span class="citation web">Stephen A. Silver. <a rel="nofollow" class="external text" href="http://www.argentum.freeserve.co.uk/lex_r.htm#rake">"Rake"</a>. The Life Lexicon<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.argentum.freeserve.co.uk/lex_r.htm#rake">http://www.argentum.freeserve.co.uk/lex_r.htm#rake</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Rake&amp;rft.atitle=&amp;rft.aulast=Stephen+A.+Silver&amp;rft.au=Stephen+A.+Silver&amp;rft.pub=The+Life+Lexicon&amp;rft_id=http%3A%2F%2Fwww.argentum.freeserve.co.uk%2Flex_r.htm%23rake&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-21"><b><a href="#cite_ref-21">^</a></b> Descriptions of these constructions are given in <span class="citation Journal"><a href="/wiki/Elwyn_Berlekamp" title="Elwyn Berlekamp">Berlekamp, E. R.</a>; <a href="/wiki/John_Horton_Conway" title="John Horton Conway">Conway, John Horton</a>; <a href="/wiki/Richard_K._Guy" title="Richard K. Guy">Guy, R.K.</a> (2001 2004). <i><a href="/wiki/Winning_Ways_for_your_Mathematical_Plays" title="Winning Ways for your Mathematical Plays">Winning Ways for your Mathematical Plays</a></i> (2nd ed.). A K Peters Ltd. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-56881-130-7;_ISBN_156881142X;_ISBN_1568811438;_ISBN_1568811446" title="Special:BookSources/978-1-56881-130-7; ISBN 156881142X; ISBN 1568811438; ISBN 1568811446">978-1-56881-130-7; ISBN 156881142X; ISBN 1568811438; ISBN 1568811446</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5B%5BWinning+Ways+for+your+Mathematical+Plays%5D%5D&amp;rft.aulast=Berlekamp&amp;rft.aufirst=E.+R.&amp;rft.au=Berlekamp%2C%26%2332%3BE.+R.&amp;rft.au=Conway%2C%26%2332%3BJohn+Horton&amp;rft.au=Guy%2C%26%2332%3BR.K.&amp;rft.date=2001+2004&amp;rft.edition=2nd&amp;rft.pub=A+K+Peters+Ltd&amp;rft.isbn=978-1-56881-130-7%3B+ISBN+156881142X%3B+ISBN+1568811438%3B+ISBN+1568811446&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-22"><b><a href="#cite_ref-22">^</a></b> <a rel="nofollow" class="external free" href="http://conwaylife.com/forums/viewtopic.php?f=2&amp;t=399&amp;p=2327#p2327">http://conwaylife.com/forums/viewtopic.php?f=2&amp;t=399&amp;p=2327#p2327</a></li>
+<li id="cite_note-23"><b><a href="#cite_ref-23">^</a></b> <a rel="nofollow" class="external free" href="http://conwaylife.com/wiki/index.php?title=Gemini">http://conwaylife.com/wiki/index.php?title=Gemini</a></li>
+<li id="cite_note-24"><b><a href="#cite_ref-24">^</a></b> <span class="citation news">Aron, Jacob (16 June 2010). "First replicating creature spawned in life simulator". <i>New Scientist</i></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=First+replicating+creature+spawned+in+life+simulator&amp;rft.jtitle=New+Scientist&amp;rft.aulast=Aron&amp;rft.aufirst=Jacob&amp;rft.au=Aron%2C%26%2332%3BJacob&amp;rft.date=16+June+2010&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-25"><b><a href="#cite_ref-25">^</a></b> <span class="citation web">Andrzej Okrasinski. <a rel="nofollow" class="external text" href="http://web.archive.org/web/20090727010353/http://geocities.com/conwaylife/">"Game of Life Object Statistics"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.geocities.com/conwaylife/">the original</a> on 2009-07-27<span class="printonly">. <a rel="nofollow" class="external free" href="http://web.archive.org/web/20090727010353/http://geocities.com/conwaylife/">http://web.archive.org/web/20090727010353/http://geocities.com/conwaylife/</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Game+of+Life+Object+Statistics&amp;rft.atitle=&amp;rft.aulast=Andrzej+Okrasinski&amp;rft.au=Andrzej+Okrasinski&amp;rft_id=http%3A%2F%2Fweb.archive.org%2Fweb%2F20090727010353%2Fhttp%3A%2F%2Fgeocities.com%2Fconwaylife%2F&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-26"><b><a href="#cite_ref-26">^</a></b> <span class="citation web">Nathaniel Johnston. <a rel="nofollow" class="external text" href="http://www.conwaylife.com/soup/">"The Online Life-Like CA Soup Search"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.conwaylife.com/soup/">http://www.conwaylife.com/soup/</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Online+Life-Like+CA+Soup+Search&amp;rft.atitle=&amp;rft.aulast=Nathaniel+Johnston&amp;rft.au=Nathaniel+Johnston&amp;rft_id=http%3A%2F%2Fwww.conwaylife.com%2Fsoup%2F&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-27"><b><a href="#cite_ref-27">^</a></b> <span class="citation web">Alan Hensel. <a rel="nofollow" class="external text" href="http://www.ibiblio.org/lifepatterns/lifeapplet.html">"About my Conway's Game of Life Applet"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ibiblio.org/lifepatterns/lifeapplet.html">http://www.ibiblio.org/lifepatterns/lifeapplet.html</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=About+my+Conway%27s+Game+of+Life+Applet&amp;rft.atitle=&amp;rft.aulast=Alan+Hensel&amp;rft.au=Alan+Hensel&amp;rft_id=http%3A%2F%2Fwww.ibiblio.org%2Flifepatterns%2Flifeapplet.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-28"><b><a href="#cite_ref-28">^</a></b> <span class="citation Journal">Nehaniv, Chrystopher L. (2002). "Self-Reproduction in Asynchronous Cellular Automata". <i>2002 NASA/DoD Conference on Evolvable Hardware (15–18 July 2002, Alexandria, Virginia, USA)</i>. IEEE Computer Society Press. pp. 201–209</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Self-Reproduction+in+Asynchronous+Cellular+Automata&amp;rft.atitle=2002+NASA%2FDoD+Conference+on+Evolvable+Hardware+%2815%E2%80%9318+July+2002%2C+Alexandria%2C+Virginia%2C+USA%29&amp;rft.aulast=Nehaniv&amp;rft.aufirst=Chrystopher+L.&amp;rft.au=Nehaniv%2C%26%2332%3BChrystopher+L.&amp;rft.date=2002&amp;rft.pages=pp.+201%E2%80%93209&amp;rft.pub=IEEE+Computer+Society+Press&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-29"><b><a href="#cite_ref-29">^</a></b> <a rel="nofollow" class="external text" href="http://www.tip.net.au/~dbell/articles/HighLife.zip">HighLife - An Interesting Variant of Life</a> by David Bell (.zip file)</li>
+<li id="cite_note-30"><b><a href="#cite_ref-30">^</a></b> <span class="citation web">Stephen A. Silver. <a rel="nofollow" class="external text" href="http://www.argentum.freeserve.co.uk/lex_r.htm#replicator">"Replicator"</a>. The Life Lexicon<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.argentum.freeserve.co.uk/lex_r.htm#replicator">http://www.argentum.freeserve.co.uk/lex_r.htm#replicator</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Replicator&amp;rft.atitle=&amp;rft.aulast=Stephen+A.+Silver&amp;rft.au=Stephen+A.+Silver&amp;rft.pub=The+Life+Lexicon&amp;rft_id=http%3A%2F%2Fwww.argentum.freeserve.co.uk%2Flex_r.htm%23replicator&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-31"><b><a href="#cite_ref-31">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/ElementaryCellularAutomaton.html">"Elementary Cellular Automaton"</a>. Wolfram Mathworld<span class="printonly">. <a rel="nofollow" class="external free" href="http://mathworld.wolfram.com/ElementaryCellularAutomaton.html">http://mathworld.wolfram.com/ElementaryCellularAutomaton.html</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Elementary+Cellular+Automaton&amp;rft.atitle=&amp;rft.pub=Wolfram+Mathworld&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FElementaryCellularAutomaton.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-32"><b><a href="#cite_ref-32">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.conwaylife.com/wiki/index.php?title=One_cell_thick_pattern">"One cell thick pattern"</a>. LifeWiki<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.conwaylife.com/wiki/index.php?title=One_cell_thick_pattern">http://www.conwaylife.com/wiki/index.php?title=One_cell_thick_pattern</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=One+cell+thick+pattern&amp;rft.atitle=&amp;rft.pub=LifeWiki&amp;rft_id=http%3A%2F%2Fwww.conwaylife.com%2Fwiki%2Findex.php%3Ftitle%3DOne_cell_thick_pattern&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-33"><b><a href="#cite_ref-33">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.conwaylife.com/forums/viewtopic.php?f=7&amp;t=90">"Life Imitates Sierpinski"</a>. ConwayLife.com forums<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.conwaylife.com/forums/viewtopic.php?f=7&amp;t=90">http://www.conwaylife.com/forums/viewtopic.php?f=7&amp;t=90</a></span><span class="reference-accessdate">. Retrieved July 12, 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Life+Imitates+Sierpinski&amp;rft.atitle=&amp;rft.pub=ConwayLife.com+forums&amp;rft_id=http%3A%2F%2Fwww.conwaylife.com%2Fforums%2Fviewtopic.php%3Ff%3D7%26t%3D90&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-34"><b><a href="#cite_ref-34">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.ericweisstein.com/encyclopedias/life/Immigration.html">"Immigration"</a>. Eric Weisstein's Treasure Trove of Life<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ericweisstein.com/encyclopedias/life/Immigration.html">http://www.ericweisstein.com/encyclopedias/life/Immigration.html</a></span><span class="reference-accessdate">. Retrieved 2008-09-16</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Immigration&amp;rft.atitle=&amp;rft.pub=Eric+Weisstein%27s+Treasure+Trove+of+Life&amp;rft_id=http%3A%2F%2Fwww.ericweisstein.com%2Fencyclopedias%2Flife%2FImmigration.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-35"><b><a href="#cite_ref-35">^</a></b> <span class="citation web"><a rel="nofollow" class="external text" href="http://www.ericweisstein.com/encyclopedias/life/QuadLife.html">"QuadLife"</a>. Eric Weisstein's Treasure Trove of Life<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ericweisstein.com/encyclopedias/life/QuadLife.html">http://www.ericweisstein.com/encyclopedias/life/QuadLife.html</a></span><span class="reference-accessdate">. Retrieved 2008-09-16</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=QuadLife&amp;rft.atitle=&amp;rft.pub=Eric+Weisstein%27s+Treasure+Trove+of+Life&amp;rft_id=http%3A%2F%2Fwww.ericweisstein.com%2Fencyclopedias%2Flife%2FQuadLife.html&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-36"><b><a href="#cite_ref-36">^</a></b> <span class="citation Journal">Mark Levene; George Roussos (2002). "A Two-Player Game of Life". <i>International Journal of Modern Physics C [Computational Physics and Physical Computation]</i> <b>14</b> (2): 195. <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="http://arxiv.org/abs/cond-mat/0207679">cond-mat/0207679</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1142%2FS0129183103004346">10.1142/S0129183103004346</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+Two-Player+Game+of+Life&amp;rft.jtitle=International+Journal+of+Modern+Physics+C+%5BComputational+Physics+and+Physical+Computation%5D&amp;rft.aulast=Mark+Levene&amp;rft.au=Mark+Levene&amp;rft.au=George+Roussos&amp;rft.date=2002&amp;rft.volume=14&amp;rft.issue=2&amp;rft.pages=195&amp;rft_id=info:arxiv/cond-mat%2F0207679&amp;rft_id=info:doi/10.1142%2FS0129183103004346&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-37"><b><a href="#cite_ref-37">^</a></b> <span class="citation Journal">Burraston, Dave; Edmonds, Ernest (2004). <a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.3882&amp;rep=rep1&amp;type=pdf">"Cellular Automata in MIDI based Computer Music"</a>. <i>Proceedings of the 2004 International Computer Music Conference</i>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1.1.6.3882">10.1.1.6.3882</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.3882&amp;rep=rep1&amp;type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.3882&amp;rep=rep1&amp;type=pdf</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Cellular+Automata+in+MIDI+based+Computer+Music&amp;rft.jtitle=Proceedings+of+the+2004+International+Computer+Music+Conference&amp;rft.aulast=Burraston&amp;rft.aufirst=Dave&amp;rft.au=Burraston%2C%26%2332%3BDave&amp;rft.au=Edmonds%2C%26%2332%3BErnest&amp;rft.date=2004&amp;rft_id=info:doi/10.1.1.6.3882&amp;rft_id=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.6.3882%26rep%3Drep1%26type%3Dpdf&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+<li id="cite_note-38"><b><a href="#cite_ref-38">^</a></b> <a rel="nofollow" class="external text" href="http://www.synthtopia.com/content/2008/05/29/glitchds-cellular-automaton-sequencer-for-the-nintendo-ds/">glitchDS – Cellular Automaton Sequencer For The Nintendo DS</a></li>
+<li id="cite_note-39"><b><a href="#cite_ref-39">^</a></b> <a rel="nofollow" class="external text" href="http://www.synthtopia.com/content/2009/04/29/game-of-life-music-sequencer/">Game Of Life Music Sequencer</a></li>
+<li id="cite_note-40"><b><a href="#cite_ref-40">^</a></b> <a rel="nofollow" class="external text" href="http://www.synthtopia.com/content/2011/01/12/game-of-life-music-sequencer-for-ios-runxt-life/">Game Of Life Music Sequencer For iOS, Runxt Life</a></li>
+<li id="cite_note-41"><b><a href="#cite_ref-41">^</a></b> <span class="citation Journal">Gardner, Martin (October 1970). "Mathematical Games: The fantastic combinations of John Conway's new solitaire game "Life"". <i>Scientific American</i> <b>223</b>: 120–123</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Mathematical+Games%3A+The+fantastic+combinations+of+John+Conway%27s+new+solitaire+game+%22Life%22&amp;rft.jtitle=Scientific+American&amp;rft.aulast=Gardner&amp;rft.aufirst=Martin&amp;rft.au=Gardner%2C%26%2332%3BMartin&amp;rft.date=October+1970&amp;rft.volume=223&amp;rft.pages=120%E2%80%93123&amp;rfr_id=info:sid/en.wikipedia.org:Conway%27s_Game_of_Life"><span style="display: none;">&#160;</span></span></li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit&amp;section=14" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" /></td>
+<td class="mbox-text" style="">Wikimedia Commons has media related to: <i><b><a class="external text" href="//commons.wikimedia.org/wiki/Game_of_Life">Game of Life</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.dmoz.org/Computers/Artificial_Life/Cellular_Automata/Conway%27s_Game_of_Life/">Conway's Game of Life</a> at the <a href="/wiki/Open_Directory_Project" title="Open Directory Project">Open Directory Project</a></li>
+<li><a rel="nofollow" class="external text" href="http://pentadecathlon.com/lifeNews/index.php">Game of Life News</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.conwaylife.com/wiki/">LifeWiki</a></li>
+<li><a rel="nofollow" class="external text" href="http://cafaq.com/lifefaq/index.php">Cellular Automata FAQ&#160;— Conway's Game of Life</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar" style="">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Conway%27s_Game_of_Life" title="Template:Conway's Game of Life"><span style=";;background:none transparent;border:none;" title="View this template">v</span></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Conway%27s_Game_of_Life&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Conway's Game of Life (page does not exist)"><span style=";;background:none transparent;border:none;" title="Discuss this template">d</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Conway%27s_Game_of_Life&amp;action=edit"><span style=";;background:none transparent;border:none;" title="Edit this template">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><strong class="selflink">Conway's Game of Life</strong> &amp; related <a href="/wiki/Cellular_automaton" title="Cellular automaton">cellular automata</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Structures</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;padding:0.25em 0; line-height:1.4em;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Breeder_(cellular_automaton)" title="Breeder (cellular automaton)">Breeder</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Garden_of_Eden_(cellular_automaton)" title="Garden of Eden (cellular automaton)">Garden of Eden</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Glider_(Conway%27s_Life)" title="Glider (Conway's Life)">Glider</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Gun_(cellular_automaton)" title="Gun (cellular automaton)">Gun</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Methuselah_(cellular_automaton)" title="Methuselah (cellular automaton)">Methuselah</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Oscillator_(cellular_automaton)" title="Oscillator (cellular automaton)">Oscillator</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Puffer_train_(cellular_automaton)" title="Puffer train (cellular automaton)">Puffer train</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Rake_(cellular_automaton)" title="Rake (cellular automaton)">Rake</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Reflector_(cellular_automaton)" title="Reflector (cellular automaton)">Reflector</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Sawtooth_(cellular_automaton)" title="Sawtooth (cellular automaton)">Sawtooth</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Spacefiller" title="Spacefiller">Spacefiller</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Spaceship_(cellular_automaton)" title="Spaceship (cellular automaton)">Spaceship</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Spark_(cellular_automaton)" title="Spark (cellular automaton)">Spark</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Still_life_(cellular_automaton)" title="Still life (cellular automaton)">Still life</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="/wiki/Life-like_cellular_automaton" title="Life-like cellular automaton">Life variants</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;padding:0.25em 0; line-height:1.4em;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Day_%26_Night" title="Day &amp; Night">Day &amp; Night</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/HighLife" title="HighLife">HighLife</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Life_without_Death" title="Life without Death">Life without Death</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Seeds_(cellular_automaton)" title="Seeds (cellular automaton)">Seeds</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Concepts</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;padding:0.25em 0; line-height:1.4em;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/Moore_neighborhood" title="Moore neighborhood">Moore neighborhood</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Speed_of_light_(cellular_automaton)" title="Speed of light (cellular automaton)">Speed of light</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Implementations</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;padding:0.25em 0; line-height:1.4em;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Hashlife" title="Hashlife">Hashlife</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Life_Genesis" title="Life Genesis">Life Genesis</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Mirek%27s_Cellebration" title="Mirek's Cellebration">Mirek's Cellebration</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Video_Life" title="Video Life">Video Life</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Key people</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;padding:0.25em 0; line-height:1.4em;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"><a href="/wiki/John_Horton_Conway" title="John Horton Conway">John Conway</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Martin_Gardner" title="Martin Gardner">Martin Gardner</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Bill_Gosper" title="Bill Gosper">Bill Gosper</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Richard_K._Guy" title="Richard K. Guy">Richard Guy</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Popular culture</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;padding:0.25em 0; line-height:1.4em;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"><a href="/wiki/Bloom_(novel)" title="Bloom (novel)">Bloom</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Hacker_Emblem" title="Hacker Emblem">Hacker Emblem</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 22338/1000000
+Post-expand include size: 144121/2048000 bytes
+Template argument size: 52807/2048000 bytes
+Expensive parser function count: 3/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:37035-0!1!0!!en!4!* and timestamp 20120128180940 generated by srv285 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Conway%27s_Game_of_Life&amp;oldid=473304754">http://en.wikipedia.org/w/index.php?title=Conway%27s_Game_of_Life&amp;oldid=473304754</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Cellular_automaton_rules" title="Category:Cellular automaton rules">Cellular automaton rules</a></li><li><a href="/wiki/Category:Self-organization" title="Category:Self-organization">Self-organization</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_inconsistent_citation_formats" title="Category:Articles with inconsistent citation formats">Articles with inconsistent citation formats</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2009" title="Category:Articles with unsourced statements from May 2009">Articles with unsourced statements from May 2009</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2010" title="Category:Articles with unsourced statements from May 2010">Articles with unsourced statements from May 2010</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2011" title="Category:Articles with unsourced statements from August 2011">Articles with unsourced statements from August 2011</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Conway%27s+Game+of+Life" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Conway%27s_Game_of_Life"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/Talk:Conway%27s_Game_of_Life"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/Conway%27s_Game_of_Life" >Read</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+						<input type="text" name="search" value="" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/skins-1.18/vector/images/search-ltr.png?303-4" alt="Search" /></button>					</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="//wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA085&amp;language=en&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB002" title="Support us">Donate to Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+		<ul>
+			<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id='p-tb'>
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Conway%27s_Game_of_Life" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Conway%27s_Game_of_Life" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;oldid=473304754" title="Permanent link to this revision of the page">Permanent link</a></li>
+<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Conway%27s_Game_of_Life&amp;id=473304754" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+		<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Conway%27s+Game+of+Life" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Conway%27s+Game+of+Life&amp;oldid=473304754&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Conway%27s_Game_of_Life&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>	</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id='p-lang'>
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+			<li class="interwiki-bg"><a href="//bg.wikipedia.org/wiki/%D0%96%D0%B8%D0%B2%D0%BE%D1%82_(%D0%B8%D0%B3%D1%80%D0%B0)">Български</a></li>
+			<li class="interwiki-ca"><a href="//ca.wikipedia.org/wiki/Joc_de_la_vida">Català</a></li>
+			<li class="interwiki-cs"><a href="//cs.wikipedia.org/wiki/Hra_%C5%BEivota">Česky</a></li>
+			<li class="interwiki-de"><a href="//de.wikipedia.org/wiki/Conways_Spiel_des_Lebens">Deutsch</a></li>
+			<li class="interwiki-es"><a href="//es.wikipedia.org/wiki/Juego_de_la_vida">Español</a></li>
+			<li class="interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%A8%D8%A7%D8%B2%DB%8C_%D8%B2%D9%86%D8%AF%DA%AF%DB%8C_%DA%A9%D8%A7%D9%86%D9%88%DB%8C">فارسی</a></li>
+			<li class="interwiki-fr"><a href="//fr.wikipedia.org/wiki/Jeu_de_la_vie">Français</a></li>
+			<li class="interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EB%9D%BC%EC%9D%B4%ED%94%84_%EA%B2%8C%EC%9E%84">한국어</a></li>
+			<li class="interwiki-ia"><a href="//ia.wikipedia.org/wiki/Joco_del_Vita_de_Conway">Interlingua</a></li>
+			<li class="interwiki-it"><a href="//it.wikipedia.org/wiki/Gioco_della_vita">Italiano</a></li>
+			<li class="interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%97%D7%A7_%D7%94%D7%97%D7%99%D7%99%D7%9D_(%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%98_%D7%AA%D7%90%D7%99)">עברית</a></li>
+			<li class="interwiki-la"><a href="//la.wikipedia.org/wiki/Ludus_Vitae_Iohannis_Conway">Latina</a></li>
+			<li class="interwiki-lv"><a href="//lv.wikipedia.org/wiki/Dz%C4%ABve_(sp%C4%93le)">Latviešu</a></li>
+			<li class="interwiki-lt"><a href="//lt.wikipedia.org/wiki/Gyvenimas_(%C5%BEaidimas)">Lietuvių</a></li>
+			<li class="interwiki-hu"><a href="//hu.wikipedia.org/wiki/%C3%89letj%C3%A1t%C3%A9k">Magyar</a></li>
+			<li class="interwiki-nl"><a href="//nl.wikipedia.org/wiki/Game_of_Life">Nederlands</a></li>
+			<li class="interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B2%E3%83%BC%E3%83%A0">日本語</a></li>
+			<li class="interwiki-pl"><a href="//pl.wikipedia.org/wiki/Gra_w_%C5%BCycie">Polski</a></li>
+			<li class="interwiki-pt"><a href="//pt.wikipedia.org/wiki/Jogo_da_vida">Português</a></li>
+			<li class="interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%96%D0%B8%D0%B7%D0%BD%D1%8C_(%D0%B8%D0%B3%D1%80%D0%B0)">Русский</a></li>
+			<li class="interwiki-simple"><a href="//simple.wikipedia.org/wiki/Conway%27s_Game_of_Life">Simple English</a></li>
+			<li class="interwiki-fi"><a href="//fi.wikipedia.org/wiki/Life-peli">Suomi</a></li>
+			<li class="interwiki-sv"><a href="//sv.wikipedia.org/wiki/Game_of_Life">Svenska</a></li>
+			<li class="interwiki-tr"><a href="//tr.wikipedia.org/wiki/Conway%27in_Hayat_Oyunu">Türkçe</a></li>
+			<li class="interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%96%D0%B8%D1%82%D1%82%D1%8F_(%D0%B3%D1%80%D0%B0)">Українська</a></li>
+			<li class="interwiki-vo"><a href="//vo.wikipedia.org/wiki/Lifapled_hiela_Conway">Volapük</a></li>
+			<li class="interwiki-zh-yue"><a href="//zh-yue.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E6%A3%8B">粵語</a></li>
+			<li class="interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F">中文</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 26 January 2012 at 09:10.<br /></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="//wikimediafoundation.org/wiki/Terms_of_use">Terms of use</a> for details.<br/>
+Wikipedia&reg; is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-mobileview"><a href='/w/index.php?title=Conway%27s_Game_of_Life&amp;useformat=mobile' class='noprint'>Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/skins-1.18/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax", "mediawiki.legacy.mwsuggest", "ext.gadget.wmfFR2011Style", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.editWarning", "ext.vector.simpleSearch", "ext.UserBuckets", "ext.articleFeedback.startup", "ext.articleFeedbackv5.startup", "ext.markAsHelpful"]);
+}
+</script>
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;303-4" type="text/javascript"></script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikilove-enabled":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"gadget-wmfFR2011Style":1});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: enwiki:resourceloader:filter:minify-js:4:b41a86ec4e0fe8329bc3ce917e792339 */
+}
+</script><script src="//geoiplookup.wikimedia.org/" type="text/javascript"></script><!-- Served by srv230 in 0.060 secs. -->
+	</body>
+</html>

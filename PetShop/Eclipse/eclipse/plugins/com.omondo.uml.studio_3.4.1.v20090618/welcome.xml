@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<welcomePage 
+	title="Omondo EclipseUML">
+
+<intro>EclipseUML is a native Eclipse plug-in for UML modeling
+</intro>
+
+<item><b>What is EclipseUML?</b>
+EclipseUML is a plugin for UML modeling in Eclipse 3.4 
+It can be used both for creating new models and for reverse engineering existing models. 
+This is a release of EclipseUML 2008 GANYMEDE Studio Edition for Eclipse 3.4.1.v20090618 including :  
+- Class diagram (live synchronization between the class diagram and the java code).
+- Sequence diagram.
+- Use-case diagram.
+- Statechart diagram.
+- Collaboration diagram.
+- Activity diagram.
+- Object diagram.
+- Component diagram.
+- Deployment diagram.
+This version also includes a full <topic href="http://www.eclipse.org/emf">EMF</topic> graphical editor.
+</item>
+
+<item><b>Learn More</b>
+This is the official site of EclipseUML: <topic href="http://www.eclipseuml.com/">http://www.eclipseuml.com/</topic>
+</item>
+
+<item><b>Reporting bugs, comments</b>
+If you experience any bug, please let us know.
+Please feel free to send us your comment : support@omondo.com
+For enhancements and other requests, please contact us at eclipseuml@omondo.com. 
+</item>
+
+</welcomePage>

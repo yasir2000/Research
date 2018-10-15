@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Getting Started" topic="gettingStarted/index.html">
+    <topic label="Creating a First Diagram" href="gettingStarted/firstDiagram/creating-0/index.html">
+        <topic label="Class Diagram Creation" href="gettingStarted/firstDiagram/creating-1/index.html"/>
+        <topic label="Classes and Interfaces" href="gettingStarted/firstDiagram/creating-2/index.html"/>
+        <topic label="Attributes" href="gettingStarted/firstDiagram/creating-3/index.html"/>
+        <topic label="Methods" href="gettingStarted/firstDiagram/creating-4/index.html"/>
+        <topic label="Associations" href="gettingStarted/firstDiagram/creating-5/index.html"/>
+        <topic label="Implementation and Inheritance" href="gettingStarted/firstDiagram/creating-6/index.html"/>
+    </topic>
+</toc>

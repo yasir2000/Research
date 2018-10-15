@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpel:process
+    name="hello"
+    targetNamespace="http://example.org/bpel/hello.bpel"
+    xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://example.org/bpel/hello.bpel"
+    xmlns:m="http://example.org/bpel/hello.wsdl"
+    xmlns:t="http://example.org/bpel/hello.xsd"
+    >
+	<bpel:import namespace="http://example.org/bpel/hello.wsdl" location="hello.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+	<bpel:partnerLinks>
+		<bpel:partnerLink name="HelloPartnerLink" partnerLinkType="m:HelloPLT" myRole="HelloPortTypeRole"/>
+	</bpel:partnerLinks>
+	<bpel:variables>
+		<bpel:variable name="inputVar" messageType="m:HelloOperationRequest"/>
+		<bpel:variable name="outputVar" messageType="m:HelloOperationResponse"/>
+	</bpel:variables>
+	<bpel:sequence>
+		<bpel:receive name="ReceivePerson"
+			createInstance="yes"
+			partnerLink="HelloPartnerLink"
+			operation="HelloOperation"
+			portType="m:HelloPortType"
+			variable="inputVar"/>
+		<bpel:assign name="AssignGreeting">
+			<bpel:copy>
+				<bpel:from>concat("Hello, ", $inputVar.input/t:firstName, " ", $inputVar.input/t:lastName, "!")</bpel:from>
+				<bpel:to>$outputVar.result</bpel:to>
+			</bpel:copy>
+		</bpel:assign>
+		<bpel:reply name="end" 
+			partnerLink="HelloPartnerLink"
+			portType="m:HelloPortType"
+			operation="HelloOperation"
+			variable="outputVar"/>
+	</bpel:sequence>
+</bpel:process>

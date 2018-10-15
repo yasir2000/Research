@@ -1,0 +1,82 @@
+#set( $this = $JavaTool.getHelper($uml) )
+
+#if(!$this.isAbstract())
+
+#if ($JavaTool.useJavaDoc($this)&& $this.doc != "")
+/**
+#else
+/*
+ * (non-javadoc)
+#end  
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+ */
+$JavaTool.modifiers($this.attribute) $JavaTool.name($this.attribute.type) ${this.attribute.name}#if (${this.attribute.initializer} != "")
+ = ${this.attribute.initializer}#end
+;
+#end ## if isAbstract())
+#if($this.isGenerateAccessors()) 
+#if($this.isAbstract()) 
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+ *
+#else
+ *
+ * @return Returns the ${this.attribute.name}.
+ *
+#end
+ */
+$JavaTool.getterAnnotations($this)
+$JavaTool.modifiers($this) $JavaTool.name($this.attribute.type) get${this.cappedName}();
+#else
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end
+ * Getter of the property <tt>${this.name}</tt>
+ *
+ * @return Returns the ${this.attribute.name}.
+ * 
+ */
+$JavaTool.getterAnnotations($this)
+$JavaTool.modifiers($this) $JavaTool.name($this.attribute.type) get${this.cappedName}()
+{
+	return #if ($JavaTool.useThis)this.#end$this.attribute.name;
+}
+#end
+##
+## build setter
+##
+#if (!$this.isReadOnly())
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end
+ * Setter of the property <tt>${this.name}</tt>
+ *
+ * @param ${this.name} The ${this.attribute.name} to set.
+ *
+ */
+#set( $parameter = $JavaTool.parameter($this.name))
+$JavaTool.modifiers($this) void set${this.cappedName}($JavaTool.name($this.attribute.type) $parameter )#if($this.isAbstract()) 
+;
+#else
+{
+	#if ($JavaTool.useThis || $parameter == ${this.attribute.name})this.#end$this.attribute.name = $parameter;
+}#end
+#end
+#end

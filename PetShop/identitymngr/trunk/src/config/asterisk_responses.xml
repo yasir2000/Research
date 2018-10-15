@@ -1,0 +1,13 @@
+<asterisk_responses xmlns="http://asterisk_responses.org">
+  <description>
+  	Asterisk possible responses.
+  </description>
+  <operation type="Create">
+  	<response result="already exists" success="no" respond="Customer already have the service" retry="no"/>
+  	<response result="Success" success="yes" respond="Successfull operation" retry="no"/>
+  </operation>
+  <operation type="Delete">
+  	<response result="voicemailbox does not exist" success="no" respond="Customer does not have voicemail service" retry="no"/>
+  	<response result="Success" success="yes" respond="Successfull operation" retry="no"/>
+  </operation>
+</asterisk_responses>

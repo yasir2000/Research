@@ -1,0 +1,358 @@
+OMONDO SOFTWARE CORPORATION - LICENSE TERMS 
+
+ This OMONDO Software Product and its accompanying documentation is the property
+ of  Omondo   Limited. The   product  is  made  available   to you,  the  studio
+ edition purchaser, subject to the  following license agreement. You may  accept
+ this license  by selecting the "I accept the  terms of this license  agreement"
+ option below.  You may  refuse this  license, and  terminate this  installation
+ process,  by  selecting  the  "I  do  not  accept the  terms   of  this license
+ agreement" option below.
+
+Omondo is only willing to grant  you a license under this License  Agreement, if
+you  obtained the  Product from  Omondo or  a Omondo  authorized distributor  or
+reseller. If you obtained the Product from any other source you may not  install
+or use the Product. 
+
+1. OWNERSHIP.  The Product is  proprietary to Omondo.  The Product  is licensed,
+not  sold, to  you notwithstanding  any reference  herein to  "purchases."  The
+Product  is copyrighted  and is  therefore protected  by the  Copyright Law  of
+international treaty provisions.  There are patents pending on certain  methods,
+processes and inventions contained in The Product.  The effect of such laws  and
+treaties  is that  you may  not use  The Product  except as  permitted by  this
+Agreement.  Omondo  The live  UML Company  is a  registered trademark  of Omondo
+Limited. All other brands or product names are the property of their  respective
+holders.  You acknowledge and agree  that:  (a) Omondo and its  licensors retain
+all copyrights and other intellectual property rights in the Product; (b)  there
+are no implied licenses under this License, and any rights not expressly granted
+to you hereunder are reserved by  Omondo; (c) you acquire no ownership  or other
+interest (other than your license rights) in or to the Product; (d) Omondo  owns
+all copies of the  Product, however made.  You  agree that you will  not, at any
+time, contest anywhere in the world Omondo's ownership of the Product, nor  will
+you challenge  the validity  of Omondo's  rights in  the Product.   You have  no
+rights hereunder to use any trademark or service mark belonging to Omondo. 
+
+2. ECLIPSEUML STUDIO SCOPE OF USE
+
+2.1 LICENSES. For each license that you acquire to use the Product, you will  be
+provided with an activation  file and which may  be provided to you  either with
+the Product  media, or  separately by  Omondo or  its authorized distributors or
+resellers.   The License  activation will  contain information  specific to  the
+edition of the Product that you  have licensed, the type of license  under which
+you may use the Product and the  number of licenses that you have acquired.   In
+order to activate and  use the Product as  set forth in this  License Agreement,
+you must follow  the instructions when  prompted by the  Product.  The types  of
+licenses you may acquire are an Evaluation License, a Named User/Mobile License,
+and  a Concurrent/Floating License. For more information on which license types,
+if any,  should be included with the Product media you should contact Omondo  or
+your Omondo authorized distributor or reseller. 
+
+2.2 ECLIPSEUML STUDIO EVALUATION PERIOD.  In order to evaluate the  Product, you
+may install the Product, as outlined below, on a temporary basis for evaluation,
+non-commercial purposes only (the  "Evaluation Period").  The Evaluation  Period
+is limited to the lesser of the  period of time specified to you by  Omondo.  At
+the  end of  the Evaluation  Period your  license to  use the  Product  expires.
+During  the Evaluation  Period, Omondo  grants you  the personal,  nonexclusive,
+nontransferable and  limited license  to use  the Product  solely for evaluation
+purposes.  The product contains a  time-out feature that disables its  operation
+after the  expiration of  the evaluation  period.  applications  that you create
+during the  evaluation period  may require  the product  in order  to run.  Upon
+expiration of the evaluation period, those applications will no longer run.  You
+should therefore take precautions to avoid  any loss of data that might  result.
+In order to use  the Product after the  Evaluation Period, you must  obtain from
+Omondo, or its  authorized distributors or  resellers a License  Key Certificate
+outlining the  number and  type of  grants of  a license  to use  the Product in
+accordance with the terms and conditions of this License Agreement.  You may not
+use  the Product  during the  Evaluation Period  for any  commercial,  business,
+governmental or institutional purpose of any kind. At the end of the  Evaluation
+Period, further use of the Product by you is prohibited without the purchase  of
+a commercial license to obtain a License Key Activation.  If you do not purchase
+a license for the Product at the end of the Evaluation Period, you hereby  agree
+to permanently remove or delete the Product from all computer systems, including
+servers and workstations, on which it was installed and destroy any software and
+documentation  received, and  not to  reinstall the  Product. If  you desire  to
+continue to use the Product following the Evaluation Period, you should  contact
+Omondo  or  a Omondo  authorized  distributor or  reseller  to order  commercial
+licenses to use the Product. 
+
+2.3 NAMED USER/MOBILE LICENSES. The terms of this Section 2.3 are applicable  to
+you only if you  have purchased a Named  User/Mobile License, as defined  below,
+for  the Product  directly from  Omondo or  a Omondo  authorized distributor  or
+reseller. Subject to the terms and conditions of this License, Omondo grants  to
+you, if  you are  an individual,  or, if  you are  an entity, one (1) designated
+person  in   your  organization   ("Named  User/Mobile   License")  a  personal,
+nonexclusive, nontransferable and limited license to use the Product solely  for
+your own internal purposes. You may purchase from Omondo or a Omondo  authorized
+distributor  or   reseller  additional   licenses  to   permit  multiple   Named
+Users/Mobile Licenses to use the Product (each, a "Named User/Mobile  License").
+The foregoing Named User/Mobile  Licenses shall be for  access and use, only  by
+the equivalent  number of  Named Users  for whom  you have  paid the  applicable
+license fees and obtained  a License Key Certificate.   The Product may be  used
+exclusively by the specifically designated Named Users, subject to all the terms
+and conditions of this License Agreement.  You agree that you will not designate
+more Named Users than the number of Named User/Mobile Licenses that Omondo or  a
+Omondo authorized distributor or reseller  has expressly granted to you  and you
+will not allow the  Product to be used  by any individuals other  than the Named
+Users designated by  you from time  to time.  You  may install the  Product on a
+reasonable  number  of  machines  provided  that  the  Named  User  is  the only
+individual  permitted  to use  the  Product.  Subject  to  the other  terms  and
+conditions of this License,  you may make a  reasonable number of copies  of the
+Product to backup devices such as hard disks, optical media, or tape and one (1)
+physical CD media backup copy of the Product solely to replace the original copy
+provided to you if the original copy is damaged or destroyed. 
+All rights not specifically granted to you herein are retained by Omondo. 
+
+2.4 CONCURRENT/FLOATING LICENSES.  Subject to the  terms and conditions  of this
+License,  Omondo  grants  to you  a  nonexclusive,  nontransferable and  limited
+license to install the Product, in executable form only, on a reasonable  number
+of computers  or machines  or on  a server  accessed and  used by multiple users
+located in the Territory, as defined  in 2.4.1 below, provided that the  Product
+is used only by as many concurrent users at any given moment in time as you have
+concurrent licenses  under your  License Certificate  and provided  further that
+your  use  of the  Product  is only  on  computers or  machines  located in  the
+Territory and accessed only by  users physically located in the  Territory.  The
+foregoing license shall be for access and use, only by the equivalent number  of
+concurrent users for whom you have paid the applicable license fees and obtained
+a License Certificate, solely to create, compile (including byte code  compile),
+test and deploy, in  source or object code  form, your own application  programs
+and other works ("Works").   As used in this  Section, use or in  use means that
+the Product is "in use" on a  computer or machine when it is loaded  into random
+access memory (RAM)  of that computer,  and "access" means  the ability to  use,
+copy or operate the Product. The Product may not be shared or used  concurrently
+on computers or machines  located outside of the  Territory or in such  a way to
+enable use or access by users located outside the Territory.  You may also  make
+a reasonable  number of  copies of  the Product  to backup  devices such as hard
+disks, optical media, or tape and one  (1) physical CD media backup copy of  the
+Product solely to replace the original copy provided to you if the original copy
+is damaged or destroyed. All rights  not specifically granted to you herein  are
+retained by Omondo.  You agree to  maintain accurate records  of the use  of the
+Product under each License Certificate you hold.  
+
+2.4.1  Concurrent/Floating Use  Territory.  'Territory'  means the  geographical
+area in which the Product may be used. The Use in the Territory shall be subject
+to the export restrictions set forth  below. Territory may be any one,  and only
+one,  of the  following three  geographic areas:  - Americas  Territory -   EMEA
+Territory  -  AsiaPac Territory   Unless  otherwise identified  in  your License
+Certificate,  you  may  determine  the   relevant  Territory  at  the  time   of
+installation of the Product onto a computer or machine by installing the Product
+in that one Territory. 
+
+
+3.  SPECIAL TERMS.  The following  terms and  conditions ("Special  Terms")  are
+specific to certain editions, versions and components of the Product and are  in
+addition to the provisions of Section 2.  If any provision of the Special  Terms
+applicable to the  Product conflicts with  any other provision  of this License,
+then the provision of the Special Terms will supercede and control. 
+
+3.1 ACADEMIC LICENSES. Subject to the terms and conditions of this License,  you
+may exercise your rights under this License Agreement to use the Product  solely
+for  your own  personal use  in providing  or receiving  instruction within  the
+limited scope of  guided computer programming  and/or software training  courses
+("Courses")  in which  you are  a direct  and personal  participant, either   as
+student or instructor. You  may not use any  Works created with the  Product for
+any commercial,  business, governmental  or institutional  purpose of  any kind,
+except to the  extent you are  an instructor teaching  a Course. All  rights not
+specifically granted to you herein are retained by Omondo. 
+
+3.2 LICENSE TERMS APPLICABLE TO THIRD PARTY SOFTWARE. Certain components of  the
+Product  use  or  incorporate  third-party  software  programs  and/or libraries
+("Third-Party Software"), which are loaded (in both object and source code form)
+on  the  Product  media.   You agree  that  Omondo's  third-party  licensors and
+suppliers are intended third party beneficiaries of all terms and conditions  of
+this License  intended to  protect intellectual  property rights  in the Product
+(including the Third-Party  Software) and limit  certain uses thereof.  The open
+source  programs  used  inside  OMONDO  software  solution  should  be  used  in
+accordance   with    either   the    GNU   Library    General   Public   Licence
+(http://nsuml.sourceforge.net/copyleft.txt)or with the specific
+Licence Agreement of each open source program.
+
+3.3 Limitations. You  may not:  (a)  modify, adapt, alter,  translate, or create
+derivative works of the Product or  merge the Product with other software  other
+than as described in the Product's accompanying documentation or as approved  of
+in writing by Omondo;  (b) lease, rent or  loan the Product to  any third party;
+(c) sublicense, distribute  or otherwise transfer  the Product or  any component
+thereof to any third party except as expressly authorized in this Agreement; (d)
+reverse engineer,  decompile, disassemble,  or otherwise  attempt to  derive the
+source code of the Product; (e) remove, alter, or obscure any confidentiality or
+proprietary notices (including copyright and trademark notices) of Omondo or its
+licensors or suppliers on or  accompanying the Product; (f) allow  third parties
+to access or use the Product including but not limited to using the Product in a
+time-sharing arrangement, operating the Product as part of a service bureau  or,
+except  as expressly  authorized under  Sections 2  and 3  otherwise using   the
+Product  for the  use or  benefit of  third parties;  (g) reproduce  or use  the
+Product except as expressly authorized under  Sections 2 and 3; (h) disclose  or
+publish performance benchmark results for the Product.  The rights granted under
+this License apply only to this Product.  You must procure a separate license to
+use other Omondo  software.  Furthermore, you  may not permit  end users of  the
+Product ("End Users") to conduct the restricted activities limited by items  (a)
+through (e), (g) and (h) above insofar as they apply to certain files, libraries
+and/or source code  specifically designated as  "redistributables" by Omondo  in
+the accompanying printed or on-line documentation and that are necessary to  use
+your  own  application  programs  and  other  works  created  using  the Product
+("Redistributables"),   and   such   End  User's   sublicense   rights   to  the
+Redistributables are  conditioned upon  compliance with  such limitations.   The
+limitations in this  Section 3.3 apply  equally to your  use of the  Product, in
+whole or in part, including any component or Redistributable. 
+
+3.4  LIMITED  WARRANY  AND  DISCLAMER:  Omondo  warrants  to  you,  the original
+purchaser and  to no  other party,  that any  physical media  included with  the
+Product,  as and  when provided  to you,  will be  free of  physical defects  in
+materials and workmanship for a period  of ninety (90) days after the  date that
+you initially  acquire the  Product.  This  warranty does  not apply  to damages
+resulting  from  misuse,  abuse  or  neglect.   Any  replacement  media  will be
+warranted as above for the remainder  of the original warranty period or  twenty
+(20) days from the date we ship it to you, whichever is longer.  Except for this
+express limited warranty, the product  is provided "as is" and  without warranty
+of any  kind.  Omondo  hereby excludes  and disclaims  all implied  or statutory
+warranties,  including  any  warranties   of  merchantability,  fitness  for   a
+particular purpose, quality, non-infringement, title, results, efforts or  quiet
+enjoyment.  There is  no warranty that  the product will  be error-free or  will
+function  without interruption.   You assume  the entire  risk for  the results
+obtained using  the product.   To the  extent that  omondo may  not disclaim any
+warranty as a matter of applicable law, the scope and duration of such  warranty
+will be the minimum permitted under such law. 
+
+3.5  SERVICES,  UPDATES, PRODUCT  CHANGES.  Omondo is  not  required under  this
+License Agreement  to provide  any installation,  training or  other services to
+you.  Such services, if available,  must be purchased separately.  If,  pursuant
+to a separate  support agreement or  otherwise, Omondo provides  you with a  new
+release, error correction, update, upgrade or other modification to the Product,
+such modification will be deemed part  of the Product, and subject to  the terms
+of this License Agreement, unless the modification is expressly provided subject
+to a separate license  agreement. Omondo reserves the  right at any time  not to
+release or to discontinue release of any Product and to alter prices,  features,
+specifications, capabilities, functions, licensing terms, release dates, general
+availability or other characteristics 
+of any future releases of the Product. 
+
+3.6 REGISTRATION. You must  register the Product with  Omondo as a condition  to
+your rights to use the Product.  You will be prompted to register the Product at
+the time of  your installation or  first use of  the Product, at  which time you
+will be notified (or directed  to online resources explaining) how  registration
+information provided by you may be used and you will be afforded the opportunity
+to opt out of certain uses of such information. 
+
+3.7  CONFIDENTIALITY.  You acknowledge  that  the Product  in  source code  form
+remains  a  confidential  trade  secret  of  Omondo.   You  agree  to  hold this
+information in confidence, not disclose it to any person, and not use it for any
+purpose other than the use and operation of the Product as permitted under  this
+License Agreement. 
+
+3.8 LIMITATION OF LIABILITY. In no event will omondo be liable to any party  for
+any indirect, incidental, consequential, exemplary, special or punitive damages,
+including any  loss of  profit, revenue,  business opportunity  or data, arising
+from or relating to this license agreement or the product, whether in  contract,
+in tort, negligence or otherwise, even if omondo knew, should have known or  has
+been advised  of the  possibility of  such damages.   Omondo's total  cumulative
+liability arising  from or  related to  this license  agreement or  the product,
+whether in contract, in tort or otherwise, will not exceed the fees paid for one
+mobile  license.   This section  3.8  will apply  even  if an  exclusive  remedy
+hereunder has  failed of  its essential  purpose. Some  states do  not allow the
+exclusion or  limitation of  incidental or  consequential damages,  so the above
+limitation or exclusion 
+may not apply to you. 
+
+3.9 THIRD PARTY CLAIMS.  Omondo will defend and settle any suit brought  against
+you by  a third  party (not  your affiliate)  based on  a claim that the Product
+infringes upon any E.E.C copyright and  Omondo will pay those costs and  damages
+finally awarded against you in  such suit that are specifically  attributable to
+such claims or those amounts payable by you under a settlement of such suit. The
+foregoing obligations are conditioned on you:  (a) notifying Omondo promptly  in
+writing of such action;  (b) giving Omondo sole  control of the defense  thereof
+and  any  related  settlement negotiations;  (c)  cooperating  and, at  Omondo's
+request and expense, assisting  in such defense. If  the Product becomes, or  in
+Omondo's opinion is likely to become, the subject of an infringement claim  that
+Omondo  is required  to defend,  then Omondo  may (at  its option  and  expense)
+either:   (a) procure  for you  the right  to continue  using the  Product;  (b)
+replace or modify the Product  so that it becomes non-infringing;  (c) terminate
+this License  Agreement. Notwithstanding   the foregoing,  Omondo will  have  no
+obligation   under  this   Section  10   or  otherwise   with  respect   to  any
+infringement claim based  upon:  (a) any  use of the  Product not in  accordance
+with this License Agreement or the Product's accompanying documentation: (b) any
+use of the Product in  combination with other products, equipment,  software, or
+data not provided  by Omondo; (c)  any use of  any version of  the Product other
+than the most current version made available to you; (d) any modification of the
+Product by  any person  other than  Omondo or  its authorized  agents ("Excluded
+Claims"). You  will indemnify  Omondo against  all liability,  damages and costs
+(including reasonable attorneys' 
+
+
+4. TERM AND TERMINATION. The term of this License Agreement will begin as of the
+date that you receive  the Product and will  remain in effect unless  terminated
+under this Section 4. You may  terminate this License Agreement for any  reason,
+or for no  reason, by giving  Omondo five (5)  days' written notice.  Omondo may
+terminate  this  License Agreement  if  you breach  your  obligations hereunder.
+Omondo  will  effect  such  termination by  giving  you  notice  of termination,
+specifying therein the alleged breach.  If your breach is curable, you will have
+a grace  period of  thirty (30)  days after  such notice  is served  to cure the
+breach described therein.   If the breach  is cured within  the thirty (30)  day
+grace period, then this License Agreement will remain in effect; otherwise, this
+License Agreement will automatically terminate upon the conclusion of the thirty
+(30) day grace period.  Upon the termination of  this License Agreement for  any
+reason  the following  terms shall  apply:  (a)  all rights  granted under  this
+License Agreement will immediately  terminate and you must  stop all use of  the
+Product and any Redistributables; (b) you  must return to Omondo or destroy  all
+copies of the Product provided to or made by you, and will, within ten (10) days
+after  the  effective   date  of  termination,   provide  Omondo  with   written
+certification that  all such  copies have  been returned  or destroyed;  (c) all
+provisions of this License Agreement with  the exception of the Scope of  Use in
+Sections 2, will survive termination of this License Agreement for any reason. 
+
+
+ 5. GENERAL PROVISIONS. If you are entering into this license as an entity other
+ than  an  individual   (e.g,  as  a   corporation,  a  partnership,   or  other
+ organization), during the term of this License and for one (1) year thereafter,
+ Omondo or its outside auditors will have the right to conduct an audit of  your
+ records and computer systems to verify that you have paid to Omondo the correct
+ amounts owed under  this License and  determine whether the  Products are being
+ used in accordance with the terms of this License.  Any audit will be conducted
+ during regular business hours at your facilities, with reasonable notice.   You
+ agree to provide the audit team  access to the relevant records and  facilities
+ and  to  provide  reasonable  assistance  to  Omondo  in  connection  with this
+ provision. You agree to pay the  cost of the audit if any  underpayments during
+ the period covered by  the audit amount to  more than five percent  (5%) of the
+ fees actually owed or if the number of deployments of the Products is more than
+ five percent  (5%) of  that licensed.  The Product  is not  intended for use in
+ connection with  any application  requiring fail-safe  performance such  as the
+ operation  of  nuclear  power facilities,  air  traffic  control or  navigation
+ systems, weapons  control systems,  life support  systems, or  any other system
+ whose  failure  could  lead  to injury,  death,  environmental  damage  or mass
+ destruction.  You agree that Omondo will  have no liability of any nature,  and
+ you are solely responsible, for any expense, loss, injury or damage incurred as
+ a result of such  use of the Product.  You may not transfer  the Product media,
+ assign this License Agreement or assign  any of your rights or delegate  any of
+ your obligations under this License Agreement, by operation of law or otherwise
+ (including by merger, sale of assets or consolidation), without Omondo's  prior
+ written  consent. You  may not  directly or  indirectly transfer  the  Product,
+ including  its  documentation,  to  any  country  if  such  transfer  would  be
+ prohibited  by  applicable  law,  including  both  the  US  and  E.E.C   Export
+ Administration Act  and the  regulations issued  thereunder. You  agree to  the
+ foregoing and you are representing and warranting that you are not located  in,
+ under the control of, or a national  or resident of any such country. You  will
+ be  solely responsible  for identifying  and complying  with all  laws of   any
+ jurisdiction outside of the United  States or EEC regarding the  import, export
+ or use of Products  and technical data supplied  by Omondo. You will  obtain at
+ your own expense all licenses, permits or approvals required by any  government
+ to use the Product. 
+
+6. GOVERNING LAW. This  License Agreement will be  governed by and construed  in
+accordance  with  the  laws of  the  French  country and  the  Paris  Chamber of
+Commerce, without giving  effect to any  conflicts or choice  of laws principles
+that would require the application of the laws of a different jurisdiction.  The
+parties expressly exclude the application of the 1980 United Nations  Convention
+on the International Sale of Goods (if applicable). 
+
+If you  have any  questions about  this License  Agreement, please  contact your
+Omondo authorized reseller or Omondo. If  you agree to the terms and  conditions
+of this License Agreement, please click the "I ACCEPT the terms of this  license
+agreement" option below.  This will be the legal equivalent of your signature on
+a written  contract and  the terms  of this  license shall  be a legally binding
+agreement between you and Omondo.  You must agree to these terms and  conditions
+in order to  download, install and  use the Product.   If you do  not agree with
+these terms and conditions, you should click  the "I do not accept the terms  of
+this  license agreement"  button below  to exit  this download  or installation
+process, as Omondo is unwilling to license the Product to you in such case. 
+
+OMONDO Limited
+
+
+

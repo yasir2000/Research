@@ -1,0 +1,47 @@
+	------
+	Provisioner's concept
+	------
+	Gonzalo Espert
+	------
+	Oct 29, 2007
+
+Welcome to Provisioner
+
+  Provisioner is an {{{license.html}open source GPL-licensed}} software 
+  component aimed at reducing user's identity provisioning costs and 
+  complexity in heterogeneous computing environments.
+  
+  Identity provisioning is a concept that drives automation, especially 
+  in terms of providing fulfillment to customers of internet, application and 
+  telecommunication service providers (i.e. ISPs, ASPs, TSPs).  
+  
+  At the heart of the provisioning software component is a collection of 
+  features required to create, delete, suspend, restore, change and reconcile 
+  accounts and/or service subscriptions. As the number of people accessing 
+  applications and data increases, attempting to track who has access to 
+  what becomes ever more complex. 
+  
+  The process of managing these access rights can function as a business 
+  enabler or business roadblock. Unfortunately, most enterprises are 
+  discovering that their existing paper-based procedures, requiring 
+  intensive manual involvement, are roadblocks.
+  
+  Provisioner can be thought as a building block service that provides 
+  low-level capabilities that can be consumed by developers when building a
+  composite application and it can also be thought as an attached service that 
+  applications leverage to add functionality.
+  
+  If you think that Provisioner could help your organization, you can find 
+  out more information about it in the "About Provisioner" section of the 
+  navigation. This includes an in-depth description of 
+  {{{what-is.html}what Provisioner is}}, a {{{features-1.0.html}list 
+  of some of its main features}}, and a set of {{{faq.html}frequently 
+  asked questions}} about what identity provisioning is.
+    
+* News 
+
+  <Sep 14, 2007> - Provisioner version 1.0.17 has been released. {{{http://sourceforge.net/forum/forum.php?forum_id=735794}More}}
+    
+* Usage
+
+  Instructions on how to use Provisioner can be found {{{usage.html}here}}.

@@ -1,0 +1,1 @@
+scomp -out classpath.jar classpath.xsd

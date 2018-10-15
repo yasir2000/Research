@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>clove.neptne.bpel-deployment</groupId>
+		<artifactId>bpel-deployment</artifactId>
+		<version>1.0</version>
+	</parent>
+	<groupId>clove.neptne.bpel-deployment</groupId>
+	<artifactId>bpel-deployment-xsl</artifactId>
+	<packaging>jar</packaging>
+	<name>XSL extension functions</name>
+	<version>1.0.0</version>
+	<description>XSL extension functions for BPEL deployment.</description>
+	<url>http://clove/neptne/bpel-deployment/bpel-deployment-xsl</url>
+	<inceptionYear>2010</inceptionYear>
+
+	<build>
+	</build>
+	<profiles>
+	</profiles>
+	<dependencies>
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+			<version>1.6.2</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<reporting>
+	</reporting>
+</project>

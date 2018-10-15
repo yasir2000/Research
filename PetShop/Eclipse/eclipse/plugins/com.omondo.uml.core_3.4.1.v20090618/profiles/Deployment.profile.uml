@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decoration_4="http:///_N3ITsK_9Edmrc_tu8ZGFqg.profile.uml2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///_N3ITsK_9Edmrc_tu8ZGFqg.profile.uml2 ../../../plugin/com.omondo.uml.core/profiles/Decoration.profile.uml#_N3Ug8K_9Edmrc_tu8ZGFqg">
+  <uml:Profile xmi:id="_69q0IGkDEd2C2vBXA89-Eg" name="Deployment" metaclassReference="_lG2KcGkGEd2C2vBXA89-Eg">
+    <eAnnotations xmi:id="_69q0IWkDEd2C2vBXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_gPzkoXlkEdyC2_BXA89-Eg" name="Deployment" nsURI="http:///schemas/Deployment/_gPzkoHlkEdyC2_BXA89-Eg/2" nsPrefix="Deployment">
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkonlkEdyC2_BXA89-Eg" name="Cloud">
+          <eAnnotations xmi:id="_gPzko3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FxYOUGkEEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkpHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkpnlkEdyC2_BXA89-Eg" name="CommunicationLink">
+          <eAnnotations xmi:id="_gPzkp3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_UNK3kGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkqHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkqnlkEdyC2_BXA89-Eg" name="Desktop">
+          <eAnnotations xmi:id="_gPzkq3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X7lqEGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkrHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkrnlkEdyC2_BXA89-Eg" name="Ethernet">
+          <eAnnotations xmi:id="_gPzkr3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_aNeNIGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzksHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzksnlkEdyC2_BXA89-Eg" name="Fax">
+          <eAnnotations xmi:id="_gPzks3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_e09VoGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzktHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzktnlkEdyC2_BXA89-Eg" name="FDDI">
+          <eAnnotations xmi:id="_gPzkt3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_hJXoQGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkuHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkunlkEdyC2_BXA89-Eg" name="Hub">
+          <eAnnotations xmi:id="_gPzku3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_jZw9kGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkvHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkvnlkEdyC2_BXA89-Eg" name="Laptop">
+          <eAnnotations xmi:id="_gPzkv3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_r7Jv0GkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkwHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkwnlkEdyC2_BXA89-Eg" name="Mainframe">
+          <eAnnotations xmi:id="_gPzkw3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_79qh4nlbEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkxHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkxnlkEdyC2_BXA89-Eg" name="Minicomputer">
+          <eAnnotations xmi:id="_gPzkx3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GIPfgHlcEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkyHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkynlkEdyC2_BXA89-Eg" name="Modem">
+          <eAnnotations xmi:id="_gPzky3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_362-UHlcEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzkzHlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzkznlkEdyC2_BXA89-Eg" name="Plotter">
+          <eAnnotations xmi:id="_gPzkz3lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_66CsQHlcEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk0HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzk0nlkEdyC2_BXA89-Eg" name="Printer">
+          <eAnnotations xmi:id="_gPzk03lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EizWQHldEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk1HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzk1nlkEdyC2_BXA89-Eg" name="RadioTower">
+          <eAnnotations xmi:id="_gPzk13lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0Ujh0HljEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk2HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzk2nlkEdyC2_BXA89-Eg" name="Router">
+          <eAnnotations xmi:id="_gPzk23lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5b7rUHljEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk3HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzk3nlkEdyC2_BXA89-Eg" name="Satellite">
+          <eAnnotations xmi:id="_gPzk33lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9cO4AHljEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk4HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzk4nlkEdyC2_BXA89-Eg" name="SatelliteDish">
+          <eAnnotations xmi:id="_gPzk43lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_C2PpoHlkEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk5HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzk5nlkEdyC2_BXA89-Eg" name="Scanner">
+          <eAnnotations xmi:id="_gPzk53lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_O-JPkHlkEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk6HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_gPzk6nlkEdyC2_BXA89-Eg" name="Tower">
+          <eAnnotations xmi:id="_gPzk63lkEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Tc_ZcHlkEdyC2_BXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gPzk7HlkEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_7OddEXlcEdyC2_BXA89-Eg" name="Deployment" nsURI="http:///schemas/Deployment/_7OddEHlcEdyC2_BXA89-Eg/1" nsPrefix="Deployment">
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddEnlcEdyC2_BXA89-Eg" name="Cloud">
+          <eAnnotations xmi:id="_7OddE3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FxYOUGkEEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddFHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddFnlcEdyC2_BXA89-Eg" name="CommunicationLink">
+          <eAnnotations xmi:id="_7OddF3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_UNK3kGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddGHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddGnlcEdyC2_BXA89-Eg" name="Desktop">
+          <eAnnotations xmi:id="_7OddG3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X7lqEGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddHHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddHnlcEdyC2_BXA89-Eg" name="Ethernet">
+          <eAnnotations xmi:id="_7OddH3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_aNeNIGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddIHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddInlcEdyC2_BXA89-Eg" name="Fax">
+          <eAnnotations xmi:id="_7OddI3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_e09VoGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddJHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddJnlcEdyC2_BXA89-Eg" name="FDDI">
+          <eAnnotations xmi:id="_7OddJ3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_hJXoQGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddKHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddKnlcEdyC2_BXA89-Eg" name="Hub">
+          <eAnnotations xmi:id="_7OddK3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_jZw9kGkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddLHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddLnlcEdyC2_BXA89-Eg" name="Laptop">
+          <eAnnotations xmi:id="_7OddL3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_r7Jv0GkGEd2C2vBXA89-Eg"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7OddMHlcEdyC2_BXA89-Eg" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddMnlcEdyC2_BXA89-Eg" name="Mainframe">
+          <eAnnotations xmi:id="_7OddM3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_79qh4nlbEdyC2_BXA89-Eg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddNHlcEdyC2_BXA89-Eg" name="Minicomputer">
+          <eAnnotations xmi:id="_7OddNXlcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GIPfgHlcEdyC2_BXA89-Eg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddNnlcEdyC2_BXA89-Eg" name="Modem">
+          <eAnnotations xmi:id="_7OddN3lcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_362-UHlcEdyC2_BXA89-Eg"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_7OddOHlcEdyC2_BXA89-Eg" name="Plotter">
+          <eAnnotations xmi:id="_7OddOXlcEdyC2_BXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_66CsQHlcEdyC2_BXA89-Eg"/>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_69q0ImkDEd2C2vBXA89-Eg" name="Deployment" nsURI="http://DeploymentModel/schemas/Deployment/_69X5MGkDEd2C2vBXA89-Eg/0" nsPrefix="Deployment"/>
+    </eAnnotations>
+    <elementImport xmi:id="_lG2KcGkGEd2C2vBXA89-Eg">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_FxYOUGkEEd2C2vBXA89-Eg" name="Cloud">
+      <ownedAttribute xmi:id="_nTEKYmkGEd2C2vBXA89-Eg" name="base_Node" association="_nTEKYGkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_UNK3kGkGEd2C2vBXA89-Eg" name="CommunicationLink">
+      <ownedAttribute xmi:id="_nsGVcmkGEd2C2vBXA89-Eg" name="base_Node" association="_nsGVcGkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_X7lqEGkGEd2C2vBXA89-Eg" name="Desktop">
+      <ownedAttribute xmi:id="_oHXVImkGEd2C2vBXA89-Eg" name="base_Node" association="_oHXVIGkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_aNeNIGkGEd2C2vBXA89-Eg" name="Ethernet">
+      <ownedAttribute xmi:id="_oiCe8mkGEd2C2vBXA89-Eg" name="base_Node" association="_oiCe8GkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_e09VoGkGEd2C2vBXA89-Eg" name="Fax">
+      <ownedAttribute xmi:id="_m1jvAmkGEd2C2vBXA89-Eg" name="base_Node" association="_m1jvAGkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_hJXoQGkGEd2C2vBXA89-Eg" name="FDDI">
+      <ownedAttribute xmi:id="_o-WngmkGEd2C2vBXA89-Eg" name="base_Node" association="_o-WngGkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_jZw9kGkGEd2C2vBXA89-Eg" name="Hub">
+      <ownedAttribute xmi:id="_szUt8mkGEd2C2vBXA89-Eg" name="base_Node" association="_szUt8GkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_m1jvAGkGEd2C2vBXA89-Eg" name="Node_Fax" memberEnd="_m1jvAWkGEd2C2vBXA89-Eg _m1jvAmkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_m1jvAWkGEd2C2vBXA89-Eg" name="extension_Fax" type="_e09VoGkGEd2C2vBXA89-Eg" aggregation="composite" association="_m1jvAGkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_nTEKYGkGEd2C2vBXA89-Eg" name="Node_Cloud" memberEnd="_nTEKYWkGEd2C2vBXA89-Eg _nTEKYmkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_nTEKYWkGEd2C2vBXA89-Eg" name="extension_Cloud" type="_FxYOUGkEEd2C2vBXA89-Eg" aggregation="composite" association="_nTEKYGkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_nsGVcGkGEd2C2vBXA89-Eg" name="Node_CommunicationLink" memberEnd="_nsGVcWkGEd2C2vBXA89-Eg _nsGVcmkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_nsGVcWkGEd2C2vBXA89-Eg" name="extension_CommunicationLink" type="_UNK3kGkGEd2C2vBXA89-Eg" aggregation="composite" association="_nsGVcGkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_oHXVIGkGEd2C2vBXA89-Eg" name="Node_Desktop" memberEnd="_oHXVIWkGEd2C2vBXA89-Eg _oHXVImkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_oHXVIWkGEd2C2vBXA89-Eg" name="extension_Desktop" type="_X7lqEGkGEd2C2vBXA89-Eg" aggregation="composite" association="_oHXVIGkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_oiCe8GkGEd2C2vBXA89-Eg" name="Node_Ethernet" memberEnd="_oiCe8WkGEd2C2vBXA89-Eg _oiCe8mkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_oiCe8WkGEd2C2vBXA89-Eg" name="extension_Ethernet" type="_aNeNIGkGEd2C2vBXA89-Eg" aggregation="composite" association="_oiCe8GkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_o-WngGkGEd2C2vBXA89-Eg" name="Node_FDDI" memberEnd="_o-WngWkGEd2C2vBXA89-Eg _o-WngmkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_o-WngWkGEd2C2vBXA89-Eg" name="extension_FDDI" type="_hJXoQGkGEd2C2vBXA89-Eg" aggregation="composite" association="_o-WngGkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_r7Jv0GkGEd2C2vBXA89-Eg" name="Laptop">
+      <ownedAttribute xmi:id="_tQFicmkGEd2C2vBXA89-Eg" name="base_Node" association="_tQFicGkGEd2C2vBXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_szUt8GkGEd2C2vBXA89-Eg" name="Node_Hub" memberEnd="_szUt8WkGEd2C2vBXA89-Eg _szUt8mkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_szUt8WkGEd2C2vBXA89-Eg" name="extension_Hub" type="_jZw9kGkGEd2C2vBXA89-Eg" aggregation="composite" association="_szUt8GkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_tQFicGkGEd2C2vBXA89-Eg" name="Node_Laptop" memberEnd="_tQFicWkGEd2C2vBXA89-Eg _tQFicmkGEd2C2vBXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_tQFicWkGEd2C2vBXA89-Eg" name="extension_Laptop" type="_r7Jv0GkGEd2C2vBXA89-Eg" aggregation="composite" association="_tQFicGkGEd2C2vBXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_79qh4nlbEdyC2_BXA89-Eg" name="Mainframe">
+      <ownedAttribute xmi:id="_UbXKYnldEdyC2_BXA89-Eg" name="base_Node" association="_UbXKYHldEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_GIPfgHlcEdyC2_BXA89-Eg" name="Minicomputer">
+      <ownedAttribute xmi:id="_U6NCgnldEdyC2_BXA89-Eg" name="base_Node" association="_U6NCgHldEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_362-UHlcEdyC2_BXA89-Eg" name="Modem">
+      <ownedAttribute xmi:id="_VW0GAnldEdyC2_BXA89-Eg" name="base_Node" association="_VW0GAHldEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_66CsQHlcEdyC2_BXA89-Eg" name="Plotter">
+      <ownedAttribute xmi:id="_V51TgnldEdyC2_BXA89-Eg" name="base_Node" association="_V51TgHldEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_EizWQHldEdyC2_BXA89-Eg" name="Printer">
+      <ownedAttribute xmi:id="_WVGTMnldEdyC2_BXA89-Eg" name="base_Node" association="_WVGTMHldEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_UbXKYHldEdyC2_BXA89-Eg" name="Node_Mainframe" memberEnd="_UbXKYXldEdyC2_BXA89-Eg _UbXKYnldEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_UbXKYXldEdyC2_BXA89-Eg" name="extension_Mainframe" type="_79qh4nlbEdyC2_BXA89-Eg" aggregation="composite" association="_UbXKYHldEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_U6NCgHldEdyC2_BXA89-Eg" name="Node_Minicomputer" memberEnd="_U6NCgXldEdyC2_BXA89-Eg _U6NCgnldEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_U6NCgXldEdyC2_BXA89-Eg" name="extension_Minicomputer" type="_GIPfgHlcEdyC2_BXA89-Eg" aggregation="composite" association="_U6NCgHldEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_VW0GAHldEdyC2_BXA89-Eg" name="Node_Modem" memberEnd="_VW0GAXldEdyC2_BXA89-Eg _VW0GAnldEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_VW0GAXldEdyC2_BXA89-Eg" name="extension_Modem" type="_362-UHlcEdyC2_BXA89-Eg" aggregation="composite" association="_VW0GAHldEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_V51TgHldEdyC2_BXA89-Eg" name="Node_Plotter" memberEnd="_V51TgXldEdyC2_BXA89-Eg _V51TgnldEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_V51TgXldEdyC2_BXA89-Eg" name="extension_Plotter" type="_66CsQHlcEdyC2_BXA89-Eg" aggregation="composite" association="_V51TgHldEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_WVGTMHldEdyC2_BXA89-Eg" name="Node_Printer" memberEnd="_WVGTMXldEdyC2_BXA89-Eg _WVGTMnldEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_WVGTMXldEdyC2_BXA89-Eg" name="extension_Printer" type="_EizWQHldEdyC2_BXA89-Eg" aggregation="composite" association="_WVGTMHldEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_0Ujh0HljEdyC2_BXA89-Eg" name="RadioTower">
+      <ownedAttribute xmi:id="_6DbJInljEdyC2_BXA89-Eg" name="base_Node" association="_6DbJIHljEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_5b7rUHljEdyC2_BXA89-Eg" name="Router">
+      <ownedAttribute xmi:id="_6jKZInljEdyC2_BXA89-Eg" name="base_Node" association="_6jKZIHljEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_6DbJIHljEdyC2_BXA89-Eg" name="Node_RadioTower" memberEnd="_6DbJIXljEdyC2_BXA89-Eg _6DbJInljEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_6DbJIXljEdyC2_BXA89-Eg" name="extension_RadioTower" type="_0Ujh0HljEdyC2_BXA89-Eg" aggregation="composite" association="_6DbJIHljEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_6jKZIHljEdyC2_BXA89-Eg" name="Node_Router" memberEnd="_6jKZIXljEdyC2_BXA89-Eg _6jKZInljEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_6jKZIXljEdyC2_BXA89-Eg" name="extension_Router" type="_5b7rUHljEdyC2_BXA89-Eg" aggregation="composite" association="_6jKZIHljEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9cO4AHljEdyC2_BXA89-Eg" name="Satellite">
+      <ownedAttribute xmi:id="_eX2kgnlkEdyC2_BXA89-Eg" name="base_Node" association="_eX2kgHlkEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_C2PpoHlkEdyC2_BXA89-Eg" name="SatelliteDish">
+      <ownedAttribute xmi:id="_e1zr0nlkEdyC2_BXA89-Eg" name="base_Node" association="_e1zr0HlkEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_O-JPkHlkEdyC2_BXA89-Eg" name="Scanner">
+      <ownedAttribute xmi:id="_fRrIcnlkEdyC2_BXA89-Eg" name="base_Node" association="_fRrIcHlkEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_Tc_ZcHlkEdyC2_BXA89-Eg" name="Tower">
+      <ownedAttribute xmi:id="_fwX2onlkEdyC2_BXA89-Eg" name="base_Node" association="_fwX2oHlkEdyC2_BXA89-Eg">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_eX2kgHlkEdyC2_BXA89-Eg" name="Node_Satellite" memberEnd="_eX2kgXlkEdyC2_BXA89-Eg _eX2kgnlkEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_eX2kgXlkEdyC2_BXA89-Eg" name="extension_Satellite" type="_9cO4AHljEdyC2_BXA89-Eg" aggregation="composite" association="_eX2kgHlkEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_e1zr0HlkEdyC2_BXA89-Eg" name="Node_SatelliteDish" memberEnd="_e1zr0XlkEdyC2_BXA89-Eg _e1zr0nlkEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_e1zr0XlkEdyC2_BXA89-Eg" name="extension_SatelliteDish" type="_C2PpoHlkEdyC2_BXA89-Eg" aggregation="composite" association="_e1zr0HlkEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_fRrIcHlkEdyC2_BXA89-Eg" name="Node_Scanner" memberEnd="_fRrIcXlkEdyC2_BXA89-Eg _fRrIcnlkEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fRrIcXlkEdyC2_BXA89-Eg" name="extension_Scanner" type="_O-JPkHlkEdyC2_BXA89-Eg" aggregation="composite" association="_fRrIcHlkEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_fwX2oHlkEdyC2_BXA89-Eg" name="Node_Tower" memberEnd="_fwX2oXlkEdyC2_BXA89-Eg _fwX2onlkEdyC2_BXA89-Eg">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fwX2oXlkEdyC2_BXA89-Eg" name="extension_Tower" type="_Tc_ZcHlkEdyC2_BXA89-Eg" aggregation="composite" association="_fwX2oHlkEdyC2_BXA89-Eg"/>
+    </packagedElement>
+    <profileApplication xmi:id="_9E-e5mkDEd2C2vBXA89-Eg">
+      <eAnnotations xmi:id="_9E-e52kDEd2C2vBXA89-Eg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../../../plugin/com.omondo.uml.core/profiles/Decoration.profile.uml#_N3Ug8K_9Edmrc_tu8ZGFqg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Profile>
+ </xmi:XMI>

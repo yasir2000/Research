@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<faqs id="GLOSSARY" title="Building Provisioner's development environment (under construction)">
+    <part id="Dev Env FAQ">
+    	<faq id="Which are the tools I need installed to develop">
+            <question>Which are the tools I need installed to develop?</question>
+            <answer>
+                <p>In order to start developing you will need to install the following
+                tool set: Java SE JDK 5.0 or higher, Eclipse 3.2 or higher, Subclipse 
+                1.2 (i.e., Subversion plug-in for Eclipse) or higher, m2eclipse (i.e.,
+                Maven 2 plug-in for Eclipse) or higher and PostgreSQL 8.2 or higher.</p>
+           </answer>
+        </faq>
+        <faq id="Installing Java SE JDK">
+            <question>Installing Java SE JDK</question>
+            <answer>
+                <p>You can download Java SE JDK latest version 
+                from http://java.sun.com/javase/downloads. Installation 
+                instructions can be found at http://java.sun.com/javase/6/webnotes/install
+                .</p>
+           </answer>
+        </faq>
+    	<faq id="Installing the IDE">
+            <question>Installing the IDE</question>
+            <answer>
+                <p>You can download Eclipse Classic latest version 
+                from http://eclipse.org/downloads. Eclipse is shipped 
+                as a compressed archive, and installation is a simple matter 
+                of unzipping them anywhere on your local machine. 
+                You will need to first install Java Development Kit (JDK) 
+                to use Eclipse.</p>
+           </answer>
+        </faq>
+        <faq id="Installing plug-in for accessing source code repository">
+            <question>Installing plug-in for accessing source code repository</question>
+            <answer>
+                <p>Provisioner project uses SourceForge's Subversion reposiroty for 
+                source control purposes. In order to check-out and commit changes to
+                Provisioner's repository you have to install an Eclipse Subversion
+                plugin. Go to Eclipse's software update window 
+                (i.e., Help->Software Updates->Find and Install) and add a new 
+                update site by entering the URL: "http://subclipse.tigris.org/update_1.2.x". This will 
+                automatically install Subclipse plug-in (Note: Select "Subclipse Plugin" 
+                and leave out "Integrations" when selecting features to install). You may get
+                a feature verification warning complaining that you are installing
+                an unsigned feature, you just have to ignore this warning.</p>
+           </answer>
+        </faq>
+        <faq id="Downloading Provisioner's source code">
+            <question>Downloading Provisioner's source code</question>
+            <answer>
+                <p>Instructions on how to download project's source code as 
+                a developer from the command line, can be found at
+                http://identitymngr.sourceforge.net/source-repository.html.
+                
+                On the other hand, if you want to download project's source
+                code from within Eclipse you will have to create a new project
+                selecting "Checkout Projects from SVN" wizard in "New Project" 
+                window (i.e., File->New->Project). This will create a new project by 
+                checking out an existing project from a SVN repository. If you are 
+                connecting to SourceForge's SVN server for the first time you will
+                need to create a new SVN repository by typing 
+                "https://identitymngr.svn.sourceforge.net/svnroot/identitymngr/"
+                when asked for new SVN repository URL. If you are going to work
+                in the development mainline checkout from the trunk folder, 
+                if what you are planning to do is do bug fixing on an official
+                release (e.g. version 1.0.18) you should checkout from the
+                branches folder selecting the particular release 
+                (e.g. ~/branches/Provisioner-1.0.18).
+                You might get an error stating that the certificate issuer is 
+                unknown, ignore the error by clicking the "Accept Permanently"
+                button. Eclipse will start downloading Provisioner's source code.
+                </p>
+           </answer>
+        </faq>
+        <faq id="Installing plug-in for compiling source code">
+            <question>Installing plug-in for compiling source code</question>
+            <answer>
+                <p>In order to be able to compile from within Eclipse install Maven2 
+                plug-in. Go to Eclipse's software update window (i.e., Help->Install New Software) and add a new 
+                available software site by entering the URL: "http://m2eclipse.sonatype.org/sites/m2e". 
+                This will automatically install Maven2 plug-in (Note: Select "Maven Integration" and leave  
+                out "Optional Components" when selecting features to install).
+                
+                Once you have Maven2 installed you will be able to compile 
+                Provisioner by right-clicking pom.xml file and selecting 
+                "Maven2 Build" from the "Run As" option. To learn more about 
+                Maven goto http://maven.apache.org.</p>
+           </answer>
+        </faq>
+        <faq id="Installing the data base">
+            <question>Installing the data base</question>
+            <answer>
+                <p>..........</p>
+           </answer>
+        </faq>
+        <faq id="Configuring launch setting for running Provisioner within Eclipse">
+            <question>Configuring launch setting for running Provisioner within Eclipse</question>
+            <answer>
+                <p>..........</p>
+           </answer>
+        </faq>
+        <faq id="Creating a test provisioning request">
+            <question>Creating a test provisioning request</question>
+            <answer>
+                <p>..........</p>
+           </answer>
+        </faq>
+    </part>
+</faqs>

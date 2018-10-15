@@ -1,0 +1,9 @@
+$- script D starts
+------------------------
+Validating account
+OrderBilling
+OrderShipping - [{:valid true}]
+CheckDelivery
+OrderProcess - [{:isUKBased true, :valid true}]
+------------------------
+$- script D ends

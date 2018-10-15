@@ -1,0 +1,343 @@
+----------------------------------------------------------------------
+-- FORMAL TROPOS SPECIFICATION
+-- PetShop Intentions - Buyer, Seller, Trader
+-- 2011-Nov-14 21:23 GMT
+--
+-- RefID: PS-FT-11-11-14.0
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+-- Entities
+-- "Pet" is involved in the transactions
+-- but does not have "goals"
+----------------------------------------------------------------------
+Entity Pet
+
+----------------------------------------------------------------------
+-- Actors below are cloud consumers which also goal owners, dependers 
+-- and dependees
+----------------------------------------------------------------------
+Actor PetBuyer
+Actor PetSeller
+Actor PetTrader
+-- All role based entities or Actors below could be cloud service 
+-- providers as well as Goal Owners as well as Dependers and Dependees 
+Actor PetShop
+Actor AccountController
+Actor Cart
+Actor CartController
+Actor OrderManager
+Actor SecurityChecker
+Actor WebServer
+Actor BillingProvider
+Actor ShippingProvider
+
+----------------------------------------------------------------------
+-- Goals for PetSeller, PetBuyer, PetTrader
+---- "PetSeller" wishes to sell his pet for the maximum price possible
+---- "PetBuyer" wishes to buy a pet at the lowest price possible
+---- "PetTrader" wishes to earn a commission on sales of pets
+----------------------------------------------------------------------
+Goal Dependency SellPet
+  Mode achieve
+  Depender PetSeller
+  Dependee PetShop
+  Fulfillment Definition
+    Exists p : Purchase (self = p.super & Fulfilled(p))
+
+Goal Dependency BuyPet
+  Mode achieve
+  Depender PetBuyer
+  Dependee PetShop
+  Fulfillment Definition
+    Exists p : Purchase (self = p.super & Fulfilled(p))
+
+Goal Dependency EarnCommission
+  Mode achieve
+  Depender PetTrader
+  Dependee PetShop
+  Fulfillment Definition
+    Exists p : Purchase (self = p.super & Fulfilled(p))
+
+----------------------------------------------------------------------
+-- Resource Dependencies
+---- "SellOffer" is the price that the "PetSeller" is asking for his pet
+---- "BuyOffer" is the price that the "PetBuyer" is offering for a pet
+---- "AgreedPrice" is a price which satisfies both "PetSeller" and "PetBuyer"
+------ therefore "AgreedPrice" >= "SellOffer" and "AgreedPrice" <= "BuyOffer"
+------ An "AgreedPrice" is created when both "SellOffer" and "BuyOffer" are fulfilled.
+------ The creation of an "AgreedPrice" triggers the creation of a PetStore "Purchase"
+---- "Order" is the physical retail transaction by the PetStore
+----------------------------------------------------------------------
+Resource Dependency SellOffer
+  Mode achieve
+  Attribute super : Price
+  Depender PetSeller
+  Dependee PetShop
+
+Resource Dependency BuyOffer
+  Mode achieve
+  Attribute super : Price
+  Depender PetBuyer
+  Dependee PetShop
+
+Resource Dependency AgreedPrice
+  Mode achieve
+  Attribute super : Price
+  Creation Condition
+    Exists bo : BuyOffer (super = bo.super & Fulfilled(bo))
+    & Exists so : SellOffer (super = so.super & Fulfilled(so))
+
+Resource Dependency Order
+  Mode achieve
+  Depender PetBuyer
+  Dependee PetShop
+
+----------------------------------------------------------------------
+-- Goals for PetStore
+---- These goals relate to the fulfilment of sales by the store
+----------------------------------------------------------------------
+Goal Dependency Purchase
+  Mode achieve
+  Depender PetShop
+  Dependee CartController
+  Attribute super : AgreedPrice
+  Creation Condition
+	Exists p : AgreedPrice (self = p.super & Fulfilled(p))
+  Fulfillment definition
+    Exists po : ProcessOrder (self = po.super & Fulfilled(po))
+
+Goal Dependency SetCustomerPreferences
+  Mode achieve
+  Depender PetBuyer
+  Dependee PetShop
+  Fulfillment Condition
+    Exists vai : ViewAccountInfo (self = vai.super & Fulfilled(vai))
+
+Goal Dependency GetOrderDetails
+  Mode achieve
+  Depender PetBuyer
+  Dependee PetShop
+
+Goal Dependency ValidateAccountAndBillCustomer
+  Mode maintain
+  Depender PetShop
+  Dependee BillingProvider
+
+Goal Dependency ShipPetsToCustomer
+  Mode maintain
+  Depender PetShop
+  Dependee ShippingProvider
+
+  Goal Dependency SecureDataTransferFromBillingProvider
+-- Super SecureDataTransferToFromBillingAndShippingProviders
+  Mode maintain
+  Depender PetShop
+  Dependee BillingProvider
+
+Goal Dependency SecureDataTransferFromShippingProvider
+-- Super SecureDataTransferToFromBillingAndShippingProviders
+  Mode maintain
+  Depender PetShop
+  Dependee ShippingProvider
+
+Goal Dependency BillingSupportingAtLeastThousandTransactionsPerMinute
+-- Super SupportingAtLeastThousandTransactionsPerMinute
+  Mode maintain
+  Depender PetShop
+  Dependee BillingProvider
+
+Goal Dependency ShippingSupportingAtLeastThousandTransactionsPerMinute
+-- Super SupportingAtLeastThousandTransactionsPerMinute
+  Mode maintain
+  Depender PetShop
+  Dependee ShippingProvider
+
+----------------------------------------------------------------------
+-- Task Dependencies
+---- These goals relate to the fulfilment of sales by the store
+----------------------------------------------------------------------
+Task Dependency ProvideBillingAndShippingInformation
+  Mode achieve
+  Depender CartController
+  Dependee PetBuyer
+  Attribute super : Purchase
+  Creation Condition
+    Exists p : Purchase (super = p & !Fulfilled(p)
+    & Exists pa : PassAuthentication (pa.superP = p & Fulfilled(pa)))
+
+Task Dependency GetCart
+  Mode achieve
+  Depender CartController
+  Dependee Cart
+  Attribute super : Purchase
+  Creation Condition
+    Exists p : Purchase (super = p & !Fulfilled(p)
+    & Exists pbasi : ProvideBillingAndShippingInformation (pbasi.super = p & Fulfilled(pbasi)))
+
+Task Dependency ValidateAccount
+-- Super ValidateAccountAndBillCustomer
+  Mode achieve
+  Depender CartController --???
+  Dependee BillingProvider
+  Attribute super : Purchase
+  Creation Condition
+    Exists p : Purchase (super = p & !Fulfilled(p)
+    & Exists gc : GetCart (gc.super = p & Fulfilled(gc)))
+
+Task ProcessOrder
+  Mode achieve
+  Actor CartController
+  Attribute super : Purchase
+  Creation Condition
+    Exists p : Purchase (super = p & !Fulfilled(p)
+    & Exists va : ValidateAccount (va.super = p & Fulfilled(va)))
+  Fulfillment Definition
+    Exists so : SaveOrder (self = so.super & Fulfilled(so))
+
+Task Dependency ProcessPayment
+-- Super ValidateAccountAndBillCustomer
+  Mode achieve
+  Depender CartController --???
+  Dependee BillingProvider
+  Attribute super : ProcessOrder
+  Creation Condition
+    Exists po : ProcessOrder (super = po & !Fulfilled(po))
+
+Task Dependency ReceivePayment
+  Mode achieve
+  Depender BillingProvider
+  Dependee PetSeller
+  Attribute super : ProcessPayment
+  Creation Condition
+    Exists pp : ProcessPayment (super = pp & !Fulfilled(pp))
+
+Task Dependency ReceiveCommission
+  Mode achieve
+  Depender BillingProvider
+  Dependee PetTrader
+  Attribute super : ProcessPayment
+  Creation Condition
+    Exists pp : ProcessPayment (super = pp & !Fulfilled(pp))
+
+Task Dependency PlaceShipmentOrder
+-- Super ShipPetsToCustomer
+  Mode achieve
+  Depender CartController --???
+  Dependee ShippingProvider
+  Attribute super : ProcessOrder
+  Creation Condition
+    Exists po : ProcessOrder (super = po & !Fulfilled(po)
+    & Exists pp : ProcessPayment (pp.super = po & Fulfilled(pp)))
+
+Task Dependency SaveOrder
+  Mode achieve
+  Depender CartController
+  Dependee OrderManager
+  Attribute super : ProcessOrder
+  Creation Condition
+    Exists po : ProcessOrder (super = po & !Fulfilled(po)
+    & Exists pso : PlaceShipmentOrder (pso.super = po & Fulfilled(pso)))
+
+Task Dependency GetOrderDetails
+  Mode achieve
+  Depender PetBuyer
+  Dependee OrderManager --???  
+
+Task PassAuthentication
+  Mode achieve
+  Actor PetShop --???
+  Attribute superP : Purchase
+            superSCP : SetCustomerPreferences
+  Creation Condition
+    Exists p : Purchase (superP = p & !Fulfilled(p))
+    | Exists scp : SetCustomerPreferences (superSCP = scp & !Fulfilled(scp))
+
+Task Dependency SignOut
+  Mode achieve
+  Depender PetShop
+  Dependee AccountController
+  Attribute super : PassAuthentication
+  Creation Condition
+    Exists pa : PassAuthentication (super = pa & !Fulfilled(pa))
+
+Task Dependency SignIn
+  Mode achieve
+  Depender PetShop
+  Dependee AccountController
+  Attribute super : PassAuthentication
+  Creation Condition
+    Exists pa : PassAuthentication (super = pa & !Fulfilled(pa))
+
+Task Dependency Register
+  Mode achieve
+  Depender PetShop
+  Dependee AccountController
+  Attribute super : PassAuthentication
+  Creation Condition
+    Exists pa : PassAuthentication (super = pa & !Fulfilled(pa))
+
+Task Dependency ViewAccountInfo
+  Mode achieve
+  Depender PetShop
+  Dependee AccountController
+  Attribute super : SetCustomerPreferences
+  Creation Condition
+    Exists scp : SetCustomerPreferences (super = scp & !Fulfilled(scp)
+    & Exists pa : PassAuthentication (pa.superSCP = scp & Fulfilled(pa)))
+
+Task Dependency UpdateAccountInfo
+  Mode achieve
+  Depender PetShop
+  Dependee AccountController
+  Attribute super : SetCustomerPreferences
+  Creation Condition
+    Exists scp : SetCustomerPreferences (super = scp & !Fulfilled(scp)
+    & Exists vai : ViewAccountInfo (vai.super = scp & Fulfilled(vai)))
+
+----------------------------------------------------------------------
+-- Softgoal Dependencies
+---- These dependencies relate to the achievment or maintenance of soft-goals
+----------------------------------------------------------------------
+Softgoal Maintain Trust
+  Mode maintain
+  Depender PetTrader
+  Dependee PetSeller, PetBuyer
+
+Softgoal Dependency Security
+  Mode maintain
+  Depender PetBuyer
+  Dependee PetShop
+
+Softgoal Dependency Availability
+  Mode maintain
+  Depender PetBuyer
+  Dependee PetShop
+
+Softgoal Dependency SecureDataTransferToFromCustomer
+-- Super Security
+  Mode maintain
+  Depender PetBuyer
+  Dependee WebServer
+
+Softgoal Dependency DowntimeLessThanDotOnePercent
+-- Super Availability
+  Mode maintain
+  Depender PetBuyer
+  Dependee WebServer
+
+Softgoal SecureDataTransferToFromBillingAndShippingProviders
+-- Super Security
+  Mode maintain
+  Actor PetShop
+
+Softgoal SupportingAtLeastThousandTransactionsPerMinute
+-- Super Availability
+  Mode maintain
+  Actor PetShop
+
+Softgoal Dependency PasswordAuthorization
+-- Super Security
+  Mode maintain
+  Depender PetShop
+  Dependee SecurityChecker

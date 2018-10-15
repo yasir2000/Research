@@ -1,0 +1,69 @@
+	------
+	How to configure PSTs
+	------
+	Gonzalo Espert
+	------
+	Nov 9, 2007
+
+
+How to configure new Provisioning Service Targets (i.e. PSTs)
+
+* Identity store's access configuration
+
+  Information on how Provisioner access identity stores is specified in 
+  XML configuration files. Each identity store that is going to be accessed 
+  by Provisioner has to have its corresponding XML configuration file 
+  where the name of the file will be the name of the identity store 
+  instance. 
+
+*----------+------------------------------------------------------------+
+| Name     | Description                                                |
+*----------+------------------------------------------------------------+
+| Type     | Identity store type (eg. Asterisk, Merak, SER, MS AD).     |
+*----------+------------------------------------------------------------+
+| Host     | Name or IP of the machine where the identity store is running.     |
+*----------+------------------------------------------------------------+
+| Username | Username used to access the identity store in case authentication method is username and password.     |
+*----------+------------------------------------------------------------+
+| Password | Password used for the username above.     |
+*----------+------------------------------------------------------------+
+| Password_sudo | Sudo’s root password in case the identity store requires it.     |
+*----------+------------------------------------------------------------+
+| Password_authorisation | Authorization key in case the identity store uses an authorization key method for authentication.     |
+*----------+------------------------------------------------------------+
+| Responses| XML file name where the possible responses for this identity store are configured.     |
+*----------+------------------------------------------------------------+
+| Bin      | Path to binary files.     |
+*----------+------------------------------------------------------------+
+| Create   | Name of binary file used for creating new users.     |
+*----------+------------------------------------------------------------+
+| Delete   | Name of binary file used for deleting of existent users.     |
+*----------+------------------------------------------------------------+
+| Enable   | Name of binary file used to enable a supplementary service to a user.     |
+*----------+------------------------------------------------------------+
+| Disable  | Name of binary file used for disabling a supplementary service to a user.     |
+*----------+------------------------------------------------------------+
+Access parameters that have to be specified in XML configuration file
+
+  The following example shows a configuration for accessing an Asterisk identity store:
+
++-------------------------------+
+<asterisk xmlns="http://asterisk.org">
+  <description>
+     Asterisk access configuration file.
+  </description>
+  <parameter name="type" value="Asterisk"/>
+  <parameter name="host" value="192.168.1.94"/> 
+  <parameter name="username" value="user1"/>
+  <parameter name="password" value="abc123"/>
+  <parameter name="password_sudo" value="abc123456"/>
+  <parameter name="responses" value="responses_asterisk1"/>
+  <parameter name="bin" value="/etc/"/>
+  <parameter name="create" value="create.sh"/>
+  <parameter name="delete" value="delete.sh"/>
+  <parameter name="enable" value="enable.sh"/>
+  <parameter name="disable" value="disable.sh"/>
+</asterisk>
++-------------------------------+
+
+

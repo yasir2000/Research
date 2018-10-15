@@ -1,0 +1,176 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
+//--------------------------------
+// NeptuneScript 2.1 BNF grammar  
+// 2011-Nov-14 18:00 GMT
+//
+// RefID: NS-BNF-11-11-14.0
+//--------------------------------
+
+<SCRIPT> ::= <Source Elements>
+
+<Source Elements> ::= <Source Element>
+                    | <Source Elements> <Source Element>
+
+<Source Element> ::= <Task Declaration>
+                   | <Process Declaration>
+                   | <NBLO Declaration>
+
+<Task Declaration> ::= 'task' '{' <Requirement Definition> '}'
+					   'actions' '{' <Action Definition> '}' ';'
+
+<Action Definition> ::= Identifier ':' 'via' <Function Expression> ';'
+                      | <Action Definition> <Action Definition>
+
+<Requirement Definition> ::= Identifier ':' Identifier '.' <Property> ';'
+                           | 'when' <expression> '{' <Requirement Definition> '}' ';'
+						   | <Requirement Definition> <Requirement Definition>
+
+<NBLO Declaration>  ::= 'nblo' Identifier '(' <Formal Parameter List> ')' '{!-' <NBLO Body> '-!}' ';'
+
+<NBLO Body> ::= /* Base Language Source Code */
+
+<Process Declaration> ::= 'process' Identifier ':' '{' <Action Elements> '}' ';'
+
+<Action Elements> ::= <Action Element> ';'
+                    | <Action Element>	<Action Elements>
+
+<Action Element> ::= <Statement>
+                   | <Function Declaration>
+				   
+<Statement> ::= <Block>
+              | <Variable Statement>
+              | <Empty Statement>
+              | <If Statement>
+              | <If Else Statement>
+              | <Iteration Statement>
+              | <Return Statement>
+              | <Expression> 
+
+<Function Declaration> ::= 'function' Identifier '(' <Formal Parameter List> ')' '{' <Function Body> '}'
+                         | 'function' Identifier '(' ')' '{' <Function Body> '}'
+
+<Function Expression> ::= 'function' '(' ')' '{' <Function Body> '}'
+                        | 'function' '(' <Formal Parameter List> ')' '{' <Function Body> '}'
+
+
+<Formal Parameter List> ::= Identifier
+                          | <Formal Parameter List> ',' Identifier
+
+<Function Body> ::= <Action Elements>
+                  | 
+
+<Block > ::= '{' '}'
+           | '{' <Statement List> '}'
+
+<Statement List> ::= <Statement>
+                   | <Statement List> <Statement>
+
+<Variable Statement> ::= var <Variable Declaration List> ';'
+<Variable Declaration List> ::= <Variable Declaration>
+                              | <Variable Declaration List> ',' <Variable Declaration>
+
+<Variable Declaration> ::= Identifier
+                         | Identifier <Initializer>
+
+<Initializer> ::= '=' <Assignment Expression>
+
+<Empty Statement> ::= ';'
+
+<If Statement> ::= 'if' '(' <Expression> ')' <Statement> 
+<If Else Statement> ::= 'if' '(' <Expression> ')' <Statement> 'else' <Statement>
+
+<Iteration Statement> ::= 'do' <Statement> 'while' '(' <Expression> ')' ';'
+                        | 'while' '(' <Expression> ')' <Statement> 
+                        | 'for' '(' <Expression> ';' <Expression> ';' <Expression> ')' <Statement> 
+                        | 'for' '(' 'var' <Variable Declaration List> ';' <Expression> ';' <Expression> ')' <Statement> 
+                        | 'for' '(' <Left Hand Side Expression> in <Expression> ')' <Statement> 
+                        | 'for' '(' 'var' <Variable Declaration> in <Expression> ')' <Statement> 
+
+<Return Statement> ::= 'return' ';'
+                       | 'return' <Expression> ';'
+
+<Expression> ::= <Assignment Expression>
+               | <Expression> ',' <Assignment Expression>
+
+<Assignment Expression> ::= <Conditional Expression>
+                          | <Left Hand Side Expression> '=' <Assignment Expression> 
+
+<Conditional Expression> ::= <Logical Or Expression> 
+                           | <Logical Or Expression> '?' <Assignment Expression> ':' <Assignment Expression>
+
+<Logical Or Expression> ::= <Logical And Expression>
+                          | <Logical Or Expression> '||' <Logical And Expression>
+
+<Logical And Expression> ::= <Equality Expression>
+                           | <Logical And Expression> '&&' <Equality Expression>
+
+<Equality Expression> ::= <Relational Expression>
+                        | <Equality Expression> '==' <Relational Expression>
+                        | <Equality Expression> '!=' <Relational Expression>
+                        | <Equality Expression> '===' <Relational Expression>
+                        | <Equality Expression> '!==' <Relational Expression>
+
+<Relational Expression>::= <Shift Expression> 
+                         | <Relational Expression> '<' <Additive Expression> 
+                         | <Relational Expression> '>' <Additive Expression> 
+                         | <Relational Expression> '<=' <Additive Expression> 
+                         | <Relational Expression> '>=' <Additive Expression> 
+
+<Additive Expression> ::= <Additive Expression>'+'<Multiplicative Expression> 
+                        | <Additive Expression>'-'<Multiplicative Expression>  
+                        | <Multiplicative Expression>
+
+<Multiplicative Expression> ::= <Unary Expression>
+                              | <Unary Expression> '*' <Multiplicative Expression> 
+                              | <Unary Expression> '/' <Multiplicative Expression>                               
+                              | <Unary Expression> '%' <Multiplicative Expression> 
+
+<Unary Expression> ::= <Call Expression>
+                     | '!' <Unary Expression>
+
+<Call Expression> ::= <Member Expression> <Arguments>
+                    | <Call Expression> '.' Identifier
+
+<Member Expression > ::= <Primary Expression>
+                       | <Function Expression>
+                       | <Member Expression> '.' Identifier
+
+<Primary Expression> ::= 'this'
+                       | Identifier
+                       | <Literal> 
+                       | '(' <Expression> ')'
+
+<Literal> ::= <Null Literal>
+            | <Boolean Literal>
+            | <Numeric Literal>
+            | StringLiteral
+
+<Null Literal> ::= null
+
+<Boolean Literal> ::= 'true'
+                    | 'false'
+
+<Numeric Literal> ::= DecimalLiteral
+                    | HexIntegerLiteral
+
+DecimalLiteral= {Non Zero Digits}+ '.' {Digit}*
+
+IntegerLiteral= {Non Zero Digits}+ {Digit}*
+
+Identifier    = {ID Head}{ID Tail}*
+
+StringLiteral = '"' ( {String Chars1} | '\' {Printable} )* '"' | '' ( {String Chars2} | '\' {Printable} )* ''
+
+{ID Head} = {Letter} + [_] + [$]
+{ID Tail} = {Alphanumeric} + [_] + [$]
+{String Chars1} = {Printable} + {HT} - ["\] 
+{String Chars2} = {Printable} + {HT} - [\''] 
+{Non Terminator} = {String Chars1} - {CR} - {LF}
+{Non Zero Digits}={Digit}-[0]
+
+Comment Start = '/*'
+Comment End   = '*/'
+Comment Line  = '//'

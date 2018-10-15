@@ -1,0 +1,6 @@
+<ldap_routing xmlns="http://ldapv3_routing.org">
+  <description>
+	Network element's instance name for each internet service route.
+  </description>
+  <route reg_exp_key="ldap_op_route" ne_name="ldap_ne_name"/>
+</ldap_routing>

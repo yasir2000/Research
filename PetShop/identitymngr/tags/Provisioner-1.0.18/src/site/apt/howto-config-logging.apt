@@ -1,0 +1,136 @@
+	------
+	Running Provisioner
+	------
+	Gonzalo Espert
+	------
+	Nov 17, 2007
+
+
+How to configure Provisioner's logging
+
+  This section gives instructions on how to clean up the log files, such as deleting 
+  those no longer required, and how to change log levels. 
+
+* Cleaning up log files 
+
+  To save disk space, you can regularly clean up log files by storing the contents of the files in a backup directory and compressing the files periodically (e. g. once per day). 
+
+  You can save log files with the following command: 
+
+  <<<user@server:~$ cat Provisioner.log.? > backup_logs/Provisioner.log.YYYYMMDD>>>
+
+  To compress, use the following command: 
+
+  <<<user@server:~$ gzip backup_logs/Provisioner.log.YYYYMMDD>>>
+
+* Deleting backups of log files 
+
+  You can delete backups of log files which you don't need any more (for example when they are over two weeks old), or once you have saved them to a backup medium. 
+
+  To delete backups of log files, use the following command: 
+
+  <<<user@server:~$ rm backup_logs/Provisioner.log.YYYYMMDD>>>
+
+* Log levels 
+
+  For its logging the Provisioner system uses a tool called Log4J. One of the main advantages of this tool is the ability to enable and disable certain logs, while others will remain unchanged. 
+
+  Log4J has five default priority levels for log messages: 
+
+  <<DEBUG>>: Used to write debugging information. This log should not be activated when the application is in production. 
+  
+  <<INFO>>: Used for messages similar to "verbose" mode in other applications. 
+  
+  <<WARN>>: Used for alerts concerning the system's consistency, but not affecting its correct operation. 
+  
+  <<ERROR>>: Used for error messages from the application which you want to keep. These events have an affect on the program but don't stop it from continuing to operate, such as an incorrect configuration parameter that triggers the use of a default parameter. 
+  
+  <<FATAL>>: Used for critical system messages. Usually, after saving the message the program will abort. 
+
+  In addition to these log levels, there are two extra levels that are used only in the configuration file: 
+
+  <<ALL>>: This is the lowest level possible. All logs are enabled. 
+  
+  <<OFF>>: This is the highest level possible. All logs are disabled. 
+
+  Another advantage of this tool is that it allows log messages to be printed in several destinations; in Log4J the output destination is called an "appender". 
+
+  Some of the appenders available are: 
+
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<Name>>                    | <<Description>>                                                                                                                    |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<ConsoleAppender>>         | This appender displays the log on the console.                                                                                     |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<FileAppender>>      	  | This appender redirects the log messages to a file.                                                                                |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<RollingFileAppender>> 	  | This appender redirects the log messages to a file, and you can define rotation policies so that the file won't grow indefinitely. |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<DailyRollingFileAppender>>| This appender redirects the log messages to a file, and you can define rotation policies depending on the date.                    |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<SocketAppender>> 	      | This appender redirects the log messages to a remote log server.                                                                   |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<SMTPAppender>> 	          | This appender sends an email with the log messages; it's typically used for the FATAL and ERROR levels.                            |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<JDBCAppender>> 	          | This appender redirects the log messages to a database.                                                                            |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<SyslogAppender>> 	      | This appender redirects the log messages to a remote syslog daemon of an Unix operating system.                                    |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<NTEventLogAppender>> 	  | This appender redirects the log messages to the event logs of an NT system.                                                        |
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| <<JMSAppender>> 	          | This appender serializes the events and sends them in an JMS message of type ObjectMessage.                                        | 
+*-----------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+
+  To change the format of messages sent to the log file, this tool supports several layouts that can be configured, as well as the destination and log levels, in a configuration file called log4j.properties located in the config directory. 
+
+  This is a sample configuration file: 
+
++-----------------------------------------------------------------------------+
+log4j.rootLogger=INFO, stdout, logfile 
+
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender 
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout 
+log4j.appender.stdout.layout.ConversionPattern=%d %p [%c] - <%m>%n 
+
+log4j.appender.logfile=org.apache.log4j.RollingFileAppender 
+log4j.appender.logfile.File=Provisioner.log 
+log4j.appender.logfile.MaxFileSize=512KB 
+# Keep three backup files. 
+log4j.appender.logfile.MaxBackupIndex=50 
+# Pattern to output: date priority [category] - message 
+log4j.appender.logfile.layout=org.apache.log4j.PatternLayout 
+log4j.appender.logfile.layout.ConversionPattern=%d %p [%c] - %m%n 
++-----------------------------------------------------------------------------+
+
+  This would be the log output with the previous configuration file: 
+
++----------------------------------------------------------------------------------------------------------------+
+2007-10-13 22:41:58,381 INFO [Provisioner] - Provisioner Version: 1.0.17
+2007-10-13 22:41:58,385 INFO [Provisioner] - Pooling for pending operations each 60 seconds.
+2007-10-13 22:41:58,397 INFO [config.Configuration] - Loading system configuration...........
+2007-10-13 22:41:58,397 INFO [config.Configuration] - Loading data base access configuration...........
+2007-10-13 22:41:58,664 INFO [config.Configuration] - Loading operation types...........
+2007-10-13 22:41:58,674 INFO [config.Rule] - Configuring requests for ATEML operation.
+2007-10-13 22:41:58,686 INFO [config.Rule] - Configuring requests for BAEML operation.
+2007-10-13 22:41:58,694 INFO [config.Rule] - Configuring requests for ATINT operation.
+2007-10-13 22:41:58,705 INFO [config.Rule] - Configuring requests for MOINT operation.
+2007-10-13 22:41:58,712 INFO [config.Rule] - Configuring requests for BAINT operation.
+2007-10-13 22:41:58,723 INFO [config.Rule] - Configuring requests for ATESP operation.
+2007-10-13 22:41:58,731 INFO [config.Rule] - Configuring requests for ATMOD operation.
+2007-10-13 22:41:58,737 INFO [config.Rule] - Configuring requests for BAMOD operation.
+2007-10-13 22:41:58,747 INFO [config.Rule] - Configuring requests for MOPCS operation.
+2007-10-13 22:41:58,754 INFO [config.Rule] - Configuring requests for ATLIN operation.
+2007-10-13 22:41:58,760 INFO [config.Rule] - Configuring requests for BALIN operation.
+2007-10-13 22:41:58,767 INFO [config.Rule] - Configuring requests for DSSUP operation.
+2007-10-13 22:41:58,773 INFO [config.Rule] - Configuring requests for HBSUP operation.
+2007-10-13 22:41:58,788 INFO [config.Rule] - Configuring requests for ATVMA operation.
+2007-10-13 22:41:58,803 INFO [config.Rule] - Configuring requests for BAVMA operation.
+2007-10-13 22:41:58,809 INFO [config.Rule] - Configuring requests for SCRIP operation.
+2007-10-13 22:41:58,814 INFO [config.Configuration] - Loading service routing logic configuration
+2007-10-13 22:41:58,817 INFO [config.Configuration] - Loading routing criteria for service: Internet
+2007-10-13 22:41:58,819 INFO [config.Service] - Loading routing info for service Internet ......
++-----------------------------------------------------------------------------------------------------------------+
+
+  To see all the options for levels, destinations, and formats of logging in detail see the {{{http://jakarta.apache.org/log4j/docs/manual.html}Log4J manual}}. 
+
+  <<Note: If you change the standard logging configuration you may have to modify some of the commands for the cleaning and deletion of log files described here accordingly.>>

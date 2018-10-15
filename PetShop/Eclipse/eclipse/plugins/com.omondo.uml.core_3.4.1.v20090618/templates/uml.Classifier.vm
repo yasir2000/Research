@@ -1,0 +1,38 @@
+#set( $this = $JavaTool.getHelper($uml) )
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+ */
+$JavaTool.modifiers($this)#if ( $this.isClass() )
+ class #else
+ interface #end
+${this.name}#if ( $this.isClass() )
+#if( ${this.superclass})
+ extends $JavaTool.name(${this.superclass})#end
+#if( ${this.superInterfaces.size()} > 0 )
+ implements $JavaTool.types($this.superInterfaces, ", ")#end
+#else
+#if( ${this.superInterfaces.size()} > 0 )
+ extends $JavaTool.types($this.superInterfaces, ", ")#end
+#end
+{
+## methods
+#foreach( $operation in ${this.operations} )
+$operation.getCode("	")
+#end
+## attribute
+#foreach( $property in ${this.properties} )
+$property.getCode("	")
+#end
+## classes
+#foreach( $innerClass in ${this.classifiers} )
+$innerClass.getCode("	")
+#end
+}

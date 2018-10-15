@@ -1,0 +1,137 @@
+<project name="bpel-deployment">
+	<property name="clove.neptune.bpeldeployment.workspaceDir" value="." />
+	<property name="clove.neptune.bpeldeployment.workDir" value="target" />
+	<property name="clove.neptune.bpeldeployment.pkgName" value="bp" />
+	<property name="clove.neptune.bpeldeployment.srcPkg" location="source/hello.zip" />
+
+	<!--
+	<tempfile property="clove.neptune.bpeldeployment.pkgDir" destdir="${clove.neptune.bpeldeployment.workDir}" prefix="pkg"/>
+	-->
+	<property name="clove.neptune.bpeldeployment.pkgDir" value="${clove.neptune.bpeldeployment.workDir}/deployment" />
+
+	<!-- ================================= 
+          target: create deployment package template              
+         ================================= -->
+	<target name="deployment-package-template" description="creates deployment package template">
+		<mkdir dir="${clove.neptune.bpeldeployment.pkgDir}" />
+		<delete includeemptydirs="true">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}" includes="**/*" />
+		</delete>
+		<unzip src="${clove.neptune.bpeldeployment.srcPkg}" dest="${clove.neptune.bpeldeployment.pkgDir}">
+		</unzip>
+	</target>
+
+	<!-- ================================= 
+          target: sun-bpel-deployment              
+         ================================= -->
+	<target name="sun-bpel-deployment" depends="deployment-package-template" description="sun-bpel-deployment">
+		<!--
+		sun-bpel-engine
+		-->
+		<mkdir dir="${clove.neptune.bpeldeployment.pkgDir}/sun-bpel-engine/META-INF" />
+		<xslt style="${clove.neptune.bpeldeployment.workspaceDir}/xsl/jbi/sun-bpel-engine.xslt" basedir="${clove.neptune.bpeldeployment.pkgDir}" destdir="${clove.neptune.bpeldeployment.pkgDir}/sun-bpel-engine/META-INF" extension=".jbi.xml" filenameparameter="fileName">
+			<factory name="net.sf.saxon.TransformerFactoryImpl">
+				<attribute name="http://saxon.sf.net/feature/allow-external-functions" value="true" />
+			</factory>
+			<include name="*.bpel" />
+			<param name="packageDir" expression="${clove.neptune.bpeldeployment.pkgDir}" />
+		</xslt>
+		<!-- rename file to jbi.xml: -->
+		<move tofile="${clove.neptune.bpeldeployment.pkgDir}/sun-bpel-engine/META-INF/jbi.xml">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}/sun-bpel-engine/META-INF">
+				<include name="*.jbi.xml" />
+			</fileset>
+		</move>
+		<copy todir="${clove.neptune.bpeldeployment.pkgDir}/sun-bpel-engine">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}">
+				<exclude name="sun-bpel-engine/**" />
+				<exclude name="sun-http-binding/**" />
+				<exclude name="META-INF/**" />
+			</fileset>
+		</copy>
+		<!--
+		sun-http-binding
+		-->
+		<mkdir dir="${clove.neptune.bpeldeployment.pkgDir}/sun-http-binding/META-INF" />
+		<xslt style="${clove.neptune.bpeldeployment.workspaceDir}/xsl/jbi/sun-http-binding.xslt" basedir="${clove.neptune.bpeldeployment.pkgDir}" destdir="${clove.neptune.bpeldeployment.pkgDir}/sun-http-binding/META-INF" extension=".jbi.xml" filenameparameter="fileName" filedirparameter="dirName">
+			<factory name="net.sf.saxon.TransformerFactoryImpl">
+				<attribute name="http://saxon.sf.net/feature/allow-external-functions" value="true" />
+			</factory>
+			<include name="*.bpel" />
+			<param name="packageDir" expression="${clove.neptune.bpeldeployment.pkgDir}" />
+		</xslt>
+		<!-- rename file to jbi.xml: -->
+		<move tofile="${clove.neptune.bpeldeployment.pkgDir}/sun-http-binding/META-INF/jbi.xml">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}/sun-http-binding/META-INF">
+				<include name="*.jbi.xml" />
+			</fileset>
+		</move>
+		<copy todir="${clove.neptune.bpeldeployment.pkgDir}/sun-http-binding">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}">
+				<exclude name="sun-bpel-engine/**" />
+				<exclude name="sun-http-binding/**" />
+				<exclude name="META-INF/**" />
+				<exclude name="**/*.bpel" />
+			</fileset>
+		</copy>
+		<!--
+			Service assembly:
+		-->
+		<mkdir dir="${clove.neptune.bpeldeployment.pkgDir}/META-INF" />
+		<xslt style="${clove.neptune.bpeldeployment.workspaceDir}/xsl/jbi/service-assembly.xslt" basedir="${clove.neptune.bpeldeployment.pkgDir}" destdir="${clove.neptune.bpeldeployment.pkgDir}/META-INF" extension=".jbi.xml" filenameparameter="fileName">
+			<factory name="net.sf.saxon.TransformerFactoryImpl">
+				<attribute name="http://saxon.sf.net/feature/allow-external-functions" value="true" />
+			</factory>
+			<include name="*.bpel" />
+			<param name="packageDir" expression="${clove.neptune.bpeldeployment.pkgDir}" />
+		</xslt>
+		<!-- rename file to jbi.xml: -->
+		<move tofile="${clove.neptune.bpeldeployment.pkgDir}/META-INF/jbi.xml">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}/META-INF">
+				<include name="*.jbi.xml" />
+			</fileset>
+		</move>
+		<!--
+		 Packaging:
+		 -->
+		<jar destfile="${clove.neptune.bpeldeployment.pkgDir}/sun-bpel-engine.jar" basedir="${clove.neptune.bpeldeployment.pkgDir}/sun-bpel-engine"/>
+		<jar destfile="${clove.neptune.bpeldeployment.pkgDir}/sun-http-binding.jar" basedir="${clove.neptune.bpeldeployment.pkgDir}/sun-http-binding"/>
+
+		<zip destfile="${clove.neptune.bpeldeployment.pkgDir}/${clove.neptune.bpeldeployment.pkgName}-jbi.zip">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}">
+				<include name="META-INF/**" />
+				<include name="sun-bpel-engine.jar" />
+				<include name="sun-http-binding.jar" />
+			</fileset>
+		</zip>
+		<delete includeemptydirs="true">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}" excludes="${clove.neptune.bpeldeployment.pkgName}-jbi.zip" />
+		</delete>
+	</target>
+
+	<!-- ================================= 
+          target: ode-deployment              
+         ================================= -->
+	<target name="ode-deployment" depends="deployment-package-template" description="ode-deployment">
+		<xslt style="${clove.neptune.bpeldeployment.workspaceDir}/xsl/ode/ode-deploy.xslt" basedir="${clove.neptune.bpeldeployment.pkgDir}" destdir="${clove.neptune.bpeldeployment.pkgDir}" extension=".deploy.xml" filenameparameter="fileName">
+			<factory name="net.sf.saxon.TransformerFactoryImpl">
+				<attribute name="http://saxon.sf.net/feature/allow-external-functions" value="true" />
+			</factory>
+			<include name="*.bpel" />
+			<param name="packageDir" expression="${clove.neptune.bpeldeployment.pkgDir}" />
+		</xslt>
+		<!-- rename file to deploy.xml: -->
+		<move tofile="${clove.neptune.bpeldeployment.pkgDir}/deploy.xml">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}/">
+				<include name="*.deploy.xml" />
+			</fileset>
+		</move>
+		<!--
+		 Packaging:
+		 -->
+		<zip destfile="${clove.neptune.bpeldeployment.pkgDir}/${clove.neptune.bpeldeployment.pkgName}-ode.zip" basedir="${clove.neptune.bpeldeployment.pkgDir}"/>
+		<delete includeemptydirs="true">
+			<fileset dir="${clove.neptune.bpeldeployment.pkgDir}" excludes="${clove.neptune.bpeldeployment.pkgName}-ode.zip" />
+		</delete>
+	</target>
+</project>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model Plug-in
+Bundle-SymbolicName: com.omondo.uml.model
+Bundle-Version: 3.4.1.v20090618
+Bundle-Activator: com.omondo.uml.model.Activator
+Bundle-Vendor: Omondo ©
+Require-Bundle:  org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jdt.core,
+ org.eclipse.core.boot,
+ org.eclipse.uml2.uml
+Eclipse-LazyStart: true
+Export-Package: com.omondo.uml.model,
+ com.omondo.uml.model.templates,
+ com.omondo.uml.model.templates.tools
+Bundle-ClassPath: eclipseuml.model.jar

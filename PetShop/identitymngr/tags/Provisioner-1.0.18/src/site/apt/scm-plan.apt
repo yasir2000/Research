@@ -1,0 +1,125 @@
+	------
+	Provisioner's SCM plan
+	------
+	Gonzalo Espert
+	------
+	Jan 4, 2008
+
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+Provisioner's Software Configuration Management Plan
+
+* Introduction
+
+  This software configuration management plan will define the practices to be 
+  used for all the deliverables of the Provisioner project helping project team 
+  to work in parallel activities without compromising Provisioner's quality. 
+  Those specific deliverables are:
+
+  * Provisioner source code
+  
+  * Provisioner sample configuration files
+  
+  * Provisioner web-site contents
+  
+* Version Control tool
+
+  This project uses {{{http://subversion.tigris.org/}Subversion}}to manage its source code, 
+  sample configuration files and
+  web-site contents. Instructions on how to connect to Subversion can be found 
+  {{{source-repository.html}here}}. General information regarding Subversion tool 
+  can be found {{{http://svnbook.red-bean.com/}here}}. 
+  
+* Configuration Managers
+
+*------------------------------+----------------+
+| <<Role>>                     | <<Name>>       |  
+*------------------------------+----------------+
+| Configuration Manager        | Gonzalo Espert |
+*------------------------------+----------------+
+| Configuration Manager Backup | Open position  |
+*------------------------------+----------------+
+
+* Change Control Board
+
+  Is the forum by which changes are approved or rejected. It manage, control and track the changes in 
+  source code. The purpose is to manage reported issues into maintenance releases or a set of releases.  
+  They ensure that issues are prioritized and addressed in the correct version(s). They address any 
+  requested change or defect to meet users' community needs. Configuration Control Board meetings 
+  will be performed on demand as per project´s needs.
+  
+*------------------------------+----------------+----------------+
+| <<Name>>                     | <<Role>>       | <<Backup>>     |  
+*------------------------------+----------------+----------------+
+| Gonzalo Espert               | Chair          | Gordon Pearson |
+*------------------------------+----------------+----------------+
+| Gordon Pearson               | Developer      |                |
+*------------------------------+----------------+----------------+
+
+* Branching Pattern
+
+  Maintaining a continually integrated system is our goal from a configuration 
+  management perspective. To accomplish this, Provisioner project uses a 
+  central code-line that acts as a basis for sub-branches and their resultant 
+  merges. We call this central code-line "Main-line". Doing main-line development 
+  means that all ongoing development activities end up on a single code-line 
+  at some time. Thus, the main-line is a work in progress and will not always 
+  be release quality.
+  
+  To prevent chaos on the main-line all developers are encouraged to set up
+  their private work-spaces where they can do private system builds, unit 
+  tests, and smoke tests.
+  
+* Tags and Branches
+
+  Each time an official release is performed a new tag will be created. This tag will 
+  serve as a snapshot for the state of the source code at that particular moment in time.
+  The naming convention for those tags will be: <<<Provisioner-mayor.minor.revision>>>
+  , for example the tag for version 1.0.18 will be <<<Provisioner-1.0.18>>>. Source 
+  code repository will look like this: <<<identitymngr/tags/Provisioner-1.0.18/>>>.
+  To be able to do bug fixing for a particular release, a new branch will be created
+  for each official release. The naming convention will be the same as the one for tags.
+  Source code repository will look like this: 
+  <<<identitymngr/branches/Provisioner-1.0.18/>>>. Before each release, the
+  configuration manager merges all the fixings to the main-line so all improvements
+  make it to the release.  
+
+* Coding procedure
+
+  Avoid getting out of date by doing fine grained tasks, checking in
+  your changes after each one, and also updating your work-space before 
+  starting a new task. You are encouraged to establish a discipline of 
+  creating a brand new work-space periodically to avoid problems that stray 
+  files might cause, and preventing the “works for me” syndrome.
+
+  To do your coding follow this procedure:
+
+  [[1]] Get up to date. Update the source tree from the code-line that you are 
+  working on so that you are working with the current code and build.
+  
+  [[2]] Make your changes. Edit the components that you need to change.
+  
+  [[3]] Do a private system build to update any derived objects.
+  
+  [[4]] Test your change with a unit test.
+  
+  [[5]] Update the work-space to the latest versions of all other components 
+  by getting the latest versions of all components that you have not changed.
+  
+  [[6]] Rebuild. Run a smoke test to make sure that you have not broken 
+  anything.

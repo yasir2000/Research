@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bpws:process xmlns="petstore"  xmlns:ag="http://www.activegrid.com/ag.xsd"  xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process"  xmlns:d2.xsd="urn:petstore:db:d2.xsd"  xmlns:p2.xsd="urn:petstore:db:p2.xsd"  xmlns:session="petstore.wsdl"  xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="petstore" ag:version="10">
+  <bpws:flow>
+    <bpws:receive ag:editorBounds="[30,18,123.0,65.0]" portType="begin" operation="default" ag:actionType="begin">
+      <bpws:invoke partnerLink="HomePagexform" portType="HomePage" operation="default"/>
+    </bpws:receive>
+    <bpws:pick ag:editorBounds="[30.0,120.0,123.0,65.0]" ag:xformName="HomePagexform/HomePage">
+      <bpws:onMessage partnerLink="HomePagexform" portType="HomePage" operation="SelectCategory" ag:actionType="goto">
+        <bpws:invoke partnerLink="Categoryxform" portType="Category" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[395.0,243.0,105.0,137.0]" ag:xformName="Cartxform/Cart">
+      <bpws:onMessage partnerLink="Cartxform" portType="Cart" operation="SelectItem" ag:actionType="goto">
+        <bpws:invoke partnerLink="Itemxform" portType="Item" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="Cartxform" portType="Cart" operation="RemoveItem" ag:actionType="delete">
+        <bpws:variables ag:editorBounds="[30,30,200,51]">
+          <bpws:variable name="lineitem" messageType="session:LineItemMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,111,400,26]" to="lineitem/lineitem">message/sys/selected</ag:set>
+        <bpws:invoke ag:editorBounds="[30,197,400,26]" partnerLink="dataservice" portType="default" operation="delete" inputVariable="lineitem"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="Cartxform" portType="Cart" operation="UpdateCart" ag:actionType="update"/>
+      <bpws:onMessage partnerLink="Cartxform" portType="Cart" operation="GotoCheckOut" ag:actionType="goto">
+        <bpws:invoke ag:editorBounds="[30,30,200,26]" partnerLink="CheckOutxform" portType="CheckOut" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[570.0,267.0,105.0,65.0]" ag:xformName="CheckOutxform/CheckOut">
+      <bpws:onMessage partnerLink="CheckOutxform" portType="CheckOut" operation="InsertOrder">
+        <bpws:variables ag:editorBounds="[30,30,200,51]">
+          <bpws:variable name="currentorder" messageType="session:CheckOutMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,111,400,26]" to="currentorder/currentorder">message/sys/selected</ag:set>
+        <ag:set editorBounds="[30,167,400,26]" to="currentorder/states">dataservice:getObjects(&quot;petstore:state&quot;)</ag:set>
+        <bpws:invoke ag:editorBounds="[30.0,262.0,400,26]" partnerLink="dataservice" portType="default" operation="commit"/>
+        <ag:set editorBounds="[30.0,347.0,400,26]" to="session/sessioninfo/orderid">null()</ag:set>
+        <bpws:invoke ag:editorBounds="[30.0,447.0,400,26]" partnerLink="OrderCompletexform" portType="OrderComplete" operation="default" inputVariable="message"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[570.0,365.0,105.0,41.0]" ag:xformName="OrderCompletexform/OrderComplete"/>
+    <bpws:pick ag:editorBounds="[395.0,160.0,105.0,65.0]" ag:xformName="Itemxform/Item">
+      <bpws:onMessage partnerLink="Itemxform" portType="Item" operation="AddToCart">
+        <bpws:variables ag:editorBounds="[30,30,200,51]">
+          <bpws:variable name="itemMsg" messageType="session:AddToCartRequestMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,111,400,26]" to="itemMsg/item">message/item</ag:set>
+        <bpws:invoke ag:editorBounds="[30,210,200,26]" partnerLink="petstore" portType="PetstorePortType" operation="addToCart" inputVariable="itemMsg"/>
+        <bpws:invoke ag:editorBounds="[35,272,200,26]" partnerLink="Cartxform" portType="Cart" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[220.0,308.0,105.0,89.0]" ag:xformName="Searchxform/Search">
+      <bpws:onMessage partnerLink="Searchxform" portType="Search" operation="SelectItem" ag:actionType="goto">
+        <bpws:invoke ag:editorBounds="[30,30,400,26]" partnerLink="Itemxform" portType="Item" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="Searchxform" portType="Search" operation="AddToCart">
+        <bpws:variables ag:editorBounds="[30,30,200,51]">
+          <bpws:variable name="itemMsg" messageType="session:AddToCartRequestMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,111,198,26]" to="itemMsg/item">message/sys/selected</ag:set>
+        <bpws:invoke ag:editorBounds="[30,202,200,26]" partnerLink="petstore" portType="PetstorePortType" operation="addToCart" inputVariable="itemMsg"/>
+        <bpws:invoke ag:editorBounds="[30,267,200,26]" partnerLink="Cartxform" portType="Cart" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[220.0,98.0,105.0,65.0]" ag:xformName="Categoryxform/Category">
+      <bpws:onMessage partnerLink="Categoryxform" portType="Category" operation="SelectProduct" ag:actionType="goto">
+        <bpws:invoke partnerLink="Productxform" portType="Product" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[220.0,181.0,105.0,89.0]" ag:xformName="Productxform/Product">
+      <bpws:onMessage partnerLink="Productxform" portType="Product" operation="SelectItem" ag:actionType="goto">
+        <bpws:invoke partnerLink="Itemxform" portType="Item" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="Productxform" portType="Product" operation="AddToCart">
+        <bpws:variables ag:editorBounds="[30,30,200,51]">
+          <bpws:variable name="itemMsg" messageType="session:AddToCartRequestMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[25.0,117.0,400,26]" to="itemMsg/item">message/sys/selected</ag:set>
+        <bpws:invoke ag:editorBounds="[40.0,197.0,200,26]" partnerLink="petstore" portType="PetstorePortType" operation="addToCart" inputVariable="itemMsg"/>
+        <bpws:invoke ag:editorBounds="[40.0,267.0,200,26]" partnerLink="Cartxform" portType="Cart" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[220.0,471.0,105.0,89.0]" ag:xformName="SignOnxform/SignOn">
+      <bpws:onMessage partnerLink="SignOnxform" portType="SignOn" operation="CreateUser">
+        <bpws:variables ag:editorBounds="[130,30,200,151]">
+          <bpws:variable name="registerRequestMsg" messageType="session:RegisterRequestMsg"/>
+          <bpws:variable name="registerResponseMsg" messageType="session:RegisterResponseMsg"/>
+          <bpws:variable name="initializeNewAccountRequestMsg" messageType="session:InitializeNewAccountRequestMsg"/>
+          <bpws:variable name="initializeNewAccountResponseMsg" messageType="session:InitializeNewAccountResponseMsg"/>
+          <bpws:variable name="newAccountMsg" messageType="session:accountInsertMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,211,400,26]" to="registerRequestMsg/newcustomer">message/newcustomer</ag:set>
+        <ag:set editorBounds="[30,257,400,26]" to="initializeNewAccountRequestMsg/account/userid">message/newcustomer/userid</ag:set>
+        <bpws:invoke ag:editorBounds="[27.75,302,404.5,26]" partnerLink="petstore" portType="PetstorePortType" operation="register" inputVariable="registerRequestMsg" outputVariable="registerResponseMsg"/>
+        <bpws:invoke ag:editorBounds="[31.25,342,397.5,26]" partnerLink="petstore" portType="PetstorePortType" operation="initializeNewAccount" inputVariable="initializeNewAccountRequestMsg" outputVariable="initializeNewAccountResponseMsg"/>
+        <ag:set editorBounds="[30,392,400,26]" to="newAccountMsg/account">initializeNewAccountResponseMsg/account</ag:set>
+        <ag:set editorBounds="[30,442,400,26]" to="newAccountMsg/newuserinfo/isnewuser">true()</ag:set>
+        <bpws:invoke ag:editorBounds="[51,502,358,26]" partnerLink="accountInsertxform" portType="accountInsert" operation="default" inputVariable="newAccountMsg"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="SignOnxform" portType="SignOn" operation="SignOn">
+        <bpws:variables ag:editorBounds="[128,11,200,101]">
+          <bpws:variable name="signonRequestMsg" messageType="session:SignonRequestMsg"/>
+          <bpws:variable name="signonResponseMsg" messageType="session:SignonResponseMsg"/>
+          <bpws:variable name="selectAccountMsg" ag:editorBounds="[30,248,400,26]" messageType="session:accountDetailMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,136,400,26]" to="signonRequestMsg/signoninfo">message/signoninfo</ag:set>
+        <bpws:invoke ag:editorBounds="[30,192,400,26]" partnerLink="petstore" portType="PetstorePortType" operation="signon" inputVariable="signonRequestMsg" outputVariable="signonResponseMsg"/>
+        <ag:set editorBounds="[30,272,400,26]" to="selectAccountMsg/account">dataservice:getObject(&quot;petstore:account&quot;, &quot;[userid = ${message/signoninfo/userid}]&quot;)</ag:set>
+        <bpws:invoke ag:editorBounds="[30,347,400,26]" partnerLink="accountDetailxform" portType="accountDetail" operation="default" inputVariable="selectAccountMsg"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[30.0,207.0,124.0,305.0]" ag:xformName="PageFramexform/PageFrame">
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="GotoHomePage" ag:actionType="goto">
+        <bpws:invoke partnerLink="HomePagexform" portType="HomePage" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="SelectProduct" ag:actionType="goto">
+        <bpws:invoke partnerLink="Productxform" portType="Product" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="GotoCart" ag:actionType="goto">
+        <bpws:invoke partnerLink="Cartxform" portType="Cart" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="SignOn" ag:actionType="goto">
+        <bpws:invoke partnerLink="SignOnxform" portType="SignOn" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="ChooseEnglish" ag:actionType="goto"/>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="ChooseJapanese" ag:actionType="goto"/>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="ChooseChinese" ag:actionType="goto"/>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="SelectCategory" ag:actionType="goto">
+        <bpws:invoke ag:editorBounds="[30,30,200,26]" partnerLink="Categoryxform" portType="Category" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="GotoCurrentAccount">
+        <bpws:variables ag:editorBounds="[136,32,200,51]">
+          <bpws:variable name="selectAccountMsg" messageType="session:accountDetailMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[35,157,400,26]" to="selectAccountMsg/account">dataservice:getObject(&quot;petstore:account&quot;, &quot;[userid = ${message/sys/userid}]&quot;)</ag:set>
+        <bpws:invoke ag:editorBounds="[35,222,400,26]" partnerLink="accountDetailxform" portType="accountDetail" operation="default" inputVariable="selectAccountMsg"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="SignOff" variable="message">
+        <bpws:variables ag:editorBounds="[138,39,200,51]">
+          <bpws:variable name="user" ag:editorBounds="[30,86,400,26]" messageType="session:SignedOffMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[40,105,400,26]" to="user/users">message/sys/userid</ag:set>
+        <ag:set editorBounds="[40,162,400,26]" to="message/sys/userid">null()</ag:set>
+        <bpws:invoke ag:editorBounds="[40,222,400,26]" partnerLink="SignedOffxform" portType="SignedOff" operation="default" inputVariable="user"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="PageFramexform" portType="PageFrame" operation="Search">
+        <bpws:variables ag:editorBounds="[30,30,200,51]">
+          <bpws:variable name="query" ag:editorBounds="[30,111,400,26]" type="xs:string"/>
+          <bpws:variable name="searchMsg" messageType="session:SearchMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,162,400,26]" to="query">&quot;%&quot;  + message/search/query + &quot;%&quot;</ag:set>
+        <ag:set editorBounds="[30,227,400,26]" to="searchMsg/items">dataservice:getObjects(&quot;petstore:item&quot;, &quot;[attr1 like ${query}]&quot;, &quot;&quot;, 2)</ag:set>
+        <bpws:invoke ag:editorBounds="[30,287,400,26]" partnerLink="Searchxform" portType="Search" operation="default" inputVariable="searchMsg"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[220.0,578.0,105.0,89.0]" ag:xformName="accountSearchxform/accountSearch">
+      <bpws:onMessage partnerLink="accountSearchxform" portType="accountSearch" operation="accountGotoInsert" ag:actionType="goto">
+        <bpws:invoke ag:editorBounds="[30,30,400,26]" partnerLink="accountInsertxform" portType="accountInsert" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="accountSearchxform" portType="accountSearch" operation="accountQuery" variable="message" ag:actionType="search">
+        <bpws:variables ag:editorBounds="[33,30,394,51]">
+          <bpws:variable name="account" messageType="session:accountListMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,111,400,26]" to="account/account">dataservice:getObjectsByExample(message/account)</ag:set>
+        <bpws:invoke ag:editorBounds="[31,192,398,26]" partnerLink="accountListxform" portType="accountList" operation="default" inputVariable="account"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[395.0,626.0,105.0,137.0]" ag:xformName="accountListxform/accountList">
+      <bpws:onMessage partnerLink="accountListxform" portType="accountList" operation="accountGotoInsert" ag:actionType="goto">
+        <bpws:invoke partnerLink="accountInsertxform" portType="accountInsert" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="accountListxform" portType="accountList" operation="accountDelete" variable="message">
+        <bpws:variables ag:editorBounds="[130,6,200,51]">
+          <bpws:variable name="account" messageType="session:accountListMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,72,400,26]" to="account/account">message/sys/selected</ag:set>
+        <bpws:invoke ag:editorBounds="[30,111,400,26]" partnerLink="dataservice" portType="default" operation="delete" inputVariable="account"/>
+        <bpws:invoke ag:editorBounds="[30,167,400,26]" partnerLink="dataservice" portType="default" operation="save" inputVariable="account"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="accountListxform" portType="accountList" operation="accountGotoSearch" ag:actionType="goto">
+        <bpws:invoke ag:editorBounds="[30,30,400,26]" partnerLink="accountSearchxform" portType="accountSearch" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="accountListxform" portType="accountList" operation="accountSelect">
+        <bpws:variables ag:editorBounds="[129,34,200,51]">
+          <bpws:variable name="selectedAccountMsg" ag:editorBounds="[30,86,400,26]" messageType="session:accountDetailMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[30,111,400,26]" to="selectedAccountMsg/account">message/sys/selected</ag:set>
+        <bpws:invoke ag:editorBounds="[30,162,400,26]" partnerLink="accountDetailxform" portType="accountDetail" operation="default" inputVariable="selectedAccountMsg"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[395.0,519.0,104.0,89.0]" ag:xformName="accountDetailxform/accountDetail">
+      <bpws:onMessage partnerLink="accountDetailxform" portType="accountDetail" operation="accountEdit" ag:actionType="update">
+        <bpws:invoke partnerLink="accountEditxform" portType="accountEdit" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="accountDetailxform" portType="accountDetail" operation="accountGotoList" ag:actionType="goto">
+        <bpws:invoke partnerLink="accountListxform" portType="accountList" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[570.0,543.0,105.0,89.0]" ag:xformName="accountEditxform/accountEdit">
+      <bpws:onMessage partnerLink="accountEditxform" portType="accountEdit" operation="accountUpdate" variable="message" ag:actionType="update">
+        <bpws:invoke partnerLink="dataservice" portType="default" operation="commit"/>
+        <bpws:invoke partnerLink="accountDetailxform" portType="accountDetail" operation="default"/>
+      </bpws:onMessage>
+      <bpws:onMessage partnerLink="accountEditxform" portType="accountEdit" operation="accountGotoList" ag:actionType="goto">
+        <bpws:invoke partnerLink="accountListxform" portType="accountList" operation="default"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[395.0,436.0,105.0,65.0]" ag:xformName="accountInsertxform/accountInsert">
+      <bpws:onMessage partnerLink="accountInsertxform" portType="accountInsert" operation="accountInsert" variable="message">
+        <bpws:variables ag:editorBounds="[129,32,200,51]">
+          <bpws:variable name="account" messageType="session:accountInsertMsg"/>
+        </bpws:variables>
+        <ag:set editorBounds="[122.5,105,215,26]" to="account/account">message/sys/selected</ag:set>
+        <bpws:invoke ag:editorBounds="[130,157,200,26]" partnerLink="dataservice" portType="default" operation="insert" inputVariable="account"/>
+        <bpws:invoke ag:editorBounds="[130,202,200,26]" partnerLink="dataservice" portType="default" operation="save" inputVariable="account"/>
+        <bpws:switch ag:editorBounds="[200,250,60,60]">
+          <bpws:case ag:editorBounds="[30,342,400,26]" condition="message/newuserinfo/isnewuser = true()">
+            <ag:set editorBounds="[30,382,400,26]" to="message/sys/userid">message/account/userid</ag:set>
+          </bpws:case>
+        </bpws:switch>
+        <bpws:invoke ag:editorBounds="[365,267,200,26]" partnerLink="accountDetailxform" portType="accountDetail" operation="default" inputVariable="message"/>
+      </bpws:onMessage>
+    </bpws:pick>
+    <bpws:pick ag:editorBounds="[30.0,530.0,123.0,41.0]" ag:xformName="SignedOffxform/SignedOff"/>
+  </bpws:flow>
+</bpws:process>

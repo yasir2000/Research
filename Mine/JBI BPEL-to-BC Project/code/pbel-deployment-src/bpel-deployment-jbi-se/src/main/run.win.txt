@@ -1,0 +1,18 @@
+@echo off
+if /I "%1" == "help"	goto cmdUsage
+if /I "%1" == ""		goto cmdUsage
+
+@echo on
+java -jar ./lib/${project.artifactId}-${project.version}.jar -Dclove.neptune.bpeldeployment.srcPkg=%1 %2
+@echo off
+goto cmdEnd
+
+:cmdUsage
+echo Usage:
+echo 	run help
+echo 	run srcPkg sun-bpel-deployment^|ode-deployment
+echo where
+echo 		help - print this information
+echo 		sun-bpel-deployment - create deployment package for sun-bpel-engine
+echo 		ode-deployment - create deployment package for ODE
+:cmdEnd

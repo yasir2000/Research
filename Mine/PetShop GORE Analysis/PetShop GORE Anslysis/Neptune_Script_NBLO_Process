@@ -1,0 +1,145 @@
+process processOrder
+{
+	tasks
+	{
+		validateAccount ;
+		if ( ! State . orderID . valid )
+		end ;
+		orderBilling ;
+		orderShipping ( State . orderID ) ;
+
+		//adapted process
+		checkDelivery ;
+		 if ( State . orderID . isUKBased )
+		orderProcess ( State . orderID ) ;
+	}
+}
+task orderBilling with NString orderID
+{
+	requirements
+	{
+		//need data
+		needAddress : require orderID . BillingAddress ;
+		needPostcode : require orderID . BillingPostcode ;
+ 		needBand : require orderID . BillingBand ;
+
+ 		//need to store this data
+		saved : require orderID.BillingSavedToDB ;
+	}
+	//as processed by the semantic l inker
+	actions
+	{
+		needAddress , needPostcode , needBand via nbloOrderBilling ;
+		saved via nbloSaveOrderBilling ;
+	}
+}
+ task orderShipping with NString orderID
+{
+	requirements
+	{
+ 		//need data
+		needAddress : require orderID . ShippingAddress ;
+		needPostcode : require orderID . ShippingPostcode ;
+ 		needBand : require orderID . ShippingBand ;
+
+ 		//need to store this data
+		saved : require orderID.ShippingSavedToDB ;
+	}
+	//as processed by the semantic l inker
+	actions
+	{
+		needAddress , needPostcode , needBand via nbloOrderShipping ;
+		saved via nbloSaveOrderShipping ;
+	}
+}
+
+task validateAccount
+{
+	requirements
+	{
+	}
+}
+
+task orderProcess with NString OrderID
+{
+	requirements
+	{
+	}
+}
+
+task checkDelivery
+{
+	requirements
+	{
+	}
+}
+
+define nbloOrderShipping with NString orderID
+{
+	purpose
+	{
+		feature ShippingAddress to orderID ;
+		feature ShippingPostcode to orderID ;
+		feature ShippingBand to orderID ;
+	}
+
+	actuation
+	{
+		// call the presentation layer
+		BaseLanguage . Csharp ( "NBLOTest.dll" ,
+		"getShipping" ,
+		orderID, sync) ;
+	}
+}
+
+// logic layer component
+
+define nbloSaveOrderShipping with NString orderID
+{
+	purpose
+	{
+		feature ShippingSavedToDB to orderID ;
+	}
+
+	actuation
+	{
+		// call the logic layer
+		BaseLanguage . Csharp ( "NBLOTest.dll" ,
+		"processShipping" ,
+		orderID , sync ) ;
+	}
+}
+
+define nbloOrderBilling with NString orderID
+{
+	purpose
+	{
+		feature BillingAddress to orderID ;
+		feature BillingPostcode to orderID ;
+		feature BillingBand to orderID ;
+	}
+
+	actuation
+	{
+		// call the presentation layer
+		BaseLanguage . Csharp ( "NBLOTest.dll" ,
+		"getBilling" ,
+		orderID, sync) ;
+	}
+}
+
+define nbloSaveOrderBilling with NString orderID
+{
+	purpose
+	{
+		feature BillingSavedToDB to orderID ;
+	}
+
+	actuation
+	{
+		// call the logic layer
+		BaseLanguage . Csharp ( "NBLOTest.dll" ,
+		"processBilling" ,
+		orderID , sync ) ;
+	}
+}

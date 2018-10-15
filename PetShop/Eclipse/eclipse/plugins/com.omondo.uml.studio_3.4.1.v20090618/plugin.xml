@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin
+	id="com.omondo.uml.studio"
+   	name="%pluginName"
+   	version="3.4.1.v20090618"
+   	provider-name="Omondo &#169;"
+>
+
+</plugin>

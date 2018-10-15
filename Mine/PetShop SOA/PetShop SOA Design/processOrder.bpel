@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process name="processOrder"
+    targetNamespace="http://enterprise.netbeans.org/bpel/ProcessOrder/processOrder"
+    xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:sxt="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Trace" 
+    xmlns:sxed="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Editor"
+    xmlns:sxat="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Attachment"
+    xmlns:sxeh="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/ErrorHandling" 
+    xmlns:ns0="http://reg.gf/"
+    xmlns:ns1="http://j2ee.netbeans.org/wsdl/ProcessOrder"
+    xmlns:ns2="xml.netbeans.org/schema/ProcessOrder"
+    xmlns:sxed2="http://www.sun.com/wsbpel/2.0/process/executable/SUNExtension/Editor2"    
+    xmlns:tns="http://enterprise.netbeans.org/bpel/processOrder">
+    <import namespace="http://j2ee.netbeans.org/wsdl/ProcessOrder/ProcessOrder" location="OrderProcessModule/wsdl/ProcessOrder.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://enterprise.netbeans.org/bpel/ValidateAccountServiceWrapper" location="ValidateAccountServiceWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://enterprise.netbeans.org/bpel/CheckOutServiceWrapper" location="CheckOutServiceWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://enterprise.netbeans.org/bpel/OrderBillingServiceWrapper" location="OrderBillingServiceWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://enterprise.netbeans.org/bpel/OrderShippingServiceWrapper" location="OrderShippingServiceWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://enterprise.netbeans.org/bpel/OrderProcessServiceWrapper" location="OrderProcessServiceWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <partnerLinks>
+      <partnerLink name="PartnerLink1" partnerLinkType="tns:ProcessOrder" xmlns:tns="http://j2ee.netbeans.org/wsdl/ProcessOrder/ProcessOrder" partnerRole="ProcessOrderPortTypeRole"/>
+      <partnerLink name="plCheckOut" partnerLinkType="tns:CheckOutLinkType" xmlns:tns="http://enterprise.netbeans.org/bpel/CheckOutServiceWrapper" myRole="CheckOutRole"/>
+      <partnerLink name="plValidateAccount" partnerLinkType="tns:ValidateAccountLinkType" myRole="ValidateAccountRole" xmlns:tns="http://enterprise.netbeans.org/bpel/ValidateAccountServiceWrapper"/>
+      <partnerLink name="plOrderBilling" partnerLinkType="tns:OrderBillingLinkType" myRole="OrderBillingRole" xmlns:tns="http://enterprise.netbeans.org/bpel/OrderBillingServiceWrapper"/>
+      <partnerLink name="plOrderShipping" partnerLinkType="tns:OrderShippingLinkType" myRole="OrderShippingRole" xmlns:tns="http://enterprise.netbeans.org/bpel/OrderShippingServiceWrapper"/>
+      <partnerLink name="plOrderProcess" partnerLinkType="tns:orderProcessLinkType" myRole="orderProcessRole" xmlns:tns="http://enterprise.netbeans.org/bpel/OrderProcessServiceWrapper"/>
+   </partnerLinks>
+   <variables>
+
+      <variable name="inputVar" xmlns:tns="http://j2ee.netbeans.org/wsdl/ProcessOrder/ProcessOrder" messageType="ProcessOrderOperationRequest"/>
+      <variable name="outputVar" xmlns:tns="http://j2ee.netbeans.org/wsdl/ProcessOrder/ProcessOrder" messageType="ProcessOrderOperationResponse"/>
+      <variable name="doProcessOrderOut" xmlns:tns="http://reg.gf/" messageType="doProcessOrderResponse"/>
+      <variable name="doProcessOrderIn" xmlns:tns="http://reg.gf/" messageType="doProcessOrder"/>
+      <variable name="doOrderBillingOut" xmlns:tns="http://reg.gf/" messageType="doOrderBillingResponse"/>
+      <variable name="doOrderBillingIn" xmlns:tns="http://reg.gf/" messageType="doOrderBilling"/>
+      <variable name="doValidateOrderOut" xmlns:tns="http://reg.gf/" messageType="doValidateOrderResponse"/>
+      <variable name="doValidateOrderIn" xmlns:tns="http://reg.gf/" messageType="doValidateOrder"/>
+      <variable name="doCheckoutOut" xmlns:tns="http://reg.gf/" messageType="doCheckoutResponse"/>
+      <variable name="doCheckoutIn" xmlns:tns="http://reg.gf/" messageType="doCheckout"/>
+      <variable name="dogetShippingIn" xmlns:tns="http://reg.gf/" messageType="dogetShipping"/>
+      <variable name="dogetShippingOut" xmlns:tns="http://reg.gf/" messageType="dogetShippingResponse"/>
+      <variable name="doprocessShippingIn" xmlns:tns="http://reg.gf/" messageType="doprocessShipping"/>
+      <variable name="doprocessShippingOut" xmlns:tns="http://reg.gf/" messageType="doprocessShippingResponse"/>
+   </variables>
+   <correlationSets>
+       <correlationSet properties="tns:OrderIdProp" name="OrderId"/>
+   </correlationSets>
+   <sequence>
+      <receive name="Receive"
+      createInstance="yes"
+      partnerLink="PartnerLink1"
+      operation="ProcessOrderOperation"
+      portType="tns:ProcessOrderPortType"
+      variable="inputVar"
+      xmlns:tns="http://j2ee.netbeans.org/wsdl/ProcessOrder/ProcessOrder"/>
+      <assign name="Assign1">
+            <copy>
+                <from>$inputVar.inputType/initParam</from>
+                <to>$doCheckoutIn.parameters/doCheckout</to>
+            </copy>         
+      </assign>
+      <invoke name="CheckOut" 
+      partnerLink="plCheckOut"
+      operation="doCheckout"
+      portType="ns0:CheckOut"
+      inputVariable="tns:doCheckoutIn"
+      outputVariable="tns:doCheckoutOut"/>
+      <invoke name="ValidateAccount"
+      partnerLink="plValidateAccount" 
+      operation="doValidateOrder"
+      portType="ns0:ValidateAccount"
+      inputVariable="tns:doCheckoutOut"
+      outputVariable="tns:doValidateOrderOut"/>
+      <if name="IsValidAccount">
+         <condition>
+             $doValidateOrderOut = 'Validated'
+         </condition>
+         <sequence name="Sequence1">
+            <invoke name="OrderBilling"
+            partnerLink="plOrderBilling"
+            operation="doOrderBilling"
+            portType="ns0:OrderBilling"
+            inputVariable="tns:doValidateOrderOut"
+            outputVariable="tns:doOrderBillingOut"/>
+            <while name="While">
+               <condition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">
+                   $doProcessShippingOut != 'OrderShipped'
+               </condition>
+               <invoke name="OrderShipping" partnerLink="plOrderShipping" operation="getShipping" portType="ns0:OrderShipping" inputVariable="doOrderShippingIn" outputVariable="doOrderShippingOut"/>
+            </while>
+             <invoke name="OrderProcess"
+             partnerLink="plOrderProcess"
+             operation="doProcessOrder"
+             portType="ns0:orderProcess"
+             inputVariable="doOrderProcessIn"
+             outputVariable="doOrderProcessOut"/>
+
+        </sequence>
+   </if>
+      <reply name="Receive.Reply" 
+      partnerLink="PartnerLink1"
+      operation="ProcessOrderOperation"
+      portType="tns:ProcessOrderPortType"
+      xmlns:tns="http://j2ee.netbeans.org/wsdl/ProcessOrder/ProcessOrder"
+      variable="outputVar"/>
+   </sequence>
+</process>

@@ -1,0 +1,9 @@
+<intraway xmlns="http://intraway.org">
+  <description>
+     Intraway network element configuration.
+  </description>
+  <parameter name="type" value="Intraway"/>
+  <parameter name="host" value="200.44.66.55"/> 
+  <parameter name="password_authorisation" value="authkey"/>
+  <parameter name="responses" value="intraway_responses"/>
+</intraway>

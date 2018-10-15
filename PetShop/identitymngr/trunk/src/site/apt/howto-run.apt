@@ -1,0 +1,76 @@
+	------
+	Running Provisioner
+	------
+	Gonzalo Espert
+	------
+	Nov 17, 2007
+
+
+How to run Provisioner
+    
+  Before you run the Provisioner you have to check for the existence 
+  of Sun's java runtime JRE 1.5 or higher, and 
+  {{{howto-install.html}create the operation's queue}} in your RDBMS.
+  
+  Also make sure JAVA_HOME is set to the location of your Sun's JDK 
+  (1.5+) and that the JAVA_HOME/bin is in your path. 
+    
+* Starting the Provisioner 
+
+  To start the Provisioner you have to execute the following command: 
+
+  <<<~/provisioner.sh start>>>
+  
+  This will check if Provisioner is already running. If not, it will 
+  launch a new instance of the Provisioner using the parameters configured
+  in ~/provisioner.cfg.  
+
+* Stopping the Provisioner 
+
+  To stop the Provisioner you have to execute the following command: 
+
+  <<<~/provisioner.sh stop>>> 
+
+  This will check if Provisioner is running and send it a stop signal if 
+  it is running.
+  
+* Verifying current Provisioner's status
+
+  To check whether the Provisioner system is running correctly or not
+  you have to execute the following command: 
+
+  <<<~/provisioner.sh status>>> 
+
+  This will check if Provisioner is running and show its process ID if it
+  is running.
+  
+* Re-loading provisioning rules
+
+  If you have changed provisioning rules and want Provisioner to refresh
+  its internal copy of them, execute the following command>
+
+  <<<~/provisioner.sh refresh>>>  
+  
+  This will check if Provisioner is running and send it a refresh signal if
+  it is running. The Provisioner will then re-read and load rules, routes, 
+  responses and services configurations.
+  
+* Modifying Provisioner's launch parameters
+
+  Provisioner requires 5 parameters to start running. This parameters
+  allows you to tune Provisioner's execution. Note that the position
+  of each parameter is relevant:
+  
+  * #1: Interval, in seconds, for searching new pending provisioning requirements (e.g. 60).
+  
+  * #2: Specify the maximum amount of consumer threads to be created (e.g. 4).
+  
+  * #3: Specify where the configuration files are stored (e.g. ~/conf/ note that 
+  this parameter should contain the / at the end).
+  
+  * #4: Specify country for the log and debug messages (e.g. US).
+  
+  * #5: Specify language for the log and debug messages (e.g. en). 
+  
+  The value for these parameters should be configured in 
+  ~/provisioner.cfg.  

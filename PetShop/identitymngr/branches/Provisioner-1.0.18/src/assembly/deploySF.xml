@@ -1,0 +1,58 @@
+<assembly>
+  
+  <id>pre</id>
+  <baseDirectory>${project.artifactId}</baseDirectory>
+  
+  <formats>
+    <format>zip</format>
+    <format>tar.gz</format>
+  </formats>
+  
+  <!-- Third-Party libraries i.e., runtime dependencies -->
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>/lib</outputDirectory>
+    </dependencySet>
+  </dependencySets>
+  
+  <fileSets>
+   
+    <!-- Scripts and miscellaneous -->
+    <fileSet>
+      <includes>
+        <include>LICENSE.txt</include>
+        <include>README.txt</include>
+        <include>KEYS.txt</include>
+        <include>Provisioner.sh</include>
+        <include>Provisioner.cfg</include>
+      </includes>
+    </fileSet>
+    
+    <!-- Configuration files -->
+    <fileSet>
+    	<outputDirectory>/conf</outputDirectory>
+    	<directory>src/config</directory>
+    </fileSet>
+    
+    <!-- Source code -->
+    <fileSet>
+    	<outputDirectory>/</outputDirectory>
+    	<includes>
+			<include>src/main/**</include>
+      	</includes>
+    </fileSet>
+    
+  </fileSets>
+  
+  <files>
+  
+  		<!-- Executable JAR -->
+    	<file>
+    		<source>target/${project.artifactId}-${project.version}.${project.packaging}</source>
+    		<outputDirectory>/bin</outputDirectory>
+    		<destName>${project.artifactId}.${project.packaging}</destName>
+      	</file>
+      	
+  </files>
+    
+</assembly>

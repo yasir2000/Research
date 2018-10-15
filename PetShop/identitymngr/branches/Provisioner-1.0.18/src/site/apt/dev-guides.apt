@@ -1,0 +1,15 @@
+	------
+	Developers guides
+	------
+	Gonzalo Espert
+	------
+	Jan 3, 2008
+
+
+Developers Guides
+
+  In this section the developer will found instructions on how to 
+  {{{howto-build-dev-environment.html}set up his development environment}}, 
+  how to {{{howto-compile.html}compile}} the Provisioner, how to 
+  {{{howto-dev-adapters.html}develop a new identity store adapter}} and how to
+  {{{howto-dev-hookups.html}develop a new core hook-up}}.

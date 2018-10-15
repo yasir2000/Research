@@ -1,0 +1,1595 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1329903804171'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='146'>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ecore' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.codegen.ecore_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.codegen.ecore_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.workspace.source' version='1.2.2.v200809171833-2318s733I3G5C4C9D'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.workspace.source_1.2.2.v200809171833-2318s733I3G5C4C9D/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.workspace.source_1.2.2.v200809171833-2318s733I3G5C4C9D'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd.sdk' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd.sdk_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd.sdk_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.jee.reverse' version='1.4.0.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.jee.reverse_1.4.0.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.jee.reverse_1.4.0.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.sdo' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore.sdo_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore.sdo_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.draw2d' version='3.4.1.v20080806-3307w31191_2102462'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.draw2d_3.4.1.v20080806-3307w31191_2102462/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.draw2d_3.4.1.v20080806-3307w31191_2102462'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.validation.source' version='1.2.0.v200805130238-35-9oA55S5L8G6FCT'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.validation.source_1.2.0.v200805130238-35-9oA55S5L8G6FCT/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.validation.source_1.2.0.v200805130238-35-9oA55S5L8G6FCT'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.cheatsheets' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.cheatsheets_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.cheatsheets_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.databinding.edit' version='1.0.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.databinding.edit_1.0.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.databinding.edit_1.0.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.transaction' version='1.2.1.v200807161719'>
+      <properties size='2'>
+        <property name='artifact.size' value='140395'/>
+        <property name='download.size' value='140395'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.transaction_1.2.1.v200807161719.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.transaction_1.2.1.v200807161719.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.workspace.source' version='1.2.2.v200809171833-2318s733I3G5C4C9D'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.workspace.source_1.2.2.v200809171833-2318s733I3G5C4C9D/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.workspace.source_1.2.2.v200809171833-2318s733I3G5C4C9D'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.compare.ui' version='0.8.1.v200809170822'>
+      <properties size='2'>
+        <property name='artifact.size' value='136014'/>
+        <property name='download.size' value='136014'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.compare.ui_0.8.1.v200809170822.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.compare.ui_0.8.1.v200809170822.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.transaction.source' version='1.2.1.v200807161719-2308s733I3E5B4B7J'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.transaction.source_1.2.1.v200807161719-2308s733I3E5B4B7J/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.transaction.source_1.2.1.v200807161719-2308s733I3E5B4B7J'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='1035068'/>
+        <property name='download.size' value='1035068'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.ecore.exporter' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='16736'/>
+        <property name='download.size' value='16736'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.ecore.exporter_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.ecore.exporter_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.change.edit' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='27814'/>
+        <property name='download.size' value='27814'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.change.edit_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.change.edit_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.databinding' version='1.0.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.databinding_1.0.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.databinding_1.0.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.draw2d' version='3.4.1.v20080910-1351'>
+      <properties size='2'>
+        <property name='artifact.size' value='525841'/>
+        <property name='download.size' value='525841'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.draw2d_3.4.1.v20080910-1351.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.draw2d_3.4.1.v20080910-1351.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.std' version='3.4.1.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.std_3.4.1.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.std_3.4.1.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.workspace' version='1.2.2.v200809171833-2318s733I3G5C4C9D'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.workspace_1.2.2.v200809171833-2318s733I3G5C4C9D/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.workspace_1.2.2.v200809171833-2318s733I3G5C4C9D'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.omondo.uml.studio' version='3.4.1.v20090618'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/com.omondo.uml.studio_3.4.1.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\com.omondo.uml.studio_3.4.1.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.core' version='3.4.1.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.core_3.4.1.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.core_3.4.1.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.wtp' version='1.4.0.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.wtp_1.4.0.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.wtp_1.4.0.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ecore2ecore' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='40206'/>
+        <property name='download.size' value='40206'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.ecore2ecore_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.ecore2ecore_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.converter' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.converter_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.converter_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.databinding.edit' version='1.0.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='15156'/>
+        <property name='download.size' value='15156'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.databinding.edit_1.0.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.databinding.edit_1.0.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.xmi' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='216647'/>
+        <property name='download.size' value='216647'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.xmi_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.editor' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='90163'/>
+        <property name='download.size' value='90163'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.editor_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.editor_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.databinding' version='1.0.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='29461'/>
+        <property name='download.size' value='29461'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.databinding_1.0.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.databinding_1.0.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='190520'/>
+        <property name='download.size' value='190520'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping.ecore.editor' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.mapping.ecore.editor_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.mapping.ecore.editor_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.wtp.ui' version='1.4.0.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.wtp.ui_1.4.0.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.wtp.ui_1.4.0.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.common.ui' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='111621'/>
+        <property name='download.size' value='111621'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.common.ui_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.common.ui_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml.ecore.importer' version='2.2.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='37331'/>
+        <property name='download.size' value='37331'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.uml.ecore.importer_2.2.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.uml.ecore.importer_2.2.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.sdo.editor' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore.sdo.editor_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore.sdo.editor_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik' version='1.6.0.v20060613-1220'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.apache.batik_1.6.0.v20060613-1220/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.apache.batik_1.6.0.v20060613-1220'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.cheatsheets' version='2.3.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.cheatsheets_2.3.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.cheatsheets_2.3.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping.ui' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.mapping.ui_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.mapping.ui_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.transaction.sdk' version='1.2.2.v200809171833-67A596O_itYaNONCUz0Lti8JlG99'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.transaction.sdk_1.2.2.v200809171833-67A596O_itYaNONCUz0Lti8JlG99/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.transaction.sdk_1.2.2.v200809171833-67A596O_itYaNONCUz0Lti8JlG99'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.mapping_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.mapping_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.common_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.common_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.gef' version='3.4.1.v20080806'>
+      <properties size='2'>
+        <property name='artifact.size' value='818455'/>
+        <property name='download.size' value='818455'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.gef_3.4.1.v20080806.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.gef_3.4.1.v20080806.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ui' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.codegen.ui_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.codegen.ui_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.edit.ui' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='152772'/>
+        <property name='download.size' value='152772'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.edit.ui_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.edit.ui_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.model' version='3.4.1.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.model_3.4.1.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.model_3.4.1.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.compare.match' version='0.8.1.v200809170822'>
+      <properties size='2'>
+        <property name='artifact.size' value='93899'/>
+        <property name='download.size' value='93899'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.compare.match_0.8.1.v200809170822.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.compare.match_0.8.1.v200809170822.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd.source' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd.source_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd.source_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.source' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.source_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.source_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.transaction.source' version='1.2.1.v200807161719-2308s733I3E5B4B7J'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.transaction.source_1.2.1.v200807161719-2308s733I3E5B4B7J/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.transaction.source_1.2.1.v200807161719-2308s733I3E5B4B7J'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.edit' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='257428'/>
+        <property name='download.size' value='257428'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.edit_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.edit_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml.editor' version='2.2.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='137906'/>
+        <property name='download.size' value='137906'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.uml.editor_2.2.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.uml.editor_2.2.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd.mapping.editor' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd.mapping.editor_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd.mapping.editor_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.common' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='187371'/>
+        <property name='download.size' value='187371'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.common_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.common_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.sdo.edit' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore.sdo.edit_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore.sdo.edit_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.transaction.examples' version='1.2.0.v200806051817'>
+      <properties size='2'>
+        <property name='artifact.size' value='168321'/>
+        <property name='download.size' value='168321'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.transaction.examples_1.2.0.v200806051817.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.transaction.examples_1.2.0.v200806051817.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping.ecore' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.mapping.ecore_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.mapping.ecore_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.xerces' version='2.8.0.v200606131651'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.apache.xerces_2.8.0.v200606131651/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.apache.xerces_2.8.0.v200606131651'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.edit' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='118562'/>
+        <property name='download.size' value='118562'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.edit_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.edit_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.validation.sdk' version='1.2.1.v200807161729-579093L7YxTRK7HtUz0Hhaz-JlG9'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.validation.sdk_1.2.1.v200807161729-579093L7YxTRK7HtUz0Hhaz-JlG9/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.validation.sdk_1.2.1.v200807161729-579093L7YxTRK7HtUz0Hhaz-JlG9'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.validation.examples' version='1.2.0.v200805280204'>
+      <properties size='2'>
+        <property name='artifact.size' value='177771'/>
+        <property name='download.size' value='177771'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.validation.examples_1.2.0.v200805280204.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.validation.examples_1.2.0.v200805280204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen.ecore' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='929643'/>
+        <property name='download.size' value='929643'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.codegen.ecore_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.codegen.ecore_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.compare' version='0.8.1.v200809170822'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.compare_0.8.1.v200809170822/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.compare_0.8.1.v200809170822'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.validation' version='1.2.0.v200807161729'>
+      <properties size='2'>
+        <property name='artifact.size' value='238173'/>
+        <property name='download.size' value='238173'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.validation_1.2.0.v200807161729.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.validation_1.2.0.v200807161729.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.studio' version='3.4.1.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.studio_3.4.1.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.studio_3.4.1.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.workspace.ui' version='1.2.0.v200805130238'>
+      <properties size='2'>
+        <property name='artifact.size' value='17933'/>
+        <property name='download.size' value='17933'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.workspace.ui_1.2.0.v200805130238.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.workspace.ui_1.2.0.v200805130238.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.codegen.ecore' version='1.4.0.v200805201126'>
+      <properties size='2'>
+        <property name='artifact.size' value='330723'/>
+        <property name='download.size' value='330723'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.codegen.ecore_1.4.0.v200805201126.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.codegen.ecore_1.4.0.v200805201126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.sdo' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='167772'/>
+        <property name='download.size' value='167772'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.sdo_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.sdo_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='747759'/>
+        <property name='download.size' value='747759'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.sdo.sdk' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore.sdo.sdk_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore.sdo.sdk_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.converter' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='84485'/>
+        <property name='download.size' value='84485'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.converter_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.converter_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.importer.java' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='60424'/>
+        <property name='download.size' value='60424'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.importer.java_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.importer.java_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.importer.rose' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='104416'/>
+        <property name='download.size' value='104416'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.importer.rose_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.importer.rose_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.validation.ui.ide' version='1.2.0.v200805130238'>
+      <properties size='2'>
+        <property name='artifact.size' value='15571'/>
+        <property name='download.size' value='15571'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.validation.ui.ide_1.2.0.v200805130238.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.validation.ui.ide_1.2.0.v200805130238.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.ecore.importer' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='23962'/>
+        <property name='download.size' value='23962'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.ecore.importer_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.ecore.importer_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.mapping' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='9258'/>
+        <property name='download.size' value='9258'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.mapping_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.mapping_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.edit.ui' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.edit.ui_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.edit.ui_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.gef' version='3.4.1.v20080806-67718083A56B4H2A3213573'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.gef_3.4.1.v20080806-67718083A56B4H2A3213573/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.gef_3.4.1.v20080806-67718083A56B4H2A3213573'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.edit' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore.edit_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore.edit_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.validation.ocl' version='1.2.0.v200805130238'>
+      <properties size='2'>
+        <property name='artifact.size' value='16257'/>
+        <property name='download.size' value='16257'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.validation.ocl_1.2.0.v200805130238.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.validation.ocl_1.2.0.v200805130238.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common.ui' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.common.ui_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.common.ui_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.sdo.edit' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='28241'/>
+        <property name='download.size' value='28241'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.sdo.edit_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.sdo.edit_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.example.installer' version='1.0.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='63256'/>
+        <property name='download.size' value='63256'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.example.installer_1.0.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.example.installer_1.0.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.commonj.sdo' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='10088'/>
+        <property name='download.size' value='10088'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.commonj.sdo_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.commonj.sdo_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.sdk' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.sdk_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.sdk_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.validation.source' version='1.2.0.v200805130238-35-9oA55S5L8G6FCT'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.validation.source_1.2.0.v200805130238-35-9oA55S5L8G6FCT/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.validation.source_1.2.0.v200805130238-35-9oA55S5L8G6FCT'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.validation.ocl.source' version='1.2.0.v200805130238-11-7w311916241349'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.validation.ocl.source_1.2.0.v200805130238-11-7w311916241349/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.validation.ocl.source_1.2.0.v200805130238-11-7w311916241349'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ecore' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='9438'/>
+        <property name='download.size' value='9438'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.ecore_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.ecore_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.std.doc.user' version='3.4.1.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.std.doc.user_3.4.1.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.std.doc.user_3.4.1.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml.edit' version='2.2.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='861432'/>
+        <property name='download.size' value='861432'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.uml.edit_2.2.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.uml.edit_2.2.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.change' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='80266'/>
+        <property name='download.size' value='80266'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.change_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.change_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.xsd2ecore' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='28961'/>
+        <property name='download.size' value='28961'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.xsd2ecore_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.xsd2ecore_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.edit' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.edit_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.edit_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.sdo.source' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.sdo.source_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.sdo.source_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml.ecore.exporter' version='2.2.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='21972'/>
+        <property name='download.size' value='21972'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.uml.ecore.exporter_2.2.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.uml.ecore.exporter_2.2.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.compare' version='0.8.1.v200809170822'>
+      <properties size='2'>
+        <property name='artifact.size' value='40181'/>
+        <property name='download.size' value='40181'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.compare_0.8.1.v200809170822.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.compare_0.8.1.v200809170822.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.codegen.ecore.ui' version='1.4.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='29032'/>
+        <property name='download.size' value='29032'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.codegen.ecore.ui_1.4.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.codegen.ecore.ui_1.4.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.source' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.source_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.source_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ecore2xml.ui' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='94147'/>
+        <property name='download.size' value='94147'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.ecore2xml.ui_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.ecore2xml.ui_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.transaction.ui' version='1.2.0.v200805130238'>
+      <properties size='2'>
+        <property name='artifact.size' value='38360'/>
+        <property name='download.size' value='38360'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.transaction.ui_1.2.0.v200805130238.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.transaction.ui_1.2.0.v200805130238.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd.edit' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd.edit_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd.edit_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.validation' version='1.2.0.v200805130238-35-9oA55S5L8G6FCT'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.validation_1.2.0.v200805130238-35-9oA55S5L8G6FCT/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.validation_1.2.0.v200805130238-35-9oA55S5L8G6FCT'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ecore2ecore.editor' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='44077'/>
+        <property name='download.size' value='44077'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.ecore2ecore.editor_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.ecore2ecore.editor_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ui' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='141498'/>
+        <property name='download.size' value='141498'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.ui_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.ui_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd.ecore.converter' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd.ecore.converter_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd.ecore.converter_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.example.installer' version='1.0.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='360708'/>
+        <property name='download.size' value='360708'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.example.installer_1.0.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.example.installer_1.0.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.exporter' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='58237'/>
+        <property name='download.size' value='58237'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.exporter_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.exporter_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.validation.ocl' version='1.2.0.v200805130238-11-7w311916241349'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.validation.ocl_1.2.0.v200805130238-11-7w311916241349/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.validation.ocl_1.2.0.v200805130238-11-7w311916241349'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.sdo.source' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore.sdo.source_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore.sdo.source_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.importer.ecore' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='21237'/>
+        <property name='download.size' value='21237'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.importer.ecore_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.importer.ecore_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.sdo.editor' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='99837'/>
+        <property name='download.size' value='99837'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ecore.sdo.editor_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ecore.sdo.editor_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ecore.editor' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='9453'/>
+        <property name='download.size' value='9453'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.ecore.editor_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.ecore.editor_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.compare.diff.edit' version='0.8.1.v200809170822'>
+      <properties size='2'>
+        <property name='artifact.size' value='136578'/>
+        <property name='download.size' value='136578'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.compare.diff.edit_0.8.1.v200809170822.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.compare.diff.edit_0.8.1.v200809170822.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.mapping.editor' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='9279'/>
+        <property name='download.size' value='9279'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.mapping.editor_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.mapping.editor_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.codegen_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.codegen_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ecore.ui' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.codegen.ecore.ui_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.codegen.ecore.ui_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.ecore.converter' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='9282'/>
+        <property name='download.size' value='9282'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.ecore.converter_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.ecore.converter_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.validation.ui' version='1.2.0.v200805130238'>
+      <properties size='2'>
+        <property name='artifact.size' value='65095'/>
+        <property name='download.size' value='65095'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.validation.ui_1.2.0.v200805130238.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.validation.ui_1.2.0.v200805130238.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='9232'/>
+        <property name='download.size' value='9232'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ecore2xml' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='55629'/>
+        <property name='download.size' value='55629'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.ecore2xml_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.ecore2xml_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.uml2' version='2.2.1.v200808251630'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.uml2_2.2.1.v200808251630/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.uml2_2.2.1.v200808251630'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.common.edit' version='1.4.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='27379'/>
+        <property name='download.size' value='27379'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.common.edit_1.4.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.common.edit_1.4.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.common' version='1.4.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='118331'/>
+        <property name='download.size' value='118331'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.common_1.4.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.common_1.4.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='282374'/>
+        <property name='download.size' value='282374'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.codegen_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.codegen_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.edit' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='216724'/>
+        <property name='download.size' value='216724'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.edit_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.edit_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.editor' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.ecore.editor_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.ecore.editor_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen.ui' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='31793'/>
+        <property name='download.size' value='31793'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.codegen.ui_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.codegen.ui_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd' version='2.4.1.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.jee' version='1.4.0.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.jee_1.4.0.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.jee_1.4.0.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.xsd2ecore.editor' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='19656'/>
+        <property name='download.size' value='19656'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.mapping.xsd2ecore.editor_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.mapping.xsd2ecore.editor_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.importer' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='73800'/>
+        <property name='download.size' value='73800'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.importer_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.importer_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml' version='2.2.1.v200808251630'>
+      <properties size='2'>
+        <property name='artifact.size' value='2363894'/>
+        <property name='download.size' value='2363894'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.uml_2.2.1.v200808251630.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.uml_2.2.1.v200808251630.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.transaction' version='1.2.1.v200807161719-2308s733I3E5B4B7J'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.transaction_1.2.1.v200807161719-2308s733I3E5B4B7J/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.transaction_1.2.1.v200807161719-2308s733I3E5B4B7J'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.editor' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='92408'/>
+        <property name='download.size' value='92408'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.editor_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.editor_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd.editor' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd.editor_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd.editor_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.workspace' version='1.2.2.v200809171833'>
+      <properties size='2'>
+        <property name='artifact.size' value='72241'/>
+        <property name='download.size' value='72241'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.workspace_1.2.2.v200809171833.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.workspace_1.2.2.v200809171833.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2' version='2.1.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='9272'/>
+        <property name='download.size' value='9272'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2_2.1.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2_2.1.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.validation.ocl.source' version='1.2.0.v200805130238-11-7w311916241349'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.emf.validation.ocl.source_1.2.0.v200805130238-11-7w311916241349/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.emf.validation.ocl.source_1.2.0.v200805130238-11-7w311916241349'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ant' version='2.4.0.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='24649'/>
+        <property name='download.size' value='24649'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.ant_2.4.0.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.ant_2.4.0.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.compare.diff' version='0.8.1.v200809170822'>
+      <properties size='2'>
+        <property name='artifact.size' value='180482'/>
+        <property name='download.size' value='180482'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.compare.diff_0.8.1.v200809170822.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.compare.diff_0.8.1.v200809170822.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.omondo.uml.docgen' version='3.4.1.v20090618'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/com.omondo.uml.docgen_3.4.1.v20090618/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\com.omondo.uml.docgen_3.4.1.v20090618'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xsd.mapping' version='2.4.0.v200808251517'>
+      <properties size='3'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/features/org.eclipse.xsd.mapping_2.4.0.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\features\org.eclipse.xsd.mapping_2.4.0.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd.source' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='0'/>
+        <property name='download.size' value='0'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.xsd.source_2.4.1.v200808251517/'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.xsd.source_2.4.1.v200808251517'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen.ecore.ui' version='2.4.1.v200808251517'>
+      <properties size='2'>
+        <property name='artifact.size' value='121255'/>
+        <property name='download.size' value='121255'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.emf.codegen.ecore.ui_2.4.1.v200808251517.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.emf.codegen.ecore.ui_2.4.1.v200808251517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.uml2.uml.resources' version='2.2.0.v200805131030'>
+      <properties size='2'>
+        <property name='artifact.size' value='219203'/>
+        <property name='download.size' value='219203'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Documents%20and%20Settings/001604/Desktop/PetShop/Eclipse/eclipse/plugins/org.eclipse.uml2.uml.resources_2.2.0.v200805131030.jar'/>
+        <property name='file.name' value='C:\Documents and Settings\001604\Desktop\PetShop\Eclipse\eclipse\plugins\org.eclipse.uml2.uml.resources_2.2.0.v200805131030.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

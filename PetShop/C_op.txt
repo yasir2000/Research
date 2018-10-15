@@ -1,0 +1,5 @@
+$- script C starts
+------------------------
+Result chart displayed
+------------------------
+$- script C ends

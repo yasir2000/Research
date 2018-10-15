@@ -1,0 +1,115 @@
+	------
+	Running Provisioner
+	------
+	Gonzalo Espert
+	------
+	Nov 17, 2007
+
+
+How to administer operation's queue
+
+  This section contains instructions on how to create, clean up the operations 
+  queue and how to configure the Provisioner system's access to the 
+  database where the operations queue is stored. 
+
+* Creating the operation's queue in PostgreSQL RDBMS
+
+  The following example shows how to create an operation queue in PostgreSQL.
+	
+  [[1]] For information on how to download and install PostgreSQL go {{{http://www.postgresql.org/docs/8.2/static/installation.html}here}}.
+     	
+  [[2]] Create a database instance (e.g. provisi)
+    
+  [[3]] Create operation's queue
+    
++-------------------------------+
+CREATE TABLE operations_queue (
+    id               VARCHAR (20)   NOT NULL,
+    type             VARCHAR (5)    NOT NULL,
+    status           VARCHAR (5)    NOT NULL,
+    insert_date      TIMESTAMP      DEFAULT NOW(),
+    execution_date   TIMESTAMP,
+    xml_string       VARCHAR (1000) NOT NULL,
+    username         VARCHAR (15)   NOT NULL,
+    response         VARCHAR (1000),
+    
+    CONSTRAINT pk_id PRIMARY KEY (id)
+);
++-------------------------------+
+
+  Where:
+  
+*-----------------------------+--------------------------------------------------------------------------+
+| <<Column>>                  | <<Description>>                                                          |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<id>>        	          | Unique identifier of the operation.                                      |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<type>>      	          | Operation Type.                                                          |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<status>>        	      | The state the operation is in.                                           |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<insert_date>> 	          | Date and time when the operation was added to the queue.                 |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<execution_date>> 	      | and time when the execution of the operation was completed.              | 
+*-----------------------------+--------------------------------------------------------------------------+
+| <<xml_string>> 	          | The column xml_string stores the XML string that contains the parameters related to the operation. |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<user>>               	  | stores the user ID of the management system that inserts the operation. The user is provided by the management system. The provisioning system does not authenticate the user.                                                         |                                         
+*-----------------------------+--------------------------------------------------------------------------+  
+| <<response>>      	      | This column stores a description of the latest response received by the provisioning system. This column will be updated with each execution of the operation.              | 
+*-----------------------------+--------------------------------------------------------------------------+
+
+
+
+  [[4]] Configure ~config/database.xml to access operation's queue
+
+  The Provisioner accesses the database where the operations queue is stored using information contained in the file ~config/database.xml. 
+
+  The file ~config/database.xml is a text file in XML format that contains information about connections to one or more databases. Each connection contains the following data: 
+
+*-----------------------------+--------------------------------------------------------------------------+
+| <<Parameter>>               | <<Description>>                                                          |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<server type>> 	          | Type of the database engine.                                             |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<server name>> 	          | Name of the database server machine.                                     |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<driver classname>> 	      | Name of the class that implements the driver for this type of database.  |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<driver type>> 	          | Type of the driver implemented by the class.                             |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<database name>> 	      | Name of the database instance.                                           | 
+*-----------------------------+--------------------------------------------------------------------------+
+| <<database user>> 	      | User name for the database.                                              |
+*-----------------------------+--------------------------------------------------------------------------+
+| <<database password>> 	  | User's password.                                                         |                                         
+*-----------------------------+--------------------------------------------------------------------------+
+
+  This is a sample database.xml: 
+
++-----------------------------------------------------------------------------+
+<?xml version="1.0" encoding="UTF-8"?> 
+<connections xmlns="http://connections.org"> 
+	<description> 
+		Connection string information. 
+	</description> 
+	<connection> 
+		<server type="postgresql" name="localhost"/> 
+		<driver className="org.postgresql.Driver" type="jdbc"/> 
+		<database name="provisioning" user="postgres" password="Ericsson1"/> 
+	</connection> 
+</connections> 
++-----------------------------------------------------------------------------+
+
+ To modify this file, use your favourite text editor (e.g. vi, emacs, etc.). 
+
+* Maintaining the operations queue 
+  
+  The operations queue stores request with their parameters and states as well as the response obtained during the processing of the request. These data consume resources of the database. Therefore, you should regularly clean the operations queue to avoid exceeding the capacity of the database. 
+
+  Remove only those requirements that have already been processed and are in a final state, i. e. ERRO or DONE. 
+
+  To remove requirements that have already been processed execute the following database command: 
+
+  <<<delete from operations_queue where status in ('ERRO','DONE');>>>
+  

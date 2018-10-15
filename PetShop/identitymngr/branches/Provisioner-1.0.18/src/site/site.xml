@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<project name="${project.name}">
+
+    <bannerLeft>
+        <name>Identity provisioning software</name>
+        <src>images/banner.png</src>
+        <href>http://identitymngr.sourceforge.net/</href>
+    </bannerLeft>
+    
+    <bannerRight>
+        <name>SourceForge.net logo</name>
+        <src>http://sflogo.sourceforge.net/sflogo.php?group_id=204942&amp;type=4</src>
+        <href>=http://www.sourceforge.net</href>
+    </bannerRight>
+   
+	<poweredBy>
+		<logo name="Maven" href="http://maven.apache.org/"
+        img="http://maven.apache.org/images/logos/maven-feather.png"/>
+	</poweredBy>
+
+    <publishDate position="navigation-bottom" format="MMM dd yyyy" />
+
+	<skin>
+    	<groupId>org.apache.maven.skins</groupId>
+    	<artifactId>maven-stylus-skin</artifactId>
+    	<version>1.0</version>
+  	</skin>
+	
+
+    <body>
+
+        <links>
+        	<item name="Provisioning Guide" href="http://en.wikipedia.org/wiki/Provisioning" />
+            <item name="SourceForge's Project Page" href="http://sourceforge.net/projects/identitymngr/" />
+            <item name="Donations" href="donations.html" />
+        </links>
+
+		<menu name="Main">
+			<item name="Welcome" href="index.html" />
+		</menu>
+		
+		<menu name="About Provisioner">
+			<item name="What is Provisioner?" href="what-is.html"/>
+			<item name="Our Vision" href="vision.html" />
+			<item name="Product's Mission" href="mission.html" />
+			<item name="Features" href="features-1.0.html" />
+            <item name="Feature Roadmap" href="roadmap.html" />
+            <item name="Roadmap Timeline" href="timeline.html" />
+            
+            <!-- Collapsed Submenu -->
+            <item name="Business use cases" href="business-cases.html" collapse="true">
+	            <item name="Composite services" href="service-subscription-case.html" collapse="true"/>
+    	        <item name="Converged IP services" href="ip-services-case.html" collapse="true"/>
+        	    <item name="Mobile phone services" href="telco-business-case.html" collapse="true"/>
+            	<item name="IT infrastructure services" href="it-business-case.html" collapse="true"/>            
+			</item>
+            
+            <item name="Glossary" href="glossary.html" />
+            <item name="FAQ" href="faq.html" />
+        </menu>
+        
+        <menu name="Get Provisioner">
+            <item name="Download" href="download.html" />
+            <item name="Release Notes" href="changes-report.html" />
+            <item name="License" href="license.html" />
+        </menu>   
+        
+		<menu name="User Resources">
+		
+			<!-- Collapsed Submenu -->
+			<item name="How to" href="usage.html" collapse="true">
+				<item name="Install Provisioner" href="howto-install.html" collapse="true"/>			
+				<item name="Run Provisioner" href="howto-run.html" collapse="true"/>			
+				<item name="Configure logging" href="howto-config-logging.html" collapse="true"/>			
+				<item name="Administer operation's queue" href="howto-admin-queue.html" collapse="true"/>
+				<item name="Configure rules" href="howto-config-rules.html" collapse="true"/>
+				<item name="Configure routes" href="howto-config-routes.html" collapse="true"/>
+				<item name="Configure new PSTs" href="howto-config-idstores.html" collapse="true"/>
+				<item name="Configure responses" href="howto-config-responses.html" collapse="true"/>
+			</item>
+			
+			<item name="Delivery Models" href="delivery-models.html" />
+            <item name="Issue Tracker" href="http://sourceforge.net/tracker/?group_id=204942" />
+            <item name="Feature requests" href="http://sourceforge.net/tracker/?group_id=204942" />
+            
+        </menu>
+                
+		<menu name="Developer Resources">
+                        
+            <!-- Collapsed Submenu -->
+            <item name="How to" href="dev-guides.html" collapse="true">
+            	<item name="Compile Provisioner" href="howto-compile.html" collapse="true"/>
+            	<item name="Setup dev env" href="howto-build-dev-environment.html" collapse="true"/>
+            	<item name="Develop a new adapter" href="howto-dev-adapters.html" collapse="true"/>
+            	<item name="Develop a new core hook-up" href="howto-dev-hookups.html" collapse="true"/>
+            </item>
+            
+            <item name="Architecture view" href="architecture-view.html" />
+            <item name="Config management" href="scm-plan.html" />
+            <item name="Build management" href="build-management.html" />
+            <item name="Release management" href="release-plan.html" />
+            <item name="Issue Tracker" href="http://sourceforge.net/tracker/?group_id=204942" />
+            <item name="Browse Source Code" href="http://identitymngr.svn.sourceforge.net/viewvc/identitymngr/" />
+        </menu>
+
+        <menu ref="reports"/>
+          
+    </body>
+
+</project>

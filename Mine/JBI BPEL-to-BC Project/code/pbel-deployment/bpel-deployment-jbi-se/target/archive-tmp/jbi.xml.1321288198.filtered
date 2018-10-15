@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" version="1.0">
+	<component type="service-engine"
+		component-class-loader-delegation="self-first"
+		bootstrap-class-loader-delegation="self-first">
+		<identification>
+			<name>bpel-deployer</name>
+			<description>BPEL Deployer JBI Service Engine</description>
+			<identification:VersionInfo component-version="1.0.0" build-number="100111" xmlns:identification="http://www.sun.com/jbi/descriptor/identification/v1.0"/>
+		</identification>
+		<component-class-name>clove.neptune.bpeldeployment.jbi.BPELDeployerRuntime</component-class-name>
+		<component-class-path>
+			<path-element>lib/bpel-deployer-1.0.0.jar</path-element>
+			<path-element>lib/bpel-deployment-xsl-1.0.0.jar</path-element>
+			<path-element>lib/ant-1.7.1.jar</path-element>
+			<path-element>lib/ant-launcher-1.7.1.jar</path-element>
+			<path-element>lib/ant-trax-1.7.1.jar</path-element>
+			<path-element>lib/saxon-9.1.0.8.jar</path-element>
+			<path-element>lib/wsdl4j-1.6.2.jar</path-element>
+		</component-class-path>
+		<bootstrap-class-name>clove.neptune.bpeldeployment.jbi.BPELDeployerInstaller</bootstrap-class-name>
+		<bootstrap-class-path>
+			<path-element>lib/bpel-deployer-1.0.0.jar</path-element>
+			<path-element>.</path-element>
+		</bootstrap-class-path>
+		<pd:process-deployer xmlns:pd="http://clove/neptune/bpeldeployment">
+			<pd:properties>
+				<pd:property name="clove.neptune.bpeldeployment.workDir" value="/temp/ant/work" />
+			</pd:properties>
+			<pd:resources>
+				<pd:resource name="xsl/jbi/service-assembly.xslt" value="xsl/jbi/service-assembly.xslt" />
+				<pd:resource name="xsl/jbi/sun-bpel-engine.xslt" value="xsl/jbi/sun-bpel-engine.xslt" />
+				<pd:resource name="xsl/jbi/sun-http-binding.xslt" value="xsl/jbi/sun-http-binding.xslt" />
+				<pd:resource name="xsl/ode/ode-deploy.xslt" value="xsl/ode/ode-deploy.xslt" />
+				<pd:resource name="build.xml" value="build.xml" />
+			</pd:resources>
+		</pd:process-deployer>
+	</component>
+</jbi>

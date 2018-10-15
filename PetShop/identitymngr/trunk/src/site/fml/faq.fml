@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<faqs id="FAQ" title="Frequently Asked Technical Questions">
+    <part id="General">
+    	<faq id="What is User Provisioninig">
+            <question>What is User Provisioning?</question>
+            <answer>
+                <p>User provisioning refers to the creation, maintenance and 
+                deactivation of user objects and user attributes, as they 
+                exist in one or more systems, directories or applications, 
+                in response to automated or interactive business processes. 
+                User provisioning software may include one or more of the 
+                following processes: change propagation, self service workflow, 
+                consolidated user administration, delegated user administration, 
+                and federated change control. User objects may represent 
+                employees, contractors, vendors, partners, customers or other 
+                recipients of a service. Services may include electronic mail, 
+                inclusion in a published user directory, access to a database, 
+                access to a network or mainframe, etc. User provisioning is a 
+                type of identity management software, particularly useful 
+                within organizations, where users may be represented by 
+                multiple objects on multiple systems.</p>
+            </answer>
+        </faq>
+        <faq id="What is Subscriber Provisioninig">
+            <question>What is Subscriber Provisioning?</question>
+            <answer>
+                <p>Subscriber provisioning refers to the setting up of services, 
+                such as GSM (Voice), GPRS (Data), SMS (Short messages), 
+                MMS (Multi Media messages) and VMS (Voice Mail) for a 
+                subscriber of a mobile phone network.</p>
+            </answer>
+        </faq>
+        <faq id="What is Identity Provisioning">
+            <question>What is Identity Provisioning?</question>
+            <answer>
+                <p> Identity Provisioning is about the automation of all the steps 
+                required to manage (create, amend, and revoke) user or system access 
+                entitlements. Deprovisioning, such as when an employee leaves a company, 
+                is done by closing access accounts. Notice though that user lifecycle 
+                management and in specific the provisioning of user accounts 
+                and attributes is only one piece of Identity Management.</p>
+            </answer>
+        </faq>
+        <faq id="What is Identity Management">
+            <question>What is Identity Management?</question>
+            <answer>
+                <p>Identity Management talks about managing the whole 
+                lifecycle of a user, also known as an Identity. This 
+                begins with creating the user account, moves on to 
+                provisioning the user to the different back-end systems 
+                including giving the user the corresponding access rights. 
+                Change management accompanies the process whenever a user 
+                changes jobs or positions which usually results in 
+                different system access as well as different access rights. 
+                The user management lifecycle ends when a user no longer 
+                works with or for the company and thus all of his/her 
+                accounts have to be terminated or de-provisioned.</p>
+            </answer>
+        </faq>
+        <faq id="What are Directory Services">
+            <question>What are Directory Services?</question>
+            <answer>
+            	<p>Advantages of holding all users in a central repository are that 
+            	you reduce maintenance significantly and increase data quality and 
+            	consistency. Instead of maintaining user master data separately in 
+            	each of the various back-end systems (Try to come up with a list of 
+            	how many different systems you have that need user master data!), 
+            	resulting in a high administrative effort and data inconsistency, you 
+            	maintain the user master data only once and use the provisioning 
+            	mechanisms to an from the repository. This will ensure that user 
+            	master data across your entire landscape is consistent and thus 
+            	increase security.
+            	</p>
+                <p>Directory Services are the most widespread repository 
+                as they support an accepted and developed standard to 
+                access the Directory called LDAP (Lightweight Directory 
+                Access Protocol). Loads of back-end systems support LDAP 
+                so you can use user synchronization or provisioning to and 
+                from the Directory Service. Not only allow central 
+                repositories in the form of a Directory Service to store 
+                and provision users, you can also hold user credentials in 
+                the form of User ID and Password or X.509 Certificates for 
+                authentication. In addition you can store group or even 
+                role assignments which often represent the corresponding 
+                back-end system access. 
+                </p>
+            </answer>
+        </faq>
+        <faq id="How Identity Management and Security are related">
+            <question>How Identity Management and Security are related?</question>
+            <answer>
+                <p>A client uses an identity (most of the time it is a user 
+                identity) to gain access to the service it needs. A typical
+                SOA solution is distributed over multiple security domains
+                and there could be several identities attached to a single 
+                user in different security domains. This poses some 
+                problems with traditional security approaches. The security 
+                infrastructures may vary among the various backend systems,
+                so users may need to be authenticated for each system. The
+                other problem is related to the SOA service composition 
+                layer, which might be calling many different atomic 
+                services falling under different security domains. The 
+                absence of overall security context makes it difficult to 
+                associate multiple user identities.
+                </p>
+            </answer>
+        </faq>
+        <faq id="How SOA impacts Identity Management">
+            <question>How SOA impacts Identity Management?</question>
+            <answer>
+                <p>As SOA environments are typically highly decentralized 
+                in nature, identity management becomes a significant 
+                challenge for web services. Identities can be stored in 
+                many directories as well as many different types of 
+                directories, including proprietary username/password 
+                repositories, LDAP, Active Directory, and X.509 
+                certificate stores. An additional challenge is that SOA 
+                may have requests that result in additional requests to 
+                many different applications at once. An SOA-ready service 
+                may be composed of many service operations from many 
+                different services that each have their own identity. As 
+                part of a single transaction, many different services may 
+                be touched whether in parallel or in serial. Being able to 
+                authenticate and be authorized across all of these systems 
+                seamlessly improves the user experience as well as 
+                performance driving the need for a federated identity 
+                solution for SOA environments.
+				</p>
+            </answer>
+        </faq>
+        <faq id="I think I've found a bug in Provisioner, what do I do">
+            <question>I think I've found a bug in Provisioner, what do I do?</question>
+            <answer>
+                <p>Please follow these steps in the order they come. 
+                    
+					1. Read all the FAQs on this page. 
+					
+                    2. Ask a question on the user list. Please supply the necessary 
+                    information so that the people on the list can help you. 
+                    
+                    3. Create an issue in our bug tracker. 
+                    
+                </p>
+            </answer>
+        </faq>
+    </part>
+</faqs>

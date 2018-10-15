@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<faqs id="GLOSSARY" title="Glossary of terms used in this project">
+    <part id="General">
+    	<faq id="ILM">
+            <question>ILM</question>
+            <answer>
+                <p>Identity Lifecycle Management (ILM): In information systems, 
+                identity management (i.e. IdM), sometimes referred to as 
+                identity management systems, is the management of the identity 
+                life cycle of entities (subjects or objects) during which:
+
+                1. the identity is established: 
+                     a. a name (or number) is connected to the subject or 
+                        object; 
+                     b. the identity is re-established: a new or additional 
+                        name (or number) is connected to the subject or object; 
+                2. the identity is described: 
+                     a. one or more attributes which are applicable to this 
+                        particular subject or object may be assigned to the 
+                        identity; 
+                     b. the identity is newly described: one or more 
+                        attributes which are applicable to this particular 
+                        subject or object may be changed; 
+                3. the identity is destroyed.</p>
+           </answer>
+        </faq>
+    	<faq id="SMPL">
+            <question>SPML</question>
+            <answer>
+                <p>Service Provisioning Markup Language (SPML): is an OASIS-approved standard intended to provide 
+                an XML framework for managing the provisioning and 
+                allocation of identity information and system resources 
+                within and between organizations.</p>
+           </answer>
+        </faq>
+        <faq id="OASIS">
+            <question>OASIS</question>
+            <answer>
+                <p>Organization for the Advancement of Structured 
+                Information Standards (OASIS): is a not-for-profit consortium that 
+                drives the development, convergence and adoption of open 
+                standards for the global information society. The consortium 
+                produces more Web services standards than any other 
+                organization along with standards for security, e-business, 
+                and standardization efforts in the public sector and for 
+                application-specific markets. Founded in 1993, OASIS has more 
+                than 5,000 participants representing over 600 organizations and 
+                individual members in 100 countries.</p>
+           </answer>
+        </faq>
+        <faq id="RA">
+            <question>RA</question>
+            <answer>
+                <p>Requesting Authority (RA): This is the client application 
+                (e.g. a HR system or web portal) that wants to manage an 
+                entity (e.g. a user or account) on some Provisioning Service 
+                Target(s) (PST). Therefore it creates a well-formed SPML 
+                request and sends it to a Provisioning Service Point (PSP). 
+                SPML requests describe operations to be performed by the PST(s). 
+                An RA must not directly send these requests to any PST.</p>
+           </answer>
+        </faq>
+        <faq id="PST">
+            <question>PST</question>
+            <answer>
+                <p>Provisioning Service Target (PST): The endpoint for any 
+                provisioning request, representing a container for the PSOs 
+                it manages. A PST may be a traditional Windows domain or 
+                directory service instance or any backend application managing 
+                its own (user) objects. The PST accepts SPML requests from the 
+                PSP and finally translates these requests to some internal API 
+                calls to manage its objects. After performing the desired 
+                operation, the PST sends an SMPL response to the PSP, which in 
+                turn is send to the RA or stored on the PSP.</p>
+           </answer>
+        </faq>
+        <faq id="PSP">
+            <question>PSP</question>
+            <answer>
+                <p>Provisioning Service Point (PSP): Also called the SPML 
+                server or simply "provider", this software component takes the 
+                request from the client, processes it and returns with a (SPML) 
+                response. The value added by the PSP to the overall system is 
+                in its capabilities of directing and 'orchestrating' these 
+                requests.</p>
+           </answer>
+        </faq>
+        <faq id="PSO">
+            <question>PSO</question>
+            <answer>
+                <p>Provisioning Service Object (PSO): Any data entity or 
+                information object on a target, uniquely (within the namespace 
+                of the target) identified by an ID.</p>
+           </answer>
+        </faq>
+        <faq id="VoIP">
+            <question>VoIP</question>
+            <answer>
+                <p>Voice over Internet Protocol (VoIP) also called IP Telephony, 
+                Internet telephony, Broadband telephony, Broadband Phone and 
+                Voice over Broadband is the routing of voice conversations 
+                over the Internet or through any other IP-based network.</p>
+           </answer>
+        </faq>
+        <faq id="IMS">
+            <question>IMS</question>
+            <answer>
+                <p>The IP Multimedia Subsystem (IMS) is an architectural 
+                framework for delivering internet protocol (IP) multimedia to 
+                mobile users. It was originally designed by the wireless 
+                standards body 3rd Generation Partnership Project (3GPP), 
+                and is part of the vision for evolving mobile networks beyond 
+                GSM. Its original formulation (3GPP R5) represented an 
+                approach to delivering "Internet services" over GPRS. This 
+                vision was later updated by 3GPP, 3GPP2 and TISPAN by 
+                requiring support of networks other than GPRS, such as 
+                Wireless LAN, CDMA2000 and fixed line.
+
+                To ease the integration with the Internet, IMS as far as 
+                possible uses IETF (i.e. Internet) protocols such as Session 
+                Initiation Protocol (SIP). According to the 3GPP[1], IMS is 
+                not intended to standardise applications itself but to aid the 
+                access of multimedia and voice applications across wireless 
+                and wireline terminals, i.e. aid a form of fixed mobile 
+                convergence (FMC). This is done by having a horizontal control 
+                layer that isolates the access network from the service layer. 
+                Services need not have their own control functions, as the 
+                control layer is a common horizontal layer.</p>
+           </answer>
+        </faq>
+        <faq id="TM Forum">
+            <question>TM Forum</question>
+            <answer>
+                <p>The TM Forum provides leadership, strategic guidance and 
+                practical solutions to improve the management and operation 
+                of information and communications services. Its open membership 
+                of more than 600 companies comprises incumbent and new-entrant 
+                service providers, computing and network equipment suppliers, 
+                software solution suppliers and customers of communications 
+                services. TM Forum has been contributing to the Information 
+                and Communications Services (ICS) Industry for over 18 years.</p>
+           </answer>
+        </faq>
+        <faq id="OSS">
+            <question>OSS</question>
+            <answer>
+                <p>Operations Support Systems (also called Operational 
+                Support Systems or OSS) are computer systems used by 
+                telecommunications service providers. The term OSS most 
+                frequently describes "network systems" dealing with the 
+                telecom network itself, supporting processes such as 
+                maintaining network inventory, provisioning services, 
+                configuring network components, and managing faults. The 
+                complementary term Business Support Systems or BSS is a 
+                newer term and typically refers to "business systems" dealing 
+                with customers, supporting processes such as taking orders, 
+                processing bills, and collecting payments. The two systems 
+                together are often abbreviated BSS/OSS or simply B/OSS.</p>
+           </answer>
+        </faq> 
+        <faq id="BSS">
+            <question>BSS</question>
+            <answer>
+                <p>Business Support Systems (BSS) are the components that a 
+                telephone operator or telco uses to run its business 
+                operations. The term BSS is no longer limited to telephone 
+                operators offering mobile to fixed and cable services but 
+                also can apply to service providers in all sectors such as 
+                utility providers.
+
+                Typical types of activities that count as part of BSS are 
+                taking a customer’s order, managing customer data, managing 
+                order data, billing, rating, and offering B2B and B2C services. 
+                Business Support Systems are linked to Operational Support Systems 
+                (OSS) in the enhanced Telecom Operations Map (eTOM) that maps processes 
+                into the functional areas of Fulfilment, Assurance and Billing where 
+                Assurance is typically covered by OSS platform. BSS and OSS platforms 
+                are linked in the need to support various end to end services. Each area 
+                has its own data and service responsibilities.</p>
+           </answer>
+        </faq> 
+        <faq id="OSS/J">
+            <question>OSS/J</question>
+            <answer>
+                <p>The OSS/J Initiative extends from its core membership to 
+                relationships throughout the entire telecommunications and 
+                Java development communities worldwide. This extended 
+                community provides a growing family of Certified Products 
+                and Referenced Components, plus Affiliated Services and Open 
+                Source activities. The OSS/J ecosystem is driving the creation 
+                of componentized based end-to-end OSS/BSS solutions that 
+                support the lean operator.</p>
+           </answer>
+        </faq> 
+        <faq id="WS-Security">
+            <question>WS-Security</question>
+            <answer>
+                <p>Web Services Security (WS-Security): is a communications 
+                protocol providing a means for applying security to Web 
+                Services. On April 19 2004 the WS-Security 1.0 standard was 
+                released by Oasis-Open. On February 17 2006 they released 
+                version 1.1.
+
+                Originally developed by IBM, Microsoft, VeriSign and Forum 
+                Systems, the protocol is now officially called WSS and 
+                developed via committee in Oasis-Open.
+
+                The protocol contains specifications on how integrity and 
+                confidentiality can be enforced on Web Services messaging. 
+                The WSS protocol includes details on the use of SAML and 
+                Kerberos, and certificate formats such as X.509.
+
+                WS-Security describes how to attach signature and encryption 
+                headers to SOAP messages. In addition, it describes how to 
+                attach security tokens, including binary security tokens such 
+                as X.509 certificates and Kerberos tickets, to messages.
+
+                WS-Security incorporates security features in the header of a 
+                SOAP message, working in the application layer. Thus it ensures 
+                end-to-end security.</p>
+           </answer>
+        </faq>
+        <faq id="SAML">
+            <question>SAML</question>
+            <answer>
+                <p>Security Assertion Markup Language (SAML): is an XML 
+                standard for exchanging authentication and authorization data 
+                between security domains, that is, between an identity 
+                provider (a producer of assertions) and a service provider 
+                (a consumer of assertions). SAML is a product of the OASIS 
+                Security Services Technical Committee.
+
+                The single most important problem that SAML is trying to solve 
+                is the Web Browser Single Sign-On (SSO) problem. Single sign-on 
+                solutions are abundant at the intranet level (using cookies, 
+                for example) but extending these solutions beyond the intranet 
+                has been problematic and has led to the proliferation of 
+                non-interoperable proprietary technologies. SAML has become 
+                the definitive standard underlying many web Single Sign-On 
+                solutions in the enterprise identity management problem space.
+
+                SAML assumes the principal (often a user) has enrolled with at 
+                least one identity provider. This identity provider is expected 
+                to provide local authentication services to the principal. 
+                However, SAML does not specify the implementation of these 
+                local services; indeed, SAML does not care how local 
+                authentication services are implemented (although individual 
+                service providers most certainly will).
+
+                Thus a service provider relies on the identity provider to 
+                identify the principal. At the principal's request, the 
+                identity provider passes a SAML assertion to the service 
+                provider. On the basis of this assertion, the service provider 
+                makes an access control decision.</p>
+           </answer>
+        </faq> 
+        <faq id="Kerberos">
+            <question>Kerberos</question>
+            <answer>
+                <p>Kerberos is the name of a computer network authentication 
+                protocol, which allows individuals communicating over a 
+                non-secure network to prove their identity to one another in a 
+                secure manner. It is also a suite of free software published 
+                by Massachusetts Institute of Technology (MIT) that implements 
+                this protocol. Its designers aimed primarily at a client-server 
+                model, and it provides mutual authentication — both the user 
+                and the server verify each other's identity. Kerberos protocol 
+                messages are protected against eavesdropping and replay attacks.
+
+                Kerberos builds on symmetric key cryptography and requires a 
+                trusted third party. Extensions to Kerberos can provide for 
+                the use of public key cryptography during certain phases of 
+                authentication.</p>
+           </answer>
+        </faq> 
+        <faq id="X.509">
+            <question>X.509</question>
+            <answer>
+                <p>In cryptography, X.509 is an ITU-T standard for public key 
+                infrastructure (PKI). X.509 specifies, amongst other things, 
+                standard formats for public key certificates and a 
+                certification path validation algorithm.</p>
+           </answer>
+        </faq> 
+        <faq id="SOAP">
+            <question>SOAP</question>
+            <answer>
+                <p>Simple Object Access Protocol (SOAP): is a protocol for 
+                exchanging XML-based messages over computer networks, normally 
+                using HTTP/HTTPS. SOAP forms the foundation layer of the Web 
+                services stack, providing a basic messaging framework upon 
+                which abstract layers can be built.
+
+                There are several different types of messaging patterns in 
+                SOAP, but by far the most common is the Remote Procedure Call 
+                (RPC) pattern, in which one network node (the client) sends a 
+                request message to another node (the server) and the server 
+                immediately sends a response message to the client. SOAP is 
+                the successor of XML-RPC, though it borrows its transport and 
+                interaction neutrality and the envelope/header/body from 
+                elsewhere, probably from WDDX.</p>
+           </answer>
+        </faq> 
+        <faq id="SSH">
+            <question>SSH</question>
+            <answer>
+                <p>Secure Shell (SSH): is a network protocol that allows data 
+                to be exchanged over a secure channel between two computers. 
+                Encryption provides confidentiality and integrity of data. 
+                SSH uses public-key cryptography to authenticate the remote 
+                computer and allow the remote computer to authenticate the 
+                user, if necessary.
+
+                SSH is typically used to log into a remote machine and execute 
+                commands, but it also supports tunneling, forwarding arbitrary 
+                TCP ports and X11 connections; it can transfer files using the 
+                associated SFTP or SCP protocols.</p>
+           </answer>
+        </faq>   
+        <faq id="LDAP">
+            <question>LDAP</question>
+            <answer>
+                <p>Lightweight Directory Access Protocol (LDAP): is an 
+                application protocol for querying and modifying directory 
+                services running over TCP/IP.
+
+                A directory is a set of objects with similar attributes 
+                organized in a logical and hierarchical manner. The most 
+                common example is the telephone directory, which consists of a 
+                series of names (either of persons or organizations) organized 
+                alphabetically, with each name having an address and phone 
+                number attached. Due to this basic design (among other factors) 
+                LDAP is often used by other services for authentication.
+
+                An LDAP directory tree often reflects various political, 
+                geographic, and/or organizational boundaries, depending on the 
+                model chosen. LDAP deployments today tend to use Domain name 
+                system (DNS) names for structuring the topmost levels of the 
+                hierarchy. Deeper inside the directory might appear entries 
+                representing people, organizational units, printers, documents, 
+                groups of people or anything else which represents a given tree 
+                entry (or multiple entries).
+
+                Its current version is LDAPv3, which is specified in a series 
+                of Internet Engineering Task Force Standard Track Requests for 
+                comments (RFCs) as detailed in RFC 4510.</p>
+           </answer>
+        </faq>
+        <faq id="ISP">
+            <question>ISP</question>
+            <answer>
+                <p>An Internet service provider (abbr. ISP, also called 
+                Internet access provider or IAP) is a business or organization 
+                that provides consumers or businesses access to the Internet 
+                and related services. In the past, most ISPs were run by the 
+                phone companies. Now, ISPs can be started by just about any 
+                individual or group with sufficient money and expertise. In 
+                addition to Internet access via various technologies such as 
+                dial-up and DSL, they may provide a combination of services 
+                including Internet transit, domain name registration and 
+                hosting, web hosting, and colocation.</p>
+           </answer>
+        </faq>                    
+        <faq id="TSP">
+            <question>TSP</question>
+            <answer>
+                <p>A Telecommunications Service Provider or TSP is a type of 
+                Communications Service Provider that has traditionally 
+                provided telephone and similar services. This category 
+                includes ILECs, CLECs, and mobile wireless companies.
+
+                While some people use the terms Telecom Service Provider and 
+                Communications Service Provider interchangeably, the term TSP 
+                generally exclude ISPs, cable companies, satellite TV, and 
+                managed service providers.
+
+                TSPs provide access to telephone and related communications 
+                services. In the past, most TSP's were government owned and 
+                operated. in most countries, due to the nature of capital 
+                expenditure involved in it. But today there are many private 
+                players in most regions of the world, and even most of the 
+                government owned companies have been privatized.</p>
+           </answer>
+        </faq>         
+        <faq id="ASP">
+            <question>ASP</question>
+            <answer>
+                <p>An application service provider (ASP) is a business that 
+                provides computer-based services to customers over a network. 
+                Software offered using an ASP model is also sometimes called 
+                On-demand software or software as a service (SaaS). The most 
+                limited sense of this business is that of providing access to 
+                a particular application program (such as medical billing) 
+                using a standard protocol such as HTTP.
+
+                The need for ASPs has evolved from the increasing costs of 
+                specialized software that have far exceeded the price range of 
+                small to medium sized businesses. As well, the growing 
+                complexities of software have led to huge costs in distributing 
+                the software to end-users. Through ASPs, the complexities and 
+                costs of such software can be cut down. In addition, the issues 
+                of upgrading have been eliminated from the end-firm by placing 
+                the onus on the ASP to maintain up-to-date services, 24 x 7 
+                technical support, physical and electronic security and 
+                in-built support for business continuity and flexible working.</p>
+           </answer>
+        </faq>    
+        <faq id="MSP">
+            <question>MSP</question>
+            <answer>
+                <p>A managed service provider (MSP), is a company that receives 
+                income from services, typically on a monthly basis.
+
+                Recently, Managed Service Provider is a company that manages 
+                information technology services for other companies via the 
+                Internet. An MSP is a "company that offers continuous 
+                outsourcing of an IT function -- it works on a recurring 
+                revenue model; it monitors and fixes things proactively; and 
+                it does all this over the Internet, rather than having to work 
+                hands-on at a client's office."
+
+                Common services provided by MSPs include remote network, 
+                desktop and security monitoring, patch management and remote 
+                data back-up, as well as technical assistance.</p>
+           </answer>
+        </faq>       
+    </part>
+</faqs>

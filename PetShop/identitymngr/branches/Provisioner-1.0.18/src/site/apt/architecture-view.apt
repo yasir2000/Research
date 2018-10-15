@@ -1,0 +1,46 @@
+	------
+	Architecture View
+	------
+	Gonzalo Espert
+	------
+	Nov 30, 2007
+
+Provisioner's internal architecture view
+
+* Low-level architecture diagram
+
+  Processing of pending provisioning requirements is done through the use of 
+  <<<producer>>> and <<<consumer>>> classes. <<<Producer>>> classes use an 
+  <<<Adapter>>> class (i.e. SQLAdapter) to retrieve pending provisioning
+  requirements from a queue implemented as an SQL table. 
+  One instance of a <<<consumer>>> class is created in a separate thread
+  for each pending requirement. The instance of <<<consumer>>> class determines 
+  the operation type and applies the corresponding rules to the requirement. Then, the 
+  <<<consumer>>> object instantiates an <<<adapter>>> class (e.g. TelnetAdapter) 
+  to transmit the corresponding requests to the different identity stores that,  
+  according to the configured rules, the resulting provisioning requests 
+  should be sent to. 
+  When responses are received from identity stores, the <<<consumer>>> object 
+  updates the provisioning requirement status and enters a response description 
+  into the queue system.
+  
+[./images/low-level-architecture.png]
+
+* Provisioning request orchestration
+
+  [[1]]
+  
+  [[2]]
+  
+  [[3]]
+  
+  [[4]]
+  
+  [[5]]
+  
+* Conceptual Class Diagram
+
+  The following view shows a conceptual diagram of clases that conforms the
+  Provisioner system: 
+
+[./images/conceptual-class-diagram.png]

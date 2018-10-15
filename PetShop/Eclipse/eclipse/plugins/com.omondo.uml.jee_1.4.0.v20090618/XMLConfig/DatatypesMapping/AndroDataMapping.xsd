@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 U (http://www.altova.com) by zizou (omondo) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="XMI" type="XMIType"/>
+	<xs:complexType name="XMIType">
+		<xs:sequence>
+			<xs:element name="AndroMDADatatypesMapping" type="AndroMDADatatypesMappingType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Java2AndroType">
+		<xs:sequence>
+			<xs:element name="Java" type="xs:string"/>
+			<xs:element name="Andro" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AndroMDADatatypesMappingType">
+		<xs:sequence>
+			<xs:element name="Java2Andro" type="Java2AndroType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="version" type="xs:string"/>
+	</xs:complexType>
+</xs:schema>

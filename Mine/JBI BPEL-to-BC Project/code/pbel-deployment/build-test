@@ -1,0 +1,61 @@
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   BPEL Deployment
+[INFO]   XSL extension functions
+[INFO]   BPEL Deployer JBI Service Engine
+[INFO]   BPEL Deployer JBI Bindings
+[INFO] ------------------------------------------------------------------------
+[INFO] Building BPEL Deployment
+[INFO]    task-segment: [clean, package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XSL extension functions
+[INFO]    task-segment: [clean, package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting directory C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-xsl\target
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-xsl\src\main\resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 9 source files to C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-xsl\target\classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Compiling 1 source file to C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-xsl\target\test-classes
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Surefire report directory: C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-xsl\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running clove.neptune.bpeldeployment.xsl.WSDLHelperTest
+Jan 16, 2010 6:28:31 PM clove.neptune.bpeldeployment.xsl.WSDLHelper <init>
+INFO: pkg: C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-xsl\build
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec <<< FAILURE!
+
+Results :
+
+Failed tests: 
+  testGetPortType(clove.neptune.bpeldeployment.xsl.WSDLHelperTest)
+  testGetService(clove.neptune.bpeldeployment.xsl.WSDLHelperTest)
+  testGetPort(clove.neptune.bpeldeployment.xsl.WSDLHelperTest)
+
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] There are test failures.
+
+Please refer to C:\Documents and Settings\Admin\Desktop\BPEL Deployment\Andrey\bpel-deployer\Final\pbel-deployment\bpel-deployment-xsl\target\surefire-reports for the individual test results.
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6 seconds
+[INFO] Finished at: Sat Jan 16 18:28:31 GST 2010
+[INFO] Final Memory: 17M/31M
+[INFO] ------------------------------------------------------------------------

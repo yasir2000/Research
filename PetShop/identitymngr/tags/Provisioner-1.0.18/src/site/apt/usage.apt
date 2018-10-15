@@ -1,0 +1,68 @@
+	------
+	Using Provisioner
+	------
+	Gonzalo Espert
+	------
+	Oct 29, 2007
+
+
+Using Provisioner
+
+* Provisioner’s behavior
+
+  Provisioner’s behavior can be modified by changing XML configuration 
+  files. Those XML configuration files are located at 
+  ~home/provisioner/config. These configuration files give Provisioner the 
+  flexibility should the need to add new provisioning rules arise. 
+  It’s not very uncommon that provisioning rules change quite often. For 
+  each request that Provisioner process it applies a pre-configured set 
+  of rules, thus we can say that modifiyng the provisioning rules we can 
+  modify Provisioner behavior.
+
+* How does Provisioner work?
+
+  Provisioner receives work orders from business 
+  support systems to provision services and access info 
+  to service's subscriptors. Once the system has received 
+  a request, it determines in which identity stores 
+  it has to execute the request. Then it transforms  
+  the request into one or more specific provisioning commands 
+  for those identity stores, and finally it executes those 
+  commands.
+  
+  When business support systems wants that certain services 
+  be activated to a subscriber in several identity stores, 
+  Provisioner guaranties that those operations are executed 
+  in the same order that the business support system sent them.
+   
+  The system prepares one response for each completed 
+  request and delivers this response to the corresponding
+  business support system, inserting it in the request queue. 
+  This response informs the business support system of the 
+  request’s outcome.
+  
+  The following diagram shows a high-level architecture view of
+  Provisioner:
+  
+[./images/Provisioner - High-level architecture.png]
+  
+  Following a provisioning requirement high-level workflow:
+
+  [[1]]	Requesting authorities submits provisioning requirements into Provisioner’s operations queue.
+  
+  [[2]]	Requirements are processed periodically by Provisioner into individual requests to be sent to 
+  the corresponding identity stores.  
+  
+       [[a]] When a requirement in the queue is missing information,  Provisioner automatically 
+       fills in the empty fields with information from look-up tables based on configured 
+       provisioning rules. 
+       
+       [[b]] If some or all identity stores are not available when the requests are processed 
+       and transmitted, the requirement that contain request to be transmitted to offline 
+       identity stores will stay in the queue flagged for re-processing. 
+       
+  [[3]] Response is received from identity stores to which requests were 
+  transmitted. The response is processed into a requirement status update. 
+  Whenever there is an error in the request, the transmission or reception 
+  of a request, the response will trigger Provisioner to flag the order for 
+  reprocessing.

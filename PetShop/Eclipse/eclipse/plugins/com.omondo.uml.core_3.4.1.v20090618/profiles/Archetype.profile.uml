@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decoration_4="http:///_N3ITsK_9Edmrc_tu8ZGFqg.profile.uml2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///_N3ITsK_9Edmrc_tu8ZGFqg.profile.uml2 ../../../plugin/com.omondo.uml.core/profiles/Decoration.profile.uml#_N3Ug8K_9Edmrc_tu8ZGFqg">
+  <uml:Profile xmi:id="_j-cLoORNEduiB7qvAtFfTA" name="Archetype" metaclassReference="_o-haUORNEduiB7qvAtFfTA _q-E3QORNEduiB7qvAtFfTA">
+    <eAnnotations xmi:id="_j-cLoeRNEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_f6v3QOROEduiB7qvAtFfTA" name="Archetype" nsURI="http:///schemas/Archetype/1" nsPrefix="Archetype">
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3QeROEduiB7qvAtFfTA" name="place">
+          <eAnnotations xmi:id="_f6v3QuROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tPqfYORNEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3Q-ROEduiB7qvAtFfTA" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3ROROEduiB7qvAtFfTA" name="role">
+          <eAnnotations xmi:id="_f6v3ReROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_vRmh8ORNEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3RuROEduiB7qvAtFfTA" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3R-ROEduiB7qvAtFfTA" name="description">
+          <eAnnotations xmi:id="_f6v3SOROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yymjgORNEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3SeROEduiB7qvAtFfTA" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3SuROEduiB7qvAtFfTA" name="moment">
+          <eAnnotations xmi:id="_f6v3S-ROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0timMORNEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3TOROEduiB7qvAtFfTA" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3TeROEduiB7qvAtFfTA" name="interval">
+          <eAnnotations xmi:id="_f6v3TuROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2UWzAORNEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3T-ROEduiB7qvAtFfTA" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3UOROEduiB7qvAtFfTA" name="thing">
+          <eAnnotations xmi:id="_f6v3UeROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3iI0wORNEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3UuROEduiB7qvAtFfTA" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3U-ROEduiB7qvAtFfTA" name="party">
+          <eAnnotations xmi:id="_f6v3VOROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5SMdIORNEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3VeROEduiB7qvAtFfTA" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_f6v3VuROEduiB7qvAtFfTA" name="substitution">
+          <eAnnotations xmi:id="_f6v3V-ROEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_d4z0sOROEduiB7qvAtFfTA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f6v3WOROEduiB7qvAtFfTA" name="base_Dependency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Dependency"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
+      <contents xmi:type="ecore:EPackage" xmi:id="_j-cLouRNEduiB7qvAtFfTA" name="Archetype" nsURI="http://ArchetypeModel/schemas/Archetype/0" nsPrefix="Archetype"/>
+    </eAnnotations>
+    <elementImport xmi:id="_o-haUORNEduiB7qvAtFfTA">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+    </elementImport>
+    <elementImport xmi:id="_q-E3QORNEduiB7qvAtFfTA">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_tPqfYORNEduiB7qvAtFfTA" name="place">
+      <ownedAttribute xmi:id="_-_k2sORNEduiB7qvAtFfTA" name="base_Classifier" association="_-_bFsORNEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_vRmh8ORNEduiB7qvAtFfTA" name="role">
+      <ownedAttribute xmi:id="_AvCCIOROEduiB7qvAtFfTA" name="base_Classifier" association="_Au44MOROEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_yymjgORNEduiB7qvAtFfTA" name="description">
+      <ownedAttribute xmi:id="__5sVkuRNEduiB7qvAtFfTA" name="base_Classifier" association="__5sVkORNEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_0timMORNEduiB7qvAtFfTA" name="moment">
+      <ownedAttribute xmi:id="_AVHGQuROEduiB7qvAtFfTA" name="base_Classifier" association="_AVHGQOROEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_2UWzAORNEduiB7qvAtFfTA" name="interval">
+      <ownedAttribute xmi:id="_BHLcYuROEduiB7qvAtFfTA" name="base_Classifier" association="_BHLcYOROEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_3iI0wORNEduiB7qvAtFfTA" name="thing">
+      <ownedAttribute xmi:id="_Bg9OUuROEduiB7qvAtFfTA" name="base_Classifier" association="_Bg9OUOROEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_5SMdIORNEduiB7qvAtFfTA" name="party">
+      <ownedAttribute xmi:id="_B7xiEuROEduiB7qvAtFfTA" name="base_Classifier" association="_B7xiEOROEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_-_bFsORNEduiB7qvAtFfTA" name="Classifier_place" memberEnd="_-_bFseRNEduiB7qvAtFfTA _-_k2sORNEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_-_bFseRNEduiB7qvAtFfTA" name="extension_place" type="_tPqfYORNEduiB7qvAtFfTA" aggregation="composite" association="_-_bFsORNEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="__5sVkORNEduiB7qvAtFfTA" name="Classifier_description" memberEnd="__5sVkeRNEduiB7qvAtFfTA __5sVkuRNEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="__5sVkeRNEduiB7qvAtFfTA" name="extension_description" type="_yymjgORNEduiB7qvAtFfTA" aggregation="composite" association="__5sVkORNEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_AVHGQOROEduiB7qvAtFfTA" name="Classifier_moment" memberEnd="_AVHGQeROEduiB7qvAtFfTA _AVHGQuROEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_AVHGQeROEduiB7qvAtFfTA" name="extension_moment" type="_0timMORNEduiB7qvAtFfTA" aggregation="composite" association="_AVHGQOROEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_Au44MOROEduiB7qvAtFfTA" name="Classifier_role" memberEnd="_Au44MeROEduiB7qvAtFfTA _AvCCIOROEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Au44MeROEduiB7qvAtFfTA" name="extension_role" type="_vRmh8ORNEduiB7qvAtFfTA" aggregation="composite" association="_Au44MOROEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_BHLcYOROEduiB7qvAtFfTA" name="Classifier_interval" memberEnd="_BHLcYeROEduiB7qvAtFfTA _BHLcYuROEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_BHLcYeROEduiB7qvAtFfTA" name="extension_interval" type="_2UWzAORNEduiB7qvAtFfTA" aggregation="composite" association="_BHLcYOROEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_Bg9OUOROEduiB7qvAtFfTA" name="Classifier_thing" memberEnd="_Bg9OUeROEduiB7qvAtFfTA _Bg9OUuROEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Bg9OUeROEduiB7qvAtFfTA" name="extension_thing" type="_3iI0wORNEduiB7qvAtFfTA" aggregation="composite" association="_Bg9OUOROEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_B7xiEOROEduiB7qvAtFfTA" name="Classifier_party" memberEnd="_B7xiEeROEduiB7qvAtFfTA _B7xiEuROEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_B7xiEeROEduiB7qvAtFfTA" name="extension_party" type="_5SMdIORNEduiB7qvAtFfTA" aggregation="composite" association="_B7xiEOROEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_d4z0sOROEduiB7qvAtFfTA" name="substitution">
+      <ownedAttribute xmi:id="_fUwOQuROEduiB7qvAtFfTA" name="base_Dependency" association="_fUwOQOROEduiB7qvAtFfTA">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_fUwOQOROEduiB7qvAtFfTA" name="Dependency_substitution" memberEnd="_fUwOQeROEduiB7qvAtFfTA _fUwOQuROEduiB7qvAtFfTA">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fUwOQeROEduiB7qvAtFfTA" name="extension_substitution" type="_d4z0sOROEduiB7qvAtFfTA" aggregation="composite" association="_fUwOQOROEduiB7qvAtFfTA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_kR9kkORNEduiB7qvAtFfTA">
+      <eAnnotations xmi:id="_kR9kkeRNEduiB7qvAtFfTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../../../plugin/com.omondo.uml.core/profiles/Decoration.profile.uml#_N3Ug8K_9Edmrc_tu8ZGFqg"/>
+      </eAnnotations>
+      <appliedProfile href="../../../plugin/com.omondo.uml.core/profiles/Decoration.profile.uml#_eZaEQawNEdm3qbNTPAjptA"/>
+    </profileApplication>
+  </uml:Profile>
+  <decoration_4:decoration__decorable xmi:id="_tV64YORNEduiB7qvAtFfTA" base_Stereotype="_tPqfYORNEduiB7qvAtFfTA"/>
+  <decoration_4:decoration__decorable xmi:id="_vRmh8eRNEduiB7qvAtFfTA" base_Stereotype="_vRmh8ORNEduiB7qvAtFfTA"/>
+  <decoration_4:decoration__decorable xmi:id="_yymjgeRNEduiB7qvAtFfTA" base_Stereotype="_yymjgORNEduiB7qvAtFfTA"/>
+  <decoration_4:decoration__decorable xmi:id="_0timMeRNEduiB7qvAtFfTA" base_Stereotype="_0timMORNEduiB7qvAtFfTA"/>
+  <decoration_4:decoration__decorable xmi:id="_2UgkAORNEduiB7qvAtFfTA" base_Stereotype="_2UWzAORNEduiB7qvAtFfTA"/>
+  <decoration_4:decoration__decorable xmi:id="_3iI0weRNEduiB7qvAtFfTA" base_Stereotype="_3iI0wORNEduiB7qvAtFfTA"/>
+  <decoration_4:decoration__decorable xmi:id="_5SMdIeRNEduiB7qvAtFfTA" base_Stereotype="_5SMdIORNEduiB7qvAtFfTA"/>
+  <decoration_4:decoration__decorable xmi:id="_d4z0seROEduiB7qvAtFfTA" base_Stereotype="_d4z0sOROEduiB7qvAtFfTA"/>
+</xmi:XMI>

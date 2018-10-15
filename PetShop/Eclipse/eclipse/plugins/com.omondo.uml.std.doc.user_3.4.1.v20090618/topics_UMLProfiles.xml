@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="UML Profiles" topic="profiles/index.html">
+    <topic label="J2EE Profiles" href="profiles/J2EEProfile/index.html">
+        <topic label="Concept" href="profiles/J2EEProfile/Concept/index.html"/>
+        <topic label="Getting Started" href="profiles/J2EEProfile/Gettingstarted/index.html"/>
+        <topic label="Servlet and Ejb Creation" href="profiles/J2EEProfile/ServletEJBCreation/index.html"/>
+        <topic label="Deployment Configuration" href="profiles/J2EEProfile/DeploymentConfiguration/index.html"/>
+        <topic label="Deployment Diagram" href="profiles/J2EEProfile/J2EEDeploymentDiagram/index.html"/>
+        <topic label="Run the server" href="profiles/J2EEProfile/ServeurConfiguration/index.html"/>
+    </topic>
+    <topic label="XDoclet Profiles" href="profiles/XdocletProfile/index.html">
+        <topic label="Concept" href="profiles/XdocletProfile/concept/index.html"/>
+        <topic label="Project Profile Configuration" href="profiles/XdocletProfile/configuration/index.html"/>
+        <topic label="Tag Configuration" href="profiles/XdocletProfile/project/index.html"/>
+        <topic label="Add your own Doclets" href="profiles/XdocletProfile/add/index.html"/>
+    </topic> 
+           
+</toc>

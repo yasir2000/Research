@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="EclipseUML User Guide" topic="index.html">
+	<topic label="Getting Started" href="gettingStarted/index.html">
+		<link toc="topics_GettingStarted.xml"/>
+	</topic>
+	<topic label="Working With Diagrams" href="workingWithDiagrams/index.html">
+		<link toc="topics_WorkingWithDiagrams.xml"/>
+	</topic>
+	<topic label="Diagrams" href="diagrams/index.html">
+		<link toc="topics_Diagrams.xml"/>
+	</topic>
+	<topic label="Preferences"  href="preferences/index.html">
+		<link toc="topics_Preferences.xml"/>
+	</topic>
+	<topic label="Model Editor"  href="Model_Editor/index.html">
+		<link toc="topics_ModelEditor.xml"/>
+	</topic>
+	<topic label="Reverse Engineering" href="reverse/index.html">
+		<link toc="topics_reverseengineering.xml"/>
+	</topic>
+	<topic label="JDK 1.5 - 1.6 Support" href="jdk15/index.html">
+		<link toc="topics_jdk15.xml"/>
+	</topic>
+	<topic label="UML annotations"  href="annotations/index.html">
+		<link toc="topics_annotations.xml"/>
+	</topic>
+	<topic label="Documentation Generation" href="docgen/index.html">
+		<link toc="topics_docgen.xml"/>
+	</topic>
+	<topic label="Jee Code Generation" href="code/index.html">
+		<link toc="topics_jeecode.xml"/>
+	</topic>
+	<topic label="Persistence_Development" href="Eclipse_Database/index.html">
+		<link toc="topics_Persistenc_Development.xml"/>
+	</topic>
+	<topic label="TeamWork" href="Team work/index.html">
+		<link toc="teamWork.xml"/>
+	</topic>
+	
+</toc> 

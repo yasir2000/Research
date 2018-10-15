@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections xmlns="http://connections.org">
+  <description>
+     Connection string information.
+  </description>
+  
+  <connection>
+		<server type="postgresql" name="localhost"/>
+		<driver className="org.postgresql.Driver" type="jdbc"/>
+		<database name="provisi" user="postgres" password="postgres"/>
+  </connection>
+  
+  <!-- <connection>
+		<server type="sqlserver" name="10.30.21.125"/>
+		<driver className="com.microsoft.sqlserver.jdbc.SQLServerDriver" type="jdbc"/>
+		<database name="test" user="sa" password="sa"/>
+  </connection> -->
+  
+</connections>

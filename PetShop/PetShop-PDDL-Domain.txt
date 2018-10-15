@@ -1,0 +1,58 @@
+;;;------------------------
+; Bidding-1 Script for PetShop
+; 2011-dec-05
+;;;------------------------
+(define (domain petshop)
+    (:requirements :strips :fluents :negative-preconditions)
+    (:predicates
+        (is-buyer ?person)
+        (is-seller ?person)
+        (want-bid)
+        (want-offer)
+        (pet-sold))
+
+    (:functions
+        (last-bid)
+        (last-offer)
+        (sale-price))
+
+    (:action check-if-sold
+        :parameters ()
+        :precondition
+        (and
+            (not (want-bid))
+            (not (want-offer))
+            (>= (last-bid) (last-offer)))
+        :effect
+            (and
+                (pet-sold)
+                (assign (sale-price) (last-bid))))
+
+    (:action request-bids-offers
+        :parameters ()
+        :precondition
+        (and
+            (not (want-bid))
+            (not (want-offer)))
+        :effect
+        (and
+            (want-bid)
+            (want-offer)))
+
+    (:action make-bid
+        :parameters ()
+        :precondition (want-bid)
+        :effect
+        (and
+            (not (want-bid))
+            (increase (last-bid) 5)))
+			  
+    (:action make-offer
+        :parameters ()
+        :precondition (want-offer)
+        :effect
+        (and
+            (not (want-offer))
+            (decrease (last-offer) 5)))
+ 
+ )

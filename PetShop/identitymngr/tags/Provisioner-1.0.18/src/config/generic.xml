@@ -1,0 +1,18 @@
+<generic xmlns="http://generic.org">
+  <description>
+     Generic network element configuration.
+  </description>
+  <parameter name="type" value="Generic"/>
+  <parameter name="host" value="200.55.55.55"/> 
+  <parameter name="username" value="username"/>
+  <parameter name="password" value="password"/>
+  <parameter name="password_sudo" value="sudopassword"/>
+  <parameter name="responses" value="generic_responses"/>
+  <parameter name="bin" value="/etc/"/>
+  <parameter name="create" value="add.sh"/>
+  <parameter name="delete" value="remove.sh"/>
+  <parameter name="errorlogin" value="failed"/>
+  <parameter name="$1" value="line"/>
+  <parameter name="$2" value="port"/>
+  <parameter name="$3" value="emailaddress"/>
+</generic>

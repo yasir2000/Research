@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="classpath" type="classpathType"/>
+  <xs:complexType name="classpathType">
+    <xs:sequence>
+      <xs:element type="classpathentryType" name="classpathentry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="classpathentryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="kind" use="optional"/>
+        <xs:attribute type="xs:string" name="path" use="optional"/>
+        <xs:attribute type="xs:string" name="sourcepath" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

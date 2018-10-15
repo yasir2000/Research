@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>clove.neptne.bpel-deployment</groupId>
+		<artifactId>bpel-deployment</artifactId>
+		<version>1.0</version>
+	</parent>
+	<groupId>clove.neptne.bpel-deployment</groupId>
+	<artifactId>bpel-deployer-jbi-bindings</artifactId>
+	<packaging>pom</packaging>
+	<name>BPEL Deployer JBI Bindings</name>
+	<version>0.0.1</version>
+	<description>BPEL Deployer JBI Service Engine.</description>
+	<url>http://clove/neptne/bpel-deployment/bpel-deployer-jbi-bindings</url>
+	<inceptionYear>2010</inceptionYear>
+
+	<build>
+    	<plugins>
+			<plugin>
+			    <artifactId>maven-assembly-plugin</artifactId>
+			    <executions>
+			        <execution>
+			            <id>generate-sun-file-binding-su-assembly</id>
+			            <phase>package</phase>
+			            <goals>
+			                <goal>attached</goal>
+			            </goals>
+			            <configuration>
+			                <descriptors>
+			                    <descriptor>src/su/jbi-su-assembly.xml</descriptor>
+			                </descriptors>
+			                <finalName>sun-file-binding</finalName>
+			            </configuration>
+			        </execution>
+			        <execution>
+			            <id>generate-service-assembly</id>
+			            <phase>package</phase>
+			            <goals>
+			                <goal>attached</goal>
+			            </goals>
+			            <configuration>
+			                <descriptors>
+			                    <descriptor>src/jbi-service-assembly.xml</descriptor>
+			                </descriptors>
+			            </configuration>
+			        </execution>
+			    </executions>
+			</plugin>
+    	</plugins>
+	</build>
+	<dependencies>
+	</dependencies>
+</project>

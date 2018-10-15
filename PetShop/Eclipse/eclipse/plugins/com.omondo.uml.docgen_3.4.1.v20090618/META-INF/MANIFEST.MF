@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.omondo.uml.docgen; singleton:=true
+Bundle-Version: 3.4.1.v20090618
+Bundle-ClassPath: eclipseuml.docgen.jar,
+ lib/commons-io-1.0.jar,
+ lib/saxon.jar,
+ lib/saxon651.jar,
+ lib/resolver-2.7.0.jar,
+ lib/xercesImpl-2.7.0.jar,
+ lib/xml-apis-2.7.0.jar
+Bundle-Activator: com.omondo.uml.docgen.DocGenPlugin
+Bundle-Vendor: Omondo ©
+Bundle-Localization: plugin
+Require-Bundle: com.omondo.uml.core,
+ org.eclipse.core.resources,
+ org.eclipse.ui,
+ org.eclipse.gef,
+ org.eclipse.jdt.ui,
+ org.eclipse.jdt.core,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.views,
+ org.eclipse.osgi,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.edit,
+ org.eclipse.uml2,
+ org.eclipse.uml2.uml
+Eclipse-LazyStart: true

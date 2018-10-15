@@ -1,0 +1,2470 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<UMLMapping>
+    <Element Name="Component_BuildComponent"
+        UML2_0_Value="_9vsGxa86Edih9-GG5afQ0g" UML2_1_Value="Component_BuildComponent"/>
+    <Element Name="LinkEndCreationData-insertAt"
+        UML2_0_Value="_m9nfe686EdiEh75YJ_3n8g" UML2_1_Value="LinkEndCreationData-insertAt"/>
+    <Element Name="Extend-extensionLocation"
+        UML2_0_Value="_m9bQ2a86EdiEh75YJ_3n8g" UML2_1_Value="Extend-extensionLocation"/>
+    <Element Name="RaiseExceptionAction-exception"
+        UML2_0_Value="_m9ngyK86EdiEh75YJ_3n8g" UML2_1_Value="RaiseExceptionAction-exception"/>
+    <Element Name="ParameterDirectionKind"
+        UML2_0_Value="_m9PCza86EdiEh75YJ_3n8g" UML2_1_Value="ParameterDirectionKind"/>
+    <Element Name="EObject-eContainingFeature-_ownedParameter.0"
+        UML2_0_Value="_h3j_58enEdm17tz62ORDiA" UML2_1_Value="EObject-eContainingFeature-_ownedParameter.0"/>
+    <Element Name="Relationship" UML2_0_Value="_m8qbUq86EdiEh75YJ_3n8g" UML2_1_Value="Relationship"/>
+    <Element Name="Artifact_Document"
+        UML2_0_Value="_Fxmuwa87Edih9-GG5afQ0g" UML2_1_Value="Artifact_Document"/>
+    <Element Name="MultiplicityElement-upper_gt_0"
+        UML2_0_Value="_h33hn8enEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-upper_gt_0"/>
+    <Element Name="Clause-test" UML2_0_Value="_m9ndsK86EdiEh75YJ_3n8g" UML2_1_Value="Clause-test"/>
+    <Element Name="Namespace-membersAreDistinguishable"
+        UML2_0_Value="_m8whnK86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-membersAreDistinguishable"/>
+    <Element Name="NamedElement-name"
+        UML2_0_Value="_m8qcBK86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-name"/>
+    <Element Name="Model-viewpoint"
+        UML2_0_Value="_m9ndb686EdiEh75YJ_3n8g" UML2_1_Value="Model-viewpoint"/>
+    <Element Name="BehavioralFeature"
+        UML2_0_Value="_m9I8Kq86EdiEh75YJ_3n8g" UML2_1_Value="BehavioralFeature"/>
+    <Element Name="ReplyAction-replyToCall"
+        UML2_0_Value="_m9ngua86EdiEh75YJ_3n8g" UML2_1_Value="ReplyAction-replyToCall"/>
+    <Element Name="Region" UML2_0_Value="_m9VJ8686EdiEh75YJ_3n8g" UML2_1_Value="Region"/>
+    <Element Name="StructuredActivityNode-edge"
+        UML2_0_Value="_m9VK1K86EdiEh75YJ_3n8g" UML2_1_Value="StructuredActivityNode-edge"/>
+    <Element Name="ValueSpecification-integerValue"
+        UML2_0_Value="_m8qb7686EdiEh75YJ_3n8g" UML2_1_Value="ValueSpecification-integerValue"/>
+    <Element Name="Operation-only_body_for_query"
+        UML2_0_Value="_h4AsQcenEdm17tz62ORDiA" UML2_1_Value="Operation-only_body_for_query"/>
+    <Element Name="Region-extendedRegion"
+        UML2_0_Value="_m9VJ_q86EdiEh75YJ_3n8g" UML2_1_Value="Region-extendedRegion"/>
+    <Element Name="ConditionalNode"
+        UML2_0_Value="_m9ndna86EdiEh75YJ_3n8g" UML2_1_Value="ConditionalNode"/>
+    <Element Name="EObject-eContainmentFeature-_ownedParameter.0"
+        UML2_0_Value="_h3j_6cenEdm17tz62ORDiA" UML2_1_Value="EObject-eContainmentFeature-_ownedParameter.0"/>
+    <Element Name="InteractionOperatorKind-ignore"
+        UML2_0_Value="_m9ngGq86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-ignore"/>
+    <Element Name="Message-messageKind"
+        UML2_0_Value="_m9neXq86EdiEh75YJ_3n8g" UML2_1_Value="Message-messageKind"/>
+    <Element Name="Classifier-conformsTo"
+        UML2_0_Value="_m88vUK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-conformsTo"/>
+    <Element Name="ReadLinkAction"
+        UML2_0_Value="_m9nfcK86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkAction"/>
+    <Element Name="Send-base_Usage"
+        UML2_0_Value="_9w7c4686Edih9-GG5afQ0g" UML2_1_Value="Send-base_Usage"/>
+    <Element Name="ReadLinkObjectEndAction-result"
+        UML2_0_Value="_m9ngfa86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndAction-result"/>
+    <Element Name="Namespace-excludeCollisions-imps"
+        UML2_0_Value="_m8whqa86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-excludeCollisions-imps"/>
+    <Element Name="ActivityGroup" UML2_0_Value="_m9VKs686EdiEh75YJ_3n8g" UML2_1_Value="ActivityGroup"/>
+    <Element Name="ContentKind-ElementOnly"
+        UML2_0_Value="_usPgSa87Edi5QpYeY_yIpg" UML2_1_Value="ContentKind-ElementOnly"/>
+    <Element Name="State-connection"
+        UML2_0_Value="_m9bQAK86EdiEh75YJ_3n8g" UML2_1_Value="State-connection"/>
+    <Element Name="EFactory-createFromString-_ownedParameter.0"
+        UML2_0_Value="_h3j_1senEdm17tz62ORDiA" UML2_1_Value="EFactory-createFromString-_ownedParameter.0"/>
+    <Element Name="MultiplicityElement-includesMultiplicity-M"
+        UML2_0_Value="_m8qbza86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-includesMultiplicity-M"/>
+    <Element Name="EDataType-base_PrimitiveType"
+        UML2_0_Value="_ush0JK87Edi5QpYeY_yIpg" UML2_1_Value="EDataType-base_PrimitiveType"/>
+    <Element Name="Variable" UML2_0_Value="_m9bQXa86EdiEh75YJ_3n8g" UML2_1_Value="Variable"/>
+    <Element Name="StringExpression-subExpression"
+        UML2_0_Value="_m8qbqq86EdiEh75YJ_3n8g" UML2_1_Value="StringExpression-subExpression"/>
+    <Element Name="UnlimitedNatural"
+        UML2_0_Value="_m8qbCK86EdiEh75YJ_3n8g" UML2_1_Value="UnlimitedNatural"/>
+    <Element Name="ValueSpecification-isNull"
+        UML2_0_Value="_m8qb9686EdiEh75YJ_3n8g" UML2_1_Value="ValueSpecification-isNull"/>
+    <Element Name="EPackage-nsURI"
+        UML2_0_Value="_ur9MY687Edi5QpYeY_yIpg" UML2_1_Value="EPackage-nsURI"/>
+    <Element Name="Operation-class"
+        UML2_0_Value="_m9C2kq86EdiEh75YJ_3n8g" UML2_1_Value="Operation-class"/>
+    <Element Name="ElementImport-imported_element_is_public"
+        UML2_0_Value="_h33iUsenEdm17tz62ORDiA" UML2_1_Value="ElementImport-imported_element_is_public"/>
+    <Element Name="ActivityEdge-inStructuredNode"
+        UML2_0_Value="_m9VKgK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-inStructuredNode"/>
+    <Element Name="State-isComposite"
+        UML2_0_Value="_m9bP9q86EdiEh75YJ_3n8g" UML2_1_Value="State-isComposite"/>
+    <Element Name="TransitionKind"
+        UML2_0_Value="_m9VKMK86EdiEh75YJ_3n8g" UML2_1_Value="TransitionKind"/>
+    <Element Name="EClass-eAllContainments"
+        UML2_0_Value="_m8eOE686EdiEh75YJ_3n8g" UML2_1_Value="EClass-eAllContainments"/>
+    <Element Name="EEnum-getEEnumLiteral.1-value"
+        UML2_0_Value="_m8kUv686EdiEh75YJ_3n8g" UML2_1_Value="EEnum-getEEnumLiteral.1-value"/>
+    <Element Name="EPackage-getEClassifier-name"
+        UML2_0_Value="_m8kUSq86EdiEh75YJ_3n8g" UML2_1_Value="EPackage-getEClassifier-name"/>
+    <Element Name="ETypedElement-ordered"
+        UML2_0_Value="_m8eNv686EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement-ordered"/>
+    <Element Name="EReference-resolveProxies"
+        UML2_0_Value="_m8kUfq86EdiEh75YJ_3n8g" UML2_1_Value="EReference-resolveProxies"/>
+    <Element Name="FeatureKind-Group"
+        UML2_0_Value="_0OdAs8ezEdmTJL3rR1ioJg" UML2_1_Value="FeatureKind-Group"/>
+    <Element Name="StructuralFeature-isReadOnly"
+        UML2_0_Value="_m9C17686EdiEh75YJ_3n8g" UML2_1_Value="StructuralFeature-isReadOnly"/>
+    <Element Name="Operation-bodyCondition"
+        UML2_0_Value="_m9C2oa86EdiEh75YJ_3n8g" UML2_1_Value="Operation-bodyCondition"/>
+    <Element Name="Port-redefinedPort"
+        UML2_0_Value="_m9VKSq86EdiEh75YJ_3n8g" UML2_1_Value="Port-redefinedPort"/>
+    <Element Name="LinkAction-endData"
+        UML2_0_Value="_m9nfVa86EdiEh75YJ_3n8g" UML2_1_Value="LinkAction-endData"/>
+    <Element Name="ObjectNodeOrderingKind-FIFO"
+        UML2_0_Value="_m9bP7a86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNodeOrderingKind-FIFO"/>
+    <Element Name="ConditionalNode-isDeterminate"
+        UML2_0_Value="_m9ndn686EdiEh75YJ_3n8g" UML2_1_Value="ConditionalNode-isDeterminate"/>
+    <Element Name="Artifact-manifestation"
+        UML2_0_Value="_m9C2Qq86EdiEh75YJ_3n8g" UML2_1_Value="Artifact-manifestation"/>
+    <Element Name="Destroy" UML2_0_Value="_9wKn4K86Edih9-GG5afQ0g" UML2_1_Value="Destroy"/>
+    <Element Name="ObjectNode-upperBound"
+        UML2_0_Value="_m9bP4a86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNode-upperBound"/>
+    <Element Name="Reception" UML2_0_Value="_m9VJx686EdiEh75YJ_3n8g" UML2_1_Value="Reception"/>
+    <Element Name="Classifier-inheritedMember"
+        UML2_0_Value="_m88vCq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-inheritedMember"/>
+    <Element Name="Implement-base_Component"
+        UML2_0_Value="_9wc7yK86Edih9-GG5afQ0g" UML2_1_Value="Implement-base_Component"/>
+    <Element Name="Namespace-importedMember"
+        UML2_0_Value="_m8whjK86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-importedMember"/>
+    <Element Name="EObject-eClass"
+        UML2_0_Value="_m8eN2q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eClass"/>
+    <Element Name="ParameterSet" UML2_0_Value="_m9PCoK86EdiEh75YJ_3n8g" UML2_1_Value="ParameterSet"/>
+    <Element Name="Refine-base_Abstraction"
+        UML2_0_Value="_9wvPqK86Edih9-GG5afQ0g" UML2_1_Value="Refine-base_Abstraction"/>
+    <Element Name="StartClassifierBehaviorAction-object"
+        UML2_0_Value="_m9ngdK86EdiEh75YJ_3n8g" UML2_1_Value="StartClassifierBehaviorAction-object"/>
+    <Element Name="State-exit" UML2_0_Value="_m9bQDa86EdiEh75YJ_3n8g" UML2_1_Value="State-exit"/>
+    <Element Name="Feature-featuringClassifier"
+        UML2_0_Value="_m9C1ba86EdiEh75YJ_3n8g" UML2_1_Value="Feature-featuringClassifier"/>
+    <Element Name="AddVariableValueAction"
+        UML2_0_Value="_m9nfqK86EdiEh75YJ_3n8g" UML2_1_Value="AddVariableValueAction"/>
+    <Element Name="EObject-eResource-_ownedParameter.0"
+        UML2_0_Value="_h3j_48enEdm17tz62ORDiA" UML2_1_Value="EObject-eResource-_ownedParameter.0"/>
+    <Element Name="DataType-ownedOperation"
+        UML2_0_Value="_m9PCtq86EdiEh75YJ_3n8g" UML2_1_Value="DataType-ownedOperation"/>
+    <Element Name="Connector-redefinedConnector"
+        UML2_0_Value="_m9bRI686EdiEh75YJ_3n8g" UML2_1_Value="Connector-redefinedConnector"/>
+    <Element Name="EEnumLiteral-enumLiteralName"
+        UML2_0_Value="_us0IBa87Edi5QpYeY_yIpg" UML2_1_Value="EEnumLiteral-enumLiteralName"/>
+    <Element Name="MultiplicityElement-lowerBound-_ownedParameter.0"
+        UML2_0_Value="_h33hlMenEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-lowerBound-_ownedParameter.0"/>
+    <Element Name="InputPin" UML2_0_Value="_m9bQVK86EdiEh75YJ_3n8g" UML2_1_Value="InputPin"/>
+    <Element Name="RedefinableTemplateSignature"
+        UML2_0_Value="_m9neA686EdiEh75YJ_3n8g" UML2_1_Value="RedefinableTemplateSignature"/>
+    <Element Name="InteractionOperatorKind-break"
+        UML2_0_Value="_m9ngE686EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-break"/>
+    <Element Name="EObject-eGet-_ownedParameter.0"
+        UML2_0_Value="_h3j_8cenEdm17tz62ORDiA" UML2_1_Value="EObject-eGet-_ownedParameter.0"/>
+    <Element Name="Interface_EClass"
+        UML2_0_Value="_usbthK87Edi5QpYeY_yIpg" UML2_1_Value="Interface_EClass"/>
+    <Element Name="ReadExtentAction"
+        UML2_0_Value="_m9ngRK86EdiEh75YJ_3n8g" UML2_1_Value="ReadExtentAction"/>
+    <Element Name="StructuralFeature"
+        UML2_0_Value="_m9C16686EdiEh75YJ_3n8g" UML2_1_Value="StructuralFeature"/>
+    <Element Name="InformationFlow"
+        UML2_0_Value="_m9ndWq86EdiEh75YJ_3n8g" UML2_1_Value="InformationFlow"/>
+    <Element Name="Comment-annotatedElement"
+        UML2_0_Value="_m8qbKK86EdiEh75YJ_3n8g" UML2_1_Value="Comment-annotatedElement"/>
+    <Element Name="Parameter-parameterSet"
+        UML2_0_Value="_m9C2eK86EdiEh75YJ_3n8g" UML2_1_Value="Parameter-parameterSet"/>
+    <Element Name="Send" UML2_0_Value="_9w1WSa86Edih9-GG5afQ0g" UML2_1_Value="Send"/>
+    <Element Name="MultiplicityElement-isOrdered"
+        UML2_0_Value="_m8qbtq86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-isOrdered"/>
+    <Element Name="StructuredClassifier-ownedAttribute"
+        UML2_0_Value="_m9bRA686EdiEh75YJ_3n8g" UML2_1_Value="StructuredClassifier-ownedAttribute"/>
+    <Element Name="EAttribute-iD" UML2_0_Value="_m8eNpK86EdiEh75YJ_3n8g" UML2_1_Value="EAttribute-iD"/>
+    <Element Name="Deployment-location"
+        UML2_0_Value="_m9C2Ga86EdiEh75YJ_3n8g" UML2_1_Value="Deployment-location"/>
+    <Element Name="ProtocolTransition-referred"
+        UML2_0_Value="_m9ng4686EdiEh75YJ_3n8g" UML2_1_Value="ProtocolTransition-referred"/>
+    <Element Name="OpaqueExpression-language"
+        UML2_0_Value="_m9C2bK86EdiEh75YJ_3n8g" UML2_1_Value="OpaqueExpression-language"/>
+    <Element Name="AcceptEventAction-trigger"
+        UML2_0_Value="_m9ngoq86EdiEh75YJ_3n8g" UML2_1_Value="AcceptEventAction-trigger"/>
+    <Element Name="LinkAction" UML2_0_Value="_m9nfU686EdiEh75YJ_3n8g" UML2_1_Value="LinkAction"/>
+    <Element Name="PackageImport" UML2_0_Value="_m82oT686EdiEh75YJ_3n8g" UML2_1_Value="PackageImport"/>
+    <Element Name="Activity-group"
+        UML2_0_Value="_m9VKaa86EdiEh75YJ_3n8g" UML2_1_Value="Activity-group"/>
+    <Element Name="Continuation-setting"
+        UML2_0_Value="_m9ngLa86EdiEh75YJ_3n8g" UML2_1_Value="Continuation-setting"/>
+    <Element Name="EStructuralFeature-derived"
+        UML2_0_Value="_m8eNt686EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-derived"/>
+    <Element Name="LiteralInteger"
+        UML2_0_Value="_m9ndOK86EdiEh75YJ_3n8g" UML2_1_Value="LiteralInteger"/>
+    <Element Name="ControlFlow" UML2_0_Value="_m9ndda86EdiEh75YJ_3n8g" UML2_1_Value="ControlFlow"/>
+    <Element Name="EClassifier-ePackage"
+        UML2_0_Value="_m8eONa86EdiEh75YJ_3n8g" UML2_1_Value="EClassifier-ePackage"/>
+    <Element Name="Association-isDerived"
+        UML2_0_Value="_m9VJTa86EdiEh75YJ_3n8g" UML2_1_Value="Association-isDerived"/>
+    <Element Name="ObjectNodeOrderingKind-LIFO"
+        UML2_0_Value="_m9bP7K86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNodeOrderingKind-LIFO"/>
+    <Element Name="AcceptEventAction"
+        UML2_0_Value="_m9ngoK86EdiEh75YJ_3n8g" UML2_1_Value="AcceptEventAction"/>
+    <Element Name="EReference-_generalization.0"
+        UML2_0_Value="_utNJla87Edi5QpYeY_yIpg" UML2_1_Value="EReference-_generalization.0"/>
+    <Element Name="DecisionNode" UML2_0_Value="_m9ndi686EdiEh75YJ_3n8g" UML2_1_Value="DecisionNode"/>
+    <Element Name="EClass-getEStructuralFeature"
+        UML2_0_Value="_m8eOJ686EdiEh75YJ_3n8g" UML2_1_Value="EClass-getEStructuralFeature"/>
+    <Element Name="EFloatObject" UML2_0_Value="_EQQPMsi3EdqOoq-j0hsILg" UML2_1_Value="EFloatObject"/>
+    <Element Name="EClass" UML2_0_Value="_usPgSq87Edi5QpYeY_yIpg" UML2_1_Value="EClass"/>
+    <Element Name="EBoolean" UML2_0_Value="_EQQPIsi3EdqOoq-j0hsILg" UML2_1_Value="EBoolean"/>
+    <Element Name="ReadStructuralFeatureAction-result"
+        UML2_0_Value="_m9nfOa86EdiEh75YJ_3n8g" UML2_1_Value="ReadStructuralFeatureAction-result"/>
+    <Element Name="EEnum-getEEnumLiteral.1-_ownedParameter.0"
+        UML2_0_Value="_h3txD8enEdm17tz62ORDiA" UML2_1_Value="EEnum-getEEnumLiteral.1-_ownedParameter.0"/>
+    <Element Name="PseudostateKind-join"
+        UML2_0_Value="_m9bQMa86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-join"/>
+    <Element Name="Artifact_File" UML2_0_Value="_Fxy8A687Edih9-GG5afQ0g" UML2_1_Value="Artifact_File"/>
+    <Element Name="Operation" UML2_0_Value="_m9C2ja86EdiEh75YJ_3n8g" UML2_1_Value="Operation"/>
+    <Element Name="Interaction" UML2_0_Value="_m9neCq86EdiEh75YJ_3n8g" UML2_1_Value="Interaction"/>
+    <Element Name="Port-required" UML2_0_Value="_m9VKR686EdiEh75YJ_3n8g" UML2_1_Value="Port-required"/>
+    <Element Name="PseudostateKind-entryPoint"
+        UML2_0_Value="_m9bQNa86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-entryPoint"/>
+    <Element Name="EAttribute-_generalization.0"
+        UML2_0_Value="_utHC_K87Edi5QpYeY_yIpg" UML2_1_Value="EAttribute-_generalization.0"/>
+    <Element Name="short" UML2_0_Value="_TBrTIa86EdieaYgxtVWN8Q" UML2_1_Value="short"/>
+    <Element Name="IntervalConstraint"
+        UML2_0_Value="_m9nhJq86EdiEh75YJ_3n8g" UML2_1_Value="IntervalConstraint"/>
+    <Element Name="LinkEndData-value"
+        UML2_0_Value="_m9nfXK86EdiEh75YJ_3n8g" UML2_1_Value="LinkEndData-value"/>
+    <Element Name="EStructuralFeature-changeable"
+        UML2_0_Value="_m8eNq686EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-changeable"/>
+    <Element Name="TemplateableElement-templateBinding"
+        UML2_0_Value="_m8qbMa86EdiEh75YJ_3n8g" UML2_1_Value="TemplateableElement-templateBinding"/>
+    <Element Name="byte" UML2_0_Value="_TBfF4a86EdieaYgxtVWN8Q" UML2_1_Value="byte"/>
+    <Element Name="ActivityPartition-represents"
+        UML2_0_Value="_m9bQdq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition-represents"/>
+    <Element Name="EObject-eUnset-feature"
+        UML2_0_Value="_m8eN-q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eUnset-feature"/>
+    <Element Name="Usage_Responsibility-extension_Responsibility"
+        UML2_0_Value="_9w1WQK86Edih9-GG5afQ0g" UML2_1_Value="Usage_Responsibility-extension_Responsibility"/>
+    <Element Name="InitialNode" UML2_0_Value="_m9ndha86EdiEh75YJ_3n8g" UML2_1_Value="InitialNode"/>
+    <Element Name="VisibilityKind-None"
+        UML2_0_Value="_LtgO4TmHEdmHabrnfLjH-w" UML2_1_Value="VisibilityKind-None"/>
+    <Element Name="NamedElement-visibility"
+        UML2_0_Value="_m8qb_686EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-visibility"/>
+    <Element Name="FunctionBehavior"
+        UML2_0_Value="_m9nfw686EdiEh75YJ_3n8g" UML2_1_Value="FunctionBehavior"/>
+    <Element Name="Package-profileApplication"
+        UML2_0_Value="_m82oda86EdiEh75YJ_3n8g" UML2_1_Value="Package-profileApplication"/>
+    <Element Name="PrimitiveType_EDataType-extension_EDataType"
+        UML2_0_Value="_ush0Iq87Edi5QpYeY_yIpg" UML2_1_Value="PrimitiveType_EDataType-extension_EDataType"/>
+    <Element Name="ObjectNode-inState"
+        UML2_0_Value="_m9bP4q86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNode-inState"/>
+    <Element Name="InterfaceRealization-contract"
+        UML2_0_Value="_m9bRSK86EdiEh75YJ_3n8g" UML2_1_Value="InterfaceRealization-contract"/>
+    <Element Name="Classifier-allParents-_ownedParameter.0"
+        UML2_0_Value="_h33jNcenEdm17tz62ORDiA" UML2_1_Value="Classifier-allParents-_ownedParameter.0"/>
+    <Element Name="Element-ownedComment"
+        UML2_0_Value="_m8qbEq86EdiEh75YJ_3n8g" UML2_1_Value="Element-ownedComment"/>
+    <Element Name="InstanceSpecification-classifier"
+        UML2_0_Value="_m9bRjq86EdiEh75YJ_3n8g" UML2_1_Value="InstanceSpecification-classifier"/>
+    <Element Name="UseCase" UML2_0_Value="_m9bQtq86EdiEh75YJ_3n8g" UML2_1_Value="UseCase"/>
+    <Element Name="EObject-eContents-_ownedParameter.0"
+        UML2_0_Value="_h3j_68enEdm17tz62ORDiA" UML2_1_Value="EObject-eContents-_ownedParameter.0"/>
+    <Element Name="UseCase-include"
+        UML2_0_Value="_m9bQuK86EdiEh75YJ_3n8g" UML2_1_Value="UseCase-include"/>
+    <Element Name="Trace" UML2_0_Value="_9w7c5K86Edih9-GG5afQ0g" UML2_1_Value="Trace"/>
+    <Element Name="ObjectFlow-isMultireceive"
+        UML2_0_Value="_m9nde686EdiEh75YJ_3n8g" UML2_1_Value="ObjectFlow-isMultireceive"/>
+    <Element Name="TemplateParameter-parameteredElement"
+        UML2_0_Value="_m8qbdK86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameter-parameteredElement"/>
+    <Element Name="CallConcurrencyKind-sequential"
+        UML2_0_Value="_m9PCra86EdiEh75YJ_3n8g" UML2_1_Value="CallConcurrencyKind-sequential"/>
+    <Element Name="PseudostateKind-fork"
+        UML2_0_Value="_m9bQMq86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-fork"/>
+    <Element Name="_0" UML2_0_Value="_M7pTkK87Edih9-GG5afQ0g" UML2_1_Value="_0"/>
+    <Element Name="SystemModel-base_Model"
+        UML2_0_Value="_O2E_8687Edih9-GG5afQ0g" UML2_1_Value="SystemModel-base_Model"/>
+    <Element Name="Auxiliary" UML2_0_Value="_9l21UK86Edih9-GG5afQ0g" UML2_1_Value="Auxiliary"/>
+    <Element Name="LiteralString-value"
+        UML2_0_Value="_m9ndLK86EdiEh75YJ_3n8g" UML2_1_Value="LiteralString-value"/>
+    <Element Name="InteractionOperatorKind-critical"
+        UML2_0_Value="_m9ngF686EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-critical"/>
+    <Element Name="BehavioralFeature-concurrency"
+        UML2_0_Value="_m9I8Pq86EdiEh75YJ_3n8g" UML2_1_Value="BehavioralFeature-concurrency"/>
+    <Element Name="Interval-min" UML2_0_Value="_m9nhFq86EdiEh75YJ_3n8g" UML2_1_Value="Interval-min"/>
+    <Element Name="TimeObservation-event"
+        UML2_0_Value="_m9ng9q86EdiEh75YJ_3n8g" UML2_1_Value="TimeObservation-event"/>
+    <Element Name="AddStructuralFeatureValueAction"
+        UML2_0_Value="_m9nfSa86EdiEh75YJ_3n8g" UML2_1_Value="AddStructuralFeatureValueAction"/>
+    <Element Name="InteractionOperand-guard"
+        UML2_0_Value="_m9nerq86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperand-guard"/>
+    <Element Name="EObject-eResource"
+        UML2_0_Value="_m8eN3q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eResource"/>
+    <Element Name="Extend-extendedCase"
+        UML2_0_Value="_m9bQ1q86EdiEh75YJ_3n8g" UML2_1_Value="Extend-extendedCase"/>
+    <Element Name="ReplyAction-replyValue"
+        UML2_0_Value="_m9nguq86EdiEh75YJ_3n8g" UML2_1_Value="ReplyAction-replyValue"/>
+    <Element Name="InteractionOperatorKind-consider"
+        UML2_0_Value="_m9ngG686EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-consider"/>
+    <Element Name="EClass-abstract"
+        UML2_0_Value="_m8eN_a86EdiEh75YJ_3n8g" UML2_1_Value="EClass-abstract"/>
+    <Element Name="Generalization-isSubstitutable"
+        UML2_0_Value="_m9C1eK86EdiEh75YJ_3n8g" UML2_1_Value="Generalization-isSubstitutable"/>
+    <Element Name="Usage_Call" UML2_0_Value="_9v-apa86Edih9-GG5afQ0g" UML2_1_Value="Usage_Call"/>
+    <Element Name="EAnnotation-contents"
+        UML2_0_Value="_m8kUn686EdiEh75YJ_3n8g" UML2_1_Value="EAnnotation-contents"/>
+    <Element Name="Property-multiplicity_of_composite"
+        UML2_0_Value="_h4ArbMenEdm17tz62ORDiA" UML2_1_Value="Property-multiplicity_of_composite"/>
+    <Element Name="Trigger-port" UML2_0_Value="_m9VKPK86EdiEh75YJ_3n8g" UML2_1_Value="Trigger-port"/>
+    <Element Name="Service" UML2_0_Value="_FyFP4q87Edih9-GG5afQ0g" UML2_1_Value="Service"/>
+    <Element Name="Element-has_owner"
+        UML2_0_Value="_h3txZMenEdm17tz62ORDiA" UML2_1_Value="Element-has_owner"/>
+    <Element Name="EClassifier-instanceClassName"
+        UML2_0_Value="_usJZoa87Edi5QpYeY_yIpg" UML2_1_Value="EClassifier-instanceClassName"/>
+    <Element Name="Package-visibleMembers-_ownedParameter.0"
+        UML2_0_Value="_h33ijcenEdm17tz62ORDiA" UML2_1_Value="Package-visibleMembers-_ownedParameter.0"/>
+    <Element Name="StateMachine" UML2_0_Value="_m9VJ4a86EdiEh75YJ_3n8g" UML2_1_Value="StateMachine"/>
+    <Element Name="FeatureKind-Simple"
+        UML2_0_Value="_utA8Wa87Edi5QpYeY_yIpg" UML2_1_Value="FeatureKind-Simple"/>
+    <Element Name="MultiplicityElement-upper_ge_lower"
+        UML2_0_Value="_h33hp8enEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-upper_ge_lower"/>
+    <Element Name="MessageKind-found"
+        UML2_0_Value="_m9neda86EdiEh75YJ_3n8g" UML2_1_Value="MessageKind-found"/>
+    <Element Name="Class-ownedReception"
+        UML2_0_Value="_m88u1686EdiEh75YJ_3n8g" UML2_1_Value="Class-ownedReception"/>
+    <Element Name="EParameter-parameterName"
+        UML2_0_Value="_utA8Vq87Edi5QpYeY_yIpg" UML2_1_Value="EParameter-parameterName"/>
+    <Element Name="ConnectorEnd-partWithPort"
+        UML2_0_Value="_m9C1_K86EdiEh75YJ_3n8g" UML2_1_Value="ConnectorEnd-partWithPort"/>
+    <Element Name="Document" UML2_0_Value="_Ftfq0K87Edih9-GG5afQ0g" UML2_1_Value="Document"/>
+    <Element Name="Usage_Call-extension_Call"
+        UML2_0_Value="_9v-apq86Edih9-GG5afQ0g" UML2_1_Value="Usage_Call-extension_Call"/>
+    <Element
+        Name="TemplateableElement-parameterableElements-_ownedParameter.0"
+        UML2_0_Value="_h3txgsenEdm17tz62ORDiA" UML2_1_Value="TemplateableElement-parameterableElements-_ownedParameter.0"/>
+    <Element Name="Usage_Responsibility"
+        UML2_0_Value="_9wvPqq86Edih9-GG5afQ0g" UML2_1_Value="Usage_Responsibility"/>
+    <Element Name="VisibilityKind-public"
+        UML2_0_Value="_m82oJ686EdiEh75YJ_3n8g" UML2_1_Value="VisibilityKind-public"/>
+    <Element Name="Namespace-excludeCollisions"
+        UML2_0_Value="_m8whp686EdiEh75YJ_3n8g" UML2_1_Value="Namespace-excludeCollisions"/>
+    <Element Name="ProtocolConformance-generalMachine"
+        UML2_0_Value="_m9bQoa86EdiEh75YJ_3n8g" UML2_1_Value="ProtocolConformance-generalMachine"/>
+    <Element Name="Classifier-allParents"
+        UML2_0_Value="_m88vPK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-allParents"/>
+    <Element Name="Model_Metamodel"
+        UML2_0_Value="_O1-5Ua87Edih9-GG5afQ0g" UML2_1_Value="Model_Metamodel"/>
+    <Element Name="Artifact_File-extension_File"
+        UML2_0_Value="_Fxy8BK87Edih9-GG5afQ0g" UML2_1_Value="Artifact_File-extension_File"/>
+    <Element Name="InteractionOperatorKind-seq"
+        UML2_0_Value="_m9ngEK86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-seq"/>
+    <Element Name="TestIdentityAction"
+        UML2_0_Value="_m9nfF686EdiEh75YJ_3n8g" UML2_1_Value="TestIdentityAction"/>
+    <Element Name="Interface-protocol"
+        UML2_0_Value="_m9VJs686EdiEh75YJ_3n8g" UML2_1_Value="Interface-protocol"/>
+    <Element Name="Model" UML2_0_Value="_m9ndba86EdiEh75YJ_3n8g" UML2_1_Value="Model"/>
+    <Element Name="QualifierValue-qualifier"
+        UML2_0_Value="_m9nfaq86EdiEh75YJ_3n8g" UML2_1_Value="QualifierValue-qualifier"/>
+    <Element Name="ExpansionRegion-mode"
+        UML2_0_Value="_m9ngOK86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionRegion-mode"/>
+    <Element Name="OccurrenceSpecification-toAfter"
+        UML2_0_Value="_m9nema86EdiEh75YJ_3n8g" UML2_1_Value="OccurrenceSpecification-toAfter"/>
+    <Element Name="TimeExpression"
+        UML2_0_Value="_m9ng8q86EdiEh75YJ_3n8g" UML2_1_Value="TimeExpression"/>
+    <Element Name="EDataType-_generalization.0"
+        UML2_0_Value="_ush0Ja87Edi5QpYeY_yIpg" UML2_1_Value="EDataType-_generalization.0"/>
+    <Element Name="EObject-eSet-newValue"
+        UML2_0_Value="_m8eN9a86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eSet-newValue"/>
+    <Element Name="Artifact_Source"
+        UML2_0_Value="_FyFP6K87Edih9-GG5afQ0g" UML2_1_Value="Artifact_Source"/>
+    <Element Name="Class_Type" UML2_0_Value="_9xBjgK86Edih9-GG5afQ0g" UML2_1_Value="Class_Type"/>
+    <Element Name="Region-subvertex"
+        UML2_0_Value="_m9VJ9q86EdiEh75YJ_3n8g" UML2_1_Value="Region-subvertex"/>
+    <Element Name="Profile-ownedStereotype"
+        UML2_0_Value="_m82osK86EdiEh75YJ_3n8g" UML2_1_Value="Profile-ownedStereotype"/>
+    <Element
+        Name="EnumerationLiteral_EEnumLiteral-extension_EEnumLiteral"
+        UML2_0_Value="_us0IAa87Edi5QpYeY_yIpg" UML2_1_Value="EnumerationLiteral_EEnumLiteral-extension_EEnumLiteral"/>
+    <Element Name="LiteralBoolean-value"
+        UML2_0_Value="_m9ndIq86EdiEh75YJ_3n8g" UML2_1_Value="LiteralBoolean-value"/>
+    <Element Name="ValueSpecification-unlimitedValue-_ownedParameter.0"
+        UML2_0_Value="_h33hxcenEdm17tz62ORDiA" UML2_1_Value="ValueSpecification-unlimitedValue-_ownedParameter.0"/>
+    <Element Name="Message-interaction"
+        UML2_0_Value="_m9neZq86EdiEh75YJ_3n8g" UML2_1_Value="Message-interaction"/>
+    <Element Name="EParameter-base_Parameter"
+        UML2_0_Value="_utA8Va87Edi5QpYeY_yIpg" UML2_1_Value="EParameter-base_Parameter"/>
+    <Element Name="Operation-type-_ownedParameter.0"
+        UML2_0_Value="_h4AsQMenEdm17tz62ORDiA" UML2_1_Value="Operation-type-_ownedParameter.0"/>
+    <Element Name="State-stateInvariant"
+        UML2_0_Value="_m9bQEa86EdiEh75YJ_3n8g" UML2_1_Value="State-stateInvariant"/>
+    <Element Name="InformationFlow-conveyed"
+        UML2_0_Value="_m9ndYK86EdiEh75YJ_3n8g" UML2_1_Value="InformationFlow-conveyed"/>
+    <Element Name="EFeatureMap" UML2_0_Value="_EQQPL8i3EdqOoq-j0hsILg" UML2_1_Value="EFeatureMap"/>
+    <Element Name="Constraint-not_apply_to_self"
+        UML2_0_Value="_h33iK8enEdm17tz62ORDiA" UML2_1_Value="Constraint-not_apply_to_self"/>
+    <Element Name="EClass-eAllSuperTypes"
+        UML2_0_Value="_m8eOHK86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eAllSuperTypes"/>
+    <Element Name="Property_EAttribute-extension_EAttribute"
+        UML2_0_Value="_utHC-a87Edi5QpYeY_yIpg" UML2_1_Value="Property_EAttribute-extension_EAttribute"/>
+    <Element Name="MultiplicityElement-upperBound"
+        UML2_0_Value="_m8qbxK86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-upperBound"/>
+    <Element Name="WriteStructuralFeatureAction"
+        UML2_0_Value="_m9nfPq86EdiEh75YJ_3n8g" UML2_1_Value="WriteStructuralFeatureAction"/>
+    <Element Name="ActivityNode-redefinedNode"
+        UML2_0_Value="_m9VKoK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-redefinedNode"/>
+    <Element Name="Parameter_EParameter-extension_EParameter"
+        UML2_0_Value="_utA8U687Edi5QpYeY_yIpg" UML2_1_Value="Parameter_EParameter-extension_EParameter"/>
+    <Element Name="InformationFlow-realization"
+        UML2_0_Value="_m9ndXa86EdiEh75YJ_3n8g" UML2_1_Value="InformationFlow-realization"/>
+    <Element Name="NamedElement-qualifiedName.1-_ownedParameter.0"
+        UML2_0_Value="_h33h68enEdm17tz62ORDiA" UML2_1_Value="NamedElement-qualifiedName.1-_ownedParameter.0"/>
+    <Element Name="ImplementationClass"
+        UML2_0_Value="_9wc7ya86Edih9-GG5afQ0g" UML2_1_Value="ImplementationClass"/>
+    <Element Name="ExpansionRegion"
+        UML2_0_Value="_m9ngNq86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionRegion"/>
+    <Element Name="Instantiate" UML2_0_Value="_9wjCZK86Edih9-GG5afQ0g" UML2_1_Value="Instantiate"/>
+    <Element Name="ActivityPartition-isDimension"
+        UML2_0_Value="_m9bQaq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition-isDimension"/>
+    <Element Name="Signal" UML2_0_Value="_m9VJza86EdiEh75YJ_3n8g" UML2_1_Value="Signal"/>
+    <Element Name="EBigInteger" UML2_0_Value="_EQQPIci3EdqOoq-j0hsILg" UML2_1_Value="EBigInteger"/>
+    <Element Name="Element-owner" UML2_0_Value="_m8qbEK86EdiEh75YJ_3n8g" UML2_1_Value="Element-owner"/>
+    <Element Name="Component_Service-extension_Service"
+        UML2_0_Value="_FyFP5K87Edih9-GG5afQ0g" UML2_1_Value="Component_Service-extension_Service"/>
+    <Element Name="TemplateBinding-boundElement"
+        UML2_0_Value="_m8qbQa86EdiEh75YJ_3n8g" UML2_1_Value="TemplateBinding-boundElement"/>
+    <Element Name="String" UML2_0_Value="_m8qbB686EdiEh75YJ_3n8g" UML2_1_Value="String"/>
+    <Element Name="Component-packagedElement"
+        UML2_0_Value="_m9VJlq86EdiEh75YJ_3n8g" UML2_1_Value="Component-packagedElement"/>
+    <Element Name="Extension" UML2_0_Value="_m9bRZq86EdiEh75YJ_3n8g" UML2_1_Value="Extension"/>
+    <Element Name="LiteralUnlimitedNatural"
+        UML2_0_Value="_m9ndQK86EdiEh75YJ_3n8g" UML2_1_Value="LiteralUnlimitedNatural"/>
+    <Element Name="EnumerationLiteral-enumeration"
+        UML2_0_Value="_m9bRg686EdiEh75YJ_3n8g" UML2_1_Value="EnumerationLiteral-enumeration"/>
+    <Element Name="EncapsulatedClassifier"
+        UML2_0_Value="_m9bRVq86EdiEh75YJ_3n8g" UML2_1_Value="EncapsulatedClassifier"/>
+    <Element Name="ActivityGroup-superGroup"
+        UML2_0_Value="_m9VKta86EdiEh75YJ_3n8g" UML2_1_Value="ActivityGroup-superGroup"/>
+    <Element Name="Transition-container"
+        UML2_0_Value="_m9VKHK86EdiEh75YJ_3n8g" UML2_1_Value="Transition-container"/>
+    <Element Name="Interval-max" UML2_0_Value="_m9nhGa86EdiEh75YJ_3n8g" UML2_1_Value="Interval-max"/>
+    <Element Name="MultiplicityElement-lower_ge_0"
+        UML2_0_Value="_h33ho8enEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-lower_ge_0"/>
+    <Element Name="Class_Auxiliary"
+        UML2_0_Value="_9vNloK86Edih9-GG5afQ0g" UML2_1_Value="Class_Auxiliary"/>
+    <Element Name="CallBehaviorAction-argument"
+        UML2_0_Value="_m9neSq86EdiEh75YJ_3n8g" UML2_1_Value="CallBehaviorAction-argument"/>
+    <Element Name="InteractionOperatorKind-loop"
+        UML2_0_Value="_m9ngFq86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-loop"/>
+    <Element Name="ElementImport-importedElement"
+        UML2_0_Value="_m82oOq86EdiEh75YJ_3n8g" UML2_1_Value="ElementImport-importedElement"/>
+    <Element Name="Substitution" UML2_0_Value="_m9VJca86EdiEh75YJ_3n8g" UML2_1_Value="Substitution"/>
+    <Element Name="ClearAssociationAction"
+        UML2_0_Value="_m9nfia86EdiEh75YJ_3n8g" UML2_1_Value="ClearAssociationAction"/>
+    <Element Name="Extend" UML2_0_Value="_usJZoq87Edi5QpYeY_yIpg" UML2_1_Value="Extend"/>
+    <Element Name="Property_EReference-extension_EReference"
+        UML2_0_Value="_utNJkq87Edi5QpYeY_yIpg" UML2_1_Value="Property_EReference-extension_EReference"/>
+    <Element Name="ParameterEffectKind-create"
+        UML2_0_Value="_m9PC1a86EdiEh75YJ_3n8g" UML2_1_Value="ParameterEffectKind-create"/>
+    <Element Name="Property-opposite.1-_ownedParameter.0"
+        UML2_0_Value="_h4Ara8enEdm17tz62ORDiA" UML2_1_Value="Property-opposite.1-_ownedParameter.0"/>
+    <Element Name="Package-ownedType"
+        UML2_0_Value="_m82oaa86EdiEh75YJ_3n8g" UML2_1_Value="Package-ownedType"/>
+    <Element Name="ConditionalNode-result"
+        UML2_0_Value="_m9ndpa86EdiEh75YJ_3n8g" UML2_1_Value="ConditionalNode-result"/>
+    <Element Name="NamedElement-separator"
+        UML2_0_Value="_m8qcGK86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-separator"/>
+    <Element Name="InterruptibleActivityRegion"
+        UML2_0_Value="_m9bQgq86EdiEh75YJ_3n8g" UML2_1_Value="InterruptibleActivityRegion"/>
+    <Element Name="Transition-guard"
+        UML2_0_Value="_m9VKI686EdiEh75YJ_3n8g" UML2_1_Value="Transition-guard"/>
+    <Element Name="Class_Auxiliary-extension_Auxiliary"
+        UML2_0_Value="_9vsGwK86Edih9-GG5afQ0g" UML2_1_Value="Class_Auxiliary-extension_Auxiliary"/>
+    <Element Name="EClass-isSuperTypeOf-someClass"
+        UML2_0_Value="_m8eOJq86EdiEh75YJ_3n8g" UML2_1_Value="EClass-isSuperTypeOf-someClass"/>
+    <Element Name="Connector-contract"
+        UML2_0_Value="_m9bRK686EdiEh75YJ_3n8g" UML2_1_Value="Connector-contract"/>
+    <Element Name="RedefinableElement-redefinition_context_valid"
+        UML2_0_Value="_h33jU8enEdm17tz62ORDiA" UML2_1_Value="RedefinableElement-redefinition_context_valid"/>
+    <Element Name="ObjectNode-selection"
+        UML2_0_Value="_m9bP5a86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNode-selection"/>
+    <Element Name="CallEvent-operation"
+        UML2_0_Value="_m9ne0686EdiEh75YJ_3n8g" UML2_1_Value="CallEvent-operation"/>
+    <Element Name="Interface-nestedClassifier"
+        UML2_0_Value="_m9VJra86EdiEh75YJ_3n8g" UML2_1_Value="Interface-nestedClassifier"/>
+    <Element Name="ObjectFlow" UML2_0_Value="_m9ndd686EdiEh75YJ_3n8g" UML2_1_Value="ObjectFlow"/>
+    <Element Name="VisibilityKind-package"
+        UML2_0_Value="_m82oKq86EdiEh75YJ_3n8g" UML2_1_Value="VisibilityKind-package"/>
+    <Element Name="EEnumLiteral-instance"
+        UML2_0_Value="_m8kUxK86EdiEh75YJ_3n8g" UML2_1_Value="EEnumLiteral-instance"/>
+    <Element Name="GeneralOrdering"
+        UML2_0_Value="_m9neiK86EdiEh75YJ_3n8g" UML2_1_Value="GeneralOrdering"/>
+    <Element Name="ETypedElement-upperBound"
+        UML2_0_Value="_m8eNxa86EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement-upperBound"/>
+    <Element Name="Property-qualifier"
+        UML2_0_Value="_m9C1ta86EdiEh75YJ_3n8g" UML2_1_Value="Property-qualifier"/>
+    <Element Name="Transition-kind"
+        UML2_0_Value="_m9VKGq86EdiEh75YJ_3n8g" UML2_1_Value="Transition-kind"/>
+    <Element Name="ActivityPartition-subpartition"
+        UML2_0_Value="_m9bQca86EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition-subpartition"/>
+    <Element Name="PackageMerge" UML2_0_Value="_m82ol686EdiEh75YJ_3n8g" UML2_1_Value="PackageMerge"/>
+    <Element Name="CallConcurrencyKind-concurrent"
+        UML2_0_Value="_m9PCr686EdiEh75YJ_3n8g" UML2_1_Value="CallConcurrencyKind-concurrent"/>
+    <Element Name="InteractionOperatorKind-strict"
+        UML2_0_Value="_m9ngFa86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-strict"/>
+    <Element
+        Name="RedefinableElement-isRedefinitionContextValid-_ownedParameter.0"
+        UML2_0_Value="_h33jX8enEdm17tz62ORDiA" UML2_1_Value="RedefinableElement-isRedefinitionContextValid-_ownedParameter.0"/>
+    <Element Name="Continuation" UML2_0_Value="_m9ngK686EdiEh75YJ_3n8g" UML2_1_Value="Continuation"/>
+    <Element Name="EEnum-eLiterals"
+        UML2_0_Value="_m8kUt686EdiEh75YJ_3n8g" UML2_1_Value="EEnum-eLiterals"/>
+    <Element Name="State-deferrableTrigger"
+        UML2_0_Value="_m9bQBa86EdiEh75YJ_3n8g" UML2_1_Value="State-deferrableTrigger"/>
+    <Element Name="EEnum-getEEnumLiteral"
+        UML2_0_Value="_m8kUuq86EdiEh75YJ_3n8g" UML2_1_Value="EEnum-getEEnumLiteral"/>
+    <Element Name="Interaction-formalGate"
+        UML2_0_Value="_m9neFq86EdiEh75YJ_3n8g" UML2_1_Value="Interaction-formalGate"/>
+    <Element Name="ExecutionSpecification"
+        UML2_0_Value="_m9nen686EdiEh75YJ_3n8g" UML2_1_Value="ExecutionSpecification"/>
+    <Element Name="EClass-_generalization.0"
+        UML2_0_Value="_usbtiK87Edi5QpYeY_yIpg" UML2_1_Value="EClass-_generalization.0"/>
+    <Element Name="AggregationKind-shared"
+        UML2_0_Value="_m9VJaa86EdiEh75YJ_3n8g" UML2_1_Value="AggregationKind-shared"/>
+    <Element Name="ParameterEffectKind-read"
+        UML2_0_Value="_m9PC1q86EdiEh75YJ_3n8g" UML2_1_Value="ParameterEffectKind-read"/>
+    <Element Name="ParameterDirectionKind-out"
+        UML2_0_Value="_m9PC0K86EdiEh75YJ_3n8g" UML2_1_Value="ParameterDirectionKind-out"/>
+    <Element Name="MessageKind-complete"
+        UML2_0_Value="_m9nec686EdiEh75YJ_3n8g" UML2_1_Value="MessageKind-complete"/>
+    <Element Name="Type-conformsTo-other"
+        UML2_0_Value="_m82oka86EdiEh75YJ_3n8g" UML2_1_Value="Type-conformsTo-other"/>
+    <Element Name="PackageImport-public_or_private"
+        UML2_0_Value="_h33iY8enEdm17tz62ORDiA" UML2_1_Value="PackageImport-public_or_private"/>
+    <Element Name="StructuralFeatureAction"
+        UML2_0_Value="_m9nfLa86EdiEh75YJ_3n8g" UML2_1_Value="StructuralFeatureAction"/>
+    <Element Name="CallAction" UML2_0_Value="_m9nfza86EdiEh75YJ_3n8g" UML2_1_Value="CallAction"/>
+    <Element Name="QualifierValue-value"
+        UML2_0_Value="_m9nfa686EdiEh75YJ_3n8g" UML2_1_Value="QualifierValue-value"/>
+    <Element Name="InstanceSpecification"
+        UML2_0_Value="_m9bRh686EdiEh75YJ_3n8g" UML2_1_Value="InstanceSpecification"/>
+    <Element Name="InvocationAction-onPort"
+        UML2_0_Value="_m9nf2686EdiEh75YJ_3n8g" UML2_1_Value="InvocationAction-onPort"/>
+    <Element Name="Component_Process-extension_Process"
+        UML2_0_Value="_Fx5Coa87Edih9-GG5afQ0g" UML2_1_Value="Component_Process-extension_Process"/>
+    <Element Name="FinalNode" UML2_0_Value="_m9ndh686EdiEh75YJ_3n8g" UML2_1_Value="FinalNode"/>
+    <Element Name="Dependency-client"
+        UML2_0_Value="_m9C2J686EdiEh75YJ_3n8g" UML2_1_Value="Dependency-client"/>
+    <Element Name="EFeatureMapEntry"
+        UML2_0_Value="_EQQPMMi3EdqOoq-j0hsILg" UML2_1_Value="EFeatureMapEntry"/>
+    <Element Name="Package-makesVisible-_ownedParameter.0"
+        UML2_0_Value="_h33ij8enEdm17tz62ORDiA" UML2_1_Value="Package-makesVisible-_ownedParameter.0"/>
+    <Element Name="Association-ownedEnd"
+        UML2_0_Value="_m9VJVK86EdiEh75YJ_3n8g" UML2_1_Value="Association-ownedEnd"/>
+    <Element Name="EClass-interface"
+        UML2_0_Value="_m8eN_686EdiEh75YJ_3n8g" UML2_1_Value="EClass-interface"/>
+    <Element
+        Name="RedefinableElement-isRedefinitionContextValid-redefined"
+        UML2_0_Value="_m9C1Y686EdiEh75YJ_3n8g" UML2_1_Value="RedefinableElement-isRedefinitionContextValid-redefined"/>
+    <Element Name="Extend-base_Generalization"
+        UML2_0_Value="_usPgQ687Edi5QpYeY_yIpg" UML2_1_Value="Extend-base_Generalization"/>
+    <Element Name="StructuredClassifier-part"
+        UML2_0_Value="_m9bRBq86EdiEh75YJ_3n8g" UML2_1_Value="StructuredClassifier-part"/>
+    <Element Name="OpaqueExpression-behavior"
+        UML2_0_Value="_m9C2cK86EdiEh75YJ_3n8g" UML2_1_Value="OpaqueExpression-behavior"/>
+    <Element Name="JoinNode-joinSpec"
+        UML2_0_Value="_m9ne9686EdiEh75YJ_3n8g" UML2_1_Value="JoinNode-joinSpec"/>
+    <Element Name="ReadSelfAction"
+        UML2_0_Value="_m9nfJq86EdiEh75YJ_3n8g" UML2_1_Value="ReadSelfAction"/>
+    <Element Name="ValueSpecification-unlimitedValue"
+        UML2_0_Value="_m8qb9a86EdiEh75YJ_3n8g" UML2_1_Value="ValueSpecification-unlimitedValue"/>
+    <Element Name="ConnectorKind" UML2_0_Value="_m9bROK86EdiEh75YJ_3n8g" UML2_1_Value="ConnectorKind"/>
+    <Element Name="TestIdentityAction-first"
+        UML2_0_Value="_m9nfGa86EdiEh75YJ_3n8g" UML2_1_Value="TestIdentityAction-first"/>
+    <Element Name="Interface-ownedOperation"
+        UML2_0_Value="_m9VJp686EdiEh75YJ_3n8g" UML2_1_Value="Interface-ownedOperation"/>
+    <Element Name="EClass-getEStructuralFeature.1-featureName"
+        UML2_0_Value="_m8eOLK86EdiEh75YJ_3n8g" UML2_1_Value="EClass-getEStructuralFeature.1-featureName"/>
+    <Element Name="ControlNode" UML2_0_Value="_m9ndc686EdiEh75YJ_3n8g" UML2_1_Value="ControlNode"/>
+    <Element Name="CommunicationPath"
+        UML2_0_Value="_m9ng2686EdiEh75YJ_3n8g" UML2_1_Value="CommunicationPath"/>
+    <Element Name="MultiplicityElement-upperBound-_ownedParameter.0"
+        UML2_0_Value="_h33hlsenEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-upperBound-_ownedParameter.0"/>
+    <Element Name="Activity-structuredNode"
+        UML2_0_Value="_m9VKcq86EdiEh75YJ_3n8g" UML2_1_Value="Activity-structuredNode"/>
+    <Element Name="Artifact_Document-extension_Document"
+        UML2_0_Value="_Fxmuwq87Edih9-GG5afQ0g" UML2_1_Value="Artifact_Document-extension_Document"/>
+    <Element Name="Library" UML2_0_Value="_Fxy8B687Edih9-GG5afQ0g" UML2_1_Value="Library"/>
+    <Element
+        Name="EStructuralFeature-getContainerClass-_ownedParameter.0"
+        UML2_0_Value="_h3j_hsenEdm17tz62ORDiA" UML2_1_Value="EStructuralFeature-getContainerClass-_ownedParameter.0"/>
+    <Element Name="SendSignalAction-target"
+        UML2_0_Value="_m9nf5686EdiEh75YJ_3n8g" UML2_1_Value="SendSignalAction-target"/>
+    <Element Name="ValueSpecification-booleanValue"
+        UML2_0_Value="_m8qb8a86EdiEh75YJ_3n8g" UML2_1_Value="ValueSpecification-booleanValue"/>
+    <Element Name="Classifier-hasVisibilityOf-n"
+        UML2_0_Value="_m88vQ686EdiEh75YJ_3n8g" UML2_1_Value="Classifier-hasVisibilityOf-n"/>
+    <Element Name="ReadLinkObjectEndQualifierAction"
+        UML2_0_Value="_m9ngiK86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndQualifierAction"/>
+    <Element Name="ReadSelfAction-result"
+        UML2_0_Value="_m9nfKK86EdiEh75YJ_3n8g" UML2_1_Value="ReadSelfAction-result"/>
+    <Element Name="LoopNode-result"
+        UML2_0_Value="_m9nd2a86EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-result"/>
+    <Element Name="EByteArray" UML2_0_Value="_EQQPJci3EdqOoq-j0hsILg" UML2_1_Value="EByteArray"/>
+    <Element Name="WriteLinkAction"
+        UML2_0_Value="_m9nfha86EdiEh75YJ_3n8g" UML2_1_Value="WriteLinkAction"/>
+    <Element Name="Clause-decider"
+        UML2_0_Value="_m9ndvK86EdiEh75YJ_3n8g" UML2_1_Value="Clause-decider"/>
+    <Element Name="DeployedArtifact"
+        UML2_0_Value="_m9C2MK86EdiEh75YJ_3n8g" UML2_1_Value="DeployedArtifact"/>
+    <Element Name="EEnum-enumName"
+        UML2_0_Value="_usn6xq87Edi5QpYeY_yIpg" UML2_1_Value="EEnum-enumName"/>
+    <Element Name="ActivityPartition-isExternal"
+        UML2_0_Value="_m9bQbK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition-isExternal"/>
+    <Element Name="ContentKind-Simple"
+        UML2_0_Value="_usPgR687Edi5QpYeY_yIpg" UML2_1_Value="ContentKind-Simple"/>
+    <Element Name="ValueSpecification-integerValue-_ownedParameter.0"
+        UML2_0_Value="_h33hv8enEdm17tz62ORDiA" UML2_1_Value="ValueSpecification-integerValue-_ownedParameter.0"/>
+    <Element Name="DestroyObjectAction"
+        UML2_0_Value="_m9nfDK86EdiEh75YJ_3n8g" UML2_1_Value="DestroyObjectAction"/>
+    <Element Name="Classifier-useCase"
+        UML2_0_Value="_m88vIq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-useCase"/>
+    <Element Name="Property-association"
+        UML2_0_Value="_m9C1p686EdiEh75YJ_3n8g" UML2_1_Value="Property-association"/>
+    <Element Name="Clause-successorClause"
+        UML2_0_Value="_m9ndua86EdiEh75YJ_3n8g" UML2_1_Value="Clause-successorClause"/>
+    <Element Name="Class-nestedClassifier"
+        UML2_0_Value="_m88uz686EdiEh75YJ_3n8g" UML2_1_Value="Class-nestedClassifier"/>
+    <Element Name="ReplyAction" UML2_0_Value="_m9ngt686EdiEh75YJ_3n8g" UML2_1_Value="ReplyAction"/>
+    <Element Name="EObject-eGet.1-feature"
+        UML2_0_Value="_m8eN8a86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eGet.1-feature"/>
+    <Element Name="Classifier-inherit-_ownedParameter.0"
+        UML2_0_Value="_h33jPcenEdm17tz62ORDiA" UML2_1_Value="Classifier-inherit-_ownedParameter.0"/>
+    <Element Name="Source" UML2_0_Value="_FyFP5687Edih9-GG5afQ0g" UML2_1_Value="Source"/>
+    <Element Name="FeatureKind-AttributeWildcard"
+        UML2_0_Value="_0OdAscezEdmTJL3rR1ioJg" UML2_1_Value="FeatureKind-AttributeWildcard"/>
+    <Element Name="Profile-metamodelReference"
+        UML2_0_Value="_m82otq86EdiEh75YJ_3n8g" UML2_1_Value="Profile-metamodelReference"/>
+    <Element Name="BehavioredClassifier-ownedBehavior"
+        UML2_0_Value="_m88u8K86EdiEh75YJ_3n8g" UML2_1_Value="BehavioredClassifier-ownedBehavior"/>
+    <Element Name="InteractionConstraint-minint"
+        UML2_0_Value="_m9neua86EdiEh75YJ_3n8g" UML2_1_Value="InteractionConstraint-minint"/>
+    <Element Name="ExpansionNode" UML2_0_Value="_m9ngL686EdiEh75YJ_3n8g" UML2_1_Value="ExpansionNode"/>
+    <Element Name="LoopNode-bodyPart"
+        UML2_0_Value="_m9ndz686EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-bodyPart"/>
+    <Element Name="Enumeration-ownedLiteral"
+        UML2_0_Value="_m9bRe686EdiEh75YJ_3n8g" UML2_1_Value="Enumeration-ownedLiteral"/>
+    <Element Name="Signal-ownedAttribute"
+        UML2_0_Value="_m9VJz686EdiEh75YJ_3n8g" UML2_1_Value="Signal-ownedAttribute"/>
+    <Element Name="Operation-isOrdered-_ownedParameter.0"
+        UML2_0_Value="_h4AsPMenEdm17tz62ORDiA" UML2_1_Value="Operation-isOrdered-_ownedParameter.0"/>
+    <Element Name="StartClassifierBehaviorAction"
+        UML2_0_Value="_m9ngcq86EdiEh75YJ_3n8g" UML2_1_Value="StartClassifierBehaviorAction"/>
+    <Element Name="EObject-eContainingFeature"
+        UML2_0_Value="_m8eN4q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eContainingFeature"/>
+    <Element Name="ReadLinkObjectEndAction"
+        UML2_0_Value="_m9ngea86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndAction"/>
+    <Element Name="MessageEnd-message"
+        UML2_0_Value="_m9neWa86EdiEh75YJ_3n8g" UML2_1_Value="MessageEnd-message"/>
+    <Element Name="TemplateBinding-parameterSubstitution"
+        UML2_0_Value="_m8qbPq86EdiEh75YJ_3n8g" UML2_1_Value="TemplateBinding-parameterSubstitution"/>
+    <Element Name="InteractionConstraint"
+        UML2_0_Value="_m9net686EdiEh75YJ_3n8g" UML2_1_Value="InteractionConstraint"/>
+    <Element Name="Property" UML2_0_Value="_m9C1la86EdiEh75YJ_3n8g" UML2_1_Value="Property"/>
+    <Element Name="FeatureKind-Unspecified"
+        UML2_0_Value="_utA8WK87Edi5QpYeY_yIpg" UML2_1_Value="FeatureKind-Unspecified"/>
+    <Element Name="PseudostateKind-terminate"
+        UML2_0_Value="_m9bQN686EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-terminate"/>
+    <Element Name="EClass-xmlContentKind"
+        UML2_0_Value="_usbtiq87Edi5QpYeY_yIpg" UML2_1_Value="EClass-xmlContentKind"/>
+    <Element Name="Class" UML2_0_Value="_m88uxq86EdiEh75YJ_3n8g" UML2_1_Value="Class"/>
+    <Element Name="Class_EClass-extension_EClass"
+        UML2_0_Value="_usbtga87Edi5QpYeY_yIpg" UML2_1_Value="Class_EClass-extension_EClass"/>
+    <Element Name="GeneralizationSet-isDisjoint"
+        UML2_0_Value="_m9C1i686EdiEh75YJ_3n8g" UML2_1_Value="GeneralizationSet-isDisjoint"/>
+    <Element Name="Lifeline-coveredBy"
+        UML2_0_Value="_m9neNK86EdiEh75YJ_3n8g" UML2_1_Value="Lifeline-coveredBy"/>
+    <Element Name="EEnum-getEEnumLiteral-name"
+        UML2_0_Value="_m8kUvK86EdiEh75YJ_3n8g" UML2_1_Value="EEnum-getEEnumLiteral-name"/>
+    <Element Name="OccurrenceSpecification-toBefore"
+        UML2_0_Value="_m9nelq86EdiEh75YJ_3n8g" UML2_1_Value="OccurrenceSpecification-toBefore"/>
+    <Element Name="DataStoreNode" UML2_0_Value="_m9ng3a86EdiEh75YJ_3n8g" UML2_1_Value="DataStoreNode"/>
+    <Element Name="Activity-isReadOnly"
+        UML2_0_Value="_m9VKd686EdiEh75YJ_3n8g" UML2_1_Value="Activity-isReadOnly"/>
+    <Element Name="ConnectionPointReference-exit"
+        UML2_0_Value="_m9bQJK86EdiEh75YJ_3n8g" UML2_1_Value="ConnectionPointReference-exit"/>
+    <Element Name="Artifact_Library-extension_Library"
+        UML2_0_Value="_Fxy8Ca87Edih9-GG5afQ0g" UML2_1_Value="Artifact_Library-extension_Library"/>
+    <Element Name="Namespace-importMembers-imps"
+        UML2_0_Value="_m8whpq86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-importMembers-imps"/>
+    <Element Name="ValueSpecification-stringValue-_ownedParameter.0"
+        UML2_0_Value="_h33hw8enEdm17tz62ORDiA" UML2_1_Value="ValueSpecification-stringValue-_ownedParameter.0"/>
+    <Element Name="TemplateSignature-ownedParameter"
+        UML2_0_Value="_m8qbYq86EdiEh75YJ_3n8g" UML2_1_Value="TemplateSignature-ownedParameter"/>
+    <Element Name="Namespace-importMembers-_ownedParameter.0"
+        UML2_0_Value="_h33iFcenEdm17tz62ORDiA" UML2_1_Value="Namespace-importMembers-_ownedParameter.0"/>
+    <Element Name="ReadLinkObjectEndQualifierAction-object"
+        UML2_0_Value="_m9ngiq86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndQualifierAction-object"/>
+    <Element Name="ConnectionPointReference"
+        UML2_0_Value="_m9bQH686EdiEh75YJ_3n8g" UML2_1_Value="ConnectionPointReference"/>
+    <Element Name="ReadIsClassifiedObjectAction-object"
+        UML2_0_Value="_m9ngZ686EdiEh75YJ_3n8g" UML2_1_Value="ReadIsClassifiedObjectAction-object"/>
+    <Element Name="AssociationClass"
+        UML2_0_Value="_m9ndZq86EdiEh75YJ_3n8g" UML2_1_Value="AssociationClass"/>
+    <Element Name="Parameter-effect"
+        UML2_0_Value="_m9C2h686EdiEh75YJ_3n8g" UML2_1_Value="Parameter-effect"/>
+    <Element Name="ReadLinkObjectEndQualifierAction-result"
+        UML2_0_Value="_m9ngi686EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndQualifierAction-result"/>
+    <Element Name="LoopNode-test" UML2_0_Value="_m9nd1q86EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-test"/>
+    <Element Name="Integer" UML2_0_Value="_m8qbBa86EdiEh75YJ_3n8g" UML2_1_Value="Integer"/>
+    <Element Name="EFactory-createFromString"
+        UML2_0_Value="_m8kUUq86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-createFromString"/>
+    <Element Name="Artifact_Script"
+        UML2_0_Value="_9w1WRa86Edih9-GG5afQ0g" UML2_1_Value="Artifact_Script"/>
+    <Element Name="ClearAssociationAction-association"
+        UML2_0_Value="_m9nfjK86EdiEh75YJ_3n8g" UML2_1_Value="ClearAssociationAction-association"/>
+    <Element Name="VisibilityKind-ReadWrite"
+        UML2_0_Value="_LtgO4zmHEdmHabrnfLjH-w" UML2_1_Value="VisibilityKind-ReadWrite"/>
+    <Element Name="Package_Framework-extension_Framework"
+        UML2_0_Value="_9wc7wa86Edih9-GG5afQ0g" UML2_1_Value="Package_Framework-extension_Framework"/>
+    <Element Name="Property_EAttribute"
+        UML2_0_Value="_utHC-K87Edi5QpYeY_yIpg" UML2_1_Value="Property_EAttribute"/>
+    <Element Name="Type-package" UML2_0_Value="_m82oja86EdiEh75YJ_3n8g" UML2_1_Value="Type-package"/>
+    <Element Name="ProtocolTransition-preCondition"
+        UML2_0_Value="_m9ng5q86EdiEh75YJ_3n8g" UML2_1_Value="ProtocolTransition-preCondition"/>
+    <Element Name="Classifier-hasVisibilityOf"
+        UML2_0_Value="_m88vQa86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-hasVisibilityOf"/>
+    <Element Name="EClass-eAllStructuralFeatures"
+        UML2_0_Value="_m8eOGa86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eAllStructuralFeatures"/>
+    <Element Name="Profile-metaclassReference"
+        UML2_0_Value="_m82os686EdiEh75YJ_3n8g" UML2_1_Value="Profile-metaclassReference"/>
+    <Element Name="ECharacterObject"
+        UML2_0_Value="_EQQPKMi3EdqOoq-j0hsILg" UML2_1_Value="ECharacterObject"/>
+    <Element Name="Responsibility"
+        UML2_0_Value="_9wvPqa86Edih9-GG5afQ0g" UML2_1_Value="Responsibility"/>
+    <Element Name="StateInvariant"
+        UML2_0_Value="_m9nexq86EdiEh75YJ_3n8g" UML2_1_Value="StateInvariant"/>
+    <Element Name="ActivityPartition-node"
+        UML2_0_Value="_m9bQeK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition-node"/>
+    <Element Name="File-base_Artifact"
+        UML2_0_Value="_Fxy8Bq87Edih9-GG5afQ0g" UML2_1_Value="File-base_Artifact"/>
+    <Element Name="Abstraction_Refine"
+        UML2_0_Value="_9wvPpa86Edih9-GG5afQ0g" UML2_1_Value="Abstraction_Refine"/>
+    <Element Name="Include-includingCase"
+        UML2_0_Value="_m9bQy686EdiEh75YJ_3n8g" UML2_1_Value="Include-includingCase"/>
+    <Element Name="Vertex-container"
+        UML2_0_Value="_m9VKE686EdiEh75YJ_3n8g" UML2_1_Value="Vertex-container"/>
+    <Element Name="Action-localPostcondition"
+        UML2_0_Value="_m9VK9a86EdiEh75YJ_3n8g" UML2_1_Value="Action-localPostcondition"/>
+    <Element Name="Component_Process"
+        UML2_0_Value="_Fx5CoK87Edih9-GG5afQ0g" UML2_1_Value="Component_Process"/>
+    <Element Name="VisibilityKind-ReadOnly"
+        UML2_0_Value="_LtgO4jmHEdmHabrnfLjH-w" UML2_1_Value="VisibilityKind-ReadOnly"/>
+    <Element Name="ReadIsClassifiedObjectAction-isDirect"
+        UML2_0_Value="_m9ngY686EdiEh75YJ_3n8g" UML2_1_Value="ReadIsClassifiedObjectAction-isDirect"/>
+    <Element Name="EObject-eAllContents"
+        UML2_0_Value="_m8eN6K86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eAllContents"/>
+    <Element Name="Action-input" UML2_0_Value="_m9VK7a86EdiEh75YJ_3n8g" UML2_1_Value="Action-input"/>
+    <Element Name="TemplateParameter"
+        UML2_0_Value="_m8qbca86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameter"/>
+    <Element Name="Abstraction_Trace-extension_Trace"
+        UML2_0_Value="_9w7c5q86Edih9-GG5afQ0g" UML2_1_Value="Abstraction_Trace-extension_Trace"/>
+    <Element Name="CollaborationUse"
+        UML2_0_Value="_m9bQ7686EdiEh75YJ_3n8g" UML2_1_Value="CollaborationUse"/>
+    <Element Name="Namespace-member"
+        UML2_0_Value="_m8whhq86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-member"/>
+    <Element Name="EPackage-basePackage"
+        UML2_0_Value="_ur9MZK87Edi5QpYeY_yIpg" UML2_1_Value="EPackage-basePackage"/>
+    <Element Name="ReclassifyObjectAction-object"
+        UML2_0_Value="_m9ngWK86EdiEh75YJ_3n8g" UML2_1_Value="ReclassifyObjectAction-object"/>
+    <Element Name="Message-receiveEvent"
+        UML2_0_Value="_m9nebK86EdiEh75YJ_3n8g" UML2_1_Value="Message-receiveEvent"/>
+    <Element Name="EFactory" UML2_0_Value="_m8kUTK86EdiEh75YJ_3n8g" UML2_1_Value="EFactory"/>
+    <Element Name="Classifier-conformsTo-_ownedParameter.0"
+        UML2_0_Value="_h33jScenEdm17tz62ORDiA" UML2_1_Value="Classifier-conformsTo-_ownedParameter.0"/>
+    <Element Name="Property-opposite"
+        UML2_0_Value="_m9C1o686EdiEh75YJ_3n8g" UML2_1_Value="Property-opposite"/>
+    <Element Name="RedefinableElement-isConsistentWith-redefinee"
+        UML2_0_Value="_m9C1YK86EdiEh75YJ_3n8g" UML2_1_Value="RedefinableElement-isConsistentWith-redefinee"/>
+    <Element Name="Instantiate-base_Usage"
+        UML2_0_Value="_9wpJA686Edih9-GG5afQ0g" UML2_1_Value="Instantiate-base_Usage"/>
+    <Element Name="LiteralBoolean"
+        UML2_0_Value="_m9ndIK86EdiEh75YJ_3n8g" UML2_1_Value="LiteralBoolean"/>
+    <Element Name="ActivityPartition-edge"
+        UML2_0_Value="_m9bQbq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition-edge"/>
+    <Element Name="ObjectNode-ordering"
+        UML2_0_Value="_m9VLEq86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNode-ordering"/>
+    <Element Name="Classifier-allFeatures-_ownedParameter.0"
+        UML2_0_Value="_h33jI8enEdm17tz62ORDiA" UML2_1_Value="Classifier-allFeatures-_ownedParameter.0"/>
+    <Element Name="Operation-isUnique-_ownedParameter.0"
+        UML2_0_Value="_h4AsPsenEdm17tz62ORDiA" UML2_1_Value="Operation-isUnique-_ownedParameter.0"/>
+    <Element Name="EClassifier-isInstance-_ownedParameter.0"
+        UML2_0_Value="_h3j_ssenEdm17tz62ORDiA" UML2_1_Value="EClassifier-isInstance-_ownedParameter.0"/>
+    <Element Name="Classifier-maySpecializeType"
+        UML2_0_Value="_m88vR686EdiEh75YJ_3n8g" UML2_1_Value="Classifier-maySpecializeType"/>
+    <Element Name="Operation-precondition"
+        UML2_0_Value="_m9C2mK86EdiEh75YJ_3n8g" UML2_1_Value="Operation-precondition"/>
+    <Element Name="Derive-base_Abstraction"
+        UML2_0_Value="_9wEhRa86Edih9-GG5afQ0g" UML2_1_Value="Derive-base_Abstraction"/>
+    <Element Name="EStructuralFeature-eContainingClass"
+        UML2_0_Value="_m8eNqa86EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-eContainingClass"/>
+    <Element Name="Class_Focus" UML2_0_Value="_9wQuha86Edih9-GG5afQ0g" UML2_1_Value="Class_Focus"/>
+    <Element Name="ElementImport-visibility"
+        UML2_0_Value="_m82oNq86EdiEh75YJ_3n8g" UML2_1_Value="ElementImport-visibility"/>
+    <Element Name="UseCase-extensionPoint"
+        UML2_0_Value="_m9bQvq86EdiEh75YJ_3n8g" UML2_1_Value="UseCase-extensionPoint"/>
+    <Element Name="EnumerationLiteral"
+        UML2_0_Value="_m9bRga86EdiEh75YJ_3n8g" UML2_1_Value="EnumerationLiteral"/>
+    <Element Name="NamedElement-isDistinguishableFrom-_ownedParameter.0"
+        UML2_0_Value="_h33h5cenEdm17tz62ORDiA" UML2_1_Value="NamedElement-isDistinguishableFrom-_ownedParameter.0"/>
+    <Element Name="MultiplicityElement-upper.1-_ownedParameter.0"
+        UML2_0_Value="_h33htsenEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-upper.1-_ownedParameter.0"/>
+    <Element Name="BehavioredClassifier-ownedTrigger"
+        UML2_0_Value="_m88u-K86EdiEh75YJ_3n8g" UML2_1_Value="BehavioredClassifier-ownedTrigger"/>
+    <Element Name="Class_Metaclass-extension_Metaclass"
+        UML2_0_Value="_9wpJBq86Edih9-GG5afQ0g" UML2_1_Value="Class_Metaclass-extension_Metaclass"/>
+    <Element Name="Class_Focus-extension_Focus"
+        UML2_0_Value="_9wW1IK86Edih9-GG5afQ0g" UML2_1_Value="Class_Focus-extension_Focus"/>
+    <Element Name="Abstraction" UML2_0_Value="_m9C2YK86EdiEh75YJ_3n8g" UML2_1_Value="Abstraction"/>
+    <Element Name="Package_EPackage"
+        UML2_0_Value="_urq4gK87Edi5QpYeY_yIpg" UML2_1_Value="Package_EPackage"/>
+    <Element Name="StructuredClassifier"
+        UML2_0_Value="_m9bRAa86EdiEh75YJ_3n8g" UML2_1_Value="StructuredClassifier"/>
+    <Element Name="Classifier-inheritedMember.1"
+        UML2_0_Value="_m88vOK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-inheritedMember.1"/>
+    <Element Name="float" UML2_0_Value="_TBlMgq86EdieaYgxtVWN8Q" UML2_1_Value="float"/>
+    <Element Name="OpaqueExpression-body"
+        UML2_0_Value="_m9C2aq86EdiEh75YJ_3n8g" UML2_1_Value="OpaqueExpression-body"/>
+    <Element Name="TestIdentityAction-result"
+        UML2_0_Value="_m9nfG686EdiEh75YJ_3n8g" UML2_1_Value="TestIdentityAction-result"/>
+    <Element Name="Dependency" UML2_0_Value="_m9ndaa86EdiEh75YJ_3n8g" UML2_1_Value="Dependency"/>
+    <Element Name="PartDecomposition"
+        UML2_0_Value="_m9neQq86EdiEh75YJ_3n8g" UML2_1_Value="PartDecomposition"/>
+    <Element Name="EModelElement-getEAnnotation-source"
+        UML2_0_Value="_m8eN2K86EdiEh75YJ_3n8g" UML2_1_Value="EModelElement-getEAnnotation-source"/>
+    <Element Name="StructuralFeatureAction-structuralFeature"
+        UML2_0_Value="_m9nfL686EdiEh75YJ_3n8g" UML2_1_Value="StructuralFeatureAction-structuralFeature"/>
+    <Element Name="OpaqueBehavior-body"
+        UML2_0_Value="_m9nfxa86EdiEh75YJ_3n8g" UML2_1_Value="OpaqueBehavior-body"/>
+    <Element Name="Pseudostate-kind"
+        UML2_0_Value="_m9bQK686EdiEh75YJ_3n8g" UML2_1_Value="Pseudostate-kind"/>
+    <Element Name="ClearAssociationAction-object"
+        UML2_0_Value="_m9nfi686EdiEh75YJ_3n8g" UML2_1_Value="ClearAssociationAction-object"/>
+    <Element Name="EObject-eSet-feature"
+        UML2_0_Value="_m8eN9K86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eSet-feature"/>
+    <Element Name="EDoubleObject" UML2_0_Value="_EQQPLMi3EdqOoq-j0hsILg" UML2_1_Value="EDoubleObject"/>
+    <Element Name="Classifier-inherit-inhs"
+        UML2_0_Value="_m88vRq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-inherit-inhs"/>
+    <Element Name="Association-endType"
+        UML2_0_Value="_m9VJT686EdiEh75YJ_3n8g" UML2_1_Value="Association-endType"/>
+    <Element Name="EDiagnosticChain"
+        UML2_0_Value="_EQQPKsi3EdqOoq-j0hsILg" UML2_1_Value="EDiagnosticChain"/>
+    <Element Name="InteractionUse-refersTo"
+        UML2_0_Value="_m9neRq86EdiEh75YJ_3n8g" UML2_1_Value="InteractionUse-refersTo"/>
+    <Element Name="Action-context"
+        UML2_0_Value="_m9VK8K86EdiEh75YJ_3n8g" UML2_1_Value="Action-context"/>
+    <Element Name="Artifact_Executable-extension_Executable"
+        UML2_0_Value="_Fxs1Z687Edih9-GG5afQ0g" UML2_1_Value="Artifact_Executable-extension_Executable"/>
+    <Element Name="Duration" UML2_0_Value="_m9ng-q86EdiEh75YJ_3n8g" UML2_1_Value="Duration"/>
+    <Element Name="EClass-base_Class"
+        UML2_0_Value="_usbtg687Edi5QpYeY_yIpg" UML2_1_Value="EClass-base_Class"/>
+    <Element Name="InteractionUse-actualGate"
+        UML2_0_Value="_m9neR686EdiEh75YJ_3n8g" UML2_1_Value="InteractionUse-actualGate"/>
+    <Element Name="EClass-getFeatureCount-_ownedParameter.0"
+        UML2_0_Value="_h3twl8enEdm17tz62ORDiA" UML2_1_Value="EClass-getFeatureCount-_ownedParameter.0"/>
+    <Element Name="ExecutableNode"
+        UML2_0_Value="_m9VK-q86EdiEh75YJ_3n8g" UML2_1_Value="ExecutableNode"/>
+    <Element Name="PseudostateKind-exitPoint"
+        UML2_0_Value="_m9bQNq86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-exitPoint"/>
+    <Element Name="PseudostateKind"
+        UML2_0_Value="_m9bQLa86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind"/>
+    <Element Name="Activity-edge" UML2_0_Value="_m9VKZq86EdiEh75YJ_3n8g" UML2_1_Value="Activity-edge"/>
+    <Element Name="EClassifier-getClassifierID-_ownedParameter.0"
+        UML2_0_Value="_h3j_tcenEdm17tz62ORDiA" UML2_1_Value="EClassifier-getClassifierID-_ownedParameter.0"/>
+    <Element Name="Type-base_Class"
+        UML2_0_Value="_9xBjg686Edih9-GG5afQ0g" UML2_1_Value="Type-base_Class"/>
+    <Element Name="Message-sendEvent"
+        UML2_0_Value="_m9neYq86EdiEh75YJ_3n8g" UML2_1_Value="Message-sendEvent"/>
+    <Element Name="Component" UML2_0_Value="_m9VJjK86EdiEh75YJ_3n8g" UML2_1_Value="Component"/>
+    <Element Name="PseudostateKind-junction"
+        UML2_0_Value="_m9bQM686EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-junction"/>
+    <Element Name="Script" UML2_0_Value="_9w1WQ686Edih9-GG5afQ0g" UML2_1_Value="Script"/>
+    <Element Name="Package-packageMerge"
+        UML2_0_Value="_m82ocq86EdiEh75YJ_3n8g" UML2_1_Value="Package-packageMerge"/>
+    <Element Name="ElementImport-getName-_ownedParameter.0"
+        UML2_0_Value="_h33iV8enEdm17tz62ORDiA" UML2_1_Value="ElementImport-getName-_ownedParameter.0"/>
+    <Element Name="EResource" UML2_0_Value="_EQQPOsi3EdqOoq-j0hsILg" UML2_1_Value="EResource"/>
+    <Element Name="ReadLinkObjectEndQualifierAction-qualifier"
+        UML2_0_Value="_m9ngjK86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndQualifierAction-qualifier"/>
+    <Element Name="ParameterDirectionKind-return"
+        UML2_0_Value="_m9PC0a86EdiEh75YJ_3n8g" UML2_1_Value="ParameterDirectionKind-return"/>
+    <Element Name="Classifier-parents-_ownedParameter.0"
+        UML2_0_Value="_h33jM8enEdm17tz62ORDiA" UML2_1_Value="Classifier-parents-_ownedParameter.0"/>
+    <Element Name="EStructuralFeature-transient"
+        UML2_0_Value="_m8eNr686EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-transient"/>
+    <Element Name="CreateObjectAction"
+        UML2_0_Value="_m9nfAq86EdiEh75YJ_3n8g" UML2_1_Value="CreateObjectAction"/>
+    <Element Name="ParameterEffectKind-delete"
+        UML2_0_Value="_m9PC2K86EdiEh75YJ_3n8g" UML2_1_Value="ParameterEffectKind-delete"/>
+    <Element Name="EEnum-base_Enumeration"
+        UML2_0_Value="_usn6xK87Edi5QpYeY_yIpg" UML2_1_Value="EEnum-base_Enumeration"/>
+    <Element Name="InterruptibleActivityRegion-node"
+        UML2_0_Value="_m9bQh686EdiEh75YJ_3n8g" UML2_1_Value="InterruptibleActivityRegion-node"/>
+    <Element Name="GeneralizationSet-generalization"
+        UML2_0_Value="_m9C1j686EdiEh75YJ_3n8g" UML2_1_Value="GeneralizationSet-generalization"/>
+    <Element Name="BehavioralFeature-method"
+        UML2_0_Value="_m9I8O686EdiEh75YJ_3n8g" UML2_1_Value="BehavioralFeature-method"/>
+    <Element Name="MultiplicityElement-lower"
+        UML2_0_Value="_m8qbuq86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-lower"/>
+    <Element Name="TransitionKind-internal"
+        UML2_0_Value="_m9VKMa86EdiEh75YJ_3n8g" UML2_1_Value="TransitionKind-internal"/>
+    <Element Name="MergeNode" UML2_0_Value="_m9ndka86EdiEh75YJ_3n8g" UML2_1_Value="MergeNode"/>
+    <Element Name="EStringToStringMapEntry-key"
+        UML2_0_Value="_m8kUqK86EdiEh75YJ_3n8g" UML2_1_Value="EStringToStringMapEntry-key"/>
+    <Element Name="Create" UML2_0_Value="_9v4UBK86Edih9-GG5afQ0g" UML2_1_Value="Create"/>
+    <Element Name="EClass-getFeatureCount"
+        UML2_0_Value="_h3twlsenEdm17tz62ORDiA" UML2_1_Value="EClass-getFeatureCount"/>
+    <Element Name="AggregationKind"
+        UML2_0_Value="_m9VJZ686EdiEh75YJ_3n8g" UML2_1_Value="AggregationKind"/>
+    <Element Name="Library-base_Artifact"
+        UML2_0_Value="_Fxy8C687Edih9-GG5afQ0g" UML2_1_Value="Library-base_Artifact"/>
+    <Element Name="Constraint" UML2_0_Value="_m8whsa86EdiEh75YJ_3n8g" UML2_1_Value="Constraint"/>
+    <Element Name="Component-realization"
+        UML2_0_Value="_m9VJma86EdiEh75YJ_3n8g" UML2_1_Value="Component-realization"/>
+    <Element Name="Lifeline-decomposedAs"
+        UML2_0_Value="_m9neMq86EdiEh75YJ_3n8g" UML2_1_Value="Lifeline-decomposedAs"/>
+    <Element Name="CallAction-result"
+        UML2_0_Value="_m9nf0a86EdiEh75YJ_3n8g" UML2_1_Value="CallAction-result"/>
+    <Element Name="Vertex" UML2_0_Value="_m9VKC686EdiEh75YJ_3n8g" UML2_1_Value="Vertex"/>
+    <Element Name="EOperation-eExceptions"
+        UML2_0_Value="_m8kUaK86EdiEh75YJ_3n8g" UML2_1_Value="EOperation-eExceptions"/>
+    <Element Name="Element-not_own_self"
+        UML2_0_Value="_h3txYMenEdm17tz62ORDiA" UML2_1_Value="Element-not_own_self"/>
+    <Element Name="Dependency-supplier"
+        UML2_0_Value="_m9C2Ka86EdiEh75YJ_3n8g" UML2_1_Value="Dependency-supplier"/>
+    <Element Name="AcceptCallAction"
+        UML2_0_Value="_m9ngrq86EdiEh75YJ_3n8g" UML2_1_Value="AcceptCallAction"/>
+    <Element Name="WriteVariableAction"
+        UML2_0_Value="_m9nfn686EdiEh75YJ_3n8g" UML2_1_Value="WriteVariableAction"/>
+    <Element Name="NamedElement-qualifiedName.1"
+        UML2_0_Value="_m8qcGq86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-qualifiedName.1"/>
+    <Element Name="Package_Framework"
+        UML2_0_Value="_9wc7wK86Edih9-GG5afQ0g" UML2_1_Value="Package_Framework"/>
+    <Element Name="ExpansionNode-regionAsInput"
+        UML2_0_Value="_m9ngM686EdiEh75YJ_3n8g" UML2_1_Value="ExpansionNode-regionAsInput"/>
+    <Element Name="InterfaceRealization"
+        UML2_0_Value="_m9bRRq86EdiEh75YJ_3n8g" UML2_1_Value="InterfaceRealization"/>
+    <Element Name="ConnectorKind-assembly"
+        UML2_0_Value="_m9bROa86EdiEh75YJ_3n8g" UML2_1_Value="ConnectorKind-assembly"/>
+    <Element Name="TemplateableElement-ownedTemplateSignature"
+        UML2_0_Value="_m8qbNK86EdiEh75YJ_3n8g" UML2_1_Value="TemplateableElement-ownedTemplateSignature"/>
+    <Element Name="Constraint-constrainedElement"
+        UML2_0_Value="_m8whtq86EdiEh75YJ_3n8g" UML2_1_Value="Constraint-constrainedElement"/>
+    <Element Name="MultiplicityElement-lower.1-_ownedParameter.0"
+        UML2_0_Value="_h33htMenEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-lower.1-_ownedParameter.0"/>
+    <Element Name="EAnnotation-references"
+        UML2_0_Value="_m8kUoq86EdiEh75YJ_3n8g" UML2_1_Value="EAnnotation-references"/>
+    <Element Name="Connector-type"
+        UML2_0_Value="_m9bRIa86EdiEh75YJ_3n8g" UML2_1_Value="Connector-type"/>
+    <Element Name="MultiplicityElement-upper.1"
+        UML2_0_Value="_m8qb5K86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-upper.1"/>
+    <Element Name="Model_SystemModel"
+        UML2_0_Value="_O2E_8K87Edih9-GG5afQ0g" UML2_1_Value="Model_SystemModel"/>
+    <Element Name="Type-conformsTo"
+        UML2_0_Value="_m82oj686EdiEh75YJ_3n8g" UML2_1_Value="Type-conformsTo"/>
+    <Element Name="Trigger" UML2_0_Value="_m9ne7686EdiEh75YJ_3n8g" UML2_1_Value="Trigger"/>
+    <Element Name="Classifier_Specification"
+        UML2_0_Value="_FyLWgK87Edih9-GG5afQ0g" UML2_1_Value="Classifier_Specification"/>
+    <Element Name="Package_ModelLibrary-extension_ModelLibrary"
+        UML2_0_Value="_9wvPoa86Edih9-GG5afQ0g" UML2_1_Value="Package_ModelLibrary-extension_ModelLibrary"/>
+    <Element Name="EFactory-convertToString"
+        UML2_0_Value="_m8kUVq86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-convertToString"/>
+    <Element Name="Deployment-deployedArtifact"
+        UML2_0_Value="_m9C2E686EdiEh75YJ_3n8g" UML2_1_Value="Deployment-deployedArtifact"/>
+    <Element Name="RemoveVariableValueAction"
+        UML2_0_Value="_m9nfsq86EdiEh75YJ_3n8g" UML2_1_Value="RemoveVariableValueAction"/>
+    <Element Name="ClassifierTemplateParameter"
+        UML2_0_Value="_m9nd_a86EdiEh75YJ_3n8g" UML2_1_Value="ClassifierTemplateParameter"/>
+    <Element Name="Behavior-ownedParameter"
+        UML2_0_Value="_m9I8YK86EdiEh75YJ_3n8g" UML2_1_Value="Behavior-ownedParameter"/>
+    <Element Name="EJavaObject" UML2_0_Value="_EQQPNsi3EdqOoq-j0hsILg" UML2_1_Value="EJavaObject"/>
+    <Element Name="TemplateableElement-parameterableElements"
+        UML2_0_Value="_m8qbNq86EdiEh75YJ_3n8g" UML2_1_Value="TemplateableElement-parameterableElements"/>
+    <Element Name="EStructuralFeature-defaultValue"
+        UML2_0_Value="_m8eNs686EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-defaultValue"/>
+    <Element Name="Property-redefinedProperty"
+        UML2_0_Value="_m9C1q686EdiEh75YJ_3n8g" UML2_1_Value="Property-redefinedProperty"/>
+    <Element Name="EObject-eAllContents-_ownedParameter.0"
+        UML2_0_Value="_h3j_7cenEdm17tz62ORDiA" UML2_1_Value="EObject-eAllContents-_ownedParameter.0"/>
+    <Element Name="LoopNode" UML2_0_Value="_m9ndy686EdiEh75YJ_3n8g" UML2_1_Value="LoopNode"/>
+    <Element
+        Name="MultiplicityElement-includesCardinality-_ownedParameter.0"
+        UML2_0_Value="_h33hmsenEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-includesCardinality-_ownedParameter.0"/>
+    <Element Name="ActivityNode-inPartition"
+        UML2_0_Value="_m9VKpa86EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-inPartition"/>
+    <Element Name="EPackage-base_Package"
+        UML2_0_Value="_urq4g687Edi5QpYeY_yIpg" UML2_1_Value="EPackage-base_Package"/>
+    <Element Name="ExpansionKind-parallel"
+        UML2_0_Value="_m9ngQK86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionKind-parallel"/>
+    <Element Name="EStructuralFeature-getContainerClass"
+        UML2_0_Value="_m8eNu686EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-getContainerClass"/>
+    <Element Name="BehavioredClassifier-classifierBehavior"
+        UML2_0_Value="_m88u8686EdiEh75YJ_3n8g" UML2_1_Value="BehavioredClassifier-classifierBehavior"/>
+    <Element Name="JoinNode-isCombineDuplicate"
+        UML2_0_Value="_m9ne9a86EdiEh75YJ_3n8g" UML2_1_Value="JoinNode-isCombineDuplicate"/>
+    <Element Name="ParameterSet-condition"
+        UML2_0_Value="_m9PCpK86EdiEh75YJ_3n8g" UML2_1_Value="ParameterSet-condition"/>
+    <Element Name="State-doActivity"
+        UML2_0_Value="_m9bQD686EdiEh75YJ_3n8g" UML2_1_Value="State-doActivity"/>
+    <Element Name="EPackage-packageName"
+        UML2_0_Value="_ur9MYa87Edi5QpYeY_yIpg" UML2_1_Value="EPackage-packageName"/>
+    <Element Name="GeneralizationSet-isCovering"
+        UML2_0_Value="_m9C1ia86EdiEh75YJ_3n8g" UML2_1_Value="GeneralizationSet-isCovering"/>
+    <Element Name="Enumeration_EEnum-extension_EEnum"
+        UML2_0_Value="_usn6wq87Edi5QpYeY_yIpg" UML2_1_Value="Enumeration_EEnum-extension_EEnum"/>
+    <Element Name="ActivityFinalNode"
+        UML2_0_Value="_m9ndia86EdiEh75YJ_3n8g" UML2_1_Value="ActivityFinalNode"/>
+    <Element Name="ValueSpecification"
+        UML2_0_Value="_m8qb6q86EdiEh75YJ_3n8g" UML2_1_Value="ValueSpecification"/>
+    <Element Name="ConnectorEnd-role"
+        UML2_0_Value="_m9C1_q86EdiEh75YJ_3n8g" UML2_1_Value="ConnectorEnd-role"/>
+    <Element Name="Namespace-getNamesOfMember-element"
+        UML2_0_Value="_m8whm686EdiEh75YJ_3n8g" UML2_1_Value="Namespace-getNamesOfMember-element"/>
+    <Element Name="Reception-signal"
+        UML2_0_Value="_m9VJya86EdiEh75YJ_3n8g" UML2_1_Value="Reception-signal"/>
+    <Element Name="InvocationAction"
+        UML2_0_Value="_m9nf1q86EdiEh75YJ_3n8g" UML2_1_Value="InvocationAction"/>
+    <Element Name="InstanceSpecification-specification"
+        UML2_0_Value="_m9bRka86EdiEh75YJ_3n8g" UML2_1_Value="InstanceSpecification-specification"/>
+    <Element Name="VisibilityKind-ReadOnlyUnsettable"
+        UML2_0_Value="_LtgO5DmHEdmHabrnfLjH-w" UML2_1_Value="VisibilityKind-ReadOnlyUnsettable"/>
+    <Element Name="Component_Implement"
+        UML2_0_Value="_9wc7xa86Edih9-GG5afQ0g" UML2_1_Value="Component_Implement"/>
+    <Element Name="Classifier-inheritableMembers-_ownedParameter.0"
+        UML2_0_Value="_h33jN8enEdm17tz62ORDiA" UML2_1_Value="Classifier-inheritableMembers-_ownedParameter.0"/>
+    <Element Name="EEnumLiteral" UML2_0_Value="_usn6x687Edi5QpYeY_yIpg" UML2_1_Value="EEnumLiteral"/>
+    <Element Name="AcceptCallAction-returnInformation"
+        UML2_0_Value="_m9ngsK86EdiEh75YJ_3n8g" UML2_1_Value="AcceptCallAction-returnInformation"/>
+    <Element Name="ProtocolConformance"
+        UML2_0_Value="_m9bQn686EdiEh75YJ_3n8g" UML2_1_Value="ProtocolConformance"/>
+    <Element Name="ActivityEdge-weight"
+        UML2_0_Value="_m9VKjq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-weight"/>
+    <Element Name="ETypedElement-many"
+        UML2_0_Value="_m8eNx686EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement-many"/>
+    <Element Name="ActivityPartition-superPartition"
+        UML2_0_Value="_m9bQdK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition-superPartition"/>
+    <Element Name="Usage_Instantiate-extension_Instantiate"
+        UML2_0_Value="_9wpJAa86Edih9-GG5afQ0g" UML2_1_Value="Usage_Instantiate-extension_Instantiate"/>
+    <Element Name="ElementImport-getName"
+        UML2_0_Value="_m82oRK86EdiEh75YJ_3n8g" UML2_1_Value="ElementImport-getName"/>
+    <Element Name="Artifact" UML2_0_Value="_m9C2Oq86EdiEh75YJ_3n8g" UML2_1_Value="Artifact"/>
+    <Element Name="DurationConstraint"
+        UML2_0_Value="_m9nhPa86EdiEh75YJ_3n8g" UML2_1_Value="DurationConstraint"/>
+    <Element Name="Classifier-powertypeExtent"
+        UML2_0_Value="_m88vE686EdiEh75YJ_3n8g" UML2_1_Value="Classifier-powertypeExtent"/>
+    <Element Name="EClassifier-defaultValue"
+        UML2_0_Value="_m8eOM686EdiEh75YJ_3n8g" UML2_1_Value="EClassifier-defaultValue"/>
+    <Element Name="EEnum" UML2_0_Value="_ush0J687Edi5QpYeY_yIpg" UML2_1_Value="EEnum"/>
+    <Element Name="FeatureKind" UML2_0_Value="_utA8V687Edi5QpYeY_yIpg" UML2_1_Value="FeatureKind"/>
+    <Element Name="ReadExtentAction-classifier"
+        UML2_0_Value="_m9ngR686EdiEh75YJ_3n8g" UML2_1_Value="ReadExtentAction-classifier"/>
+    <Element Name="DecisionNode-decisionInput"
+        UML2_0_Value="_m9ndja86EdiEh75YJ_3n8g" UML2_1_Value="DecisionNode-decisionInput"/>
+    <Element Name="InstanceValue-instance"
+        UML2_0_Value="_m9ndSq86EdiEh75YJ_3n8g" UML2_1_Value="InstanceValue-instance"/>
+    <Element Name="EObject-eGet.1"
+        UML2_0_Value="_m8eN7686EdiEh75YJ_3n8g" UML2_1_Value="EObject-eGet.1"/>
+    <Element Name="ExecutableNode-handler"
+        UML2_0_Value="_m9VK_K86EdiEh75YJ_3n8g" UML2_1_Value="ExecutableNode-handler"/>
+    <Element Name="VisibilityKind"
+        UML2_0_Value="_LtaIQDmHEdmHabrnfLjH-w" UML2_1_Value="VisibilityKind"/>
+    <Element Name="MultiplicityElement-lower.1"
+        UML2_0_Value="_m8qb4q86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-lower.1"/>
+    <Element Name="DurationObservation-firstEvent"
+        UML2_0_Value="_m9ng_K86EdiEh75YJ_3n8g" UML2_1_Value="DurationObservation-firstEvent"/>
+    <Element Name="Element-allOwnedElements"
+        UML2_0_Value="_m8qbHa86EdiEh75YJ_3n8g" UML2_1_Value="Element-allOwnedElements"/>
+    <Element Name="BehavioralFeature-raisedException"
+        UML2_0_Value="_m9I8Nq86EdiEh75YJ_3n8g" UML2_1_Value="BehavioralFeature-raisedException"/>
+    <Element Name="VariableAction-variable"
+        UML2_0_Value="_m9nfla86EdiEh75YJ_3n8g" UML2_1_Value="VariableAction-variable"/>
+    <Element Name="Vertex-outgoing"
+        UML2_0_Value="_m9VKDa86EdiEh75YJ_3n8g" UML2_1_Value="Vertex-outgoing"/>
+    <Element Name="Classifier_Realization-extension_Realization"
+        UML2_0_Value="_Fx_JQa87Edih9-GG5afQ0g" UML2_1_Value="Classifier_Realization-extension_Realization"/>
+    <Element Name="Transition-effect"
+        UML2_0_Value="_m9VKJa86EdiEh75YJ_3n8g" UML2_1_Value="Transition-effect"/>
+    <Element Name="Destroy-base_BehavioralFeature"
+        UML2_0_Value="_9wQug686Edih9-GG5afQ0g" UML2_1_Value="Destroy-base_BehavioralFeature"/>
+    <Element Name="EStructuralFeature-defaultValueLiteral"
+        UML2_0_Value="_m8eNsa86EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-defaultValueLiteral"/>
+    <Element Name="InformationItem"
+        UML2_0_Value="_m9ndU686EdiEh75YJ_3n8g" UML2_1_Value="InformationItem"/>
+    <Element Name="ETypedElement-required"
+        UML2_0_Value="_m8eNya86EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement-required"/>
+    <Element Name="TransitionKind-local"
+        UML2_0_Value="_m9VKMq86EdiEh75YJ_3n8g" UML2_1_Value="TransitionKind-local"/>
+    <Element Name="EObject-eGet" UML2_0_Value="_m8eN7K86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eGet"/>
+    <Element Name="LinkEndData-qualifier"
+        UML2_0_Value="_m9nfX686EdiEh75YJ_3n8g" UML2_1_Value="LinkEndData-qualifier"/>
+    <Element Name="BehavioredClassifier-interfaceRealization"
+        UML2_0_Value="_m88u9a86EdiEh75YJ_3n8g" UML2_1_Value="BehavioredClassifier-interfaceRealization"/>
+    <Element Name="Operation-postcondition"
+        UML2_0_Value="_m9C2m686EdiEh75YJ_3n8g" UML2_1_Value="Operation-postcondition"/>
+    <Element Name="LoopNode-loopVariableInput"
+        UML2_0_Value="_m9nd4q86EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-loopVariableInput"/>
+    <Element Name="ExpansionKind-stream"
+        UML2_0_Value="_m9ngQq86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionKind-stream"/>
+    <Element Name="ConnectableElementTemplateParameter"
+        UML2_0_Value="_m9neCK86EdiEh75YJ_3n8g" UML2_1_Value="ConnectableElementTemplateParameter"/>
+    <Element Name="Create-base_BehavioralFeature"
+        UML2_0_Value="_9v4UA686Edih9-GG5afQ0g" UML2_1_Value="Create-base_BehavioralFeature"/>
+    <Element Name="ReadStructuralFeatureAction"
+        UML2_0_Value="_m9nfN686EdiEh75YJ_3n8g" UML2_1_Value="ReadStructuralFeatureAction"/>
+    <Element Name="InterruptibleActivityRegion-interruptingEdge"
+        UML2_0_Value="_m9bQhK86EdiEh75YJ_3n8g" UML2_1_Value="InterruptibleActivityRegion-interruptingEdge"/>
+    <Element Name="CollaborationUse-type"
+        UML2_0_Value="_m9bQ8a86EdiEh75YJ_3n8g" UML2_1_Value="CollaborationUse-type"/>
+    <Element Name="Focus" UML2_0_Value="_9wQuhK86Edih9-GG5afQ0g" UML2_1_Value="Focus"/>
+    <Element Name="Abstraction_Derive-extension_Derive"
+        UML2_0_Value="_9wEhQ686Edih9-GG5afQ0g" UML2_1_Value="Abstraction_Derive-extension_Derive"/>
+    <Element Name="Message-messageSort"
+        UML2_0_Value="_m9neYK86EdiEh75YJ_3n8g" UML2_1_Value="Message-messageSort"/>
+    <Element Name="ActivityEdge-guard"
+        UML2_0_Value="_m9VKiq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-guard"/>
+    <Element Name="Extend-condition"
+        UML2_0_Value="_m9bQ1686EdiEh75YJ_3n8g" UML2_1_Value="Extend-condition"/>
+    <Element Name="Property-aggregation"
+        UML2_0_Value="_m9C1sa86EdiEh75YJ_3n8g" UML2_1_Value="Property-aggregation"/>
+    <Element Name="EAnnotation-details"
+        UML2_0_Value="_m8kUmq86EdiEh75YJ_3n8g" UML2_1_Value="EAnnotation-details"/>
+    <Element Name="Document-base_Artifact"
+        UML2_0_Value="_FxmuxK87Edih9-GG5afQ0g" UML2_1_Value="Document-base_Artifact"/>
+    <Element Name="ETypedElement-lowerBound"
+        UML2_0_Value="_m8eNw686EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement-lowerBound"/>
+    <Element Name="BroadcastSignalAction"
+        UML2_0_Value="_m9nf7686EdiEh75YJ_3n8g" UML2_1_Value="BroadcastSignalAction"/>
+    <Element Name="InteractionFragment-enclosingOperand"
+        UML2_0_Value="_m9neJa86EdiEh75YJ_3n8g" UML2_1_Value="InteractionFragment-enclosingOperand"/>
+    <Element Name="Enumeration_EEnum"
+        UML2_0_Value="_usn6wa87Edi5QpYeY_yIpg" UML2_1_Value="Enumeration_EEnum"/>
+    <Element Name="ExecutionSpecification-finish"
+        UML2_0_Value="_m9neoa86EdiEh75YJ_3n8g" UML2_1_Value="ExecutionSpecification-finish"/>
+    <Element Name="UseCase-extend"
+        UML2_0_Value="_m9bQu686EdiEh75YJ_3n8g" UML2_1_Value="UseCase-extend"/>
+    <Element Name="QualifierValue"
+        UML2_0_Value="_m9nfaK86EdiEh75YJ_3n8g" UML2_1_Value="QualifierValue"/>
+    <Element Name="Artifact-ownedAttribute"
+        UML2_0_Value="_m9C2SK86EdiEh75YJ_3n8g" UML2_1_Value="Artifact-ownedAttribute"/>
+    <Element Name="Pin" UML2_0_Value="_m9bQT686EdiEh75YJ_3n8g" UML2_1_Value="Pin"/>
+    <Element Name="ValuePin" UML2_0_Value="_m9ndmK86EdiEh75YJ_3n8g" UML2_1_Value="ValuePin"/>
+    <Element Name="DeploymentSpecification-executionLocation"
+        UML2_0_Value="_m9C2OK86EdiEh75YJ_3n8g" UML2_1_Value="DeploymentSpecification-executionLocation"/>
+    <Element Name="ActivityEdge-redefinedEdge"
+        UML2_0_Value="_m9VKi686EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-redefinedEdge"/>
+    <Element Name="InvocationAction-argument"
+        UML2_0_Value="_m9nf2K86EdiEh75YJ_3n8g" UML2_1_Value="InvocationAction-argument"/>
+    <Element Name="Boolean" UML2_0_Value="_m8qbBq86EdiEh75YJ_3n8g" UML2_1_Value="Boolean"/>
+    <Element Name="CallOperationAction"
+        UML2_0_Value="_m9ngAK86EdiEh75YJ_3n8g" UML2_1_Value="CallOperationAction"/>
+    <Element Name="MessageKind-unknown"
+        UML2_0_Value="_m9nedq86EdiEh75YJ_3n8g" UML2_1_Value="MessageKind-unknown"/>
+    <Element Name="MultiplicityElement-includesCardinality"
+        UML2_0_Value="_m8qbyK86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-includesCardinality"/>
+    <Element Name="ExceptionHandler-exceptionType"
+        UML2_0_Value="_m9VLBq86EdiEh75YJ_3n8g" UML2_1_Value="ExceptionHandler-exceptionType"/>
+    <Element Name="SystemModel" UML2_0_Value="_O1-5Va87Edih9-GG5afQ0g" UML2_1_Value="SystemModel"/>
+    <Element Name="Artifact_Script-extension_Script"
+        UML2_0_Value="_9w1WRq86Edih9-GG5afQ0g" UML2_1_Value="Artifact_Script-extension_Script"/>
+    <Element Name="EModelElement-getEAnnotation"
+        UML2_0_Value="_m8eN1q86EdiEh75YJ_3n8g" UML2_1_Value="EModelElement-getEAnnotation"/>
+    <Element Name="UseCase-subject"
+        UML2_0_Value="_m9bQwa86EdiEh75YJ_3n8g" UML2_1_Value="UseCase-subject"/>
+    <Element Name="Classifier-substitution"
+        UML2_0_Value="_m88vHK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-substitution"/>
+    <Element Name="TimeEvent-when"
+        UML2_0_Value="_m9ne6q86EdiEh75YJ_3n8g" UML2_1_Value="TimeEvent-when"/>
+    <Element Name="EResourceSet" UML2_0_Value="_EQQPO8i3EdqOoq-j0hsILg" UML2_1_Value="EResourceSet"/>
+    <Element Name="Region-state" UML2_0_Value="_m9VJ_K86EdiEh75YJ_3n8g" UML2_1_Value="Region-state"/>
+    <Element Name="DeploymentSpecification"
+        UML2_0_Value="_m9C2NK86EdiEh75YJ_3n8g" UML2_1_Value="DeploymentSpecification"/>
+    <Element Name="Clause-bodyOutput"
+        UML2_0_Value="_m9ndva86EdiEh75YJ_3n8g" UML2_1_Value="Clause-bodyOutput"/>
+    <Element Name="ProfileApplication"
+        UML2_0_Value="_m82op686EdiEh75YJ_3n8g" UML2_1_Value="ProfileApplication"/>
+    <Element Name="Classifier-inheritableMembers"
+        UML2_0_Value="_m88vPq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-inheritableMembers"/>
+    <Element Name="Classifier-allFeatures"
+        UML2_0_Value="_m88vKq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-allFeatures"/>
+    <Element Name="EClass-eSuperTypes"
+        UML2_0_Value="_m8eOAa86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eSuperTypes"/>
+    <Element Name="Deployment-configuration"
+        UML2_0_Value="_m9C2Fq86EdiEh75YJ_3n8g" UML2_1_Value="Deployment-configuration"/>
+    <Element Name="EFactory-create-eClass"
+        UML2_0_Value="_m8kUUa86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-create-eClass"/>
+    <Element Name="RedefinableElement-redefinition_consistent"
+        UML2_0_Value="_h33jV8enEdm17tz62ORDiA" UML2_1_Value="RedefinableElement-redefinition_consistent"/>
+    <Element Name="Class_Utility-extension_Utility"
+        UML2_0_Value="_9xBjhq86Edih9-GG5afQ0g" UML2_1_Value="Class_Utility-extension_Utility"/>
+    <Element Name="EClass-eAllReferences"
+        UML2_0_Value="_m8eOCq86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eAllReferences"/>
+    <Element Name="Behavior-postcondition"
+        UML2_0_Value="_m9I8Zq86EdiEh75YJ_3n8g" UML2_1_Value="Behavior-postcondition"/>
+    <Element Name="EStructuralFeature-isUnsettable"
+        UML2_0_Value="_utHC8687Edi5QpYeY_yIpg" UML2_1_Value="EStructuralFeature-isUnsettable"/>
+    <Element Name="Artifact-ownedOperation"
+        UML2_0_Value="_m9C2Ra86EdiEh75YJ_3n8g" UML2_1_Value="Artifact-ownedOperation"/>
+    <Element Name="ActivityNode" UML2_0_Value="_m9VKlq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode"/>
+    <Element Name="ActivityNode-inInterruptibleRegion"
+        UML2_0_Value="_m9VKqK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-inInterruptibleRegion"/>
+    <Element Name="Operation-datatype"
+        UML2_0_Value="_m9C2lq86EdiEh75YJ_3n8g" UML2_1_Value="Operation-datatype"/>
+    <Element Name="TemplateBinding-signature"
+        UML2_0_Value="_m8qbPa86EdiEh75YJ_3n8g" UML2_1_Value="TemplateBinding-signature"/>
+    <Element Name="Port-isBehavior"
+        UML2_0_Value="_m9VKQ686EdiEh75YJ_3n8g" UML2_1_Value="Port-isBehavior"/>
+    <Element Name="Component_Entity-extension_Entity"
+        UML2_0_Value="_Fxs1Yq87Edih9-GG5afQ0g" UML2_1_Value="Component_Entity-extension_Entity"/>
+    <Element Name="ActivityParameterNode"
+        UML2_0_Value="_m9ndk686EdiEh75YJ_3n8g" UML2_1_Value="ActivityParameterNode"/>
+    <Element Name="Element" UML2_0_Value="_m8qbC686EdiEh75YJ_3n8g" UML2_1_Value="Element"/>
+    <Element Name="EString" UML2_0_Value="_EQQPPsi3EdqOoq-j0hsILg" UML2_1_Value="EString"/>
+    <Element Name="Class-ownedOperation"
+        UML2_0_Value="_m88uya86EdiEh75YJ_3n8g" UML2_1_Value="Class-ownedOperation"/>
+    <Element Name="EDataType-serializable"
+        UML2_0_Value="_m8kUXK86EdiEh75YJ_3n8g" UML2_1_Value="EDataType-serializable"/>
+    <Element Name="InterfaceRealization-implementingClassifier"
+        UML2_0_Value="_m9bRSa86EdiEh75YJ_3n8g" UML2_1_Value="InterfaceRealization-implementingClassifier"/>
+    <Element Name="ConditionalNode-clause"
+        UML2_0_Value="_m9ndo686EdiEh75YJ_3n8g" UML2_1_Value="ConditionalNode-clause"/>
+    <Element Name="StateMachine-connectionPoint"
+        UML2_0_Value="_m9VJ5a86EdiEh75YJ_3n8g" UML2_1_Value="StateMachine-connectionPoint"/>
+    <Element Name="EFactory-createFromString-eDataType"
+        UML2_0_Value="_m8kUVK86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-createFromString-eDataType"/>
+    <Element Name="MultiplicityElement-lowerBound"
+        UML2_0_Value="_m8qbwq86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-lowerBound"/>
+    <Element
+        Name="RedefinableElement-isConsistentWith-_ownedParameter.0"
+        UML2_0_Value="_h33jXMenEdm17tz62ORDiA" UML2_1_Value="RedefinableElement-isConsistentWith-_ownedParameter.0"/>
+    <Element Name="Operation-isUnique"
+        UML2_0_Value="_m9C2rK86EdiEh75YJ_3n8g" UML2_1_Value="Operation-isUnique"/>
+    <Element Name="EObject-eContents"
+        UML2_0_Value="_m8eN5q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eContents"/>
+    <Element Name="ReclassifyObjectAction"
+        UML2_0_Value="_m9ngTq86EdiEh75YJ_3n8g" UML2_1_Value="ReclassifyObjectAction"/>
+    <Element Name="CallAction-isSynchronous"
+        UML2_0_Value="_m9nfz686EdiEh75YJ_3n8g" UML2_1_Value="CallAction-isSynchronous"/>
+    <Element Name="Substitution-substitutingClassifier"
+        UML2_0_Value="_m9VJdK86EdiEh75YJ_3n8g" UML2_1_Value="Substitution-substitutingClassifier"/>
+    <Element Name="ActivityEdge-inPartition"
+        UML2_0_Value="_m9VKgq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-inPartition"/>
+    <Element Name="boolean" UML2_0_Value="_TBfF4K86EdieaYgxtVWN8Q" UML2_1_Value="boolean"/>
+    <Element Name="ActivityNode-inStructuredNode"
+        UML2_0_Value="_m9VKo686EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-inStructuredNode"/>
+    <Element Name="EClass-getEStructuralFeature.1-_ownedParameter.0"
+        UML2_0_Value="_h3twn8enEdm17tz62ORDiA" UML2_1_Value="EClass-getEStructuralFeature.1-_ownedParameter.0"/>
+    <Element Name="InformationItem-represented"
+        UML2_0_Value="_m9ndVa86EdiEh75YJ_3n8g" UML2_1_Value="InformationItem-represented"/>
+    <Element Name="EPackage-prefix"
+        UML2_0_Value="_ur9MZa87Edi5QpYeY_yIpg" UML2_1_Value="EPackage-prefix"/>
+    <Element Name="ClearVariableAction"
+        UML2_0_Value="_m9nfpq86EdiEh75YJ_3n8g" UML2_1_Value="ClearVariableAction"/>
+    <Element Name="Classifier-feature"
+        UML2_0_Value="_m88vBa86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-feature"/>
+    <Element Name="Classifier-collaborationUse"
+        UML2_0_Value="_m88vJ686EdiEh75YJ_3n8g" UML2_1_Value="Classifier-collaborationUse"/>
+    <Element Name="ProtocolConformance-specificMachine"
+        UML2_0_Value="_m9bQoq86EdiEh75YJ_3n8g" UML2_1_Value="ProtocolConformance-specificMachine"/>
+    <Element Name="ReclassifyObjectAction-newClassifier"
+        UML2_0_Value="_m9ngVa86EdiEh75YJ_3n8g" UML2_1_Value="ReclassifyObjectAction-newClassifier"/>
+    <Element Name="ActivityNode-incoming"
+        UML2_0_Value="_m9VKmK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-incoming"/>
+    <Element Name="BehavioralFeature_Destroy"
+        UML2_0_Value="_9wQugK86Edih9-GG5afQ0g" UML2_1_Value="BehavioralFeature_Destroy"/>
+    <Element Name="Connector-end" UML2_0_Value="_m9bRJq86EdiEh75YJ_3n8g" UML2_1_Value="Connector-end"/>
+    <Element Name="CallOperationAction-operation"
+        UML2_0_Value="_m9ngAq86EdiEh75YJ_3n8g" UML2_1_Value="CallOperationAction-operation"/>
+    <Element Name="FlowFinalNode" UML2_0_Value="_m9ne_K86EdiEh75YJ_3n8g" UML2_1_Value="FlowFinalNode"/>
+    <Element Name="Realization" UML2_0_Value="_Fx5CpK87Edih9-GG5afQ0g" UML2_1_Value="Realization"/>
+    <Element Name="MultiplicityElement-isMultivalued"
+        UML2_0_Value="_m8qbxq86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-isMultivalued"/>
+    <Element Name="Substitution-contract"
+        UML2_0_Value="_m9VJc686EdiEh75YJ_3n8g" UML2_1_Value="Substitution-contract"/>
+    <Element Name="MessageSort-asynchSignal"
+        UML2_0_Value="_m9nee686EdiEh75YJ_3n8g" UML2_1_Value="MessageSort-asynchSignal"/>
+    <Element Name="Property-subsetting_rules"
+        UML2_0_Value="_h4AreMenEdm17tz62ORDiA" UML2_1_Value="Property-subsetting_rules"/>
+    <Element Name="ClearStructuralFeatureAction"
+        UML2_0_Value="_m9nfRa86EdiEh75YJ_3n8g" UML2_1_Value="ClearStructuralFeatureAction"/>
+    <Element Name="Artifact-fileName"
+        UML2_0_Value="_m9C2Pa86EdiEh75YJ_3n8g" UML2_1_Value="Artifact-fileName"/>
+    <Element Name="Parameter-default"
+        UML2_0_Value="_m9C2fa86EdiEh75YJ_3n8g" UML2_1_Value="Parameter-default"/>
+    <Element Name="Manifestation-utilizedElement"
+        UML2_0_Value="_m9C2W686EdiEh75YJ_3n8g" UML2_1_Value="Manifestation-utilizedElement"/>
+    <Element Name="Operation-isQuery"
+        UML2_0_Value="_m9C2lK86EdiEh75YJ_3n8g" UML2_1_Value="Operation-isQuery"/>
+    <Element Name="ObjectNodeOrderingKind-unordered"
+        UML2_0_Value="_m9bP6q86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNodeOrderingKind-unordered"/>
+    <Element Name="Feature" UML2_0_Value="_m9C1aa86EdiEh75YJ_3n8g" UML2_1_Value="Feature"/>
+    <Element Name="Usage_Send" UML2_0_Value="_9w7c4K86Edih9-GG5afQ0g" UML2_1_Value="Usage_Send"/>
+    <Element Name="Classifier-inherit"
+        UML2_0_Value="_m88vRK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-inherit"/>
+    <Element Name="State-isOrthogonal"
+        UML2_0_Value="_m9bP-K86EdiEh75YJ_3n8g" UML2_1_Value="State-isOrthogonal"/>
+    <Element Name="long" UML2_0_Value="_TBrTIK86EdieaYgxtVWN8Q" UML2_1_Value="long"/>
+    <Element Name="OpaqueBehavior-language"
+        UML2_0_Value="_m9nfx686EdiEh75YJ_3n8g" UML2_1_Value="OpaqueBehavior-language"/>
+    <Element Name="TimeInterval" UML2_0_Value="_m9nhLK86EdiEh75YJ_3n8g" UML2_1_Value="TimeInterval"/>
+    <Element Name="MessageSort-asynchCall"
+        UML2_0_Value="_m9neeq86EdiEh75YJ_3n8g" UML2_1_Value="MessageSort-asynchCall"/>
+    <Element Name="Operation_EOperation-extension_EOperation"
+        UML2_0_Value="_us6Ooq87Edi5QpYeY_yIpg" UML2_1_Value="Operation_EOperation-extension_EOperation"/>
+    <Element Name="WriteStructuralFeatureAction-value"
+        UML2_0_Value="_m9nfQK86EdiEh75YJ_3n8g" UML2_1_Value="WriteStructuralFeatureAction-value"/>
+    <Element Name="Deployment" UML2_0_Value="_m9C2Ea86EdiEh75YJ_3n8g" UML2_1_Value="Deployment"/>
+    <Element Name="Property-opposite.1"
+        UML2_0_Value="_m9C1vq86EdiEh75YJ_3n8g" UML2_1_Value="Property-opposite.1"/>
+    <Element Name="EObject-eIsProxy-_ownedParameter.0"
+        UML2_0_Value="_h3j_4cenEdm17tz62ORDiA" UML2_1_Value="EObject-eIsProxy-_ownedParameter.0"/>
+    <Element Name="CallBehaviorAction-behavior"
+        UML2_0_Value="_m9ngDK86EdiEh75YJ_3n8g" UML2_1_Value="CallBehaviorAction-behavior"/>
+    <Element Name="EByte" UML2_0_Value="_EQQPJMi3EdqOoq-j0hsILg" UML2_1_Value="EByte"/>
+    <Element Name="Property-defaultValue"
+        UML2_0_Value="_m9C1s686EdiEh75YJ_3n8g" UML2_1_Value="Property-defaultValue"/>
+    <Element Name="Property_EReference"
+        UML2_0_Value="_utNJka87Edi5QpYeY_yIpg" UML2_1_Value="Property_EReference"/>
+    <Element Name="BehavioralFeature_Create"
+        UML2_0_Value="_9v4UAK86Edih9-GG5afQ0g" UML2_1_Value="BehavioralFeature_Create"/>
+    <Element Name="Message" UML2_0_Value="_m9neXK86EdiEh75YJ_3n8g" UML2_1_Value="Message"/>
+    <Element Name="EObject-eSet" UML2_0_Value="_m8eN8686EdiEh75YJ_3n8g" UML2_1_Value="EObject-eSet"/>
+    <Element Name="LiteralNull" UML2_0_Value="_m9ndMq86EdiEh75YJ_3n8g" UML2_1_Value="LiteralNull"/>
+    <Element Name="Subsystem-base_Component"
+        UML2_0_Value="_FyLWiK87Edih9-GG5afQ0g" UML2_1_Value="Subsystem-base_Component"/>
+    <Element Name="Slot-owningInstance"
+        UML2_0_Value="_m9bRpK86EdiEh75YJ_3n8g" UML2_1_Value="Slot-owningInstance"/>
+    <Element Name="ValueSpecification-isComputable-_ownedParameter.0"
+        UML2_0_Value="_h33hvcenEdm17tz62ORDiA" UML2_1_Value="ValueSpecification-isComputable-_ownedParameter.0"/>
+    <Element Name="double" UML2_0_Value="_TBlMga86EdieaYgxtVWN8Q" UML2_1_Value="double"/>
+    <Element Name="CallConcurrencyKind-guarded"
+        UML2_0_Value="_m9PCrq86EdiEh75YJ_3n8g" UML2_1_Value="CallConcurrencyKind-guarded"/>
+    <Element Name="StateInvariant-invariant"
+        UML2_0_Value="_m9neyK86EdiEh75YJ_3n8g" UML2_1_Value="StateInvariant-invariant"/>
+    <Element Name="StructuredClassifier-role"
+        UML2_0_Value="_m9bRCa86EdiEh75YJ_3n8g" UML2_1_Value="StructuredClassifier-role"/>
+    <Element Name="EObject-eUnset"
+        UML2_0_Value="_m8eN-a86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eUnset"/>
+    <Element Name="EPackage-getEClassifier"
+        UML2_0_Value="_m8kUSK86EdiEh75YJ_3n8g" UML2_1_Value="EPackage-getEClassifier"/>
+    <Element Name="EObject-eCrossReferences"
+        UML2_0_Value="_m8eN6q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eCrossReferences"/>
+    <Element Name="ELong" UML2_0_Value="_EQQPN8i3EdqOoq-j0hsILg" UML2_1_Value="ELong"/>
+    <Element Name="Include-addition"
+        UML2_0_Value="_m9bQyq86EdiEh75YJ_3n8g" UML2_1_Value="Include-addition"/>
+    <Element Name="Namespace-packageImport"
+        UML2_0_Value="_m8whkq86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-packageImport"/>
+    <Element Name="OutputPin" UML2_0_Value="_m9bQTa86EdiEh75YJ_3n8g" UML2_1_Value="OutputPin"/>
+    <Element Name="TemplateParameterSubstitution-ownedActual"
+        UML2_0_Value="_m8qblq86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameterSubstitution-ownedActual"/>
+    <Element Name="Classifier-redefinedClassifier"
+        UML2_0_Value="_m88vGa86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-redefinedClassifier"/>
+    <Element Name="Classifier_Specification-extension_Specification"
+        UML2_0_Value="_FyLWga87Edih9-GG5afQ0g" UML2_1_Value="Classifier_Specification-extension_Specification"/>
+    <Element Name="Behavior-specification"
+        UML2_0_Value="_m9I8bK86EdiEh75YJ_3n8g" UML2_1_Value="Behavior-specification"/>
+    <Element Name="Clause-predecessorClause"
+        UML2_0_Value="_m9ndtq86EdiEh75YJ_3n8g" UML2_1_Value="Clause-predecessorClause"/>
+    <Element Name="Abstraction-mapping"
+        UML2_0_Value="_m9C2Yq86EdiEh75YJ_3n8g" UML2_1_Value="Abstraction-mapping"/>
+    <Element Name="FeatureKind-Element"
+        UML2_0_Value="_utA8W687Edi5QpYeY_yIpg" UML2_1_Value="FeatureKind-Element"/>
+    <Element Name="LinkEndData-end"
+        UML2_0_Value="_m9nfXq86EdiEh75YJ_3n8g" UML2_1_Value="LinkEndData-end"/>
+    <Element Name="Transition-target"
+        UML2_0_Value="_m9VKHa86EdiEh75YJ_3n8g" UML2_1_Value="Transition-target"/>
+    <Element Name="State-region" UML2_0_Value="_m9bQCK86EdiEh75YJ_3n8g" UML2_1_Value="State-region"/>
+    <Element Name="EClassifier-isInstance"
+        UML2_0_Value="_m8eON686EdiEh75YJ_3n8g" UML2_1_Value="EClassifier-isInstance"/>
+    <Element Name="Package-nestingPackage"
+        UML2_0_Value="_m82oZ686EdiEh75YJ_3n8g" UML2_1_Value="Package-nestingPackage"/>
+    <Element Name="Collaboration-collaborationRole"
+        UML2_0_Value="_m9bQ_K86EdiEh75YJ_3n8g" UML2_1_Value="Collaboration-collaborationRole"/>
+    <Element Name="EStructuralFeature-getFeatureID"
+        UML2_0_Value="_m8eNua86EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-getFeatureID"/>
+    <Element Name="Region-stateMachine"
+        UML2_0_Value="_m9VKAK86EdiEh75YJ_3n8g" UML2_1_Value="Region-stateMachine"/>
+    <Element Name="ContentKind-Empty"
+        UML2_0_Value="_usPgRq87Edi5QpYeY_yIpg" UML2_1_Value="ContentKind-Empty"/>
+    <Element Name="StructuredClassifier-ownedConnector"
+        UML2_0_Value="_m9bRDK86EdiEh75YJ_3n8g" UML2_1_Value="StructuredClassifier-ownedConnector"/>
+    <Element Name="ReplyAction-returnInformation"
+        UML2_0_Value="_m9ngva86EdiEh75YJ_3n8g" UML2_1_Value="ReplyAction-returnInformation"/>
+    <Element Name="NamedElement-qualifiedName"
+        UML2_0_Value="_m8qcBq86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-qualifiedName"/>
+    <Element Name="EObject-eIsSet"
+        UML2_0_Value="_m8eN9q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eIsSet"/>
+    <Element Name="Variable-scope"
+        UML2_0_Value="_m9bQYa86EdiEh75YJ_3n8g" UML2_1_Value="Variable-scope"/>
+    <Element Name="OpaqueExpression"
+        UML2_0_Value="_m9C2aK86EdiEh75YJ_3n8g" UML2_1_Value="OpaqueExpression"/>
+    <Element Name="EPackage-eSuperPackage"
+        UML2_0_Value="_m8kUQ686EdiEh75YJ_3n8g" UML2_1_Value="EPackage-eSuperPackage"/>
+    <Element Name="AddVariableValueAction-insertAt"
+        UML2_0_Value="_m9nfrK86EdiEh75YJ_3n8g" UML2_1_Value="AddVariableValueAction-insertAt"/>
+    <Element Name="StructuredActivityNode-mustIsolate"
+        UML2_0_Value="_m9VK1686EdiEh75YJ_3n8g" UML2_1_Value="StructuredActivityNode-mustIsolate"/>
+    <Element Name="EModelElement" UML2_0_Value="_m8eN0a86EdiEh75YJ_3n8g" UML2_1_Value="EModelElement"/>
+    <Element Name="Script-base_Artifact"
+        UML2_0_Value="_9w1WSK86Edih9-GG5afQ0g" UML2_1_Value="Script-base_Artifact"/>
+    <Element Name="LinkEndCreationData-isReplaceAll"
+        UML2_0_Value="_m9nfea86EdiEh75YJ_3n8g" UML2_1_Value="LinkEndCreationData-isReplaceAll"/>
+    <Element Name="Component-provided"
+        UML2_0_Value="_m9VJk686EdiEh75YJ_3n8g" UML2_1_Value="Component-provided"/>
+    <Element Name="DurationObservation-event"
+        UML2_0_Value="_m9ng_q86EdiEh75YJ_3n8g" UML2_1_Value="DurationObservation-event"/>
+    <Element Name="InteractionFragment-generalOrdering"
+        UML2_0_Value="_m9neIK86EdiEh75YJ_3n8g" UML2_1_Value="InteractionFragment-generalOrdering"/>
+    <Element Name="VisibilityKind-Unspecified"
+        UML2_0_Value="_LtgO4DmHEdmHabrnfLjH-w" UML2_1_Value="VisibilityKind-Unspecified"/>
+    <Element Name="TemplateParameterSubstitution-actual"
+        UML2_0_Value="_m8qblK86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameterSubstitution-actual"/>
+    <Element Name="DeploymentSpecification-deploymentLocation"
+        UML2_0_Value="_m9C2Nq86EdiEh75YJ_3n8g" UML2_1_Value="DeploymentSpecification-deploymentLocation"/>
+    <Element Name="ActivityEdge-target"
+        UML2_0_Value="_m9VKf686EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-target"/>
+    <Element Name="Node" UML2_0_Value="_m9ngza86EdiEh75YJ_3n8g" UML2_1_Value="Node"/>
+    <Element Name="NamedElement" UML2_0_Value="_m8qb_a86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement"/>
+    <Element Name="EBooleanObject"
+        UML2_0_Value="_EQQPI8i3EdqOoq-j0hsILg" UML2_1_Value="EBooleanObject"/>
+    <Element Name="EEnumLiteral-_generalization.0"
+        UML2_0_Value="_us0IBK87Edi5QpYeY_yIpg" UML2_1_Value="EEnumLiteral-_generalization.0"/>
+    <Element Name="Behavior" UML2_0_Value="_m9I8Ua86EdiEh75YJ_3n8g" UML2_1_Value="Behavior"/>
+    <Element Name="Implement" UML2_0_Value="_9wc7xK86Edih9-GG5afQ0g" UML2_1_Value="Implement"/>
+    <Element Name="TemplateSignature-parameter"
+        UML2_0_Value="_m8qbYK86EdiEh75YJ_3n8g" UML2_1_Value="TemplateSignature-parameter"/>
+    <Element Name="Parameter-direction"
+        UML2_0_Value="_m9C2f686EdiEh75YJ_3n8g" UML2_1_Value="Parameter-direction"/>
+    <Element Name="Port-provided" UML2_0_Value="_m9VKTa86EdiEh75YJ_3n8g" UML2_1_Value="Port-provided"/>
+    <Element Name="InteractionFragment-covered"
+        UML2_0_Value="_m9neHa86EdiEh75YJ_3n8g" UML2_1_Value="InteractionFragment-covered"/>
+    <Element Name="EClass-eIDAttribute"
+        UML2_0_Value="_m8eOH686EdiEh75YJ_3n8g" UML2_1_Value="EClass-eIDAttribute"/>
+    <Element Name="SignalEvent-signal"
+        UML2_0_Value="_m9ne4a86EdiEh75YJ_3n8g" UML2_1_Value="SignalEvent-signal"/>
+    <Element Name="EAttribute-base_Property"
+        UML2_0_Value="_utHC-687Edi5QpYeY_yIpg" UML2_1_Value="EAttribute-base_Property"/>
+    <Element Name="Interface-redefinedInterface"
+        UML2_0_Value="_m9VJqq86EdiEh75YJ_3n8g" UML2_1_Value="Interface-redefinedInterface"/>
+    <Element Name="Generalization"
+        UML2_0_Value="_m9C1da86EdiEh75YJ_3n8g" UML2_1_Value="Generalization"/>
+    <Element Name="Generalization_Extend-extension_Extend"
+        UML2_0_Value="_usPgQa87Edi5QpYeY_yIpg" UML2_1_Value="Generalization_Extend-extension_Extend"/>
+    <Element Name="BehavioralFeature_Create-extension_Create"
+        UML2_0_Value="_9v4UAa86Edih9-GG5afQ0g" UML2_1_Value="BehavioralFeature_Create-extension_Create"/>
+    <Element Name="CombinedFragment"
+        UML2_0_Value="_m9ngHK86EdiEh75YJ_3n8g" UML2_1_Value="CombinedFragment"/>
+    <Element Name="TemplateSignature"
+        UML2_0_Value="_m8qbXq86EdiEh75YJ_3n8g" UML2_1_Value="TemplateSignature"/>
+    <Element Name="Classifier" UML2_0_Value="_m9neBq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier"/>
+    <Element Name="EAttribute" UML2_0_Value="_utHC9q87Edi5QpYeY_yIpg" UML2_1_Value="EAttribute"/>
+    <Element Name="Expression-operand"
+        UML2_0_Value="_m9bRt686EdiEh75YJ_3n8g" UML2_1_Value="Expression-operand"/>
+    <Element Name="EModelElement-getEAnnotation-_ownedParameter.0"
+        UML2_0_Value="_h3txRMenEdm17tz62ORDiA" UML2_1_Value="EModelElement-getEAnnotation-_ownedParameter.0"/>
+    <Element Name="ConnectorKind-delegation"
+        UML2_0_Value="_m9bROq86EdiEh75YJ_3n8g" UML2_1_Value="ConnectorKind-delegation"/>
+    <Element Name="PackageableElement-visibility"
+        UML2_0_Value="_m82oIK86EdiEh75YJ_3n8g" UML2_1_Value="PackageableElement-visibility"/>
+    <Element Name="ProtocolTransition-postCondition"
+        UML2_0_Value="_m9ng4a86EdiEh75YJ_3n8g" UML2_1_Value="ProtocolTransition-postCondition"/>
+    <Element Name="MultiplicityElement-upperValue"
+        UML2_0_Value="_m8qbvq86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-upperValue"/>
+    <Element Name="GeneralOrdering-after"
+        UML2_0_Value="_m9nei686EdiEh75YJ_3n8g" UML2_1_Value="GeneralOrdering-after"/>
+    <Element Name="Stereotype" UML2_0_Value="_m88uxK86EdiEh75YJ_3n8g" UML2_1_Value="Stereotype"/>
+    <Element Name="ProtocolStateMachine-conformance"
+        UML2_0_Value="_m9VJ3K86EdiEh75YJ_3n8g" UML2_1_Value="ProtocolStateMachine-conformance"/>
+    <Element Name="OccurrenceSpecification"
+        UML2_0_Value="_m9nez686EdiEh75YJ_3n8g" UML2_1_Value="OccurrenceSpecification"/>
+    <Element Name="EOperation" UML2_0_Value="_us0IBq87Edi5QpYeY_yIpg" UML2_1_Value="EOperation"/>
+    <Element Name="ExpansionNode-regionAsOutput"
+        UML2_0_Value="_m9ngMa86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionNode-regionAsOutput"/>
+    <Element Name="StructuredActivityNode"
+        UML2_0_Value="_m9VKza86EdiEh75YJ_3n8g" UML2_1_Value="StructuredActivityNode"/>
+    <Element Name="EReference-referenceName"
+        UML2_0_Value="_utNJlq87Edi5QpYeY_yIpg" UML2_1_Value="EReference-referenceName"/>
+    <Element Name="CombinedFragment-interactionOperator"
+        UML2_0_Value="_m9ngHq86EdiEh75YJ_3n8g" UML2_1_Value="CombinedFragment-interactionOperator"/>
+    <Element Name="CollaborationUse-roleBinding"
+        UML2_0_Value="_m9bQ8q86EdiEh75YJ_3n8g" UML2_1_Value="CollaborationUse-roleBinding"/>
+    <Element Name="Include" UML2_0_Value="_m9bQx686EdiEh75YJ_3n8g" UML2_1_Value="Include"/>
+    <Element Name="PrimitiveType_EDataType"
+        UML2_0_Value="_ush0Ia87Edi5QpYeY_yIpg" UML2_1_Value="PrimitiveType_EDataType"/>
+    <Element Name="EClass-isSuperTypeOf-_ownedParameter.0"
+        UML2_0_Value="_h3twlMenEdm17tz62ORDiA" UML2_1_Value="EClass-isSuperTypeOf-_ownedParameter.0"/>
+    <Element Name="EStructuralFeature-volatile"
+        UML2_0_Value="_m8eNra86EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-volatile"/>
+    <Element Name="OpaqueAction" UML2_0_Value="_m9nhMq86EdiEh75YJ_3n8g" UML2_1_Value="OpaqueAction"/>
+    <Element Name="Collaboration" UML2_0_Value="_m9bQ-a86EdiEh75YJ_3n8g" UML2_1_Value="Collaboration"/>
+    <Element Name="ParameterEffectKind"
+        UML2_0_Value="_m9PC1K86EdiEh75YJ_3n8g" UML2_1_Value="ParameterEffectKind"/>
+    <Element Name="OperationTemplateParameter"
+        UML2_0_Value="_m9nd-686EdiEh75YJ_3n8g" UML2_1_Value="OperationTemplateParameter"/>
+    <Element Name="Classifier-maySpecializeType-c"
+        UML2_0_Value="_m88vSa86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-maySpecializeType-c"/>
+    <Element Name="Component_Subsystem-extension_Subsystem"
+        UML2_0_Value="_FyLWhq87Edih9-GG5afQ0g" UML2_1_Value="Component_Subsystem-extension_Subsystem"/>
+    <Element Name="MessageEnd" UML2_0_Value="_m9neVa86EdiEh75YJ_3n8g" UML2_1_Value="MessageEnd"/>
+    <Element Name="PackageMerge-mergedPackage"
+        UML2_0_Value="_m82oma86EdiEh75YJ_3n8g" UML2_1_Value="PackageMerge-mergedPackage"/>
+    <Element Name="Namespace-getNamesOfMember"
+        UML2_0_Value="_m8whma86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-getNamesOfMember"/>
+    <Element Name="ParameterEffectKind-update"
+        UML2_0_Value="_m9PC1686EdiEh75YJ_3n8g" UML2_1_Value="ParameterEffectKind-update"/>
+    <Element Name="ObjectNode" UML2_0_Value="_m9VLD686EdiEh75YJ_3n8g" UML2_1_Value="ObjectNode"/>
+    <Element Name="EClass-eAttributes"
+        UML2_0_Value="_m8eOEK86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eAttributes"/>
+    <Element Name="EParameter-eOperation"
+        UML2_0_Value="_m8kUcK86EdiEh75YJ_3n8g" UML2_1_Value="EParameter-eOperation"/>
+    <Element Name="Property-subsettedProperty"
+        UML2_0_Value="_m9C1rq86EdiEh75YJ_3n8g" UML2_1_Value="Property-subsettedProperty"/>
+    <Element Name="VisibilityKind-protected"
+        UML2_0_Value="_m82oKa86EdiEh75YJ_3n8g" UML2_1_Value="VisibilityKind-protected"/>
+    <Element Name="Abstraction_Refine-extension_Refine"
+        UML2_0_Value="_9wvPpq86Edih9-GG5afQ0g" UML2_1_Value="Abstraction_Refine-extension_Refine"/>
+    <Element Name="Element-mustBeOwned"
+        UML2_0_Value="_m8qbH686EdiEh75YJ_3n8g" UML2_1_Value="Element-mustBeOwned"/>
+    <Element Name="Namespace-getNamesOfMember-_ownedParameter.0"
+        UML2_0_Value="_h33iCsenEdm17tz62ORDiA" UML2_1_Value="Namespace-getNamesOfMember-_ownedParameter.0"/>
+    <Element Name="ParameterableElement-owningTemplateParameter"
+        UML2_0_Value="_m8qbg686EdiEh75YJ_3n8g" UML2_1_Value="ParameterableElement-owningTemplateParameter"/>
+    <Element Name="Service-base_Component"
+        UML2_0_Value="_FyFP5q87Edih9-GG5afQ0g" UML2_1_Value="Service-base_Component"/>
+    <Element Name="Namespace-excludeCollisions-_ownedParameter.0"
+        UML2_0_Value="_h33iGMenEdm17tz62ORDiA" UML2_1_Value="Namespace-excludeCollisions-_ownedParameter.0"/>
+    <Element Name="RedefinableElement-isConsistentWith"
+        UML2_0_Value="_m88vbK86EdiEh75YJ_3n8g" UML2_1_Value="RedefinableElement-isConsistentWith"/>
+    <Element Name="EEnumLiteral-eEnum"
+        UML2_0_Value="_m8qa4K86EdiEh75YJ_3n8g" UML2_1_Value="EEnumLiteral-eEnum"/>
+    <Element Name="Behavior-precondition"
+        UML2_0_Value="_m9I8Y686EdiEh75YJ_3n8g" UML2_1_Value="Behavior-precondition"/>
+    <Element Name="ElementImport" UML2_0_Value="_m82oNK86EdiEh75YJ_3n8g" UML2_1_Value="ElementImport"/>
+    <Element Name="Transition-source"
+        UML2_0_Value="_m9VKJ686EdiEh75YJ_3n8g" UML2_1_Value="Transition-source"/>
+    <Element Name="Namespace-importedMember.1"
+        UML2_0_Value="_m8whoq86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-importedMember.1"/>
+    <Element Name="EFactory-create-_ownedParameter.0"
+        UML2_0_Value="_h3j_08enEdm17tz62ORDiA" UML2_1_Value="EFactory-create-_ownedParameter.0"/>
+    <Element Name="Constraint-context"
+        UML2_0_Value="_m8whua86EdiEh75YJ_3n8g" UML2_1_Value="Constraint-context"/>
+    <Element Name="Connector" UML2_0_Value="_m9bRH686EdiEh75YJ_3n8g" UML2_1_Value="Connector"/>
+    <Element Name="ActivityNode-activity"
+        UML2_0_Value="_m9VKnq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-activity"/>
+    <Element Name="Executable" UML2_0_Value="_Fxs1Za87Edih9-GG5afQ0g" UML2_1_Value="Executable"/>
+    <Element Name="Actor" UML2_0_Value="_m9ndca86EdiEh75YJ_3n8g" UML2_1_Value="Actor"/>
+    <Element Name="ExtensionPoint"
+        UML2_0_Value="_m9bQ6K86EdiEh75YJ_3n8g" UML2_1_Value="ExtensionPoint"/>
+    <Element Name="ValueSpecification-isNull-_ownedParameter.0"
+        UML2_0_Value="_h33hx8enEdm17tz62ORDiA" UML2_1_Value="ValueSpecification-isNull-_ownedParameter.0"/>
+    <Element Name="Create-base_Usage"
+        UML2_0_Value="_9v-ao686Edih9-GG5afQ0g" UML2_1_Value="Create-base_Usage"/>
+    <Element Name="Classifier-attribute"
+        UML2_0_Value="_m88vFq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-attribute"/>
+    <Element Name="Entity-base_Component"
+        UML2_0_Value="_Fxs1ZK87Edih9-GG5afQ0g" UML2_1_Value="Entity-base_Component"/>
+    <Element Name="Property-navigable_readonly"
+        UML2_0_Value="_h4ArfMenEdm17tz62ORDiA" UML2_1_Value="Property-navigable_readonly"/>
+    <Element Name="CallBehaviorAction"
+        UML2_0_Value="_m9ngCq86EdiEh75YJ_3n8g" UML2_1_Value="CallBehaviorAction"/>
+    <Element Name="EObject-eCrossReferences-_ownedParameter.0"
+        UML2_0_Value="_h3j_78enEdm17tz62ORDiA" UML2_1_Value="EObject-eCrossReferences-_ownedParameter.0"/>
+    <Element Name="ConnectableElement"
+        UML2_0_Value="_m9C18a86EdiEh75YJ_3n8g" UML2_1_Value="ConnectableElement"/>
+    <Element Name="FeatureKind-ElementWildcard"
+        UML2_0_Value="_0OdAssezEdmTJL3rR1ioJg" UML2_1_Value="FeatureKind-ElementWildcard"/>
+    <Element Name="ExceptionHandler-protectedNode"
+        UML2_0_Value="_m9VLCK86EdiEh75YJ_3n8g" UML2_1_Value="ExceptionHandler-protectedNode"/>
+    <Element Name="NamedElement-allNamespaces"
+        UML2_0_Value="_m8qcEq86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-allNamespaces"/>
+    <Element Name="Property-associationEnd"
+        UML2_0_Value="_m9C1uK86EdiEh75YJ_3n8g" UML2_1_Value="Property-associationEnd"/>
+    <Element Name="CallConcurrencyKind"
+        UML2_0_Value="_m9PCrK86EdiEh75YJ_3n8g" UML2_1_Value="CallConcurrencyKind"/>
+    <Element Name="Classifier_Realization"
+        UML2_0_Value="_Fx_JQK87Edih9-GG5afQ0g" UML2_1_Value="Classifier_Realization"/>
+    <Element Name="InteractionConstraint-maxint"
+        UML2_0_Value="_m9neu686EdiEh75YJ_3n8g" UML2_1_Value="InteractionConstraint-maxint"/>
+    <Element Name="EPackage-nsPrefix"
+        UML2_0_Value="_ur9MYq87Edi5QpYeY_yIpg" UML2_1_Value="EPackage-nsPrefix"/>
+    <Element Name="Component_Subsystem"
+        UML2_0_Value="_FyLWha87Edih9-GG5afQ0g" UML2_1_Value="Component_Subsystem"/>
+    <Element Name="Class_ImplementationClass"
+        UML2_0_Value="_9wjCYK86Edih9-GG5afQ0g" UML2_1_Value="Class_ImplementationClass"/>
+    <Element Name="Interface_EClass-extension_EClass"
+        UML2_0_Value="_usbtha87Edi5QpYeY_yIpg" UML2_1_Value="Interface_EClass-extension_EClass"/>
+    <Element Name="State" UML2_0_Value="_m9bP8q86EdiEh75YJ_3n8g" UML2_1_Value="State"/>
+    <Element Name="ReadIsClassifiedObjectAction-classifier"
+        UML2_0_Value="_m9ngZa86EdiEh75YJ_3n8g" UML2_1_Value="ReadIsClassifiedObjectAction-classifier"/>
+    <Element Name="ActivityNode-inGroup"
+        UML2_0_Value="_m9VKm686EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-inGroup"/>
+    <Element Name="InteractionOperatorKind-par"
+        UML2_0_Value="_m9ngFK86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-par"/>
+    <Element Name="InteractionOperatorKind"
+        UML2_0_Value="_m9ngD686EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind"/>
+    <Element Name="DeploymentTarget-deployment"
+        UML2_0_Value="_m9C2Bq86EdiEh75YJ_3n8g" UML2_1_Value="DeploymentTarget-deployment"/>
+    <Element Name="Usage" UML2_0_Value="_m9nda686EdiEh75YJ_3n8g" UML2_1_Value="Usage"/>
+    <Element Name="Classifier-inheritableMembers-c"
+        UML2_0_Value="_m88vQK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-inheritableMembers-c"/>
+    <Element Name="Constraint-specification"
+        UML2_0_Value="_m8whta86EdiEh75YJ_3n8g" UML2_1_Value="Constraint-specification"/>
+    <Element Name="PseudostateKind-choice"
+        UML2_0_Value="_m9bQNK86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-choice"/>
+    <Element Name="Profile" UML2_0_Value="_m82orq86EdiEh75YJ_3n8g" UML2_1_Value="Profile"/>
+    <Element Name="EClass-isSuperTypeOf"
+        UML2_0_Value="_m8eOJK86EdiEh75YJ_3n8g" UML2_1_Value="EClass-isSuperTypeOf"/>
+    <Element Name="ActivityPartition"
+        UML2_0_Value="_m9bQZ686EdiEh75YJ_3n8g" UML2_1_Value="ActivityPartition"/>
+    <Element Name="LinkEndCreationData"
+        UML2_0_Value="_m9nfd686EdiEh75YJ_3n8g" UML2_1_Value="LinkEndCreationData"/>
+    <Element
+        Name="Namespace-membersAreDistinguishable-_ownedParameter.0"
+        UML2_0_Value="_h33iDcenEdm17tz62ORDiA" UML2_1_Value="Namespace-membersAreDistinguishable-_ownedParameter.0"/>
+    <Element Name="ParameterableElement-templateParameter"
+        UML2_0_Value="_m8qbha86EdiEh75YJ_3n8g" UML2_1_Value="ParameterableElement-templateParameter"/>
+    <Element Name="EBigDecimal" UML2_0_Value="_EQQPIMi3EdqOoq-j0hsILg" UML2_1_Value="EBigDecimal"/>
+    <Element Name="EInt" UML2_0_Value="_EQQPM8i3EdqOoq-j0hsILg" UML2_1_Value="EInt"/>
+    <Element Name="EObject-eIsSet-_ownedParameter.0"
+        UML2_0_Value="_h3j_-8enEdm17tz62ORDiA" UML2_1_Value="EObject-eIsSet-_ownedParameter.0"/>
+    <Element Name="Framework" UML2_0_Value="_9wW1I686Edih9-GG5afQ0g" UML2_1_Value="Framework"/>
+    <Element Name="DestroyLinkAction"
+        UML2_0_Value="_m9nfh686EdiEh75YJ_3n8g" UML2_1_Value="DestroyLinkAction"/>
+    <Element Name="Type" UML2_0_Value="_9w7c6a86Edih9-GG5afQ0g" UML2_1_Value="Type"/>
+    <Element Name="Action" UML2_0_Value="_m9VK5q86EdiEh75YJ_3n8g" UML2_1_Value="Action"/>
+    <Element Name="DestroyObjectAction-isDestroyLinks"
+        UML2_0_Value="_m9nfDq86EdiEh75YJ_3n8g" UML2_1_Value="DestroyObjectAction-isDestroyLinks"/>
+    <Element Name="EEnumerator" UML2_0_Value="_EQQPLsi3EdqOoq-j0hsILg" UML2_1_Value="EEnumerator"/>
+    <Element Name="Classifier-general.1-_ownedParameter.0"
+        UML2_0_Value="_h33jQ8enEdm17tz62ORDiA" UML2_1_Value="Classifier-general.1-_ownedParameter.0"/>
+    <Element Name="Behavior-ownedParameterSet"
+        UML2_0_Value="_m9I8aa86EdiEh75YJ_3n8g" UML2_1_Value="Behavior-ownedParameterSet"/>
+    <Element Name="EReference-isResolveProxies"
+        UML2_0_Value="_utNJl687Edi5QpYeY_yIpg" UML2_1_Value="EReference-isResolveProxies"/>
+    <Element Name="EncapsulatedClassifier-ownedPort"
+        UML2_0_Value="_m9bRWK86EdiEh75YJ_3n8g" UML2_1_Value="EncapsulatedClassifier-ownedPort"/>
+    <Element Name="EFloat" UML2_0_Value="_EQQPMci3EdqOoq-j0hsILg" UML2_1_Value="EFloat"/>
+    <Element Name="Usage_Create-extension_Create"
+        UML2_0_Value="_9v-aoa86Edih9-GG5afQ0g" UML2_1_Value="Usage_Create-extension_Create"/>
+    <Element Name="Interface-ownedReception"
+        UML2_0_Value="_m9VJsK86EdiEh75YJ_3n8g" UML2_1_Value="Interface-ownedReception"/>
+    <Element Name="ElementImport-visibility_public_or_private"
+        UML2_0_Value="_h33iTsenEdm17tz62ORDiA" UML2_1_Value="ElementImport-visibility_public_or_private"/>
+    <Element Name="EShortObject" UML2_0_Value="_EQQPPci3EdqOoq-j0hsILg" UML2_1_Value="EShortObject"/>
+    <Element Name="EClass-getEStructuralFeature-featureID"
+        UML2_0_Value="_m8eOKa86EdiEh75YJ_3n8g" UML2_1_Value="EClass-getEStructuralFeature-featureID"/>
+    <Element Name="ValueSpecification-isComputable"
+        UML2_0_Value="_m8qb7a86EdiEh75YJ_3n8g" UML2_1_Value="ValueSpecification-isComputable"/>
+    <Element Name="StructuredActivityNode-node"
+        UML2_0_Value="_m9VK2a86EdiEh75YJ_3n8g" UML2_1_Value="StructuredActivityNode-node"/>
+    <Element Name="Extend-extension"
+        UML2_0_Value="_m9bQ2686EdiEh75YJ_3n8g" UML2_1_Value="Extend-extension"/>
+    <Element Name="EReference-containment"
+        UML2_0_Value="_m8kUeq86EdiEh75YJ_3n8g" UML2_1_Value="EReference-containment"/>
+    <Element Name="ENamedElement-xmlName"
+        UML2_0_Value="_usDTAK87Edi5QpYeY_yIpg" UML2_1_Value="ENamedElement-xmlName"/>
+    <Element Name="CreateObjectAction-classifier"
+        UML2_0_Value="_m9nfBK86EdiEh75YJ_3n8g" UML2_1_Value="CreateObjectAction-classifier"/>
+    <Element Name="Clause-body" UML2_0_Value="_m9nds686EdiEh75YJ_3n8g" UML2_1_Value="Clause-body"/>
+    <Element Name="State-submachine"
+        UML2_0_Value="_m9bP_q86EdiEh75YJ_3n8g" UML2_1_Value="State-submachine"/>
+    <Element Name="Interface-ownedAttribute"
+        UML2_0_Value="_m9VJpK86EdiEh75YJ_3n8g" UML2_1_Value="Interface-ownedAttribute"/>
+    <Element Name="Connector-kind"
+        UML2_0_Value="_m9bRKa86EdiEh75YJ_3n8g" UML2_1_Value="Connector-kind"/>
+    <Element Name="AddStructuralFeatureValueAction-isReplaceAll"
+        UML2_0_Value="_m9nfS686EdiEh75YJ_3n8g" UML2_1_Value="AddStructuralFeatureValueAction-isReplaceAll"/>
+    <Element Name="MultiplicityElement"
+        UML2_0_Value="_m8qbtK86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement"/>
+    <Element Name="Call" UML2_0_Value="_9v-apK86Edih9-GG5afQ0g" UML2_1_Value="Call"/>
+    <Element Name="StringExpression"
+        UML2_0_Value="_m8qbqK86EdiEh75YJ_3n8g" UML2_1_Value="StringExpression"/>
+    <Element Name="Classifier-general"
+        UML2_0_Value="_m88vDa86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-general"/>
+    <Element Name="Package-makesVisible"
+        UML2_0_Value="_m82ogK86EdiEh75YJ_3n8g" UML2_1_Value="Package-makesVisible"/>
+    <Element Name="PackageImport-visibility"
+        UML2_0_Value="_m82oUa86EdiEh75YJ_3n8g" UML2_1_Value="PackageImport-visibility"/>
+    <Element Name="PackageableElement"
+        UML2_0_Value="_m8whwa86EdiEh75YJ_3n8g" UML2_1_Value="PackageableElement"/>
+    <Element Name="Association-memberEnd"
+        UML2_0_Value="_m9VJUa86EdiEh75YJ_3n8g" UML2_1_Value="Association-memberEnd"/>
+    <Element Name="TemplateParameter-default"
+        UML2_0_Value="_m8qbd686EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameter-default"/>
+    <Element Name="Component-required"
+        UML2_0_Value="_m9VJkK86EdiEh75YJ_3n8g" UML2_1_Value="Component-required"/>
+    <Element Name="TypedElement-type"
+        UML2_0_Value="_m8qb-686EdiEh75YJ_3n8g" UML2_1_Value="TypedElement-type"/>
+    <Element Name="EEnumLiteral-base_EnumerationLiteral"
+        UML2_0_Value="_us0IA687Edi5QpYeY_yIpg" UML2_1_Value="EEnumLiteral-base_EnumerationLiteral"/>
+    <Element Name="Usage_Instantiate"
+        UML2_0_Value="_9wpJAK86Edih9-GG5afQ0g" UML2_1_Value="Usage_Instantiate"/>
+    <Element Name="StructuralFeatureAction-object"
+        UML2_0_Value="_m9nfMK86EdiEh75YJ_3n8g" UML2_1_Value="StructuralFeatureAction-object"/>
+    <Element Name="RedefinableElement-isLeaf"
+        UML2_0_Value="_m88vYq86EdiEh75YJ_3n8g" UML2_1_Value="RedefinableElement-isLeaf"/>
+    <Element Name="Metaclass" UML2_0_Value="_9wpJBK86Edih9-GG5afQ0g" UML2_1_Value="Metaclass"/>
+    <Element Name="EDate" UML2_0_Value="_EQQPKci3EdqOoq-j0hsILg" UML2_1_Value="EDate"/>
+    <Element Name="TransitionKind-external"
+        UML2_0_Value="_m9VKM686EdiEh75YJ_3n8g" UML2_1_Value="TransitionKind-external"/>
+    <Element Name="Usage_Create" UML2_0_Value="_9v-aoK86Edih9-GG5afQ0g" UML2_1_Value="Usage_Create"/>
+    <Element Name="Classifier-hasVisibilityOf-_ownedParameter.0"
+        UML2_0_Value="_h33jOsenEdm17tz62ORDiA" UML2_1_Value="Classifier-hasVisibilityOf-_ownedParameter.0"/>
+    <Element Name="EObject-eClass-_ownedParameter.0"
+        UML2_0_Value="_h3j_38enEdm17tz62ORDiA" UML2_1_Value="EObject-eClass-_ownedParameter.0"/>
+    <Element Name="EObject-eContainmentFeature"
+        UML2_0_Value="_m8eN5K86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eContainmentFeature"/>
+    <Element Name="Parameter-isStream"
+        UML2_0_Value="_m9C2ha86EdiEh75YJ_3n8g" UML2_1_Value="Parameter-isStream"/>
+    <Element Name="Class_Type-extension_Type"
+        UML2_0_Value="_9xBjga86Edih9-GG5afQ0g" UML2_1_Value="Class_Type-extension_Type"/>
+    <Element Name="JoinNode" UML2_0_Value="_m9ne8686EdiEh75YJ_3n8g" UML2_1_Value="JoinNode"/>
+    <Element Name="DeploymentTarget"
+        UML2_0_Value="_m9C2BK86EdiEh75YJ_3n8g" UML2_1_Value="DeploymentTarget"/>
+    <Element Name="TypedElement" UML2_0_Value="_m8qb-a86EdiEh75YJ_3n8g" UML2_1_Value="TypedElement"/>
+    <Element Name="CreateLinkObjectAction"
+        UML2_0_Value="_m9ngl686EdiEh75YJ_3n8g" UML2_1_Value="CreateLinkObjectAction"/>
+    <Element Name="EByteObject" UML2_0_Value="_EQQPJsi3EdqOoq-j0hsILg" UML2_1_Value="EByteObject"/>
+    <Element Name="DataType-ownedAttribute"
+        UML2_0_Value="_m9PCs686EdiEh75YJ_3n8g" UML2_1_Value="DataType-ownedAttribute"/>
+    <Element Name="AddVariableValueAction-isReplaceAll"
+        UML2_0_Value="_m9nfqq86EdiEh75YJ_3n8g" UML2_1_Value="AddVariableValueAction-isReplaceAll"/>
+    <Element Name="NamedElement-isDistinguishableFrom-ns"
+        UML2_0_Value="_m8qcF686EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-isDistinguishableFrom-ns"/>
+    <Element Name="Classifier-parents"
+        UML2_0_Value="_m88vOq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-parents"/>
+    <Element Name="NamedElement-allNamespaces-_ownedParameter.0"
+        UML2_0_Value="_h33h48enEdm17tz62ORDiA" UML2_1_Value="NamedElement-allNamespaces-_ownedParameter.0"/>
+    <Element Name="TemplateBinding"
+        UML2_0_Value="_m8qbO686EdiEh75YJ_3n8g" UML2_1_Value="TemplateBinding"/>
+    <Element Name="ETypedElement" UML2_0_Value="_m8eNva86EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement"/>
+    <Element Name="Package" UML2_0_Value="_m82oYa86EdiEh75YJ_3n8g" UML2_1_Value="Package"/>
+    <Element Name="DeploymentTarget-deployedElement"
+        UML2_0_Value="_m9C2Ca86EdiEh75YJ_3n8g" UML2_1_Value="DeploymentTarget-deployedElement"/>
+    <Element Name="Usage_Send-extension_Send"
+        UML2_0_Value="_9w7c4a86Edih9-GG5afQ0g" UML2_1_Value="Usage_Send-extension_Send"/>
+    <Element Name="Property-datatype"
+        UML2_0_Value="_m9C1ma86EdiEh75YJ_3n8g" UML2_1_Value="Property-datatype"/>
+    <Element Name="Generalization_Extend"
+        UML2_0_Value="_usPgQK87Edi5QpYeY_yIpg" UML2_1_Value="Generalization_Extend"/>
+    <Element Name="State-isSubmachineState"
+        UML2_0_Value="_m9bP_K86EdiEh75YJ_3n8g" UML2_1_Value="State-isSubmachineState"/>
+    <Element Name="Region-transition"
+        UML2_0_Value="_m9VJ-a86EdiEh75YJ_3n8g" UML2_1_Value="Region-transition"/>
+    <Element Name="LoopNode-loopVariable"
+        UML2_0_Value="_m9nd3K86EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-loopVariable"/>
+    <Element Name="EPackage-getEClassifier-_ownedParameter.0"
+        UML2_0_Value="_h3j_ysenEdm17tz62ORDiA" UML2_1_Value="EPackage-getEClassifier-_ownedParameter.0"/>
+    <Element Name="InteractionOperatorKind-neg"
+        UML2_0_Value="_m9ngGK86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-neg"/>
+    <Element Name="EDataType-dataTypeName"
+        UML2_0_Value="_ush0Jq87Edi5QpYeY_yIpg" UML2_1_Value="EDataType-dataTypeName"/>
+    <Element Name="ComponentRealization-abstraction"
+        UML2_0_Value="_m9VJf686EdiEh75YJ_3n8g" UML2_1_Value="ComponentRealization-abstraction"/>
+    <Element Name="DirectedRelationship-target"
+        UML2_0_Value="_m8qbTq86EdiEh75YJ_3n8g" UML2_1_Value="DirectedRelationship-target"/>
+    <Element Name="Behavior-isReentrant"
+        UML2_0_Value="_m9I8U686EdiEh75YJ_3n8g" UML2_1_Value="Behavior-isReentrant"/>
+    <Element Name="StringExpression-owningExpression"
+        UML2_0_Value="_m8qbra86EdiEh75YJ_3n8g" UML2_1_Value="StringExpression-owningExpression"/>
+    <Element
+        Name="Class_ImplementationClass-extension_ImplementationClass"
+        UML2_0_Value="_9wjCYa86Edih9-GG5afQ0g" UML2_1_Value="Class_ImplementationClass-extension_ImplementationClass"/>
+    <Element Name="Model_SystemModel-extension_SystemModel"
+        UML2_0_Value="_O2E_8a87Edih9-GG5afQ0g" UML2_1_Value="Model_SystemModel-extension_SystemModel"/>
+    <Element Name="EChar" UML2_0_Value="_EQQPJ8i3EdqOoq-j0hsILg" UML2_1_Value="EChar"/>
+    <Element Name="EEnumLiteral-value"
+        UML2_0_Value="_m8kUwq86EdiEh75YJ_3n8g" UML2_1_Value="EEnumLiteral-value"/>
+    <Element Name="Node-nestedNode"
+        UML2_0_Value="_m9ng0K86EdiEh75YJ_3n8g" UML2_1_Value="Node-nestedNode"/>
+    <Element Name="Gate" UML2_0_Value="_m9neU686EdiEh75YJ_3n8g" UML2_1_Value="Gate"/>
+    <Element Name="InteractionUse"
+        UML2_0_Value="_m9neRK86EdiEh75YJ_3n8g" UML2_1_Value="InteractionUse"/>
+    <Element Name="ProfileApplication-appliedProfile"
+        UML2_0_Value="_m82oqa86EdiEh75YJ_3n8g" UML2_1_Value="ProfileApplication-appliedProfile"/>
+    <Element Name="Metamodel-base_Model"
+        UML2_0_Value="_O1-5VK87Edih9-GG5afQ0g" UML2_1_Value="Metamodel-base_Model"/>
+    <Element Name="Operation_EOperation"
+        UML2_0_Value="_us6Ooa87Edi5QpYeY_yIpg" UML2_1_Value="Operation_EOperation"/>
+    <Element Name="InteractionFragment-enclosingInteraction"
+        UML2_0_Value="_m9neI686EdiEh75YJ_3n8g" UML2_1_Value="InteractionFragment-enclosingInteraction"/>
+    <Element Name="Classifier-general.1"
+        UML2_0_Value="_m88vSq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-general.1"/>
+    <Element Name="Generalization-general"
+        UML2_0_Value="_m9C1d686EdiEh75YJ_3n8g" UML2_1_Value="Generalization-general"/>
+    <Element Name="State-entry" UML2_0_Value="_m9bQC686EdiEh75YJ_3n8g" UML2_1_Value="State-entry"/>
+    <Element Name="EMap" UML2_0_Value="_EQQPOci3EdqOoq-j0hsILg" UML2_1_Value="EMap"/>
+    <Element Name="EOperation-eContainingClass"
+        UML2_0_Value="_m8kUa686EdiEh75YJ_3n8g" UML2_1_Value="EOperation-eContainingClass"/>
+    <Element Name="EReference-eReferenceType"
+        UML2_0_Value="_m8kUgq86EdiEh75YJ_3n8g" UML2_1_Value="EReference-eReferenceType"/>
+    <Element Name="Feature-isStatic"
+        UML2_0_Value="_m9C1a686EdiEh75YJ_3n8g" UML2_1_Value="Feature-isStatic"/>
+    <Element Name="ExpansionRegion-inputElement"
+        UML2_0_Value="_m9ngOq86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionRegion-inputElement"/>
+    <Element Name="EObject-eGet.1-resolve"
+        UML2_0_Value="_m8eN8q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eGet.1-resolve"/>
+    <Element Name="MultiplicityElement-upper"
+        UML2_0_Value="_m8qbvK86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-upper"/>
+    <Element Name="AcceptEventAction-result"
+        UML2_0_Value="_m9ngpa86EdiEh75YJ_3n8g" UML2_1_Value="AcceptEventAction-result"/>
+    <Element Name="DestroyObjectAction-isDestroyOwnedObjects"
+        UML2_0_Value="_m9nfEK86EdiEh75YJ_3n8g" UML2_1_Value="DestroyObjectAction-isDestroyOwnedObjects"/>
+    <Element Name="EFactory-createFromString-literalValue"
+        UML2_0_Value="_m8kUVa86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-createFromString-literalValue"/>
+    <Element Name="EStringToStringMapEntry"
+        UML2_0_Value="_m8kUp686EdiEh75YJ_3n8g" UML2_1_Value="EStringToStringMapEntry"/>
+    <Element Name="Device" UML2_0_Value="_m9ng1686EdiEh75YJ_3n8g" UML2_1_Value="Device"/>
+    <Element Name="Namespace-ownedRule"
+        UML2_0_Value="_m8whia86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-ownedRule"/>
+    <Element Name="Type-conformsTo-_ownedParameter.0"
+        UML2_0_Value="_h33imsenEdm17tz62ORDiA" UML2_1_Value="Type-conformsTo-_ownedParameter.0"/>
+    <Element Name="BuildComponent"
+        UML2_0_Value="_9vsGw686Edih9-GG5afQ0g" UML2_1_Value="BuildComponent"/>
+    <Element Name="ActivityEdge" UML2_0_Value="_m9VKfK86EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge"/>
+    <Element Name="ActivityEdge-source"
+        UML2_0_Value="_m9VKfq86EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-source"/>
+    <Element Name="Transition-trigger"
+        UML2_0_Value="_m9VKIK86EdiEh75YJ_3n8g" UML2_1_Value="Transition-trigger"/>
+    <Element Name="TemplateParameterSubstitution-templateBinding"
+        UML2_0_Value="_m8qbma86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameterSubstitution-templateBinding"/>
+    <Element Name="EClassifier-_generalization.0"
+        UML2_0_Value="_usJZoK87Edi5QpYeY_yIpg" UML2_1_Value="EClassifier-_generalization.0"/>
+    <Element Name="BroadcastSignalAction-signal"
+        UML2_0_Value="_m9nf8a86EdiEh75YJ_3n8g" UML2_1_Value="BroadcastSignalAction-signal"/>
+    <Element Name="DurationInterval"
+        UML2_0_Value="_m9nhDq86EdiEh75YJ_3n8g" UML2_1_Value="DurationInterval"/>
+    <Element Name="VariableAction"
+        UML2_0_Value="_m9nfk686EdiEh75YJ_3n8g" UML2_1_Value="VariableAction"/>
+    <Element Name="EPackage" UML2_0_Value="_ui4v8K87Edi5QpYeY_yIpg" UML2_1_Value="EPackage"/>
+    <Element Name="CombinedFragment-cfragmentGate"
+        UML2_0_Value="_m9ngIq86EdiEh75YJ_3n8g" UML2_1_Value="CombinedFragment-cfragmentGate"/>
+    <Element Name="Class_Utility" UML2_0_Value="_9xBjha86Edih9-GG5afQ0g" UML2_1_Value="Class_Utility"/>
+    <Element Name="Lifeline-interaction"
+        UML2_0_Value="_m9neL686EdiEh75YJ_3n8g" UML2_1_Value="Lifeline-interaction"/>
+    <Element Name="TestIdentityAction-second"
+        UML2_0_Value="_m9nfGq86EdiEh75YJ_3n8g" UML2_1_Value="TestIdentityAction-second"/>
+    <Element Name="ObjectFlow-selection"
+        UML2_0_Value="_m9ndf686EdiEh75YJ_3n8g" UML2_1_Value="ObjectFlow-selection"/>
+    <Element Name="Interaction-message"
+        UML2_0_Value="_m9neEK86EdiEh75YJ_3n8g" UML2_1_Value="Interaction-message"/>
+    <Element Name="EClass-eAllOperations"
+        UML2_0_Value="_m8eOFq86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eAllOperations"/>
+    <Element Name="BuildComponent-base_Component"
+        UML2_0_Value="_9vsGyK86Edih9-GG5afQ0g" UML2_1_Value="BuildComponent-base_Component"/>
+    <Element Name="CombinedFragment-operand"
+        UML2_0_Value="_m9ngIK86EdiEh75YJ_3n8g" UML2_1_Value="CombinedFragment-operand"/>
+    <Element Name="ExecutionSpecification-start"
+        UML2_0_Value="_m9nepa86EdiEh75YJ_3n8g" UML2_1_Value="ExecutionSpecification-start"/>
+    <Element Name="ConnectionPointReference-entry"
+        UML2_0_Value="_m9bQIa86EdiEh75YJ_3n8g" UML2_1_Value="ConnectionPointReference-entry"/>
+    <Element Name="LoopNode-bodyOutput"
+        UML2_0_Value="_m9nd3686EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-bodyOutput"/>
+    <Element Name="EFactory-convertToString-instanceValue"
+        UML2_0_Value="_m8kUWa86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-convertToString-instanceValue"/>
+    <Element Name="SendObjectAction"
+        UML2_0_Value="_m9nf9K86EdiEh75YJ_3n8g" UML2_1_Value="SendObjectAction"/>
+    <Element Name="MessageKind" UML2_0_Value="_m9necq86EdiEh75YJ_3n8g" UML2_1_Value="MessageKind"/>
+    <Element Name="LiteralSpecification"
+        UML2_0_Value="_m9ndKK86EdiEh75YJ_3n8g" UML2_1_Value="LiteralSpecification"/>
+    <Element Name="ObjectNodeOrderingKind"
+        UML2_0_Value="_m9bP6a86EdiEh75YJ_3n8g" UML2_1_Value="ObjectNodeOrderingKind"/>
+    <Element Name="SendObjectAction-request"
+        UML2_0_Value="_m9nf9686EdiEh75YJ_3n8g" UML2_1_Value="SendObjectAction-request"/>
+    <Element Name="EClass-eStructuralFeatures"
+        UML2_0_Value="_m8eOIa86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eStructuralFeatures"/>
+    <Element Name="BehavioralFeature_Destroy-extension_Destroy"
+        UML2_0_Value="_9wQuga86Edih9-GG5afQ0g" UML2_1_Value="BehavioralFeature_Destroy-extension_Destroy"/>
+    <Element Name="Interaction-lifeline"
+        UML2_0_Value="_m9neDa86EdiEh75YJ_3n8g" UML2_1_Value="Interaction-lifeline"/>
+    <Element
+        Name="MultiplicityElement-includesMultiplicity-_ownedParameter.0"
+        UML2_0_Value="_h33hncenEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-includesMultiplicity-_ownedParameter.0"/>
+    <Element Name="Property-isDerivedUnion"
+        UML2_0_Value="_m9C1pa86EdiEh75YJ_3n8g" UML2_1_Value="Property-isDerivedUnion"/>
+    <Element Name="Behavior-redefinedBehavior"
+        UML2_0_Value="_m9I8V686EdiEh75YJ_3n8g" UML2_1_Value="Behavior-redefinedBehavior"/>
+    <Element Name="AddStructuralFeatureValueAction-insertAt"
+        UML2_0_Value="_m9nfTa86EdiEh75YJ_3n8g" UML2_1_Value="AddStructuralFeatureValueAction-insertAt"/>
+    <Element Name="RemoveStructuralFeatureValueAction"
+        UML2_0_Value="_m9nfR686EdiEh75YJ_3n8g" UML2_1_Value="RemoveStructuralFeatureValueAction"/>
+    <Element Name="ParameterDirectionKind-in"
+        UML2_0_Value="_m9PCzq86EdiEh75YJ_3n8g" UML2_1_Value="ParameterDirectionKind-in"/>
+    <Element Name="TemplateParameterSubstitution-formal"
+        UML2_0_Value="_m8qbk686EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameterSubstitution-formal"/>
+    <Element Name="BehaviorExecutionOccurrence-behavior"
+        UML2_0_Value="_m9neoq86EdiEh75YJ_3n8g" UML2_1_Value="BehaviorExecutionOccurrence-behavior"/>
+    <Element Name="StateMachine-region"
+        UML2_0_Value="_m9VJ4686EdiEh75YJ_3n8g" UML2_1_Value="StateMachine-region"/>
+    <Element Name="ProtocolTransition"
+        UML2_0_Value="_m9ng3686EdiEh75YJ_3n8g" UML2_1_Value="ProtocolTransition"/>
+    <Element Name="Generalization-specific"
+        UML2_0_Value="_m9C1fa86EdiEh75YJ_3n8g" UML2_1_Value="Generalization-specific"/>
+    <Element Name="Artifact-nestedArtifact"
+        UML2_0_Value="_m9C2P686EdiEh75YJ_3n8g" UML2_1_Value="Artifact-nestedArtifact"/>
+    <Element Name="EPackage-eFactoryInstance"
+        UML2_0_Value="_m8eOQq86EdiEh75YJ_3n8g" UML2_1_Value="EPackage-eFactoryInstance"/>
+    <Element Name="Activity-isSingleExecution"
+        UML2_0_Value="_m9VKda86EdiEh75YJ_3n8g" UML2_1_Value="Activity-isSingleExecution"/>
+    <Element Name="PackageImport-importingNamespace"
+        UML2_0_Value="_m82oVK86EdiEh75YJ_3n8g" UML2_1_Value="PackageImport-importingNamespace"/>
+    <Element Name="EAnnotation-eModelElement"
+        UML2_0_Value="_m8kUna86EdiEh75YJ_3n8g" UML2_1_Value="EAnnotation-eModelElement"/>
+    <Element Name="ProtocolStateMachine"
+        UML2_0_Value="_m9VJ2q86EdiEh75YJ_3n8g" UML2_1_Value="ProtocolStateMachine"/>
+    <Element Name="BehavioredClassifier"
+        UML2_0_Value="_m88u6686EdiEh75YJ_3n8g" UML2_1_Value="BehavioredClassifier"/>
+    <Element Name="ExceptionHandler"
+        UML2_0_Value="_m9VLAq86EdiEh75YJ_3n8g" UML2_1_Value="ExceptionHandler"/>
+    <Element Name="Message-signature"
+        UML2_0_Value="_m9neZ686EdiEh75YJ_3n8g" UML2_1_Value="Message-signature"/>
+    <Element Name="ExceptionHandler-handlerBody"
+        UML2_0_Value="_m9VLBK86EdiEh75YJ_3n8g" UML2_1_Value="ExceptionHandler-handlerBody"/>
+    <Element Name="ConditionalNode-isAssured"
+        UML2_0_Value="_m9ndoa86EdiEh75YJ_3n8g" UML2_1_Value="ConditionalNode-isAssured"/>
+    <Element Name="Package_EPackage-extension_EPackage"
+        UML2_0_Value="_urq4ga87Edi5QpYeY_yIpg" UML2_1_Value="Package_EPackage-extension_EPackage"/>
+    <Element Name="ContentKind" UML2_0_Value="_usPgRK87Edi5QpYeY_yIpg" UML2_1_Value="ContentKind"/>
+    <Element Name="Activity-node" UML2_0_Value="_m9VKb686EdiEh75YJ_3n8g" UML2_1_Value="Activity-node"/>
+    <Element Name="Specification" UML2_0_Value="_FyFP7K87Edih9-GG5afQ0g" UML2_1_Value="Specification"/>
+    <Element Name="ConnectorEnd-definingEnd"
+        UML2_0_Value="_m9C1-q86EdiEh75YJ_3n8g" UML2_1_Value="ConnectorEnd-definingEnd"/>
+    <Element Name="ExtensionPoint-useCase"
+        UML2_0_Value="_m9bQ6q86EdiEh75YJ_3n8g" UML2_1_Value="ExtensionPoint-useCase"/>
+    <Element Name="EDouble" UML2_0_Value="_EQQPK8i3EdqOoq-j0hsILg" UML2_1_Value="EDouble"/>
+    <Element Name="EShort" UML2_0_Value="_EQQPPMi3EdqOoq-j0hsILg" UML2_1_Value="EShort"/>
+    <Element Name="EObject-eIsSet-feature"
+        UML2_0_Value="_m8eN-K86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eIsSet-feature"/>
+    <Element Name="EObject" UML2_0_Value="_m8eN2a86EdiEh75YJ_3n8g" UML2_1_Value="EObject"/>
+    <Element Name="ActivityEdge-inGroup"
+        UML2_0_Value="_m9VKh686EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-inGroup"/>
+    <Element Name="ConnectableElement-end"
+        UML2_0_Value="_m9C19K86EdiEh75YJ_3n8g" UML2_1_Value="ConnectableElement-end"/>
+    <Element Name="Namespace-importMembers"
+        UML2_0_Value="_m8whpK86EdiEh75YJ_3n8g" UML2_1_Value="Namespace-importMembers"/>
+    <Element Name="CreateObjectAction-result"
+        UML2_0_Value="_m9nfBa86EdiEh75YJ_3n8g" UML2_1_Value="CreateObjectAction-result"/>
+    <Element Name="State-isSimple"
+        UML2_0_Value="_m9bP-q86EdiEh75YJ_3n8g" UML2_1_Value="State-isSimple"/>
+    <Element Name="EEnum-getEEnumLiteral.1"
+        UML2_0_Value="_m8kUva86EdiEh75YJ_3n8g" UML2_1_Value="EEnum-getEEnumLiteral.1"/>
+    <Element Name="EReference" UML2_0_Value="_utNJkK87Edi5QpYeY_yIpg" UML2_1_Value="EReference"/>
+    <Element Name="MultiplicityElement-includesMultiplicity"
+        UML2_0_Value="_m8qby686EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-includesMultiplicity"/>
+    <Element Name="ComponentRealization-realizingClassifier"
+        UML2_0_Value="_m9VJga86EdiEh75YJ_3n8g" UML2_1_Value="ComponentRealization-realizingClassifier"/>
+    <Element Name="TemplateSignature-template"
+        UML2_0_Value="_m8qbaq86EdiEh75YJ_3n8g" UML2_1_Value="TemplateSignature-template"/>
+    <Element Name="Package-packagedElement"
+        UML2_0_Value="_m82obK86EdiEh75YJ_3n8g" UML2_1_Value="Package-packagedElement"/>
+    <Element Name="MultiplicityElement-includesCardinality-C"
+        UML2_0_Value="_m8qbyq86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-includesCardinality-C"/>
+    <Element Name="EClass-getEStructuralFeature.1"
+        UML2_0_Value="_m8eOKq86EdiEh75YJ_3n8g" UML2_1_Value="EClass-getEStructuralFeature.1"/>
+    <Element Name="InteractionOperatorKind-assert"
+        UML2_0_Value="_m9ngGa86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-assert"/>
+    <Element Name="TemplateParameterSubstitution"
+        UML2_0_Value="_m8qbka86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameterSubstitution"/>
+    <Element Name="InteractionOperand"
+        UML2_0_Value="_m9neq686EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperand"/>
+    <Element Name="Class-extension"
+        UML2_0_Value="_m88u0q86EdiEh75YJ_3n8g" UML2_1_Value="Class-extension"/>
+    <Element Name="Expression-symbol"
+        UML2_0_Value="_m9bRta86EdiEh75YJ_3n8g" UML2_1_Value="Expression-symbol"/>
+    <Element Name="Classifier-isAbstract"
+        UML2_0_Value="_m88vCK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-isAbstract"/>
+    <Element Name="ETypedElement-eType"
+        UML2_0_Value="_m8eNy686EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement-eType"/>
+    <Element Name="Component_Service"
+        UML2_0_Value="_FyFP4687Edih9-GG5afQ0g" UML2_1_Value="Component_Service"/>
+    <Element Name="ChangeEvent-changeExpression"
+        UML2_0_Value="_m9ne2q86EdiEh75YJ_3n8g" UML2_1_Value="ChangeEvent-changeExpression"/>
+    <Element Name="ElementImport-alias"
+        UML2_0_Value="_m82oOK86EdiEh75YJ_3n8g" UML2_1_Value="ElementImport-alias"/>
+    <Element Name="EFactory-convertToString-eDataType"
+        UML2_0_Value="_m8kUWK86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-convertToString-eDataType"/>
+    <Element Name="ClassifierTemplateParameter-allowSubstitutable"
+        UML2_0_Value="_m9nd_686EdiEh75YJ_3n8g" UML2_1_Value="ClassifierTemplateParameter-allowSubstitutable"/>
+    <Element Name="ReadExtentAction-result"
+        UML2_0_Value="_m9ngRq86EdiEh75YJ_3n8g" UML2_1_Value="ReadExtentAction-result"/>
+    <Element Name="ValueSpecification-stringValue"
+        UML2_0_Value="_m8qb8686EdiEh75YJ_3n8g" UML2_1_Value="ValueSpecification-stringValue"/>
+    <Element Name="Parameter" UML2_0_Value="_m9C2dK86EdiEh75YJ_3n8g" UML2_1_Value="Parameter"/>
+    <Element Name="EEnum-getEEnumLiteral-_ownedParameter.0"
+        UML2_0_Value="_h3txDMenEdm17tz62ORDiA" UML2_1_Value="EEnum-getEEnumLiteral-_ownedParameter.0"/>
+    <Element Name="Process-base_Component"
+        UML2_0_Value="_Fx5Co687Edih9-GG5afQ0g" UML2_1_Value="Process-base_Component"/>
+    <Element Name="Process" UML2_0_Value="_Fxy8DK87Edih9-GG5afQ0g" UML2_1_Value="Process"/>
+    <Element Name="DataType" UML2_0_Value="_m9PCsa86EdiEh75YJ_3n8g" UML2_1_Value="DataType"/>
+    <Element Name="EOperation-base_Operation"
+        UML2_0_Value="_us6OpK87Edi5QpYeY_yIpg" UML2_1_Value="EOperation-base_Operation"/>
+    <Element Name="ELongObject" UML2_0_Value="_EQQPOMi3EdqOoq-j0hsILg" UML2_1_Value="ELongObject"/>
+    <Element Name="TemplateParameter-ownedDefault"
+        UML2_0_Value="_m8qbea86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameter-ownedDefault"/>
+    <Element Name="ENamedElement-name"
+        UML2_0_Value="_m8eNz686EdiEh75YJ_3n8g" UML2_1_Value="ENamedElement-name"/>
+    <Element Name="Class-superClass"
+        UML2_0_Value="_m88uzK86EdiEh75YJ_3n8g" UML2_1_Value="Class-superClass"/>
+    <Element Name="Classifier-generalization"
+        UML2_0_Value="_m88vEK86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-generalization"/>
+    <Element Name="Package-nestedPackage"
+        UML2_0_Value="_m82oZK86EdiEh75YJ_3n8g" UML2_1_Value="Package-nestedPackage"/>
+    <Element Name="ExceptionHandler-exceptionInput"
+        UML2_0_Value="_m9VLBa86EdiEh75YJ_3n8g" UML2_1_Value="ExceptionHandler-exceptionInput"/>
+    <Element Name="NamedElement-isDistinguishableFrom"
+        UML2_0_Value="_m8qcFK86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-isDistinguishableFrom"/>
+    <Element Name="Component-isIndirectlyInstantiated"
+        UML2_0_Value="_m9VJjq86EdiEh75YJ_3n8g" UML2_1_Value="Component-isIndirectlyInstantiated"/>
+    <Element Name="LoopNode-setupPart"
+        UML2_0_Value="_m9nd0q86EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-setupPart"/>
+    <Element Name="Operation-isOrdered"
+        UML2_0_Value="_m9C2qq86EdiEh75YJ_3n8g" UML2_1_Value="Operation-isOrdered"/>
+    <Element Name="ActivityNode-outgoing"
+        UML2_0_Value="_m9VKq686EdiEh75YJ_3n8g" UML2_1_Value="ActivityNode-outgoing"/>
+    <Element Name="Namespace-importedMember.1-_ownedParameter.0"
+        UML2_0_Value="_h33iE8enEdm17tz62ORDiA" UML2_1_Value="Namespace-importedMember.1-_ownedParameter.0"/>
+    <Element Name="EObject-eContainer-_ownedParameter.0"
+        UML2_0_Value="_h3j_5cenEdm17tz62ORDiA" UML2_1_Value="EObject-eContainer-_ownedParameter.0"/>
+    <Element Name="EClass-getEStructuralFeature-_ownedParameter.0"
+        UML2_0_Value="_h3twmcenEdm17tz62ORDiA" UML2_1_Value="EClass-getEStructuralFeature-_ownedParameter.0"/>
+    <Element Name="Utility-base_Class"
+        UML2_0_Value="_9xBjiK86Edih9-GG5afQ0g" UML2_1_Value="Utility-base_Class"/>
+    <Element Name="EOperation-eParameters"
+        UML2_0_Value="_m8kUZa86EdiEh75YJ_3n8g" UML2_1_Value="EOperation-eParameters"/>
+    <Element Name="BehavioralFeature-ownedParameter"
+        UML2_0_Value="_m9I8M686EdiEh75YJ_3n8g" UML2_1_Value="BehavioralFeature-ownedParameter"/>
+    <Element Name="SendSignalAction-signal"
+        UML2_0_Value="_m9nf6K86EdiEh75YJ_3n8g" UML2_1_Value="SendSignalAction-signal"/>
+    <Element Name="InteractionOperatorKind-opt"
+        UML2_0_Value="_m9ngEq86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-opt"/>
+    <Element Name="Component_Implement-extension_Implement"
+        UML2_0_Value="_9wc7xq86Edih9-GG5afQ0g" UML2_1_Value="Component_Implement-extension_Implement"/>
+    <Element Name="ActivityEdge-interrupts"
+        UML2_0_Value="_m9VKha86EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-interrupts"/>
+    <Element Name="Classifier-conformsTo-other"
+        UML2_0_Value="_m88vUq86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-conformsTo-other"/>
+    <Element Name="Classifier-inheritedMember.1-_ownedParameter.0"
+        UML2_0_Value="_h33jMcenEdm17tz62ORDiA" UML2_1_Value="Classifier-inheritedMember.1-_ownedParameter.0"/>
+    <Element Name="Element-mustBeOwned-_ownedParameter.0"
+        UML2_0_Value="_h3txa8enEdm17tz62ORDiA" UML2_1_Value="Element-mustBeOwned-_ownedParameter.0"/>
+    <Element Name="CentralBufferNode"
+        UML2_0_Value="_m9ne_q86EdiEh75YJ_3n8g" UML2_1_Value="CentralBufferNode"/>
+    <Element Name="ReclassifyObjectAction-isReplaceAll"
+        UML2_0_Value="_m9ngUK86EdiEh75YJ_3n8g" UML2_1_Value="ReclassifyObjectAction-isReplaceAll"/>
+    <Element Name="FinalState" UML2_0_Value="_m9nfAK86EdiEh75YJ_3n8g" UML2_1_Value="FinalState"/>
+    <Element Name="EClassifier-getClassifierID"
+        UML2_0_Value="_m8eOOq86EdiEh75YJ_3n8g" UML2_1_Value="EClassifier-getClassifierID"/>
+    <Element Name="ParameterDirectionKind-inout"
+        UML2_0_Value="_m9PCz686EdiEh75YJ_3n8g" UML2_1_Value="ParameterDirectionKind-inout"/>
+    <Element Name="Interval" UML2_0_Value="_m9nhFK86EdiEh75YJ_3n8g" UML2_1_Value="Interval"/>
+    <Element Name="ImplementationClass-base_Class"
+        UML2_0_Value="_9wjCY686Edih9-GG5afQ0g" UML2_1_Value="ImplementationClass-base_Class"/>
+    <Element Name="EClassifier" UML2_0_Value="_usDTAa87Edi5QpYeY_yIpg" UML2_1_Value="EClassifier"/>
+    <Element Name="EStructuralFeature-getFeatureID-_ownedParameter.0"
+        UML2_0_Value="_h3j_hMenEdm17tz62ORDiA" UML2_1_Value="EStructuralFeature-getFeatureID-_ownedParameter.0"/>
+    <Element Name="ElementImport-importingNamespace"
+        UML2_0_Value="_m82oO686EdiEh75YJ_3n8g" UML2_1_Value="ElementImport-importingNamespace"/>
+    <Element Name="LinkEndData" UML2_0_Value="_m9nfWq86EdiEh75YJ_3n8g" UML2_1_Value="LinkEndData"/>
+    <Element Name="Element-ownedElement"
+        UML2_0_Value="_m8qbDa86EdiEh75YJ_3n8g" UML2_1_Value="Element-ownedElement"/>
+    <Element Name="Metamodel" UML2_0_Value="_Ox98AK87Edih9-GG5afQ0g" UML2_1_Value="Metamodel"/>
+    <Element Name="ObjectFlow-isMulticast"
+        UML2_0_Value="_m9ndea86EdiEh75YJ_3n8g" UML2_1_Value="ObjectFlow-isMulticast"/>
+    <Element Name="AggregationKind-none"
+        UML2_0_Value="_m9VJaK86EdiEh75YJ_3n8g" UML2_1_Value="AggregationKind-none"/>
+    <Element Name="EAttribute-attributeName"
+        UML2_0_Value="_utHC_a87Edi5QpYeY_yIpg" UML2_1_Value="EAttribute-attributeName"/>
+    <Element Name="Utility" UML2_0_Value="_9xBjhK86Edih9-GG5afQ0g" UML2_1_Value="Utility"/>
+    <Element Name="Refine" UML2_0_Value="_9wvPpK86Edih9-GG5afQ0g" UML2_1_Value="Refine"/>
+    <Element Name="GeneralOrdering-before"
+        UML2_0_Value="_m9neiq86EdiEh75YJ_3n8g" UML2_1_Value="GeneralOrdering-before"/>
+    <Element Name="EPackage-eSubpackages"
+        UML2_0_Value="_m8kUQK86EdiEh75YJ_3n8g" UML2_1_Value="EPackage-eSubpackages"/>
+    <Element Name="EJavaClass" UML2_0_Value="_EQQPNci3EdqOoq-j0hsILg" UML2_1_Value="EJavaClass"/>
+    <Element Name="EAttribute-isID"
+        UML2_0_Value="_utHC_q87Edi5QpYeY_yIpg" UML2_1_Value="EAttribute-isID"/>
+    <Element Name="Artifact_Library"
+        UML2_0_Value="_Fxy8CK87Edih9-GG5afQ0g" UML2_1_Value="Artifact_Library"/>
+    <Element Name="StructuredActivityNode-variable"
+        UML2_0_Value="_m9VK0a86EdiEh75YJ_3n8g" UML2_1_Value="StructuredActivityNode-variable"/>
+    <Element Name="DestroyObjectAction-target"
+        UML2_0_Value="_m9nfEq86EdiEh75YJ_3n8g" UML2_1_Value="DestroyObjectAction-target"/>
+    <Element Name="EStructuralFeature-unsettable"
+        UML2_0_Value="_m8eNta86EdiEh75YJ_3n8g" UML2_1_Value="EStructuralFeature-unsettable"/>
+    <Element Name="Classifier-representation"
+        UML2_0_Value="_m88vJa86EdiEh75YJ_3n8g" UML2_1_Value="Classifier-representation"/>
+    <Element Name="Operation-redefinedOperation"
+        UML2_0_Value="_m9C2nq86EdiEh75YJ_3n8g" UML2_1_Value="Operation-redefinedOperation"/>
+    <Element Name="InstanceSpecification-slot"
+        UML2_0_Value="_m9bRi686EdiEh75YJ_3n8g" UML2_1_Value="InstanceSpecification-slot"/>
+    <Element Name="LiteralUnlimitedNatural-value"
+        UML2_0_Value="_m9ndQq86EdiEh75YJ_3n8g" UML2_1_Value="LiteralUnlimitedNatural-value"/>
+    <Element Name="TimeEvent-isRelative"
+        UML2_0_Value="_m9ne6K86EdiEh75YJ_3n8g" UML2_1_Value="TimeEvent-isRelative"/>
+    <Element Name="Vertex-incoming"
+        UML2_0_Value="_m9VKEK86EdiEh75YJ_3n8g" UML2_1_Value="Vertex-incoming"/>
+    <Element Name="PseudostateKind-shallowHistory"
+        UML2_0_Value="_m9bQMK86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-shallowHistory"/>
+    <Element Name="MessageSort" UML2_0_Value="_m9ned686EdiEh75YJ_3n8g" UML2_1_Value="MessageSort"/>
+    <Element Name="EStructuralFeature-isVolatile"
+        UML2_0_Value="_utHC8q87Edi5QpYeY_yIpg" UML2_1_Value="EStructuralFeature-isVolatile"/>
+    <Element Name="ExpansionKind" UML2_0_Value="_m9ngP686EdiEh75YJ_3n8g" UML2_1_Value="ExpansionKind"/>
+    <Element Name="Slot-value" UML2_0_Value="_m9bRoK86EdiEh75YJ_3n8g" UML2_1_Value="Slot-value"/>
+    <Element Name="RedefinableElement-redefinitionContext"
+        UML2_0_Value="_m88vX686EdiEh75YJ_3n8g" UML2_1_Value="RedefinableElement-redefinitionContext"/>
+    <Element Name="Message-argument"
+        UML2_0_Value="_m9neaa86EdiEh75YJ_3n8g" UML2_1_Value="Message-argument"/>
+    <Element Name="Enumeration" UML2_0_Value="_m9bRea86EdiEh75YJ_3n8g" UML2_1_Value="Enumeration"/>
+    <Element Name="Property-default"
+        UML2_0_Value="_m9C1m686EdiEh75YJ_3n8g" UML2_1_Value="Property-default"/>
+    <Element Name="Relationship-relatedElement"
+        UML2_0_Value="_m8qbVK86EdiEh75YJ_3n8g" UML2_1_Value="Relationship-relatedElement"/>
+    <Element Name="EClass-eReferences"
+        UML2_0_Value="_m8eODa86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eReferences"/>
+    <Element Name="BehavioralFeature-isAbstract"
+        UML2_0_Value="_m9I8Oa86EdiEh75YJ_3n8g" UML2_1_Value="BehavioralFeature-isAbstract"/>
+    <Element Name="Comment-body" UML2_0_Value="_m8qbJq86EdiEh75YJ_3n8g" UML2_1_Value="Comment-body"/>
+    <Element Name="SendObjectAction-target"
+        UML2_0_Value="_m9nf9q86EdiEh75YJ_3n8g" UML2_1_Value="SendObjectAction-target"/>
+    <Element Name="EClass-eAllAttributes"
+        UML2_0_Value="_m8eOB686EdiEh75YJ_3n8g" UML2_1_Value="EClass-eAllAttributes"/>
+    <Element Name="Package-visibleMembers"
+        UML2_0_Value="_m82ofq86EdiEh75YJ_3n8g" UML2_1_Value="Package-visibleMembers"/>
+    <Element Name="EEList" UML2_0_Value="_EQQPLci3EdqOoq-j0hsILg" UML2_1_Value="EEList"/>
+    <Element Name="Metaclass-base_Class"
+        UML2_0_Value="_9wpJCK86Edih9-GG5afQ0g" UML2_1_Value="Metaclass-base_Class"/>
+    <Element Name="Derive" UML2_0_Value="_9wEhQK86Edih9-GG5afQ0g" UML2_1_Value="Derive"/>
+    <Element Name="Expression" UML2_0_Value="_m9bRs686EdiEh75YJ_3n8g" UML2_1_Value="Expression"/>
+    <Element Name="DirectedRelationship"
+        UML2_0_Value="_m8qbSq86EdiEh75YJ_3n8g" UML2_1_Value="DirectedRelationship"/>
+    <Element Name="Entity" UML2_0_Value="_Fxmuxa87Edih9-GG5afQ0g" UML2_1_Value="Entity"/>
+    <Element Name="Interaction-fragment"
+        UML2_0_Value="_m9neE686EdiEh75YJ_3n8g" UML2_1_Value="Interaction-fragment"/>
+    <Element Name="RaiseExceptionAction"
+        UML2_0_Value="_m9ngxq86EdiEh75YJ_3n8g" UML2_1_Value="RaiseExceptionAction"/>
+    <Element Name="NamedElement-separator-_ownedParameter.0"
+        UML2_0_Value="_h33h6cenEdm17tz62ORDiA" UML2_1_Value="NamedElement-separator-_ownedParameter.0"/>
+    <Element Name="Behavior-context"
+        UML2_0_Value="_m9I8Va86EdiEh75YJ_3n8g" UML2_1_Value="Behavior-context"/>
+    <Element Name="ETreeIterator" UML2_0_Value="_EQQPP8i3EdqOoq-j0hsILg" UML2_1_Value="ETreeIterator"/>
+    <Element Name="NamedElement-clientDependency"
+        UML2_0_Value="_m8qcAa86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-clientDependency"/>
+    <Element Name="MultiplicityElement-lowerValue"
+        UML2_0_Value="_m8qbwK86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-lowerValue"/>
+    <Element Name="TemplateableElement"
+        UML2_0_Value="_m8qbL686EdiEh75YJ_3n8g" UML2_1_Value="TemplateableElement"/>
+    <Element Name="Comment" UML2_0_Value="_m8qbJK86EdiEh75YJ_3n8g" UML2_1_Value="Comment"/>
+    <Element Name="Property-class"
+        UML2_0_Value="_m9C1oa86EdiEh75YJ_3n8g" UML2_1_Value="Property-class"/>
+    <Element Name="Abstraction_Derive"
+        UML2_0_Value="_9wEhQq86Edih9-GG5afQ0g" UML2_1_Value="Abstraction_Derive"/>
+    <Element Name="MessageSort-synchCall"
+        UML2_0_Value="_m9neeK86EdiEh75YJ_3n8g" UML2_1_Value="MessageSort-synchCall"/>
+    <Element Name="Package-elements_public_or_private"
+        UML2_0_Value="_h33iiMenEdm17tz62ORDiA" UML2_1_Value="Package-elements_public_or_private"/>
+    <Element Name="Classifier-maySpecializeType-_ownedParameter.0"
+        UML2_0_Value="_h33jQMenEdm17tz62ORDiA" UML2_1_Value="Classifier-maySpecializeType-_ownedParameter.0"/>
+    <Element Name="SendSignalAction"
+        UML2_0_Value="_m9nf5a86EdiEh75YJ_3n8g" UML2_1_Value="SendSignalAction"/>
+    <Element Name="State-redefinedState"
+        UML2_0_Value="_m9bQA686EdiEh75YJ_3n8g" UML2_1_Value="State-redefinedState"/>
+    <Element Name="OpaqueExpression-result"
+        UML2_0_Value="_m9C2bq86EdiEh75YJ_3n8g" UML2_1_Value="OpaqueExpression-result"/>
+    <Element Name="LoopNode-isTestedFirst"
+        UML2_0_Value="_m9ndza86EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-isTestedFirst"/>
+    <Element Name="LiteralInteger-value"
+        UML2_0_Value="_m9ndOq86EdiEh75YJ_3n8g" UML2_1_Value="LiteralInteger-value"/>
+    <Element Name="ParameterableElement"
+        UML2_0_Value="_m8qbga86EdiEh75YJ_3n8g" UML2_1_Value="ParameterableElement"/>
+    <Element Name="char" UML2_0_Value="_TBlMgK86EdieaYgxtVWN8Q" UML2_1_Value="char"/>
+    <Element Name="Call-base_Usage"
+        UML2_0_Value="_9v-aqK86Edih9-GG5afQ0g" UML2_1_Value="Call-base_Usage"/>
+    <Element Name="TemplateParameter-ownedParameteredElement"
+        UML2_0_Value="_m8qbda86EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameter-ownedParameteredElement"/>
+    <Element Name="Transition" UML2_0_Value="_m9VKGK86EdiEh75YJ_3n8g" UML2_1_Value="Transition"/>
+    <Element Name="ReadVariableAction-result"
+        UML2_0_Value="_m9nfmq86EdiEh75YJ_3n8g" UML2_1_Value="ReadVariableAction-result"/>
+    <Element Name="EClassifier-isInstance-object"
+        UML2_0_Value="_m8eOOa86EdiEh75YJ_3n8g" UML2_1_Value="EClassifier-isInstance-object"/>
+    <Element Name="EStructuralFeature-isTransient"
+        UML2_0_Value="_utHC8a87Edi5QpYeY_yIpg" UML2_1_Value="EStructuralFeature-isTransient"/>
+    <Element Name="Trace-base_Abstraction"
+        UML2_0_Value="_9w7c6K86Edih9-GG5afQ0g" UML2_1_Value="Trace-base_Abstraction"/>
+    <Element Name="Slot" UML2_0_Value="_m9bRnq86EdiEh75YJ_3n8g" UML2_1_Value="Slot"/>
+    <Element Name="ExpansionRegion-outputElement"
+        UML2_0_Value="_m9ngPK86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionRegion-outputElement"/>
+    <Element Name="EFactory-ePackage"
+        UML2_0_Value="_m8kUTq86EdiEh75YJ_3n8g" UML2_1_Value="EFactory-ePackage"/>
+    <Element Name="Class-isActive"
+        UML2_0_Value="_m88u1a86EdiEh75YJ_3n8g" UML2_1_Value="Class-isActive"/>
+    <Element Name="Property-isComposite"
+        UML2_0_Value="_m9C1na86EdiEh75YJ_3n8g" UML2_1_Value="Property-isComposite"/>
+    <Element Name="EStructuralFeature-_generalization.0"
+        UML2_0_Value="_utA8Xa87Edi5QpYeY_yIpg" UML2_1_Value="EStructuralFeature-_generalization.0"/>
+    <Element Name="Component_Entity"
+        UML2_0_Value="_Fxs1Ya87Edih9-GG5afQ0g" UML2_1_Value="Component_Entity"/>
+    <Element Name="VisibilityKind-ReadWriteUnsettable"
+        UML2_0_Value="_LtgO5TmHEdmHabrnfLjH-w" UML2_1_Value="VisibilityKind-ReadWriteUnsettable"/>
+    <Element Name="TemplateParameter-signature"
+        UML2_0_Value="_m8qbc686EdiEh75YJ_3n8g" UML2_1_Value="TemplateParameter-signature"/>
+    <Element Name="ObjectNodeOrderingKind-ordered"
+        UML2_0_Value="_m9bP6686EdiEh75YJ_3n8g" UML2_1_Value="ObjectNodeOrderingKind-ordered"/>
+    <Element Name="LoopNode-decider"
+        UML2_0_Value="_m9nd1a86EdiEh75YJ_3n8g" UML2_1_Value="LoopNode-decider"/>
+    <Element Name="NamedElement-isDistinguishableFrom-n"
+        UML2_0_Value="_m8qcFq86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-isDistinguishableFrom-n"/>
+    <Element Name="ForkNode" UML2_0_Value="_m9ne8a86EdiEh75YJ_3n8g" UML2_1_Value="ForkNode"/>
+    <Element Name="EReference-base_Property"
+        UML2_0_Value="_utNJlK87Edi5QpYeY_yIpg" UML2_1_Value="EReference-base_Property"/>
+    <Element Name="ExpansionKind-iterative"
+        UML2_0_Value="_m9ngQa86EdiEh75YJ_3n8g" UML2_1_Value="ExpansionKind-iterative"/>
+    <Element Name="Property-subsettingContext-_ownedParameter.0"
+        UML2_0_Value="_h4ArhcenEdm17tz62ORDiA" UML2_1_Value="Property-subsettingContext-_ownedParameter.0"/>
+    <Element Name="LiteralString" UML2_0_Value="_m9ndKq86EdiEh75YJ_3n8g" UML2_1_Value="LiteralString"/>
+    <Element Name="Parameter-defaultValue"
+        UML2_0_Value="_m9C2ga86EdiEh75YJ_3n8g" UML2_1_Value="Parameter-defaultValue"/>
+    <Element Name="Classifier-ownedUseCase"
+        UML2_0_Value="_m88vH686EdiEh75YJ_3n8g" UML2_1_Value="Classifier-ownedUseCase"/>
+    <Element Name="ReadIsClassifiedObjectAction"
+        UML2_0_Value="_m9ngYa86EdiEh75YJ_3n8g" UML2_1_Value="ReadIsClassifiedObjectAction"/>
+    <Element Name="PackageImport-importedPackage"
+        UML2_0_Value="_m82oU686EdiEh75YJ_3n8g" UML2_1_Value="PackageImport-importedPackage"/>
+    <Element Name="ExecutionEnvironment"
+        UML2_0_Value="_m9ng2a86EdiEh75YJ_3n8g" UML2_1_Value="ExecutionEnvironment"/>
+    <Element Name="VisibilityKind-private"
+        UML2_0_Value="_m82oKK86EdiEh75YJ_3n8g" UML2_1_Value="VisibilityKind-private"/>
+    <Element Name="RedefinableElement-isRedefinitionContextValid"
+        UML2_0_Value="_m9C1Ya86EdiEh75YJ_3n8g" UML2_1_Value="RedefinableElement-isRedefinitionContextValid"/>
+    <Element Name="ContentKind-Mixed"
+        UML2_0_Value="_usPgSK87Edi5QpYeY_yIpg" UML2_1_Value="ContentKind-Mixed"/>
+    <Element Name="PseudostateKind-initial"
+        UML2_0_Value="_m9bQLq86EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-initial"/>
+    <Element Name="EClassifier-instanceClass"
+        UML2_0_Value="_m8eOMa86EdiEh75YJ_3n8g" UML2_1_Value="EClassifier-instanceClass"/>
+    <Element Name="Action-output" UML2_0_Value="_m9VK6q86EdiEh75YJ_3n8g" UML2_1_Value="Action-output"/>
+    <Element Name="EFactory-create"
+        UML2_0_Value="_m8kUT686EdiEh75YJ_3n8g" UML2_1_Value="EFactory-create"/>
+    <Element Name="ReadLinkObjectEndAction-object"
+        UML2_0_Value="_m9nge686EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndAction-object"/>
+    <Element Name="Artifact_Executable"
+        UML2_0_Value="_Fxs1Zq87Edih9-GG5afQ0g" UML2_1_Value="Artifact_Executable"/>
+    <Element Name="EStructuralFeature-xmlFeatureKind"
+        UML2_0_Value="_utHC9a87Edi5QpYeY_yIpg" UML2_1_Value="EStructuralFeature-xmlFeatureKind"/>
+    <Element Name="CreateLinkObjectAction-result"
+        UML2_0_Value="_m9ngma86EdiEh75YJ_3n8g" UML2_1_Value="CreateLinkObjectAction-result"/>
+    <Element Name="Slot-definingFeature"
+        UML2_0_Value="_m9bRo686EdiEh75YJ_3n8g" UML2_1_Value="Slot-definingFeature"/>
+    <Element Name="EClass-getFeatureID-feature"
+        UML2_0_Value="_h3twncenEdm17tz62ORDiA" UML2_1_Value="EClass-getFeatureID-feature"/>
+    <Element Name="EReference-eOpposite"
+        UML2_0_Value="_m8kUgK86EdiEh75YJ_3n8g" UML2_1_Value="EReference-eOpposite"/>
+    <Element Name="EModelElement-eAnnotations"
+        UML2_0_Value="_m8eN0686EdiEh75YJ_3n8g" UML2_1_Value="EModelElement-eAnnotations"/>
+    <Element Name="AggregationKind-composite"
+        UML2_0_Value="_m9VJaq86EdiEh75YJ_3n8g" UML2_1_Value="AggregationKind-composite"/>
+    <Element Name="ReadVariableAction"
+        UML2_0_Value="_m9nfmK86EdiEh75YJ_3n8g" UML2_1_Value="ReadVariableAction"/>
+    <Element Name="EDataType" UML2_0_Value="_usbti687Edi5QpYeY_yIpg" UML2_1_Value="EDataType"/>
+    <Element Name="EEnum-_generalization.0"
+        UML2_0_Value="_usn6xa87Edi5QpYeY_yIpg" UML2_1_Value="EEnum-_generalization.0"/>
+    <Element Name="Focus-base_Class"
+        UML2_0_Value="_9wW1Iq86Edih9-GG5afQ0g" UML2_1_Value="Focus-base_Class"/>
+    <Element Name="Parameter-isException"
+        UML2_0_Value="_m9C2g686EdiEh75YJ_3n8g" UML2_1_Value="Parameter-isException"/>
+    <Element Name="EStructuralFeature-visibility"
+        UML2_0_Value="_LtgO5jmHEdmHabrnfLjH-w" UML2_1_Value="EStructuralFeature-visibility"/>
+    <Element Name="Transition-redefinedTransition"
+        UML2_0_Value="_m9VKHq86EdiEh75YJ_3n8g" UML2_1_Value="Transition-redefinedTransition"/>
+    <Element Name="MessageKind-lost"
+        UML2_0_Value="_m9nedK86EdiEh75YJ_3n8g" UML2_1_Value="MessageKind-lost"/>
+    <Element Name="int" UML2_0_Value="_TBlMg686EdieaYgxtVWN8Q" UML2_1_Value="int"/>
+    <Element Name="Namespace-elementImport"
+        UML2_0_Value="_m8whj686EdiEh75YJ_3n8g" UML2_1_Value="Namespace-elementImport"/>
+    <Element Name="File" UML2_0_Value="_Fxy8Aq87Edih9-GG5afQ0g" UML2_1_Value="File"/>
+    <Element Name="Extension-metaclass"
+        UML2_0_Value="_m9bRaq86EdiEh75YJ_3n8g" UML2_1_Value="Extension-metaclass"/>
+    <Element Name="GeneralizationSet"
+        UML2_0_Value="_m9C1h686EdiEh75YJ_3n8g" UML2_1_Value="GeneralizationSet"/>
+    <Element Name="EOperation-operationName"
+        UML2_0_Value="_us6Opa87Edi5QpYeY_yIpg" UML2_1_Value="EOperation-operationName"/>
+    <Element Name="Realization-base_Classifier"
+        UML2_0_Value="_FyFP4a87Edih9-GG5afQ0g" UML2_1_Value="Realization-base_Classifier"/>
+    <Element Name="CreateLinkAction"
+        UML2_0_Value="_m9nfga86EdiEh75YJ_3n8g" UML2_1_Value="CreateLinkAction"/>
+    <Element Name="Parameter_EParameter"
+        UML2_0_Value="_utA8Uq87Edi5QpYeY_yIpg" UML2_1_Value="Parameter_EParameter"/>
+    <Element Name="EAnnotation-source"
+        UML2_0_Value="_m8kUmK86EdiEh75YJ_3n8g" UML2_1_Value="EAnnotation-source"/>
+    <Element Name="Lifeline" UML2_0_Value="_m9neLK86EdiEh75YJ_3n8g" UML2_1_Value="Lifeline"/>
+    <Element Name="ReadIsClassifiedObjectAction-result"
+        UML2_0_Value="_m9ngZq86EdiEh75YJ_3n8g" UML2_1_Value="ReadIsClassifiedObjectAction-result"/>
+    <Element Name="EStringToStringMapEntry-value"
+        UML2_0_Value="_m8kUqq86EdiEh75YJ_3n8g" UML2_1_Value="EStringToStringMapEntry-value"/>
+    <Element Name="EnumerationLiteral_EEnumLiteral"
+        UML2_0_Value="_us0IAK87Edi5QpYeY_yIpg" UML2_1_Value="EnumerationLiteral_EEnumLiteral"/>
+    <Element Name="ParameterSet-parameter"
+        UML2_0_Value="_m9PCoq86EdiEh75YJ_3n8g" UML2_1_Value="ParameterSet-parameter"/>
+    <Element Name="Model_Metamodel-extension_Metamodel"
+        UML2_0_Value="_O1-5Uq87Edih9-GG5afQ0g" UML2_1_Value="Model_Metamodel-extension_Metamodel"/>
+    <Element Name="Specification-base_Classifier"
+        UML2_0_Value="_FyLWg687Edih9-GG5afQ0g" UML2_1_Value="Specification-base_Classifier"/>
+    <Element Name="Framework-base_Package"
+        UML2_0_Value="_9wc7w686Edih9-GG5afQ0g" UML2_1_Value="Framework-base_Package"/>
+    <Element Name="EClass-getFeatureID-_ownedParameter.0"
+        UML2_0_Value="_h3twnMenEdm17tz62ORDiA" UML2_1_Value="EClass-getFeatureID-_ownedParameter.0"/>
+    <Element Name="Classifier-specialize_type"
+        UML2_0_Value="_h33jKMenEdm17tz62ORDiA" UML2_1_Value="Classifier-specialize_type"/>
+    <Element Name="TimeObservation-firstEvent"
+        UML2_0_Value="_m9ng9K86EdiEh75YJ_3n8g" UML2_1_Value="TimeObservation-firstEvent"/>
+    <Element Name="Property-owningAssociation"
+        UML2_0_Value="_m9C1qa86EdiEh75YJ_3n8g" UML2_1_Value="Property-owningAssociation"/>
+    <Element Name="ContentKind-Unspecified"
+        UML2_0_Value="_usPgRa87Edi5QpYeY_yIpg" UML2_1_Value="ContentKind-Unspecified"/>
+    <Element Name="Component_BuildComponent-extension_BuildComponent"
+        UML2_0_Value="_9vsGxq86Edih9-GG5afQ0g" UML2_1_Value="Component_BuildComponent-extension_BuildComponent"/>
+    <Element Name="ReadLinkAction-result"
+        UML2_0_Value="_m9nfcq86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkAction-result"/>
+    <Element Name="InstanceValue" UML2_0_Value="_m9ndSK86EdiEh75YJ_3n8g" UML2_1_Value="InstanceValue"/>
+    <Element Name="PackageMerge-receivingPackage"
+        UML2_0_Value="_m82omq86EdiEh75YJ_3n8g" UML2_1_Value="PackageMerge-receivingPackage"/>
+    <Element Name="ReadLinkObjectEndAction-end"
+        UML2_0_Value="_m9ngfK86EdiEh75YJ_3n8g" UML2_1_Value="ReadLinkObjectEndAction-end"/>
+    <Element Name="Operation-type"
+        UML2_0_Value="_m9I8Ba86EdiEh75YJ_3n8g" UML2_1_Value="Operation-type"/>
+    <Element Name="MultiplicityElement-isMultivalued-_ownedParameter.0"
+        UML2_0_Value="_h33hmMenEdm17tz62ORDiA" UML2_1_Value="MultiplicityElement-isMultivalued-_ownedParameter.0"/>
+    <Element Name="Interface" UML2_0_Value="_m9VJoq86EdiEh75YJ_3n8g" UML2_1_Value="Interface"/>
+    <Element Name="Auxiliary-base_Class"
+        UML2_0_Value="_9vsGwq86Edih9-GG5afQ0g" UML2_1_Value="Auxiliary-base_Class"/>
+    <Element Name="ModelLibrary" UML2_0_Value="_9wpJCa86Edih9-GG5afQ0g" UML2_1_Value="ModelLibrary"/>
+    <Element Name="EParameter" UML2_0_Value="_utA8UK87Edi5QpYeY_yIpg" UML2_1_Value="EParameter"/>
+    <Element Name="Responsibility-base_Usage"
+        UML2_0_Value="_9w1WQq86Edih9-GG5afQ0g" UML2_1_Value="Responsibility-base_Usage"/>
+    <Element Name="Package-makesVisible-el"
+        UML2_0_Value="_m82ogq86EdiEh75YJ_3n8g" UML2_1_Value="Package-makesVisible-el"/>
+    <Element Name="PrimitiveType" UML2_0_Value="_m9bRsa86EdiEh75YJ_3n8g" UML2_1_Value="PrimitiveType"/>
+    <Element Name="EAnnotation" UML2_0_Value="_m8kUlq86EdiEh75YJ_3n8g" UML2_1_Value="EAnnotation"/>
+    <Element Name="FeatureKind-Attribute"
+        UML2_0_Value="_utA8Wq87Edi5QpYeY_yIpg" UML2_1_Value="FeatureKind-Attribute"/>
+    <Element Name="EIntegerObject"
+        UML2_0_Value="_EQQPNMi3EdqOoq-j0hsILg" UML2_1_Value="EIntegerObject"/>
+    <Element Name="InteractionOperatorKind-alt"
+        UML2_0_Value="_m9ngEa86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperatorKind-alt"/>
+    <Element Name="Extension-isRequired"
+        UML2_0_Value="_m9bRaK86EdiEh75YJ_3n8g" UML2_1_Value="Extension-isRequired"/>
+    <Element Name="EObject-eIsProxy"
+        UML2_0_Value="_m8eN3K86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eIsProxy"/>
+    <Element Name="EObject-eGet.1-_ownedParameter.0"
+        UML2_0_Value="_h3j_9MenEdm17tz62ORDiA" UML2_1_Value="EObject-eGet.1-_ownedParameter.0"/>
+    <Element Name="Clause" UML2_0_Value="_m9ndrq86EdiEh75YJ_3n8g" UML2_1_Value="Clause"/>
+    <Element Name="Package_ModelLibrary"
+        UML2_0_Value="_9wvPoK86Edih9-GG5afQ0g" UML2_1_Value="Package_ModelLibrary"/>
+    <Element Name="ExtensionEnd" UML2_0_Value="_m9ndTa86EdiEh75YJ_3n8g" UML2_1_Value="ExtensionEnd"/>
+    <Element Name="Lifeline-represents"
+        UML2_0_Value="_m9neLq86EdiEh75YJ_3n8g" UML2_1_Value="Lifeline-represents"/>
+    <Element Name="InteractionOperand-fragment"
+        UML2_0_Value="_m9nesK86EdiEh75YJ_3n8g" UML2_1_Value="InteractionOperand-fragment"/>
+    <Element Name="Activity" UML2_0_Value="_m9VKYK86EdiEh75YJ_3n8g" UML2_1_Value="Activity"/>
+    <Element Name="DirectedRelationship-source"
+        UML2_0_Value="_m8qbTK86EdiEh75YJ_3n8g" UML2_1_Value="DirectedRelationship-source"/>
+    <Element Name="EClass-getFeatureID"
+        UML2_0_Value="_h3twm8enEdm17tz62ORDiA" UML2_1_Value="EClass-getFeatureID"/>
+    <Element Name="Parameter-operation"
+        UML2_0_Value="_m9C2e686EdiEh75YJ_3n8g" UML2_1_Value="Parameter-operation"/>
+    <Element Name="Action-localPrecondition"
+        UML2_0_Value="_m9VK8q86EdiEh75YJ_3n8g" UML2_1_Value="Action-localPrecondition"/>
+    <Element Name="Source-base_Artifact"
+        UML2_0_Value="_FyFP6687Edih9-GG5afQ0g" UML2_1_Value="Source-base_Artifact"/>
+    <Element Name="ModelLibrary-base_Package"
+        UML2_0_Value="_9wvPo686Edih9-GG5afQ0g" UML2_1_Value="ModelLibrary-base_Package"/>
+    <Element Name="Subsystem" UML2_0_Value="_FyLWhK87Edih9-GG5afQ0g" UML2_1_Value="Subsystem"/>
+    <Element Name="InteractionFragment"
+        UML2_0_Value="_m9neG686EdiEh75YJ_3n8g" UML2_1_Value="InteractionFragment"/>
+    <Element Name="WriteVariableAction-value"
+        UML2_0_Value="_m9nfoa86EdiEh75YJ_3n8g" UML2_1_Value="WriteVariableAction-value"/>
+    <Element Name="Generalization-generalizationSet"
+        UML2_0_Value="_m9C1eq86EdiEh75YJ_3n8g" UML2_1_Value="Generalization-generalizationSet"/>
+    <Element Name="EFactory-convertToString-_ownedParameter.0"
+        UML2_0_Value="_h3j_2senEdm17tz62ORDiA" UML2_1_Value="EFactory-convertToString-_ownedParameter.0"/>
+    <Element Name="EClass-base_Interface"
+        UML2_0_Value="_usbth687Edi5QpYeY_yIpg" UML2_1_Value="EClass-base_Interface"/>
+    <Element Name="EClass-eOperations"
+        UML2_0_Value="_m8eOBK86EdiEh75YJ_3n8g" UML2_1_Value="EClass-eOperations"/>
+    <Element Name="Class_EClass" UML2_0_Value="_usbtgK87Edi5QpYeY_yIpg" UML2_1_Value="Class_EClass"/>
+    <Element Name="EStructuralFeature-xmlNamespace"
+        UML2_0_Value="_utHC9K87Edi5QpYeY_yIpg" UML2_1_Value="EStructuralFeature-xmlNamespace"/>
+    <Element Name="Port" UML2_0_Value="_m9VKQa86EdiEh75YJ_3n8g" UML2_1_Value="Port"/>
+    <Element Name="Port-isService"
+        UML2_0_Value="_m9VKRa86EdiEh75YJ_3n8g" UML2_1_Value="Port-isService"/>
+    <Element Name="Executable-base_Artifact"
+        UML2_0_Value="_Fxy8Aa87Edih9-GG5afQ0g" UML2_1_Value="Executable-base_Artifact"/>
+    <Element Name="Abstraction_Trace"
+        UML2_0_Value="_9w7c5a86Edih9-GG5afQ0g" UML2_1_Value="Abstraction_Trace"/>
+    <Element Name="EObject-eContainer"
+        UML2_0_Value="_m8eN4K86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eContainer"/>
+    <Element Name="Property-isDerived"
+        UML2_0_Value="_m9C1n686EdiEh75YJ_3n8g" UML2_1_Value="Property-isDerived"/>
+    <Element Name="Artifact_Source-extension_Source"
+        UML2_0_Value="_FyFP6a87Edih9-GG5afQ0g" UML2_1_Value="Artifact_Source-extension_Source"/>
+    <Element Name="ActivityEdge-activity"
+        UML2_0_Value="_m9VKj686EdiEh75YJ_3n8g" UML2_1_Value="ActivityEdge-activity"/>
+    <Element Name="PseudostateKind-deepHistory"
+        UML2_0_Value="_m9bQL686EdiEh75YJ_3n8g" UML2_1_Value="PseudostateKind-deepHistory"/>
+    <Element Name="ActivityParameterNode-parameter"
+        UML2_0_Value="_m9ndla86EdiEh75YJ_3n8g" UML2_1_Value="ActivityParameterNode-parameter"/>
+    <Element Name="Class_Metaclass"
+        UML2_0_Value="_9wpJBa86Edih9-GG5afQ0g" UML2_1_Value="Class_Metaclass"/>
+    <Element Name="EPackage-eClassifiers"
+        UML2_0_Value="_m8kURa86EdiEh75YJ_3n8g" UML2_1_Value="EPackage-eClassifiers"/>
+    <Element Name="ValueSpecification-booleanValue-_ownedParameter.0"
+        UML2_0_Value="_h33hwcenEdm17tz62ORDiA" UML2_1_Value="ValueSpecification-booleanValue-_ownedParameter.0"/>
+    <Element Name="Property-subsettingContext"
+        UML2_0_Value="_m9C12686EdiEh75YJ_3n8g" UML2_1_Value="Property-subsettingContext"/>
+    <Element Name="EObject-eGet-feature"
+        UML2_0_Value="_m8eN7q86EdiEh75YJ_3n8g" UML2_1_Value="EObject-eGet-feature"/>
+    <Element Name="Operation-ownedParameter"
+        UML2_0_Value="_m9C2o686EdiEh75YJ_3n8g" UML2_1_Value="Operation-ownedParameter"/>
+    <Element Name="Message-connector"
+        UML2_0_Value="_m9neZK86EdiEh75YJ_3n8g" UML2_1_Value="Message-connector"/>
+    <Element Name="RedefinableElement"
+        UML2_0_Value="_m88vXa86EdiEh75YJ_3n8g" UML2_1_Value="RedefinableElement"/>
+    <Element Name="CallOperationAction-target"
+        UML2_0_Value="_m9ngA686EdiEh75YJ_3n8g" UML2_1_Value="CallOperationAction-target"/>
+    <Element Name="Lifeline-selector"
+        UML2_0_Value="_m9neMK86EdiEh75YJ_3n8g" UML2_1_Value="Lifeline-selector"/>
+    <Element Name="NamedElement-nameExpression"
+        UML2_0_Value="_m8qcCK86EdiEh75YJ_3n8g" UML2_1_Value="NamedElement-nameExpression"/>
+    <Element Name="EStructuralFeature"
+        UML2_0_Value="_utA8XK87Edi5QpYeY_yIpg" UML2_1_Value="EStructuralFeature"/>
+    <Element Name="Namespace" UML2_0_Value="_m8whhK86EdiEh75YJ_3n8g" UML2_1_Value="Namespace"/>
+    <Element Name="EClass-className"
+        UML2_0_Value="_usbtia87Edi5QpYeY_yIpg" UML2_1_Value="EClass-className"/>
+    <Element Name="Association" UML2_0_Value="_m9VJSq86EdiEh75YJ_3n8g" UML2_1_Value="Association"/>
+    <Element Name="ConnectorEnd" UML2_0_Value="_m9C1-K86EdiEh75YJ_3n8g" UML2_1_Value="ConnectorEnd"/>
+    <Element Name="Manifestation" UML2_0_Value="_m9C2Wa86EdiEh75YJ_3n8g" UML2_1_Value="Manifestation"/>
+    <Element Name="Element-allOwnedElements-_ownedParameter.0"
+        UML2_0_Value="_h3txacenEdm17tz62ORDiA" UML2_1_Value="Element-allOwnedElements-_ownedParameter.0"/>
+    <Element Name="ActivityGroup-inActivity"
+        UML2_0_Value="_m9VKt686EdiEh75YJ_3n8g" UML2_1_Value="ActivityGroup-inActivity"/>
+    <Element Name="GeneralizationSet-powertype"
+        UML2_0_Value="_m9C1ja86EdiEh75YJ_3n8g" UML2_1_Value="GeneralizationSet-powertype"/>
+    <Element Name="Pseudostate" UML2_0_Value="_m9bQKa86EdiEh75YJ_3n8g" UML2_1_Value="Pseudostate"/>
+    <Element Name="ENamedElement" UML2_0_Value="_ur9MZq87Edi5QpYeY_yIpg" UML2_1_Value="ENamedElement"/>
+    <Element Name="ETypedElement-unique"
+        UML2_0_Value="_m8eNwa86EdiEh75YJ_3n8g" UML2_1_Value="ETypedElement-unique"/>
+    <Element Name="Port-protocol" UML2_0_Value="_m9VKUK86EdiEh75YJ_3n8g" UML2_1_Value="Port-protocol"/>
+    <Element Name="EAttribute-eAttributeType"
+        UML2_0_Value="_m8eNpq86EdiEh75YJ_3n8g" UML2_1_Value="EAttribute-eAttributeType"/>
+    <Element Name="ValuePin-value"
+        UML2_0_Value="_m9nhNK86EdiEh75YJ_3n8g" UML2_1_Value="ValuePin-value"/>
+    <Element Name="ObjectFlow-transformation"
+        UML2_0_Value="_m9ndfa86EdiEh75YJ_3n8g" UML2_1_Value="ObjectFlow-transformation"/>
+    <Element Name="TimeConstraint"
+        UML2_0_Value="_m9nhIK86EdiEh75YJ_3n8g" UML2_1_Value="TimeConstraint"/>
+    <Element Name="NamedElement-visibility_needs_ownership"
+        UML2_0_Value="_h33h7MenEdm17tz62ORDiA" UML2_1_Value="NamedElement-visibility_needs_ownership"/>
+    <Element Name="ReclassifyObjectAction-oldClassifier"
+        UML2_0_Value="_m9ngUq86EdiEh75YJ_3n8g" UML2_1_Value="ReclassifyObjectAction-oldClassifier"/>
+    <Element Name="MultiplicityElement-isUnique"
+        UML2_0_Value="_m8qbuK86EdiEh75YJ_3n8g" UML2_1_Value="MultiplicityElement-isUnique"/>
+    <Element Name="Classifier-no_cycles_in_generalization"
+        UML2_0_Value="_h33jJMenEdm17tz62ORDiA" UML2_1_Value="Classifier-no_cycles_in_generalization"/>
+    <Element Name="StateMachine-extendedStateMachine"
+        UML2_0_Value="_m9VJ6K86EdiEh75YJ_3n8g" UML2_1_Value="StateMachine-extendedStateMachine"/>
+    <Element Name="EReference-container"
+        UML2_0_Value="_m8kUfK86EdiEh75YJ_3n8g" UML2_1_Value="EReference-container"/>
+</UMLMapping>

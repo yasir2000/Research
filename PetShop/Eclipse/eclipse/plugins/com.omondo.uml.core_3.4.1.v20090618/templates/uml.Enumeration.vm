@@ -1,0 +1,36 @@
+#set( $this = $JavaTool.getHelper($uml) )
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+ */
+$JavaTool.modifiers($this) enum ${this.name} #if( ${this.superInterfaces.size()} > 0 )
+ implements $JavaTool.types($this.superInterfaces, ", ")#end
+{
+## literals
+#set ( $last = $this.literals.size() - 1 ) 
+#if( $last >= 0 )
+#foreach( $index in [0..$last] )
+$this.literals.get($index).getCode("	")#if ($index != $last),#else;
+#end
+#end
+#end
+## methods
+#foreach( $operation in ${this.operations} )
+$operation.getCode("	")
+#end
+## attribute
+#foreach( $property in ${this.properties} )
+$property.getCode("	")
+#end
+## classes
+#foreach( $innerClass in ${this.classes} )
+$innerClass.getCode("	")
+#end
+}

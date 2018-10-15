@@ -1,0 +1,30 @@
+	------
+	Current Features
+	------
+	Gonzalo Espert
+	------
+	Oct 29, 2007
+
+Feature Summary
+
+  The following are the key features of Provisioner in a nutshell:
+
+ * LDAPv3 provisioning service targets support
+ 
+ * SSH2 provisioning service targets support
+
+ * Telnet provisioning service targets support
+
+ * SQL requesting authorities support
+
+ * SOAP provisioning service targets support
+ 
+ * Configurable routing rules
+ 
+ * Configurable business rules
+ 
+ * Multithreading processing
+ 
+ * Internationalization (Only English and Deutch partially implemented at the moment)
+ 
+ * Pre-integrated vendor-specific adaptors for VoIP, Email, Voicemail and IMS application servers

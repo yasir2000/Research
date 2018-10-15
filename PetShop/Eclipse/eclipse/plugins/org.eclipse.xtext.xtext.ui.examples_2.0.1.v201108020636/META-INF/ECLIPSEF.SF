@@ -1,0 +1,83 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: 9O3+KgL5/6d/CtC9va/65OR73sU=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: oXhTn1fcF0MQ1/9agOyaYHBBMq8=
+
+Name: contents/org.eclipse.xtext.example.domainmodel.ui.zip
+SHA1-Digest: W5CNkFeHZQY3jFHDU9eL3FahjSQ=
+
+Name: .settings/org.eclipse.pde.prefs
+SHA1-Digest: ObbxYufpQ1u4wUKs64gKcdVjysw=
+
+Name: contents/org.eclipse.xtext.example.arithmetics.zip
+SHA1-Digest: uRPJre2OM4Zu6H+iS4lLocLCZPo=
+
+Name: plugin.properties
+SHA1-Digest: +H8HehERRUHrAZGTxv0PWfhuC70=
+
+Name: contents/org.eclipse.xtext.example.fowlerdsl.zip
+SHA1-Digest: B9/mtGd2k0AKiL2rSUMgxe7i0GQ=
+
+Name: contents/org.eclipse.xtext.example.xtend.tutorial.zip
+SHA1-Digest: 06w3VAhl0H/+lfp6mcE80smV/Ow=
+
+Name: contents/org.eclipse.xtext.example.domainmodel.tests.zip
+SHA1-Digest: 1dhGbmPzfYl2iiyYaCkaETL/qig=
+
+Name: .settings/org.eclipse.jdt.ui.prefs
+SHA1-Digest: nRyBWEy0shN3B9WZMqj0cJbEadA=
+
+Name: plugin.xml
+SHA1-Digest: TEdFq/hQJV2F1HU8Y+b3f7SPzbM=
+
+Name: contents/org.eclipse.xtext.example.arithmetics.ui.zip
+SHA1-Digest: YnEbpBH5mjx25M8LOCbpy6IvJ+w=
+
+Name: .settings/org.eclipse.jdt.core.prefs
+SHA1-Digest: vOlD4s9W1fculvyfNoYk9UiqrB0=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: contents/org.eclipse.xtext.example.domainmodel.zip
+SHA1-Digest: oHpOnUVZOW25OUFJ22vjst3Dy2w=
+
+Name: .settings/org.eclipse.core.resources.prefs
+SHA1-Digest: GjQe3RxmIv+U1laWZOquLvBp9Fc=
+
+Name: contents/org.eclipse.xtext.example.ecoredsl.ui.zip
+SHA1-Digest: jolv2W7CifbMRoYnAZEIdqMBIv8=
+
+Name: contents/org.eclipse.xtext.example.xbase.tutorial.zip
+SHA1-Digest: K52XRPqwYvL0pYEVPdXzyl1fm+o=
+
+Name: .project
+SHA1-Digest: GAg3b7G58soLKv1zKvkzxfEtN64=
+
+Name: about.html
+SHA1-Digest: ndvVw5+urNOEMhFEsasUKrpQYII=
+
+Name: .settings/org.eclipse.jdt.launching.prefs
+SHA1-Digest: JpEbMgPonDRBH34Y27wvgQfU528=
+
+Name: .classpath
+SHA1-Digest: Mwulsl4ZpM8E5Z6Kbq3pLUgFbes=
+
+Name: build.properties
+SHA1-Digest: qxipazRP+tMDrhOUYiE/9WcUHn8=
+
+Name: icons/genproject.gif
+SHA1-Digest: SPEb+m5buGEc7dcLjOv5+BWOb9M=
+
+Name: contents/org.eclipse.xtext.example.domainmodel.ui.tests.zip
+SHA1-Digest: KDNzE86mKQ/csKEi7f/dX7twppU=
+
+Name: contents/org.eclipse.xtext.example.fowlerdsl.ui.zip
+SHA1-Digest: XwYYxD8RVXPuzffSBcJv7x+Rs5w=
+
+Name: contents/org.eclipse.xtext.example.arithmetics.tests.zip
+SHA1-Digest: 0ubDoCX+KGDbu6OxrHFaRr0U8qU=
+
+Name: contents/org.eclipse.xtext.example.ecoredsl.zip
+SHA1-Digest: /nuFCIs/t7OKynIBN5nXOmWUQKU=
+

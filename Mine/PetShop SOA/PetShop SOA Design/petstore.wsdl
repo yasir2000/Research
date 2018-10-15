@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns="petstore"  xmlns:ActiveGridKeyService="http://webservices.activegrid.com/AgKeyGeneratorService/2005-06-13"  xmlns:ag="http://www.activegrid.com/ag.xsd"  xmlns:asdasdaqsd.xsd="asdasdaqsd"  xmlns:asdasdasd.xsd="asdasdasd"  xmlns:session="petstore.wsdl"  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"  xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="petstore.wsdl" ag:version="10" ag:wsdlType="application">
+  <wsdl:types>
+    <xs:schema targetNamespace="petstore.wsdl" ag:editorBounds="[125.0,40.0,100,50]" ag:version="10">
+      <xs:complexType name="signoninfo" ag:editorBounds="[160.0,30,100.0,97.0]">
+        <xs:sequence>
+          <xs:element name="userid" type="xs:string" default="ag" ag:label="User Name"/>
+          <xs:element name="password" type="xs:string" default="ag" ag:label="Password"/>
+          <xs:element name="remember" type="xs:boolean" default="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sessioninfo" ag:editorBounds="[290.0,30,100.0,73.0]">
+        <xs:sequence>
+          <xs:element name="userid" type="xs:string" default="ag"/>
+          <xs:element name="orderid" type="xs:integer"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="newuserinfo" ag:editorBounds="[750.0,30,100.0,49.0]">
+        <xs:sequence>
+          <xs:element name="isnewuser" type="xs:boolean" default="false"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="search" ag:editorBounds="[550.0,30,100.0,49.0]">
+        <xs:sequence>
+          <xs:element name="query" type="xs:string" ag:length="15"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="newcustomer" ag:editorBounds="[680.0,30,100.0,97.0]">
+        <xs:sequence>
+          <xs:element name="userid" type="xs:string" minOccurs="0" ag:length="20"/>
+          <xs:element name="password" type="xs:string" minOccurs="0" ag:length="20"/>
+          <xs:element name="repeatpassword" type="xs:string" minOccurs="0" ag:length="20"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ag:schemaOptions>
+            <ag:complexTypeNameAlg objtype="int">6</ag:complexTypeNameAlg>
+            <ag:dataPageSize objtype="int">50</ag:dataPageSize>
+            <ag:elementNameAlg objtype="int">7</ag:elementNameAlg>
+            <ag:schemaVersion objtype="int">1</ag:schemaVersion>
+          </ag:schemaOptions>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="HomePageMsg">
+    <wsdl:part name="bird" type="category"/>
+    <wsdl:part name="cat" type="category"/>
+    <wsdl:part name="dog" type="category"/>
+    <wsdl:part name="fish" type="category"/>
+    <wsdl:part name="reptile" type="category"/>
+  </wsdl:message>
+  <wsdl:message name="CartMsg">
+    <wsdl:part name="currentorder" type="orders"/>
+    <wsdl:part name="cart" type="lineitem"/>
+  </wsdl:message>
+  <wsdl:message name="OrderMsg">
+    <wsdl:part name="order" type="orders"/>
+  </wsdl:message>
+  <wsdl:message name="CheckOutMsg">
+    <wsdl:part name="currentorder" type="orders"/>
+    <wsdl:part name="states" type="state"/>
+  </wsdl:message>
+  <wsdl:message name="OrderCompleteMsg">
+    <wsdl:part name="currentorder" type="orders"/>
+  </wsdl:message>
+  <wsdl:message name="ItemMsg">
+    <wsdl:part name="item" type="item"/>
+  </wsdl:message>
+  <wsdl:message name="LineItemMsg">
+    <wsdl:part name="lineitem" type="lineitem"/>
+  </wsdl:message>
+  <wsdl:message name="SearchMsg">
+    <wsdl:part name="search" type="session:search"/>
+    <wsdl:part name="items" type="item"/>
+  </wsdl:message>
+  <wsdl:message name="CategoryMsg">
+    <wsdl:part name="category" type="category"/>
+    <wsdl:part name="products" type="product"/>
+  </wsdl:message>
+  <wsdl:message name="ProductMsg">
+    <wsdl:part name="product" type="product"/>
+    <wsdl:part name="items" type="item"/>
+  </wsdl:message>
+  <wsdl:message name="SignOnMsg">
+    <wsdl:part name="signoninfo" type="session:signoninfo"/>
+    <wsdl:part name="newcustomer" type="session:newcustomer"/>
+  </wsdl:message>
+  <wsdl:message name="PageFrameMsg">
+    <wsdl:part name="search" type="session:search"/>
+    <wsdl:part name="categories" type="category"/>
+    <wsdl:part name="mylist" type="product"/>
+  </wsdl:message>
+  <wsdl:message name="InitSessionRequestMsg"/>
+  <wsdl:message name="InitSessionResponseMsg"/>
+  <wsdl:message name="AddToCartRequestMsg">
+    <wsdl:part name="item" type="item"/>
+  </wsdl:message>
+  <wsdl:message name="AddToCartResponseMsg"/>
+  <wsdl:message name="InitCheckOutRequestMsg">
+    <wsdl:part name="currentorder" type="orders"/>
+  </wsdl:message>
+  <wsdl:message name="InitCheckOutResponseMsg">
+    <wsdl:part name="currentorder" type="orders"/>
+  </wsdl:message>
+  <wsdl:message name="SignonRequestMsg">
+    <wsdl:part name="signoninfo" type="session:signoninfo"/>
+  </wsdl:message>
+  <wsdl:message name="SignonResponseMsg"/>
+  <wsdl:message name="RegisterRequestMsg">
+    <wsdl:part name="newcustomer" type="session:newcustomer"/>
+  </wsdl:message>
+  <wsdl:message name="RegisterResponseMsg"/>
+  <wsdl:message name="InitializeNewAccountRequestMsg">
+    <wsdl:part name="account" type="account"/>
+  </wsdl:message>
+  <wsdl:message name="InitializeNewAccountResponseMsg">
+    <wsdl:part name="account" type="account"/>
+  </wsdl:message>
+  <wsdl:message name="accountSearchMsg">
+    <wsdl:part name="account" type="account"/>
+  </wsdl:message>
+  <wsdl:message name="accountListMsg">
+    <wsdl:part name="account" type="account"/>
+  </wsdl:message>
+  <wsdl:message name="accountDetailMsg">
+    <wsdl:part name="account" type="account"/>
+  </wsdl:message>
+  <wsdl:message name="accountEditMsg">
+    <wsdl:part name="account" type="account"/>
+  </wsdl:message>
+  <wsdl:message name="accountInsertMsg">
+    <wsdl:part name="account" type="account"/>
+    <wsdl:part name="newuserinfo" type="session:NewUserInfo"/>
+  </wsdl:message>
+  <wsdl:message name="SignedOffMsg">
+    <wsdl:part name="users" type="xs:string"/>
+  </wsdl:message>
+  <wsdl:portType name="PetstorePortType">
+    <wsdl:operation name="initSession">
+      <wsdl:input message="session:InitSessionRequestMsg"/>
+      <wsdl:output message="session:InitSessionResponseMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="addToCart">
+      <wsdl:input message="session:AddToCartRequestMsg"/>
+      <wsdl:output message="session:AddToCartResponseMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="initCheckOut">
+      <wsdl:input message="session:InitCheckOutRequestMsg"/>
+      <wsdl:output message="session:InitCheckOutResponseMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="signon">
+      <wsdl:input message="session:SignonRequestMsg"/>
+      <wsdl:output message="session:SignonResponseMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="register">
+      <wsdl:input message="session:RegisterRequestMsg"/>
+      <wsdl:output message="session:RegisterResponseMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="initializeNewAccount">
+      <wsdl:input message="session:InitializeNewAccountRequestMsg"/>
+      <wsdl:output message="session:InitializeNewAccountResponseMsg"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

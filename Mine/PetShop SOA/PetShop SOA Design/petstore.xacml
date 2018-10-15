@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ag:identity xmlns:ag="http://www.activegrid.com/ag.xsd" pluginType="db" rbacEnabled="false">
+  <ag:base>users</ag:base>
+  <ag:isPasswordHashed objtype="bool">False</ag:isPasswordHashed>
+  <ag:loginattrname>U_NAME</ag:loginattrname>
+  <ag:passwordattrname>U_PASSWORD</ag:passwordattrname>
+</ag:identity>

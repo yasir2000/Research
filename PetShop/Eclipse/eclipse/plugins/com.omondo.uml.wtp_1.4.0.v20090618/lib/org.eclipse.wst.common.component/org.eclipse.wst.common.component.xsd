@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="project-modules" type="project-modulesType"/>
+  <xs:complexType name="wb-moduleType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="propertyType" name="property"/>
+      <xs:element type="wb-resourceType" name="wb-resource"/>
+      <xs:element type="dependent-moduleType" name="dependent-module" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="deploy-name"/>
+  </xs:complexType>
+  <xs:complexType name="propertyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="context-root" use="optional"/>
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="project-modulesType">
+    <xs:sequence>
+      <xs:element type="wb-moduleType" name="wb-module"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+    <xs:attribute type="xs:string" name="project-version"/>
+  </xs:complexType>
+  <xs:complexType name="wb-resourceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="deploy-path" use="optional"/>
+        <xs:attribute type="xs:string" name="source-path" use="optional"/>
+        <xs:attribute type="xs:string" name="context-root" use="optional"/>
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="dependent-moduleType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="dependency-type"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="deploy-path" use="optional"/>
+    <xs:attribute type="xs:string" name="handle" use="optional"/>
+  </xs:complexType>
+</xs:schema>

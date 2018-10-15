@@ -1,0 +1,1 @@
+inst2xsd project.facet.xsd org.eclipse.wst.common.project.facet.core.xml

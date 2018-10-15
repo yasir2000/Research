@@ -1,0 +1,11 @@
+<services xmlns="http://services.org">
+  <description>
+  	Route table name and routing data key for each service.
+  </description>
+  <service name="Internet" routing_table="internet_routing.xml" routing_data="zone"/>
+  <service name="Line" routing_table="line_routing.xml" routing_data="numero_linea"/>
+  <service name="Email" routing_table="email_routing.xml" routing_data="zone"/>
+  <service name="Voicemail" routing_table="voicemail_routing.xml" routing_data="numero_linea"/>
+  <service name="Script" routing_table="scripts_routing.xml" routing_data="line"/>
+  <service name="LDAP_service" routing_table="ldap_routing.xml" routing_data="ldap_operation_key" /> 
+</services>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UMLMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AndroProfibConfig.xsd">
+	<Element Name="ECORE_PRIMITIVE_TYPES_LIBRARY_URI" UML2_0_Value="pathmap://UML2_LIBRARIES/EcorePrimitiveTypes.library.uml2" UML2_1_Value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml"/>
+	<Element Name="JAVA_PRIMITIVE_TYPES_LIBRARY_URI" UML2_0_Value="pathmap://UML2_LIBRARIES/JavaPrimitiveTypes.library.uml2" UML2_1_Value="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml"/>
+	<Element Name="UML2_PRIMITIVE_TYPES_LIBRARY_URI" UML2_0_Value="pathmap://UML2_LIBRARIES/UML2PrimitiveTypes.library.uml2" UML2_1_Value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml"/>
+	<Element Name="ECORE_METAMODEL_URI" UML2_0_Value="pathmap://UML2_METAMODELS/Ecore.metamodel.uml2" UML2_1_Value="pathmap://UML_METAMODELS/Ecore.metamodel.uml"/>
+	<Element Name="UML2_METAMODEL_URI" UML2_0_Value="pathmap://UML2_METAMODELS/UML2.metamodel.uml2" UML2_1_Value="pathmap://UML_METAMODELS/UML.metamodel.uml"/>
+	<Element Name="BASIC_PROFILE_URI" UML2_0_Value="pathmap://UML2_PROFILES/Basic.profile.uml2" UML2_1_Value="pathmap://UML_PROFILES/Standard.profile.uml"/>
+	<Element Name="INTERMEDIATE_PROFILE_URI" UML2_0_Value="pathmap://UML2_PROFILES/Intermediate.profile.uml2" UML2_1_Value="pathmap://UML_PROFILES/Standard.profile.uml"/>
+	<Element Name="COMPLETE_PROFILE_URI" UML2_0_Value="pathmap://UML2_PROFILES/Complete.profile.uml2" UML2_1_Value="pathmap://UML_PROFILES/Standard.profile.uml"/>
+	<Element Name="ECORE_PROFILE_URI" UML2_0_Value="pathmap://UML2_PROFILES/Ecore.profile.uml2" UML2_1_Value="pathmap://UML_PROFILES/Ecore.profile.uml"/>
+</UMLMapping>

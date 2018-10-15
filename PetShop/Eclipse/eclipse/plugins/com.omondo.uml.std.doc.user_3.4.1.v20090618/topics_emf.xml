@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Getting Started with EMF" topic="gettingStarted/EMF/index.html">
+    <topic label="Creating a First Basic EMF Class Diagram" href="gettingStarted/EMF/index.html">
+        <topic label="Class Diagram Creation" href="gettingStarted/EMF/emfcreationclassdiagram/index.html"/>
+        <topic label="Classes and Interfaces" href="gettingStarted/EMF/emfcreationclasses/index.html"/>
+        <topic label="Attributes" href="gettingStarted/EMF/emfcreationattributes/index.html"/>
+        <topic label="Methods" href="gettingStarted/EMF/emfcreationmethods/index.html"/>
+        <topic label="Associations" href="gettingStarted/EMF/emfcreationassociations/index.html"/>
+        <topic label="Implementation and Inheritance" href="gettingStarted/EMF/emfcreationinheritance/index.html"/>
+    </topic>   
+</toc>   
+
+
+	

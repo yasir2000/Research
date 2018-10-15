@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+     <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="UML Documentation Generation"
+            visible="true"
+            id="com.omondo.uml.docgen.actionSet">
+         <action
+               label="&amp;Generate UML Documentation"
+               icon="icons/full/ctool16/newdocgen_wiz.gif"
+               tooltip="Generate UML Documentation"
+               class="com.omondo.uml.docgen.DocGenAction"
+               toolbarPath="Normal/umlGroup"
+               id="com.omondo.uml.docgen.DocGenAction">
+  			<enablement>
+  				<or>
+         			<objectClass name="org.eclipse.jdt.core.IJavaElement"/>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.ucd"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.uad"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.upd"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.usd"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.uld"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.udd"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.uod"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.utd"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.uud"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.urd"/> 
+         			</and>
+         			<and>
+         			<objectClass name="org.eclipse.core.resources.IFile"/>
+		           <objectState name="name" value="*.prd"/> 
+         			</and>
+         		</or>            </enablement>
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.jdt.core.IJavaElement"
+            id="com.omondo.uml.docgen.actions.contribution1">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               enablesFor="1"
+               icon="icons/full/ctool16/newdocgen_wiz.gif"
+               id="com.omondo.uml.docgen.DocGenPopupAction"
+               label="%docgenActionLabel"
+               menubarPath="com.omondo.uml.std.ui.actions.menu1/group2">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.ucd"
+            id="com.omondo.uml.docgen.actions.contribution2">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.usd"
+            id="com.omondo.uml.docgen.actions.contribution3">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.urd"
+            id="com.omondo.uml.docgen.actions.contribution4">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.uud"
+            id="com.omondo.uml.docgen.actions.contribution5">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.utd"
+            id="com.omondo.uml.docgen.actions.contribution6">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.uod"
+            id="com.omondo.uml.docgen.actions.contribution7">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.udd"
+            id="com.omondo.uml.docgen.actions.contribution8">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.upd"
+            id="com.omondo.uml.docgen.actions.contribution9">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.uld"
+            id="com.omondo.uml.docgen.actions.contribution10">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.uad"
+            id="com.omondo.uml.docgen.actions.contribution11">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.prd"
+            id="com.omondo.uml.docgen.actions.contribution12">
+         <menu
+               label="%UMLMenuLabel"
+               path="additions"
+               id="com.omondo.uml.std.ui.actions.menu2">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               label="%docgenActionLabel"
+               class="com.omondo.uml.docgen.DocGenPopupAction"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/group2"
+               enablesFor="1"
+               id="com.omondo.uml.docgen.DocGenPopupAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.ui.resourcePerspective">
+         <actionSet
+               id="com.omondo.uml.docgen.actionSet">
+         </actionSet>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="com.omondo.uml.UMLPreferences"
+            name="Documentation Generation"
+            class="com.omondo.uml.docgen.DocGenTemplatePage"
+            id="com.omondo.uml.docgen.DocGenPreferencePage">
+      </page>
+   </extension>
+ 
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            objectClass="org.eclipse.jdt.core.IJavaProject"
+            name="Javadoc"
+            class="com.omondo.uml.docgen.JavaDocPropertyPage"
+            id="com.omondo.uml.docgen.JavaDocPropertyPage">
+      </page>
+      <page
+            objectClass="org.eclipse.jdt.core.IPackageFragment"
+            name="Javadoc"
+            class="com.omondo.uml.docgen.JavaDocPropertyPage"
+            id="com.omondo.uml.docgen.JavaDocPropertyPage">
+      </page>
+   </extension>
+ 
+</plugin>

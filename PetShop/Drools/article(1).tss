@@ -1,0 +1,1806 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta name="pageStart" content="1327921733487" />
+
+<div><div><link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/reset.css" id="stylesheetReset" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/layout.css" id="stylesheetLayout" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/tt_thickbox.css" id="stylesheetThickbox" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/dc5.css" id="stylesheetDCSpecific" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/theserversidecom.css" id="stylesheetSiteSpecific" media="screen" />
+<link rel="canonical" href="http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API" />
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-Head, www.theserverside.com, generated at 17:26:15 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+	<title>Jess and the javax.rules API</title>
+
+
+<meta name="description" content="Jess is a rule engine and scripting environment for the Java platform. JSR 94 is a developing Java Community Process standard for interfacing rule engines to Java software. The reference implementation of JSR 94 is a driver for Jess; with it, you can connect Jess to Java software using the vendor-independent JSR 94 API. In this article, based on an excerpt from the new book "Jess in Action" from Manning Publications, you'll see how to apply this new API to access Jess from your J2EE or J2SE applications." />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+<meta name="robots" content="noodp"/>
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" title="TheServerSide.com: ContentSyndication" href="http://www.theserverside.com/rss/ContentSyndication.xml" />
+
+
+<meta name="publicationDate" content="10/01/2003"/>
+
+
+
+
+
+<!-- declertion of global variables for Google text ads -->
+<script type="text/javascript">
+
+/* Start : Initalizing Ad Ids to taxes variable */
+var taxes=[];
+var adIdString = "315039";
+if(adIdString != null && adIdString != "null"){
+	var adIds = adIdString.split(",");
+	for (var i = 0; i < adIds.length; i++) {
+		taxes[i]=adIds[i];
+	}
+}
+/* END : Initalizing Ad Ids to taxes variable */
+
+google_ad_client = 'ca-pub-6050985421795229';
+google_ad_channel ='www_news';
+google_ad_output = 'js';
+google_max_num_ads = 5;
+
+//Environment Vars
+var ENV_name ='PROD';
+var ENV_isStage = false;
+var ENV_mediaHost = 'http://cdn.ttgtmedia.com/rms/ux';
+var ENV_clicktrackHost = 'http://clicktrack.techtarget.com';
+
+//Site Vars (all)
+var SITE_name = 'TheServerSideCOM';
+var SITE_v5sid = '81';
+var SITE_domain = '.theserverside.com';
+var SITE_bitpipeHost = 'library.theserverside.com';
+var SITE_logoutURL = 'http://users.theserverside.com/registration/theserversidecom/Logout.page?fromURL=http%3A%2F%2Fwww.theserverside.com%2Fnews%2F1365186%2FJess-and-the-javaxrules-API';
+var SITE_hostName = 'theserverside';
+
+//Site Vars (magazines)
+
+
+//Site Vars (member update)
+var SITE_memberUpdateFlag = '';
+var SITE_memberUpdateURL = '';
+
+//Site Vars (ads)
+var watermarkSwitch = false;
+
+var interstitialSwitch = true;
+var isHome = false; 
+var is404 = false;
+var prestitialSwitch = false;
+
+//Site Vars (bizo)
+var SITE_bizoFlag = '';
+var SITE_bizoIframeURL = '';
+
+//Site Vars (web reporting)
+var SITE_hbxAcct = 'DM54121089AE83EN3';
+var SITE_hbxVsEmailSubscriber = '';
+var SITE_hbxVsIKEMember = '';
+var SITE_hbxVsLoggedIn = '';
+var SITE_hbxVsSiteMember = '';
+var hbxMLC = '/CL-NONE/Software -315039;/TheServerSideCOM/CL-NONE/Software -315039';
+
+//Declared and defined Dart global variables
+var leaderboardSwitch = true;
+var vendorofferSwitch = true;
+var skyscraperSwitch = true;
+var cltadSwitch = true;
+var bigadSwitch = true;
+var prestitialTTL = 12;
+var accountAbbr = 'atssc'; 
+var zone = 'NEWS';
+var gci = '1365186';
+var tax = '315039';
+var clu = 'NONE';
+var adg = '';
+//AD ID value will be passed to iid if channel is info centre
+var iid = '';
+// AD ID value will be passed to rci if channel is resource centre  
+var rci = '';
+var defaultTax = '';
+// MSFT atc3 value, i.e. Taxonomy name
+var taxNameWithOutSpecialChars='Softwaredevelopmenttechniques';
+
+
+</script>
+
+<!-- End of declertion of global variables -->
+<!--Ads - Dart call to  come here-->
+
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/writeCapture.js"></script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/jquery.writeCapture.js"></script>
+
+		<script language="JavaScript" type="text/javascript" src="http://users.theserverside.com/registration/js/userreg-lib.js"></script>
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/tt_thickbox-compressed.js"></script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/tt_scripts.js"></script>
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/dc5.js"></script>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<links>
+<link href="http://www.theserverside.com/?asrc=TAB_TheServerSideCOM" label="JAVA" group="headerTab" cssClass="activeTab" />
+<link href="http://searchsoa.techtarget.com/?asrc=TAB_TheServerSideCOM" label="SOA" group="headerTab" />
+<link href="http://searchsoftwarequality.techtarget.com/?asrc=TAB_TheServerSideCOM" label="TEST/QA" group="headerTab"  />
+<link href="http://searchwindevelopment.techtarget.com/?asrc=TAB_TheServerSideCOM" label=".NET" group="headerTab" />
+<link href="http://ajaxian.com/?asrc=TAB_TheServerSideCOM" label="AJAX" group="headerTab" />
+<link href="http://javasymposium.techtarget.com/?asrc=TAB_TheServerSideCOM" label="TSSJS" group="headerTab" cssClass="promoTab"/>
+<link href="/" label="TODAY ON TSS" group="inlinelinks"  cssClass="li1"  />
+<link href="/news" label="JAVA NEWS" group="inlinelinks" feature="NEWS" cssClass="li2"  />
+<link href="http://library.theserverside.com" label="WHITE PAPERS" group="inlinelinks" cssClass="li3"  />
+<link href="/discussions" label="DISCUSSIONS" group="inlinelinks" feature ="NEWS" cssClass="li5" />
+<link href="/resources" label="TOPICS" group="inlinelinks"  feature="TOPICS" cssClass="li6"  />
+<link href="http://library.theserverside.com" label="MULTIMEDIA" group="inlinelinks" feature="{feature.BITPIPE}" cssClass="li7"/>
+<link href="/rss" label="RSS" group="inlinelinks" feature="{feature.RSS}" cssClass="li8"  />
+<link href="/resources" label="TOPICS" feature="TOPICS" group="TopicalNav" />
+</links>
+
+
+<!-- BEGIN: Google Analytics -->
+
+
+<script type="text/javascript">
+	var SITE_gaAccountID = "UA-18994821-7";
+	var gaPageTrackUrl = "/page/etpk_Software design and development architecture-314880/ptpk_Software development techniques-315039/true/NEWS/content/cid_1365186/mem_${appCode}/clst_0/rtpk_Models and Methods-1185829/idx_0";
+</script>
+
+
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/googleAnalytics.min.js?date=20120129"></script>
+
+
+
+
+
+<!-- END: Google Analytics -->
+
+
+<!-- BEGIN: Baynote -->
+
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/baynote-lib.js"></script>
+<script type="text/javascript">
+	var bncustomerId = "techtarget";
+	var bncode = "www";
+	if(window.location.href.indexOf("https://")==0){bnserver="https://"+bncustomerId+"-"+bncode+".baynote.net";}else{bnserver="http://"+bncustomerId+"-"+bncode+".baynote.net";}
+	baynote_globals.cookieDomain = (typeof SITE_domain != "undefined") ? SITE_domain.substring(1) : "techtarget.com";
+	$(document).ready(function () {
+		if (wrData == "on") {
+			BaynoteAPI.init({server: bnserver,customerId: bncustomerId,code: bncode});
+			BaynoteAPI.execute("observer");
+		}
+	});
+</script>
+<!-- END: Baynote -->
+ 
+
+
+</div>
+</div>
+
+
+</head>
+<body class="ciCLT">
+<!--begin BODY "ciCLT" -->
+<div id="containerOuter">
+<!--div "containerOuter" starts-->
+<div id="containerInner">
+<!--div "containerInner" starts-->
+<div id="header">
+<!--div "header" starts-->
+<div><div>
+
+
+
+
+<!-- we have to rename this tag and its handler to SEO context-->
+<div id="loginBand"> 
+<!-- SEO Keyword  -->
+<!-- TTBC-TMP-LoginBand, www.theserverside.com, generated at 17:26:16 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+<span class="seoKeyword"></span>
+
+
+<span class="membershipLinks"><a href="http://users.theserverside.com/registration/theserversidecom/Register.page?fromURL=http%3A%2F%2Fwww.theserverside.com%2Fnews%2F1365186%2FJess-and-the-javaxrules-API">Activate your FREE membership today</a>&nbsp;&#124;&nbsp;<a href="http://users.theserverside.com/registration/theserversidecom/LoginRegister.page?fromURL=http%3A%2F%2Fwww.theserverside.com%2Fnews%2F1365186%2FJess-and-the-javaxrules-API">Log-in</a></span>
+</div></div>
+</div>
+
+
+<div><div>
+
+
+
+
+
+
+
+<!-- TTBC-TMP-Header, www.theserverside.com, generated at 02:48:38 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+
+
+
+
+<!-- start of header tabs. If feature.HeaderTabs is on in the site ,then Headertab should be displayed.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="headerTabs">
+<!--div "headerTabs" starts-->
+<ul>
+
+
+		   <li class="activeTab"><a href="http://www.theserverside.com/?asrc=TAB_TheServerSideCOM">Java</a></li>
+		
+
+		   <li><a href="http://searchsoa.techtarget.com/?asrc=TAB_TheServerSideCOM">SOA</a></li>
+		
+
+		   <li><a href="http://ebizq.net/?asrc=TAB_TheServerSideCOM">EBIZQ</a></li>
+		
+
+		   <li><a href="http://searchsoftwarequality.techtarget.com/?asrc=TAB_TheServerSideCOM">Test/QA</a></li>
+		
+
+		   <li><a href="http://searchwindevelopment.techtarget.com/?asrc=TAB_TheServerSideCOM">.NET</a></li>
+		
+
+		   <li><a href="http://ajaxian.com/?asrc=TAB_TheServerSideCOM">AJAX</a></li>
+		
+
+		   <li class="promoTab"><a href="http://javasymposium.techtarget.com/?asrc=TAB_TheServerSideCOM">TSSJS</a></li>
+		
+</ul>
+<!--div "headerTabs" ends-->
+</div>
+
+
+<!-- end of header tabs.If feature.HeaderTabs -->
+<!-- start of header logoband.If feature.LogoBand is on in the site variable,then only LogoBand will be loaded.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="headerLogoBand">
+<!--div "headerLogoBand" starts-->
+			<div class="headerLogo">
+			<!--div "headerLogo" starts-->
+			<a href="/"></a>
+			<!--div "headerLogo" ends-->
+			</div>
+			<div class="headerTagline">
+			<!--div "headerTagline" starts-->
+			<a href="http://www.techtarget.com/"></a>
+			<!--div "headerTagline" ends-->
+			</div>
+			<div class="headerMedia">
+			<!--div "headerMedia" starts-->
+	
+<!-- For all DC0 sites include this HTML:
+					 Both links plus comments - CSS will take care of styling
+					 Href needs to point to the Media Popup
+-->		
+	
+<ul id="inlineNavLinks">
+					
+						   <li class="li1"><a href="/">Today On TSS</a></li>
+						
+						   <li class="li2"><a href="/discussions">Discussions</a></li>
+						
+						   <li class="li3"><a href="/resources">Topics</a></li>
+						
+						   <li class="li4"><a href="http://library.theserverside.com">White Papers</a></li>
+						
+						   <li class="li5"><a href="http://library.theserverside.com">Multimedia</a></li>
+						
+						   <li class="li6"><a href="/rss">RSS</a></li>
+						
+</ul>
+
+<!--div "headerMedia" ends-->
+</div>
+<!--div "headerLogoBand" ends-->
+</div>
+
+
+
+<div id="leaderboardPlacement">
+			<script type="text/javascript">
+				//call leaderboard inline to force a chronological sequence placing it first, this is an AdOPS requirement.
+				if (typeof dcopt == "undefined") var dcopt = "ist";
+				var dcopt_holder = dcopt; dcopt = "";
+				if (typeof leaderboardSwitch == "undefined") var leaderboardSwitch = true; //default on
+				if (typeof dgADJads == "undefined") var dgADJads = "on"; //default on
+				if (leaderboardSwitch) {
+					var loginBand = document.getElementById("loginBand");
+					if (loginBand != null) loginBand.className = "on";
+					if (typeof dartUtil == "undefined") var dartUtil = new DartUtil();
+	      			document.write('<div class="on" id="leaderboard"><div>');
+              		if (dgADJads == "off") document.write(dartUtil.getLeaderboard());
+                } else {
+              		document.write('<div id="leaderboard"><div>');
+              	}
+               	document.write('</div><!-- Leader Board place holder --></div>');
+              </script>	     
+</div>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<div id="topicalNavbar">
+	<!--div "topicalNavbar" starts-->
+			<div id="ddMenu">
+				<ul id="ddNav">
+					
+
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Software-design-and-development-architecture">Design/Architecture</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/SOA-applications-and-service-integration">SOA and service integration</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/REST-Web-services">REST Web services</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/ESB-products-and-techniques">ESB products</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Software-development-techniques">Software development</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Application-Integration-middleware">Application Integration middleware</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Design-for-application-security">Application security</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Design-for-test">Design for test</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Data-oriented-design-issues">Data-oriented design</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-architecture-for-cloud">Java architecture for cloud</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/EJB-design-and-application-development">EJB</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/EJB-specification">EJB specification</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-containers">EJB containers</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-troubleshooting">EJB troubleshooting</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-programming">EJB programming</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-application-servers">Java application servers</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/EJB-products-and-techniques">EJB products</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/XML-and-Web-services-applications">Web Services</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Web-services-architecture-and-design">Web services architecture</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/WS-specifications">WS* specifications</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Web-tier-architecture">Web Applications</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Web-application-frameworks">Web app frameworks</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Spring-framework">Spring framework</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Hibernate-framework">Hibernate framework</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-servlets">Java servlets</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-server-pages">Java server pages</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Ajax-Web-development">Ajax Web development</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Rich-Internet-applications">Rich Internet applications</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-server-faces">Java server faces</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-Web-portals">Java Web portals</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Other-UI">Other UI</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Java-EE-applications-and-application-development">Development</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Java-programming-language">Java programming language</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Software-programming-languages">Software programming languages</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/JVM-languages-ndash-Scala-Groovy-Grails">JVM languages</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/DSLs">DSLs</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-application-deployment">Java application deployment</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Application-development-performance-and-scalability">Performance/Scalability</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Software-performance-tools">Software performance tools</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Application-performance-measurement">Application performance measurement</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-cloud-architecture-grid-computing-software-memory-systems">Cloud/grid/memory systems</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/JVM-performance-issues">JVM</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Application-scalability">Application scalability</a></li>
+                
+        		</ul>
+        		</li>
+        	
+			<li>
+				<div><a href="http://www.theserverside.com/resources/Application-and-Web-services-development-tools">Tools</a></div>
+				
+			
+        		<ul>
+        	
+                	<li><a href="http://www.theserverside.com/resources/Eclipse-development-and-tools">Eclipse development and tools</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Open-source-software-testing-tools">Open source tools</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/IDEs-Integrated-development-environments">IDEs</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-EE-development-utilities">Java EE</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Java-software-testing-in-practice">Java software testing</a></li>
+                
+                	<li><a href="http://www.theserverside.com/resources/Development-hardware">Development hardware</a></li>
+                
+        		</ul>
+        		</li>
+        	
+           </ul>
+			<!--div "ddMenu" ends-->
+        </div>
+	<!--div "topicalNavbar" starts-->
+   </div>
+
+
+<!-- start of header HeaderSearchTab.If feature.HeaderSearchBar is on in the site variable,then only HeaderSearchTab will be loaded.-->
+
+
+
+
+
+
+
+
+
+
+
+<div id="searchBar">
+	<form action="/search/query" method="get" id="searchBarForm">
+		<fieldset>
+			<input type="hidden" name="start" value="0"/>
+			<input type="hidden" name="filter" value="1"/>
+			<strong>SEARCH this site and the web</strong>
+			<input type="text" id="searchBarFormTextbox" name="q"/>
+			<input type="submit" value="Search" id="searchBarFormSubmit"/>
+		</fieldset>
+	</form>
+	<a href="/about/index" id="searchBarSiteIndexLink">Site Index</a>
+</div>
+
+
+<!-- end of Headersearchtab. -->
+<!-- ending of header -->
+</div>
+</div>
+
+<!--div "header" ends-->
+</div>
+<div id="content">
+<!--div "content" starts-->
+<div class="contentInner">
+<!--div "contentInner" starts-->
+<div class="contentHeader">
+<!--div "contentHeader" starts-->
+
+<div><div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-ContentHeader, www.theserverside.com, generated at 17:26:16 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+  <div id="vendorOffer">
+	<!-- vendor offer place holder	-->
+</div>
+
+
+
+	 
+<!-- Breadcrumb comes here-->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="breadcrumbs">
+<ul>
+
+		<li class="home"><a href="/">Home</a></li><li>&gt;<a href="http://www.theserverside.com/resources">Topics</a></li><li>&gt;<a href="http://www.theserverside.com/resources/Software-design-and-development-architecture">Software design and development architecture</a></li><li>&gt;<a href="http://www.theserverside.com/resources/Software-development-techniques">Software development techniques</a></li>
+		<li>&gt;<em>Jess and the javax.rules API</em></li>
+		
+</ul>				
+</div>
+	
+
+
+
+
+
+
+<script type="text/javascript">
+function printerWindow(page) {
+	 
+		  var printWindow = window.open(page, "portfolio", "innerWidth=860,innerHeight=535,toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes");
+	
+}
+</script>
+
+
+<div id="printLink">
+   <a href="javascript:printerWindow('http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API?vgnextfmt=print')">Print</a>
+</div>	
+
+	
+
+    <!-- email this to come here -->
+
+    
+
+
+
+
+
+
+
+
+
+
+
+						
+				<form id="emaillink" method="post" action='/email-a-friend' onsubmit='return false;'>
+					<div id="emailThisLink">
+						<input name="subject" type="hidden"/>
+						<input name="fullurl" type="hidden"/>
+            	       	<a href="javascript:JSsendform();">Email This</a>
+					</div>
+		        </form>
+
+<script type="text/javascript">
+	function JSsendform(){
+		var formObj = document.getElementById("emaillink");
+		formObj.fullurl.value = location.href;
+		formObj.subject.value = encodeURI(document.title);
+		formObj.submit();
+	}
+</script>
+
+	</div>
+</div>
+
+
+<div><div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-SectionTitleFeature, www.theserverside.com, generated at 17:26:16 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+ 
+
+
+
+<div id="sectionTitleFeatureBar">
+
+	<h2>Java Development News:</h2>
+	
+
+
+
+	<ul class="empty"><li/></ul>
+ 
+</div></div>
+</div>
+
+<!--div "contentHeader" ends-->
+</div>
+
+<div class="contentCols">
+<!--div "contentCols" starts-->
+	<div class="colmask">
+	<!--div "colmask" starts-->
+		<div class="colmid">
+		<!--div "colmid" starts-->
+			<div class="colleft" >
+			<!--div "colleft" starts-->          
+          <div class="col1">
+         <!-- Column 1 start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ItemRegion, www.theserverside.com, generated at 04:35:36 Sat Jan 28, 2012 , by vappma10.techtarget.com -->
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="titleByline">
+<!--div ""titleByline" begins-->
+  
+		<h1>Jess and the javax.rules API</h1>
+			
+			<p>By&nbsp;Ernest Friedman-Hill</p><p>01 Oct 2003 | TheServerSide.com</p>
+		
+<!--end of div ""titleByline"-->
+</div>
+
+	
+
+<!-- content byLine ends -->
+<!-- rssdiscovery starts -->
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rssDiscovery">
+<ul>
+
+<li><a href="http://www.theserverside.com/rss/ContentSyndication.xml">ContentSyndication</a></li>
+
+</ul>
+</div>
+
+
+<!--div "rssDiscovery" ends-->
+<!-- rssdiscovery ends -->
+<!-- userdiscivery starts -->
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The input parameters are listed below::
+	     the url is the current page site url 
+	     the title is the content instance title  
+	     the body text is the CI body text  
+      -->
+
+<div class="userDiscovery">
+<!--div "userDiscovery" begins-->
+	<ul>
+	    
+              <li> 
+                    <a href="http://digg.com/submit?phase=2&amp;url=http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API&amp;title=Jess and the javax.rules API&amp;topic=tech_news&amp;bodytext=Jess is a rule engine and scripting environment for the Java platform. JSR 94 is a developing Java Community Process standard for interfacing rule engines to Java software. The reference implementation of JSR 94 is a driver for Jess; with it, you can connect Jess to Java software using the vendor-independent JSR 94 API. In this article, based on an excerpt from the new book "Jess in Action" from Manning Publications, you'll see how to apply this new API to access Jess from your J2EE or J2SE applications." class="digg openInNewWindow">Digg This</a>
+                    </a>
+              </li>
+         
+       
+           <li>
+	           <a class="stumbleUpon openInNewWindow" href="http://www.stumbleupon.com/submit?url=http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API&amp;title=Jess and the javax.rules API">Stumble
+	           </a>
+         </li>
+        
+       
+             <li>
+                    <a  class="delicious openInNewWindow" href="http://del.icio.us/post?v=4&noui&jump=close&amp;url=http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API&amp;title=Jess and the javax.rules API">Delicious
+                    </a>
+             </li>
+      
+             <li>
+                    <!-- Placeholder for Google -->
+                   <a class="google openInNewWindow" href="http://www.theserverside.com/rss/ContentSyndication.xml">Google Fusion</a>             
+            </li>
+       
+   </ul>
+<!--div "userDiscovery" ends-->
+</div>
+
+
+
+<!-- userdiscivery ends -->
+<!-- ContentItemBody begins	-->
+
+
+			<div class="ciText"><h2>Introduction</h2>
+
+<p>Ernest Friedman-Hill is also the author of Jess In Action (by Manning Publicaions). Jess in
+Action introduces rule programming concepts and teaches you the Jess language. It progresses
+through a series of fully-developed applications chosen to expose you to practical rule-based
+development and shows you how you can add power and intelligence to your Java software. You can
+obtain a copy of the book from <a
+href="http://www.amazon.com/exec/obidos/tg/detail/-/1930110898/002-7538991-8109664?v=glance"
+target="_blank">Amazon.com</a> or the <a href="http://www.manning.com/friedman-hill/index.html"
+target="_blank">Manning site</a>.</p>
+
+<p>Jess is a rule engine and scripting environment for the Java platform. JSR 94 is a developing
+Java Community Process standard for interfacing rule engines to Java software. The reference
+implementation of JSR 94 is a driver for Jess; with it, you can connect Jess to Java software using
+the vendor-independent JSR 94 API. In this article, based on an excerpt from the new book "Jess in
+Action" from Manning Publications (<a href="http://www.manning.com/friedman-hill"
+target="_blank">http://www.manning.com/friedman-hill</a>,) you'll see how to apply this new API to
+access Jess from your J2EE or J2SE applications.</p>
+
+<p><br />
+</p>
+
+<h2>JSR 94: the javax.rules API</h2>
+
+<p><i>Rule-based programming</i> is a declarative programming technique in which you write
+heuristic rules rather than procedural instructions. A software module called a <i>rule engine</i>
+decides how to apply the rules to your data. Rule-based programming is widely used in the insurance
+and financial services industries, among others, and is especially useful whenever complex criteria
+must be applied to large amounts of information.</p>
+
+<p>Rule engines can be used together with various <a
+href="http://searchenterpriselinux.techtarget.com/definition/COTS-MOTS-GOTS-and-NOTS">commercial
+off-the-shelf</a> products, including application servers. Historically, there has been a certain
+amount of vendor lock-in in choosing a rule engine, because each rule engine has its own
+programmer's interface.</p>
+
+<p><a href="http://media.techtarget.com/tss/static/books/manning/index.tss"><img border="0"
+align="right" alt=""
+src="http://media.techtarget.com/tss/static/images/ManningTSSIcon.gif" /></a></p>
+
+<p>The Java Rule Engine API (<a href="http://www.jcp.org/jsr/detail/94.jsp"
+target="_blank">http://www.jcp.org/jsr/detail/94.jsp</a>), defined by the <tt>javax.rules</tt>
+package, is a standard enterprise API for accessing rule engines, currently being developed by a
+consortium of rule engine vendors under the Java Community Process. The <tt>javax.rules</tt>
+package will allow the host program to interact generically with multiple rule engines, the same
+way the Java Database Connectivity (JDBC) API makes it possible to write vendor-neutral database
+programs. The API will include mechanisms for creating and managing sets of rules; for adding,
+removing, and modifying objects in working memory; and for initializing, resetting, and running the
+engine.</p>
+
+<p>The <tt>javax.rules</tt> package can be used in both J2SE and J2EE applications. It includes
+mechanisms for storing and managing rule bases as well as classes that represent individual
+sessions with a rule engine. Using the <tt>javax.rules</tt> package, you can write Java code to
+work with rule engines in a generic manner, so that changing from one rule engine to another won't
+necessitate changes to your Java code. The name <i>JSR 94</i> refers to the standards committee
+that developed this new API.</p>
+
+<p>Implementations of JSR 94 intended for use with J2EE containers deal with the programming
+restrictions imposed by that environment. For example, some JSR 94 implementations will be
+implemented on top of an RMI-based rule server like the one developed in Chapter 21 of "Jess in
+Action." Other JSR 94 implementations will be targeted toward high performance in J2SE
+applications, and some will switch between the two.</p>
+
+<p>At the time of this writing, the JSR 94 specification is being readied for public release, and
+one of the implementations, which is the reference implementation, is a driver for Jess. It is
+possible that some of what I'll present here will change, but most of this material will still be
+valid when the <tt>javax.rules</tt> API becomes official.</p>
+
+<p><br />
+</p>
+
+<h2>Working with javax.rules</h2>
+
+<p>The <tt>javax.rules</tt> API divides interaction with rule engines into <i>administrative</i>
+and <i>runtime</i> interactions. Administrative tasks include instantiating the rule engine and
+loading rules, and runtime tasks include manipulating working memory and executing rules. If you
+use <tt>javax.rules</tt> from a J2SE program, you'll probably need to perform all of these tasks
+from your code. On the other hand, in the J2EE environment, the administrative tasks are part of
+application deployment. Eventually, <tt>javax.rules</tt>-compliant application servers should offer
+dedicated mechanisms - GUIs - for installing a rule engine and preparing rule sessions, just as
+they currently include tools for plugging in databases and other resources. The JSR 94 reference
+implementation includes a JCA connector that makes a <tt>RuleServiceProvider</tt> accessible
+through JNDI.</p>
+
+<p><br />
+</p>
+
+<h3>Setting things up</h3>
+
+<p>The administrative phase begins with finding an appropriate
+<tt>javax.rules.RuleServiceProvider</tt> object, which gives the programmer access to the rest of
+the <tt>javax.rules</tt> implementation. In a J2EE environment, you may be able to retrieve the
+<tt>RuleServiceProvider</tt> using JNDI. Otherwise, you can get one from the
+<tt>javax.rules.RuleServiceProviderManager</tt> class:</p>
+
+<pre>
+ String implName = "org.jcp.jsr94.ri.RuleServiceProvider"; Class.forName(implName); RuleServiceProvider serviceProvider = RuleServiceProviderManager.getRuleServiceProvider(implName);
+</pre>
+
+<p><br />
+</p>
+
+<p>This is a little like loading a JDBC driver - it's a similar concept, in that both provide
+access to an external resource, and you need to do some general initialization before you
+instantiate any of the classes.</p>
+
+<p>Once you have the <tt>RuleServiceProvider</tt>, you can retrieve a
+<tt>javax.rules.admin.RuleAdministrator</tt>. From the <tt>RuleAdministrator</tt>, you can get a
+<tt>RuleExecutionSetProvider</tt>, which, as the name suggests, creates
+<tt>javax.rules.RuleExecutionSets</tt>. A <tt>RuleExecutionSet</tt> is basically a loaded set of
+rules, ready to be executed.</p>
+
+<p>The <tt>javax.rules.admin</tt> package includes two different <tt>RuleExecutionSetProvider</tt>
+classes. <tt>RuleExecutionSetProvider</tt> itself includes methods for creating
+<tt>RuleExecutionSets</tt> from serializable objects, and therefore can be used when the rule
+engine is located in a remote server; the constructor arguments can be sent via RMI. Another class
+called <tt>LocalRuleExecutionSetProvider</tt> includes additional methods to create
+<tt>RuleExecutionSets</tt> from nonserializable resources like <tt>java.io.Reader objects</tt>
+(local files). Given a <tt>RuleServiceProvider</tt>, you can create a <tt>RuleExecutionSet</tt>
+from a local file <tt>rules.xml</tt> like this:</p>
+
+<pre>
+ RuleAdministrator admin = serviceProvider.getRuleAdministrator(); HashMap properties = new HashMap(); properties.put("name", "My Rules"); properties.put("description", "A trivial rulebase"); FileReader reader = new FileReader("rules.xml"); RuleExecutionSet ruleSet = null; try { LocalRuleExecutionSetProvider lresp = admin.getLocalRuleExecutionSetProvider(properties); ruleSet = lresp.createRuleExecutionSet(reader, properties); } finally { reader.close(); }
+</pre>
+
+<p><br />
+</p>
+
+<p>You then register the <tt>RuleExecutionSet</tt> with the <tt>RuleAdministrator</tt> under a
+well-known name. At runtime, you use the same name to create a <tt>RuleSession</tt>; the
+<tt>RuleSession</tt> uses the named <tt>RuleExecutionSet</tt>. This example uses the well-known
+name rules:</p>
+
+<pre>
+ admin.registerRuleExecutionSet("rules", ruleSet, properties);
+</pre>
+
+<p><br />
+</p>
+
+<h3>Executing the rule engine</h3>
+
+<p>In the runtime phase, you create a <tt>RuleSession</tt>. A <tt>RuleSession</tt> is basically an
+instance of a rule engine with a specific set of rules loaded into it. You get
+<tt>RuleSessions</tt> from the <tt>javax.rules.RuleRuntime</tt> object, and you get the
+<tt>RuleRuntime</tt>, in turn, from the <tt>RuleServiceProvider</tt>.</p>
+
+<p>There are two kinds of RuleSessions: <i>stateful</i> and <i>stateless</i>. They differ in the
+capabilities they offer. The working memory of a <tt>StatefulRuleSession</tt> persists between
+method calls. You can add objects to working memory in a series of invocations, then run the
+engine, and then add more objects and run again. In contrast, a <tt>StatelessRuleSession</tt> is a
+one-shot affair: To call its <tt>executeRules</tt> methods, you must supply the entire initial
+contents of working memory, and you will receive a list of the final contents as a return
+value.</p>
+
+<p>Here you create a <tt>StatefulRuleSession</tt>, add two objects (an <tt>Integer</tt> and a
+<tt>String</tt>) to working memory, execute the rules, and then retrieve the entire contents of
+working memory as a <tt>java.util.List</tt>. Finally, you dispose of the <tt>RuleSession</tt> by
+calling <tt>release</tt>:</p>
+
+<pre>
+ RuleRuntime runtime = rsp.getRuleRuntime(); StatefulRuleSession session = (StatefulRuleSession) runtime.createRuleSession("rules", properties, RuleRuntime.STATEFUL_SESSION_TYPE); session.addObject(new Integer(1)); session.addObject("A string"); session.executeRules(); List results = session.getObjects(); session.release();
+</pre>
+
+<p><br />
+</p>
+
+<p>The <tt>javax.rules</tt> API is clearly designed to be used in a managed environment like the
+J2EE. For a simple application like the one we're imagining here, it could be overkill. Consider
+that by using Jess's native API, all the code in this section and the preceding one can be
+expressed as follows (assuming the appropriate <tt>defclasses</tt> are defined in
+<tt>rules.clp</tt>):</p>
+
+<pre>
+ Rete session = new Rete(); session.executeCommand("(batch rules.clp)"); session.definstance("java.lang.Integer", new Integer(1), false); session.definstance("java.lang.String", "A string", false); session.run(); Iterator results = engine.listDefinstances();
+</pre>
+
+<p><br />
+</p>
+
+<p>On the other hand, both in the J2EE environment and in standalone applications,
+<tt>javax.rules</tt> gives you some measure of vendor independence.</p>
+
+<p><br />
+</p>
+
+<h2>The Reference Implementation</h2>
+
+<p>The first implementation of <tt>javax.rules</tt> is the reference implementation (RI) included
+as part of the specification. This RI is, as I mentioned earlier, a wrapper for Jess. Jess is a
+rule engine and scripting environment written in Java. You can learn more about Jess (and download
+a trial version) from <a href="http://herzberg.ca.sandia.gov/jess"
+target="_blank">http://herzberg.ca.sandia.gov/jess</a>.</p>
+
+<p>The RI is an interesting case study, because the mapping of the <tt>javax.rules</tt> API forces
+a specific interpretation onto Jess's more general facilities. Here I'm not concerned with
+describing how it is implemented, but simply with filling in the missing information that allows
+you to use it.</p>
+
+<p><tt>javax.rules</tt> is <i>not</i> a standard rule language; it says nothing about rule
+languages. Other groups are working on developing standardized rule languages, although less
+consensus exists in this area. For the same reason there is no one standard general programming
+language, it is likely that vendor-specific rule languages will be with us for a long time. Each
+rule language has its own strengths and weaknesses, and the expressiveness, elegance, and power of
+a rule language can be a major factor in choosing a rule engine. Therefore, if you change rule
+engine vendors, you will probably have to rewrite your rules, even if you don't need to change your
+Java code. In this section, you'll see how to write Jess code that fits into the javax.rules
+framework.</p>
+
+<p>Generally, the rules in a rule engine can operate on Java objects. Those Java objects that have
+been made available to the rules are known as <i>working memory elements</i>. Working memory
+elements in a <tt>RuleSession</tt> are arbitrary Java objects. Because Jess doesn't let you add
+arbitrary objects to working memory without providing extra information in the form of a
+<tt>definstance</tt> call, the RI has to make some assumptions and provide the extra information.
+Every time an object is added to working memory, Jess automatically defines a <tt>defclass</tt> for
+it; the <tt>defclass</tt> name is the full class name of the object: <tt>com.acme.Employee</tt>,
+for example. Therefore, a Jess program meant for use within the JSR 94 RI (here, a trivial rule to
+give an employee a promotion after three years) might look like this:</p>
+
+<pre>
+ (defclass com.acme.Employee com.acme.Employee nil) (defrule promote-programmer ?e &#60;- (com.acme.Employee (rank "Programmer I") (service ?s&#38;:(&#62; ?s 3))) =&#62; (modify ?e (rank "Programmer II")))
+</pre>
+
+<p><br />
+</p>
+
+<p>Working memory elements that are not JavaBeans call for a different programming style, compared
+to normal Jess. You can use individual patterns to bind objects, as is the case here, but most
+tests will be fairly verbose and so should be expressed as test conditional elements, as in the
+following example:</p>
+
+<pre>
+ (defrule find-number-3 (java.lang.Integer (OBJECT ?i1)) (test (eq 3 (?i1 intValue))) =&#62; ;; Found 3, do something...
+</pre>
+
+<p><br />
+</p>
+
+<p>One other thing about the RI is special: The input files must be XML, rather than normal Jess
+input files. The format is exceedingly simple. Each XML file must contain a
+<tt>rule-execution-set</tt> element, which contains three children: a name (the name of the set of
+rules); a <tt>description</tt> (a brief summary of the rule's purpose); and a <tt>code</tt>
+element, which contains Jess code. Note that the Jess code has to use normal XML encoding, so that
+special characters like &#38; and &#60; must be represented using their escape characters. Here's a
+rule base containing the single <tt>add-two-integers</tt> rule:</p>
+
+<p><img alt=""
+src="http://media.techtarget.com/tss/static/articles/content/Jess/Image1.jpg" /><br />
+</p>
+
+<p>Finally, note that the RI is by definition a strictly conforming implementation of the
+<tt>javax.rules</tt> API. As such, there are no hooks to give you access to queries,
+<tt>store/fetch</tt>, or other Jess features that go beyond the lowest common denominator of what a
+rule engine offers. The <tt>javax.rules</tt> API doesn't provide a specific escape mechanism by
+which vendors can expose nonstandard interfaces, although many of its methods accept property lists
+as a customization mechanism. Jess is more than just a rule engine, so the <tt>javax.rules</tt>
+interface limits what you can do with Jess. When the <tt>javax.rules</tt> API is finalized, Jess
+will offer native support for it, including extensions to allow access to these features and
+more.</p>
+
+<p><br />
+</p>
+
+<h2>Summary</h2>
+
+<p>The <tt>javax.rules</tt> API, which as of this writing is still being developed, promises to
+provide portable, generic access to rule engines from multiple vendors. The API includes
+sophisticated features for managing rule bases in the J2EE environment, but is still fairly simple
+to use in runtime components. The javax.rules API provides one way to integrate the Jess rule
+engine into enterprise applications. Although the <tt>javax.rules</tt> API is not without its
+flaws, it represents a powerful capability and will be a welcome addition to the Java toolbox.</p>
+
+<p><br />
+</p>
+
+<h3>About the Author</h3>
+
+<p>Dr. Friedman-Hill is a Principal Member of the Technical Staff at Sandia National Laboratories
+in Livermore, California. He is the developer of Jess, the Java rule engine. He has taught Java
+programming to over 3,000 students for the University of California Extensions in Berkeley, in San
+Diego, and online. Dr. Friedman-Hill's current work at Sandia includes the development of software
+for mechanical design and analysis. He lives in Gaithersburg, MD.</p>
+
+<table>
+<tr>
+<td bgcolor="white"><font size="2">Ernest Friedman-Hill is also the author of Jess In Action (by
+Manning Publications). Jess in Action introduces rule programming concepts and teaches you the Jess
+language. It progresses through a series of fully-developed applications chosen to expose you to
+practical rule-based development and shows you how you can add power and intelligence to your Java
+software. You can obtain a copy of the book from <a
+href="http://www.amazon.com/exec/obidos/tg/detail/-/1930110898/002-7538991-8109664?v=glance"
+target="_blank">Amazon.com</a> or the <a href="http://www.manning.com/friedman-hill/index.html"
+target="_blank">Manning site</a>.</font></td>
+</tr>
+</table>
+
+						 
+
+
+
+
+
+
+ 
+
+
+	
+
+			</div>
+
+<!-- ContentItemBody ends	-->
+<!-- tag begins here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tags">
+ <strong>Related Topics:</strong>
+		
+
+	       <a href="http://www.theserverside.com/resources/Software-development-techniques">Software development techniques</a>,
+
+		
+<a href="http://www.theserverside.com/tags">VIEW ALL TAGS</a>
+</div>
+	
+
+<!-- tag ends here -->
+<!-- userdiscivery starts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The input parameters are listed below::
+	     the url is the current page site url 
+	     the title is the content instance title  
+	     the body text is the CI body text  
+      -->
+
+<div class="userDiscovery">
+<!--div "userDiscovery" begins-->
+	<ul>
+	    
+              <li> 
+                    <a href="http://digg.com/submit?phase=2&amp;url=http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API&amp;title=Jess and the javax.rules API&amp;topic=tech_news&amp;bodytext=Jess is a rule engine and scripting environment for the Java platform. JSR 94 is a developing Java Community Process standard for interfacing rule engines to Java software. The reference implementation of JSR 94 is a driver for Jess; with it, you can connect Jess to Java software using the vendor-independent JSR 94 API. In this article, based on an excerpt from the new book "Jess in Action" from Manning Publications, you'll see how to apply this new API to access Jess from your J2EE or J2SE applications." class="digg openInNewWindow">Digg This</a>
+                    </a>
+              </li>
+         
+       
+           <li>
+	           <a class="stumbleUpon openInNewWindow" href="http://www.stumbleupon.com/submit?url=http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API&amp;title=Jess and the javax.rules API">Stumble
+	           </a>
+         </li>
+        
+       
+             <li>
+                    <a  class="delicious openInNewWindow" href="http://del.icio.us/post?v=4&noui&jump=close&amp;url=http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API&amp;title=Jess and the javax.rules API">Delicious
+                    </a>
+             </li>
+      
+             <li>
+                    <!-- Placeholder for Google -->
+                   <a class="google openInNewWindow" href="http://www.theserverside.com/rss/ContentSyndication.xml">Google Fusion</a>             
+            </li>
+       
+   </ul>
+<!--div "userDiscovery" ends-->
+</div>
+
+
+
+<!-- userdiscivery ends -->
+
+				<!-- comments starts -->
+					<div id="comments"></div>
+				<!-- comments ends -->
+
+<!--google text ad starts-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var cl_exclusive='N';
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+function ss(w){window.status=w;return true;}
+function cs(){window.status='';}
+function ga(o,e){
+	if (document.getElementById){
+		a=o.id.substring(1);
+		p="";
+		g=e.target;
+			if(g){
+				t=g.id;f=g.parentNode;
+					if(f)p=f.id;
+				}
+			else{t=e.srcElement.id;}
+				if(t==a||p==a)
+					return;location.href=document.getElementById(a).href
+	}
+}
+//-->
+//]]>
+
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+           
+document.write('<style type="text/css">');
+document.write('<!--');
+document.write('.ch {cursor: pointer;cursor: hand;}');
+document.write('-->');
+document.write('</style>');
+           
+function google_ad_request_done(google_ads) {
+var i;
+var header;
+accip = "off";
+
+
+
+
+if(google_ads.length > 0) {
+		document.write('<!-- We need to write a header -->');
+		document.write('<a name="marketplace_top"></a>');
+		document.write('<div id="googleTextAds">');
+		document.write('<div>');
+		document.write('<h3>Java RELATED LINKS</\h3>');
+		document.write('<h4><a href="https://www.google.com/adsense/support/bin/request.py?contact=abg_afc">Ads by Google</a></h4>');
+		document.write('<ul>');	
+		
+	
+	
+		for(i = 0; i < google_ads.length; ++i) {
+			document.write('<!-- begin ad -->');
+			//document.write('<tr><td width="100%" onClick="window.open(\'' + google_ads[i].url + '\',\'_blank\')" style="cursor:pointer; cursor:hand" onMouseOver="return ss(\'' + google_ads[i].visible_url + '\')" onMouseOut="cs()">');
+			document.write('<li>');			
+			document.write('<a href="'+google_ads[i].url +'" class="a1 openInNewWindow">');
+			document.write(google_ads[i].line1);
+			document.write('</a><br/>');
+			document.write('' + google_ads[i].line2 + '');
+			document.write('' + google_ads[i].line3 + '');
+			document.write('<br/><a href="'+google_ads[i].url +'" class="a2 openInNewWindow">' + google_ads[i].visible_url + '</a>');
+			document.write('</li>');
+		}
+
+		document.write('</ul>');
+		document.write('</div>');
+		document.write('</div>');
+	
+		
+		document.write('<!-- end Google AdSense writes -->');
+		
+	}
+}
+//]]>
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+         if (cl_exclusive!='Y')  
+         document.write('<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></\script>');
+        
+         
+       //]]>			 
+</script>
+<!-- End Footer Ad Component -->
+
+
+<div id="seoSplashes">
+					
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										<div id="relatedContent" class="seoSplash">
+															<!--div "relatedContent" begins	-->
+										                 <div>
+															<!--div begins-->
+										                 <h4>Related Content</h4>
+										                 <ul>
+										        
+					            <li>
+										<h5><a href="http://www.theserverside.com/resources/Software-development-techniques">Software development techniques</a></h5>
+					                  <ul>
+										
+													     <li><a href="http://www.theserverside.com/video/Jeanne-Boyarsky-on-the-differences-between-Agile-leaders-and-PMs">Jeanne Boyarsky on the differences between Agile leaders and PMs</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/video/James-Gosling-Unloads-on-Users-of-Java-142">James Gosling Unloads on Users of Java 1.4.2</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1363647/Using-The-ColdSpring-Dependency-Injection-Framework-for-ColdFusion">Using The ColdSpring Dependency Injection Framework for ColdFusion</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/feature/Dont-Do-It-Yourself-Learning-to-Trust-Open-Source">Don't Do It Yourself - Learning to Trust Open Source</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1365186/Jess-and-the-javaxrules-API">Jess and the javax.rules API</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/tip/Immutable-Law-of-Java-20-The-new-Keyword">Immutable Law of Java #20: The new Keyword</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/feature/How-to-Learn-Java">How to Learn Java</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1363653/Programmatic-Dependency-Injection-with-an-Abstract-Factory">Programmatic Dependency Injection with an Abstract Factory</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1365073/The-Pragmatic-Code-Generator-Programmer">The Pragmatic Code Generator Programmer</a></li>
+												   
+													     <li><a href="http://www.theserverside.com/news/1365166/MDA-Nice-idea-shame-about-the">MDA: Nice idea, shame about the ...</a></li>
+												   
+					                      </ul>	
+								     </li>
+									  
+									 </ul>
+								<!--end of div-->
+					        </div>
+					<!--div "relatedContent" ends	-->
+						   </div>	
+								 		     									
+							 
+
+				
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+					
+              
+
+
+
+
+
+
+
+
+
+
+
+<div id="relatedResources" class="seoSplash">
+					<div>
+									<h4>Related Resources</h4>
+									<ul>
+										<li>2020software.com, trial software downloads for <a href="http://www.2020software.com">accounting software</a>, <a href="http://www.2020software.com/compare-software/category/32/Manufacturing-ERP-Software/">ERP software</a>, <a href="http://www.2020software.com/compare-software/category/5/CRM-Software/">CRM software</a> and <a href="http://www.2020software.com/">Business Software Systems</a></li>
+										<li>Search Bitpipe.com for the latest <a href="http://library.theserverside.com">white papers</a> and <a href="http://library.theserverside.com/webcasts">business webcasts</a></li>
+										<li>Whatis.com, the online <a href="http://whatis.techtarget.com">computer dictionary</a></li>
+									</ul>
+					</div>
+</div>
+	
+	
+			</div>
+                <!-- end of seosplashes -->
+
+
+       
+<!--google text ad ends-->
+
+
+<!-- Column FIFA start -->
+	   <div><div>
+
+
+</div>
+</div> 
+	   
+<!-- end of Column FIFA -->
+<!-- end of col1 -->
+</div>
+<div class="col2">
+		<!-- Column 2 start -->
+		<!-- Column 2 end -->
+</div>
+ <div class="col3">							
+<!--Starting of seo links  --> 
+ <div><div>
+<!-- TMTBC-TMP-RightCol, www.theserverside.com, generated at 02:53:35 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+
+<script type="text/javascript">
+if (typeof dgADJads == "undefined") var dgADJads = "on";
+if (dgADJads != "off") {document.write('<div id="bigAd1"></div><br><br>');}
+document.write('<div id="cltAd"></div>');
+if (dgADJads != "off") {document.write('<br><br><div id="bigAd2"></div>');}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<!--end of seo links -->
+		<!-- Column 3 end -->
+</div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="contentFooter">
+<div><div></div>
+</div>
+
+</div>
+
+<!--div "contentInner" ends-->
+</div> 
+<!--div "content" ends-->
+</div>
+<div id="footer"> 
+<div><div>
+
+
+
+
+
+
+
+
+
+<!-- TTBC-TMP-Footer, www.theserverside.com, generated at 02:49:53 Sun Jan 29, 2012 , by vappma10.techtarget.com -->
+
+<!--FOOTER JSP BEGINS-->
+<!--   Include this HTML for DC0 sites:
+			 This is the Horizontal Navbar component (reused from header)-->
+
+<div id="footerLinksAndSearch">
+<!--div "footerLinksAndSearch" starts-->
+
+
+
+
+
+
+
+
+
+
+<div id="footerSearch">
+    <form action="/search/query" method="get" id="footerSearchForm">
+	   <fieldset>
+          <input type="hidden" name="start" value="0"/>
+		 <input type="hidden" name="filter" value="1"/>
+			<strong>SEARCH</strong>
+			<input type="text" id="footerSearchFormTextbox" name="q"/>
+			<input type="submit" value="Search" id="footerSearchFormSubmit" />
+		</fieldset>
+	</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="footerLinks">
+<!--div "footerLinks" starts-->
+<a href="/about">About Us</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/contact">Contact Us</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/advertising">For Advertisers</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/partners">For Business Partners</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/about/index">Site Index</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+<a href="/rss">RSS</a>
+<!--div "footerLinks" ends-->
+</div>
+
+<!--div "footerLinksAndSearch" ends-->
+</div>
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function portfolioWindow(page) {
+	 
+		  var portWindow = window.open(page, "portfolio", "innerWidth=860,innerHeight=535,toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes");
+	
+}
+//]]>
+</script>
+
+ 
+<div id="footerBox">
+			<p class="p1a">
+				TechTarget provides technology professionals with the information they need to perform their jobs - from developing strategy, to making cost-effective purchase decisions and managing their organizations' technology projects - with its network of <a href="javascript:portfolioWindow('/?vgnextfmt=portfolio')">technology-specific websites, events and online magazines</a>.
+			</p>
+            
+
+
+
+
+
+
+
+
+
+
+
+<p class="p5"><a href="http://www.techtarget.com/">TechTarget Corporate Web Site</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="http://www.techtarget.com/mediakit/">Media Kits</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="http://reprints.theygsgroup.com/techtarget.asp">Reprints</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;<a href="/sitemap">Site Map</a></p>
+<p class="p6">All Rights Reserved,  Copyright 2000 -  2012, TechTarget&nbsp;&#124;&nbsp;<a href="/about/copyright">Terms of Use</a>&nbsp;&#124;&nbsp;<a href="http://www.techtarget.com/html/privacy_policy.html">Read our Privacy Statement</a></p>
+<p class="p7"><a href="http://www.techtarget.com/"><em>TechTarget - The IT Media ROI Experts</em></a></p>
+</div>
+
+<script type="text/javascript">
+
+
+
+</script>
+<!-- placeholder for Motif interstitial -->
+<div id="adjInterstitial"></div>
+
+
+			<script>
+					var legacyCookieName = "theserverside";
+					var tt_utCookieName = "tt_ut";
+					
+					var allcookies = document.cookie;
+
+					var indexlegacyCookie = allcookies.indexOf(legacyCookieName+"=");
+					var indextt_utCookie = allcookies.indexOf(tt_utCookieName+"=");
+					
+					if ( indexlegacyCookie != -1 && indextt_utCookie == -1 ){
+						var iframe = document.createElement("iframe");
+						iframe.setAttribute("id", "tsslegacyframe");
+						iframe.setAttribute("style", "width: 1px; height: 1px; display: none;");
+						iframe.setAttribute("src", "http://users.theserverside.com/registration/theserversidecom/LoginRegister.page");
+						document.getElementsByTagName("body")[0].appendChild(iframe);
+					}
+			</script>
+</div>
+</div>
+</div>
+<!--div "containerInner" ends-->
+</div>
+<!--div "containerOuter" ends-->
+</div>
+<!--end BODY "ciCLT" -->
+
+
+
+<script>
+
+var date = new Date();
+date.setTime(date.getTime()+(5*365*24*60*60*1000));
+var expires = "expires="+date.toGMTString();
+
+
+	var name = 'cc';
+	var count = 'TheServerSideCOM-1';
+	
+	document.cookie = name+"="+count+ ";" + expires +"; path=/";
+
+
+</script>
+
+</body>
+
+<!-- 
+Region/Component Load time
+===============
+TTBC-TMP-Head=3
+TTBC-TMP-LoginBand=1
+TTBC-TMP-Header=2
+TTBC-TMP-ContentHeader=1
+TTBC-TMP-SectionTitleFeature=1
+DSM:ITEMRegion:EOC_CI=17
+TTJC-TMP-Comments=2
+TMTBC-TMP-RightCol=2
+TTBC-TMP-ContentFooter=1
+End-Of-Page=1
+
+TOTAL PAGE LOAD TIME=31
+ --> 
+<!-- Request Serving Server : vappma10.techtarget.com-->
+
+
+</html>

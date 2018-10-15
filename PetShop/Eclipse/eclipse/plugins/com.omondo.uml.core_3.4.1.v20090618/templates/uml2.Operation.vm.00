@@ -1,0 +1,39 @@
+#set( $this = $JavaTool.getHelper($uml) )
+
+#if ($JavaTool.useJavaDoc($this))
+/**
+#else
+/*
+ * (non-javadoc)
+#end 
+#if($this.doc != "")
+ * $JavaTool.format($this.doc)
+#end
+#if($this.annotation != "") 
+ *
+ * $JavaTool.format($this.annotation)
+#end
+ */
+$JavaTool.modifiers($this) #if (!$this.constructor)
+$JavaTool.name($this.returnType) #end
+${this.name}($JavaTool.parameters($this.parameters))#if( ! $this.isExceptionsEmpty() )
+	throws $JavaTool.types($this.exceptions, ", ") #end
+#if( ${this.isAbstract()} )
+;
+#else
+{
+#if ($this.body)
+$this.body#else
+#if (!$this.constructor)
+#if( ${this.defaultValue})
+	return ${this.defaultValue};
+#elseif ($this.returnType.name == "boolean")
+	return false;	
+#elseif ($this.returnType.name == "int" || $this.returnType.name == "short" || $this.returnType.name == "long" || $this.returnType.name == "char" || $this.returnType.name == "float" || $this.returnType.name == "double")
+	return 0;
+#elseif ($this.returnType.name != "void")
+	return null;
+#end
+#end
+#end
+}#end

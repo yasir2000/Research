@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+<extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.omondo.andromda"
+            name="AndroMDA"/>
+      <wizard
+            canFinishEarly="false"
+            category="com.omondo.andromda"
+            class="com.omondo.uml.wtp.ui.project.wizard.NewJEEProjectWizard"
+            hasPages="true"
+            icon="icons/j2ee_NEW53.gif"
+            id="com.omondo.andromda.ui.project.wizard.NewJEEProjectWizard"
+            name="JEE Project"
+            project="true"/>
+      <primaryWizard id="com.omondo.andromda.ui.project.wizard.NewAndroidProjectWizard"/>
+      <!--wizard
+            icon="icons/RCP_NEW23.gif"
+            class="com.omondo.uml.wtp.ui.project.wizards.NewRCPAndroMDAProjectWizard"
+            category="com.omondo.andromda"
+            project="true"
+            name="RCP Project"
+            id="com.omondo.andromda.ui.project.wizard.NewRCPAndroMDAProjectWizard"/-->
+   </extension>
+   
+   
+   	<extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="com.omondo.uml.jee.objectContribution1"
+            nameFilter="*.uml"
+            objectClass="org.eclipse.core.resources.IFile">
+            
+         <menu
+               id="com.omondo.uml.std.ui.actions.menu1"
+               label="JEE UML Code Generation"
+               path="additions">
+            <separator name="group4"/>
+            <separator name="group5"/>
+         </menu>
+         <!--menu
+               id="com.omondo.uml.jee.menu3"
+               label="Code Generation"
+               path="com.omondo.uml.std.ui.actions.menu1/group5">
+            <separator name="gr1"/>
+         </menu-->
+        <!-- <action
+               class="com.omondo.uml.wtp.ui.popup.actions.BuilProjectAction"
+               icon="icons/AllComponents.gif"
+               id="com.omondo.uml.jee.action2"
+               label="Build All Components"
+               menubarPath="com.omondo.uml.std.ui.actions.menu1/group5"/>-->
+         <!--action
+               class="com.omondo.uml.wtp.ui.popup.actions.BuildWebComponentAction"
+               icon="icons/globe_006.png"
+               id="com.omondo.uml.jee.action4"
+               label="Build Web Component"
+               menubarPath="com.omondo.uml.std.ui.actions.menu1/com.omondo.uml.jee.menu3/gr1"/>
+         <action
+               class="com.omondo.uml.wtp.ui.popup.actions.BuildCoreComponentAction"
+               icon="icons/core.gif"
+               id="com.omondo.uml.jee.action5"
+               label="Build Core Component"
+               menubarPath="com.omondo.uml.std.ui.actions.menu1/com.omondo.uml.jee.menu3/gr1"/-->
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
+            id="com.omondo.uml.wtp.ui.objectContribution2"
+            objectClass="org.eclipse.core.resources.IProject">
+         <filter
+               name="projectNature"
+               value="com.omondo.uml.wtp.andromdaNature"/>
+         <menu
+               id="com.omondo.uml.std.ui.actions.menu2"
+               label="JEE UML"
+               path="additions">
+            <separator name="separator1"/>
+            <separator name="group5"/>
+         </menu>
+         <action
+               class="com.omondo.uml.jee.maven.actions.CleanTargetDirectories"
+               icon="icons/clear_targets.gif"
+               id="com.omondo.uml.jee.action3"
+               label="Clean Project Targets"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/separator1">
+         </action>
+         <menu
+               id="com.omondo.uml.wtp.ui.documentMenu"
+               label="Documentation"
+               path="com.omondo.uml.std.ui.actions.menu2/group5">
+            <separator name="gr1"/>
+         </menu>
+         <action
+               class="com.omondo.uml.jee.maven.actions.BuildProjectDocumentationSite"
+               icon="icons/site.gif"
+               id="com.omondo.uml.wtp.ui.action3"
+               label="Generate Project Documentation Site"
+               menubarPath="com.omondo.uml.std.ui.actions.menu2/com.omondo.uml.wtp.ui.documentMenu/gr1"/>
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
+            id="com.omondo.uml.wtp.ui.objectContribution3"
+            nameFilter="*-core"
+            objectClass="org.eclipse.core.resources.IProject">
+         <filter
+               name="projectNature"
+               value="com.omondo.uml.wtp.hibernateNature">
+         </filter>
+         <action
+               class="com.omondo.uml.jee.maven.actions.GenerateSqlScript"
+               icon="icons/database.gif"
+               id="com.omondo.uml.wtp.ui.action4"
+               label="Generate DataBase Schema">
+         </action>
+      </objectContribution>
+   </extension>
+</plugin>

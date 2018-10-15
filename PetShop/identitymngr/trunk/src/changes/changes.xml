@@ -1,0 +1,50 @@
+<document>
+
+  <properties>
+    <title>Changes to Provisioner Project</title>
+    <author email="gonzalo.espert@gmail.com">Gonzalo Espert</author>
+  </properties>
+
+  <body>
+  
+  	<release version="1.0.18" date="2008-02-07" description="Subsequent release">
+      <action dev="martin-m" type="add">
+        Implemented localization (i.e. I8n).
+      </action>
+      <action dev="g_pearson" type="add">
+        Implemented LDAP adapter. Now Provisioner is able to send provisioning
+        requests to LDAP based identity stores.
+      </action>
+      <action dev="gespert" type="fix" issue="1812548">
+        Fixed problem with the parameter that set the maximum amount of 
+        threads to run.
+      </action>  
+    </release>
+    
+    <release version="1.0.17" date="2007-09-14" description="First release">
+      <action dev="gespert" type="add">
+        Creation, modification and removal of Merak email service.
+      </action>
+      <action dev="gespert" type="add">
+        Creation, modification and removal of Asterisk voicemail service.
+      </action>
+      <action dev="gespert" type="add">
+        Creation, modification and removal of Intraway Internet service.
+      </action>
+      <action dev="gespert" type="add">
+        Creation, modification and removal of SER VoIP services and supplementary services.
+      </action>
+      <action dev="gespert" type="add">
+        Supports identity stores with the following interfaces: Telnet, SSH and SOAP.
+      </action>
+      <action dev="gespert" type="add">
+        Request reception interface is based in an SQL database (i.e. Request Authority has to insert its request in the database using SQL insert command).
+      </action>
+      <action dev="gespert" type="add">
+        Configuration of provisioning rules is done in XML files (i.e. rules, services, responses, network elements, routes and database connection strings).
+      </action>
+    </release>
+    
+  </body>
+  
+</document>

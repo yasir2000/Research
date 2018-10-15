@@ -1,0 +1,6 @@
+PDDL setting fluent [initial-offer] to [475]
+PDDL setting fluent [offer-fn] to [(fn [n] (list (quote fn) (quote [bd off cnt]) (list (quote -) (quote off) (list (quote Math/max) 2 (list (quote int) (list (quote /) (quote (- off bd)) (+ n 3)))))))]
+PDDL setting fluent [initial-bid] to [145]
+PDDL setting fluent [bid-fn] to [(quote (fn [bd off cnt] (+ bd (int (/ (- off bd) 3)))))]
+fluents offer-fn [class clojure.core$eval2031$fn__2032$fn__2037$eval2038__2039$fn__2040]
+fluents offer-fn [class clojure.core$eval2031$fn__2032$fn__2037$eval2038__2039$fn__2040]

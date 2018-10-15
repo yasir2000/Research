@@ -1,0 +1,1 @@
+scomp -out WTP_Component.jar org.eclipse.wst.common.component.xsd

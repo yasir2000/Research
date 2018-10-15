@@ -1,0 +1,65 @@
+	------
+	IT infrastructure business use case
+	------
+	Gonzalo Espert
+	------
+	Oct 31, 2007
+
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+IT infrastructure service business use case
+
+  In the ideal IT environment all applications and operating systems point to 
+  one single identity vault. Of course, this is not the case in most 
+  environments. The process of automating the user creation, applying changes 
+  to user information as well as the removal of users is all covered by a 
+  good provisioning engine ('software tool'). 
+  
+  Very often the HR application is appointed as the authoritative source for 
+  user creation and removal. Some software tools centralize all the 
+  information into a central repository, called a meta-directory, others use a 
+  central database. In fact all provisioning tools basically do the same 
+  thing: they react upon changes in IT systems which trigger changes to 
+  identity data in different 'connected' systems. 
+  
+  Most organizations store identity information about their employees in many 
+  different systems: corporate directory, phone-book, e-mail address book, ERP 
+  system, PBX, mainframe, etc. Today most organizations have those processes 
+  executed by help-desk staff: all manual operations triggered by help-desk 
+  calls or by automatically generated tickets. The automation of those 
+  processes takes up a lot of time from those help-desk people, time that 
+  could be spent on much more productive tasks.
+  
+  The most important reasons why organizations need automatic User Identity 
+  Provisioning are:
+  
+ * reduce user management efforts
+  
+ * optimize productivity of new employees by giving them all the 
+   rights they need instantly (staff in-out-move)
+
+ * protect your organization against risks by closely protecting your 
+   data against permissions which are assigned in excess of duties (Segregation of Duties)
+
+ * streamline user naming
+
+ * minimize Identity Data inconsistency
+  
+  In the following scenario, a new employee is created by an HR representative:
+  
+[./images/IT infrastructure business use case.png] IT infrastructure business use case

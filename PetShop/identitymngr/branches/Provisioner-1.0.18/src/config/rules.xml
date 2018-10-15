@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://rules.org">
+  <description>
+     Provisioning business rules configuration.
+  </description>
+  
+  <rule operation="LDAPC">
+        <title>LDAP attribute creation.</title> 
+        <request service="LDAP_service" type="Create" /> 
+  </rule>
+  
+  <rule operation="ATEML">
+  		<title>Email service subscription</title>
+		<request service="Email" type="Create"/>
+  </rule>
+  
+  <rule operation="BAEML">
+  		<title>Email service subscription removal</title>
+		<request service="Email" type="Delete"/>
+  </rule>
+  
+  <rule operation="ATINT">
+  		<title>Internet service subscription</title>
+		<request service="Internet" type="Create"/>
+  </rule>
+  
+  <rule operation="MOINT">
+  		<title>Internet service subscription modification</title>
+		<request service="Internet" type="Modification"/>
+  </rule>
+  
+  <rule operation="BAINT">
+  		<title>Internet service subscription removal</title>
+		<request service="Internet" type="Delete"/>
+  </rule>
+  
+  <rule operation="ATESP">
+  		<title>Internet service subscription space creation</title>
+		<request service="Internet" type="Create space"/>
+		<request service="Internet" type="Declare pcs"/>
+  </rule>
+  
+  <rule operation="ATMOD">
+  		<title>Internet service broadband modem declaration</title>
+		<request service="Internet" type="Activate modem"/>
+  </rule>
+  
+  <rule operation="BAMOD">
+  		<title>Internet service broadband modem removal</title>
+  		<request service="Internet" type="Remove pcs"/>
+		<request service="Internet" type="Deactivate Modem"/>
+  </rule>
+  
+  <rule operation="MOPCS">
+  		<title>Internet service PCs quantity modification</title>
+		<request service="Internet" type="Pc Modification"/>
+  </rule>
+  
+  <rule operation="ATLIN">
+  		<title>IP phone line creation</title>
+		<request service="Line" type="Create"/>
+  </rule>
+  
+  <rule operation="BALIN">
+  		<title>IP phone line removal</title>
+		<request service="Line" type="Delete"/>
+  </rule>
+  
+  <rule operation="DSSUP">
+  		<title>IP phone line supplementary service removal</title>
+		<request service="Line" type="Disable"/>
+  </rule>
+  
+  <rule operation="HBSUP">
+  		<title>IP phone line supplementary service enablement</title>
+		<request service="Line" type="Enable"/>
+  </rule>
+  
+  <rule operation="ATVMA">
+  		<title>Voice mail service subscription</title>
+		<request service="Voicemail" type="Create"/>
+  </rule>
+  
+  <rule operation="BAVMA">
+  		<title>Voice mail service removal</title>
+		<request service="Voicemail" type="Delete"/>
+  </rule>
+  <rule operation="SCRIP">
+  		<title>Run script</title>
+		<request service="Script" type="add"/>
+  </rule>
+  
+</rules>

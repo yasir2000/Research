@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_RgVfXCK2Edu07u_JJk0LDQ" name="AndroMDA Profile Xml" metamodelReference="_RgVfZSK2Edu07u_JJk0LDQ">
+  <eAnnotations xmi:id="_RgVfXyK2Edu07u_JJk0LDQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_7JNEVSK5EdujMN-Mf6X4Bw" name="AndroMDAProfileXml_1" nsURI="http:///AndroMDAProfileXml_1_7JNEVCK5EdujMN-Mf6X4Bw.profile.uml2" nsPrefix="AndroMDAProfileXml_1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_7JNEViK5EdujMN-Mf6X4Bw" name="AndroMDAProfileXml__XmlSchemaType">
+        <eAnnotations xmi:id="_7JNEVyK5EdujMN-Mf6X4Bw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RgVfaCK2Edu07u_JJk0LDQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_XxabIH7hEdukhMGaU-hRBA" name="base_Class">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_7JNEWCK5EdujMN-Mf6X4Bw" name="AndroMDAProfileXml__XmlAttribute">
+        <eAnnotations xmi:id="_7JNEWSK5EdujMN-Mf6X4Bw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RgVfbyK2Edu07u_JJk0LDQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_XxabIX7hEdukhMGaU-hRBA" name="base_Property">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_RgVfYCK2Edu07u_JJk0LDQ" name="AndroMDAProfileXml_0" nsURI="http:///AndroMDAProfileXml_0_RfJIYiK2Edu07u_JJk0LDQ.profile.uml2" nsPrefix="AndroMDAProfileXml_0">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RgVfYSK2Edu07u_JJk0LDQ" name="AndroMDAProfileXml__XmlSchemaType">
+        <eAnnotations xmi:id="_RgVfYiK2Edu07u_JJk0LDQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RgVfaCK2Edu07u_JJk0LDQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_XxabIn7hEdukhMGaU-hRBA" name="base_Class">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RgVfYyK2Edu07u_JJk0LDQ" name="AndroMDAProfileXml__XmlAttribute">
+        <eAnnotations xmi:id="_RgVfZCK2Edu07u_JJk0LDQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RgVfbyK2Edu07u_JJk0LDQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_XxabI37hEdukhMGaU-hRBA" name="base_Property">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_RgVfZSK2Edu07u_JJk0LDQ" visibility="private">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_RgVfZiK2Edu07u_JJk0LDQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_RgVfZyK2Edu07u_JJk0LDQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_RgVfaCK2Edu07u_JJk0LDQ" name="XmlSchemaType">
+    <ownedComment xmi:id="_RgVfaSK2Edu07u_JJk0LDQ">
+      <body>Represents an XML Schema type.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_7GhjwyK5EdujMN-Mf6X4Bw" name="base_Class" association="_7GhjwCK5EdujMN-Mf6X4Bw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_RgVfbyK2Edu07u_JJk0LDQ" name="XmlAttribute">
+    <ownedComment xmi:id="_RgVfcCK2Edu07u_JJk0LDQ">
+      <body>Defines whether or not an attribute should be represented as an XML Schema attribute during generation time, if its either false, or not defined, then it will be assumed that the UML attribute should be represented as an XML Schema element instead.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_7JNEUyK5EdujMN-Mf6X4Bw" name="base_Property" association="_7JNEUCK5EdujMN-Mf6X4Bw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_7GhjwCK5EdujMN-Mf6X4Bw" name="Class_XmlSchemaType" memberEnd="_7GhjwSK5EdujMN-Mf6X4Bw _7GhjwyK5EdujMN-Mf6X4Bw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_7GhjwSK5EdujMN-Mf6X4Bw" name="extension_XmlSchemaType" type="_RgVfaCK2Edu07u_JJk0LDQ" aggregation="composite" association="_7GhjwCK5EdujMN-Mf6X4Bw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7GhjwiK5EdujMN-Mf6X4Bw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_7JNEUCK5EdujMN-Mf6X4Bw" name="Property_XmlAttribute" memberEnd="_7JNEUSK5EdujMN-Mf6X4Bw _7JNEUyK5EdujMN-Mf6X4Bw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_7JNEUSK5EdujMN-Mf6X4Bw" name="extension_XmlAttribute" type="_RgVfbyK2Edu07u_JJk0LDQ" aggregation="composite" association="_7JNEUCK5EdujMN-Mf6X4Bw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7JNEUiK5EdujMN-Mf6X4Bw"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Profile>

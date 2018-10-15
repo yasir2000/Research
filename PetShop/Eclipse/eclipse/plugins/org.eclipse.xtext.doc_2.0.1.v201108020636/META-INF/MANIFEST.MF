@@ -1,0 +1,564 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.xtext.doc;singleton:=true
+Require-Bundle: org.eclipse.help,org.eclipse.xtext.util;bundle-version
+ ="2.0.0";resolution:=optional,org.eclipse.emf.ecore;bundle-version="2
+ .5.0";resolution:=optional,org.apache.log4j;bundle-version="1.2.15";r
+ esolution:=optional,org.eclipse.xtext;bundle-version="2.0.0";resoluti
+ on:=optional,org.eclipse.xtext.ui;bundle-version="2.0.0";resolution:=
+ optional,org.eclipse.xtext.generator;bundle-version="2.0.0";resolutio
+ n:=optional,org.eclipse.xtext.ui.shared;bundle-version="2.0.0";resolu
+ tion:=optional,org.eclipse.xtext.xtext.ui;bundle-version="2.0.0";reso
+ lution:=optional,org.eclipse.xtext.common.types;bundle-version="2.0.0
+ ";resolution:=optional,org.eclipse.xtext.common.types.ui;bundle-versi
+ on="2.0.0";resolution:=optional,org.eclipse.xtext.junit;bundle-versio
+ n="2.0.0";resolution:=optional,org.eclipse.xtext.xbase;bundle-version
+ ="2.0.0";resolution:=optional,org.eclipse.emf.mwe2.launch;bundle-vers
+ ion="2.0.0";resolution:=optional,org.eclipse.xtext.xdoc.generator;bun
+ dle-version="0.1.0";resolution:=optional,org.eclipse.jdt.core;resolut
+ ion:=optional,org.eclipse.xtext.junit4;bundle-version="2.0.1"
+Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)
+Bundle-Version: 2.0.1.v201108020636
+Bundle-ManifestVersion: 2
+
+Name: xbase/199e-xbase-language-reference.xdoc
+SHA1-Digest: ZbrRZFpWnekoGYORHw0DKvNpGF8=
+
+Name: images/modules_hierarchy.dot
+SHA1-Digest: 6zLKdaooTjFfphTtT5wgmxBxe7Q=
+
+Name: 080-scoping.xdoc
+SHA1-Digest: GuhQp5Ip4apFaeznpl61tlwcDUE=
+
+Name: images/generator-structure.graffle
+SHA1-Digest: R/gRaT6PUEfvl/iqARCFPbGTGsA=
+
+Name: about.ini
+SHA1-Digest: So6w3BOLjDxdL3xtKUBiKuOB/Gc=
+
+Name: contents/050-heading-runtime.html
+SHA1-Digest: tU73FCxVu7ZPG2YO4rQ1o2rWBvc=
+
+Name: workflow/GenerateDocs.mwe2
+SHA1-Digest: +QzxaLfDDH2lZGZ9vsFb7apYXfw=
+
+Name: contents/xtext_16.html
+SHA1-Digest: GTTXqm0tg5agGOX6EHmzxrzQpcc=
+
+Name: contents/020-grammar-language.html
+SHA1-Digest: a+KJZcyCxXlpT789vt7p4l2zDAg=
+
+Name: 130-managing-concurrency.xdoc
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: tutorial/images/FiveMinTutorial_Editor.png
+SHA1-Digest: 2TeBg5DZ74noJ+XHLG8o+3UWlRo=
+
+Name: 170-outline.xdoc
+SHA1-Digest: L5elkT2Vc2CPiN5mvC5MR9x7XN8=
+
+Name: images/getting-started-wizard.png
+SHA1-Digest: UEzsqwqmjEWTPBaIMHyHLv9Nkvc=
+
+Name: contents/005-installation.html
+SHA1-Digest: 3wKfrD9gGDAr/wJPB4Hr41ppehw=
+
+Name: images/getting-started-editor.png
+SHA1-Digest: 8tQOhI7ED4XLiXWh4Jkk8998Plo=
+
+Name: images/preferences_templates.png
+SHA1-Digest: NiW4NtzFg4h4Q3UJ/1Po2NR2jrU=
+
+Name: images/sample_outline.jpg
+SHA1-Digest: 5x4IlN/1e8FG3SxBEVBcBCl991k=
+
+Name: images/index_datamodel.graffle
+SHA1-Digest: VelzXtzOBx5MntdnImm0E8RgCsU=
+
+Name: images/generator-structure.png
+SHA1-Digest: lidP3KXJuZ2ggu6aCC8DLsz2rYw=
+
+Name: contents/images/mwe2/module.png
+SHA1-Digest: a6Z/XeJ8GAHFdufGCFCZFlWDyPE=
+
+Name: tutorial/images/30min_multipleeditors.png
+SHA1-Digest: xh86N0brAKCzIC2/TQoYJL1UJYI=
+
+Name: tutorial/030-tutorial-next-steps.xdoc
+SHA1-Digest: ieRI3wB9kw+iUtL0CwJ8oko9jFo=
+
+Name: 198-wizards.xdoc
+SHA1-Digest: ODFZG5uEb6kkkxPv1bvAOUtdAO4=
+
+Name: images/ast.png
+SHA1-Digest: IBbCyehE9TkvfhvzbuEax+3nzDA=
+
+Name: images/metamodel.png
+SHA1-Digest: JfcJ7BKdZAxTVtMPRu1UmWBh5q8=
+
+Name: contents/01-Xtend_Introduction.html
+SHA1-Digest: J68Elh2ol2hDX+XSmDjWXF0wUSs=
+
+Name: contents/images/FiveMinTutorial_FreshProject.png
+SHA1-Digest: a3cULRAggcd4iV74BA9okE1Spqg=
+
+Name: tutorial/images/30min_initialprojectlayout.png
+SHA1-Digest: gu6BBwZhZ4ZwZDR2/xN4w9ZuVQc=
+
+Name: images/logo/xtext-logo-dark-1600.png
+SHA1-Digest: XTKIKEhGWrF8esNbFXpYSMl6m7Q=
+
+Name: tutorial/images/30min_launchconfiguration.png
+SHA1-Digest: KMqVC9HbNHmrmBkUVjfhPfhNf7c=
+
+Name: images/mwe2/property.png
+SHA1-Digest: ueXuDlY3XzAaqzSH0PtYzqOPEyo=
+
+Name: 060-validation.xdoc
+SHA1-Digest: 7TbcCIwM5amcY4ekcKN091L4Z/Q=
+
+Name: images/getting-started-editor1.png
+SHA1-Digest: 08y5tYxzxSuweeffPMEV6x9LeVE=
+
+Name: about.properties
+SHA1-Digest: CfZUhkNmpXBmDHE5OdhiuL3obBM=
+
+Name: tutorial/images/FiveMinTutorial_LaunchConfig.png
+SHA1-Digest: co/WlkENvemH3wC1fPWij2MpuxU=
+
+Name: images/mwe2/component.png
+SHA1-Digest: tvPE9UVzdPo6dIrD9E+GJDSlyLs=
+
+Name: contents/030-generator.html
+SHA1-Digest: V40AF/mS3n+fWY3ZP+89YGZWcBg=
+
+Name: 017-getting-started-xpand.xdoc
+SHA1-Digest: WAZgPw6oEpApM/uR6Ft2v9uP998=
+
+Name: 030-generator.xdoc
+SHA1-Digest: H5EOLoRFxtBN5pwmlh7DBWFqQcI=
+
+Name: contents/020-domainmodel-step-by-step.html
+SHA1-Digest: kN0pUvoCJreq2mqoRwa+sZxD/Io=
+
+Name: contents/images/ecore.png
+SHA1-Digest: Gtk29MKw3ClWToEpDaY3MYkeFVw=
+
+Name: 230-antlr-ip-issue.xdoc
+SHA1-Digest: Idh8QC665ikT1bF6mNLCvVUOjeQ=
+
+Name: 195-highlighting.xdoc
+SHA1-Digest: BTphtuurxv7UKorpN8zVkvz/4GM=
+
+Name: tutorial/060-unit-tests.xdoc
+SHA1-Digest: 1EwrLEdGGKKbl+vQ9PZMmCNfTFA=
+
+Name: contents/images/templates_enum.png
+SHA1-Digest: n/NJP8TOqqrLHe0WxB2dWDg+dcQ=
+
+Name: images/xtext_data_structures.graffle
+SHA1-Digest: v28UT5O2+qaJVxtdKx472v3zEJU=
+
+Name: images/logo/xtext_logo.jpg
+SHA1-Digest: AbUgGJ/Yf+xLuPYxYM/axVYP6YA=
+
+Name: 210-emf-integration.xdoc
+SHA1-Digest: LUeMYkk9++IGrKzWdCN1D1ZuN8Y=
+
+Name: 220-deploying-dsls.xdoc
+SHA1-Digest: kfKVZ/OWAbHLpeP37HDDmjCbxaI=
+
+Name: images/generator-project.pdf
+SHA1-Digest: Nriopr6N5NpPQUGH0LN47/xH8aE=
+
+Name: images/ecore.graffle
+SHA1-Digest: tb82bGFLSvcaFyPwJk3uhBmMqjE=
+
+Name: contents/images/30min_rungenerator.png
+SHA1-Digest: 42uKXyqX0Ff9yAoJVJQn1E2MsGM=
+
+Name: images/node-model.png
+SHA1-Digest: 1AZ6ggEEP/d88Wg0EV+v/BFGQIQ=
+
+Name: 110-fragmentprovider.xdoc
+SHA1-Digest: 3fvRrbsYalT0gOfZrebWdbjEKcU=
+
+Name: contents/images/family_tree.png
+SHA1-Digest: oqla/hEh27HexxiWJvbHFSqa71E=
+
+Name: images/logo/Xtext-logo-dark.jpg
+SHA1-Digest: 7EvRvr8ZBb6/f3S+esYyTD5aDtw=
+
+Name: 040-dependency-injection.xdoc
+SHA1-Digest: VKvyuJzzrFMD3MVcFSSCmB08Dv4=
+
+Name: 100-serialization.xdoc
+SHA1-Digest: 3jk6DXmORF84rSsuCsdR+hAffs0=
+
+Name: images/logo/logo.tif
+SHA1-Digest: 8aB2hKAi1vM6JSgLRiEGPAadFUc=
+
+Name: xbase/199a-jvmtypes.xdoc
+SHA1-Digest: 8i6yLvyfUIkuLxS5waRVZmrGRIg=
+
+Name: images/xtext_data_structures.png
+SHA1-Digest: a+Eeoot486hewI4fVTDAXyak8Hw=
+
+Name: images/sample_outline.png
+SHA1-Digest: LLFGo9yaF85Baj0PKKE8ysRhe/o=
+
+Name: images/logo/xtext-logo-dark-300.png
+SHA1-Digest: YbPSZa0013Wn3dHzf6HbTrSBmR8=
+
+Name: contents/xtext_15.html
+SHA1-Digest: KCBnLl1dkTCMEKehPd6wbosrxsM=
+
+Name: images/logo/Xtext-logo-dark.pdf
+SHA1-Digest: Ji5fVOMGCDDn74Kx/+qVfcT+Uto=
+
+Name: xtext.xdoc
+SHA1-Digest: ugTHysCD8VP/vi0BoyTlSYDpr60=
+
+Name: contents/xtext.html
+SHA1-Digest: vC5tvLGX4hv5/Ra5GW3PKk1mMKE=
+
+Name: tutorial/005-installation.xdoc
+SHA1-Digest: BuDg5k5Q6J0lBs7xUE3wr65zU7Y=
+
+Name: images/logo/Xtext-Logo-Kreide-sw.jpg
+SHA1-Digest: ojbRrn95O27ROEfZKS7vOK1MXAY=
+
+Name: contents/images/preferences_templates.png
+SHA1-Digest: NiW4NtzFg4h4Q3UJ/1Po2NR2jrU=
+
+Name: tutorial/040-first-code-generator.xdoc
+SHA1-Digest: MwRS42cBJVtK7a4uvDlz6WULwJ8=
+
+Name: about.html
+SHA1-Digest: mLkmRLtG3amkcY0I7KSYZX6qKhs=
+
+Name: xtend/03-Xtend_Expressions.xdoc
+SHA1-Digest: qyjkRk1WV2rbW2b1B1oseNGuSZg=
+
+Name: tutorial/images/FiveMinTutorial_FreshProject.png
+SHA1-Digest: a3cULRAggcd4iV74BA9okE1Spqg=
+
+Name: contents/000-introduction.html
+SHA1-Digest: fGjnM4oXAej5sREC5LakQYq941c=
+
+Name: 120-heading-UI.xdoc
+SHA1-Digest: 5SWX9SZcdzJOZydrkThzo9mvfrg=
+
+Name: contents/215-migrating-from-0.7.html
+SHA1-Digest: duxfHDXgGAjBVL0fDx4RM3pCnOI=
+
+Name: modeling32.png
+SHA1-Digest: ADlLWFV0eQ74YnLvHnPFkYLeLrs=
+
+Name: images/index_container.png
+SHA1-Digest: se9Z83O/RN1+3X9Tx6WKs4DGpzs=
+
+Name: 090-valueconverter.xdoc
+SHA1-Digest: APx2/XJBd4tdWmpJXXXIqm/tQ0A=
+
+Name: contents/toc.xml
+SHA1-Digest: 0VSs9LiDHzDK40G70aKuWLLrs+c=
+
+Name: images/expression-ast.png
+SHA1-Digest: iorEGpUvx9Jdea/6rDplcsU3Dl4=
+
+Name: contents/010-xtext-in-5-minutes.html
+SHA1-Digest: IPV/Yz/WhIdC2ako1yNsmBa7FlY=
+
+Name: 213-migrating-from-1.0.xdoc
+SHA1-Digest: CX18Hgs6w6ldGR3xhANMpweR/fM=
+
+Name: contents/images/mwe2/component.png
+SHA1-Digest: tvPE9UVzdPo6dIrD9E+GJDSlyLs=
+
+Name: images/generator-project.png
+SHA1-Digest: Glo3PVB8wb4Ewk+nMYvdH5VLL/Q=
+
+Name: images/getting-started-project-layout.png
+SHA1-Digest: msXzlacacOjYT2VEWxZAYFHz42c=
+
+Name: contents/210-emf-integration.html
+SHA1-Digest: POenXN3720ol8o2hTzwmZLDvqIM=
+
+Name: contents/images/mwe2/property.png
+SHA1-Digest: ueXuDlY3XzAaqzSH0PtYzqOPEyo=
+
+Name: contents/images/preferences_syntax.png
+SHA1-Digest: sBtWsEi0ZFKaofME0a/2yBHgUEQ=
+
+Name: images/mwe2/module.png
+SHA1-Digest: a6Z/XeJ8GAHFdufGCFCZFlWDyPE=
+
+Name: 140-labelprovider.xdoc
+SHA1-Digest: 9yW+f1gCgZcQrGn2zwIpw9mGDUM=
+
+Name: 070-linking.xdoc
+SHA1-Digest: h64wknzDvfQoiREPeiBW4cm5rR8=
+
+Name: images/ast.graffle
+SHA1-Digest: D/oy/7JhuBf4HsYW7XvnNZCm558=
+
+Name: contents/images/index_container.png
+SHA1-Digest: se9Z83O/RN1+3X9Tx6WKs4DGpzs=
+
+Name: images/metamodel.graffle
+SHA1-Digest: SIc/3WwA2xXgNHfVqwWmvt93iTg=
+
+Name: contents/images/30min_wizard.png
+SHA1-Digest: eQI2a+GZUE6z/3D5rRZXtgYuYY0=
+
+Name: tutorial/images/30min_rungenerator.png
+SHA1-Digest: 42uKXyqX0Ff9yAoJVJQn1E2MsGM=
+
+Name: contents/images/30min_editor.png
+SHA1-Digest: rPfDfnAlsDf0QD5jqXqY4UwkJAA=
+
+Name: tutorial/020-domainmodel-step-by-step.xdoc
+SHA1-Digest: YjhBTj6MJoUIasRZy+MNn47oEz8=
+
+Name: contents/images/templates_crossref.png
+SHA1-Digest: HONfEPlcCH8erJz4qYGY0U6Ol6o=
+
+Name: images/logo/Xtext-logo-dark.eps
+SHA1-Digest: MIfgs9Oe12wo3ThTQJF3hYq+Cuc=
+
+Name: 205-typical-language-configs.xdoc
+SHA1-Digest: 6Xi7T5RtEdVEvSihXIbxRc3Jk+o=
+
+Name: images/highlighting.png
+SHA1-Digest: G0LW/EofA02LGIpjN9FTed+yu2A=
+
+Name: contents/118-mwe-in-depth.html
+SHA1-Digest: zJn6X69xeFrIm6Km95qh2Apj8V4=
+
+Name: images/family_tree.graffle
+SHA1-Digest: Ip0ozxdl6kfcrLGAT4dGetsSENw=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: contents/xtext_17.html
+SHA1-Digest: PgkbxruKG2Ww9HWMIABew5/mVDQ=
+
+Name: about.mappings
+SHA1-Digest: xBFoF8CMHkPwh10mO7ks/vHqxFc=
+
+Name: contents/199-xtext-and-java.html
+SHA1-Digest: LxFnKjhs6A0nBAVpEAcxGjyE4YQ=
+
+Name: images/logo/xtext-logo-dark-800.png
+SHA1-Digest: qVQ5KIg1yzX/dG6ickrsDYNRy3A=
+
+Name: contents/images/sample_outline.png
+SHA1-Digest: LLFGo9yaF85Baj0PKKE8ysRhe/o=
+
+Name: 155-quickfix.xdoc
+SHA1-Digest: 5aMPvfqyyWFCmbQG38IL0O2FuyA=
+
+Name: contents/images/highlighting.png
+SHA1-Digest: G0LW/EofA02LGIpjN9FTed+yu2A=
+
+Name: images/logo/X-Text-Logo-hor-black-trans.eps
+SHA1-Digest: eFpeqou9IV+WmgcDHxJDSIjPE9I=
+
+Name: contents/images/generator-structure.png
+SHA1-Digest: lidP3KXJuZ2ggu6aCC8DLsz2rYw=
+
+Name: images/logo/building.jpg
+SHA1-Digest: sXA7hX7PWH0QeRRHiWtIKYDubTI=
+
+Name: images/node-model.graffle
+SHA1-Digest: kQySOAVQfPu3kHfsPdgh2zMxRgU=
+
+Name: images/index_datamodel.png
+SHA1-Digest: +5M6h3AUBw78IzDhHkEbBgpDgQI=
+
+Name: 000-introduction.xdoc
+SHA1-Digest: X98Nboek3G2go47Oh+zjQMkzxaA=
+
+Name: 160-templates.xdoc
+SHA1-Digest: Olcg1bdNdw3MIZWKMIDZiH6PbHA=
+
+Name: xbase/199i-xbase-language-reference-libraries.xdoc
+SHA1-Digest: LuSyEGMWBP/fj1idultAT0KPWjU=
+
+Name: contents/images/ast.png
+SHA1-Digest: IBbCyehE9TkvfhvzbuEax+3nzDA=
+
+Name: images/preferences_syntax.png
+SHA1-Digest: sBtWsEi0ZFKaofME0a/2yBHgUEQ=
+
+Name: images/family_tree.png
+SHA1-Digest: oqla/hEh27HexxiWJvbHFSqa71E=
+
+Name: 050-heading-runtime.xdoc
+SHA1-Digest: 6JxQ6/qePmLjXHMzqfsD23NW3zk=
+
+Name: 115-encoding.xdoc
+SHA1-Digest: yN+EZ3j3q0/0+26Y4ES207f1Nqc=
+
+Name: 010-concepts.xdoc
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: 016-working-with-Xtext-models.xdoc
+SHA1-Digest: TlmZ+TUOV5fT5XmWlYjvnBzgZFY=
+
+Name: xbase/199f-xbase-language-reference-syntax.xdoc
+SHA1-Digest: O4VB/Ph4T+TlQ5kStNl8AqBlrrc=
+
+Name: contents/images/expression-ast.png
+SHA1-Digest: iorEGpUvx9Jdea/6rDplcsU3Dl4=
+
+Name: 200-Appendix.xdoc
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: 206-expressions-in-xtext.xdoc
+SHA1-Digest: Y7S76q8V1OxR4Rs1L2nRYPy/XFw=
+
+Name: xbase/199d-xbase-expressions.xdoc
+SHA1-Digest: WKw4J/DewmuXu24JFrvBkYRsUNo=
+
+Name: images/templates_crossref.png
+SHA1-Digest: HONfEPlcCH8erJz4qYGY0U6Ol6o=
+
+Name: contents/images/index_datamodel.png
+SHA1-Digest: +5M6h3AUBw78IzDhHkEbBgpDgQI=
+
+Name: contents/images/FiveMinTutorial_Editor.png
+SHA1-Digest: 2TeBg5DZ74noJ+XHLG8o+3UWlRo=
+
+Name: plugin.properties
+SHA1-Digest: pmuJd6w7NubSTcVPtbRg/rzyDQI=
+
+Name: 180-hyperlinking.xdoc
+SHA1-Digest: UjbvW4JvslUlXWU0Q7McV9hihPY=
+
+Name: images/emf-integration.graffle
+SHA1-Digest: k+2vAymnjv+daYtwhKP0ifb/FRY=
+
+Name: 015-getting-started.xdoc
+SHA1-Digest: I02GfvEuQGeM28on40QdEprUGuk=
+
+Name: 020-grammar-language.xdoc
+SHA1-Digest: SG69dJZd34I1rFFX3lfeQjBzyeU=
+
+Name: contents/030-tutorial-next-steps.html
+SHA1-Digest: cvEhgeff2KZqGSdVPpP7ukzK49U=
+
+Name: 105-formatting.xdoc
+SHA1-Digest: sFIuhii0SH8EHVvaWolPCqjeX1A=
+
+Name: contents/book.css
+SHA1-Digest: UqGiixI8BnxZcBjVCMwdJhZTzNs=
+
+Name: xbase/199b-xbase-java-references.xdoc
+SHA1-Digest: IZPY4XaJmW2J9U9uMxL/W7L2go4=
+
+Name: tutorial/images/30min_wizard.png
+SHA1-Digest: eQI2a+GZUE6z/3D5rRZXtgYuYY0=
+
+Name: xbase/199g-xbase-language-reference-types.xdoc
+SHA1-Digest: mBnwX96tqB4DSpB2OdYkBzdFDn0=
+
+Name: contents/code.css
+SHA1-Digest: E2E0N8Mihfpj5w2JlnsAERwv5ik=
+
+Name: xtend/01-Xtend_Introduction.xdoc
+SHA1-Digest: M7so+co5TACeFd+wrqaO96D0V30=
+
+Name: tutorial/images/30min_editor.png
+SHA1-Digest: rPfDfnAlsDf0QD5jqXqY4UwkJAA=
+
+Name: tutorial/010-xtext-in-5-minutes.xdoc
+SHA1-Digest: cMs8Z4ehdt13GTXPyuPPoSxcM+I=
+
+Name: plugin.xml
+SHA1-Digest: kWq2kop7SbB6yscXG0pj48DOGPI=
+
+Name: _ToBeUpdatedTo2.0.txt
+SHA1-Digest: nlWUivBikF9ANc46v+9mADbEJqs=
+
+Name: images/index_container.graffle
+SHA1-Digest: nVT0GQoVVcC3wpZ6MFV6ih7P3Ss=
+
+Name: images/modules_hierarchy.png
+SHA1-Digest: Bkn9eY7nMdAFnbUzCaNyHnJPEPQ=
+
+Name: tutorial/050-validation.xdoc
+SHA1-Digest: wIi0AoLfPxk4TyYaaM1wmU3P8wM=
+
+Name: images/logo/xtext-logo-dark-100.png
+SHA1-Digest: SA707JaaFQEIDwdpLny3lee2K6c=
+
+Name: xbase/199c-xbase-inferred-type.xdoc
+SHA1-Digest: TbeNgYAMNc9ads3rkeEp1e/J3eg=
+
+Name: contents/images/30min_multipleeditors.png
+SHA1-Digest: xh86N0brAKCzIC2/TQoYJL1UJYI=
+
+Name: contents/images/30min_initialprojectlayout.png
+SHA1-Digest: gu6BBwZhZ4ZwZDR2/xN4w9ZuVQc=
+
+Name: xtend/02-Xtend_Classes_Functions.xdoc
+SHA1-Digest: mM+hYfxEMLYzQIfrkwE/0CBu2Hs=
+
+Name: contents/120-heading-UI.html
+SHA1-Digest: BaoQeIAJclq1RqWXfU4zVt0vPIs=
+
+Name: images/ecore.png
+SHA1-Digest: Gtk29MKw3ClWToEpDaY3MYkeFVw=
+
+Name: images/mwe2/assignment.png
+SHA1-Digest: PM/OylSI3CJzASETWzbkWWN7p4Y=
+
+Name: images/emf-integration.png
+SHA1-Digest: HviBOEuZaX/BnD2RAAEsgJD/UrQ=
+
+Name: xbase/199-xtext-and-java.xdoc
+SHA1-Digest: TG8QGuXPmSH/uSGBwwaVRsEHWm8=
+
+Name: 118-mwe-in-depth.xdoc
+SHA1-Digest: a6R5paem7ZlUj2EtTJgCwOebE/8=
+
+Name: 150-contentassist.xdoc
+SHA1-Digest: fY3u+iVFn8XHlSzeG/6dNLP69uY=
+
+Name: contents/199-jvmtypes.html
+SHA1-Digest: WZouGXM+3LX1WKUzF0LcgZ6BhKk=
+
+Name: contents/images/30min_launchconfiguration.png
+SHA1-Digest: KMqVC9HbNHmrmBkUVjfhPfhNf7c=
+
+Name: contents/images/FiveMinTutorial_LaunchConfig.png
+SHA1-Digest: co/WlkENvemH3wC1fPWij2MpuxU=
+
+Name: xbase/199h-xbase-language-reference-expressions.xdoc
+SHA1-Digest: kkUIFGAAei3UHsyq6gqrnB2kfT8=
+
+Name: contents/213-migrating-from-1.0.html
+SHA1-Digest: G6aaT13qd8x6qx9NMgPfsSwpMlk=
+
+Name: images/templates_enum.png
+SHA1-Digest: n/NJP8TOqqrLHe0WxB2dWDg+dcQ=
+
+Name: 215-migrating-from-0.7.xdoc
+SHA1-Digest: JktGnd+XzSyi3uqEvSF06wTHmaA=
+
+Name: contents/images/metamodel.png
+SHA1-Digest: JfcJ7BKdZAxTVtMPRu1UmWBh5q8=
+
+Name: contents/images/mwe2/assignment.png
+SHA1-Digest: PM/OylSI3CJzASETWzbkWWN7p4Y=
+
+Name: contents/images/emf-integration.png
+SHA1-Digest: HviBOEuZaX/BnD2RAAEsgJD/UrQ=
+

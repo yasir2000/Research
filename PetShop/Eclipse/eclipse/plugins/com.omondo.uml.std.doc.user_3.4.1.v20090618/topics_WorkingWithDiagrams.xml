@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Working With Diagrams" topic="workingWithDiagrams/index.html">
+		<topic label="Modeling Perspective" href="workingWithDiagrams/Modeling_perspective/index.html"/>
+    <topic label="Rearranging Diagrams" href="workingWithDiagrams/rearrangingDiagrams/index.html"/>
+    <topic label="Font and colors" href="workingWithDiagrams/font_and_colors/index.html"/>	
+    <topic label="Format" href="workingWithDiagrams/format/index.html"/>	
+    <topic label="Show/Hide Compartments" href="workingWithDiagrams/show_hide_compartment/index.html"/>	
+	<topic label="Wires" href="workingWithDiagrams/wires/index.html"/>
+	<topic label="Link Thickness" href="workingWithDiagrams/Link_Thickness/index.html"/>	
+    <topic label="Zoom" href="workingWithDiagrams/zoom/index.html"/>
+    <topic label="Print" href="workingWithDiagrams/print/index.html"/>
+    <topic label="Export As Image" href="workingWithDiagrams/export/index.html"/>
+    <topic label="Customize Perspective" href="workingWithDiagrams/customizePerspective/index.html"/>
+	<topic label="Notes" href="workingWithDiagrams/notes/index.html"/>
+	<topic label="Comments" href="workingWithDiagrams/Comments/index.html"/>
+	<topic label="Constraints" href="workingWithDiagrams/Constraints/index.html"/>
+	<topic label="Select" href="workingWithDiagrams/Select/index.html"/>		
+	<topic label="Labels" href="workingWithDiagrams/labels/index.html"/>		
+	<topic label="Links" href="workingWithDiagrams/links/index.html"/>
+	<topic label="XMI Format" href="workingWithDiagrams/XMI_Format/index.html"/>
+    <topic label="Key Bindings" href="workingWithDiagrams/keyBindings/index.html"/>
+    <topic label="Property View" href="workingWithDiagrams/Property_View/index.html"/>
+    <topic label="Documentation View" href="workingWithDiagrams/documentation_view/documentation_view.html"/>
+    
+</toc>

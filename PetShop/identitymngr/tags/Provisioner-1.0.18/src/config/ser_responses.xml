@@ -1,0 +1,23 @@
+<ser_responses xmlns="http://ser_responses.org">
+  <description>
+     SER network element possible responses.
+  </description>
+  <operation type="Delete">
+    <response result="Success" success="yes" respond="Successful operation" retry="no"/>
+  	<response result="non-existent user" success="yes" respond="Subscription does not exist" retry="no"/>
+  </operation>
+  <operation type="Create">
+  	<response result="406 - Subscription creation error" success="no" respond="Error creating subscription" retry="no"/>
+  	<response result="200 - Subscription created" success="yes" respond="Successful operation" retry="no"/>
+  </operation>
+  <operation type="Disable">
+  	<response result="username" success="yes" respond="Successful operation" retry="no"/>
+  	<response result="Duplicate entry" success="yes" respond="Supplementary service already disable" retry="no"/>
+  	<response result="Invalid privilege" success="no" respond="Access denied" retry="no"/>
+  	<response result="non-existent user" success="no" respond="Subscription does not exist" retry="no"/>	
+  </operation>	
+  <operation type="Enable">
+  	<response result="non-existent user" success="no" respond="Subscription does not exist" retry="no"/>	
+  	<response result="username" success="yes" respond="Successful operation" retry="no"/>	
+  </operation>
+</ser_responses>

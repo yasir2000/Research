@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://xml.netbeans.org/schema/ProcessOrder"
+    xmlns:tns="http://xml.netbeans.org/schema/ProcessOrder"
+    elementFormDefault="qualified">
+<xsd:complexType name="ProcessOrder">
+        <xsd:sequence>
+            <xsd:element name="initParam" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="typeA" type="tns:ProcessOrder"/>
+</xsd:schema>

@@ -1,0 +1,259 @@
+//--------------------------------------------------------------------
+// NeptuneScript 2.1 Conflict Set Functions
+// PetShop Intentions - Buyer, Seller, Trader
+// 2011-Nov-15 17:52 GMT
+//
+// RefID: PS-NS-11-11-15.0
+//--------------------------------------------------------------------
+
+//--------------------------------------------------------------------
+// Purpose
+//--------------------------------------------------------------------
+// Discussion of conflict model capturing conflicts, tradeoffs
+
+//--------------------------------------------------------------------
+// Grammar
+//--------------------------------------------------------------------
+// NeptunseScript 2.1 reference NS-BNF-11-11-14.0
+
+//--------------------------------------------------------------------
+// Tropos
+//--------------------------------------------------------------------
+// The associated "Tropos" document for this script is PS-FT-11-11-14.0
+
+//--------------------------------------------------------------------
+// Notes
+//--------------------------------------------------------------------
+// 'working memory' refers to the set of conflict variables of the
+// NeptuneScript engine.
+// Each variable name references an object which may have multiple
+// propertices or 'facets'.
+// When variables are added to the working memory, they are matched
+// against the requirements portion of all defined tasks.
+// Tasks whose requirements are satisfied are then activated and
+// their actions are performed.
+//
+// Functions may be either NS functions or NBLO functions.
+// In either case, the function calls have an identical format.
+//--------------------------------------------------------------------
+
+//--------------------------------------------------------------------
+// This task is performed once at the start of the script.
+// It places a 'RequestOffers' object into the working memory.
+//--------------------------------------------------------------------
+task {
+	Initialize : Engine.Start
+}
+actions {
+	RequestOffers via
+	function() {
+		return createObject('RequestOffers');
+	}
+}
+
+//--------------------------------------------------------------------
+// This task is performed whenever a new 'RequestOffers' object is detected.
+// It calls the function 'generateBuyerOffer' to place a 'BuyOffer' object
+// into the working memory.
+//--------------------------------------------------------------------
+task {
+	BuyerOffers : RequestOffers.Create
+}
+actions {
+	BuyOffer via
+	function() {
+		return generateBuyerOffer();
+	}
+}
+
+//--------------------------------------------------------------------
+// This task is performed whenever a new 'RequestOffers' object is detected.
+// It calls the function 'generateSellerOffer' to place a 'SellOffer' object
+// into the working memory.
+//--------------------------------------------------------------------
+task {
+	SellerOffers : RequestOffers.Create
+}
+actions {
+	SellerOffer via
+	function() {
+		return generateSellerOffer();
+	}
+}
+
+//--------------------------------------------------------------------
+// This task is performed whenever a new 'SellOffer' object is detected.
+// It calls the function 'generateBuyerResponse' to place a 'BuyerResponse'
+// object into the working memory.
+//--------------------------------------------------------------------
+task {
+	BuyerCompares : SellOffer.Created
+}
+actions {
+	BuyerResponse via
+	function(SellOffer) {
+		generateBuyerResponse(SellOffer);
+	}
+}
+
+//--------------------------------------------------------------------
+// This task is performed whenever a new 'BuyOffer' object is detected.
+// It calls the function 'generateSellerResponse' to add a 'SellerResponse'
+// object into the working memory.
+//--------------------------------------------------------------------
+task {
+	SellerCompares : BuyOffer.Created
+}
+actions {
+	SellerResponse via
+	function(BuyOffer) {
+		generateSellerResponse(BuyOffer);
+	}
+}
+
+//--------------------------------------------------------------------
+// This task is performed whenever both a 'BuyerResponse' and a 'SellerResponse'
+// objects are detected and either of the BuyerResponse.Accepts or the 
+// SellerResponse.Accepts values are false and, therefore, no sale is possible:
+// The actions are:
+// -- remove all 'RequestOffers', '*Offer', '*Response' objects from working memory
+// -- add a new 'RequestOffers' object to the working memory.
+// The 'RequestOffers' object will cause the bid-acceptance process to repeat.
+//--------------------------------------------------------------------
+task {
+	when (!BuyerResponse.Accepts || !SellerResponse.Accepts)
+	{BuyerResponse.Accepts, SellerResponse.Accepts}
+}
+actions {
+	RequestOffers via
+	function(BuyerResponse, SellerResponse) {
+		var requestOffers = createObject('RequestOffers');
+		requestOffers.PrevBuyerPrice = BuyerResponse.Price;
+		requestOffers.PrevSellerPrice = SellerResponse.Price;
+		removeObjects('RequestOffers');
+		removeObjects('BuyerResponse');
+		removeObjects('BuyerOffer');
+		removeObjects('SellerResponse');
+		removeObjects('SellerOffer');
+		return requestOffers;
+	}
+}
+
+/--------------------------------------------------------------------
+// This task is performed whenever both a 'BuyerResponse' and a 'SellerResponse'
+// objects are detected and both of the BuyerResponse.Accepts and the 
+// SellerResponse.Accepts values are true and, therefore, a sale is possible:
+// The actions are:
+// -- add a new 'AgreedPrice' object to the working memory.
+// The 'AgreedPrice' object will cause the 'PetStore' to process the purchase.
+//--------------------------------------------------------------------
+task {
+	when (BuyerResponse.Accepts && SellerResponse.Accepts)
+	{BuyerResponse.Accepts, SellerResponse.Accepts}
+}
+actions {
+	AgreedPrice via
+	function(BuyerResponse, SellerResponse) {
+		var price = computeAgreedPrice(BuyerResponse.Price, SellerResponse.Price);
+		var agreedPrice = createObject('AgreedPrice');
+		agreedPrice.Buyer = BuyerResponse.Buyer;
+		agreedPrice.Seller = BuyerResponse.Seller;
+		agreedPrice.Price = price;
+		return agreedPrice;
+	}
+}
+
+/--------------------------------------------------------------------
+// This task is performed whenever an 'AgreedPrice' object is detected.
+// The actions are:
+// -- the 'processPurchase' function is called for the PetStore to 
+// -- handle the purchase. This function returns a 'PurchaseCompletion'
+// -- object which is added to the working memory.
+//--------------------------------------------------------------------
+task {
+	ProcessPurchase : AgreedPrice.Created
+}
+actions {
+	PurchaseCompletion via
+	function(AgreedPrice) {
+		return processPurchase(AgreedPrice);
+	}
+}
+
+/--------------------------------------------------------------------
+// This task is performed whenever an 'PurchaseCompletion' object is detected.
+// The actions are:
+// -- the 'sellPetFulfilled' function is called which returns a 'SellPet'
+// -- object which is added to the working memory.
+//
+// Reference: PS-FT-11-11-14.0 Goal SellPet
+//--------------------------------------------------------------------
+task {
+	SatisfyPetSellerGoals : PurchaseCompletion.Created
+}
+actions {
+	SellPet via
+	function(PurchaseCompletion) {
+		return sellPetFulfilled(PurchaseCompletion);
+	}
+}
+
+/--------------------------------------------------------------------
+// This task is performed whenever an 'PurchaseCompletion' object is detected.
+// The actions are:
+// -- the 'buyPetFulfilled' function is called which returns a 'BuyPet'
+// -- object which is added to the working memory.
+//
+// Reference: PS-FT-11-11-14.0 Goal BuyPet
+//--------------------------------------------------------------------
+task {
+	SatisfyPetBuyerGoals : PurchaseCompletion.Created
+}
+actions {
+	BuyPet via
+	function(PurchaseCompletion) {
+		return buyPetFulfilled(PurchaseCompletion);
+	}
+}
+
+/--------------------------------------------------------------------
+// This task is performed whenever an 'PurchaseCompletion' object is detected.
+// The actions are:
+// -- the 'earnCommissionFulfilled' function is called which returns a 'EarnCommission'
+// -- object which is added to the working memory.
+//
+// Reference: PS-FT-11-11-14.0 Goal EarnCommission
+//--------------------------------------------------------------------
+task {
+	SatisfyPetTraderGoals : PurchaseCompletion.Created
+}
+actions {
+	EarnCommission via
+	function(PurchaseCompletion) {
+		return earnCommissionFulfilled(PurchaseCompletion);
+	}
+}
+
+/--------------------------------------------------------------------
+// This task is performed whenever an 'PurchaseCompletion' object is detected.
+// The actions are:
+// -- the 'assessFinalTradeoffs' function is called which returns an 'AssessFinalTradeoffs'
+// -- object which is added to the working memory.
+// For a PetSeller, the tradeoff is the difference between what he recieved and the
+// minimum amount that he was willing to accept.
+// For a PetBuyer, the tradeoff is the difference between what he paid and the
+// maximum amount that he was willing to pay.
+// For a PetTrader, the tradeoff is the difference between the number of bids to
+// complete a sale compared to the number of bids he was willing to accept.
+//
+// Reference: PS-FT-11-11-14.0 Goal EarnCommission
+//--------------------------------------------------------------------
+task {
+	AssessFinalTradeoffs : PurchaseCompletion.Created
+}
+actions {
+	Tradeoffs via
+	function(PurchaseCompletion) {
+		return assessFinalTradeoffs(PurchaseCompletion);
+	}
+}

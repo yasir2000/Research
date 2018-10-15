@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AndroDataMapping.xsd">
+	<AndroMDADatatypesMapping version="3.2SNAPSHOT">
+		<Java2Andro>
+			<Java>javax.swing.tree.TreeNode</Java>
+			<Andro>_pg7wWRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>javax.swing.text.Document</Java>
+			<Andro>_pg7wLxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+        <Java2Andro>
+		<Java>java.lang.String</Java>
+			<Andro>_pg7wUBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.lang.Byte</Java>
+			<Andro>_pg7wGxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.lang.Short</Java>
+			<Andro>_pg7wSRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.lang.Boolean</Java>
+			<Andro>_pg7wFxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.lang.Float</Java>
+			<Andro>_pg7wOBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.lang.Double</Java>
+			<Andro>_pg7wMBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+    	<Java2Andro>
+			<Java>java.lang.Integer</Java>
+			<Andro>_pg7wPhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+			<Java2Andro>
+			<Java>java.lang.Object</Java>
+			<Andro>_pg7wSBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+			<Java2Andro>
+			<Java>java.lang.Character</Java>
+			<Andro>_pg7wIRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+			<Java2Andro>
+			<Java>java.lang.Long</Java>
+			<Andro>_pg7wRBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.io.File</Java>
+			<Andro>_pg7wNRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.util.Set</Java>
+			<Andro>_pg7wTBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.util.Collection</Java>
+			<Andro>_pg7wJhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.util.Date</Java>
+			<Andro>_pg7wJxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.util.List</Java>
+			<Andro>_pg7wQhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.util.Map</Java>
+			<Andro>_pg7wXxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.sql.Timestamp</Java>
+			<Andro>_pg7wVBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.sql.Clob</Java>
+			<Andro>_pg7wJRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.sql.Time</Java>
+			<Andro>_pg7wUxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.sql.Blob</Java>
+			<Andro>_pg7wFRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.net.URI</Java>
+			<Andro>_pg7wWxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>java.net.URL</Java>
+			<Andro>_pg7wFBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>int</Java>
+			<Andro>_pg7wPRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>char</Java>
+			<Andro>_pg7wIBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>long</Java>
+			<Andro>_pg7wYRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+        <Java2Andro>
+			<Java>short</Java>
+			<Andro>_pg7wSxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>byte</Java>
+			<Andro>_pg7wHRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>double</Java>
+			<Andro>_pg7wMhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		<Java2Andro>
+			<Java>float</Java>
+			<Andro>_pg7wNxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+		<Java2Andro>
+			<Java>boolean</Java>
+			<Andro>_pg7wFhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+		<Java2Andro>
+			<Java>void</Java>
+			<Andro>_pg7wYhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+		<Java2Andro>
+			<Java>boolean[]</Java>
+			<Andro>_pg7wGhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Boolean[]</Java>
+			<Andro>_pg7wGRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>byte[]</Java>
+			<Andro>_pg7wHhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Byte[]</Java>
+			<Andro>_pg7wHxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Character[]</Java>
+			<Andro>_pg7wIxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>char[]</Java>
+			<Andro>_pg7wJBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>DateTime[]</Java>
+			<Andro>_pg7wKxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Date[]</Java>
+			<Andro>_pg7wLBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>Decimal[]</Java>
+			<Andro>_pg7wLhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>double[]</Java>
+			<Andro>_pg7wMxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>Double[]</Java>
+			<Andro>_pg7wNBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.io.File[]</Java>
+			<Andro>_pg7wNhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>float[]</Java>
+			<Andro>_pg7wOhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Float[]</Java>
+			<Andro>_pg7wOxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Integer[]</Java>
+			<Andro>_pg7wQBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>int[]</Java>
+			<Andro>_pg7wQRiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Long[]</Java>
+			<Andro>_pg7wRhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Short[]</Java>
+			<Andro>_pg7wThiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.Object[]</Java>
+			<Andro>_pg7wTxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.lang.String[]</Java>
+			<Andro>_pg7wURiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>short[]</Java>
+			<Andro>_pg7wUhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.sql.Time[]</Java>
+			<Andro>_pg7wVxiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.sql.Timestamp[]</Java>
+			<Andro>_pg7wWBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.net.URI[]</Java>
+			<Andro>_pg7wXBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>long[]</Java>
+			<Andro>_pg7wXhiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+		
+			<Java2Andro>
+			<Java>java.net.URL[]</Java>
+			<Andro>_pg7wYBiHEduGO9US2WjLjg</Andro>
+		</Java2Andro>
+	 
+	 	
+	</AndroMDADatatypesMapping>
+</XMI>
+
+	

@@ -1,0 +1,187 @@
+$- script B starts
+------------------------
+Pet Auction is Now Open
+------------------------
+PDDL resolving buyer strategy
+PDDL resolving seller strategy
+---------
+Initial offer price ---: 475
+Initial bid price -----: 145
+---------
+1: Yasir Karam offers ------: 393
+1: Taleb Bendiab bids --------: 255
+---------
+1: Yasir Karam offers ------: 359
+1: Taleb Bendiab bids --------: 301
+---------
+1: Yasir Karam offers ------: 345
+1: Taleb Bendiab bids --------: 320
+---------
+1: Yasir Karam offers ------: 339
+1: Taleb Bendiab bids --------: 328
+---------
+1: Yasir Karam offers ------: 337
+1: Taleb Bendiab bids --------: 331
+---------
+1: Yasir Karam offers ------: 335
+1: Taleb Bendiab bids --------: 333
+---------
+1: Yasir Karam offers ------: 333
+1: Taleb Bendiab bids --------: 335
+---------
+2: Yasir Karam offers ------: 409
+2: Taleb Bendiab bids --------: 227
+---------
+2: Yasir Karam offers ------: 373
+2: Taleb Bendiab bids --------: 272
+---------
+2: Yasir Karam offers ------: 353
+2: Taleb Bendiab bids --------: 297
+---------
+2: Yasir Karam offers ------: 342
+2: Taleb Bendiab bids --------: 311
+---------
+2: Yasir Karam offers ------: 336
+2: Taleb Bendiab bids --------: 318
+---------
+2: Yasir Karam offers ------: 333
+2: Taleb Bendiab bids --------: 322
+---------
+2: Yasir Karam offers ------: 331
+2: Taleb Bendiab bids --------: 324
+---------
+2: Yasir Karam offers ------: 329
+2: Taleb Bendiab bids --------: 326
+---------
+2: Yasir Karam offers ------: 327
+2: Taleb Bendiab bids --------: 328
+---------
+3: Yasir Karam offers ------: 420
+3: Taleb Bendiab bids --------: 211
+---------
+3: Yasir Karam offers ------: 386
+3: Taleb Bendiab bids --------: 252
+---------
+3: Yasir Karam offers ------: 364
+3: Taleb Bendiab bids --------: 278
+---------
+3: Yasir Karam offers ------: 350
+3: Taleb Bendiab bids --------: 295
+---------
+3: Yasir Karam offers ------: 341
+3: Taleb Bendiab bids --------: 306
+---------
+3: Yasir Karam offers ------: 336
+3: Taleb Bendiab bids --------: 313
+---------
+3: Yasir Karam offers ------: 333
+3: Taleb Bendiab bids --------: 317
+---------
+3: Yasir Karam offers ------: 331
+3: Taleb Bendiab bids --------: 320
+---------
+3: Yasir Karam offers ------: 329
+3: Taleb Bendiab bids --------: 322
+---------
+3: Yasir Karam offers ------: 327
+3: Taleb Bendiab bids --------: 324
+---------
+4: Yasir Karam offers ------: 428
+4: Taleb Bendiab bids --------: 200
+---------
+4: Yasir Karam offers ------: 396
+4: Taleb Bendiab bids --------: 238
+---------
+4: Yasir Karam offers ------: 374
+4: Taleb Bendiab bids --------: 264
+---------
+4: Yasir Karam offers ------: 359
+4: Taleb Bendiab bids --------: 282
+---------
+4: Yasir Karam offers ------: 348
+4: Taleb Bendiab bids --------: 294
+---------
+4: Yasir Karam offers ------: 341
+4: Taleb Bendiab bids --------: 303
+---------
+4: Yasir Karam offers ------: 336
+4: Taleb Bendiab bids --------: 309
+---------
+4: Yasir Karam offers ------: 333
+4: Taleb Bendiab bids --------: 313
+---------
+4: Yasir Karam offers ------: 331
+4: Taleb Bendiab bids --------: 316
+---------
+4: Yasir Karam offers ------: 329
+4: Taleb Bendiab bids --------: 318
+---------
+5: Yasir Karam offers ------: 434
+5: Taleb Bendiab bids --------: 192
+---------
+5: Yasir Karam offers ------: 404
+5: Taleb Bendiab bids --------: 226
+---------
+5: Yasir Karam offers ------: 382
+5: Taleb Bendiab bids --------: 251
+---------
+5: Yasir Karam offers ------: 366
+5: Taleb Bendiab bids --------: 269
+---------
+5: Yasir Karam offers ------: 354
+5: Taleb Bendiab bids --------: 282
+---------
+5: Yasir Karam offers ------: 345
+5: Taleb Bendiab bids --------: 292
+---------
+5: Yasir Karam offers ------: 339
+5: Taleb Bendiab bids --------: 299
+---------
+5: Yasir Karam offers ------: 334
+5: Taleb Bendiab bids --------: 304
+---------
+5: Yasir Karam offers ------: 331
+5: Taleb Bendiab bids --------: 308
+---------
+5: Yasir Karam offers ------: 329
+5: Taleb Bendiab bids --------: 311
+---------
+6: Yasir Karam offers ------: 439
+6: Taleb Bendiab bids --------: 186
+---------
+6: Yasir Karam offers ------: 411
+6: Taleb Bendiab bids --------: 217
+---------
+6: Yasir Karam offers ------: 390
+6: Taleb Bendiab bids --------: 241
+---------
+6: Yasir Karam offers ------: 374
+6: Taleb Bendiab bids --------: 259
+---------
+6: Yasir Karam offers ------: 362
+6: Taleb Bendiab bids --------: 273
+---------
+6: Yasir Karam offers ------: 353
+6: Taleb Bendiab bids --------: 284
+---------
+6: Yasir Karam offers ------: 346
+6: Taleb Bendiab bids --------: 292
+---------
+6: Yasir Karam offers ------: 340
+6: Taleb Bendiab bids --------: 298
+---------
+6: Yasir Karam offers ------: 336
+6: Taleb Bendiab bids --------: 303
+---------
+6: Yasir Karam offers ------: 333
+6: Taleb Bendiab bids --------: 307
+------------------------
+Final offer price -----: 333
+Final bid price -------: 307
+------------------------
+Pet was not sold
+------------------------
+Pet Auction is Now Closed
+------------------------
+$- script B ends
+

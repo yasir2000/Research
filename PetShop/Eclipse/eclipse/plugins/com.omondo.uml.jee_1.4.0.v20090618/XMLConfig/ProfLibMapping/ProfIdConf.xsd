@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 U (http://www.altova.com) by zizou (omondo) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="XML_PACKAGE_ID_CONF">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AndroMDAVersion" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Presentation">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Service">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Webservice">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Process">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Xml">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Common">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Meta">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Persistance">
+								<xs:complexType>
+									<xs:attribute name="IdProfile" type="xs:string" use="optional"/>
+									<xs:attribute name="idAnno" type="xs:string" use="optional"/>
+									<xs:attribute name="IdModel" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedPackage" type="xs:string" use="optional"/>
+									<xs:attribute name="ImportedProfile"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="version" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
